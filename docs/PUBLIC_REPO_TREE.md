@@ -1,6 +1,6 @@
 # Repository Structure
 
-项目保留前后端、Agent 扩展、业务模型、测试和构建脚本的原目录结构。静态展示页位于 `site/`，本地运行说明见仓库根目录。
+项目保留前后端、Agent 扩展、业务模型、测试和构建脚本的原目录结构。浏览器 Agent Demo 位于 `site/`，本地运行说明见仓库根目录。
 
 ```text
 渝研/
@@ -10,8 +10,8 @@
 ├── REPRODUCIBILITY.md               # 独立复算与完整本地运行
 ├── DISCLAIMER.md
 ├── PUBLIC_RELEASE_INVENTORY.json    # 全文件大小与 SHA-256（不自引用）
-├── site/                          # 六部分静态展示 HTML / CSS
-├── .github/workflows/pages.yml     # 静态 GitHub Pages 发布
+├── site/                          # 浏览器 Agent Demo / 项目介绍 / ES modules
+├── .github/workflows/pages.yml     # 数据构建 / Python 回归 / Node parity / Pages 发布
 ├── .gitignore
 ├── third_party/ATTRIBUTION.md
 ├── docs/

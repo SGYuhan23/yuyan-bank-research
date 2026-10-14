@@ -44,6 +44,12 @@ flowchart LR
 
 ## GitHub 展示与本地执行
 
-GitHub Pages 静态介绍与 GitHub 文档、真实截图和报告构成公开入口，不需要在线后端。录屏使用本地 Next.js + Gateway + PostgreSQL；登录账号和运行数据不公开。只有自行运行完整平台时才需要配置数据库与模型服务。
+GitHub Pages 浏览器 Agent Demo 与 GitHub 文档、真实截图和报告构成公开入口，不需要在线后端。录屏使用本地 Next.js + Gateway + PostgreSQL；登录账号和运行数据不公开。只有自行运行完整平台时才需要配置数据库与模型服务。
 
 当前公开仓库包含完整功能源码与依赖锁文件，不含已安装依赖、私有运行状态或生产部署承诺。早期 `yuqi-core` 未被当前银行案例或平台 import，已从公开包移除；旧 dotenv 默认查找路径可通过显式环境变量或 YUQI_MODEL_ENV_FILE 覆盖，不需要该旧目录。
+
+## 浏览器执行适配
+
+`site/` 使用原生 ES modules。输入由有限规则解析；确认后的参数与账本版本绑定，修改输入立即标记旧结果失效。Fuling 分组背包、Supplier 逐日现金流、合同依赖和原子核对在浏览器运行，通过动态 Python 对照验证，Python 仍为计算依据。仅使用 sessionStorage 保存同标签页演示状态。
+
+历史 Qwen 脱敏记录独立展示为调用回放，不能冒充当前输入的新模型调用。Pages 不提供实时模型服务。构建与一致性测试在 GitHub Actions 执行，不向浏览器部署 Python 或测试答案。

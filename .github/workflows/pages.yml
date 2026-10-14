@@ -1,8 +1,17 @@
-name: Publish static showcase
+name: Publish banking Agent Demo
 on:
   push:
     branches: [main]
-    paths: ['site/**', 'docs/screenshots/**', 'docs/reports/**', '.github/workflows/pages.yml']
+    paths:
+      - 'site/**'
+      - 'scripts/export_static_demo_data.py'
+      - 'agent-ops/examples/fuling.py'
+      - 'agent-ops/research/**'
+      - 'agent-ops/test_*.py'
+      - 'agent-platform/frontend/public/research/**'
+      - 'docs/screenshots/**'
+      - 'docs/reports/**'
+      - '.github/workflows/pages.yml'
   workflow_dispatch:
 permissions:
   contents: read
@@ -19,11 +28,28 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Rebuild data from Python source
+        run: |
+          python -S agent-ops/research/build_data.py
+          python -S scripts/export_static_demo_data.py
+      - name: Python regression
+        run: |
+          python -m pip install -r agent-ops/research/review-requirements.txt
+          python -m pytest agent-ops/test_fuling_v2.py agent-ops/test_supplier_ledger.py agent-ops/test_research_models.py agent-ops/test_v2_evidence.py agent-ops/test_scenario_semantics.py agent-ops/test_public_release.py -q
+      - name: Browser engine parity against dynamic Python results
+        run: node --test site/tests/*.test.mjs
       - uses: actions/configure-pages@v5
-      - name: Assemble static files
+      - name: Assemble browser-only site
         run: |
           mkdir -p _site/assets/screenshots _site/assets/reports
-          cp site/index.html site/style.css _site/
+          cp site/*.html site/*.css site/app.js _site/
+          cp -R site/js site/data _site/
           for name in 01-fuling-overview 04-supplier-overview 03-fuling-customer-action 02-fuling-allocation 05-supplier-cashflow 07-supplier-contract 08-supplier-reconcile; do
             cp "docs/screenshots/$name.png" _site/assets/screenshots/
           done

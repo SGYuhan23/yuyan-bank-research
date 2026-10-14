@@ -84,4 +84,13 @@ mkdir -p tmp
 gitleaks dir . --redact --ignore-gitleaks-allow --report-format json --report-path tmp/secret-scan.json
 ```
 
-上游安全测试故意含虚构密钥样例，会触发扫描；必须核查告警，不按文件夹整体豁免。已执行结果见 [扫描报告](docs/SECRET_SCAN_REPORT.md)。本仓库为新建公开仓库，不包含旧开发仓库 Git 历史；未部署在线后端服务。GitHub Pages 仅展示静态介绍、截图和报告，不运行模型或业务接口。
+上游安全测试故意含虚构密钥样例，会触发扫描；必须核查告警，不按文件夹整体豁免。已执行结果见 [扫描报告](docs/SECRET_SCAN_REPORT.md)。本仓库为新建公开仓库，不包含旧开发仓库 Git 历史；未部署在线后端服务。GitHub Pages 的 Agent Demo 在浏览器计算，使用规则识别参数并回放已记录模型调用；无实时模型或在线业务接口。
+
+## 浏览器 Agent Demo
+
+```sh
+python -S scripts/export_static_demo_data.py
+node --test site/tests/*.test.mjs
+```
+
+导出程序从业务数据生成合成输入，并动态运行 Python 生成一致性测试预期。浏览器规则负责识别参数，已记录 Qwen 调用标明回放。详见 [Demo 技术说明](site/README.md)。

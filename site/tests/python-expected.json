@@ -1,0 +1,4792 @@
+{
+  "fuling": [
+    {
+      "hours": 50,
+      "cap": null,
+      "result": {
+        "hours": 50,
+        "benefit_fen": 1578440,
+        "selected": [
+          "SYN-V2-102-A0",
+          "SYN-V2-112-A0",
+          "SYN-V2-026-A0",
+          "SYN-V2-028-A0",
+          "SYN-V2-069-A0"
+        ],
+        "sector_hours": {
+          "先进材料/制造业": 0,
+          "商贸物流": 0,
+          "小微/居民经营": 20,
+          "新能源汽车及零部件": 20,
+          "食品农业/榨菜产业链": 10
+        }
+      }
+    },
+    {
+      "hours": 50,
+      "cap": 0.25,
+      "result": {
+        "hours": 50,
+        "benefit_fen": 1545380,
+        "selected": [
+          "SYN-V2-016-A0",
+          "SYN-V2-084-A0",
+          "SYN-V2-102-A0",
+          "SYN-V2-026-A0",
+          "SYN-V2-069-A0"
+        ],
+        "sector_hours": {
+          "先进材料/制造业": 10,
+          "商贸物流": 10,
+          "小微/居民经营": 10,
+          "新能源汽车及零部件": 10,
+          "食品农业/榨菜产业链": 10
+        }
+      }
+    },
+    {
+      "hours": 150,
+      "cap": null,
+      "result": {
+        "hours": 150,
+        "benefit_fen": 4502700,
+        "selected": [
+          "SYN-V2-014-A0",
+          "SYN-V2-016-A0",
+          "SYN-V2-080-A0",
+          "SYN-V2-084-A0",
+          "SYN-V2-088-A0",
+          "SYN-V2-102-A0",
+          "SYN-V2-112-A0",
+          "SYN-V2-118-A0",
+          "SYN-V2-026-A0",
+          "SYN-V2-028-A0",
+          "SYN-V2-034-A0",
+          "SYN-V2-043-A0",
+          "SYN-V2-048-A0",
+          "SYN-V2-064-A0",
+          "SYN-V2-069-A0"
+        ],
+        "sector_hours": {
+          "先进材料/制造业": 20,
+          "商贸物流": 30,
+          "小微/居民经营": 30,
+          "新能源汽车及零部件": 50,
+          "食品农业/榨菜产业链": 20
+        }
+      }
+    },
+    {
+      "hours": 150,
+      "cap": 0.25,
+      "result": {
+        "hours": 150,
+        "benefit_fen": 4420500,
+        "selected": [
+          "SYN-V2-006-A0",
+          "SYN-V2-014-A0",
+          "SYN-V2-016-A0",
+          "SYN-V2-080-A0",
+          "SYN-V2-084-A0",
+          "SYN-V2-088-A0",
+          "SYN-V2-102-A0",
+          "SYN-V2-112-A0",
+          "SYN-V2-118-A0",
+          "SYN-V2-026-A0",
+          "SYN-V2-028-A0",
+          "SYN-V2-043-A0",
+          "SYN-V2-050-A0",
+          "SYN-V2-064-A0",
+          "SYN-V2-069-A0"
+        ],
+        "sector_hours": {
+          "先进材料/制造业": 30,
+          "商贸物流": 30,
+          "小微/居民经营": 30,
+          "新能源汽车及零部件": 30,
+          "食品农业/榨菜产业链": 30
+        }
+      }
+    },
+    {
+      "hours": 220,
+      "cap": null,
+      "result": {
+        "hours": 220,
+        "benefit_fen": 6311620,
+        "selected": [
+          "SYN-V2-006-A0",
+          "SYN-V2-014-A0",
+          "SYN-V2-016-A0",
+          "SYN-V2-019-A0",
+          "SYN-V2-023-A0",
+          "SYN-V2-076-A0",
+          "SYN-V2-080-A0",
+          "SYN-V2-084-A0",
+          "SYN-V2-088-A0",
+          "SYN-V2-089-A0",
+          "SYN-V2-096-A0",
+          "SYN-V2-097-A0",
+          "SYN-V2-102-A0",
+          "SYN-V2-112-A0",
+          "SYN-V2-118-A0",
+          "SYN-V2-026-A0",
+          "SYN-V2-028-A0",
+          "SYN-V2-034-A0",
+          "SYN-V2-043-A0",
+          "SYN-V2-048-A0",
+          "SYN-V2-064-A0",
+          "SYN-V2-069-A0"
+        ],
+        "sector_hours": {
+          "先进材料/制造业": 50,
+          "商贸物流": 60,
+          "小微/居民经营": 40,
+          "新能源汽车及零部件": 50,
+          "食品农业/榨菜产业链": 20
+        }
+      }
+    },
+    {
+      "hours": 220,
+      "cap": 0.25,
+      "result": {
+        "hours": 220,
+        "benefit_fen": 6303820,
+        "selected": [
+          "SYN-V2-006-A0",
+          "SYN-V2-014-A0",
+          "SYN-V2-016-A0",
+          "SYN-V2-019-A0",
+          "SYN-V2-023-A0",
+          "SYN-V2-076-A0",
+          "SYN-V2-080-A0",
+          "SYN-V2-084-A0",
+          "SYN-V2-088-A0",
+          "SYN-V2-096-A0",
+          "SYN-V2-097-A0",
+          "SYN-V2-102-A0",
+          "SYN-V2-112-A0",
+          "SYN-V2-117-A0",
+          "SYN-V2-118-A0",
+          "SYN-V2-026-A0",
+          "SYN-V2-028-A0",
+          "SYN-V2-034-A0",
+          "SYN-V2-043-A0",
+          "SYN-V2-048-A0",
+          "SYN-V2-064-A0",
+          "SYN-V2-069-A0"
+        ],
+        "sector_hours": {
+          "先进材料/制造业": 50,
+          "商贸物流": 50,
+          "小微/居民经营": 50,
+          "新能源汽车及零部件": 50,
+          "食品农业/榨菜产业链": 20
+        }
+      }
+    },
+    {
+      "hours": 600,
+      "cap": null,
+      "result": {
+        "hours": 600,
+        "benefit_fen": 13845120,
+        "selected": [
+          "SYN-V2-005-A0",
+          "SYN-V2-006-A0",
+          "SYN-V2-010-A0",
+          "SYN-V2-012-A0",
+          "SYN-V2-014-A0",
+          "SYN-V2-016-A0",
+          "SYN-V2-018-A0",
+          "SYN-V2-019-A0",
+          "SYN-V2-023-A0",
+          "SYN-V2-076-A0",
+          "SYN-V2-078-A0",
+          "SYN-V2-079-A0",
+          "SYN-V2-080-A0",
+          "SYN-V2-082-A0",
+          "SYN-V2-084-A0",
+          "SYN-V2-085-A0",
+          "SYN-V2-086-A0",
+          "SYN-V2-088-A0",
+          "SYN-V2-089-A0",
+          "SYN-V2-090-A0",
+          "SYN-V2-094-A0",
+          "SYN-V2-095-A0",
+          "SYN-V2-096-A0",
+          "SYN-V2-097-A0",
+          "SYN-V2-099-A0",
+          "SYN-V2-102-A0",
+          "SYN-V2-104-A0",
+          "SYN-V2-109-A0",
+          "SYN-V2-111-A0",
+          "SYN-V2-112-A0",
+          "SYN-V2-117-A0",
+          "SYN-V2-118-A0",
+          "SYN-V2-026-A0",
+          "SYN-V2-028-A0",
+          "SYN-V2-029-A0",
+          "SYN-V2-030-A0",
+          "SYN-V2-032-A0",
+          "SYN-V2-033-A0",
+          "SYN-V2-034-A0",
+          "SYN-V2-035-A0",
+          "SYN-V2-038-A0",
+          "SYN-V2-041-A0",
+          "SYN-V2-042-A0",
+          "SYN-V2-043-A0",
+          "SYN-V2-047-A0",
+          "SYN-V2-048-A0",
+          "SYN-V2-050-A0",
+          "SYN-V2-053-A0",
+          "SYN-V2-054-A0",
+          "SYN-V2-055-A0",
+          "SYN-V2-057-A0",
+          "SYN-V2-058-A0",
+          "SYN-V2-059-A0",
+          "SYN-V2-060-A0",
+          "SYN-V2-061-A0",
+          "SYN-V2-063-A0",
+          "SYN-V2-064-A0",
+          "SYN-V2-068-A0",
+          "SYN-V2-069-A0",
+          "SYN-V2-072-A0"
+        ],
+        "sector_hours": {
+          "先进材料/制造业": 90,
+          "商贸物流": 140,
+          "小微/居民经营": 90,
+          "新能源汽车及零部件": 140,
+          "食品农业/榨菜产业链": 140
+        }
+      }
+    },
+    {
+      "hours": 600,
+      "cap": 0.25,
+      "result": {
+        "hours": 600,
+        "benefit_fen": 13845120,
+        "selected": [
+          "SYN-V2-005-A0",
+          "SYN-V2-006-A0",
+          "SYN-V2-010-A0",
+          "SYN-V2-012-A0",
+          "SYN-V2-014-A0",
+          "SYN-V2-016-A0",
+          "SYN-V2-018-A0",
+          "SYN-V2-019-A0",
+          "SYN-V2-023-A0",
+          "SYN-V2-076-A0",
+          "SYN-V2-078-A0",
+          "SYN-V2-079-A0",
+          "SYN-V2-080-A0",
+          "SYN-V2-082-A0",
+          "SYN-V2-084-A0",
+          "SYN-V2-085-A0",
+          "SYN-V2-086-A0",
+          "SYN-V2-088-A0",
+          "SYN-V2-089-A0",
+          "SYN-V2-090-A0",
+          "SYN-V2-094-A0",
+          "SYN-V2-095-A0",
+          "SYN-V2-096-A0",
+          "SYN-V2-097-A0",
+          "SYN-V2-099-A0",
+          "SYN-V2-102-A0",
+          "SYN-V2-104-A0",
+          "SYN-V2-109-A0",
+          "SYN-V2-111-A0",
+          "SYN-V2-112-A0",
+          "SYN-V2-117-A0",
+          "SYN-V2-118-A0",
+          "SYN-V2-026-A0",
+          "SYN-V2-028-A0",
+          "SYN-V2-029-A0",
+          "SYN-V2-030-A0",
+          "SYN-V2-032-A0",
+          "SYN-V2-033-A0",
+          "SYN-V2-034-A0",
+          "SYN-V2-035-A0",
+          "SYN-V2-038-A0",
+          "SYN-V2-041-A0",
+          "SYN-V2-042-A0",
+          "SYN-V2-043-A0",
+          "SYN-V2-047-A0",
+          "SYN-V2-048-A0",
+          "SYN-V2-050-A0",
+          "SYN-V2-053-A0",
+          "SYN-V2-054-A0",
+          "SYN-V2-055-A0",
+          "SYN-V2-057-A0",
+          "SYN-V2-058-A0",
+          "SYN-V2-059-A0",
+          "SYN-V2-060-A0",
+          "SYN-V2-061-A0",
+          "SYN-V2-063-A0",
+          "SYN-V2-064-A0",
+          "SYN-V2-068-A0",
+          "SYN-V2-069-A0",
+          "SYN-V2-072-A0"
+        ],
+        "sector_hours": {
+          "先进材料/制造业": 90,
+          "商贸物流": 140,
+          "小微/居民经营": 90,
+          "新能源汽车及零部件": 140,
+          "食品农业/榨菜产业链": 140
+        }
+      }
+    }
+  ],
+  "supplier": [
+    {
+      "customer": "C1",
+      "days": 0,
+      "result": {
+        "evidence_type": "MODEL OUTPUT",
+        "actual_balance_fen": 20000000,
+        "peak_gap_fen": 49000000,
+        "minimum_date": "2027-01-23",
+        "minimum_drivers": [
+          "O4-materials"
+        ],
+        "negative_days": 38,
+        "closing_fen": 31000000,
+        "series": [
+          {
+            "date": "2027-01-02",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-03",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-04",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-05",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-06",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-07",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-08",
+            "balance_fen": -10000000,
+            "events": [
+              {
+                "event_id": "O1-materials",
+                "amount_fen": -30000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-09",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-10",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-11",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-12",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-13",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-14",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-15",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-16",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-17",
+            "balance_fen": -19000000,
+            "events": [
+              {
+                "event_id": "O2-materials",
+                "amount_fen": -9000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-18",
+            "balance_fen": -19000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-19",
+            "balance_fen": -19000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-20",
+            "balance_fen": -28000000,
+            "events": [
+              {
+                "event_id": "O3-materials",
+                "amount_fen": -9000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-21",
+            "balance_fen": -40000000,
+            "events": [
+              {
+                "event_id": "O1-production",
+                "amount_fen": -12000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-22",
+            "balance_fen": -40000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-23",
+            "balance_fen": -49000000,
+            "events": [
+              {
+                "event_id": "O4-materials",
+                "amount_fen": -9000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-24",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-25",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-26",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-27",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-28",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-29",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-30",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-31",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-01",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-02",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-03",
+            "balance_fen": -37000000,
+            "events": [
+              {
+                "event_id": "O2-receivable",
+                "amount_fen": 12000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-04",
+            "balance_fen": -37000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-05",
+            "balance_fen": -41000000,
+            "events": [
+              {
+                "event_id": "O1-shipment",
+                "amount_fen": -4000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-06",
+            "balance_fen": -41000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-07",
+            "balance_fen": -29000000,
+            "events": [
+              {
+                "event_id": "O3-receivable",
+                "amount_fen": 12000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-08",
+            "balance_fen": -29000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-09",
+            "balance_fen": -29000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-10",
+            "balance_fen": -29000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-11",
+            "balance_fen": -17000000,
+            "events": [
+              {
+                "event_id": "O4-receivable",
+                "amount_fen": 12000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-12",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-13",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-14",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-15",
+            "balance_fen": 31000000,
+            "events": [
+              {
+                "event_id": "O1-receivable",
+                "amount_fen": 48000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-16",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-17",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-18",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-19",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-20",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-21",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-22",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-23",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-24",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-25",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-26",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-27",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-28",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-03-01",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-03-02",
+            "balance_fen": 31000000,
+            "events": []
+          }
+        ],
+        "overdue_unresolved": [],
+        "opening_included_events": [],
+        "disputed_events": [],
+        "complete": true,
+        "evidence_completeness": {
+          "supported": 4,
+          "required": 16,
+          "definition": "关键节点有确认说明的数量；不是信用评分，也不鉴定证据真伪"
+        },
+        "concentration": {
+          "top1": "0.625",
+          "top3": "0.875",
+          "basis": "合成订单金额，不是银行授信集中度"
+        },
+        "boundary": "资金缺口≠授信额度；日终余额不能保证日内逐笔支付；未落实安排不是可用现金。",
+        "discount_cost_fen": 0,
+        "fee_fen": 0,
+        "changed_event_ids": [
+          "O1-receivable"
+        ],
+        "base_version": 1,
+        "saved_as_baseline": false
+      }
+    },
+    {
+      "customer": "C1",
+      "days": 14,
+      "result": {
+        "evidence_type": "MODEL OUTPUT",
+        "actual_balance_fen": 20000000,
+        "peak_gap_fen": 49000000,
+        "minimum_date": "2027-01-23",
+        "minimum_drivers": [
+          "O4-materials"
+        ],
+        "negative_days": 52,
+        "closing_fen": 31000000,
+        "series": [
+          {
+            "date": "2027-01-02",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-03",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-04",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-05",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-06",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-07",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-08",
+            "balance_fen": -10000000,
+            "events": [
+              {
+                "event_id": "O1-materials",
+                "amount_fen": -30000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-09",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-10",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-11",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-12",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-13",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-14",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-15",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-16",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-17",
+            "balance_fen": -19000000,
+            "events": [
+              {
+                "event_id": "O2-materials",
+                "amount_fen": -9000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-18",
+            "balance_fen": -19000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-19",
+            "balance_fen": -19000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-20",
+            "balance_fen": -28000000,
+            "events": [
+              {
+                "event_id": "O3-materials",
+                "amount_fen": -9000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-21",
+            "balance_fen": -40000000,
+            "events": [
+              {
+                "event_id": "O1-production",
+                "amount_fen": -12000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-22",
+            "balance_fen": -40000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-23",
+            "balance_fen": -49000000,
+            "events": [
+              {
+                "event_id": "O4-materials",
+                "amount_fen": -9000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-24",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-25",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-26",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-27",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-28",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-29",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-30",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-31",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-01",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-02",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-03",
+            "balance_fen": -37000000,
+            "events": [
+              {
+                "event_id": "O2-receivable",
+                "amount_fen": 12000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-04",
+            "balance_fen": -37000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-05",
+            "balance_fen": -41000000,
+            "events": [
+              {
+                "event_id": "O1-shipment",
+                "amount_fen": -4000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-06",
+            "balance_fen": -41000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-07",
+            "balance_fen": -29000000,
+            "events": [
+              {
+                "event_id": "O3-receivable",
+                "amount_fen": 12000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-08",
+            "balance_fen": -29000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-09",
+            "balance_fen": -29000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-10",
+            "balance_fen": -29000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-11",
+            "balance_fen": -17000000,
+            "events": [
+              {
+                "event_id": "O4-receivable",
+                "amount_fen": 12000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-12",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-13",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-14",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-15",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-16",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-17",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-18",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-19",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-20",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-21",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-22",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-23",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-24",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-25",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-26",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-27",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-28",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-03-01",
+            "balance_fen": 31000000,
+            "events": [
+              {
+                "event_id": "O1-receivable",
+                "amount_fen": 48000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-03-02",
+            "balance_fen": 31000000,
+            "events": []
+          }
+        ],
+        "overdue_unresolved": [],
+        "opening_included_events": [],
+        "disputed_events": [],
+        "complete": true,
+        "evidence_completeness": {
+          "supported": 4,
+          "required": 16,
+          "definition": "关键节点有确认说明的数量；不是信用评分，也不鉴定证据真伪"
+        },
+        "concentration": {
+          "top1": "0.625",
+          "top3": "0.875",
+          "basis": "合成订单金额，不是银行授信集中度"
+        },
+        "boundary": "资金缺口≠授信额度；日终余额不能保证日内逐笔支付；未落实安排不是可用现金。",
+        "discount_cost_fen": 0,
+        "fee_fen": 0,
+        "changed_event_ids": [
+          "O1-receivable"
+        ],
+        "base_version": 1,
+        "saved_as_baseline": false
+      }
+    },
+    {
+      "customer": "ALL",
+      "days": 30,
+      "result": {
+        "evidence_type": "MODEL OUTPUT",
+        "actual_balance_fen": 20000000,
+        "peak_gap_fen": 53000000,
+        "minimum_date": "2027-02-05",
+        "minimum_drivers": [
+          "O1-shipment"
+        ],
+        "negative_days": 68,
+        "closing_fen": 31000000,
+        "series": [
+          {
+            "date": "2027-01-02",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-03",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-04",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-05",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-06",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-07",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-08",
+            "balance_fen": -10000000,
+            "events": [
+              {
+                "event_id": "O1-materials",
+                "amount_fen": -30000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-09",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-10",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-11",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-12",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-13",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-14",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-15",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-16",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-17",
+            "balance_fen": -19000000,
+            "events": [
+              {
+                "event_id": "O2-materials",
+                "amount_fen": -9000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-18",
+            "balance_fen": -19000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-19",
+            "balance_fen": -19000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-20",
+            "balance_fen": -28000000,
+            "events": [
+              {
+                "event_id": "O3-materials",
+                "amount_fen": -9000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-21",
+            "balance_fen": -40000000,
+            "events": [
+              {
+                "event_id": "O1-production",
+                "amount_fen": -12000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-22",
+            "balance_fen": -40000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-23",
+            "balance_fen": -49000000,
+            "events": [
+              {
+                "event_id": "O4-materials",
+                "amount_fen": -9000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-24",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-25",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-26",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-27",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-28",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-29",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-30",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-31",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-01",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-02",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-03",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-04",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-05",
+            "balance_fen": -53000000,
+            "events": [
+              {
+                "event_id": "O1-shipment",
+                "amount_fen": -4000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-06",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-07",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-08",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-09",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-10",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-11",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-12",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-13",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-14",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-15",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-16",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-17",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-18",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-19",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-20",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-21",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-22",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-23",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-24",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-25",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-26",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-27",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-28",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-03-01",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-03-02",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-03-03",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-03-04",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-03-05",
+            "balance_fen": -41000000,
+            "events": [
+              {
+                "event_id": "O2-receivable",
+                "amount_fen": 12000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-03-06",
+            "balance_fen": -41000000,
+            "events": []
+          },
+          {
+            "date": "2027-03-07",
+            "balance_fen": -41000000,
+            "events": []
+          },
+          {
+            "date": "2027-03-08",
+            "balance_fen": -41000000,
+            "events": []
+          },
+          {
+            "date": "2027-03-09",
+            "balance_fen": -29000000,
+            "events": [
+              {
+                "event_id": "O3-receivable",
+                "amount_fen": 12000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-03-10",
+            "balance_fen": -29000000,
+            "events": []
+          },
+          {
+            "date": "2027-03-11",
+            "balance_fen": -29000000,
+            "events": []
+          },
+          {
+            "date": "2027-03-12",
+            "balance_fen": -29000000,
+            "events": []
+          },
+          {
+            "date": "2027-03-13",
+            "balance_fen": -17000000,
+            "events": [
+              {
+                "event_id": "O4-receivable",
+                "amount_fen": 12000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-03-14",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-03-15",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-03-16",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-03-17",
+            "balance_fen": 31000000,
+            "events": [
+              {
+                "event_id": "O1-receivable",
+                "amount_fen": 48000000,
+                "status": "PROJECTED"
+              }
+            ]
+          }
+        ],
+        "overdue_unresolved": [],
+        "opening_included_events": [],
+        "disputed_events": [],
+        "complete": true,
+        "evidence_completeness": {
+          "supported": 4,
+          "required": 16,
+          "definition": "关键节点有确认说明的数量；不是信用评分，也不鉴定证据真伪"
+        },
+        "concentration": {
+          "top1": "0.625",
+          "top3": "0.875",
+          "basis": "合成订单金额，不是银行授信集中度"
+        },
+        "boundary": "资金缺口≠授信额度；日终余额不能保证日内逐笔支付；未落实安排不是可用现金。",
+        "discount_cost_fen": 0,
+        "fee_fen": 0,
+        "changed_event_ids": [
+          "O1-receivable",
+          "O2-receivable",
+          "O3-receivable",
+          "O4-receivable"
+        ],
+        "base_version": 1,
+        "saved_as_baseline": false
+      }
+    },
+    {
+      "customer": "C1",
+      "days": 7,
+      "result": {
+        "evidence_type": "MODEL OUTPUT",
+        "actual_balance_fen": 20000000,
+        "peak_gap_fen": 49000000,
+        "minimum_date": "2027-01-23",
+        "minimum_drivers": [
+          "O4-materials"
+        ],
+        "negative_days": 45,
+        "closing_fen": 31000000,
+        "series": [
+          {
+            "date": "2027-01-02",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-03",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-04",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-05",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-06",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-07",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-08",
+            "balance_fen": -10000000,
+            "events": [
+              {
+                "event_id": "O1-materials",
+                "amount_fen": -30000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-09",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-10",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-11",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-12",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-13",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-14",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-15",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-16",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-17",
+            "balance_fen": -19000000,
+            "events": [
+              {
+                "event_id": "O2-materials",
+                "amount_fen": -9000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-18",
+            "balance_fen": -19000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-19",
+            "balance_fen": -19000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-20",
+            "balance_fen": -28000000,
+            "events": [
+              {
+                "event_id": "O3-materials",
+                "amount_fen": -9000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-21",
+            "balance_fen": -40000000,
+            "events": [
+              {
+                "event_id": "O1-production",
+                "amount_fen": -12000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-22",
+            "balance_fen": -40000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-23",
+            "balance_fen": -49000000,
+            "events": [
+              {
+                "event_id": "O4-materials",
+                "amount_fen": -9000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-24",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-25",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-26",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-27",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-28",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-29",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-30",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-31",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-01",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-02",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-03",
+            "balance_fen": -37000000,
+            "events": [
+              {
+                "event_id": "O2-receivable",
+                "amount_fen": 12000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-04",
+            "balance_fen": -37000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-05",
+            "balance_fen": -41000000,
+            "events": [
+              {
+                "event_id": "O1-shipment",
+                "amount_fen": -4000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-06",
+            "balance_fen": -41000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-07",
+            "balance_fen": -29000000,
+            "events": [
+              {
+                "event_id": "O3-receivable",
+                "amount_fen": 12000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-08",
+            "balance_fen": -29000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-09",
+            "balance_fen": -29000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-10",
+            "balance_fen": -29000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-11",
+            "balance_fen": -17000000,
+            "events": [
+              {
+                "event_id": "O4-receivable",
+                "amount_fen": 12000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-12",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-13",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-14",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-15",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-16",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-17",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-18",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-19",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-20",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-21",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-22",
+            "balance_fen": 31000000,
+            "events": [
+              {
+                "event_id": "O1-receivable",
+                "amount_fen": 48000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-23",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-24",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-25",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-26",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-27",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-28",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-03-01",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-03-02",
+            "balance_fen": 31000000,
+            "events": []
+          }
+        ],
+        "overdue_unresolved": [],
+        "opening_included_events": [],
+        "disputed_events": [],
+        "complete": true,
+        "evidence_completeness": {
+          "supported": 4,
+          "required": 16,
+          "definition": "关键节点有确认说明的数量；不是信用评分，也不鉴定证据真伪"
+        },
+        "concentration": {
+          "top1": "0.625",
+          "top3": "0.875",
+          "basis": "合成订单金额，不是银行授信集中度"
+        },
+        "boundary": "资金缺口≠授信额度；日终余额不能保证日内逐笔支付；未落实安排不是可用现金。",
+        "discount_cost_fen": 0,
+        "fee_fen": 0,
+        "changed_event_ids": [
+          "O1-receivable"
+        ],
+        "base_version": 1,
+        "saved_as_baseline": false
+      }
+    },
+    {
+      "customer": "C2",
+      "days": 12,
+      "result": {
+        "evidence_type": "MODEL OUTPUT",
+        "actual_balance_fen": 20000000,
+        "peak_gap_fen": 53000000,
+        "minimum_date": "2027-02-05",
+        "minimum_drivers": [
+          "O1-shipment"
+        ],
+        "negative_days": 38,
+        "closing_fen": 31000000,
+        "series": [
+          {
+            "date": "2027-01-02",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-03",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-04",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-05",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-06",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-07",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-08",
+            "balance_fen": -10000000,
+            "events": [
+              {
+                "event_id": "O1-materials",
+                "amount_fen": -30000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-09",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-10",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-11",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-12",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-13",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-14",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-15",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-16",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-17",
+            "balance_fen": -19000000,
+            "events": [
+              {
+                "event_id": "O2-materials",
+                "amount_fen": -9000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-18",
+            "balance_fen": -19000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-19",
+            "balance_fen": -19000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-20",
+            "balance_fen": -28000000,
+            "events": [
+              {
+                "event_id": "O3-materials",
+                "amount_fen": -9000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-21",
+            "balance_fen": -40000000,
+            "events": [
+              {
+                "event_id": "O1-production",
+                "amount_fen": -12000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-22",
+            "balance_fen": -40000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-23",
+            "balance_fen": -49000000,
+            "events": [
+              {
+                "event_id": "O4-materials",
+                "amount_fen": -9000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-24",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-25",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-26",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-27",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-28",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-29",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-30",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-31",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-01",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-02",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-03",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-04",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-05",
+            "balance_fen": -53000000,
+            "events": [
+              {
+                "event_id": "O1-shipment",
+                "amount_fen": -4000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-06",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-07",
+            "balance_fen": -41000000,
+            "events": [
+              {
+                "event_id": "O3-receivable",
+                "amount_fen": 12000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-08",
+            "balance_fen": -41000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-09",
+            "balance_fen": -41000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-10",
+            "balance_fen": -41000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-11",
+            "balance_fen": -29000000,
+            "events": [
+              {
+                "event_id": "O4-receivable",
+                "amount_fen": 12000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-12",
+            "balance_fen": -29000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-13",
+            "balance_fen": -29000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-14",
+            "balance_fen": -29000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-15",
+            "balance_fen": 31000000,
+            "events": [
+              {
+                "event_id": "O1-receivable",
+                "amount_fen": 48000000,
+                "status": "PROJECTED"
+              },
+              {
+                "event_id": "O2-receivable",
+                "amount_fen": 12000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-16",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-17",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-18",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-19",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-20",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-21",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-22",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-23",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-24",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-25",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-26",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-27",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-28",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-03-01",
+            "balance_fen": 31000000,
+            "events": []
+          },
+          {
+            "date": "2027-03-02",
+            "balance_fen": 31000000,
+            "events": []
+          }
+        ],
+        "overdue_unresolved": [],
+        "opening_included_events": [],
+        "disputed_events": [],
+        "complete": true,
+        "evidence_completeness": {
+          "supported": 4,
+          "required": 16,
+          "definition": "关键节点有确认说明的数量；不是信用评分，也不鉴定证据真伪"
+        },
+        "concentration": {
+          "top1": "0.625",
+          "top3": "0.875",
+          "basis": "合成订单金额，不是银行授信集中度"
+        },
+        "boundary": "资金缺口≠授信额度；日终余额不能保证日内逐笔支付；未落实安排不是可用现金。",
+        "discount_cost_fen": 0,
+        "fee_fen": 0,
+        "changed_event_ids": [
+          "O2-receivable"
+        ],
+        "base_version": 1,
+        "saved_as_baseline": false
+      }
+    },
+    {
+      "customer": "ALL",
+      "days": 15,
+      "result": {
+        "evidence_type": "MODEL OUTPUT",
+        "actual_balance_fen": 20000000,
+        "peak_gap_fen": 53000000,
+        "minimum_date": "2027-02-05",
+        "minimum_drivers": [
+          "O1-shipment"
+        ],
+        "negative_days": 53,
+        "closing_fen": 31000000,
+        "series": [
+          {
+            "date": "2027-01-02",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-03",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-04",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-05",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-06",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-07",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-08",
+            "balance_fen": -10000000,
+            "events": [
+              {
+                "event_id": "O1-materials",
+                "amount_fen": -30000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-09",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-10",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-11",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-12",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-13",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-14",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-15",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-16",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-17",
+            "balance_fen": -19000000,
+            "events": [
+              {
+                "event_id": "O2-materials",
+                "amount_fen": -9000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-18",
+            "balance_fen": -19000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-19",
+            "balance_fen": -19000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-20",
+            "balance_fen": -28000000,
+            "events": [
+              {
+                "event_id": "O3-materials",
+                "amount_fen": -9000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-21",
+            "balance_fen": -40000000,
+            "events": [
+              {
+                "event_id": "O1-production",
+                "amount_fen": -12000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-22",
+            "balance_fen": -40000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-23",
+            "balance_fen": -49000000,
+            "events": [
+              {
+                "event_id": "O4-materials",
+                "amount_fen": -9000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-24",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-25",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-26",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-27",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-28",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-29",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-30",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-31",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-01",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-02",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-03",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-04",
+            "balance_fen": -49000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-05",
+            "balance_fen": -53000000,
+            "events": [
+              {
+                "event_id": "O1-shipment",
+                "amount_fen": -4000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-06",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-07",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-08",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-09",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-10",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-11",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-12",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-13",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-14",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-15",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-16",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-17",
+            "balance_fen": -53000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-18",
+            "balance_fen": -41000000,
+            "events": [
+              {
+                "event_id": "O2-receivable",
+                "amount_fen": 12000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-19",
+            "balance_fen": -41000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-20",
+            "balance_fen": -41000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-21",
+            "balance_fen": -41000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-22",
+            "balance_fen": -29000000,
+            "events": [
+              {
+                "event_id": "O3-receivable",
+                "amount_fen": 12000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-23",
+            "balance_fen": -29000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-24",
+            "balance_fen": -29000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-25",
+            "balance_fen": -29000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-26",
+            "balance_fen": -17000000,
+            "events": [
+              {
+                "event_id": "O4-receivable",
+                "amount_fen": 12000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-27",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-28",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-03-01",
+            "balance_fen": -17000000,
+            "events": []
+          },
+          {
+            "date": "2027-03-02",
+            "balance_fen": 31000000,
+            "events": [
+              {
+                "event_id": "O1-receivable",
+                "amount_fen": 48000000,
+                "status": "PROJECTED"
+              }
+            ]
+          }
+        ],
+        "overdue_unresolved": [],
+        "opening_included_events": [],
+        "disputed_events": [],
+        "complete": true,
+        "evidence_completeness": {
+          "supported": 4,
+          "required": 16,
+          "definition": "关键节点有确认说明的数量；不是信用评分，也不鉴定证据真伪"
+        },
+        "concentration": {
+          "top1": "0.625",
+          "top3": "0.875",
+          "basis": "合成订单金额，不是银行授信集中度"
+        },
+        "boundary": "资金缺口≠授信额度；日终余额不能保证日内逐笔支付；未落实安排不是可用现金。",
+        "discount_cost_fen": 0,
+        "fee_fen": 0,
+        "changed_event_ids": [
+          "O1-receivable",
+          "O2-receivable",
+          "O3-receivable",
+          "O4-receivable"
+        ],
+        "base_version": 1,
+        "saved_as_baseline": false
+      }
+    }
+  ],
+  "compare": [
+    [
+      {
+        "id": "COMPARE-A0",
+        "customer_id": "COMPARE",
+        "sector": "合成对照",
+        "action_type": "结算深化",
+        "service_hours": 10,
+        "expected_benefit_fen": 600000,
+        "implementation_cost_fen": 35000,
+        "benefit_fen": 565000,
+        "value_formula": "年交易笔数×每笔净服务边际150分×采用率40%",
+        "business_drivers": "annual_transaction_count=10000",
+        "stop_condition": "采用率不足覆盖成本或客户拒绝流水授权即停止",
+        "source_fact_ids": "ASSUMPTION",
+        "risk_confidence": "未校准：单价、采用率、成本、工时均为研究假设",
+        "evidence_requirement": "授权交易流水、可迁移笔数、真实每笔边际及接入报价",
+        "evidence_type": "ASSUMPTION"
+      },
+      {
+        "id": "COMPARE-A1",
+        "customer_id": "COMPARE",
+        "sector": "合成对照",
+        "action_type": "存款关系深化",
+        "service_hours": 5,
+        "expected_benefit_fen": 30000,
+        "implementation_cost_fen": 20000,
+        "benefit_fen": 10000,
+        "value_formula": "合成年均余额×可新增有效资金比例20%×假设资金边际1.5%",
+        "business_drivers": "deposit_fen=10000000",
+        "stop_condition": "新增有效资金不成立或净贡献非正即停止",
+        "source_fact_ids": "ASSUMPTION",
+        "risk_confidence": "未校准：单价、采用率、成本、工时均为研究假设",
+        "evidence_requirement": "年均余额、有效资金变化、付息与资金边际口径",
+        "evidence_type": "ASSUMPTION"
+      },
+      {
+        "id": "COMPARE-A2",
+        "customer_id": "COMPARE",
+        "sector": "合成对照",
+        "action_type": "代发/支付场景",
+        "service_hours": 15,
+        "expected_benefit_fen": 0,
+        "implementation_cost_fen": 65000,
+        "benefit_fen": -65000,
+        "value_formula": "可授权员工数×年人均服务边际2400分×采用率50%",
+        "business_drivers": "payroll_employee_count=0",
+        "stop_condition": "无企业/员工授权或活跃人数无法覆盖成本即停止",
+        "source_fact_ids": "ASSUMPTION",
+        "risk_confidence": "未校准：单价、采用率、成本、工时均为研究假设",
+        "evidence_requirement": "企业代发意愿、员工授权数量、活跃率及单位服务成本",
+        "evidence_type": "ASSUMPTION"
+      },
+      {
+        "id": "COMPARE-A3",
+        "customer_id": "COMPARE",
+        "sector": "合成对照",
+        "action_type": "供应链上下游连接",
+        "service_hours": 25,
+        "expected_benefit_fen": 0,
+        "implementation_cost_fen": 120000,
+        "benefit_fen": -120000,
+        "value_formula": "合格上下游连接数×年单连接服务边际80000分×采用率35%",
+        "business_drivers": "eligible_supply_chain_links=0",
+        "stop_condition": "对手方不配合、连接不合格或净贡献非正即停止",
+        "source_fact_ids": "ASSUMPTION",
+        "risk_confidence": "未校准：单价、采用率、成本、工时均为研究假设",
+        "evidence_requirement": "上下游双方授权、可核对合同、连接资格与非信贷服务需求",
+        "evidence_type": "ASSUMPTION"
+      },
+      {
+        "id": "COMPARE-A4",
+        "customer_id": "COMPARE",
+        "sector": "合成对照",
+        "action_type": "客户经营维护",
+        "service_hours": 5,
+        "expected_benefit_fen": 0,
+        "implementation_cost_fen": 15000,
+        "benefit_fen": -15000,
+        "value_formula": "既有年关系贡献×情景流失比例×可避免流失比例40%",
+        "business_drivers": "relationship_contribution_fen=0; attrition_scenario=0.5",
+        "stop_condition": "无可干预原因或保留贡献不覆盖维护成本即停止",
+        "source_fact_ids": "ASSUMPTION",
+        "risk_confidence": "未校准：单价、采用率、成本、工时均为研究假设",
+        "evidence_requirement": "既有关系贡献扣成本口径、流失原因及维护干预可行性",
+        "evidence_type": "ASSUMPTION"
+      }
+    ],
+    [
+      {
+        "id": "COMPARE-A0",
+        "customer_id": "COMPARE",
+        "sector": "合成对照",
+        "action_type": "结算深化",
+        "service_hours": 10,
+        "expected_benefit_fen": 0,
+        "implementation_cost_fen": 35000,
+        "benefit_fen": -35000,
+        "value_formula": "年交易笔数×每笔净服务边际150分×采用率40%",
+        "business_drivers": "annual_transaction_count=0",
+        "stop_condition": "采用率不足覆盖成本或客户拒绝流水授权即停止",
+        "source_fact_ids": "ASSUMPTION",
+        "risk_confidence": "未校准：单价、采用率、成本、工时均为研究假设",
+        "evidence_requirement": "授权交易流水、可迁移笔数、真实每笔边际及接入报价",
+        "evidence_type": "ASSUMPTION"
+      },
+      {
+        "id": "COMPARE-A1",
+        "customer_id": "COMPARE",
+        "sector": "合成对照",
+        "action_type": "存款关系深化",
+        "service_hours": 5,
+        "expected_benefit_fen": 30000,
+        "implementation_cost_fen": 20000,
+        "benefit_fen": 10000,
+        "value_formula": "合成年均余额×可新增有效资金比例20%×假设资金边际1.5%",
+        "business_drivers": "deposit_fen=10000000",
+        "stop_condition": "新增有效资金不成立或净贡献非正即停止",
+        "source_fact_ids": "ASSUMPTION",
+        "risk_confidence": "未校准：单价、采用率、成本、工时均为研究假设",
+        "evidence_requirement": "年均余额、有效资金变化、付息与资金边际口径",
+        "evidence_type": "ASSUMPTION"
+      },
+      {
+        "id": "COMPARE-A2",
+        "customer_id": "COMPARE",
+        "sector": "合成对照",
+        "action_type": "代发/支付场景",
+        "service_hours": 15,
+        "expected_benefit_fen": 600000,
+        "implementation_cost_fen": 65000,
+        "benefit_fen": 535000,
+        "value_formula": "可授权员工数×年人均服务边际2400分×采用率50%",
+        "business_drivers": "payroll_employee_count=500",
+        "stop_condition": "无企业/员工授权或活跃人数无法覆盖成本即停止",
+        "source_fact_ids": "ASSUMPTION",
+        "risk_confidence": "未校准：单价、采用率、成本、工时均为研究假设",
+        "evidence_requirement": "企业代发意愿、员工授权数量、活跃率及单位服务成本",
+        "evidence_type": "ASSUMPTION"
+      },
+      {
+        "id": "COMPARE-A3",
+        "customer_id": "COMPARE",
+        "sector": "合成对照",
+        "action_type": "供应链上下游连接",
+        "service_hours": 25,
+        "expected_benefit_fen": 0,
+        "implementation_cost_fen": 120000,
+        "benefit_fen": -120000,
+        "value_formula": "合格上下游连接数×年单连接服务边际80000分×采用率35%",
+        "business_drivers": "eligible_supply_chain_links=0",
+        "stop_condition": "对手方不配合、连接不合格或净贡献非正即停止",
+        "source_fact_ids": "ASSUMPTION",
+        "risk_confidence": "未校准：单价、采用率、成本、工时均为研究假设",
+        "evidence_requirement": "上下游双方授权、可核对合同、连接资格与非信贷服务需求",
+        "evidence_type": "ASSUMPTION"
+      },
+      {
+        "id": "COMPARE-A4",
+        "customer_id": "COMPARE",
+        "sector": "合成对照",
+        "action_type": "客户经营维护",
+        "service_hours": 5,
+        "expected_benefit_fen": 0,
+        "implementation_cost_fen": 15000,
+        "benefit_fen": -15000,
+        "value_formula": "既有年关系贡献×情景流失比例×可避免流失比例40%",
+        "business_drivers": "relationship_contribution_fen=0; attrition_scenario=0.5",
+        "stop_condition": "无可干预原因或保留贡献不覆盖维护成本即停止",
+        "source_fact_ids": "ASSUMPTION",
+        "risk_confidence": "未校准：单价、采用率、成本、工时均为研究假设",
+        "evidence_requirement": "既有关系贡献扣成本口径、流失原因及维护干预可行性",
+        "evidence_type": "ASSUMPTION"
+      }
+    ],
+    [
+      {
+        "id": "COMPARE-A0",
+        "customer_id": "COMPARE",
+        "sector": "合成对照",
+        "action_type": "结算深化",
+        "service_hours": 10,
+        "expected_benefit_fen": 0,
+        "implementation_cost_fen": 35000,
+        "benefit_fen": -35000,
+        "value_formula": "年交易笔数×每笔净服务边际150分×采用率40%",
+        "business_drivers": "annual_transaction_count=0",
+        "stop_condition": "采用率不足覆盖成本或客户拒绝流水授权即停止",
+        "source_fact_ids": "ASSUMPTION",
+        "risk_confidence": "未校准：单价、采用率、成本、工时均为研究假设",
+        "evidence_requirement": "授权交易流水、可迁移笔数、真实每笔边际及接入报价",
+        "evidence_type": "ASSUMPTION"
+      },
+      {
+        "id": "COMPARE-A1",
+        "customer_id": "COMPARE",
+        "sector": "合成对照",
+        "action_type": "存款关系深化",
+        "service_hours": 5,
+        "expected_benefit_fen": 30000,
+        "implementation_cost_fen": 20000,
+        "benefit_fen": 10000,
+        "value_formula": "合成年均余额×可新增有效资金比例20%×假设资金边际1.5%",
+        "business_drivers": "deposit_fen=10000000",
+        "stop_condition": "新增有效资金不成立或净贡献非正即停止",
+        "source_fact_ids": "ASSUMPTION",
+        "risk_confidence": "未校准：单价、采用率、成本、工时均为研究假设",
+        "evidence_requirement": "年均余额、有效资金变化、付息与资金边际口径",
+        "evidence_type": "ASSUMPTION"
+      },
+      {
+        "id": "COMPARE-A2",
+        "customer_id": "COMPARE",
+        "sector": "合成对照",
+        "action_type": "代发/支付场景",
+        "service_hours": 15,
+        "expected_benefit_fen": 0,
+        "implementation_cost_fen": 65000,
+        "benefit_fen": -65000,
+        "value_formula": "可授权员工数×年人均服务边际2400分×采用率50%",
+        "business_drivers": "payroll_employee_count=0",
+        "stop_condition": "无企业/员工授权或活跃人数无法覆盖成本即停止",
+        "source_fact_ids": "ASSUMPTION",
+        "risk_confidence": "未校准：单价、采用率、成本、工时均为研究假设",
+        "evidence_requirement": "企业代发意愿、员工授权数量、活跃率及单位服务成本",
+        "evidence_type": "ASSUMPTION"
+      },
+      {
+        "id": "COMPARE-A3",
+        "customer_id": "COMPARE",
+        "sector": "合成对照",
+        "action_type": "供应链上下游连接",
+        "service_hours": 25,
+        "expected_benefit_fen": 840000,
+        "implementation_cost_fen": 120000,
+        "benefit_fen": 720000,
+        "value_formula": "合格上下游连接数×年单连接服务边际80000分×采用率35%",
+        "business_drivers": "eligible_supply_chain_links=30",
+        "stop_condition": "对手方不配合、连接不合格或净贡献非正即停止",
+        "source_fact_ids": "ASSUMPTION",
+        "risk_confidence": "未校准：单价、采用率、成本、工时均为研究假设",
+        "evidence_requirement": "上下游双方授权、可核对合同、连接资格与非信贷服务需求",
+        "evidence_type": "ASSUMPTION"
+      },
+      {
+        "id": "COMPARE-A4",
+        "customer_id": "COMPARE",
+        "sector": "合成对照",
+        "action_type": "客户经营维护",
+        "service_hours": 5,
+        "expected_benefit_fen": 0,
+        "implementation_cost_fen": 15000,
+        "benefit_fen": -15000,
+        "value_formula": "既有年关系贡献×情景流失比例×可避免流失比例40%",
+        "business_drivers": "relationship_contribution_fen=0; attrition_scenario=0.5",
+        "stop_condition": "无可干预原因或保留贡献不覆盖维护成本即停止",
+        "source_fact_ids": "ASSUMPTION",
+        "risk_confidence": "未校准：单价、采用率、成本、工时均为研究假设",
+        "evidence_requirement": "既有关系贡献扣成本口径、流失原因及维护干预可行性",
+        "evidence_type": "ASSUMPTION"
+      }
+    ],
+    [
+      {
+        "id": "COMPARE-A0",
+        "customer_id": "COMPARE",
+        "sector": "合成对照",
+        "action_type": "结算深化",
+        "service_hours": 10,
+        "expected_benefit_fen": 0,
+        "implementation_cost_fen": 35000,
+        "benefit_fen": -35000,
+        "value_formula": "年交易笔数×每笔净服务边际150分×采用率40%",
+        "business_drivers": "annual_transaction_count=0",
+        "stop_condition": "采用率不足覆盖成本或客户拒绝流水授权即停止",
+        "source_fact_ids": "ASSUMPTION",
+        "risk_confidence": "未校准：单价、采用率、成本、工时均为研究假设",
+        "evidence_requirement": "授权交易流水、可迁移笔数、真实每笔边际及接入报价",
+        "evidence_type": "ASSUMPTION"
+      },
+      {
+        "id": "COMPARE-A1",
+        "customer_id": "COMPARE",
+        "sector": "合成对照",
+        "action_type": "存款关系深化",
+        "service_hours": 5,
+        "expected_benefit_fen": 30000,
+        "implementation_cost_fen": 20000,
+        "benefit_fen": 10000,
+        "value_formula": "合成年均余额×可新增有效资金比例20%×假设资金边际1.5%",
+        "business_drivers": "deposit_fen=10000000",
+        "stop_condition": "新增有效资金不成立或净贡献非正即停止",
+        "source_fact_ids": "ASSUMPTION",
+        "risk_confidence": "未校准：单价、采用率、成本、工时均为研究假设",
+        "evidence_requirement": "年均余额、有效资金变化、付息与资金边际口径",
+        "evidence_type": "ASSUMPTION"
+      },
+      {
+        "id": "COMPARE-A2",
+        "customer_id": "COMPARE",
+        "sector": "合成对照",
+        "action_type": "代发/支付场景",
+        "service_hours": 15,
+        "expected_benefit_fen": 0,
+        "implementation_cost_fen": 65000,
+        "benefit_fen": -65000,
+        "value_formula": "可授权员工数×年人均服务边际2400分×采用率50%",
+        "business_drivers": "payroll_employee_count=0",
+        "stop_condition": "无企业/员工授权或活跃人数无法覆盖成本即停止",
+        "source_fact_ids": "ASSUMPTION",
+        "risk_confidence": "未校准：单价、采用率、成本、工时均为研究假设",
+        "evidence_requirement": "企业代发意愿、员工授权数量、活跃率及单位服务成本",
+        "evidence_type": "ASSUMPTION"
+      },
+      {
+        "id": "COMPARE-A3",
+        "customer_id": "COMPARE",
+        "sector": "合成对照",
+        "action_type": "供应链上下游连接",
+        "service_hours": 25,
+        "expected_benefit_fen": 0,
+        "implementation_cost_fen": 120000,
+        "benefit_fen": -120000,
+        "value_formula": "合格上下游连接数×年单连接服务边际80000分×采用率35%",
+        "business_drivers": "eligible_supply_chain_links=0",
+        "stop_condition": "对手方不配合、连接不合格或净贡献非正即停止",
+        "source_fact_ids": "ASSUMPTION",
+        "risk_confidence": "未校准：单价、采用率、成本、工时均为研究假设",
+        "evidence_requirement": "上下游双方授权、可核对合同、连接资格与非信贷服务需求",
+        "evidence_type": "ASSUMPTION"
+      },
+      {
+        "id": "COMPARE-A4",
+        "customer_id": "COMPARE",
+        "sector": "合成对照",
+        "action_type": "客户经营维护",
+        "service_hours": 5,
+        "expected_benefit_fen": 600000,
+        "implementation_cost_fen": 15000,
+        "benefit_fen": 585000,
+        "value_formula": "既有年关系贡献×情景流失比例×可避免流失比例40%",
+        "business_drivers": "relationship_contribution_fen=3000000; attrition_scenario=0.5",
+        "stop_condition": "无可干预原因或保留贡献不覆盖维护成本即停止",
+        "source_fact_ids": "ASSUMPTION",
+        "risk_confidence": "未校准：单价、采用率、成本、工时均为研究假设",
+        "evidence_requirement": "既有关系贡献扣成本口径、流失原因及维护干预可行性",
+        "evidence_type": "ASSUMPTION"
+      }
+    ]
+  ],
+  "cost_scenarios": [
+    {
+      "parameters": {
+        "customer_id": "C1",
+        "delay_days": 7,
+        "discount": "0.025",
+        "fee_fen": 12345,
+        "advance_fen": 1234567
+      },
+      "result": {
+        "evidence_type": "MODEL OUTPUT",
+        "actual_balance_fen": 20000000,
+        "peak_gap_fen": 47777778,
+        "minimum_date": "2027-01-23",
+        "minimum_drivers": [
+          "O4-materials"
+        ],
+        "negative_days": 45,
+        "closing_fen": 29818519,
+        "series": [
+          {
+            "date": "2027-01-02",
+            "balance_fen": 21222222,
+            "events": [
+              {
+                "event_id": "SCENARIO-ADVANCE-O1-receivable",
+                "amount_fen": 1234567,
+                "status": "PROJECTED"
+              },
+              {
+                "event_id": "SCENARIO-FEE",
+                "amount_fen": -12345,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-03",
+            "balance_fen": 21222222,
+            "events": []
+          },
+          {
+            "date": "2027-01-04",
+            "balance_fen": 21222222,
+            "events": []
+          },
+          {
+            "date": "2027-01-05",
+            "balance_fen": 21222222,
+            "events": []
+          },
+          {
+            "date": "2027-01-06",
+            "balance_fen": 21222222,
+            "events": []
+          },
+          {
+            "date": "2027-01-07",
+            "balance_fen": 21222222,
+            "events": []
+          },
+          {
+            "date": "2027-01-08",
+            "balance_fen": -8777778,
+            "events": [
+              {
+                "event_id": "O1-materials",
+                "amount_fen": -30000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-09",
+            "balance_fen": -8777778,
+            "events": []
+          },
+          {
+            "date": "2027-01-10",
+            "balance_fen": -8777778,
+            "events": []
+          },
+          {
+            "date": "2027-01-11",
+            "balance_fen": -8777778,
+            "events": []
+          },
+          {
+            "date": "2027-01-12",
+            "balance_fen": -8777778,
+            "events": []
+          },
+          {
+            "date": "2027-01-13",
+            "balance_fen": -8777778,
+            "events": []
+          },
+          {
+            "date": "2027-01-14",
+            "balance_fen": -8777778,
+            "events": []
+          },
+          {
+            "date": "2027-01-15",
+            "balance_fen": -8777778,
+            "events": []
+          },
+          {
+            "date": "2027-01-16",
+            "balance_fen": -8777778,
+            "events": []
+          },
+          {
+            "date": "2027-01-17",
+            "balance_fen": -17777778,
+            "events": [
+              {
+                "event_id": "O2-materials",
+                "amount_fen": -9000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-18",
+            "balance_fen": -17777778,
+            "events": []
+          },
+          {
+            "date": "2027-01-19",
+            "balance_fen": -17777778,
+            "events": []
+          },
+          {
+            "date": "2027-01-20",
+            "balance_fen": -26777778,
+            "events": [
+              {
+                "event_id": "O3-materials",
+                "amount_fen": -9000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-21",
+            "balance_fen": -38777778,
+            "events": [
+              {
+                "event_id": "O1-production",
+                "amount_fen": -12000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-22",
+            "balance_fen": -38777778,
+            "events": []
+          },
+          {
+            "date": "2027-01-23",
+            "balance_fen": -47777778,
+            "events": [
+              {
+                "event_id": "O4-materials",
+                "amount_fen": -9000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-24",
+            "balance_fen": -47777778,
+            "events": []
+          },
+          {
+            "date": "2027-01-25",
+            "balance_fen": -47777778,
+            "events": []
+          },
+          {
+            "date": "2027-01-26",
+            "balance_fen": -47777778,
+            "events": []
+          },
+          {
+            "date": "2027-01-27",
+            "balance_fen": -47777778,
+            "events": []
+          },
+          {
+            "date": "2027-01-28",
+            "balance_fen": -47777778,
+            "events": []
+          },
+          {
+            "date": "2027-01-29",
+            "balance_fen": -47777778,
+            "events": []
+          },
+          {
+            "date": "2027-01-30",
+            "balance_fen": -47777778,
+            "events": []
+          },
+          {
+            "date": "2027-01-31",
+            "balance_fen": -47777778,
+            "events": []
+          },
+          {
+            "date": "2027-02-01",
+            "balance_fen": -47777778,
+            "events": []
+          },
+          {
+            "date": "2027-02-02",
+            "balance_fen": -47777778,
+            "events": []
+          },
+          {
+            "date": "2027-02-03",
+            "balance_fen": -35777778,
+            "events": [
+              {
+                "event_id": "O2-receivable",
+                "amount_fen": 12000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-04",
+            "balance_fen": -35777778,
+            "events": []
+          },
+          {
+            "date": "2027-02-05",
+            "balance_fen": -39777778,
+            "events": [
+              {
+                "event_id": "O1-shipment",
+                "amount_fen": -4000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-06",
+            "balance_fen": -39777778,
+            "events": []
+          },
+          {
+            "date": "2027-02-07",
+            "balance_fen": -27777778,
+            "events": [
+              {
+                "event_id": "O3-receivable",
+                "amount_fen": 12000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-08",
+            "balance_fen": -27777778,
+            "events": []
+          },
+          {
+            "date": "2027-02-09",
+            "balance_fen": -27777778,
+            "events": []
+          },
+          {
+            "date": "2027-02-10",
+            "balance_fen": -27777778,
+            "events": []
+          },
+          {
+            "date": "2027-02-11",
+            "balance_fen": -15777778,
+            "events": [
+              {
+                "event_id": "O4-receivable",
+                "amount_fen": 12000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-12",
+            "balance_fen": -15777778,
+            "events": []
+          },
+          {
+            "date": "2027-02-13",
+            "balance_fen": -15777778,
+            "events": []
+          },
+          {
+            "date": "2027-02-14",
+            "balance_fen": -15777778,
+            "events": []
+          },
+          {
+            "date": "2027-02-15",
+            "balance_fen": -15777778,
+            "events": []
+          },
+          {
+            "date": "2027-02-16",
+            "balance_fen": -15777778,
+            "events": []
+          },
+          {
+            "date": "2027-02-17",
+            "balance_fen": -15777778,
+            "events": []
+          },
+          {
+            "date": "2027-02-18",
+            "balance_fen": -15777778,
+            "events": []
+          },
+          {
+            "date": "2027-02-19",
+            "balance_fen": -15777778,
+            "events": []
+          },
+          {
+            "date": "2027-02-20",
+            "balance_fen": -15777778,
+            "events": []
+          },
+          {
+            "date": "2027-02-21",
+            "balance_fen": -15777778,
+            "events": []
+          },
+          {
+            "date": "2027-02-22",
+            "balance_fen": 29818519,
+            "events": [
+              {
+                "event_id": "O1-receivable",
+                "amount_fen": 45596297,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-23",
+            "balance_fen": 29818519,
+            "events": []
+          },
+          {
+            "date": "2027-02-24",
+            "balance_fen": 29818519,
+            "events": []
+          },
+          {
+            "date": "2027-02-25",
+            "balance_fen": 29818519,
+            "events": []
+          },
+          {
+            "date": "2027-02-26",
+            "balance_fen": 29818519,
+            "events": []
+          },
+          {
+            "date": "2027-02-27",
+            "balance_fen": 29818519,
+            "events": []
+          },
+          {
+            "date": "2027-02-28",
+            "balance_fen": 29818519,
+            "events": []
+          },
+          {
+            "date": "2027-03-01",
+            "balance_fen": 29818519,
+            "events": []
+          },
+          {
+            "date": "2027-03-02",
+            "balance_fen": 29818519,
+            "events": []
+          }
+        ],
+        "overdue_unresolved": [],
+        "opening_included_events": [],
+        "disputed_events": [],
+        "complete": true,
+        "evidence_completeness": {
+          "supported": 4,
+          "required": 16,
+          "definition": "关键节点有确认说明的数量；不是信用评分，也不鉴定证据真伪"
+        },
+        "concentration": {
+          "top1": "0.625",
+          "top3": "0.875",
+          "basis": "合成订单金额，不是银行授信集中度"
+        },
+        "boundary": "资金缺口≠授信额度；日终余额不能保证日内逐笔支付；未落实安排不是可用现金。",
+        "discount_cost_fen": 1169136,
+        "fee_fen": 12345,
+        "changed_event_ids": [
+          "O1-receivable"
+        ],
+        "base_version": 1,
+        "saved_as_baseline": false
+      }
+    },
+    {
+      "parameters": {
+        "customer_id": "ALL",
+        "delay_days": 15,
+        "discount": "0.1",
+        "fee_fen": 10000000,
+        "advance_fen": 10000000
+      },
+      "result": {
+        "evidence_type": "MODEL OUTPUT",
+        "actual_balance_fen": 20000000,
+        "peak_gap_fen": 23000000,
+        "minimum_date": "2027-02-05",
+        "minimum_drivers": [
+          "O1-shipment"
+        ],
+        "negative_days": 40,
+        "closing_fen": 16600000,
+        "series": [
+          {
+            "date": "2027-01-02",
+            "balance_fen": 50000000,
+            "events": [
+              {
+                "event_id": "SCENARIO-ADVANCE-O1-receivable",
+                "amount_fen": 10000000,
+                "status": "PROJECTED"
+              },
+              {
+                "event_id": "SCENARIO-ADVANCE-O2-receivable",
+                "amount_fen": 10000000,
+                "status": "PROJECTED"
+              },
+              {
+                "event_id": "SCENARIO-ADVANCE-O3-receivable",
+                "amount_fen": 10000000,
+                "status": "PROJECTED"
+              },
+              {
+                "event_id": "SCENARIO-ADVANCE-O4-receivable",
+                "amount_fen": 10000000,
+                "status": "PROJECTED"
+              },
+              {
+                "event_id": "SCENARIO-FEE",
+                "amount_fen": -10000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-03",
+            "balance_fen": 50000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-04",
+            "balance_fen": 50000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-05",
+            "balance_fen": 50000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-06",
+            "balance_fen": 50000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-07",
+            "balance_fen": 50000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-08",
+            "balance_fen": 20000000,
+            "events": [
+              {
+                "event_id": "O1-materials",
+                "amount_fen": -30000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-09",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-10",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-11",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-12",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-13",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-14",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-15",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-16",
+            "balance_fen": 20000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-17",
+            "balance_fen": 11000000,
+            "events": [
+              {
+                "event_id": "O2-materials",
+                "amount_fen": -9000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-18",
+            "balance_fen": 11000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-19",
+            "balance_fen": 11000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-20",
+            "balance_fen": 2000000,
+            "events": [
+              {
+                "event_id": "O3-materials",
+                "amount_fen": -9000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-21",
+            "balance_fen": -10000000,
+            "events": [
+              {
+                "event_id": "O1-production",
+                "amount_fen": -12000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-22",
+            "balance_fen": -10000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-23",
+            "balance_fen": -19000000,
+            "events": [
+              {
+                "event_id": "O4-materials",
+                "amount_fen": -9000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-01-24",
+            "balance_fen": -19000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-25",
+            "balance_fen": -19000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-26",
+            "balance_fen": -19000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-27",
+            "balance_fen": -19000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-28",
+            "balance_fen": -19000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-29",
+            "balance_fen": -19000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-30",
+            "balance_fen": -19000000,
+            "events": []
+          },
+          {
+            "date": "2027-01-31",
+            "balance_fen": -19000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-01",
+            "balance_fen": -19000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-02",
+            "balance_fen": -19000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-03",
+            "balance_fen": -19000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-04",
+            "balance_fen": -19000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-05",
+            "balance_fen": -23000000,
+            "events": [
+              {
+                "event_id": "O1-shipment",
+                "amount_fen": -4000000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-06",
+            "balance_fen": -23000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-07",
+            "balance_fen": -23000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-08",
+            "balance_fen": -23000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-09",
+            "balance_fen": -23000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-10",
+            "balance_fen": -23000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-11",
+            "balance_fen": -23000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-12",
+            "balance_fen": -23000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-13",
+            "balance_fen": -23000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-14",
+            "balance_fen": -23000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-15",
+            "balance_fen": -23000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-16",
+            "balance_fen": -23000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-17",
+            "balance_fen": -23000000,
+            "events": []
+          },
+          {
+            "date": "2027-02-18",
+            "balance_fen": -21200000,
+            "events": [
+              {
+                "event_id": "O2-receivable",
+                "amount_fen": 1800000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-19",
+            "balance_fen": -21200000,
+            "events": []
+          },
+          {
+            "date": "2027-02-20",
+            "balance_fen": -21200000,
+            "events": []
+          },
+          {
+            "date": "2027-02-21",
+            "balance_fen": -21200000,
+            "events": []
+          },
+          {
+            "date": "2027-02-22",
+            "balance_fen": -19400000,
+            "events": [
+              {
+                "event_id": "O3-receivable",
+                "amount_fen": 1800000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-23",
+            "balance_fen": -19400000,
+            "events": []
+          },
+          {
+            "date": "2027-02-24",
+            "balance_fen": -19400000,
+            "events": []
+          },
+          {
+            "date": "2027-02-25",
+            "balance_fen": -19400000,
+            "events": []
+          },
+          {
+            "date": "2027-02-26",
+            "balance_fen": -17600000,
+            "events": [
+              {
+                "event_id": "O4-receivable",
+                "amount_fen": 1800000,
+                "status": "PROJECTED"
+              }
+            ]
+          },
+          {
+            "date": "2027-02-27",
+            "balance_fen": -17600000,
+            "events": []
+          },
+          {
+            "date": "2027-02-28",
+            "balance_fen": -17600000,
+            "events": []
+          },
+          {
+            "date": "2027-03-01",
+            "balance_fen": -17600000,
+            "events": []
+          },
+          {
+            "date": "2027-03-02",
+            "balance_fen": 16600000,
+            "events": [
+              {
+                "event_id": "O1-receivable",
+                "amount_fen": 34200000,
+                "status": "PROJECTED"
+              }
+            ]
+          }
+        ],
+        "overdue_unresolved": [],
+        "opening_included_events": [],
+        "disputed_events": [],
+        "complete": true,
+        "evidence_completeness": {
+          "supported": 4,
+          "required": 16,
+          "definition": "关键节点有确认说明的数量；不是信用评分，也不鉴定证据真伪"
+        },
+        "concentration": {
+          "top1": "0.625",
+          "top3": "0.875",
+          "basis": "合成订单金额，不是银行授信集中度"
+        },
+        "boundary": "资金缺口≠授信额度；日终余额不能保证日内逐笔支付；未落实安排不是可用现金。",
+        "discount_cost_fen": 4400000,
+        "fee_fen": 10000000,
+        "changed_event_ids": [
+          "O1-receivable",
+          "O2-receivable",
+          "O3-receivable",
+          "O4-receivable"
+        ],
+        "base_version": 1,
+        "saved_as_baseline": false
+      }
+    }
+  ],
+  "contract": {
+    "O1-purchase_order": "2027-01-01",
+    "O1-prepayment": "2027-01-01",
+    "O1-materials": "2027-01-08",
+    "O1-production": "2027-01-21",
+    "O1-shipment": "2027-02-05",
+    "O1-acceptance": "2027-03-10",
+    "O1-invoice": "2027-03-12",
+    "O1-receivable": "2027-03-19",
+    "O2-purchase_order": "2027-01-01",
+    "O2-materials": "2027-01-17",
+    "O2-receivable": "2027-02-03",
+    "O3-purchase_order": "2027-01-01",
+    "O3-materials": "2027-01-20",
+    "O3-receivable": "2027-02-07",
+    "O4-purchase_order": "2027-01-01",
+    "O4-materials": "2027-01-23",
+    "O4-receivable": "2027-02-11"
+  },
+  "reconcile_initial": {
+    "version": 2,
+    "evidence_type": "SYNTHETIC",
+    "opening_fen": 8000000,
+    "opening_date": "2027-01-01",
+    "as_of": "2027-01-02",
+    "necessary_expenses_complete": true,
+    "orders": [
+      {
+        "order_id": "O1",
+        "customer_id": "C1",
+        "name": "合成核心客户A",
+        "order_amount_fen": 60000000,
+        "payment_terms": {
+          "type": "AFTER_INVOICE",
+          "acceptance_event_id": "O1-acceptance",
+          "invoice_event_id": "O1-invoice",
+          "receivable_event_id": "O1-receivable",
+          "invoice_after_acceptance_days": 2,
+          "payment_after_invoice_days": 7
+        }
+      },
+      {
+        "order_id": "O2",
+        "customer_id": "C2",
+        "name": "合成客户2",
+        "order_amount_fen": 12000000,
+        "payment_terms": {
+          "type": "FIXED_DATE"
+        }
+      },
+      {
+        "order_id": "O3",
+        "customer_id": "C3",
+        "name": "合成客户3",
+        "order_amount_fen": 12000000,
+        "payment_terms": {
+          "type": "FIXED_DATE"
+        }
+      },
+      {
+        "order_id": "O4",
+        "customer_id": "C4",
+        "name": "合成客户4",
+        "order_amount_fen": 12000000,
+        "payment_terms": {
+          "type": "FIXED_DATE"
+        }
+      }
+    ],
+    "events": [
+      {
+        "event_id": "O1-purchase_order",
+        "order_id": "O1",
+        "event_type": "purchase_order",
+        "planned_date": "2027-01-01",
+        "confirmed_date": "2027-01-01",
+        "posted_date": null,
+        "amount_fen": 0,
+        "status": "CONFIRMED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "合成验收凭证，仅用于演示",
+        "last_updated_at": "2026-10-13T00:00:00+00:00"
+      },
+      {
+        "event_id": "O1-prepayment",
+        "order_id": "O1",
+        "event_type": "prepayment",
+        "planned_date": "2027-01-01",
+        "confirmed_date": "2027-01-01",
+        "posted_date": "2027-01-01",
+        "amount_fen": 12000000,
+        "status": "POSTED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "合成验收凭证，仅用于演示",
+        "last_updated_at": "2026-10-13T00:00:00+00:00"
+      },
+      {
+        "event_id": "O1-materials",
+        "order_id": "O1",
+        "event_type": "materials",
+        "planned_date": "2027-01-08",
+        "confirmed_date": "2027-01-01",
+        "posted_date": null,
+        "amount_fen": -30000000,
+        "status": "CONFIRMED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "合成凭证",
+        "last_updated_at": "2026-10-14T14:51:33.372626+00:00"
+      },
+      {
+        "event_id": "O1-production",
+        "order_id": "O1",
+        "event_type": "production",
+        "planned_date": "2027-01-21",
+        "confirmed_date": null,
+        "posted_date": null,
+        "amount_fen": -12000000,
+        "status": "PROJECTED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "",
+        "last_updated_at": "2026-10-13T00:00:00+00:00"
+      },
+      {
+        "event_id": "O1-shipment",
+        "order_id": "O1",
+        "event_type": "shipment",
+        "planned_date": "2027-02-05",
+        "confirmed_date": null,
+        "posted_date": null,
+        "amount_fen": -4000000,
+        "status": "PROJECTED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "",
+        "last_updated_at": "2026-10-13T00:00:00+00:00"
+      },
+      {
+        "event_id": "O1-acceptance",
+        "order_id": "O1",
+        "event_type": "acceptance",
+        "planned_date": "2027-02-06",
+        "confirmed_date": null,
+        "posted_date": null,
+        "amount_fen": 0,
+        "status": "PROJECTED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "",
+        "last_updated_at": "2026-10-13T00:00:00+00:00"
+      },
+      {
+        "event_id": "O1-invoice",
+        "order_id": "O1",
+        "event_type": "invoice",
+        "planned_date": "2027-02-08",
+        "confirmed_date": null,
+        "posted_date": null,
+        "amount_fen": 0,
+        "status": "PROJECTED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "",
+        "last_updated_at": "2026-10-13T00:00:00+00:00",
+        "prediction_confidence": "CONDITIONAL_UNVERIFIED"
+      },
+      {
+        "event_id": "O1-receivable",
+        "order_id": "O1",
+        "event_type": "receivable",
+        "planned_date": "2027-02-15",
+        "confirmed_date": null,
+        "posted_date": null,
+        "amount_fen": 48000000,
+        "status": "PROJECTED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "",
+        "last_updated_at": "2026-10-13T00:00:00+00:00",
+        "prediction_confidence": "CONDITIONAL_UNVERIFIED"
+      },
+      {
+        "event_id": "O2-purchase_order",
+        "order_id": "O2",
+        "event_type": "purchase_order",
+        "planned_date": "2027-01-01",
+        "confirmed_date": "2027-01-01",
+        "posted_date": null,
+        "amount_fen": 0,
+        "status": "CONFIRMED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "合成验收凭证，仅用于演示",
+        "last_updated_at": "2026-10-13T00:00:00+00:00"
+      },
+      {
+        "event_id": "O2-materials",
+        "order_id": "O2",
+        "event_type": "materials",
+        "planned_date": "2027-01-17",
+        "confirmed_date": null,
+        "posted_date": null,
+        "amount_fen": -9000000,
+        "status": "PROJECTED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "",
+        "last_updated_at": "2026-10-13T00:00:00+00:00"
+      },
+      {
+        "event_id": "O2-receivable",
+        "order_id": "O2",
+        "event_type": "receivable",
+        "planned_date": "2027-02-03",
+        "confirmed_date": null,
+        "posted_date": null,
+        "amount_fen": 12000000,
+        "status": "PROJECTED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "",
+        "last_updated_at": "2026-10-13T00:00:00+00:00"
+      },
+      {
+        "event_id": "O3-purchase_order",
+        "order_id": "O3",
+        "event_type": "purchase_order",
+        "planned_date": "2027-01-01",
+        "confirmed_date": "2027-01-01",
+        "posted_date": null,
+        "amount_fen": 0,
+        "status": "CONFIRMED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "合成验收凭证，仅用于演示",
+        "last_updated_at": "2026-10-13T00:00:00+00:00"
+      },
+      {
+        "event_id": "O3-materials",
+        "order_id": "O3",
+        "event_type": "materials",
+        "planned_date": "2027-01-20",
+        "confirmed_date": null,
+        "posted_date": null,
+        "amount_fen": -9000000,
+        "status": "PROJECTED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "",
+        "last_updated_at": "2026-10-13T00:00:00+00:00"
+      },
+      {
+        "event_id": "O3-receivable",
+        "order_id": "O3",
+        "event_type": "receivable",
+        "planned_date": "2027-02-07",
+        "confirmed_date": null,
+        "posted_date": null,
+        "amount_fen": 12000000,
+        "status": "PROJECTED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "",
+        "last_updated_at": "2026-10-13T00:00:00+00:00"
+      },
+      {
+        "event_id": "O4-purchase_order",
+        "order_id": "O4",
+        "event_type": "purchase_order",
+        "planned_date": "2027-01-01",
+        "confirmed_date": "2027-01-01",
+        "posted_date": null,
+        "amount_fen": 0,
+        "status": "CONFIRMED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "合成验收凭证，仅用于演示",
+        "last_updated_at": "2026-10-13T00:00:00+00:00"
+      },
+      {
+        "event_id": "O4-materials",
+        "order_id": "O4",
+        "event_type": "materials",
+        "planned_date": "2027-01-23",
+        "confirmed_date": null,
+        "posted_date": null,
+        "amount_fen": -9000000,
+        "status": "PROJECTED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "",
+        "last_updated_at": "2026-10-13T00:00:00+00:00"
+      },
+      {
+        "event_id": "O4-receivable",
+        "order_id": "O4",
+        "event_type": "receivable",
+        "planned_date": "2027-02-11",
+        "confirmed_date": null,
+        "posted_date": null,
+        "amount_fen": 12000000,
+        "status": "PROJECTED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "",
+        "last_updated_at": "2026-10-13T00:00:00+00:00"
+      }
+    ],
+    "history": [
+      {
+        "version": 2,
+        "event_id": "O1-materials",
+        "operation": "confirm",
+        "reason": "合成付款确认",
+        "before": {
+          "event_id": "O1-materials",
+          "order_id": "O1",
+          "event_type": "materials",
+          "planned_date": "2027-01-08",
+          "confirmed_date": null,
+          "posted_date": null,
+          "amount_fen": -30000000,
+          "status": "PROJECTED",
+          "source": "SYNTHETIC / 合成合同情景",
+          "evidence": "",
+          "last_updated_at": "2026-10-13T00:00:00+00:00"
+        },
+        "after": {
+          "event_id": "O1-materials",
+          "order_id": "O1",
+          "event_type": "materials",
+          "planned_date": "2027-01-08",
+          "confirmed_date": "2027-01-01",
+          "posted_date": null,
+          "amount_fen": -30000000,
+          "status": "CONFIRMED",
+          "source": "SYNTHETIC / 合成合同情景",
+          "evidence": "合成凭证",
+          "last_updated_at": "2026-10-14T14:51:33.372626+00:00"
+        },
+        "derived_changes": [],
+        "payment_terms_before": [
+          {
+            "type": "AFTER_INVOICE",
+            "acceptance_event_id": "O1-acceptance",
+            "invoice_event_id": "O1-invoice",
+            "receivable_event_id": "O1-receivable",
+            "invoice_after_acceptance_days": 2,
+            "payment_after_invoice_days": 7
+          },
+          {
+            "type": "FIXED_DATE"
+          },
+          {
+            "type": "FIXED_DATE"
+          },
+          {
+            "type": "FIXED_DATE"
+          }
+        ],
+        "payment_terms_after": [
+          {
+            "type": "AFTER_INVOICE",
+            "acceptance_event_id": "O1-acceptance",
+            "invoice_event_id": "O1-invoice",
+            "receivable_event_id": "O1-receivable",
+            "invoice_after_acceptance_days": 2,
+            "payment_after_invoice_days": 7
+          },
+          {
+            "type": "FIXED_DATE"
+          },
+          {
+            "type": "FIXED_DATE"
+          },
+          {
+            "type": "FIXED_DATE"
+          }
+        ],
+        "at": "2026-10-14T14:51:33.372626+00:00"
+      }
+    ],
+    "assumptions": [
+      "仅支持录入的合同情景，不代表汽摩行业普遍账期。",
+      "期初余额为2027-01-01 00:00；核对边界2027-01-02 00:00，边界不含。",
+      "合成凭证不是真实客户证据；事实余额是本实验的POSTED账本口径。"
+    ]
+  },
+  "reconcile": {
+    "version": 3,
+    "evidence_type": "SYNTHETIC",
+    "opening_fen": 8000000,
+    "opening_date": "2027-01-01",
+    "as_of": "2027-01-09",
+    "necessary_expenses_complete": true,
+    "orders": [
+      {
+        "order_id": "O1",
+        "customer_id": "C1",
+        "name": "合成核心客户A",
+        "order_amount_fen": 60000000,
+        "payment_terms": {
+          "type": "AFTER_INVOICE",
+          "acceptance_event_id": "O1-acceptance",
+          "invoice_event_id": "O1-invoice",
+          "receivable_event_id": "O1-receivable",
+          "invoice_after_acceptance_days": 2,
+          "payment_after_invoice_days": 7
+        }
+      },
+      {
+        "order_id": "O2",
+        "customer_id": "C2",
+        "name": "合成客户2",
+        "order_amount_fen": 12000000,
+        "payment_terms": {
+          "type": "FIXED_DATE"
+        }
+      },
+      {
+        "order_id": "O3",
+        "customer_id": "C3",
+        "name": "合成客户3",
+        "order_amount_fen": 12000000,
+        "payment_terms": {
+          "type": "FIXED_DATE"
+        }
+      },
+      {
+        "order_id": "O4",
+        "customer_id": "C4",
+        "name": "合成客户4",
+        "order_amount_fen": 12000000,
+        "payment_terms": {
+          "type": "FIXED_DATE"
+        }
+      }
+    ],
+    "events": [
+      {
+        "event_id": "O1-purchase_order",
+        "order_id": "O1",
+        "event_type": "purchase_order",
+        "planned_date": "2027-01-01",
+        "confirmed_date": "2027-01-01",
+        "posted_date": null,
+        "amount_fen": 0,
+        "status": "CONFIRMED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "合成验收凭证，仅用于演示",
+        "last_updated_at": "2026-10-13T00:00:00+00:00"
+      },
+      {
+        "event_id": "O1-prepayment",
+        "order_id": "O1",
+        "event_type": "prepayment",
+        "planned_date": "2027-01-01",
+        "confirmed_date": "2027-01-01",
+        "posted_date": "2027-01-01",
+        "amount_fen": 12000000,
+        "status": "POSTED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "合成验收凭证，仅用于演示",
+        "last_updated_at": "2026-10-13T00:00:00+00:00"
+      },
+      {
+        "event_id": "O1-materials",
+        "order_id": "O1",
+        "event_type": "materials",
+        "planned_date": "2027-01-08",
+        "confirmed_date": "2027-01-01",
+        "posted_date": "2027-01-08",
+        "amount_fen": -30000000,
+        "status": "POSTED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "合成付款凭证",
+        "last_updated_at": "2026-10-14T14:51:33.373062+00:00"
+      },
+      {
+        "event_id": "O1-production",
+        "order_id": "O1",
+        "event_type": "production",
+        "planned_date": "2027-01-21",
+        "confirmed_date": null,
+        "posted_date": null,
+        "amount_fen": -12000000,
+        "status": "PROJECTED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "",
+        "last_updated_at": "2026-10-13T00:00:00+00:00"
+      },
+      {
+        "event_id": "O1-shipment",
+        "order_id": "O1",
+        "event_type": "shipment",
+        "planned_date": "2027-02-05",
+        "confirmed_date": null,
+        "posted_date": null,
+        "amount_fen": -4000000,
+        "status": "PROJECTED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "",
+        "last_updated_at": "2026-10-13T00:00:00+00:00"
+      },
+      {
+        "event_id": "O1-acceptance",
+        "order_id": "O1",
+        "event_type": "acceptance",
+        "planned_date": "2027-02-06",
+        "confirmed_date": null,
+        "posted_date": null,
+        "amount_fen": 0,
+        "status": "PROJECTED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "",
+        "last_updated_at": "2026-10-13T00:00:00+00:00"
+      },
+      {
+        "event_id": "O1-invoice",
+        "order_id": "O1",
+        "event_type": "invoice",
+        "planned_date": "2027-02-08",
+        "confirmed_date": null,
+        "posted_date": null,
+        "amount_fen": 0,
+        "status": "PROJECTED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "",
+        "last_updated_at": "2026-10-13T00:00:00+00:00",
+        "prediction_confidence": "CONDITIONAL_UNVERIFIED"
+      },
+      {
+        "event_id": "O1-receivable",
+        "order_id": "O1",
+        "event_type": "receivable",
+        "planned_date": "2027-02-15",
+        "confirmed_date": null,
+        "posted_date": null,
+        "amount_fen": 48000000,
+        "status": "PROJECTED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "",
+        "last_updated_at": "2026-10-13T00:00:00+00:00",
+        "prediction_confidence": "CONDITIONAL_UNVERIFIED"
+      },
+      {
+        "event_id": "O2-purchase_order",
+        "order_id": "O2",
+        "event_type": "purchase_order",
+        "planned_date": "2027-01-01",
+        "confirmed_date": "2027-01-01",
+        "posted_date": null,
+        "amount_fen": 0,
+        "status": "CONFIRMED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "合成验收凭证，仅用于演示",
+        "last_updated_at": "2026-10-13T00:00:00+00:00"
+      },
+      {
+        "event_id": "O2-materials",
+        "order_id": "O2",
+        "event_type": "materials",
+        "planned_date": "2027-01-17",
+        "confirmed_date": null,
+        "posted_date": null,
+        "amount_fen": -9000000,
+        "status": "PROJECTED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "",
+        "last_updated_at": "2026-10-13T00:00:00+00:00"
+      },
+      {
+        "event_id": "O2-receivable",
+        "order_id": "O2",
+        "event_type": "receivable",
+        "planned_date": "2027-02-03",
+        "confirmed_date": null,
+        "posted_date": null,
+        "amount_fen": 12000000,
+        "status": "PROJECTED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "",
+        "last_updated_at": "2026-10-13T00:00:00+00:00"
+      },
+      {
+        "event_id": "O3-purchase_order",
+        "order_id": "O3",
+        "event_type": "purchase_order",
+        "planned_date": "2027-01-01",
+        "confirmed_date": "2027-01-01",
+        "posted_date": null,
+        "amount_fen": 0,
+        "status": "CONFIRMED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "合成验收凭证，仅用于演示",
+        "last_updated_at": "2026-10-13T00:00:00+00:00"
+      },
+      {
+        "event_id": "O3-materials",
+        "order_id": "O3",
+        "event_type": "materials",
+        "planned_date": "2027-01-20",
+        "confirmed_date": null,
+        "posted_date": null,
+        "amount_fen": -9000000,
+        "status": "PROJECTED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "",
+        "last_updated_at": "2026-10-13T00:00:00+00:00"
+      },
+      {
+        "event_id": "O3-receivable",
+        "order_id": "O3",
+        "event_type": "receivable",
+        "planned_date": "2027-02-07",
+        "confirmed_date": null,
+        "posted_date": null,
+        "amount_fen": 12000000,
+        "status": "PROJECTED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "",
+        "last_updated_at": "2026-10-13T00:00:00+00:00"
+      },
+      {
+        "event_id": "O4-purchase_order",
+        "order_id": "O4",
+        "event_type": "purchase_order",
+        "planned_date": "2027-01-01",
+        "confirmed_date": "2027-01-01",
+        "posted_date": null,
+        "amount_fen": 0,
+        "status": "CONFIRMED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "合成验收凭证，仅用于演示",
+        "last_updated_at": "2026-10-13T00:00:00+00:00"
+      },
+      {
+        "event_id": "O4-materials",
+        "order_id": "O4",
+        "event_type": "materials",
+        "planned_date": "2027-01-23",
+        "confirmed_date": null,
+        "posted_date": null,
+        "amount_fen": -9000000,
+        "status": "PROJECTED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "",
+        "last_updated_at": "2026-10-13T00:00:00+00:00"
+      },
+      {
+        "event_id": "O4-receivable",
+        "order_id": "O4",
+        "event_type": "receivable",
+        "planned_date": "2027-02-11",
+        "confirmed_date": null,
+        "posted_date": null,
+        "amount_fen": 12000000,
+        "status": "PROJECTED",
+        "source": "SYNTHETIC / 合成合同情景",
+        "evidence": "",
+        "last_updated_at": "2026-10-13T00:00:00+00:00"
+      }
+    ],
+    "history": [
+      {
+        "version": 2,
+        "event_id": "O1-materials",
+        "operation": "confirm",
+        "reason": "合成付款确认",
+        "before": {
+          "event_id": "O1-materials",
+          "order_id": "O1",
+          "event_type": "materials",
+          "planned_date": "2027-01-08",
+          "confirmed_date": null,
+          "posted_date": null,
+          "amount_fen": -30000000,
+          "status": "PROJECTED",
+          "source": "SYNTHETIC / 合成合同情景",
+          "evidence": "",
+          "last_updated_at": "2026-10-13T00:00:00+00:00"
+        },
+        "after": {
+          "event_id": "O1-materials",
+          "order_id": "O1",
+          "event_type": "materials",
+          "planned_date": "2027-01-08",
+          "confirmed_date": "2027-01-01",
+          "posted_date": null,
+          "amount_fen": -30000000,
+          "status": "CONFIRMED",
+          "source": "SYNTHETIC / 合成合同情景",
+          "evidence": "合成凭证",
+          "last_updated_at": "2026-10-14T14:51:33.372626+00:00"
+        },
+        "derived_changes": [],
+        "payment_terms_before": [
+          {
+            "type": "AFTER_INVOICE",
+            "acceptance_event_id": "O1-acceptance",
+            "invoice_event_id": "O1-invoice",
+            "receivable_event_id": "O1-receivable",
+            "invoice_after_acceptance_days": 2,
+            "payment_after_invoice_days": 7
+          },
+          {
+            "type": "FIXED_DATE"
+          },
+          {
+            "type": "FIXED_DATE"
+          },
+          {
+            "type": "FIXED_DATE"
+          }
+        ],
+        "payment_terms_after": [
+          {
+            "type": "AFTER_INVOICE",
+            "acceptance_event_id": "O1-acceptance",
+            "invoice_event_id": "O1-invoice",
+            "receivable_event_id": "O1-receivable",
+            "invoice_after_acceptance_days": 2,
+            "payment_after_invoice_days": 7
+          },
+          {
+            "type": "FIXED_DATE"
+          },
+          {
+            "type": "FIXED_DATE"
+          },
+          {
+            "type": "FIXED_DATE"
+          }
+        ],
+        "at": "2026-10-14T14:51:33.372626+00:00"
+      },
+      {
+        "version": 3,
+        "operation": "record_actuals_and_reconcile",
+        "reason": "合成付款核对",
+        "at": "2026-10-14T14:51:33.373371+00:00",
+        "before": {
+          "as_of": "2027-01-02",
+          "events": [
+            {
+              "event_id": "O1-materials",
+              "order_id": "O1",
+              "event_type": "materials",
+              "planned_date": "2027-01-08",
+              "confirmed_date": "2027-01-01",
+              "posted_date": null,
+              "amount_fen": -30000000,
+              "status": "CONFIRMED",
+              "source": "SYNTHETIC / 合成合同情景",
+              "evidence": "合成凭证",
+              "last_updated_at": "2026-10-14T14:51:33.372626+00:00"
+            }
+          ]
+        },
+        "after": {
+          "as_of": "2027-01-09",
+          "events": [
+            {
+              "event_id": "O1-materials",
+              "order_id": "O1",
+              "event_type": "materials",
+              "planned_date": "2027-01-08",
+              "confirmed_date": "2027-01-01",
+              "posted_date": "2027-01-08",
+              "amount_fen": -30000000,
+              "status": "POSTED",
+              "source": "SYNTHETIC / 合成合同情景",
+              "evidence": "合成付款凭证",
+              "last_updated_at": "2026-10-14T14:51:33.373062+00:00"
+            }
+          ],
+          "observed_balance_fen": -10000000
+        }
+      }
+    ],
+    "assumptions": [
+      "仅支持录入的合同情景，不代表汽摩行业普遍账期。",
+      "期初余额为2027-01-01 00:00；核对边界2027-01-02 00:00，边界不含。",
+      "合成凭证不是真实客户证据；事实余额是本实验的POSTED账本口径。"
+    ]
+  }
+}

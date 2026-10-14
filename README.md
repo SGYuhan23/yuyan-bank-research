@@ -1,13 +1,15 @@
 # 渝研｜银行经营分析与产品研究
 
-一个围绕县域客户经营和制造业供应商资金管理的个人研究与产品项目。
+一个围绕县域客户经营和制造业供应商资金管理的个人项目。
 
 我尝试回答两个问题：
 
 - 客户经理时间有限时，哪些客户机会更值得先验证？
 - 企业已经有订单，为什么过程中仍然会出现现金缺口？
 
-**[查看项目展示](https://sgyuhan23.github.io/yuyan-bank-research/)** · **[查看完整案例](DEMO.md)**
+**[打开 Agent Demo](https://sgyuhan23.github.io/yuyan-bank-research/)** · **[阅读完整案例](DEMO.md)**
+
+Agent Demo 可以在浏览器中完成参数确认、经营资源计算、回款延期测算、合同日期联动和余额核对；无需登录。参数由浏览器规则识别，计算实时执行；真实模型调用以脱敏记录回放，不冒充实时 AI。
 
 | 县域客户经营：时间有限，先跟进谁？ | 供应商资金管理：有订单，为什么还缺钱？ |
 |---|---|
@@ -29,7 +31,7 @@
 
 ## 界面预览
 
-[完整图文案例](DEMO.md) 展示任务选择、合同条件和余额核对。截图来自真实本地页面，GitHub Pages 是静态介绍，无需账号。
+[完整图文案例](DEMO.md) 展示任务选择、合同条件和余额核对。截图来自真实本地页面，GitHub Pages 默认打开可操作的 Agent Demo，项目介绍保留真实本地截图。
 
 可选：[概览录屏](docs/media/overview.mp4) · [客户经营录屏](docs/media/fuling.mp4) · [供应商与 AI 录屏](docs/media/supplier-ai.mp4)。录屏保留了当时的界面文字，业务计算与图文案例一致。
 
@@ -53,12 +55,14 @@
 
 完整目录见 [Repository Structure](docs/PUBLIC_REPO_TREE.md)。
 
+[浏览器 Demo 实现与一致性测试](site/README.md)
+
 ## 本地运行
 
-[复算与本地运行说明](REPRODUCIBILITY.md) 提供数据构建、测试、报告生成与完整平台启动步骤。独立复算不需要模型密钥或数据库；完整交互平台在本地运行。线上仅提供静态展示页，不提供后端服务。
+[复算与本地运行说明](REPRODUCIBILITY.md) 提供数据构建、测试、报告生成与完整平台启动步骤。独立复算不需要模型密钥或数据库；完整交互平台在本地运行。线上 Demo 的计算在浏览器执行，不提供后端服务。
 
 ## 技术栈
 
-Python 负责确定性计算与接口，PostgreSQL 保存账本，Next.js / React 提供本地交互界面。Agent 扩展基于 DeerFlow / LangGraph，可接入 Qwen。静态展示使用原生 HTML / CSS。
+Python 负责确定性计算与接口，PostgreSQL 保存账本，Next.js / React 提供本地交互界面。Agent 扩展基于 DeerFlow / LangGraph，可接入 Qwen。浏览器 Demo 使用原生 HTML / CSS / JavaScript，JS 计算与 Python 动态结果通过一致性测试。
 
 [架构与责任划分](ARCHITECTURE.md) · [第三方说明](third_party/ATTRIBUTION.md) · [DeerFlow 许可证](agent-platform/LICENSE)
