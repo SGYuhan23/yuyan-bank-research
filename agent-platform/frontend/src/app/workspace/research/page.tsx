@@ -386,7 +386,7 @@ export default function Research() {
         <header className="flex flex-wrap items-start justify-between gap-4">
           <div>
             <p className="text-muted-foreground text-xs tracking-widest">
-              渝研 / 重庆银行经营研究 · V2
+              渝研｜银行经营分析
             </p>
             <h1 className="mt-3 text-3xl font-semibold">
               {tab === "fuling"
@@ -555,7 +555,12 @@ export default function Research() {
               <h2 className="text-xl font-semibold">
                 02 / 有限资源，先做哪些任务？
               </h2>
-              <p className="my-3 text-sm leading-7">{data.fuling.disclosure}</p>
+              <p className="my-3 text-sm leading-7">
+                {data.fuling.disclosure.replace(
+                  "重庆农商行或涪陵",
+                  "任何银行或地区",
+                )}
+              </p>
               <label className="block text-sm">
                 资源与集中度情景
                 <select
@@ -1322,8 +1327,8 @@ export default function Research() {
               Experimental Research / 扩展研究
             </h2>
             <p className="my-4 leading-8">
-              V2 简化为：年平均存款余额 ×（有效资金系数 × 假设 FTP − 存款利率）−
-              服务成本。FTP
+              简化计算为：年平均存款余额 ×（有效资金系数 × 假设 FTP −
+              存款利率）− 服务成本。FTP
               仅作用于折算有效资金，利息按全部平均余额计提；没有已承诺资产资金缺口，因此不再额外扣替代资金成本。
             </p>
             <p className="my-4">
@@ -1333,7 +1338,7 @@ export default function Research() {
               {data
                 ? (Number(data.deposit.base.break_even_rate) * 100).toFixed(1)
                 : "—"}
-              %。这是模型假设，不是重庆农商行内部FTP，不用于客户定价或真实ALM。
+              %。这是模型假设，不代表任何银行内部 FTP，不用于客户定价或真实ALM。
             </p>
           </section>
         )}

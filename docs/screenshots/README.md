@@ -1,6 +1,6 @@
 # 截图清单
 
-11 张 PNG 均来自真实 Final Release 本机页面，只使用研究区域原生截图，未伪造 UI。所有图片均在 [DEMO.md](../../DEMO.md) 引用。采集脚本见 [record_portfolio.cjs](../../scripts/record_portfolio.cjs)。
+11 张 PNG 均来自真实本机页面，只使用研究区域原生截图，未伪造 UI。主要案例图片在 [DEMO.md](../../DEMO.md) 与静态展示页引用。采集脚本见 [record_portfolio.cjs](../../scripts/record_portfolio.cjs)。
 
 | 文件 | 展示内容 |
 |---|---|

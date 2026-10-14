@@ -23,7 +23,7 @@ def paragraph(c,text,x,y,width,st=style):
 
 def frame(c,report,n):
  c.setFillColor(HexColor('#fbfaf7'));c.rect(0,0,W,H,fill=1,stroke=0)
- c.setFillColor(MUTED);c.setFont('CN',8);c.drawString(M,H-28,'渝研 / 银行经营研究');c.drawRightString(W-M,H-28,'2026.10.14 · Final P0')
+ c.setFillColor(MUTED);c.setFont('CN',8);c.drawString(M,H-28,'渝研 / 银行经营研究');c.drawRightString(W-M,H-28,'2026.10.14')
  c.setStrokeColor(HexColor('#d8e3dd'));c.line(M,43,W-M,43)
  c.setFont('CN',7.5);c.drawString(M,28,'独立作品 · 合成情景 · 非银行内部数据或经营承诺');c.drawRightString(W-M,28,f'{n:02d}')
 
@@ -86,13 +86,13 @@ for report in REPORTS:
  frame(c,report,len(report['pages'])+2);y=paragraph(c,'来源、复算与披露',M,H-72,CW,ParagraphStyle('h',parent=style,fontSize=22,leading=31))
  for source in DATA['sources']:
   if source['id'] not in report['sources']:continue
-  y=paragraph(c,f'[{source["id"]}] {source["title"]} / {source["period"]}',M,y,CW)
+  y=paragraph(c,f'[{source["id"]}] {source["title"].replace('重庆农商行', '公开银行资料：')} / {source["period"]}',M,y,CW)
   y=paragraph(c,f'发布：{source["published"]}；核查：{source["accessed"]}。{source["status"]}。{source["use"]}',M,y,CW,small)
   # Human-readable active link without spilling long encoded URLs into the margin.
   c.setFillColor(ACCENT);c.setFont('CN',9);c.drawString(M,y,'打开官方来源 →');c.linkURL(source['url'],(M,y-3,M+140,y+12),relative=0);y-=33
-  md += [f'[{source["id"]}] [{source["title"]}]({source["url"]})',source['status'],'']
+  md += [f'[{source["id"]}] [{source["title"].replace('重庆农商行', '公开银行资料：')}]({source["url"]})',source['status'],'']
  y=paragraph(c,'计算与来源附件：研究页提供输入数据、CSV、模型源码和运行说明。所有情景结果由确定性代码生成。Agent用于资料检索与审阅辅助；本报告没有虚构访谈、客户成效或银行系统接入。',M,y,CW)
- y=paragraph(c,'版本：'+DATA['version']+'。研究条件变化后须重新计算。本报告不构成授信、投资或对外业务承诺。',M,y,CW,small)
+ y=paragraph(c,'研究条件变化后须重新计算。本报告不构成授信、投资或对外业务承诺。',M,y,CW,small)
  if y<58:raise ValueError('Sources page overflow')
  c.save();shutil.copy2(path,WEB/filename);(OUT/(report['id']+'.md')).write_text('\n\n'.join(md),encoding='utf-8')
  report['pdf']='/research/'+filename;report['page_count']=len(report['pages'])+2

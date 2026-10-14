@@ -44,6 +44,6 @@ flowchart LR
 
 ## GitHub 展示与本地执行
 
-GitHub 原生 Markdown、真实截图、GIF、MP4 与报告构成公开入口，不需要在线后端。录屏使用本地 Next.js + Gateway + PostgreSQL；登录账号和运行数据不公开。只有自行运行完整平台时才需要配置数据库与模型服务。
+GitHub Pages 静态介绍与 GitHub 文档、真实截图和报告构成公开入口，不需要在线后端。录屏使用本地 Next.js + Gateway + PostgreSQL；登录账号和运行数据不公开。只有自行运行完整平台时才需要配置数据库与模型服务。
 
 当前公开仓库包含完整功能源码与依赖锁文件，不含已安装依赖、私有运行状态或生产部署承诺。早期 `yuqi-core` 未被当前银行案例或平台 import，已从公开包移除；旧 dotenv 默认查找路径可通过显式环境变量或 YUQI_MODEL_ENV_FILE 覆盖，不需要该旧目录。

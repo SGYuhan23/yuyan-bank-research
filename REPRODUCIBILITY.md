@@ -15,7 +15,7 @@ python -m pytest agent-ops/test_fuling_v2.py agent-ops/test_supplier_ledger.py a
 python scripts/portfolio_verify.py
 ```
 
-默认只生成 Final P0，输出 `agent-platform/frontend/public/research/v2.json` 与当前 CSV；不生成旧 V1 公共产物。语义测试用 LangChain 消息容器，无真实模型调用。校验脚本检查冻结的核心文件、数据与 PDF 哈希以及完整公开清单。若主动重新生成媒体或 PDF，清单应随新产物重建，不可伪称字节不变。
+默认生成案例数据，输出 `agent-platform/frontend/public/research/v2.json` 与当前 CSV。语义测试用 LangChain 消息容器，无真实模型调用。校验脚本检查核心文件、数据与 PDF 哈希以及完整公开清单。若主动重新生成媒体或 PDF，清单应随新产物重建，不可伪称字节不变。
 
 ## 2. 必要预期结果
 
@@ -30,7 +30,7 @@ python scripts/portfolio_verify.py
 
 这些都是合成 / ASSUMPTION 下的研究输出，不是实际经营成果。
 
-**Legacy Note：** `models.py::supplier_case` 及对应 `test_research_models.py` Supplier assertions 是历史 V1 单订单 deterministic regression reference；当前 Final Supplier Case 以 `supplier_ledger.py`、`test_supplier_ledger.py` 与 `v2.json` 为准。26万元不是当前 Final Case 结果。
+**Legacy Note：** `models.py::supplier_case` 及对应 `test_research_models.py` Supplier assertions 是早期单订单确定性回归参考；展示中的 Supplier Case 以 `supplier_ledger.py`、`test_supplier_ledger.py` 与 `v2.json` 为准。26万元不是展示案例 结果。
 
 ## 3. 报告构建
 
@@ -41,7 +41,7 @@ python -m pip install -r agent-ops/research/render-requirements.txt
 python agent-ops/research/build_reports.py
 ```
 
-输出在 `output/pdf/`，展示 PDF 同步到 `agent-platform/frontend/public/research/`。仓库 `docs/reports/` 是冻结版原 PDF 副本；正常复算不必重新渲染报告。预期页数为 9 / 8 / 4，重建后应检查所有页面，字体和 PDF 元数据可能导致二进制哈希变化。
+输出在 `output/pdf/`，展示 PDF 同步到 `agent-platform/frontend/public/research/`。仓库 `docs/reports/` 是展示 PDF 副本；正常复算不必重新渲染报告。预期页数为 9 / 8 / 4，重建后应检查所有页面，字体和 PDF 元数据可能导致二进制哈希变化。
 
 ## 4. 完整本地平台（可选）
 
@@ -67,7 +67,7 @@ cd agent-platform/frontend
 node node_modules/next/dist/bin/next dev --hostname 127.0.0.1 --port 3000
 ```
 
-浏览器访问 `http://127.0.0.1:3000/workspace/research`，按首次初始化流程创建自己的账号。不要使用作者的 acceptance account（未公开）。模型使用外部服务并可能收费；独立复算不需要密钥。需要 Agent 沙箱文件工具时，按 `agent-ops/README.md` 准备既有沙箱镜像。上游依赖完整安装和首次初始化因本机条件而异，本次验证的是现有本地环境，不宣称新机器一键生产启动。
+浏览器访问 `http://127.0.0.1:3000/workspace/research`，按首次初始化流程创建自己的账号。请自行创建本地账号。模型使用外部服务并可能收费；独立复算不需要密钥。需要 Agent 沙箱文件工具时，按 `agent-ops/README.md` 准备既有沙箱镜像。上游依赖完整安装和首次初始化因本机条件而异，本次验证的是现有本地环境，不宣称新机器一键生产启动。
 
 ```sh
 # 完整 workspace 测试；AGENT_DATABASE_URL 显式提供真实测试数据库
@@ -84,4 +84,4 @@ mkdir -p tmp
 gitleaks dir . --redact --ignore-gitleaks-allow --report-format json --report-path tmp/secret-scan.json
 ```
 
-上游安全测试故意含虚构密钥样例，会触发扫描；必须核查告警，不按文件夹整体豁免。已执行结果见 [扫描报告](docs/SECRET_SCAN_REPORT.md)。本次交付不包含旧 Git 历史；首次初始化新仓库前先核对清单与忽略规则。未执行 GitHub 上传或线上部署。
+上游安全测试故意含虚构密钥样例，会触发扫描；必须核查告警，不按文件夹整体豁免。已执行结果见 [扫描报告](docs/SECRET_SCAN_REPORT.md)。本仓库为新建公开仓库，不包含旧开发仓库 Git 历史；未部署在线后端服务。GitHub Pages 仅展示静态介绍、截图和报告，不运行模型或业务接口。

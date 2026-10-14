@@ -1,6 +1,6 @@
-# Public repository tree
+# Repository Structure
 
-公开交付目录为 `output/public-portfolio/` 的内容；上传时使用该目录，不要上传作者工作区。没有嵌套 `.git` 或旧历史；前后端、扩展、模型、全部测试及构建源码保留原路径。
+项目保留前后端、Agent 扩展、业务模型、测试和构建脚本的原目录结构。静态展示页位于 `site/`，本地运行说明见仓库根目录。
 
 ```text
 渝研/
@@ -10,12 +10,14 @@
 ├── REPRODUCIBILITY.md               # 独立复算与完整本地运行
 ├── DISCLAIMER.md
 ├── PUBLIC_RELEASE_INVENTORY.json    # 全文件大小与 SHA-256（不自引用）
+├── site/                          # 六部分静态展示 HTML / CSS
+├── .github/workflows/pages.yml     # 静态 GitHub Pages 发布
 ├── .gitignore
 ├── third_party/ATTRIBUTION.md
 ├── docs/
 │   ├── screenshots/                # 11 张真实截图与清单
 │   ├── media/                      # 3 段 MP4、12 秒 GIF、录屏脚本说明
-│   ├── reports/                    # 三份冻结原 PDF
+│   ├── reports/                    # 三份研究报告
 │   ├── FROZEN_CORE_SHA256.json
 │   └── SECRET_SCAN_REPORT.md
 ├── scripts/

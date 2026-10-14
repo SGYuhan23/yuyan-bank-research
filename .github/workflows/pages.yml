@@ -1,0 +1,37 @@
+name: Publish static showcase
+on:
+  push:
+    branches: [main]
+    paths: ['site/**', 'docs/screenshots/**', 'docs/reports/**', '.github/workflows/pages.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Assemble static files
+        run: |
+          mkdir -p _site/assets/screenshots _site/assets/reports
+          cp site/index.html site/style.css _site/
+          for name in 01-fuling-overview 04-supplier-overview 03-fuling-customer-action 02-fuling-allocation 05-supplier-cashflow 07-supplier-contract 08-supplier-reconcile; do
+            cp "docs/screenshots/$name.png" _site/assets/screenshots/
+          done
+          cp docs/reports/*.pdf _site/assets/reports/
+          touch _site/.nojekyll
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

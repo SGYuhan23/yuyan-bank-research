@@ -1,33 +1,41 @@
 # 渝研｜银行经营分析与产品研究
 
-面向县域客户经营与制造业供应商资金管理的个人研究与产品项目。使用公开事实建立业务背景，以合成数据开展经营实验；金融金额、日期、现金流与资源配置由确定性程序计算，AI 用于问题理解、资料整理与解释。
+一个围绕县域客户经营和制造业供应商资金管理的个人研究与产品项目。
 
-| 两个 Case | 要回答的业务问题 | 可以看到什么 |
-|---|---|---|
-| **涪陵县域经营分析** | 客户经理工时有限，先验证哪些客户经营机会？ | 公开产业事实、业务驱动估值、600h / 150h 资源取舍、分散约束下的机会成本 |
-| **汽摩供应商资金管理** | 最终回款覆盖列示支出，为何过程中仍会缺现金？ | 验收与开票条件、现金曲线、预测与入账区分、实际收付与余额原子核对 |
+我尝试回答两个问题：
 
-**[▶ 3 分钟产品演示](DEMO.md)** · **[研究报告](docs/reports/README.md)** · **[源码结构](#源码结构)** · **[可复算说明](REPRODUCIBILITY.md)**
+- 客户经理时间有限时，哪些客户机会更值得先验证？
+- 企业已经有订单，为什么过程中仍然会出现现金缺口？
 
-[![12 秒真实页面预览](docs/media/overview-preview.gif)](docs/media/overview.mp4)
+**[查看项目展示](https://sgyuhan23.github.io/yuyan-bank-research/)** · **[查看完整案例](DEMO.md)**
 
-[完整概览视频 · 约 48 秒](docs/media/overview.mp4) · [涪陵演示](docs/media/fuling.mp4) · [供应商与参数确认演示](docs/media/supplier-ai.mp4)
+| 县域客户经营：时间有限，先跟进谁？ | 供应商资金管理：有订单，为什么还缺钱？ |
+|---|---|
+| [![县域客户经营页面](docs/screenshots/01-fuling-overview.png)](DEMO.md#县域客户经营) | [![供应商资金管理页面](docs/screenshots/04-supplier-overview.png)](DEMO.md#供应商资金管理) |
 
-> 个人求职作品，非重庆农商行合作项目。全部客户与订单均为合成数据；金额是模型输出，不是真实经营业绩。不提供授信决策。[数据与责任边界](DISCLAIMER.md)
+## 两个案例
 
-## 先看经营判断，再看 AI 工具化
+**县域客户经营**：交易频繁的客户可能适合结算服务，员工多的客户可能适合代发。项目把这些业务差异转成待验证的任务，再比较时间有限时先做哪些。合成实验中，150 小时下加入资源分散约束，假设净贡献从 45,027 元变为 44,205 元；822 元是模型中的取舍，不是实际业绩。
 
-- **经营分析**：同余额的客户，交易频次、代发员工、合格供应链连接和既有关系价值不同，优先任务可以不同。每个动作列出驱动因素、成本、工时、待核材料和停止条件。
-- **产品设计**：把“预计会收钱”“对方已确认”和“实际已到账”分开；输入观察余额不一致时，本次收付与核对全部回滚。
-- **AI 工具化**：用户问题 → LLM 结构化提案 → 参数确认 → deterministic tool → 结果 → LLM 解释。最终金融回答由工具结果与受控模板约束。**Numerical correctness ≠ Semantic correctness**：算对 ALL/30 天，不代表回答了 C1/14 天。
+**供应商资金管理**：订单最终回款 96 万元，过程中却有 49 万元的峰值资金缺口。核心客户晚付款 14 天，峰值不变，负余额时间从 38 天延长到 52 天。资金风险不仅是差多少钱，也包括要撑多久。
 
-[责任划分与架构](ARCHITECTURE.md) · [脱敏真实调用](agent-platform/frontend/public/research/trace.json)
+[阅读研究报告](docs/reports/README.md) · [数据与使用边界](DISCLAIMER.md)
+
+## 项目设计
+
+公开事实用于理解地区与产业背景；客户和订单使用合成数据。AI 理解问题、整理资料和解释结果，程序计算金额、日期、现金流与资源安排，人负责确认输入和经营判断。
+
+例如，用户问 C1 客户晚付款 14 天，不能拿所有客户晚 30 天的结果回答。系统先展示理解出的参数，确认后计算；修改输入后，旧结果失效。
+
+## 界面预览
+
+[完整图文案例](DEMO.md) 展示任务选择、合同条件和余额核对。截图来自真实本地页面，GitHub Pages 是静态介绍，无需账号。
+
+可选：[概览录屏](docs/media/overview.mp4) · [客户经营录屏](docs/media/fuling.mp4) · [供应商与 AI 录屏](docs/media/supplier-ai.mp4)。录屏保留了当时的界面文字，业务计算与图文案例一致。
 
 ## 源码结构
 
-→ 查看本人实现与上游边界：[CONTRIBUTIONS.md](CONTRIBUTIONS.md)
-
-这是完整源码作品仓库。保留已验证的 agent-ops / agent-platform 目录结构，不为展示重排 imports；依赖、运行账号与密钥由使用者在本地配置。GitHub 文档、截图与录屏即为公开展示入口，本项目不提供在线服务。
+这是完整源码作品仓库。保留 agent-ops / agent-platform 目录结构，不为展示重排 imports；依赖、运行账号与密钥由使用者在本地配置。
 
 | 路径 | 作用 |
 |---|---|
@@ -40,15 +48,17 @@
 | [research_plugin.py](agent-ops/research_plugin.py) / [research_policy.py](agent-ops/research_policy.py) | 本项目 Agent 工具、API 扩展及回答边界 |
 | [agent-ops/test_*.py](agent-ops/) | 确定性模型、合同依赖、账本、语义、发布边界与集成测试 |
 | [build_data.py](agent-ops/research/build_data.py) / [build_reports.py](agent-ops/research/build_reports.py) | 标准库数据构建与报告生成 |
-| [portfolio_verify.py](scripts/portfolio_verify.py) | 当前完整公开仓库的文件与冻结结果核对 |
+| [portfolio_verify.py](scripts/portfolio_verify.py) | 当前完整公开仓库的文件与计算结果核对 |
 | [agent-platform/frontend](agent-platform/frontend) / [backend](agent-platform/backend) | 完整前后端及 Agent framework 源码，不是只有页面截图 |
 
-完整目录见 [PUBLIC_REPO_TREE.md](docs/PUBLIC_REPO_TREE.md)。上游框架来自 **DeerFlow**，本项目没有从零自研整个 Agent framework；保留 MIT 许可证及 [第三方归属说明](third_party/ATTRIBUTION.md)。
+完整目录见 [Repository Structure](docs/PUBLIC_REPO_TREE.md)。
 
-## 给技术面试官的复核入口
+## 本地运行
 
-先按 [REPRODUCIBILITY.md](REPRODUCIBILITY.md) 运行标准库构建，再检查关键不变量：同余额不同任务、合同日期只推导 PROJECTED、余额不符全部回滚、修改输入使旧情景失效。运行本地完整平台需要 PostgreSQL 与自行配置的模型密钥；阅读文档和确定性复算不需要它们。
+[复算与本地运行说明](REPRODUCIBILITY.md) 提供数据构建、测试、报告生成与完整平台启动步骤。独立复算不需要模型密钥或数据库；完整交互平台在本地运行。线上仅提供静态展示页，不提供后端服务。
 
-[截图清单](docs/screenshots/README.md) · [录屏脚本与口播](docs/media/RECORDING_SCRIPTS.md) · [秘密扫描报告](docs/SECRET_SCAN_REPORT.md) · [公开文件清单](PUBLIC_RELEASE_INVENTORY.json)
+## 技术栈
 
-Final Release 已冻结。本公开版本以 GitHub 作品展示与本地完整复现为最终交付形态。
+Python 负责确定性计算与接口，PostgreSQL 保存账本，Next.js / React 提供本地交互界面。Agent 扩展基于 DeerFlow / LangGraph，可接入 Qwen。静态展示使用原生 HTML / CSS。
+
+[架构与责任划分](ARCHITECTURE.md) · [第三方说明](third_party/ATTRIBUTION.md) · [DeerFlow 许可证](agent-platform/LICENSE)
