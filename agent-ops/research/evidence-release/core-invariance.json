@@ -1,0 +1,13 @@
+{
+  "only_removed_field": "fuling.customers[].service_hours",
+  "all_other_v2_values_equal": true,
+  "normalized_before_sha256": "29e4e3cf481d346094fc54dd3e85e1d1700d09a4bfb441a0c154b5bc22518c73",
+  "after_sha256": "29e4e3cf481d346094fc54dd3e85e1d1700d09a4bfb441a0c154b5bc22518c73",
+  "unchanged_core_source_sha256": {
+    "supplier_ledger.py": "6d20f898751ac113dcd062559caccd24209e7631f5cd92cfec36f04748d43404",
+    "scenario_request.py": "9cb663e10a1ca03cfc78fdb84ce8c07afc3d68f468bf7e44c66550be3b0a57a3",
+    "models.py": "d377e102ce91bdfbef24683613c95be5c1772b254cb0c6397d4e2cd80c88d5f8",
+    "ledger_store.py": "110ae4773cdedcc99197d73834d071b2851f35b5b96a36abcf098fbb4e2ecbc7"
+  },
+  "maintenance_assumption_hours": 2100
+}

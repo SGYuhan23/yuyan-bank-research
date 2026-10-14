@@ -1,0 +1,5 @@
+# Standalone deterministic + semantic review; no model credentials required.
+pytest>=8,<10
+langchain-core>=1,<2
+# Optional real PostgreSQL test_ledger_store_pg.py:
+psycopg[binary]>=3.2,<4

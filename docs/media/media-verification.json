@@ -1,0 +1,26 @@
+{
+  "actual_browser_recordings": true,
+  "only_sidebar_cropped": true,
+  "media": [
+    {
+      "file": "overview.mp4",
+      "seconds": 47.88,
+      "bytes": 1216868
+    },
+    {
+      "file": "fuling.mp4",
+      "seconds": 67.92,
+      "bytes": 2065582
+    },
+    {
+      "file": "supplier-ai.mp4",
+      "seconds": 77.92,
+      "bytes": 2109376
+    },
+    {
+      "file": "overview-preview.gif",
+      "seconds": 12.01,
+      "bytes": 955419
+    }
+  ]
+}

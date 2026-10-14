@@ -1,0 +1,20 @@
+{
+  "fuling": {
+    "pages": 9,
+    "rendered_pages": 9,
+    "visual_check": "passed",
+    "sha256": "a7d79f9e2d9b16501d93b9c4a2a198db1764f9cc3c09b9e910aa79afa3694ca4"
+  },
+  "supplier": {
+    "pages": 8,
+    "rendered_pages": 8,
+    "visual_check": "passed",
+    "sha256": "56b3d8a0d160eef33f1f104dcbb00421152d5ce879153f0cf6d69977fdd21a1f"
+  },
+  "deposit": {
+    "pages": 4,
+    "rendered_pages": 4,
+    "visual_check": "passed",
+    "sha256": "b446e0c3549856312522013d99fff152fde3ac1cbeb62384d34fa05183cf9501"
+  }
+}

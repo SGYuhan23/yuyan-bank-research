@@ -1,0 +1,44 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.env
+node_modules/
+dist/
+playwright-report/
+test-results/
+*.pyc
+.hypothesis/
+backups/
+*.tsbuildinfo
+delivery/
+
+# Public GitHub hygiene: local secrets and private acceptance evidence
+.env*
+!.env.example
+**/.deer-flow/
+**/acceptance/account*.json
+**/*-private.*
+**/trace-raw*
+**/raw-trace*
+**/credentials.json
+**/credentials.*
+**/token.json
+**/tokens.json
+**/*.pem
+**/*.key
+
+# Generated local deliverables and snapshots; never stage as source
+/output/
+/tmp/
+
+# Portfolio capture and local persistence
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.log
+.next/
+.cache/
+agent-ops/evidence/
+agent-ops/handoff/

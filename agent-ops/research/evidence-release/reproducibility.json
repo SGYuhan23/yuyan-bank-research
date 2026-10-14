@@ -1,0 +1,10 @@
+{
+  "stdlib_only_rebuild_without_site_packages": true,
+  "standalone_test_result": "..........................                                               [100%]\n26 passed in 0.57s",
+  "package_type": "Reproducibility Package",
+  "payload_file_count": 77,
+  "manifest_entry_count": 1,
+  "total_archive_entries": 78,
+  "fresh_unpack_recomputed_v2_exactly": true,
+  "private_state_excluded": true
+}

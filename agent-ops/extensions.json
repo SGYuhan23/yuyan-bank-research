@@ -1,0 +1,74 @@
+{
+  "mcpServers": {},
+  "skills": {
+    "skill-reviewer": {
+      "enabled": false
+    },
+    "music-generation": {
+      "enabled": false
+    },
+    "chart-visualization": {
+      "enabled": false
+    },
+    "bootstrap": {
+      "enabled": false
+    },
+    "newsletter-generation": {
+      "enabled": false
+    },
+    "image-generation": {
+      "enabled": false
+    },
+    "web-design-guidelines": {
+      "enabled": false
+    },
+    "github-deep-research": {
+      "enabled": false
+    },
+    "deep-research": {
+      "enabled": false
+    },
+    "surprise-me": {
+      "enabled": false
+    },
+    "find-skills": {
+      "enabled": false
+    },
+    "code-documentation": {
+      "enabled": false
+    },
+    "podcast-generation": {
+      "enabled": false
+    },
+    "skill-creator": {
+      "enabled": false
+    },
+    "systematic-literature-review": {
+      "enabled": false
+    },
+    "data-analysis": {
+      "enabled": false
+    },
+    "video-generation": {
+      "enabled": false
+    },
+    "vercel-deploy": {
+      "enabled": false
+    },
+    "ppt-generation": {
+      "enabled": false
+    },
+    "claude-to-deerflow": {
+      "enabled": false
+    },
+    "frontend-design": {
+      "enabled": false
+    },
+    "academic-paper-review": {
+      "enabled": false
+    },
+    "consulting-analysis": {
+      "enabled": false
+    }
+  }
+}

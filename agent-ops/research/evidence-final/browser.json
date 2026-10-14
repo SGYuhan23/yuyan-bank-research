@@ -1,0 +1,12 @@
+{
+  "businessDriversVisible": true,
+  "confirmedC1_14": true,
+  "inputEditInvalidatesResult": true,
+  "ALL_30Distinct": true,
+  "atomicMismatchRollback": true,
+  "atomicActualAndReconciliation": true,
+  "reloadPersistence": true,
+  "mobileOverflow": false,
+  "pdfDownloads": 3,
+  "pageErrors": []
+}

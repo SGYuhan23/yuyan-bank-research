@@ -1,0 +1,10 @@
+{
+  "unconfirmed_rejected": true,
+  "confirmed_snapshot_bound": true,
+  "input_invalidation_rejected": true,
+  "mismatch_difference_fen": -19999000,
+  "mismatch_fully_rolled_back": true,
+  "atomic_success": true,
+  "idempotent_repeat": true,
+  "duplicate_posted_rejected": true
+}

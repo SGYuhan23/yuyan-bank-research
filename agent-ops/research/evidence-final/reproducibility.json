@@ -1,0 +1,7 @@
+{
+  "stdlib_only_rebuild_without_site_packages": true,
+  "standalone_test_result": "........................                                                 [100%]\n24 passed in 0.56s",
+  "manifest_hashes": 76,
+  "fresh_unpack_recomputed_v2_exactly": true,
+  "private_state_excluded": true
+}

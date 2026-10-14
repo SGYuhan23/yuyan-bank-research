@@ -1,0 +1,7 @@
+[
+ {"id":"B1","title":"重庆农商行2026年半年度报告摘要","url":"https://www.cqrcb.com/cqrcb/investorRelations/report/interimreport/334915.html","published":"2026-08-31","period":"2026H1 / 2026-06-30","accessed":"2026-10-13","status":"官方PDF正文已读取","facts":["净利息收益率1.66%，同比增加0.06个百分点","客户存款1089055.2百万元；客户贷款和垫款账面余额844746.1百万元","不良贷款率1.05%；资本充足率14.07%，上年末14.46%"],"location":"PDF物理页3–4","use":"集团经营背景，不作为合成支行内部参数"},
+ {"id":"R1","title":"2025年全市各区县GDP增速公布","url":"https://nyncw.cq.gov.cn/zwxx_161/rdtt/202602/t20260210_15414119_wap.html","published":"2026-02-09（页面标注）","period":"2025","accessed":"2026-10-13","status":"政府网站转载，正文已读取","facts":["涪陵GDP同比增长6.7%；重庆5.3%"],"use":"区域背景，不推导贷款需求或信用质量"},
+ {"id":"R2","title":"2025年重庆市国民经济和社会发展统计公报","url":"https://tjj.cq.gov.cn/zwgk_233/fdzdgknr/tjxx/sjjd_55469/202603/t20260326_15568538_wap.html","published":"2026-03-26（URL日期）","period":"2025","accessed":"2026-10-13","status":"官方搜索索引可见，正文直接读取超时","facts":["表3汽车278.77万辆，新能源汽车129.61万辆"],"use":"待正文核对，不用于数值模型"},
+ {"id":"P1","title":"重庆农商行银企直联","url":"https://www.cqrcb.com/cqrcb/ebank/onlinebanking/1223.html","published":"2019-06-03","period":"产品说明","accessed":"2026-10-13","status":"官方正文已读取，旧发布日期，当前接入条款待确认","facts":["企业财务/ERP软件可对接银行系统，办理转账、明细查询、代发代扣"],"use":"现有服务边界；不能据此断言银行缺少某功能"},
+ {"id":"P2","title":"重庆农商行专精特新专项贷","url":"https://www.cqrcb.com/cqrcb/microFinance/syloan/easytoborrow/334478.html","published":"2026-07-21","period":"产品说明","accessed":"2026-10-13","status":"官方正文已读取","facts":["适用经认定名单企业，最高5000万元，最长3年，年化单利3.0%起"],"use":"公开产品对照，不代表任一案例客户符合授信条件"}
+]

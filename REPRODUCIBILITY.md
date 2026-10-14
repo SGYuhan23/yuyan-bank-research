@@ -1,0 +1,87 @@
+# 复算与本地运行
+
+从本仓库根目录执行。完整源码保留；GitHub 展示不依赖在线服务。
+
+## 1. 最小确定性复算
+
+Python 3.12+；数据构建仅用标准库，不需要模型、数据库或 DeerFlow 运行时。
+
+```sh
+python3 -m venv .venv
+. .venv/bin/activate
+python -m pip install -r agent-ops/research/review-requirements.txt
+python -S agent-ops/research/build_data.py
+python -m pytest agent-ops/test_fuling_v2.py agent-ops/test_supplier_ledger.py agent-ops/test_research_models.py agent-ops/test_v2_evidence.py agent-ops/test_scenario_semantics.py agent-ops/test_public_release.py -q
+python scripts/portfolio_verify.py
+```
+
+默认只生成 Final P0，输出 `agent-platform/frontend/public/research/v2.json` 与当前 CSV；不生成旧 V1 公共产物。语义测试用 LangChain 消息容器，无真实模型调用。校验脚本检查冻结的核心文件、数据与 PDF 哈希以及完整公开清单。若主动重新生成媒体或 PDF，清单应随新产物重建，不可伪称字节不变。
+
+## 2. 必要预期结果
+
+| 检查 | 预期 |
+|---|---|
+| Fuling：600h，无约束 / 25% 行业资源上限 | 均为 138,451.20 元 |
+| Fuling：150h，无约束 / 25% 上限 | 45,027 / 44,205 元；差 822 元 |
+| Supplier：基线 | 峰值缺口 49 万元，负余额 38 天 |
+| Supplier：C1 / 14 天 | 峰值缺口 49 万元，负余额 52 天 |
+| Supplier：ALL / 30 天 | 峰值缺口 53 万元，负余额 68 天；不是同一个请求 |
+| 状态与事务 | 预测不自动升级，POSTED 不可覆盖，余额不符全部回滚 |
+
+这些都是合成 / ASSUMPTION 下的研究输出，不是实际经营成果。
+
+**Legacy Note：** `models.py::supplier_case` 及对应 `test_research_models.py` Supplier assertions 是历史 V1 单订单 deterministic regression reference；当前 Final Supplier Case 以 `supplier_ledger.py`、`test_supplier_ledger.py` 与 `v2.json` 为准。26万元不是当前 Final Case 结果。
+
+## 3. 报告构建
+
+```sh
+python -m pip install -r agent-ops/research/render-requirements.txt
+# 非 macOS 请设置一个合法可用的中文 TTF 字体绝对路径：
+# export RESEARCH_CJK_FONT=/your/font.ttf
+python agent-ops/research/build_reports.py
+```
+
+输出在 `output/pdf/`，展示 PDF 同步到 `agent-platform/frontend/public/research/`。仓库 `docs/reports/` 是冻结版原 PDF 副本；正常复算不必重新渲染报告。预期页数为 9 / 8 / 4，重建后应检查所有页面，字体和 PDF 元数据可能导致二进制哈希变化。
+
+## 4. 完整本地平台（可选）
+
+需要 Python 3.12、Node 22+、pnpm 10.26.2、uv、Docker / PostgreSQL。以下仅监听本机，不是公网部署步骤。
+
+```sh
+cp agent-ops/.env.example agent-ops/.env
+# 本地填写 QWEN_API_KEY、POSTGRES_PASSWORD 和 AGENT_DATABASE_URL；切勿提交。
+# URL 的密码需 URL 编码，并与 PostgreSQL 配置一致。
+set -a
+. agent-ops/.env
+set +a
+docker compose --env-file agent-ops/.env -f agent-ops/compose.yaml up -d --wait
+(cd agent-platform/backend && uv sync --locked --python 3.12 --extra postgres)
+(cd agent-platform/frontend && npx --yes pnpm@10.26.2 install --frozen-lockfile)
+agent-platform/backend/.venv/bin/python agent-ops/gateway.py
+```
+
+另开终端运行：
+
+```sh
+cd agent-platform/frontend
+node node_modules/next/dist/bin/next dev --hostname 127.0.0.1 --port 3000
+```
+
+浏览器访问 `http://127.0.0.1:3000/workspace/research`，按首次初始化流程创建自己的账号。不要使用作者的 acceptance account（未公开）。模型使用外部服务并可能收费；独立复算不需要密钥。需要 Agent 沙箱文件工具时，按 `agent-ops/README.md` 准备既有沙箱镜像。上游依赖完整安装和首次初始化因本机条件而异，本次验证的是现有本地环境，不宣称新机器一键生产启动。
+
+```sh
+# 完整 workspace 测试；AGENT_DATABASE_URL 显式提供真实测试数据库
+agent-platform/backend/.venv/bin/python -m pytest agent-ops/test_*.py -q
+# 不提供 URL 时两项真实 PG 测试明确 skip，不能计为 passed。
+```
+
+## 5. 校验与秘密扫描
+
+```sh
+python scripts/portfolio_verify.py
+# 自行安装 Gitleaks 8.24.3 或兼容版本；报告中隐藏匹配值
+mkdir -p tmp
+gitleaks dir . --redact --ignore-gitleaks-allow --report-format json --report-path tmp/secret-scan.json
+```
+
+上游安全测试故意含虚构密钥样例，会触发扫描；必须核查告警，不按文件夹整体豁免。已执行结果见 [扫描报告](docs/SECRET_SCAN_REPORT.md)。本次交付不包含旧 Git 历史；首次初始化新仓库前先核对清单与忽略规则。未执行 GitHub 上传或线上部署。

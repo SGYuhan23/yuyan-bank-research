@@ -1,0 +1,1 @@
+{"version": "2026-10-14.final-p0", "customers": 120, "candidate_actions": 600}

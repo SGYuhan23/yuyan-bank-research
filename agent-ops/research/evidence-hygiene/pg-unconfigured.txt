@@ -1,0 +1,5 @@
+ss                                                                       [100%]
+=========================== short test summary info ============================
+SKIPPED [1] agent-ops/test_ledger_store_pg.py:10: AGENT_DATABASE_URL is required for PostgreSQL integration tests
+SKIPPED [1] agent-ops/test_ledger_store_pg.py:31: AGENT_DATABASE_URL is required for PostgreSQL integration tests
+2 skipped in 1.31s

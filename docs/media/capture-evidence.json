@@ -1,0 +1,63 @@
+{
+  "origin": "local loopback only",
+  "date": "2026-10-14",
+  "mocked_requests": false,
+  "dom_content_modified": false,
+  "new_model_call": false,
+  "recordings": [
+    {
+      "name": "overview",
+      "seconds": 49.41,
+      "page_errors": 0,
+      "sidebar_crop": {
+        "x": 256,
+        "y": 0,
+        "width": 1244,
+        "height": 1000
+      }
+    },
+    {
+      "name": "fuling",
+      "seconds": 70.81,
+      "page_errors": 0,
+      "sidebar_crop": {
+        "x": 256,
+        "y": 0,
+        "width": 1244,
+        "height": 1000
+      }
+    },
+    {
+      "name": "supplier-ai",
+      "seconds": 81.14,
+      "page_errors": 0,
+      "sidebar_crop": {
+        "x": 256,
+        "y": 0,
+        "width": 1244,
+        "height": 1000
+      }
+    }
+  ],
+  "screenshots": [
+    "00-overview",
+    "10-trace",
+    "01-fuling-overview",
+    "03-fuling-customer-action",
+    "02-fuling-allocation",
+    "04-supplier-overview",
+    "05-supplier-cashflow",
+    "07-supplier-contract",
+    "09-agent-scenario",
+    "06-supplier-ledger",
+    "08-supplier-reconcile"
+  ],
+  "checks": {
+    "fulingFourAllocationScenarios": true,
+    "C1_14_confirmed": true,
+    "changedInputInvalidatesOldResult": true,
+    "ALL_30_distinct": true,
+    "mismatchRolledBackVersion2": true,
+    "matchedActualCommittedVersion3": true
+  }
+}

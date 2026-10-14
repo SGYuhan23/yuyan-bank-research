@@ -1,0 +1,18 @@
+{
+  "agent-ops/examples/fuling.py": "a8519f73497615db898ed592749ef9906a732e0005652cba7180f6575db8562c",
+  "agent-ops/research/supplier_ledger.py": "6d20f898751ac113dcd062559caccd24209e7631f5cd92cfec36f04748d43404",
+  "agent-ops/research/ledger_store.py": "110ae4773cdedcc99197d73834d071b2851f35b5b96a36abcf098fbb4e2ecbc7",
+  "agent-ops/research/scenario_request.py": "9cb663e10a1ca03cfc78fdb84ce8c07afc3d68f468bf7e44c66550be3b0a57a3",
+  "agent-ops/research/models.py": "d377e102ce91bdfbef24683613c95be5c1772b254cb0c6397d4e2cd80c88d5f8",
+  "agent-ops/research/trace_guard.py": "f23a41691a4befc5805cc99f7da4e2cb79c663bf5346e405566a16e928a80e5d",
+  "agent-platform/frontend/public/research/sources.json": "a971bc56fd832b4acc13d6fac4fa85f40f052f17c3889cb52c6c050e9649623d",
+  "agent-platform/frontend/public/research/fuling_public_facts.json": "a387622c592bc4bf7061a8f0ce2f1b47d86d2f04c7f2144125289f3232f88c81",
+  "agent-platform/frontend/public/research/trace.json": "48c8c30e330afcab4c0d81272d893656803231a94b9f5b5f818460067c1bf6e8",
+  "agent-platform/frontend/public/research/fuling-v2-customers.csv": "31a464c7b9e391b68112e0647533266f71a22487b1e249cc78d8dc8448c3c45a",
+  "agent-platform/frontend/public/research/deposit-sensitivity.csv": "64b07d4997558a44d89b8c60bbbc75e59d016506f25d222ad7d903ba62891670",
+  "agent-platform/frontend/public/research/fuling-research.pdf": "a7d79f9e2d9b16501d93b9c4a2a198db1764f9cc3c09b9e910aa79afa3694ca4",
+  "agent-platform/frontend/public/research/deposit-research.pdf": "b446e0c3549856312522013d99fff152fde3ac1cbeb62384d34fa05183cf9501",
+  "agent-platform/frontend/public/research/supplier-research.pdf": "56b3d8a0d160eef33f1f104dcbb00421152d5ce879153f0cf6d69977fdd21a1f",
+  "agent-platform/frontend/public/research/v2.json": "d9c76942fd18bcb0e2729a7d5388a249b7ab2c83abdd8237c262d585ad175a5c",
+  "agent-platform/frontend/public/research/fuling-v2-actions.csv": "bda5e9d0270b5280924f036735b1a3340e414799b5ea62ec2870f6fc2356a483"
+}

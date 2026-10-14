@@ -1,0 +1,133 @@
+{
+  "mock": false,
+  "status": "verified",
+  "model": "qwen-plus",
+  "recorded_at": "2026-10-14T07:29:39.811519+00:00",
+  "question": "FINAL-P0-TRACE：这是合成案例 CASE-A，当前账本版本1，请求标识 REQUEST-A。原始业务问题：如果核心客户C1尾款延期14天，需要多少额外流动资金？本次不考虑折扣、服务费或追加预付款。请先调用参数提案工具，将我的意图转成结构化参数并回显，等待研究页确认，不能直接计算。不要联网、不要执行代码、不要修改账本。",
+  "actual_user_prompt": "FINAL-P0-TRACE：这是合成案例 CASE-A，当前账本版本1，请求标识 REQUEST-A。原始业务问题：如果核心客户C1尾款延期14天，需要多少额外流动资金？本次不考虑折扣、服务费或追加预付款。请先调用参数提案工具，将我的意图转成结构化参数并回显，等待研究页确认，不能直接计算。不要联网、不要执行代码、不要修改账本。",
+  "actual_followup_prompt": "FINAL-P0-TRACE：测试验收程序已逐项核对并通过研究页同一确认API确认请求 REQUEST-A。请调用 supplier_cash_scenario 消费这个已确认请求，不另选参数，再展示受控结果；不是用户真实合同确认。",
+  "system_policy_summary": "模型只提出参数；需明确确认；金额与最终回答由确定性工具及受控模板生成。",
+  "parameters_prespecified": true,
+  "confirmation_actor": "authorized_synthetic_acceptance_harness",
+  "original_model_proposal": {
+    "parameter_hash": "b68b0ded296df7dc4c979e2e8c84d2dd7fb718f8dafe41a3134948436dbd9c12",
+    "missing_fields": [
+      "discount",
+      "fee_fen",
+      "advance_fen"
+    ],
+    "confirmation_required": true,
+    "request": {
+      "request_id": "REQUEST-A",
+      "case_id": "CASE-A",
+      "base_version": 1,
+      "customer_id": "C1",
+      "delay_days": 14,
+      "discount": null,
+      "fee_fen": null,
+      "advance_fen": null,
+      "confirmation_status": "PROPOSED"
+    }
+  },
+  "harness_corrected_proposal": true,
+  "correction_summary": "验收程序依原问题将模型留空的折扣、费用、预付补为零，再显式确认；不是模型自主完成。",
+  "confirmed_request": {
+    "parameter_hash": "2d18d43a2e0d3605124e130ce9f7f1fecbb7cdb40728874881a69329a3d8023c",
+    "missing_fields": [],
+    "confirmation_required": false,
+    "request": {
+      "request_id": "REQUEST-A",
+      "case_id": "CASE-A",
+      "base_version": 1,
+      "customer_id": "C1",
+      "delay_days": 14,
+      "discount": "0",
+      "fee_fen": 0,
+      "advance_fen": 0,
+      "confirmation_status": "CONFIRMED"
+    }
+  },
+  "tool": "supplier_cash_scenario",
+  "arguments": {
+    "request_id": "REQUEST-A"
+  },
+  "result": {
+    "parameter_hash": "2d18d43a2e0d3605124e130ce9f7f1fecbb7cdb40728874881a69329a3d8023c",
+    "missing_fields": [],
+    "confirmation_required": false,
+    "request": {
+      "request_id": "REQUEST-A",
+      "case_id": "CASE-A",
+      "base_version": 1,
+      "customer_id": "C1",
+      "delay_days": 14,
+      "discount": "0",
+      "fee_fen": 0,
+      "advance_fen": 0,
+      "confirmation_status": "CONFIRMED"
+    },
+    "base_version": 1,
+    "baseline": {
+      "evidence_type": "MODEL OUTPUT",
+      "actual_balance_fen": 20000000,
+      "peak_gap_fen": 49000000,
+      "minimum_date": "2027-01-23",
+      "minimum_drivers": [
+        "O4-materials"
+      ],
+      "negative_days": 38,
+      "closing_fen": 31000000,
+      "overdue_unresolved": [],
+      "opening_included_events": [],
+      "disputed_events": [],
+      "complete": true,
+      "boundary": "资金缺口≠授信额度；日终余额不能保证日内逐笔支付；未落实安排不是可用现金。",
+      "evidence_completeness": {
+        "supported": 4,
+        "required": 16,
+        "definition": "关键节点有确认说明的数量；不是信用评分，也不鉴定证据真伪"
+      },
+      "concentration": {
+        "top1": "0.625",
+        "top3": "0.875",
+        "basis": "合成订单金额，不是银行授信集中度"
+      }
+    },
+    "scenario": {
+      "evidence_type": "MODEL OUTPUT",
+      "actual_balance_fen": 20000000,
+      "peak_gap_fen": 49000000,
+      "minimum_date": "2027-01-23",
+      "minimum_drivers": [
+        "O4-materials"
+      ],
+      "negative_days": 52,
+      "closing_fen": 31000000,
+      "overdue_unresolved": [],
+      "opening_included_events": [],
+      "disputed_events": [],
+      "complete": true,
+      "boundary": "资金缺口≠授信额度；日终余额不能保证日内逐笔支付；未落实安排不是可用现金。",
+      "discount_cost_fen": 0,
+      "fee_fen": 0,
+      "changed_event_ids": [
+        "O1-receivable"
+      ],
+      "base_version": 1,
+      "saved_as_baseline": false,
+      "evidence_completeness": {
+        "supported": 4,
+        "required": 16,
+        "definition": "关键节点有确认说明的数量；不是信用评分，也不鉴定证据真伪"
+      },
+      "concentration": {
+        "top1": "0.625",
+        "top3": "0.875",
+        "basis": "合成订单金额，不是银行授信集中度"
+      }
+    }
+  },
+  "answer": "**确定性工具结果｜合成案例**\n\n请求 REQUEST-A / 案例 CASE-A / 版本 1：客户 C1，延期 14 天，折扣 0，费用 0.00元，每单追加预付 0.00元。已确认参数快照；账本或输入变化后须重新确认。\n\n|指标|当前基线|待协商情景|\n|---|---:|---:|\n|峰值缺口|490,000.00元|490,000.00元|\n|负余额天数|38天|52天|\n\n峰值缺口变化：0.00元；负余额天数变化：14天。峰值没有增加，但资金占用可能持续更久。\n\n折扣代价0.00元，费用0.00元。账本事实余额200,000.00元。\n\n来源：已授权合成订单事件账本；情景不保存为正式基线，不代表对方接受或实际到账。资金缺口不等于授信额度，仍需用途、还款来源与风险审核。\n\n金额和解释由实际工具输出生成；模型负责理解请求与选取工具，不改写金融结果。",
+  "boundary": "真实合成验收，参数预先指定；确认者是验收程序，不是真实客户。原始模型提案并未完整抽取成本。结果绑定确认快照和账本版本；公开记录仅含人工策略摘要，不披露完整内部提示。",
+  "redaction_note": "标识一致替换为CASE-A、REQUEST-A、THREAD-A；哈希保留原始快照哈希，不能用脱敏标识重算。用户问题未简化。"
+}

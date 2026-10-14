@@ -1,0 +1,241 @@
+{
+  "version": "2026-10-14.final-p0",
+  "same_balance_different_business_drivers": [
+    {
+      "same_deposit_fen": 10000000,
+      "changed_drivers": {
+        "annual_transaction_count": 10000
+      },
+      "priority_action": {
+        "id": "SYN-V2-001-A0",
+        "customer_id": "SYN-V2-001",
+        "sector": "先进材料/制造业",
+        "action_type": "结算深化",
+        "service_hours": 10,
+        "expected_benefit_fen": 600000,
+        "implementation_cost_fen": 35000,
+        "benefit_fen": 565000,
+        "value_formula": "年交易笔数×每笔净服务边际150分×采用率40%",
+        "business_drivers": "annual_transaction_count=10000",
+        "stop_condition": "采用率不足覆盖成本或客户拒绝流水授权即停止",
+        "source_fact_ids": "FL-CLUSTERS",
+        "risk_confidence": "未校准：单价、采用率、成本、工时均为研究假设",
+        "evidence_requirement": "授权交易流水、可迁移笔数、真实每笔边际及接入报价",
+        "evidence_type": "ASSUMPTION"
+      }
+    },
+    {
+      "same_deposit_fen": 10000000,
+      "changed_drivers": {
+        "payroll_employee_count": 500
+      },
+      "priority_action": {
+        "id": "SYN-V2-001-A2",
+        "customer_id": "SYN-V2-001",
+        "sector": "先进材料/制造业",
+        "action_type": "代发/支付场景",
+        "service_hours": 15,
+        "expected_benefit_fen": 600000,
+        "implementation_cost_fen": 65000,
+        "benefit_fen": 535000,
+        "value_formula": "可授权员工数×年人均服务边际2400分×采用率50%",
+        "business_drivers": "payroll_employee_count=500",
+        "stop_condition": "无企业/员工授权或活跃人数无法覆盖成本即停止",
+        "source_fact_ids": "FL-CLUSTERS",
+        "risk_confidence": "未校准：单价、采用率、成本、工时均为研究假设",
+        "evidence_requirement": "企业代发意愿、员工授权数量、活跃率及单位服务成本",
+        "evidence_type": "ASSUMPTION"
+      }
+    },
+    {
+      "same_deposit_fen": 10000000,
+      "changed_drivers": {
+        "eligible_supply_chain_links": 30
+      },
+      "priority_action": {
+        "id": "SYN-V2-001-A3",
+        "customer_id": "SYN-V2-001",
+        "sector": "先进材料/制造业",
+        "action_type": "供应链上下游连接",
+        "service_hours": 25,
+        "expected_benefit_fen": 840000,
+        "implementation_cost_fen": 120000,
+        "benefit_fen": 720000,
+        "value_formula": "合格上下游连接数×年单连接服务边际80000分×采用率35%",
+        "business_drivers": "eligible_supply_chain_links=30",
+        "stop_condition": "对手方不配合、连接不合格或净贡献非正即停止",
+        "source_fact_ids": "FL-CLUSTERS",
+        "risk_confidence": "未校准：单价、采用率、成本、工时均为研究假设",
+        "evidence_requirement": "上下游双方授权、可核对合同、连接资格与非信贷服务需求",
+        "evidence_type": "ASSUMPTION"
+      }
+    },
+    {
+      "same_deposit_fen": 10000000,
+      "changed_drivers": {
+        "relationship_contribution_fen": 3000000,
+        "attrition_scenario": ".5"
+      },
+      "priority_action": {
+        "id": "SYN-V2-001-A4",
+        "customer_id": "SYN-V2-001",
+        "sector": "先进材料/制造业",
+        "action_type": "客户经营维护",
+        "service_hours": 5,
+        "expected_benefit_fen": 600000,
+        "implementation_cost_fen": 15000,
+        "benefit_fen": 585000,
+        "value_formula": "既有年关系贡献×情景流失比例×可避免流失比例40%",
+        "business_drivers": "relationship_contribution_fen=3000000; attrition_scenario=.5",
+        "stop_condition": "无可干预原因或保留贡献不覆盖维护成本即停止",
+        "source_fact_ids": "FL-CLUSTERS",
+        "risk_confidence": "未校准：单价、采用率、成本、工时均为研究假设",
+        "evidence_requirement": "既有关系贡献扣成本口径、流失原因及维护干预可行性",
+        "evidence_type": "ASSUMPTION"
+      }
+    }
+  ],
+  "fuling": [
+    {
+      "name": "正常产能",
+      "constraint": "不设行业上限",
+      "hours": 600,
+      "benefit_fen": 13845120,
+      "max_sector_share": "0.2333333333333333333333333333",
+      "sector_hours": {
+        "先进材料/制造业": 90,
+        "商贸物流": 140,
+        "小微/居民经营": 90,
+        "新能源汽车及零部件": 140,
+        "食品农业/榨菜产业链": 140
+      },
+      "selected_count": 60
+    },
+    {
+      "name": "正常产能",
+      "constraint": "单行业≤实际分配工时25%（研究假设）",
+      "hours": 600,
+      "benefit_fen": 13845120,
+      "max_sector_share": "0.2333333333333333333333333333",
+      "sector_hours": {
+        "先进材料/制造业": 90,
+        "商贸物流": 140,
+        "小微/居民经营": 90,
+        "新能源汽车及零部件": 140,
+        "食品农业/榨菜产业链": 140
+      },
+      "selected_count": 60
+    },
+    {
+      "name": "受限产能",
+      "constraint": "不设行业上限",
+      "hours": 150,
+      "benefit_fen": 4502700,
+      "max_sector_share": "0.3333333333333333333333333333",
+      "sector_hours": {
+        "先进材料/制造业": 20,
+        "商贸物流": 30,
+        "小微/居民经营": 30,
+        "新能源汽车及零部件": 50,
+        "食品农业/榨菜产业链": 20
+      },
+      "selected_count": 15
+    },
+    {
+      "name": "受限产能",
+      "constraint": "单行业≤实际分配工时25%（研究假设）",
+      "hours": 150,
+      "benefit_fen": 4420500,
+      "max_sector_share": "0.2",
+      "sector_hours": {
+        "先进材料/制造业": 30,
+        "商贸物流": 30,
+        "小微/居民经营": 30,
+        "新能源汽车及零部件": 30,
+        "食品农业/榨菜产业链": 30
+      },
+      "selected_count": 15
+    }
+  ],
+  "supplier": {
+    "base": {
+      "actual_balance_fen": 20000000,
+      "peak_gap_fen": 49000000,
+      "minimum_date": "2027-01-23",
+      "negative_days": 38,
+      "closing_fen": 31000000,
+      "evidence_completeness": {
+        "supported": 4,
+        "required": 16,
+        "definition": "关键节点有确认说明的数量；不是信用评分，也不鉴定证据真伪"
+      },
+      "concentration": {
+        "top1": "0.625",
+        "top3": "0.875",
+        "basis": "合成订单金额，不是银行授信集中度"
+      }
+    },
+    "delay14": {
+      "actual_balance_fen": 20000000,
+      "peak_gap_fen": 49000000,
+      "minimum_date": "2027-01-23",
+      "negative_days": 52,
+      "closing_fen": 31000000,
+      "evidence_completeness": {
+        "supported": 4,
+        "required": 16,
+        "definition": "关键节点有确认说明的数量；不是信用评分，也不鉴定证据真伪"
+      },
+      "concentration": {
+        "top1": "0.625",
+        "top3": "0.875",
+        "basis": "合成订单金额，不是银行授信集中度"
+      }
+    },
+    "core_customer_stress": {
+      "actual_balance_fen": 20000000,
+      "peak_gap_fen": 49000000,
+      "minimum_date": "2027-01-23",
+      "negative_days": 68,
+      "closing_fen": 31000000,
+      "evidence_completeness": {
+        "supported": 4,
+        "required": 16,
+        "definition": "关键节点有确认说明的数量；不是信用评分，也不鉴定证据真伪"
+      },
+      "concentration": {
+        "top1": "0.625",
+        "top3": "0.875",
+        "basis": "合成订单金额，不是银行授信集中度"
+      }
+    },
+    "all_customer_stress": {
+      "actual_balance_fen": 20000000,
+      "peak_gap_fen": 53000000,
+      "minimum_date": "2027-02-05",
+      "negative_days": 68,
+      "closing_fen": 31000000,
+      "evidence_completeness": {
+        "supported": 4,
+        "required": 16,
+        "definition": "关键节点有确认说明的数量；不是信用评分，也不鉴定证据真伪"
+      },
+      "concentration": {
+        "top1": "0.625",
+        "top3": "0.875",
+        "basis": "合成订单金额，不是银行授信集中度"
+      }
+    }
+  },
+  "deposit": {
+    "balance_fen": 1000000000,
+    "rate": "0.015",
+    "effective_funding_factor": "0.8",
+    "ftp": "0.02",
+    "replacement": "0",
+    "service_fen": 2000000,
+    "contribution_fen": -1000000,
+    "break_even_rate": "0.014",
+    "break_even_effective_funding_factor": "0.85"
+  }
+}

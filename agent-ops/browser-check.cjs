@@ -1,0 +1,22 @@
+const {chromium} = require('../agent-platform/frontend/node_modules/@playwright/test');
+const fs=require('fs'),path=require('path');
+(async()=>{
+ const browser=await chromium.launch({headless:true});
+ const ctx=await browser.newContext({locale:'zh-CN', viewport:{width:1440,height:1000}});
+ const credentials=JSON.parse(fs.readFileSync(path.join(__dirname,'../agent-platform/.deer-flow/acceptance/account.json'),'utf8'));
+ const login=await ctx.request.post('http://127.0.0.1:3000/api/v1/auth/login/local',{form:{username:credentials.email,password:credentials.password},headers:{Origin:'http://127.0.0.1:3000'}});
+ console.log('login status',login.status());
+ await ctx.addCookies([{name:'locale',value:'zh-CN',domain:'127.0.0.1',path:'/'}]);
+ const page=await ctx.newPage();
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ const passed=fs.readdirSync(path.join(__dirname,'evidence')).filter(x=>x.startsWith('live-')).map(x=>JSON.parse(fs.readFileSync(path.join(__dirname,'evidence',x),'utf8'))).find(x=>x.checks?.second_total);
+ await page.goto('http://127.0.0.1:3000/workspace/chats/'+passed.thread_id,{waitUntil:'networkidle',timeout:90000});
+ console.log('URL',page.url()); console.log((await page.locator('body').innerText()).slice(0,4500));
+ await page.screenshot({path:path.join(__dirname,'evidence/workspace.png'),fullPage:true});
+ await page.getByText('report-v2.html',{exact:true}).first().click();
+ await page.waitForTimeout(1500);
+ await page.screenshot({path:path.join(__dirname,'evidence/artifact-preview.png'),fullPage:true});
+ console.log('preview iframes',await page.locator('iframe').count());
+ console.log('errors',errors);
+ await browser.close();
+})();
