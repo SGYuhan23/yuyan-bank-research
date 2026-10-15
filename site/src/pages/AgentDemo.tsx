@@ -91,7 +91,6 @@ export default function AgentDemo() {
       await sleep();
       if (!alive.current) return;
       const result = session.run();
-      setOutput(result);
       setStep(4);
       await sleep();
       if (!alive.current) return;
@@ -104,7 +103,8 @@ export default function AgentDemo() {
         s!.id === "cashflow" &&
         result.value.scenario.base_version !== result.snapshot.base_version
       )
-        throw Error("账本版本不一致");
+        throw Error("账本版本已变化，请重新确认");
+      setOutput(result);
       setStep(5);
       await sleep();
       setTimeout(
@@ -116,6 +116,7 @@ export default function AgentDemo() {
         50,
       );
     } catch (e) {
+      session.binding.invalidate();
       setOutput(null);
       setError((e as Error).message);
       setStep(2);
@@ -136,7 +137,9 @@ export default function AgentDemo() {
     session &&
     !session.variant &&
     trace?.original_model_proposal?.request?.customer_id === "C1" &&
-    trace.original_model_proposal.request.delay_days === 14;
+    trace.original_model_proposal.request.delay_days === 14 &&
+    trace.actual_user_prompt?.replace(/\s+/g, "") ===
+      s.question.replace(/\s+/g, "");
   const p = session?.binding.request.parameters;
   const shownLedger = output?.value?.before || session?.ledger;
   const params = p
@@ -285,7 +288,9 @@ export default function AgentDemo() {
                         ? s.id === "cashflow"
                           ? `正在重新计算 ${session.ledger.orders.length} 笔订单的现金事件…`
                           : "正在按确认参数执行工具并核对结果…"
-                        : "已使用确认快照执行 · 结果绑定本次请求与账本版本"}
+                        : ["allocation", "customer"].includes(s.id)
+                          ? "已使用确认参数执行 · 结果对应本次分析条件"
+                          : "已使用确认快照执行 · 结果绑定本次请求与账本版本"}
                     </p>
                   </div>
                   <Tag>{busy ? "执行中" : "已完成"}</Tag>

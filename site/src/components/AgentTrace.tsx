@@ -26,9 +26,20 @@ export default function AgentTrace({
   const panelRef = useRef<HTMLElement>(null);
   useEffect(() => {
     const panel = panelRef.current;
-    const current = panel?.querySelectorAll<HTMLElement>(".execution-workspace > li")[step];
+    const current = panel?.querySelectorAll<HTMLElement>(
+      ".execution-workspace > li",
+    )[step];
     if (panel && current && window.matchMedia("(min-width: 901px)").matches) {
-      panel.scrollTo({ top: Math.max(0, panel.scrollTop + current.getBoundingClientRect().top - panel.getBoundingClientRect().top - 190), behavior: "smooth" });
+      panel.scrollTo({
+        top: Math.max(
+          0,
+          panel.scrollTop +
+            current.getBoundingClientRect().top -
+            panel.getBoundingClientRect().top -
+            190,
+        ),
+        behavior: "smooth",
+      });
     }
   }, [step]);
   const req = session.binding.request,
@@ -185,9 +196,31 @@ export default function AgentTrace({
     </>,
     <>
       <ul className="trace-checks">
-        <li>✓ 分析对象已确定</li>
-        <li>✓ 时间与金额条件完整</li>
-        <li>✓ 当前账本版本：{version}</li>
+        {id === "allocation" ? (
+          <>
+            <li>✓ 候选任务集{session.variant ? "未变化" : "已加载"}</li>
+            <li>✓ 可用新增经营工时已确定：{p.available_hours} 小时</li>
+            <li>
+              ✓ 行业资源分散约束：
+              {p.industry_limit ? "单一行业 ≤ 已选工时 25%" : "不启用"}
+            </li>
+            <li>✓ 每户最多选择 1 项新增动作</li>
+          </>
+        ) : id === "customer" ? (
+          <>
+            <li>✓ 两个合成对照客户已加载</li>
+            <li>✓ 两个客户余额均为 {money(p.deposit_fen)} 元</li>
+            <li>✓ 客户 A 主要差异变量：交易频次</li>
+            <li>✓ 客户 B 主要差异变量：员工数量</li>
+            <li>✓ 其余对照字段按当前实验设定</li>
+          </>
+        ) : (
+          <>
+            <li>✓ 分析对象已确定</li>
+            <li>✓ 时间与金额条件完整</li>
+            <li>✓ 当前账本版本：{version}</li>
+          </>
+        )}
       </ul>
       <strong className="confirmation-wait">
         {session.binding.confirmed
@@ -242,15 +275,33 @@ export default function AgentTrace({
     <>
       {r && (
         <ul className="trace-checks">
-          <li>✓ 参数快照与本次问题一致</li>
-          <li>✓ 结果对应本次分析请求</li>
-          <li>✓ 没有复用上一轮参数</li>
-          <li>
-            ✓{" "}
-            {id === "reconcile"
-              ? `账本版本 ${r.before.version} → ${r.after.version}`
-              : `当前账本版本仍为 ${session.ledger.version}`}
-          </li>
+          {id === "allocation" ? (
+            <>
+              <li>✓ 结果对应当前工时条件</li>
+              <li>✓ 结果对应当前行业约束</li>
+              <li>✓ 没有复用上一轮参数</li>
+              <li>✓ 入选任务总工时不超过可用工时</li>
+            </>
+          ) : id === "customer" ? (
+            <>
+              <li>✓ 两个客户使用同一套经营动作估值规则</li>
+              <li>✓ 余额控制条件一致</li>
+              <li>✓ 建议差异来自业务驱动变量</li>
+              <li>✓ 结果不是按客户名称预设</li>
+            </>
+          ) : (
+            <>
+              <li>✓ 参数快照与本次问题一致</li>
+              <li>✓ 结果对应本次分析请求</li>
+              <li>✓ 没有复用上一轮参数</li>
+              <li>
+                ✓{" "}
+                {id === "reconcile"
+                  ? `账本版本 ${r.before.version} → ${r.after.version}`
+                  : `当前账本版本仍为 ${session.ledger.version}`}
+              </li>
+            </>
+          )}
           {id === "reconcile" && (
             <li>
               {r.ok ? "✓ 核对一致，一次性提交" : "✓ 余额不符，已确认全部回滚"}
@@ -267,7 +318,7 @@ export default function AgentTrace({
         <span className="eyebrow">可观察的执行过程</span>
         <h2>Agent 执行轨迹</h2>
         {recorded ? (
-          <Tooltip title="此步骤来自已有脱敏模型调用记录；关键金额由当前浏览器重新计算，不是本次在线模型调用。">
+          <Tooltip title="该步骤来自此业务问题的一次真实脱敏模型调用记录；金额和现金流由当前浏览器重新计算，本页面不会再次在线调用模型。">
             <Tag color="cyan">已有模型调用</Tag>
           </Tooltip>
         ) : (
@@ -314,15 +365,15 @@ export default function AgentTrace({
                 {recorded && (
                   <div className="record-note">
                     <p>
-                      原提示已指定 C1 / 14
-                      天；模型留空的折扣、费用、预付由验收程序依原问题补为零。当前完整业务问题不是当时提示的逐字重放。
+                      模型提出结构化参数；程序检查必填字段和业务边界，确认后再调用确定性工具。
                     </p>
+                    <p>{trace.validation_summary}</p>
                     <Collapse
                       size="small"
                       items={[
                         {
                           key: "record",
-                          label: "查看历史调用原始记录",
+                          label: "查看此问题的真实调用记录",
                           children: (
                             <>
                               <p>{trace.actual_user_prompt}</p>
@@ -333,7 +384,22 @@ export default function AgentTrace({
                                   2,
                                 )}
                               </pre>
-                              <p>{trace.correction_summary}</p>
+                              <p>{trace.context_summary}</p>
+                              <p>{trace.confirmation_summary}</p>
+                              <pre>
+                                {JSON.stringify(
+                                  {
+                                    confirmed_request: trace.confirmed_request,
+                                    tool: trace.tool,
+                                    arguments: trace.arguments,
+                                    result: trace.result,
+                                  },
+                                  null,
+                                  2,
+                                )}
+                              </pre>
+                              <p>{trace.answer}</p>
+                              <p>{trace.boundary}</p>
                             </>
                           ),
                         },

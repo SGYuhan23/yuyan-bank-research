@@ -1,6 +1,6 @@
 """Export browser inputs and independent Python parity fixtures; never exports credentials."""
 from pathlib import Path
-import sys,json,hashlib
+import sys,json,hashlib,re
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'agent-ops/examples'))
 sys.path.insert(0,str(ROOT/'agent-ops/research'))
@@ -20,11 +20,17 @@ case=select(data['supplier']['initial_case'],('version','opening_fen','opening_d
 case['orders']=[select(o,('order_id','customer_id','name','order_amount_fen','payment_terms')) for o in case['orders']]
 case['events']=[select(e,('event_id','order_id','event_type','planned_date','confirmed_date','posted_date','amount_fen','status','evidence','prediction_confidence')) for e in case['events']]
 payload={'source_sha256':hashlib.sha256(raw).hexdigest(),'fuling':{'customers':[select(c,customer_fields) for c in data['fuling']['customers']],'actions':[select(a,action_fields) for a in data['fuling']['actions']],'comparisons':[select(c,customer_fields) for c in comparisons],'assumptions':'单价、采用率、成本、工时、25%行业工时约束均为研究假设，不是银行内部参数或监管限额。'},'supplier':{'initial_case':case},'trace_path':'data/traces/supplier.json'}
+def public_ids(value):
+ if isinstance(value,str):return re.sub(r'SYN-V2-(\d+)',r'CUST-\1',value)
+ if isinstance(value,list):return [public_ids(v) for v in value]
+ if isinstance(value,dict):return {k:public_ids(v) for k,v in value.items()}
+ return value
+payload=public_ids(payload)
 (out/'demo-data.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
-trace=json.loads((ROOT/'agent-platform/frontend/public/research/trace.json').read_text())
-allow=['mock','status','model','recorded_at','actual_user_prompt','actual_followup_prompt','system_policy_summary','parameters_prespecified','confirmation_actor','original_model_proposal','harness_corrected_proposal','correction_summary','confirmed_request','tool','arguments','result','answer','boundary','redaction_note']
-(out/'traces').mkdir(exist_ok=True)
-(out/'traces/supplier.json').write_text(json.dumps({k:trace[k] for k in allow if k in trace},ensure_ascii=False,indent=2)+'\n')
+# The canonical recorded call is a separately reviewed public evidence artifact.
+# Never overwrite it with the older research trace during a data rebuild.
+trace_path=out/'traces/supplier.json'
+if not trace_path.exists():raise RuntimeError('Canonical supplier trace missing')
 # Tests compare current Python execution, not a manually maintained table of answers.
 case=data['supplier']['initial_case'];expected={'fuling':[],'supplier':[],'compare':[]}
 for hours in [50,150,220,600]:

@@ -1,2 +1,2 @@
 export const displayCustomerId = (id: string) =>
-  id.replace(/^SYN-V2-(\d+).*$/, "合成客户 $1");
+  id.replace(/^CUST-(\d+).*$/, "合成客户 $1");
