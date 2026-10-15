@@ -34,6 +34,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.25.0
       - name: Rebuild data from Python source
         run: |
           python -S agent-ops/research/build_data.py
@@ -45,19 +48,16 @@ jobs:
       - name: Browser engine parity against dynamic Python results
         run: node --test site/tests/*.test.mjs
       - uses: actions/configure-pages@v5
-      - name: Assemble browser-only site
+      - name: Build guided React site
+        working-directory: site
         run: |
-          mkdir -p _site/assets/screenshots _site/assets/reports
-          cp site/*.html site/*.css site/app.js _site/
-          cp -R site/js site/data _site/
-          for name in 01-fuling-overview 04-supplier-overview 03-fuling-customer-action 02-fuling-allocation 05-supplier-cashflow 07-supplier-contract 08-supplier-reconcile; do
-            cp "docs/screenshots/$name.png" _site/assets/screenshots/
-          done
-          cp docs/reports/*.pdf _site/assets/reports/
-          touch _site/.nojekyll
+          pnpm install --frozen-lockfile
+          pnpm test
+          pnpm build
+          touch dist/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: _site
+          path: site/dist
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4

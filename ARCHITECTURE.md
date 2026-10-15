@@ -50,6 +50,6 @@ GitHub Pages 浏览器 Agent Demo 与 GitHub 文档、真实截图和报告构�
 
 ## 浏览器执行适配
 
-`site/` 使用原生 ES modules。输入由有限规则解析；确认后的参数与账本版本绑定，修改输入立即标记旧结果失效。Fuling 分组背包、Supplier 逐日现金流、合同依赖和原子核对在浏览器运行，通过动态 Python 对照验证，Python 仍为计算依据。仅使用 sessionStorage 保存同标签页演示状态。
+`site/` 使用 React / TypeScript / Vite / Ant Design 和 HashRouter。四个受控完整问题由场景预设提供参数，不开放自由文本输入；确认后的参数与账本版本绑定，追加问题立即标记旧结果失效。Fuling 分组背包、Supplier 逐日现金流、合同依赖和原子核对在浏览器运行，通过动态 Python 对照验证，Python 仍为计算依据。当前引导演示状态仅保存在内存中，重新进入案例即重置。
 
 历史 Qwen 脱敏记录独立展示为调用回放，不能冒充当前输入的新模型调用。Pages 不提供实时模型服务。构建与一致性测试在 GitHub Actions 执行，不向浏览器部署 Python 或测试答案。
