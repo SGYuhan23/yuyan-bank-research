@@ -26,8 +26,9 @@ export default function About() {
         </p>
         <h2>完整实现与研究材料</h2>
         <p>
-          本地产品保留前端、后端、账本存储和 Agent 扩展。Agent framework 基于
-          DeerFlow 上游；本项目的经营模型、账本与参数确认机制可在源码中检查。
+          完整实现包含 Agent
+          编排、经营分析工具、账本机制和前后端交互；源码、技术说明和第三方许可均保留在
+          GitHub 仓库中。
         </p>
         <div className="reading-links">
           <a href={source}>查看完整源码 ↗</a>

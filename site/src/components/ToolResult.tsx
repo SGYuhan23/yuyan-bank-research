@@ -1,3 +1,4 @@
+import { displayCustomerId } from "../demo/presentation";
 import { Alert, Collapse, Table, Tag } from "antd";
 import CashCurve from "./CashCurve";
 export const money = (fen: number) =>
@@ -40,6 +41,10 @@ export default function ToolResult({
             description={`不设置约束：${money(r.free.benefit_fen)} 元 → 加入约束：${money(r.benefit_fen)} 元。差额是合成模型输出；25% 是研究中的资源分散假设，不是监管要求或授信限额。`}
           />
         )}
+        <p className="result-explanation">
+          在当前合成假设下，这 {r.selected.length} 项任务是 {r.hours}{" "}
+          小时内优先级更高的验证对象。入选不等于客户一定接受，也不代表收益已经实现。
+        </p>
         <h3>优先验证的经营任务</h3>
         <Table
           size="small"
@@ -52,7 +57,7 @@ export default function ToolResult({
               dataIndex: "customer_id",
               render: (s, a: any) => (
                 <>
-                  <strong>{s.replace("SYN-V2-", "客户 ")}</strong>
+                  <strong>{displayCustomerId(s)}</strong>
                   <div>{a.action_type}</div>
                 </>
               ),
@@ -83,7 +88,7 @@ export default function ToolResult({
                   {r.actions.map((a) => (
                     <section key={a.id}>
                       <h4>
-                        {a.customer_id} · {a.action_type}
+                        {displayCustomerId(a.customer_id)} · {a.action_type}
                       </h4>
                       <p>
                         {a.value_formula}；实施成本{" "}
@@ -128,6 +133,9 @@ export default function ToolResult({
             </section>
           ))}
         </div>
+        <p className="result-explanation">
+          两个客户余额相同，但业务驱动不同：一个更像结算机会，一个更像代发机会。因此余额不能单独决定经营优先级。
+        </p>
         <p className="small muted">
           控制余额后的合成实验。单价、采用率与成本均为
           ASSUMPTION，不代表真实客户建议。
@@ -160,7 +168,8 @@ export default function ToolResult({
             ? "最大缺口没有继续扩大"
             : `最大缺口增加了 ${money(s.peak_gap_fen - b.peak_gap_fen)} 元`}
           ，但资金紧张的持续时间从 {b.negative_days} 天延长到 {s.negative_days}{" "}
-          天。企业需要多承受 {s.negative_days - b.negative_days} 天的资金压力。
+          天。企业需要多承受 {s.negative_days - b.negative_days}{" "}
+          天的资金压力。因此流动性风险不仅取决于缺口规模，也取决于持续时间。
         </p>
         {!s.complete && (
           <Alert type="warning" message="存在逾期或争议，预测不完整" />
@@ -183,8 +192,8 @@ export default function ToolResult({
         }
         description={
           r.ok
-            ? "实际付款与余额核对已一起保存。"
-            : "计算余额与观察余额不一致，没有留下半完成记录。"
+            ? "核对一致后，这笔实际付款和新的账本状态一次性提交。"
+            : "系统没有先写入再补救。付款、余额核对和账本版本必须一起通过，否则全部不提交。"
         }
       />
       <Metrics

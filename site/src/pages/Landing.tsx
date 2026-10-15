@@ -149,24 +149,25 @@ export default function Landing() {
             </Button>
           </Link>
         </section>
-        <section>
-          <h2>研究的是理解、计算与决策的边界</h2>
+        <section className="semantic-story">
+          <h2>为什么不能让 AI 直接给答案？</h2>
           <p className="section-intro">
-            这个项目关注的是：哪些经营问题适合交给 AI
-            理解和解释，哪些关键计算必须由程序完成，以及人在什么地方需要确认和决策。
+            用户问的是“核心客户 C1 晚付款 14
+            天会怎样”。如果系统把问题理解成“所有客户都晚 30
+            天”，即使后面的现金流计算完全正确，回答的也不是同一个问题。
           </p>
-          <div className="research-roles">
-            {[
-              ["AI", "问题理解 / 资料整理 / 自然语言解释"],
-              ["程序", "金额 / 日期 / 现金流 / 资源配置"],
-              ["人", "参数确认 / 客户策略 / 经营判断 / 风险与授信"],
-            ].map(([a, b]) => (
-              <div key={a}>
-                <h3>{a}</h3>
-                <p>{b}</p>
-              </div>
-            ))}
+          <h3>先把问题听对，再把数字算对。</h3>
+          <div className="semantic-flow">
+            <span>
+              用户问题<strong>C1 晚付款 14 天</strong>
+            </span>
+            <span>
+              Agent 整理参数<strong>客户 = C1 · 延期 = 14 天</strong>
+            </span>
+            <span>用户确认</span>
+            <span>程序计算</span>
           </div>
+          <Link to="/demo/cashflow">看这个流程怎么运行 →</Link>
         </section>
         <section>
           <div className="section-heading">

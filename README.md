@@ -51,7 +51,7 @@
 | [agent-ops/test_*.py](agent-ops/) | 确定性模型、合同依赖、账本、语义、发布边界与集成测试 |
 | [build_data.py](agent-ops/research/build_data.py) / [build_reports.py](agent-ops/research/build_reports.py) | 标准库数据构建与报告生成 |
 | [portfolio_verify.py](scripts/portfolio_verify.py) | 当前完整公开仓库的文件与计算结果核对 |
-| [agent-platform/frontend](agent-platform/frontend) / [backend](agent-platform/backend) | 完整前后端及 Agent framework 源码，不是只有页面截图 |
+| [agent-platform/frontend](agent-platform/frontend) / [backend](agent-platform/backend) | 完整前后端、Agent 运行环境与本项目业务扩展源码 |
 
 完整目录见 [Repository Structure](docs/PUBLIC_REPO_TREE.md)。
 
@@ -63,6 +63,6 @@
 
 ## 技术栈
 
-Python 负责确定性计算与接口，PostgreSQL 保存账本，Next.js / React 提供本地交互界面。Agent 扩展基于 DeerFlow / LangGraph，可接入 Qwen。浏览器 Demo 使用 React / TypeScript / Vite / Ant Design，保留独立 JavaScript 计算引擎，与 Python 动态结果通过一致性测试。
+Python 负责确定性业务计算与接口，PostgreSQL 保存账本状态，Next.js / React 提供完整本地交互；Qwen 用于自然语言理解与解释，Agent workflow 负责问题理解、参数确认、工具调用和结果组织。浏览器 Demo 使用 React / TypeScript / Vite / Ant Design，保留独立 JavaScript 计算引擎，与 Python 动态结果通过一致性测试。
 
 [架构与责任划分](ARCHITECTURE.md) · [第三方说明](third_party/ATTRIBUTION.md) · [DeerFlow 许可证](agent-platform/LICENSE)

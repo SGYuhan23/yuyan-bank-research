@@ -88,20 +88,25 @@ export default function AgentDemo() {
       session.confirm();
       setStep(3);
       await sleep();
+      await sleep();
       if (!alive.current) return;
       const result = session.run();
+      setOutput(result);
       setStep(4);
       await sleep();
       if (!alive.current) return;
-      if (result.snapshot.request_id !== session.binding.request.request_id)
+      if (
+        JSON.stringify(result.snapshot) !==
+        JSON.stringify(session.binding.request)
+      )
         throw Error("请求已变化，请重新确认");
       if (
         s!.id === "cashflow" &&
         result.value.scenario.base_version !== result.snapshot.base_version
       )
         throw Error("账本版本不一致");
-      setOutput(result);
       setStep(5);
+      await sleep();
       setTimeout(
         () =>
           resultRef.current?.scrollIntoView({
@@ -111,6 +116,7 @@ export default function AgentDemo() {
         50,
       );
     } catch (e) {
+      setOutput(null);
       setError((e as Error).message);
       setStep(2);
     } finally {
@@ -212,12 +218,22 @@ export default function AgentDemo() {
             <>
               {old && (
                 <>
+                  <div className="stale-output" data-testid="stale-result">
+                    <strong>上一轮结果 · 参数已变化</strong>
+                    <ToolResult id={s.id} output={old} />
+                  </div>
                   <UserMessage text={followText} />
                   <Alert
                     type="warning"
                     showIcon
                     message="参数已变化，原结果失效。"
-                    description="上一轮结果只代表原参数，不能作为本轮回答。请重新确认下面的分析范围。"
+                    description={
+                      s.id === "allocation"
+                        ? "上一轮结果对应不启用行业约束，不能继续代表当前分析。"
+                        : s.id === "cashflow"
+                          ? "当前参数已经从 C1 / 14 天改为 ALL / 30 天，请重新确认。"
+                          : "观察余额已变化，请重新确认核对范围。"
+                    }
                   />
                 </>
               )}
@@ -288,7 +304,7 @@ export default function AgentDemo() {
                     <span className="eyebrow">这一步为什么重要？</span>
                     <p>{s.why}</p>
                   </div>
-                  {!session.variant && s.id !== "customer" && (
+                  {!busy && !session.variant && s.id !== "customer" && (
                     <Button className="followup" onClick={followup}>
                       {followText} →
                     </Button>

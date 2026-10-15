@@ -1,5 +1,20 @@
-import { Steps, Tabs, Tag, Tooltip, Collapse } from "antd";
+import { useEffect, useRef } from "react";
+import { Tabs, Tag, Tooltip, Collapse } from "antd";
 import { money } from "./ToolResult";
+import { evaluate } from "../../js/supplier-engine.js";
+import { scenarios } from "../demo/scenarios";
+function Rows({ rows }: { rows: any[] }) {
+  return (
+    <dl className="trace-values">
+      {rows.map(([k, v], i) => (
+        <div key={i}>
+          <dt>{k}</dt>
+          <dd>{String(v)}</dd>
+        </div>
+      ))}
+    </dl>
+  );
+}
 export default function AgentTrace({
   session,
   step,
@@ -7,72 +22,253 @@ export default function AgentTrace({
   output,
   trace,
   recorded,
-}: {
-  session: any;
-  step: number;
-  busy: boolean;
-  output: any;
-  trace: any;
-  recorded: boolean;
-}) {
-  const titles = [
-    "识别业务场景",
-    "提取业务参数",
-    "检查计算条件",
-    "运行确定性工具",
-    "校验结果与版本",
-    "生成受控解释",
-  ];
+}: any) {
+  const panelRef = useRef<HTMLElement>(null);
+  useEffect(() => {
+    const panel = panelRef.current;
+    const current = panel?.querySelectorAll<HTMLElement>(".execution-workspace > li")[step];
+    if (panel && current && window.matchMedia("(min-width: 901px)").matches) {
+      panel.scrollTo({ top: Math.max(0, panel.scrollTop + current.getBoundingClientRect().top - panel.getBoundingClientRect().top - 190), behavior: "smooth" });
+    }
+  }, [step]);
   const req = session.binding.request,
-    descriptions = [
-      recorded
-        ? "参考已有 C1 / 14 天模型提案"
-        : "参数由当前 Scenario fixture 提供",
-      step >= 1 ? "已整理客户、时间与成本字段" : "等待提取",
-      step >= 2
-        ? session.binding.confirmed
-          ? "参数已确认"
-          : "等待你逐项确认"
-        : "等待检查",
-      step >= 3 ? "按确认快照在浏览器重新计算" : "确认后才运行",
-      step >= 4 ? "核对参数快照、账本版本与工具返回" : "等待计算",
-      step >= 5 ? "解释来自本次工具输出" : "等待结果",
-    ];
-  const result = output?.value;
-  const compact = result
-    ? session.id === "allocation"
-      ? {
-          任务数: result.selected.length,
-          工时: result.hours,
-          假设净贡献元: money(result.benefit_fen),
-        }
-      : session.id === "cashflow"
-        ? {
-            峰值缺口元: money(result.scenario.peak_gap_fen),
-            负余额天数: result.scenario.negative_days,
-            账本版本: output.snapshot.base_version,
-          }
-        : session.id === "customer"
-          ? result.customers.map((c) => ({
-              建议: c.best.action_type,
-              净贡献元: money(c.best.benefit_fen),
-            }))
-          : {
-              核对一致: result.ok,
-              计算余额元: money(result.computed),
-              版本变化: [result.before.version, result.after.version],
-              历史增量:
-                result.after.history.length - result.before.history.length,
-            }
-    : null;
+    p = req.parameters,
+    id = session.id,
+    r = output?.value,
+    base = evaluate(r?.before || session.ledger),
+    scene = scenarios.find((s) => s.id === id)!;
+  const version = r?.before?.version ?? session.ledger.version;
+  const parameterRows =
+    id === "allocation"
+      ? [
+          ["新增经营工时", p.available_hours + " 小时"],
+          [
+            "行业分散约束",
+            p.industry_limit ? "单一行业 ≤ 已选工时 25%" : "不启用",
+          ],
+          ["候选任务", "当前完整候选集"],
+          ["每户最大动作", "1 项"],
+        ]
+      : id === "customer"
+        ? [
+            ["固定余额", money(p.deposit_fen) + " 元"],
+            [
+              "客户 A 年交易",
+              session.data.fuling.comparisons[0].annual_transaction_count +
+                " 笔",
+            ],
+            [
+              "客户 B 员工",
+              session.data.fuling.comparisons[1].payroll_employee_count + " 人",
+            ],
+          ]
+        : id === "cashflow"
+          ? [
+              [
+                "影响客户",
+                p.customer_id === "C1" ? "C1 核心客户" : "ALL 所有客户",
+              ],
+              ["延期", p.delay_days + " 天"],
+              ["折扣", p.discount],
+              ["额外费用", money(p.fee_fen) + " 元"],
+              ["追加预付", money(p.advance_fen) + " 元"],
+            ]
+          : [
+              ["事实余额", money(base.actual_balance_fen) + " 元"],
+              [
+                "实际付款",
+                money(
+                  session.ledger.events.find((e) => e.event_id === p.event_id)
+                    .amount_fen,
+                ) + " 元",
+              ],
+              ["观察余额", money(p.observed_balance_fen) + " 元"],
+            ];
+  const resultRows = !r
+    ? []
+    : id === "allocation"
+      ? [
+          ["入选任务", r.selected.length + " 项"],
+          ["使用工时", r.hours + " 小时"],
+          ["假设净贡献", money(r.benefit_fen) + " 元"],
+          ...(r.free
+            ? [["机会成本", money(r.free.benefit_fen - r.benefit_fen) + " 元"]]
+            : []),
+        ]
+      : id === "customer"
+        ? r.customers.map((c, i) => [
+            "客户 " + (i === 0 ? "A" : "B"),
+            c.best.action_type,
+          ])
+        : id === "cashflow"
+          ? [
+              [
+                "基准场景",
+                money(r.baseline.peak_gap_fen) +
+                  " 元 / " +
+                  r.baseline.negative_days +
+                  " 天",
+              ],
+              [
+                "延期场景",
+                money(r.scenario.peak_gap_fen) +
+                  " 元 / " +
+                  r.scenario.negative_days +
+                  " 天",
+              ],
+            ]
+          : [
+              ["计算余额", money(r.computed) + " 元"],
+              ["观察余额", money(r.observed) + " 元"],
+              ["余额核对", r.ok ? "✓ 一致" : "✕ 不一致"],
+              ["付款状态", r.ok ? "已入账" : "未写入"],
+              ["账本版本", r.before.version + " → " + r.after.version],
+              [
+                "变更历史",
+                "+" + (r.after.history.length - r.before.history.length),
+              ],
+            ];
+  const conclusion = !r
+    ? "等待工具结果"
+    : id === "allocation"
+      ? `在当前合成假设下，${r.selected.length} 项任务是 ${r.hours} 小时内优先验证的对象。${r.free ? "资源分散的机会成本为 " + money(r.free.benefit_fen - r.benefit_fen) + " 元。" : ""}入选不等于收益已实现。`
+      : id === "customer"
+        ? "余额一样，不代表经营机会一样。客户 A 的主要驱动是交易频次，客户 B 的主要驱动是员工数量。"
+        : id === "cashflow"
+          ? `最大缺口${r.scenario.peak_gap_fen === r.baseline.peak_gap_fen ? "没有增加" : "增加 " + money(r.scenario.peak_gap_fen - r.baseline.peak_gap_fen) + " 元"}；负余额持续时间 ${r.baseline.negative_days} → ${r.scenario.negative_days} 天。缺口规模与持续时间需要一起看。`
+          : r.ok
+            ? "核对一致后，这笔实际付款和新的账本状态一次性提交。"
+            : "系统没有先写入再补救。付款、余额核对和账本版本必须一起通过，否则全部不提交。";
+  const titles = [
+    "理解业务问题",
+    "整理分析参数",
+    "检查计算条件",
+    id === "allocation"
+      ? "运行经营资源优化"
+      : id === "customer"
+        ? "比较五类经营动作"
+        : id === "cashflow"
+          ? "运行资金测算"
+          : "执行付款与余额核对",
+    "核对计算结果",
+    "整理经营结论",
+  ];
+  const contents = [
+    <>
+      <Rows
+        rows={[
+          ["业务场景", scene.theme],
+          [
+            "分析目标",
+            id === "allocation"
+              ? "选择更值得优先验证的经营任务"
+              : id === "customer"
+                ? "固定余额，比较业务特征"
+                : id === "cashflow"
+                  ? "预计尾款延期"
+                  : "付款与余额一起核对",
+          ],
+        ]}
+      />
+      <p className="small muted">
+        {recorded
+          ? "参考已有 C1 / 14 天模型提案"
+          : "使用当前演示案例的完整业务问题"}
+      </p>
+    </>,
+    <>
+      <Rows rows={parameterRows} />
+      <details>
+        <summary>查看结构化参数</summary>
+        <pre>{JSON.stringify(p, null, 2)}</pre>
+      </details>
+    </>,
+    <>
+      <ul className="trace-checks">
+        <li>✓ 分析对象已确定</li>
+        <li>✓ 时间与金额条件完整</li>
+        <li>✓ 当前账本版本：{version}</li>
+      </ul>
+      <strong className="confirmation-wait">
+        {session.binding.confirmed
+          ? "✓ 已收到用户确认"
+          : "等待用户确认 · 尚未计算"}
+      </strong>
+    </>,
+    <>
+      <code className="business-tool">{scene.tool}</code>
+      {id === "allocation" ? (
+        <Rows
+          rows={[
+            ["候选动作", session.data.fuling.actions.length + " 项"],
+            ["可用工时", p.available_hours + " 小时"],
+          ]}
+        />
+      ) : id === "cashflow" ? (
+        <Rows
+          rows={[
+            ["读取订单", session.ledger.orders.length + " 笔"],
+            [
+              "读取现金事件",
+              session.ledger.events.filter((e) =>
+                [
+                  "materials",
+                  "production",
+                  "shipment",
+                  "receivable",
+                  "prepayment",
+                  "fee",
+                  "quality_deduction",
+                ].includes(e.event_type),
+              ).length + " 条",
+            ],
+            [
+              "基准场景",
+              money(base.peak_gap_fen) + " 元 / " + base.negative_days + " 天",
+            ],
+          ]}
+        />
+      ) : id === "customer" ? (
+        <p>分别重新计算：结算、存款关系、代发 / 支付、供应链连接、客户维护。</p>
+      ) : (
+        <Rows rows={parameterRows} />
+      )}
+      {r ? (
+        <Rows rows={resultRows} />
+      ) : (
+        <p className="trace-running">正在计算…</p>
+      )}
+    </>,
+    <>
+      {r && (
+        <ul className="trace-checks">
+          <li>✓ 参数快照与本次问题一致</li>
+          <li>✓ 结果对应本次分析请求</li>
+          <li>✓ 没有复用上一轮参数</li>
+          <li>
+            ✓{" "}
+            {id === "reconcile"
+              ? `账本版本 ${r.before.version} → ${r.after.version}`
+              : `当前账本版本仍为 ${session.ledger.version}`}
+          </li>
+          {id === "reconcile" && (
+            <li>
+              {r.ok ? "✓ 核对一致，一次性提交" : "✓ 余额不符，已确认全部回滚"}
+            </li>
+          )}
+        </ul>
+      )}
+    </>,
+    <p className="trace-conclusion">{conclusion}</p>,
+  ];
   return (
-    <aside className="trace-panel">
+    <aside ref={panelRef} className="trace-panel">
       <div className="trace-heading">
         <span className="eyebrow">可观察的执行过程</span>
         <h2>Agent 执行轨迹</h2>
         {recorded ? (
-          <Tooltip title="此步骤来自已有的脱敏模型调用记录；关键金额由当前浏览器重新计算。不是本次在线模型调用。">
-            <Tag color="cyan">已记录模型调用</Tag>
+          <Tooltip title="此步骤来自已有脱敏模型调用记录；关键金额由当前浏览器重新计算，不是本次在线模型调用。">
+            <Tag color="cyan">已有模型调用</Tag>
           </Tooltip>
         ) : (
           <Tag>演示执行轨迹</Tag>
@@ -86,49 +282,47 @@ export default function AgentTrace({
             label: "执行轨迹",
             children: (
               <>
-                <Steps
-                  direction="vertical"
-                  size="small"
-                  current={step}
-                  status={step === 5 ? "finish" : "process"}
-                  items={titles.map((title, i) => ({
-                    title,
-                    description: descriptions[i],
-                    status:
-                      i < step || step === 5
-                        ? "finish"
-                        : i === step
-                          ? "process"
-                          : "wait",
-                  }))}
-                />
-                <div className="trace-note" aria-live="polite">
-                  {busy
-                    ? "执行中 · 步骤按约 450ms 展开"
-                    : step === 2
-                      ? "等待参数确认，尚未计算"
-                      : step === 5
-                        ? "本轮执行已完成"
-                        : "按步骤显示可观察操作"}
-                </div>
-                {recorded && trace && (
+                {session.variant && (
+                  <p className="trace-note">
+                    上一轮参数已失效，本轮重新确认与计算。
+                  </p>
+                )}
+                <ol className="execution-workspace">
+                  {titles.map((title, i) => (
+                    <li
+                      key={title}
+                      className={
+                        i > step
+                          ? "future"
+                          : i === step && step !== 5
+                            ? "active"
+                            : "complete"
+                      }
+                    >
+                      <span className="trace-node">
+                        {i < step || step === 5
+                          ? "✓"
+                          : String(i + 1).padStart(2, "0")}
+                      </span>
+                      <h3>{title}</h3>
+                      {i <= step && (
+                        <div className="trace-body">{contents[i]}</div>
+                      )}
+                    </li>
+                  ))}
+                </ol>
+                {recorded && (
                   <div className="record-note">
-                    <strong>这条记录实际证明了什么？</strong>
                     <p>
                       原提示已指定 C1 / 14
-                      天。模型提案留空了折扣、费用、预付，由验收程序依原问题补为
-                      0。
-                    </p>
-                    <p>
-                      上方业务问题是本次演示的完整表述，与历史提示并非同一句话。没有新的在线
-                      Qwen 调用。
+                      天；模型留空的折扣、费用、预付由验收程序依原问题补为零。当前完整业务问题不是当时提示的逐字重放。
                     </p>
                     <Collapse
                       size="small"
                       items={[
                         {
                           key: "record",
-                          label: "核对原始提示与模型提案",
+                          label: "查看历史调用原始记录",
                           children: (
                             <>
                               <p>{trace.actual_user_prompt}</p>
@@ -140,7 +334,6 @@ export default function AgentTrace({
                                 )}
                               </pre>
                               <p>{trace.correction_summary}</p>
-                              <p>{trace.system_policy_summary}</p>
                             </>
                           ),
                         },
@@ -149,7 +342,7 @@ export default function AgentTrace({
                   </div>
                 )}
                 <p className="small muted">
-                  展示的是场景、参数、工具及结果，不是模型隐藏思维。动画仅控制步骤呈现。
+                  仅展示可观察操作，不展示模型隐藏思维。{busy ? "执行中。" : ""}
                 </p>
               </>
             ),
@@ -160,11 +353,8 @@ export default function AgentTrace({
             disabled: !output,
             children: (
               <>
-                <p>本次实际工具返回摘要</p>
-                <pre>{JSON.stringify(compact, null, 2)}</pre>
-                <p className="small muted">
-                  完整返回包含日序列或任务明细；主对话展示业务解释。
-                </p>
+                <Rows rows={resultRows} />
+                <p>{conclusion}</p>
               </>
             ),
           },
@@ -174,18 +364,15 @@ export default function AgentTrace({
             children: (
               <>
                 <p>
-                  参数来源：
-                  {recorded
-                    ? "场景预设 + 对应的脱敏历史提案"
-                    : "当前 Scenario fixture"}
+                  参数来源：当前演示案例{recorded ? "与对应的历史模型提案" : ""}
+                  。金额按整数分计算。
                 </p>
-                <p>工具仅消费已确认快照。金额按整数分计算。</p>
-                <pre>{JSON.stringify(output?.snapshot || req, null, 2)}</pre>
+                <details>
+                  <summary>查看本次确认参数与请求标识</summary>
+                  <pre>{JSON.stringify(output?.snapshot || req, null, 2)}</pre>
+                </details>
                 <p>
-                  确认状态：{session.binding.confirmed ? "已确认" : "待确认"}
-                </p>
-                <p className="small muted">
-                  所有单价、采用率和成本是研究假设。参数确认不代表真实合同已落实。
+                  单价、采用率、成本均为研究假设。参数确认不代表合同已落实。
                 </p>
               </>
             ),

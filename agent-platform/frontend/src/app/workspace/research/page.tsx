@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import { fetch as authFetch } from "@/core/api/fetcher";
 
+const displayCustomerId = (id: string) => id.replace(/^SYN-V2-(\d+).*$/, "合成客户 $1");
+
 type Event = {
   event_id: string;
   order_id: string;
@@ -625,7 +627,7 @@ export default function Research() {
                             <tr key={x.id}>
                               <td className="border-b p-2">
                                 {x.action_type}
-                                <small className="block">{x.customer_id}</small>
+                                <small className="block">{displayCustomerId(x.customer_id)}</small>
                               </td>
                               <td className="p-2">{x.sector}</td>
                               <td className="p-2">{x.service_hours}</td>
@@ -650,7 +652,7 @@ export default function Research() {
                     <div className="mt-3 max-h-80 overflow-auto text-sm">
                       {a.rejected.map((x) => (
                         <p className="border-b py-3" key={x.id}>
-                          {x.id} · {x.action_type} · {money(x.benefit_fen)} ·{" "}
+                          {displayCustomerId(x.id)} · {x.action_type} · {money(x.benefit_fen)} ·{" "}
                           {x.reason}
                         </p>
                       ))}
@@ -751,7 +753,7 @@ export default function Research() {
                   >
                     {caseList.map((c) => (
                       <option key={c.case_id} value={c.case_id}>
-                        {c.case_id.slice(0, 8)} · v{c.version}
+                        {c.case_id.slice(0, 8)} · 账本 {c.version}
                       </option>
                     ))}
                   </select>

@@ -4124,7 +4124,7 @@
         "status": "CONFIRMED",
         "source": "SYNTHETIC / 合成合同情景",
         "evidence": "合成凭证",
-        "last_updated_at": "2026-10-14T14:51:33.372626+00:00"
+        "last_updated_at": "2026-10-15T01:22:40.126360+00:00"
       },
       {
         "event_id": "O1-production",
@@ -4341,7 +4341,7 @@
           "status": "CONFIRMED",
           "source": "SYNTHETIC / 合成合同情景",
           "evidence": "合成凭证",
-          "last_updated_at": "2026-10-14T14:51:33.372626+00:00"
+          "last_updated_at": "2026-10-15T01:22:40.126360+00:00"
         },
         "derived_changes": [],
         "payment_terms_before": [
@@ -4382,7 +4382,7 @@
             "type": "FIXED_DATE"
           }
         ],
-        "at": "2026-10-14T14:51:33.372626+00:00"
+        "at": "2026-10-15T01:22:40.126360+00:00"
       }
     ],
     "assumptions": [
@@ -4479,7 +4479,7 @@
         "status": "POSTED",
         "source": "SYNTHETIC / 合成合同情景",
         "evidence": "合成付款凭证",
-        "last_updated_at": "2026-10-14T14:51:33.373062+00:00"
+        "last_updated_at": "2026-10-15T01:22:40.126854+00:00"
       },
       {
         "event_id": "O1-production",
@@ -4696,7 +4696,7 @@
           "status": "CONFIRMED",
           "source": "SYNTHETIC / 合成合同情景",
           "evidence": "合成凭证",
-          "last_updated_at": "2026-10-14T14:51:33.372626+00:00"
+          "last_updated_at": "2026-10-15T01:22:40.126360+00:00"
         },
         "derived_changes": [],
         "payment_terms_before": [
@@ -4737,13 +4737,13 @@
             "type": "FIXED_DATE"
           }
         ],
-        "at": "2026-10-14T14:51:33.372626+00:00"
+        "at": "2026-10-15T01:22:40.126360+00:00"
       },
       {
         "version": 3,
         "operation": "record_actuals_and_reconcile",
         "reason": "合成付款核对",
-        "at": "2026-10-14T14:51:33.373371+00:00",
+        "at": "2026-10-15T01:22:40.127183+00:00",
         "before": {
           "as_of": "2027-01-02",
           "events": [
@@ -4758,7 +4758,7 @@
               "status": "CONFIRMED",
               "source": "SYNTHETIC / 合成合同情景",
               "evidence": "合成凭证",
-              "last_updated_at": "2026-10-14T14:51:33.372626+00:00"
+              "last_updated_at": "2026-10-15T01:22:40.126360+00:00"
             }
           ]
         },
@@ -4776,7 +4776,7 @@
               "status": "POSTED",
               "source": "SYNTHETIC / 合成合同情景",
               "evidence": "合成付款凭证",
-              "last_updated_at": "2026-10-14T14:51:33.373062+00:00"
+              "last_updated_at": "2026-10-15T01:22:40.126854+00:00"
             }
           ],
           "observed_balance_fen": -10000000

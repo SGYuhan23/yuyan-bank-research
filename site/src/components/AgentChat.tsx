@@ -5,7 +5,11 @@ export function UserMessage({ text }: { text: string }) {
   return (
     <article className="user-message">
       <span className="message-label">业务问题</span>
-      <p>{text}</p>
+      <p>
+        {text
+          .split(/(150 小时|不设置行业上限|C1|延期 14 天|30 万元)/g)
+          .map((part, i) => (i % 2 ? <strong key={i}>{part}</strong> : part))}
+      </p>
     </article>
   );
 }

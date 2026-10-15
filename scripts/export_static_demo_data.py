@@ -12,7 +12,14 @@ comparisons=[]
 for key,value in [('annual_transaction_count',10000),('payroll_employee_count',500),('eligible_supply_chain_links',30),('relationship_contribution_fen',3000000)]:
  c=dict(id='COMPARE',sector='合成对照',deposit_fen=10000000,annual_transaction_count=0,payroll_employee_count=0,eligible_supply_chain_links=0,relationship_contribution_fen=0,attrition_scenario='0.5',source_fact_ids='ASSUMPTION')
  c[key]=value;comparisons.append(c)
-payload={'source_sha256':hashlib.sha256(raw).hexdigest(),'fuling':{'customers':data['fuling']['customers'],'actions':data['fuling']['actions'],'comparisons':comparisons,'assumptions':'单价、采用率、成本、工时、25%行业工时约束均为研究假设，不是银行内部参数或监管限额。'},'supplier':{'initial_case':data['supplier']['initial_case']},'trace_path':'data/traces/supplier.json'}
+def select(row, fields):
+ return {k:row[k] for k in fields if k in row}
+customer_fields=('id','sector','deposit_fen','annual_transaction_count','payroll_employee_count','eligible_supply_chain_links','relationship_contribution_fen','attrition_scenario')
+action_fields=('id','customer_id','sector','action_type','service_hours','expected_benefit_fen','implementation_cost_fen','benefit_fen','value_formula','business_drivers','stop_condition','evidence_requirement')
+case=select(data['supplier']['initial_case'],('version','opening_fen','opening_date','as_of','necessary_expenses_complete','orders','events','history'))
+case['orders']=[select(o,('order_id','customer_id','name','order_amount_fen','payment_terms')) for o in case['orders']]
+case['events']=[select(e,('event_id','order_id','event_type','planned_date','confirmed_date','posted_date','amount_fen','status','evidence','prediction_confidence')) for e in case['events']]
+payload={'source_sha256':hashlib.sha256(raw).hexdigest(),'fuling':{'customers':[select(c,customer_fields) for c in data['fuling']['customers']],'actions':[select(a,action_fields) for a in data['fuling']['actions']],'comparisons':[select(c,customer_fields) for c in comparisons],'assumptions':'单价、采用率、成本、工时、25%行业工时约束均为研究假设，不是银行内部参数或监管限额。'},'supplier':{'initial_case':case},'trace_path':'data/traces/supplier.json'}
 (out/'demo-data.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
 trace=json.loads((ROOT/'agent-platform/frontend/public/research/trace.json').read_text())
 allow=['mock','status','model','recorded_at','actual_user_prompt','actual_followup_prompt','system_policy_summary','parameters_prespecified','confirmation_actor','original_model_proposal','harness_corrected_proposal','correction_summary','confirmed_request','tool','arguments','result','answer','boundary','redaction_note']

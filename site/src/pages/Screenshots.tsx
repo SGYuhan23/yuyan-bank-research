@@ -1,6 +1,14 @@
 import { Image } from "antd";
 import { Header, Footer } from "../components/Layout";
 import { shots, asset } from "../demo/scenarios";
+const captions: Record<string, string> = {
+  "01-fuling-overview": "公开产业背景、合成客群和经营研究入口。",
+  "02-fuling-allocation": "比较有限客户经理工时下的任务取舍。",
+  "03-fuling-customer-action": "核对入选客户的业务驱动、所需材料与停止条件。",
+  "04-supplier-overview": "查看订单回款与支出的时间差及资金压力。",
+  "07-supplier-contract": "区分条件型回款与固定日期回款。",
+  "08-supplier-reconcile": "实际收付与观察余额必须一起核对。",
+};
 export default function Screenshots() {
   return (
     <>
@@ -20,7 +28,10 @@ export default function Screenshots() {
                   src={asset("assets/screenshots/" + id + ".png")}
                   alt={title}
                 />
-                <figcaption>{title}</figcaption>
+                <figcaption>
+                  <strong>{title}</strong>
+                  <p>{captions[id]}</p>
+                </figcaption>
               </figure>
             ))}
           </div>
