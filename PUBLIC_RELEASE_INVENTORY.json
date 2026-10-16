@@ -15,8 +15,8 @@
       "bytes": 4559
     },
     "DEMO.md": {
-      "sha256": "24136deb2f544d57a0690222dedbf669fc564daa60d3be7dd20ccb58e1488a6d",
-      "bytes": 4887
+      "sha256": "cd267b452d892bb2f3b997c00890bef5ad90d3b82f1ce178726142be53c8f311",
+      "bytes": 5231
     },
     "DISCLAIMER.md": {
       "sha256": "0af5a20bbf43e5ccaa174fc5844afe6544ffd1eed7f50c3d8014d72e463850ba",
@@ -27,8 +27,8 @@
       "bytes": 5320
     },
     "REPRODUCIBILITY.md": {
-      "sha256": "08c850d24aedfb0f71178990b6ad04c411965af858fa57f44c3a6354193ffac5",
-      "bytes": 5024
+      "sha256": "01b1f4961b6546df6b62ccd1af2efa29b204abd4892879c6478c24de0e7d213f",
+      "bytes": 5508
     },
     "agent-ops/.env.example": {
       "sha256": "128e9da0ab252bd0cf6315a71e7505bcbea6f3ef8cf7b67fbcb03bac8e9f0462",
@@ -16015,8 +16015,8 @@
       "bytes": 28
     },
     "site/README.md": {
-      "sha256": "bb6b1982fe0f135e03b503ef0981929040bbd474b5af721dc08948cd33a81e74",
-      "bytes": 2774
+      "sha256": "2831330dec89d2b52b6d9f61340cb51421b7d64ddaccd209ad33f119664b00c4",
+      "bytes": 2956
     },
     "site/app.js": {
       "sha256": "51ed1f3f04e1360112d73053cdfa7ea60bb8d7f00579b77f076f6e2c8016802c",
@@ -16143,8 +16143,8 @@
       "bytes": 889
     },
     "site/src/pages/About.tsx": {
-      "sha256": "69d0b747e6f01cf848aaf77f606a98a24bf44fd33eff748d8f879b7b22edb742",
-      "bytes": 2128
+      "sha256": "e17061aa08fd3414db788911682912e592e92252ca8762fc17c50467c5aebbb6",
+      "bytes": 2329
     },
     "site/src/pages/AgentDemo.tsx": {
       "sha256": "bead67053fde35f0e2fd436792f386eb5ec31b8742ae90b7b835c7352852494c",

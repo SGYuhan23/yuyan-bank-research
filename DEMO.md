@@ -75,7 +75,7 @@ AI 理解问题、整理资料和解释结果；金额、日期和现金流由�
 
 ![脱敏调用记录](docs/screenshots/10-trace.png)
 
-[ScenarioRequest](agent-ops/research/scenario_request.py) 绑定参数快照与账本版本。[公开调用记录](agent-platform/frontend/public/research/trace.json) 区分真实用户提示、人工系统策略摘要、模型提案、验收程序修正、确认参数与工具结果。该示例由用户预先指定 C1/14 天，不能据此声称模型自主完成了所有参数抽取。
+[ScenarioRequest](agent-ops/research/scenario_request.py) 绑定参数快照与账本版本。[历史调用记录（2026-10-14）](agent-platform/frontend/public/research/trace.json) 区分真实用户提示、人工系统策略摘要、模型提案、验收程序修正、确认参数与工具结果。该历史示例由用户预先指定 C1/14 天，不能据此声称模型自主完成了所有参数抽取。它不是当前 Pages 使用的记录：[当前记录（2026-10-15）](site/data/traces/supplier.json) 对应 Demo 03 的完整问题，问题已明确客户、延期与成本条件；本次提案字段完整，未补字段或修正提案。Pages 展示该已有记录并在浏览器本地重算，不实时调用模型。
 
 </details>
 

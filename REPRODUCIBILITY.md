@@ -2,6 +2,14 @@
 
 从本仓库根目录执行。完整源码保留；GitHub 展示不依赖在线服务。
 
+先在干净检出中验证提交的发布快照，再在独立工作副本中执行下方数据重建与测试：
+
+```sh
+python scripts/portfolio_verify.py
+```
+
+此检查验证提交文件的字节哈希，不是重建后的业务结果校验。导出的一致性测试预期含运行时间戳，重建后字节可能变化；用既有回归与 Python / 浏览器对照验证计算结果，不以重建文件重置发布清单或冻结核心哈希。
+
 ## 1. 最小确定性复算
 
 Python 3.12+；数据构建仅用标准库，不需要模型、数据库或 DeerFlow 运行时。
@@ -12,7 +20,6 @@ python3 -m venv .venv
 python -m pip install -r agent-ops/research/review-requirements.txt
 python -S agent-ops/research/build_data.py
 python -m pytest agent-ops/test_fuling_v2.py agent-ops/test_supplier_ledger.py agent-ops/test_research_models.py agent-ops/test_v2_evidence.py agent-ops/test_scenario_semantics.py agent-ops/test_public_release.py -q
-python scripts/portfolio_verify.py
 ```
 
 默认生成案例数据，输出 `agent-platform/frontend/public/research/v2.json` 与当前 CSV。语义测试用 LangChain 消息容器，无真实模型调用。校验脚本检查核心文件、数据与 PDF 哈希以及完整公开清单。若主动重新生成媒体或 PDF，清单应随新产物重建，不可伪称字节不变。
@@ -78,6 +85,7 @@ agent-platform/backend/.venv/bin/python -m pytest agent-ops/test_*.py -q
 ## 5. 校验与秘密扫描
 
 ```sh
+# 在尚未执行数据重建的干净检出中验证发布快照
 python scripts/portfolio_verify.py
 # 自行安装 Gitleaks 8.24.3 或兼容版本；报告中隐藏匹配值
 mkdir -p tmp
