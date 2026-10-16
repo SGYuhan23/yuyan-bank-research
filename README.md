@@ -1,41 +1,20 @@
-# 渝研｜银行经营分析 Agent
+# 渝研｜产业经营研究
 
-把一个经营问题，从自然语言提问，走到参数确认、工具计算、结果校验和经营解释。
+先理解生意，再安排金融服务。以公开资料建立产业背景，用模拟客户与收付计划研究银行服务顺序和企业现金时点。
 
-当前聚焦：
+**[打开交互研究页](https://sgyuhan23.github.io/yuyan-bank-research/)** · [三分钟演示](DEMO.md) · [下载研究报告](research-showcase/dist/渝研_产业经营研究报告.pdf) · [复算说明](REPRODUCIBILITY.md)
 
-- 客户经营资源配置
-- 制造业供应商资金管理
+## 当前两个案例
 
-**[打开交互 Demo](https://sgyuhan23.github.io/yuyan-bank-research/)** · [阅读完整案例](DEMO.md)
+**涪陵榨菜客户经营**：合作社、加工企业、经销商三个客户原型，比较付款紧迫性、核查材料、工时和停止条件。本周18小时先安排经销商6小时、合作社8小时，留4小时补件；新证据可以改变排序。不计算未经校准的银行收益排名。
 
-选择四个完整业务问题，确认参数，再查看浏览器实时计算与可观察执行轨迹。无需登录，不提供在线模型调用；已有 Qwen 记录明确标注为历史调用。
+**汽车供应商资金周转**：比较现金、持票到期、次日贴现成功和现金晚14天。四种情景峰值缺口均为56万元，负余额期分别为94、185、95和108天；贴现成本为6,627.95元。这些都是模拟输入下的研究结果，不是实际企业表现或银行报价。
 
-| 县域客户经营：时间有限，先跟进谁？ | 供应商资金管理：有订单，为什么还缺钱？ |
-|---|---|
-| [![县域客户经营页面](docs/screenshots/01-fuling-overview.png)](DEMO.md#县域客户经营) | [![供应商资金管理页面](docs/screenshots/04-supplier-overview.png)](DEMO.md#供应商资金管理) |
+页面无自由输入、无实时模型调用。经营情景是预设分析路径；汽车情景经参数确认后展示对应的确定性结果，不把预设文字包装成模型推理。公开来源、适用范围与模拟数据边界保留在“研究报告与依据”中。
 
-## 两个案例
+当前页面、报告、数据及复算源码位于 [research-showcase](research-showcase/README.md)。Pages 仅部署该目录的 dist，不混合旧版案例或报告。原后端、Agent、计算引擎和历史研究材料继续保留，属于原项目技术实现，不代表当前三个客户原型与56万元案例。
 
-**县域客户经营**：交易频繁的客户可能适合结算服务，员工多的客户可能适合代发。项目把这些业务差异转成待验证的任务，再比较时间有限时先做哪些。合成实验中，150 小时下加入资源分散约束，假设净贡献从 45,027 元变为 44,205 元；822 元是模型中的取舍，不是实际业绩。
-
-**供应商资金管理**：订单最终回款 96 万元，过程中却有 49 万元的峰值资金缺口。核心客户晚付款 14 天，峰值不变，负余额时间从 38 天延长到 52 天。资金风险不仅是差多少钱，也包括要撑多久。
-
-[阅读研究报告](docs/reports/README.md) · [数据与使用边界](DISCLAIMER.md)
-
-## 项目设计
-
-公开事实用于理解地区与产业背景；客户和订单使用合成数据。AI 理解问题、整理资料和解释结果，程序计算金额、日期、现金流与资源安排，人负责确认输入和经营判断。
-
-例如，用户问 C1 客户晚付款 14 天，不能拿所有客户晚 30 天的结果回答。系统先展示理解出的参数，确认后计算；修改输入后，旧结果失效。
-
-## 界面预览
-
-[完整图文案例](DEMO.md) 展示任务选择、合同条件和余额核对。截图来自真实本地页面，GitHub Pages 先介绍产品，再进入四个受控 Agent 演示；真实界面另设截图入口。
-
-可选：[概览录屏](docs/media/overview.mp4) · [客户经营录屏](docs/media/fuling.mp4) · [供应商与 AI 录屏](docs/media/supplier-ai.mp4)。录屏保留了当时的界面文字，业务计算与图文案例一致。
-
-## 源码结构
+## 保留的原项目源码
 
 这是完整源码作品仓库。保留 agent-ops / agent-platform 目录结构，不为展示重排 imports；依赖、运行账号与密钥由使用者在本地配置。
 
@@ -50,19 +29,19 @@
 | [research_plugin.py](agent-ops/research_plugin.py) / [research_policy.py](agent-ops/research_policy.py) | 本项目 Agent 工具、API 扩展及回答边界 |
 | [agent-ops/test_*.py](agent-ops/) | 确定性模型、合同依赖、账本、语义、发布边界与集成测试 |
 | [build_data.py](agent-ops/research/build_data.py) / [build_reports.py](agent-ops/research/build_reports.py) | 标准库数据构建与报告生成 |
-| [portfolio_verify.py](scripts/portfolio_verify.py) | 当前完整公开仓库的文件与计算结果核对 |
+| [portfolio_verify.py](scripts/portfolio_verify.py) | 公开仓库发布快照的文件哈希核对 |
 | [agent-platform/frontend](agent-platform/frontend) / [backend](agent-platform/backend) | 完整前后端、Agent 运行环境与本项目业务扩展源码 |
 
 完整目录见 [Repository Structure](docs/PUBLIC_REPO_TREE.md)。
 
-[浏览器 Demo 实现与一致性测试](site/README.md)
+[原版浏览器 Demo 实现与一致性测试（历史案例，不是当前展示）](site/README.md)
 
 ## 本地运行
 
-[复算与本地运行说明](REPRODUCIBILITY.md) 提供数据构建、测试、报告生成与完整平台启动步骤。独立复算不需要模型密钥或数据库；完整交互平台在本地运行。线上 Demo 的计算在浏览器执行，不提供后端服务。
+[复算与本地运行说明](REPRODUCIBILITY.md) 提供数据构建、测试、报告生成与完整平台启动步骤。独立复算不需要模型密钥或数据库；完整交互平台在本地运行。当前研究页展示预先由 Python 生成的情景结果，不提供后端服务。
 
 ## 技术栈
 
-Python 负责确定性业务计算与接口，PostgreSQL 保存账本状态，Next.js / React 提供完整本地交互；Qwen 用于自然语言理解与解释，Agent workflow 负责问题理解、参数确认、工具调用和结果组织。浏览器 Demo 使用 React / TypeScript / Vite / Ant Design，保留独立 JavaScript 计算引擎，与 Python 动态结果通过一致性测试。
+Python 负责确定性业务计算与接口，PostgreSQL 保存账本状态，Next.js / React 提供完整本地交互；Qwen 用于自然语言理解与解释，Agent workflow 负责问题理解、参数确认、工具调用和结果组织。原版浏览器 Demo 的 React / TypeScript / Vite / Ant Design 与独立 JavaScript 计算引擎继续保留；当前公开入口使用 research-showcase/dist 中的静态研究页。
 
 [架构与责任划分](ARCHITECTURE.md) · [第三方说明](third_party/ATTRIBUTION.md) · [DeerFlow 许可证](agent-platform/LICENSE)

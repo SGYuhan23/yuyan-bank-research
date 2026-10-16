@@ -1,4 +1,6 @@
-# 渝研受控交互演示
+# 渝研原版受控交互演示（源码保留）
+
+本目录不再作为 Pages 发布产物。当前公开研究页、报告与模拟数据见 [research-showcase](../research-showcase/README.md)。下文描述原版功能与历史调用，不是当前展示案例。
 
 React / TypeScript / Vite / Ant Design，使用 HashRouter 适配 GitHub Pages。Landing 先解释产品，再进入四个完整业务问题。Demo 不开放自由文本输入；选择问题、确认参数与 follow-up 都是受控交互。
 

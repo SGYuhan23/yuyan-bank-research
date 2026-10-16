@@ -1,0 +1,50 @@
+[
+  {
+    "name": "three customer tasks visible without expanding",
+    "status": "PASS"
+  },
+  {
+    "name": "capacity alternative changes recommendation",
+    "status": "PASS"
+  },
+  {
+    "name": "cash ledger switches to actual selected profile",
+    "status": "PASS"
+  },
+  {
+    "name": "tab selection reveals relevant case",
+    "status": "PASS"
+  },
+  {
+    "name": "new scenario is not applied before confirmation",
+    "status": "PASS"
+  },
+  {
+    "name": "confirmed parameters bind correct scenario",
+    "status": "PASS"
+  },
+  {
+    "name": "cancel keeps previous confirmed result",
+    "status": "PASS"
+  },
+  {
+    "name": "discount uses correct net cash and cost",
+    "status": "PASS"
+  },
+  {
+    "name": "all four comparison rows are rendered",
+    "status": "PASS"
+  },
+  {
+    "name": "seven source links and independent report available",
+    "status": "PASS"
+  },
+  {
+    "name": "no free input or unresolved template tokens",
+    "status": "PASS"
+  },
+  {
+    "name": "no simulated live model claim",
+    "status": "PASS"
+  }
+]

@@ -42,3 +42,7 @@ delivery/
 .cache/
 agent-ops/evidence/
 agent-ops/handoff/
+
+# Versioned current static research delivery (not a local build cache)
+!research-showcase/dist/
+!research-showcase/dist/**

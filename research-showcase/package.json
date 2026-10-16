@@ -1,0 +1,12 @@
+{
+  "name": "yuyan-industry-research",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node test_page.mjs",
+    "test:deploy": "RESEARCH_PAGE=./dist/index.html node test_page.mjs"
+  },
+  "devDependencies": {
+    "happy-dom": "^21.0.1"
+  }
+}

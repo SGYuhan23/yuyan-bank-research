@@ -1,9 +1,11 @@
-name: Publish banking Agent Demo
+name: Publish industry research showcase
 on:
   push:
     branches: [main]
     paths:
       - 'site/**'
+      - 'research-showcase/**'
+      - 'PUBLIC_RELEASE_INVENTORY.json'
       - 'scripts/export_static_demo_data.py'
       - 'agent-ops/examples/fuling.py'
       - 'agent-ops/research/**'
@@ -37,6 +39,17 @@ jobs:
       - uses: pnpm/action-setup@v4
         with:
           version: 11.25.0
+      - name: Verify committed release snapshot
+        run: python scripts/portfolio_verify.py
+      - name: Verify current research delivery
+        working-directory: research-showcase
+        run: |
+          python -m unittest test_model -v
+          pnpm install --frozen-lockfile
+          pnpm test
+          pnpm run test:deploy
+          python verify_delivery.py
+          git diff --exit-code -- dist
       - name: Rebuild data from Python source
         run: |
           python -S agent-ops/research/build_data.py
@@ -54,10 +67,10 @@ jobs:
           pnpm install --frozen-lockfile
           pnpm test
           pnpm build
-          touch dist/.nojekyll
+
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site/dist
+          path: research-showcase/dist
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4

@@ -1,0 +1,15 @@
+test_advance_already_in_opening_not_added_again (test_model.BusinessChecks.test_advance_already_in_opening_not_added_again) ... ok
+test_capacity_has_real_deferral (test_model.BusinessChecks.test_capacity_has_real_deferral) ... ok
+test_delay_changes_duration_not_peak (test_model.BusinessChecks.test_delay_changes_duration_not_peak) ... ok
+test_discount_replaces_not_duplicates_maturity_cash (test_model.BusinessChecks.test_discount_replaces_not_duplicates_maturity_cash) ... ok
+test_duplicate_event_and_hidden_out_of_window_payment_rejected (test_model.BusinessChecks.test_duplicate_event_and_hidden_out_of_window_payment_rejected) ... ok
+test_every_cash_path_reconciles (test_model.BusinessChecks.test_every_cash_path_reconciles) ... ok
+test_first_supplier_cash_problem_precedes_receivable (test_model.BusinessChecks.test_first_supplier_cash_problem_precedes_receivable) ... ok
+test_receipt_of_bill_does_not_add_cash (test_model.BusinessChecks.test_receipt_of_bill_does_not_add_cash) ... ok
+test_regional_clients_are_not_identical_balance_scalings (test_model.BusinessChecks.test_regional_clients_are_not_identical_balance_scalings) ... ok
+test_simulation_not_claimed_as_cash_fact (test_model.BusinessChecks.test_simulation_not_claimed_as_cash_fact) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.019s
+
+OK
