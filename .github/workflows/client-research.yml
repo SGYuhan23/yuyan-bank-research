@@ -24,3 +24,4 @@ jobs:
       - run: node --check client-research/web/app.js
       - run: python client-research/build_demo.py
       - run: node --check client-research/demo/app.js
+      - run: node --check client-research/demo/workflow.js

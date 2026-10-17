@@ -1,0 +1,10 @@
+{
+  "run_id": "cb42a84b8034433e",
+  "status_at_check": "completed",
+  "started_at": "2026-10-17T17:32:04.757784+00:00",
+  "record_count": 13,
+  "task": "研究重庆秦安铸造有限公司的母子公司关系及基础级智能工厂名单事项。分别核对两个工厂名称、主体和出处，不使用秦安股份合并财务代替本法人财务。检查名单能否支持新建工程、设备采购或融资需求；不足则明确停止，提出访前核实问题。",
+  "check": "Started through conversational browser UI; actual API and tool events observed. First browser automation wait timed out after 30s; this is not evidence of model failure or completion.",
+  "completed_render_check": "Passed: completed live result and export link rendered from actual API run",
+  "trace_path": "../runs/chat-qinan-cast/run.json"
+}

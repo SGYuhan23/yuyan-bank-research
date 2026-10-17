@@ -106,6 +106,11 @@ class Handler(BaseHTTPRequestHandler):
                     json.loads(reviewfile.read_text()) if reviewfile.exists() else []
                 )
                 return self.send(d)
+            agent_files = {"/agent/": "index.html", "/agent/app.js": "app.js", "/agent/workflow.js": "workflow.js", "/agent/style.css": "style.css", "/agent/data.json": "data.json", "/agent/replays.json": "replays.json"}
+            if self.path in agent_files:
+                p = ROOT / "demo" / agent_files[self.path]
+                types = {".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".json": "application/json"}
+                return self.send(p.read_bytes(), ctype=types[p.suffix] + "; charset=utf-8")
             files = {"/": "index.html", "/app.js": "app.js", "/style.css": "style.css"}
             if self.path not in files:
                 return self.send({"error": "NOT_FOUND"}, 404)

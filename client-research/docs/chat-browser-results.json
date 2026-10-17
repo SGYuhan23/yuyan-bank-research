@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": [
+    "clear task entry",
+    "visible original prompt",
+    "no report before execution",
+    "incremental real trace replay",
+    "pause and resume",
+    "sources appear after reads",
+    "final artifact",
+    "new research reset",
+    "mobile overflow",
+    "no page errors"
+  ]
+}

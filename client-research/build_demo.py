@@ -63,6 +63,9 @@ def build():
     # Only public evidence snippets; no credentials, environment or internal model thoughts.
     (ROOT/'demo/data.json').write_text(json.dumps(bundle,ensure_ascii=False,indent=2))
     (ROOT/'demo/build-trace.json').write_text(json.dumps(trace,ensure_ascii=False,indent=2))
+    archives = {'rifa':'rifa-live-v2', 'qinan':'qinan-v3', 'qinan-cast':'eval-qinan-cast-agent', 'loncin':'loncin', 'zishuo':'eval-zishuo-agent'}
+    replays = {cid: {'archive': name, **json.loads((ROOT/'runs'/name/'run.json').read_text())} for cid, name in archives.items()}
+    (ROOT/'demo/replays.json').write_text(json.dumps(replays,ensure_ascii=False,indent=2))
     return bundle
 if __name__=='__main__':
     data=build(); print(f"Built {len(data['companies'])} companies / {sum(len(c['versions']) for c in data['companies'])} reviewed versions; model calls: 0")
