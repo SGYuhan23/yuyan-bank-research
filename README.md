@@ -4,6 +4,7 @@
 
 本分支把重点转向真实重庆制造企业的公开资料、经营判断与 AI 研究工具。完整旧成果继续保留，未覆盖 GitHub Pages 线上版本。
 
+- [新版静态演示：固定研究流程与启动说明](client-research/docs/FIXED_WORKFLOW.md)
 - [本地启动与任务流程](client-research/README.md)
 - [已核对的来源事实表](client-research/docs/FACT_TABLE.md) · [来源索引](client-research/docs/SOURCES.md)
 - [真实运行、评测及失败样本](client-research/docs/EVALUATION.md)

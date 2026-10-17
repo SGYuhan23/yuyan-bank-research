@@ -1,0 +1,338 @@
+[
+  {
+    "company_id": "rifa",
+    "evidence_version": "90e1e751ffc60025a69ffe1c5d8bd65a2b0ad65d12e9cdd425f7d0a949d21f79",
+    "steps": [
+      {
+        "step": "确定范围",
+        "result": "重庆日发汽车零部件有限公司；限定所列资料，不是最新全网覆盖",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.017409+00:00"
+      },
+      {
+        "step": "校验原文",
+        "result": "2条已核校事实与来源快照逐字匹配",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.019738+00:00"
+      },
+      {
+        "step": "核对主体与去重",
+        "result": "2个规范来源组；集团与子公司不混用",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.019739+00:00"
+      },
+      {
+        "step": "确定性计算",
+        "result": "1项Decimal计算；保留期间及单位",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.019740+00:00"
+      },
+      {
+        "step": "应用作者研究规则",
+        "result": "服务方向只作为待核实假设；不足时停止",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.019741+00:00"
+      },
+      {
+        "step": "生成版本",
+        "result": "90e1e751ffc60025a69ffe1c5d8bd65a2b0ad65d12e9cdd425f7d0a949d21f79",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.019742+00:00"
+      }
+    ]
+  },
+  {
+    "company_id": "rifa",
+    "evidence_version": "7f15f4f1e2aa7b989cbecd624e6c1d0fc3ab31ddb0115396cb7ed00c296b2b17",
+    "steps": [
+      {
+        "step": "确定范围",
+        "result": "重庆日发汽车零部件有限公司；限定所列资料，不是最新全网覆盖",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.019928+00:00"
+      },
+      {
+        "step": "校验原文",
+        "result": "3条已核校事实与来源快照逐字匹配",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.019930+00:00"
+      },
+      {
+        "step": "核对主体与去重",
+        "result": "3个规范来源组；集团与子公司不混用",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.019931+00:00"
+      },
+      {
+        "step": "确定性计算",
+        "result": "1项Decimal计算；保留期间及单位",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.019932+00:00"
+      },
+      {
+        "step": "应用作者研究规则",
+        "result": "服务方向只作为待核实假设；不足时停止",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.019933+00:00"
+      },
+      {
+        "step": "生成版本",
+        "result": "7f15f4f1e2aa7b989cbecd624e6c1d0fc3ab31ddb0115396cb7ed00c296b2b17",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.019934+00:00"
+      }
+    ]
+  },
+  {
+    "company_id": "qinan",
+    "evidence_version": "b6fdcd33129bd85aecf475e78598a514d911b17dc35570c67ee6f67e526a5da9",
+    "steps": [
+      {
+        "step": "确定范围",
+        "result": "重庆秦安机电股份有限公司；限定所列资料，不是最新全网覆盖",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.020049+00:00"
+      },
+      {
+        "step": "校验原文",
+        "result": "3条已核校事实与来源快照逐字匹配",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.020051+00:00"
+      },
+      {
+        "step": "核对主体与去重",
+        "result": "1个规范来源组；集团与子公司不混用",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.020052+00:00"
+      },
+      {
+        "step": "确定性计算",
+        "result": "1项Decimal计算；保留期间及单位",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.020053+00:00"
+      },
+      {
+        "step": "应用作者研究规则",
+        "result": "服务方向只作为待核实假设；不足时停止",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.020054+00:00"
+      },
+      {
+        "step": "生成版本",
+        "result": "b6fdcd33129bd85aecf475e78598a514d911b17dc35570c67ee6f67e526a5da9",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.020054+00:00"
+      }
+    ]
+  },
+  {
+    "company_id": "qinan",
+    "evidence_version": "7bb27e2b517c7c7e2d6907247792b4c222824227b029623d12b91aa4b3ca68f0",
+    "steps": [
+      {
+        "step": "确定范围",
+        "result": "重庆秦安机电股份有限公司；限定所列资料，不是最新全网覆盖",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.020181+00:00"
+      },
+      {
+        "step": "校验原文",
+        "result": "4条已核校事实与来源快照逐字匹配",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.020182+00:00"
+      },
+      {
+        "step": "核对主体与去重",
+        "result": "2个规范来源组；集团与子公司不混用",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.020183+00:00"
+      },
+      {
+        "step": "确定性计算",
+        "result": "2项Decimal计算；保留期间及单位",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.020184+00:00"
+      },
+      {
+        "step": "应用作者研究规则",
+        "result": "服务方向只作为待核实假设；不足时停止",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.020184+00:00"
+      },
+      {
+        "step": "生成版本",
+        "result": "7bb27e2b517c7c7e2d6907247792b4c222824227b029623d12b91aa4b3ca68f0",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.020185+00:00"
+      }
+    ]
+  },
+  {
+    "company_id": "qinan-cast",
+    "evidence_version": "540ae5785be00dc0e79469de268de6a22f8ebf5461faedc22d3d93a70ec304d6",
+    "steps": [
+      {
+        "step": "确定范围",
+        "result": "重庆秦安铸造有限公司；限定所列资料，不是最新全网覆盖",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.020369+00:00"
+      },
+      {
+        "step": "校验原文",
+        "result": "3条已核校事实与来源快照逐字匹配",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.020372+00:00"
+      },
+      {
+        "step": "核对主体与去重",
+        "result": "2个规范来源组；集团与子公司不混用",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.020374+00:00"
+      },
+      {
+        "step": "确定性计算",
+        "result": "0项Decimal计算；保留期间及单位",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.020376+00:00"
+      },
+      {
+        "step": "应用作者研究规则",
+        "result": "服务方向只作为待核实假设；不足时停止",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.020378+00:00"
+      },
+      {
+        "step": "生成版本",
+        "result": "540ae5785be00dc0e79469de268de6a22f8ebf5461faedc22d3d93a70ec304d6",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.020380+00:00"
+      }
+    ]
+  },
+  {
+    "company_id": "loncin",
+    "evidence_version": "5c3e44e000278bf0105b794bd8a97014c41466146ce65027d5d7c7c9153fc401",
+    "steps": [
+      {
+        "step": "确定范围",
+        "result": "隆鑫通用动力股份有限公司；限定所列资料，不是最新全网覆盖",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.020596+00:00"
+      },
+      {
+        "step": "校验原文",
+        "result": "1条已核校事实与来源快照逐字匹配",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.020599+00:00"
+      },
+      {
+        "step": "核对主体与去重",
+        "result": "1个规范来源组；集团与子公司不混用",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.020601+00:00"
+      },
+      {
+        "step": "确定性计算",
+        "result": "1项Decimal计算；保留期间及单位",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.020603+00:00"
+      },
+      {
+        "step": "应用作者研究规则",
+        "result": "服务方向只作为待核实假设；不足时停止",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.020605+00:00"
+      },
+      {
+        "step": "生成版本",
+        "result": "5c3e44e000278bf0105b794bd8a97014c41466146ce65027d5d7c7c9153fc401",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.020607+00:00"
+      }
+    ]
+  },
+  {
+    "company_id": "loncin",
+    "evidence_version": "4bc33c121ac0fd869dec688eb1f4efb39f8763e7e09c05ae0aead273faece9bc",
+    "steps": [
+      {
+        "step": "确定范围",
+        "result": "隆鑫通用动力股份有限公司；限定所列资料，不是最新全网覆盖",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.020842+00:00"
+      },
+      {
+        "step": "校验原文",
+        "result": "4条已核校事实与来源快照逐字匹配",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.020846+00:00"
+      },
+      {
+        "step": "核对主体与去重",
+        "result": "1个规范来源组；集团与子公司不混用",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.020848+00:00"
+      },
+      {
+        "step": "确定性计算",
+        "result": "1项Decimal计算；保留期间及单位",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.020850+00:00"
+      },
+      {
+        "step": "应用作者研究规则",
+        "result": "服务方向只作为待核实假设；不足时停止",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.020852+00:00"
+      },
+      {
+        "step": "生成版本",
+        "result": "4bc33c121ac0fd869dec688eb1f4efb39f8763e7e09c05ae0aead273faece9bc",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.020854+00:00"
+      }
+    ]
+  },
+  {
+    "company_id": "zishuo",
+    "evidence_version": "d9e3f06b5e2015e035e419b0586f8964d704cb92af19721a78a03e169c1b1b80",
+    "steps": [
+      {
+        "step": "确定范围",
+        "result": "重庆紫硕汽车零部件有限公司；限定所列资料，不是最新全网覆盖",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.021047+00:00"
+      },
+      {
+        "step": "校验原文",
+        "result": "1条已核校事实与来源快照逐字匹配",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.021050+00:00"
+      },
+      {
+        "step": "核对主体与去重",
+        "result": "1个规范来源组；集团与子公司不混用",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.021053+00:00"
+      },
+      {
+        "step": "确定性计算",
+        "result": "0项Decimal计算；保留期间及单位",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.021055+00:00"
+      },
+      {
+        "step": "应用作者研究规则",
+        "result": "服务方向只作为待核实假设；不足时停止",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.021058+00:00"
+      },
+      {
+        "step": "生成版本",
+        "result": "d9e3f06b5e2015e035e419b0586f8964d704cb92af19721a78a03e169c1b1b80",
+        "executor": "deterministic_build",
+        "at": "2026-10-17T17:15:01.021060+00:00"
+      }
+    ]
+  }
+]

@@ -22,3 +22,5 @@ jobs:
       - run: python -m unittest discover -s client-research/tests -v
       - run: python -m py_compile client-research/*.py
       - run: node --check client-research/web/app.js
+      - run: python client-research/build_demo.py
+      - run: node --check client-research/demo/app.js

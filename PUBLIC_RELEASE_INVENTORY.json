@@ -1,6 +1,6 @@
 {
   "scope": "Full source portfolio; inventory excludes itself to avoid self-reference.",
-  "file_count_excluding_inventory": 4157,
+  "file_count_excluding_inventory": 4169,
   "files": {
     ".github/workflows/pages.yml": {
       "sha256": "46e5f8466c94ecd2d96c2b5c97a71d1a87bdb3034095078ccb434b2dd15124fd",
@@ -23,8 +23,8 @@
       "bytes": 441
     },
     "README.md": {
-      "sha256": "892b5009b1831a6a0489b53d993f0ca1f9cd73cc5a0c385b85dc8e5667ec3bf1",
-      "bytes": 1287
+      "sha256": "7ce28317647b99656999a5719fd81d4ffe471f72978fabe16703eb1a6bd50d97",
+      "bytes": 1386
     },
     "REPRODUCIBILITY.md": {
       "sha256": "6449744b545b7085cbceeb43f5625ec9ab3e51970f62c4807050eedbdc7f72a3",
@@ -16307,8 +16307,8 @@
       "bytes": 2398
     },
     ".github/workflows/client-research.yml": {
-      "sha256": "a99eb101008d3337e11de5d3ba979331e5a84d217f50b786be12ab904b50d119",
-      "bytes": 789
+      "sha256": "64664a269a6203d838e79a761bd0be684c8445e9ce72b7e4f8b75c05dd6d1eb6",
+      "bytes": 893
     },
     "client-research/.env.example": {
       "sha256": "1ff2c469f20d3192efd345655da0d280c4f4c9acc670d9a29a87720c01aeb96a",
@@ -16319,8 +16319,8 @@
       "bytes": 37
     },
     "client-research/README.md": {
-      "sha256": "22964bcdc5e6767dbaf65b0dfb29fe73f25586aef91dd50ccdd861e147ecf5bf",
-      "bytes": 4697
+      "sha256": "4662d90ae8be373b5eaa83087130ed5a34fe763429d44fb43b0dd8f04f178650",
+      "bytes": 4946
     },
     "client-research/apply_guard.py": {
       "sha256": "d7429d22f159f97ce0bfe9e915a15bf451d2e963565ef267178540f4b302e13b",
@@ -16355,8 +16355,8 @@
       "bytes": 28673
     },
     "client-research/docs/DELIVERY.md": {
-      "sha256": "e9e63b952a53a51bb8f2420c7b670f6c6ea277ffb900f35440404a251f4760e8",
-      "bytes": 6946
+      "sha256": "0c53381c893263873cf1ae38cb0f95fc273cf67231103f9b04c3c70606838697",
+      "bytes": 7295
     },
     "client-research/docs/EVALUATION.md": {
       "sha256": "2f96805e01e88fa5cd156790d0e6a598367e80cd0260b3906045bd02bd1a0ed1",
@@ -16629,6 +16629,54 @@
     "docs/LEGACY_README.md": {
       "sha256": "4919603691c496366a17d115b7ed5391a62857ebb220e6e3806be5136dd21041",
       "bytes": 4577
+    },
+    "client-research/build_demo.py": {
+      "sha256": "7c25991b1fa0831bc7e80c4d5b0665657cd5b123529e763e8c1814249e39bff2",
+      "bytes": 6134
+    },
+    "client-research/demo/app.js": {
+      "sha256": "b518d3e150ca3573a33df81069cced06a827e805e45f861144245792e3219139",
+      "bytes": 7928
+    },
+    "client-research/demo/build-trace.json": {
+      "sha256": "c2801164b51839fa1b5975334bfcb54192e80cb0c432a10b61424ebab46516a4",
+      "bytes": 11915
+    },
+    "client-research/demo/data.json": {
+      "sha256": "21141e6b685ccdc1a754fd2ce56becf24598be6e163346f4486bede68f5802cb",
+      "bytes": 124252
+    },
+    "client-research/demo/index.html": {
+      "sha256": "dc8c825f8e6e45658cb3604861e8f9b996fe4db34b6988310db4015d465bc12d",
+      "bytes": 1560
+    },
+    "client-research/demo/style.css": {
+      "sha256": "f25eb8e0c44b9d4d444017bf9b118445426c45a72fd3c13a47dd199d9586949d",
+      "bytes": 2693
+    },
+    "client-research/docs/FIXED_WORKFLOW.md": {
+      "sha256": "a15aaa52569f49530b04efc08dd1285c1146ff89d682e268dece87a52393744c",
+      "bytes": 2919
+    },
+    "client-research/docs/demo-browser-results.json": {
+      "sha256": "26ca1d58858335dfab7093480f8a93cceb9b361b7e6e65ddee63a82dd516494e",
+      "bytes": 254
+    },
+    "client-research/docs/demo-desktop.png": {
+      "sha256": "949d0dcc3e567a23eda697045776c0f33eee027eb464b7a77347ad2a2da0cade",
+      "bytes": 449559
+    },
+    "client-research/docs/demo-mobile.png": {
+      "sha256": "500d1f54b8ab44805abf5df1a21851f9c833574d1417c269b74077f0b4e3be71",
+      "bytes": 421024
+    },
+    "client-research/research_playbook.py": {
+      "sha256": "c105db1babf6795be0ec1d23c47631225c48d9f358e3975f77350e28675b9b38",
+      "bytes": 7244
+    },
+    "client-research/tests/demo.cjs": {
+      "sha256": "632b9c5816b30499bb77073496ba91dfec5880176ae6775706126ea13a67abc6",
+      "bytes": 2477
     }
   }
 }

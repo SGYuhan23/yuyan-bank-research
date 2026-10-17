@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": [
+    "stage versions",
+    "version-bound reviews",
+    "calculation",
+    "export",
+    "duplicate sources",
+    "insufficient confirmation disabled",
+    "unknown entity",
+    "mobile overflow",
+    "page errors"
+  ]
+}
