@@ -1,0 +1,376 @@
+{
+  "run_id": "6761953b26054c2d",
+  "task": "研究重庆秦安铸造有限公司，核实与上市公司关系及智能工厂名单中的两个事项；证据不足时停止，不得把集团收入当成该企业单体收入。",
+  "company_id": "qinan-cast",
+  "started_at": "2026-10-17T16:50:14.120225+00:00",
+  "mode": "snapshot",
+  "status": "completed",
+  "records": [
+    {
+      "sequence": 1,
+      "at": "2026-10-17T16:50:16.263837+00:00",
+      "kind": "model_call",
+      "phase": "research-step-1",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 2339,
+        "completion_tokens": 66,
+        "prompt_tokens": 2273,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        }
+      },
+      "duration_seconds": 2.137,
+      "finish_reason": "stop",
+      "request_hash": "16847337c253891dd4f3fc495447d649e6372d9640dcd3565f6a97bba13a9bd9"
+    },
+    {
+      "sequence": 2,
+      "at": "2026-10-17T16:50:16.266533+00:00",
+      "kind": "tool_started",
+      "tool": "read_source",
+      "args": {
+        "source_id": "qinan-2025"
+      },
+      "decision_summary": "需核实秦安铸造与上市公司关系及智能工厂事项，qinan-2025为秦安股份2025年年报，含子公司股权结构及项目披露，是核心来源。"
+    },
+    {
+      "sequence": 3,
+      "at": "2026-10-17T16:50:16.269959+00:00",
+      "kind": "tool_result",
+      "tool": "read_source",
+      "args": {
+        "source_id": "qinan-2025"
+      },
+      "result": {
+        "source_id": "qinan-2025",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-03-28/1225047393.PDF",
+        "title": "秦安股份2025年年度报告",
+        "publisher": "重庆秦安机电股份有限公司／巨潮资讯",
+        "published_at": "2026-03-28",
+        "period": "2025年度",
+        "retrieved_at": "2026-10-17T16:31:58.433988+00:00",
+        "company_ids": [
+          "qinan",
+          "qinan-cast"
+        ],
+        "kind": "primary",
+        "canonical_source_id": "qinan-2025",
+        "sha256": "92ebe9de0b6e0f5762cd627244323f4477a1c512da7dc19d96dd23e228631972",
+        "sections": [
+          {
+            "page_or_section": "PDF第6页",
+            "text": "七、 近三年主要会计数据和财务指标\n(一) 主要会计数据\n单位：元 币种：人民币\n主要会计数据 2025年 2024年 本期比上年\n同期增减(%) 2023年\n营业收入 1,352,249,546.74 1,599,923,214.87 -15.48 1,739,832,673.54\n利润总额 164,344,821.75 208,406,846.94 -21.14 302,004,362.66\n归属于上市公司股东的\n净利润 149,416,466.50 172,862,279.40 -13.56 260,726,069.69\n归属于上市公司股东的\n扣除非经常性损益的净\n利润\n141,182,372.24 200,727,958.91 -29.66 288,723,330.58\n经营活动产生的现金流\n量净额 269,925,911.42 406,027,435.45 -33.52 307,372,984.90\n2025年末 2024年末\n本期末比上\n年同期末增\n减（%）\n2023年末\n归属于上市公司股东的\n净资产 2,570,904,968.80 2,384,111,861.98 7.83 2,589,631,197.50\n总资产 3,898,243,236.30 2,884,489,843.36 35.14 3,158,679,344.25",
+            "selector": {
+              "page": 6,
+              "start": "七、",
+              "end": "(二)",
+              "size": 1800
+            }
+          },
+          {
+            "page_or_section": "PDF第30页",
+            "text": "截至 2025 年底，公司资产总额 38.98 亿元，净资产总额 25.74 亿元，负债总额 13.24 亿元，\n因本报告期收购亦高光电 99%股权完成股权交割及工商变更登记，亦高光电成为公司的控股公司\n并纳入合并报表范围，公司收购亦高光电 99%股权新增长期借款、其他应付款等，资产负债率由\n上年年末的 17.35%上升至 33.96%；公司货币资金和持有的交易性金融资产余额 11.34 亿元，现金\n比率 138.30%。公司资金充足，财务指标稳健，经营韧性及抗风险能力较强，为公司战略布局及\n后续持续发展投入需求提供了有力的资金保障。",
+            "selector": {
+              "page": 30,
+              "start": "截至 2025 年底",
+              "end": "(一)",
+              "size": 1800
+            }
+          },
+          {
+            "page_or_section": "PDF第227页",
+            "text": "十、在其他主体中的权益\n1、 在子公司中的权益\n(1).企业集团的构成\n√适用 □不适用\n单位：元 币种：人民币\n子公司\n名称\n主要经\n营地 注册资本 注册地 业务性质 持股比例(%) 取得\n方式直接 间接\n重庆秦安铸\n造有限公司 重庆 12,000 万元 重庆 汽车零部件制\n造和销售 100.00\n同一控制\n下企业合\n并",
+            "selector": {
+              "page": 227,
+              "start": "十、",
+              "end": "重庆美沣",
+              "size": 1800
+            }
+          }
+        ],
+        "read_at": "2026-10-17T16:50:16.269947+00:00",
+        "read_mode": "verified_source_snapshot"
+      }
+    },
+    {
+      "sequence": 4,
+      "at": "2026-10-17T16:50:17.283115+00:00",
+      "kind": "model_call",
+      "phase": "research-step-2",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 3610,
+        "completion_tokens": 19,
+        "prompt_tokens": 3591,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 1.01,
+      "finish_reason": "stop",
+      "request_hash": "9a58a6470116d8984b38462a991e7d9a33e9b484d4df13ce2ef1314c31c1f152"
+    },
+    {
+      "sequence": 5,
+      "at": "2026-10-17T16:50:17.287581+00:00",
+      "kind": "tool_started",
+      "tool": "read_source",
+      "args": {
+        "source_id": "smart-factory"
+      },
+      "decision_summary": ""
+    },
+    {
+      "sequence": 6,
+      "at": "2026-10-17T16:50:17.289840+00:00",
+      "kind": "tool_result",
+      "tool": "read_source",
+      "args": {
+        "source_id": "smart-factory"
+      },
+      "result": {
+        "source_id": "smart-factory",
+        "url": "https://jjxxw.cq.gov.cn/zwgk_213/zcwj/qtwj/202507/t20250707_14792936.html",
+        "title": "2025年重庆市基础级智能工厂名单",
+        "publisher": "重庆市经济和信息化委员会",
+        "published_at": "2025-07-07",
+        "period": "2025年名单",
+        "retrieved_at": "2026-10-17T16:33:11.566368+00:00",
+        "company_ids": [
+          "qinan-cast"
+        ],
+        "kind": "primary",
+        "canonical_source_id": "smart-factory",
+        "sha256": "81acd4e3cabe2fd4289c9574b26748ff87c7465c9e5074a20bd5485c91a62e7a",
+        "sections": [
+          {
+            "page_or_section": "附件名单第209行",
+            "text": "209 重庆秦安铸造有限公司 江津区 汽车缸盖重力铸造基础级智能工厂",
+            "selector": {
+              "start": "209 重庆秦安",
+              "end": "210 "
+            }
+          },
+          {
+            "page_or_section": "附件名单第222行",
+            "text": "222 重庆秦安铸造有限公司 江津区 汽车缸体压铸基础级智能工厂",
+            "selector": {
+              "start": "222 重庆秦安",
+              "end": "223 "
+            }
+          }
+        ],
+        "read_at": "2026-10-17T16:50:17.289827+00:00",
+        "read_mode": "verified_source_snapshot"
+      }
+    },
+    {
+      "sequence": 7,
+      "at": "2026-10-17T16:50:38.426010+00:00",
+      "kind": "model_call",
+      "phase": "research-step-3",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 5002,
+        "completion_tokens": 934,
+        "prompt_tokens": 4068,
+        "prompt_tokens_details": {
+          "cached_tokens": 3456
+        }
+      },
+      "duration_seconds": 21.133,
+      "finish_reason": "stop",
+      "request_hash": "bd88513a510368fb36606ffd75bef4bc855cf02ee3cbb8d1685d11742c96a84c"
+    },
+    {
+      "sequence": 8,
+      "at": "2026-10-17T16:50:38.431733+00:00",
+      "kind": "completed",
+      "evidence_version": "24418c61ee8e6693f8f27e529c68e4481a7b5e729e81db5fddd42125eb7e302d"
+    }
+  ],
+  "evidence": [
+    {
+      "source_id": "qinan-2025",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-03-28/1225047393.PDF",
+      "title": "秦安股份2025年年度报告",
+      "publisher": "重庆秦安机电股份有限公司／巨潮资讯",
+      "published_at": "2026-03-28",
+      "period": "2025年度",
+      "retrieved_at": "2026-10-17T16:31:58.433988+00:00",
+      "company_ids": [
+        "qinan",
+        "qinan-cast"
+      ],
+      "kind": "primary",
+      "canonical_source_id": "qinan-2025",
+      "sha256": "92ebe9de0b6e0f5762cd627244323f4477a1c512da7dc19d96dd23e228631972",
+      "sections": [
+        {
+          "page_or_section": "PDF第6页",
+          "text": "七、 近三年主要会计数据和财务指标\n(一) 主要会计数据\n单位：元 币种：人民币\n主要会计数据 2025年 2024年 本期比上年\n同期增减(%) 2023年\n营业收入 1,352,249,546.74 1,599,923,214.87 -15.48 1,739,832,673.54\n利润总额 164,344,821.75 208,406,846.94 -21.14 302,004,362.66\n归属于上市公司股东的\n净利润 149,416,466.50 172,862,279.40 -13.56 260,726,069.69\n归属于上市公司股东的\n扣除非经常性损益的净\n利润\n141,182,372.24 200,727,958.91 -29.66 288,723,330.58\n经营活动产生的现金流\n量净额 269,925,911.42 406,027,435.45 -33.52 307,372,984.90\n2025年末 2024年末\n本期末比上\n年同期末增\n减（%）\n2023年末\n归属于上市公司股东的\n净资产 2,570,904,968.80 2,384,111,861.98 7.83 2,589,631,197.50\n总资产 3,898,243,236.30 2,884,489,843.36 35.14 3,158,679,344.25",
+          "selector": {
+            "page": 6,
+            "start": "七、",
+            "end": "(二)",
+            "size": 1800
+          }
+        },
+        {
+          "page_or_section": "PDF第30页",
+          "text": "截至 2025 年底，公司资产总额 38.98 亿元，净资产总额 25.74 亿元，负债总额 13.24 亿元，\n因本报告期收购亦高光电 99%股权完成股权交割及工商变更登记，亦高光电成为公司的控股公司\n并纳入合并报表范围，公司收购亦高光电 99%股权新增长期借款、其他应付款等，资产负债率由\n上年年末的 17.35%上升至 33.96%；公司货币资金和持有的交易性金融资产余额 11.34 亿元，现金\n比率 138.30%。公司资金充足，财务指标稳健，经营韧性及抗风险能力较强，为公司战略布局及\n后续持续发展投入需求提供了有力的资金保障。",
+          "selector": {
+            "page": 30,
+            "start": "截至 2025 年底",
+            "end": "(一)",
+            "size": 1800
+          }
+        },
+        {
+          "page_or_section": "PDF第227页",
+          "text": "十、在其他主体中的权益\n1、 在子公司中的权益\n(1).企业集团的构成\n√适用 □不适用\n单位：元 币种：人民币\n子公司\n名称\n主要经\n营地 注册资本 注册地 业务性质 持股比例(%) 取得\n方式直接 间接\n重庆秦安铸\n造有限公司 重庆 12,000 万元 重庆 汽车零部件制\n造和销售 100.00\n同一控制\n下企业合\n并",
+          "selector": {
+            "page": 227,
+            "start": "十、",
+            "end": "重庆美沣",
+            "size": 1800
+          }
+        }
+      ],
+      "read_at": "2026-10-17T16:50:16.269947+00:00",
+      "read_mode": "verified_source_snapshot"
+    },
+    {
+      "source_id": "smart-factory",
+      "url": "https://jjxxw.cq.gov.cn/zwgk_213/zcwj/qtwj/202507/t20250707_14792936.html",
+      "title": "2025年重庆市基础级智能工厂名单",
+      "publisher": "重庆市经济和信息化委员会",
+      "published_at": "2025-07-07",
+      "period": "2025年名单",
+      "retrieved_at": "2026-10-17T16:33:11.566368+00:00",
+      "company_ids": [
+        "qinan-cast"
+      ],
+      "kind": "primary",
+      "canonical_source_id": "smart-factory",
+      "sha256": "81acd4e3cabe2fd4289c9574b26748ff87c7465c9e5074a20bd5485c91a62e7a",
+      "sections": [
+        {
+          "page_or_section": "附件名单第209行",
+          "text": "209 重庆秦安铸造有限公司 江津区 汽车缸盖重力铸造基础级智能工厂",
+          "selector": {
+            "start": "209 重庆秦安",
+            "end": "210 "
+          }
+        },
+        {
+          "page_or_section": "附件名单第222行",
+          "text": "222 重庆秦安铸造有限公司 江津区 汽车缸体压铸基础级智能工厂",
+          "selector": {
+            "start": "222 重庆秦安",
+            "end": "223 "
+          }
+        }
+      ],
+      "read_at": "2026-10-17T16:50:17.289827+00:00",
+      "read_mode": "verified_source_snapshot"
+    }
+  ],
+  "calculations": [],
+  "result": {
+    "dossier": {
+      "company_id": "qinan-cast",
+      "what_changed": "确认秦安铸造为秦安股份100%控股子公司；其两个智能工厂项目（缸盖重力铸造、缸体压铸）均列入2025年重庆市基础级智能工厂名单",
+      "why_relevant": "验证上市公司控制关系及地方产业政策支持情况，支撑对公客户经理开展授信尽调与产融结合服务",
+      "facts": [
+        {
+          "fact_id": "qinan-cast-parent-2025",
+          "company_id": "qinan-cast",
+          "statement": "重庆秦安铸造有限公司为重庆秦安机电股份有限公司直接持股100%的子公司，取得方式为同一控制下企业合并",
+          "source_id": "qinan-2025",
+          "excerpt": "子公司名称 主要经营地 注册资本 注册地 业务性质 持股比例(%) 取得方式直接 间接 重庆秦安铸造有限公司 重庆 12,000 万元 重庆 汽车零部件制造和销售 100.00 同一控制下企业合并",
+          "page_or_section": "PDF第227页",
+          "period": "2025年度",
+          "scope": "subsidiary",
+          "limitations": ""
+        },
+        {
+          "fact_id": "qinan-cast-smart-factory-1",
+          "company_id": "qinan-cast",
+          "statement": "重庆秦安铸造有限公司‘汽车缸盖重力铸造基础级智能工厂’项目列入2025年重庆市基础级智能工厂名单",
+          "source_id": "smart-factory",
+          "excerpt": "209 重庆秦安铸造有限公司 江津区 汽车缸盖重力铸造基础级智能工厂",
+          "page_or_section": "附件名单第209行",
+          "period": "2025年名单",
+          "scope": "company",
+          "limitations": ""
+        },
+        {
+          "fact_id": "qinan-cast-smart-factory-2",
+          "company_id": "qinan-cast",
+          "statement": "重庆秦安铸造有限公司‘汽车缸体压铸基础级智能工厂’项目列入2025年重庆市基础级智能工厂名单",
+          "source_id": "smart-factory",
+          "excerpt": "222 重庆秦安铸造有限公司 江津区 汽车缸体压铸基础级智能工厂",
+          "page_or_section": "附件名单第222行",
+          "period": "2025年名单",
+          "scope": "company",
+          "limitations": ""
+        }
+      ],
+      "events": [
+        {
+          "event_id": "qinan-cast-smart-factory-209",
+          "company_id": "qinan-cast",
+          "project_id": null,
+          "event_type": "smart_factory_listing",
+          "event_date": "2025-07-07",
+          "published_at": "2025-07-07",
+          "stage": "approved",
+          "source_ids": [
+            "smart-factory"
+          ],
+          "supersedes": [],
+          "conflicts": []
+        },
+        {
+          "event_id": "qinan-cast-smart-factory-222",
+          "company_id": "qinan-cast",
+          "project_id": null,
+          "event_type": "smart_factory_listing",
+          "event_date": "2025-07-07",
+          "published_at": "2025-07-07",
+          "stage": "approved",
+          "source_ids": [
+            "smart-factory"
+          ],
+          "supersedes": [],
+          "conflicts": []
+        }
+      ],
+      "hypotheses": [],
+      "calculation_ids": [],
+      "missing_information": [
+        "秦安铸造单体财务数据（收入、利润、资产等）未披露，无法从集团年报中拆分；两个智能工厂项目的投资金额、建设周期、当前进度未说明"
+      ],
+      "next_questions": [
+        "秦安铸造2025年单体财务报表是否单独披露？",
+        "两个智能工厂项目是否已获专项技改资金或政策性贷款支持？"
+      ],
+      "stop_reason": "核心事项（控股关系、智能工厂名单）均已核实；单体财务及项目细节无资料支撑，不推断",
+      "coverage_limit": "仅依据已读取的qinan-2025与smart-factory两份权威来源，未检索其他渠道"
+    },
+    "evidence_version": "24418c61ee8e6693f8f27e529c68e4481a7b5e729e81db5fddd42125eb7e302d",
+    "parent_run_id": null,
+    "delta": {
+      "new_facts": [],
+      "superseded_events": [],
+      "withdrawn_hypotheses": [],
+      "review_invalidated": false
+    },
+    "validation": "schema_and_quote_checked_semantics_need_human_review"
+  }
+}

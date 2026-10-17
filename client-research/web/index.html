@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>渝研｜重庆产业客户研究 Agent</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="./" class="brand">渝研<span>重庆产业客户研究 Agent</span></a
+      ><span id="mode" class="badge">正在连接本地研究服务</span>
+    </header>
+    <main>
+      <section class="hero">
+        <p class="eyebrow">为对公客户经理 · 做好下一次拜访</p>
+        <h1>先看企业发生了什么，<br />再问需要什么服务。</h1>
+        <p>
+          从公开资料梳理变化、证据和反证，生成一份可复核、可更新的访前档案。
+        </p>
+      </section>
+      <section class="workbench">
+        <aside>
+          <form id="research">
+            <label for="company">研究企业</label
+            ><input
+              id="company"
+              list="companies"
+              placeholder="输入企业名称"
+              required
+            /><datalist id="companies"></datalist
+            ><label for="task">这次想了解什么</label
+            ><textarea id="task" rows="4" required>
+最近发生了什么变化？哪些值得访前了解，哪些证据不足？</textarea
+            ><label for="source-mode">资料读取方式</label
+            ><select id="source-mode">
+              <option value="snapshot">已保存原文 · 实际模型重新研究</option>
+              <option value="live">在线重新抓取原文 · 实际模型研究</option>
+            </select>
+            <details open>
+              <summary>研究范围 / 加入已有新资料</summary>
+              <div id="sources"></div>
+            </details>
+            <p class="small">
+              当前检索范围为核验来源索引，非全网。可在下方导入政府或公告原文。
+            </p>
+            <button id="start" type="submit">开始访前研究 ↗</button>
+            <p id="form-error" role="alert"></p>
+          </form>
+          <div class="history">
+            <h3>真实运行档案</h3>
+            <div id="history"></div>
+          </div>
+          <details>
+            <summary>导入新公开资料</summary>
+            <form id="import">
+              <label
+                >原始 HTTPS 链接<input
+                  id="new-url"
+                  type="url"
+                  required /></label
+              ><label>标题<input id="new-title" required /></label
+              ><label>发布机构<input id="new-publisher" required /></label
+              ><label
+                >发布日期<input id="new-date" type="date" required /></label
+              ><label
+                >资料期间<input
+                  id="new-period"
+                  placeholder="如2026年1—6月"
+                  required /></label
+              ><label
+                >PDF页码（逗号分隔，最多6页）<input
+                  id="new-pages"
+                  value="1" /></label
+              ><button>读取并加入来源</button>
+              <p class="small">
+                导入的元数据待核实；导入本身不会自动改变旧档案。请随后点击“以此档案更新”。
+              </p>
+            </form>
+          </details>
+        </aside>
+        <article>
+          <div class="article-head">
+            <div>
+              <p class="eyebrow">访前研究档案</p>
+              <h2 id="title">选择企业，开始一次有依据的研究</h2>
+            </div>
+            <a id="export" class="button secondary" hidden>导出 Markdown</a>
+          </div>
+          <div id="status" role="status">
+            公开事实、程序计算、服务假设和待核实事项分别呈现。
+          </div>
+          <div id="progress"></div>
+          <div id="content">
+            <div class="empty">
+              <span>01 / 事实</span>
+              <h3>把变化放在前面</h3>
+              <p>
+                环评批准不等于开工；收入下降不等于资金短缺；同一报告转载不等于多份证据。
+              </p>
+              <span>02 / 判断</span>
+              <h3>给出值得问的问题</h3>
+              <p>允许“不足以判断”。每个服务假设都应有支持、反证与停止条件。</p>
+              <span>03 / 更新</span>
+              <h3>让新资料修正旧判断</h3>
+              <p>保留历史事实与人工复核记录。新证据版本需要重新确认。</p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <footer>
+        独立求职作品 ·
+        公开资料研究，不是银行客户系统或授信建议。未开展真实客户试点。
+      </footer>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

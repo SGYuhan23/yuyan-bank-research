@@ -1,0 +1,801 @@
+{
+  "run_id": "af0da2ed46c6453a",
+  "task": "研究隆鑫通用2025年报，区分转载与新事件；审查“出口业务说明尚未进行汇率管理”是否成立，提出可核实的服务方向。",
+  "company_id": "loncin",
+  "started_at": "2026-10-17T16:42:09.080462+00:00",
+  "mode": "snapshot",
+  "status": "completed",
+  "records": [
+    {
+      "sequence": 1,
+      "at": "2026-10-17T16:42:11.098778+00:00",
+      "kind": "model_call",
+      "phase": "research-step-1",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 2303,
+        "completion_tokens": 67,
+        "prompt_tokens": 2236,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        }
+      },
+      "duration_seconds": 2.007,
+      "finish_reason": "stop",
+      "request_hash": "eeee49b2533da969de0775dd303179cbdc74cac46bb4be7f47df8367b33852ab"
+    },
+    {
+      "sequence": 2,
+      "at": "2026-10-17T16:42:11.102313+00:00",
+      "kind": "tool_started",
+      "tool": "search_sources",
+      "args": {
+        "query": "隆鑫通用 2025年报 汇率管理 出口业务"
+      },
+      "decision_summary": "检索隆鑫通用2025年报原文中关于出口业务与汇率管理的直接陈述，优先定位‘loncin-2025’源。"
+    },
+    {
+      "sequence": 3,
+      "at": "2026-10-17T16:42:11.106376+00:00",
+      "kind": "tool_result",
+      "tool": "search_sources",
+      "args": {
+        "query": "隆鑫通用 2025年报 汇率管理 出口业务"
+      },
+      "result": {
+        "scope": "已核验公开资料索引检索，不是全网搜索",
+        "query": "隆鑫通用 2025年报 汇率管理 出口业务",
+        "results": [
+          {
+            "source_id": "loncin-2025",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-04-18/1225117448.PDF",
+            "title": "隆鑫通用2025年年度报告",
+            "publisher": "隆鑫通用动力股份有限公司／巨潮资讯",
+            "published_at": "2026-04-18",
+            "period": "2025年度",
+            "kind": "primary",
+            "canonical_source_id": "loncin-2025",
+            "company_ids": [
+              "loncin"
+            ]
+          },
+          {
+            "source_id": "loncin-reprint",
+            "url": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12107316",
+            "title": "隆鑫通用2025年年度报告（转载）",
+            "publisher": "新浪财经",
+            "published_at": "2026-04-18",
+            "period": "2025年度",
+            "kind": "reprint",
+            "canonical_source_id": "loncin-2025",
+            "company_ids": [
+              "loncin"
+            ]
+          }
+        ],
+        "missing": "索引外资料需用户提供URL并导入后重新研究。"
+      }
+    },
+    {
+      "sequence": 4,
+      "at": "2026-10-17T16:42:13.130749+00:00",
+      "kind": "model_call",
+      "phase": "research-step-2",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 2681,
+        "completion_tokens": 69,
+        "prompt_tokens": 2612,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        }
+      },
+      "duration_seconds": 2.02,
+      "finish_reason": "stop",
+      "request_hash": "4bd51647bd14e0484e796b3a9944fe8b3b3da802b1f5267cfb616635ad46d256"
+    },
+    {
+      "sequence": 5,
+      "at": "2026-10-17T16:42:13.135162+00:00",
+      "kind": "tool_started",
+      "tool": "read_source",
+      "args": {
+        "source_id": "loncin-2025"
+      },
+      "decision_summary": "主源为隆鑫通用2025年报原文，需精读‘财务报告’‘风险管理’及‘经营情况讨论’章节，定位汇率管理与出口业务直接陈述。"
+    },
+    {
+      "sequence": 6,
+      "at": "2026-10-17T16:42:13.138555+00:00",
+      "kind": "tool_result",
+      "tool": "read_source",
+      "args": {
+        "source_id": "loncin-2025"
+      },
+      "result": {
+        "source_id": "loncin-2025",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-04-18/1225117448.PDF",
+        "title": "隆鑫通用2025年年度报告",
+        "publisher": "隆鑫通用动力股份有限公司／巨潮资讯",
+        "published_at": "2026-04-18",
+        "period": "2025年度",
+        "retrieved_at": "2026-10-17T16:31:58.431729+00:00",
+        "company_ids": [
+          "loncin"
+        ],
+        "kind": "primary",
+        "canonical_source_id": "loncin-2025",
+        "sha256": "60a19723ff7f5158c46ae81afbd8eabab621836e1ed69063c8bbd59ed149d788",
+        "sections": [
+          {
+            "page_or_section": "PDF第7页",
+            "text": "七、 近三年主要会计数据和财务指标\n(一) 主要会计数据\n单位：元 币种：人民币\n主要会计数据 2025年 2024年\n本期比上年\n同期增减\n(%)\n2023年\n营业收入 19,135,154,464.95 16,822,240,957.81 13.75 13,066,481,258.18\n利润总额 1,927,589,946.81 1,275,632,523.02 51.11 558,456,326.12\n归属于上市公\n司股东的净利\n润\n1,647,750,370.76 1,121,271,674.75 46.95 583,421,845.98\n归属于上市公\n司股东的扣除\n非经常性损益\n的净利润\n1,631,187,044.72 1,095,669,781.91 48.88 641,549,247.77\n经营活动产生\n的现金流量净\n额\n2,876,130,710.51 2,122,199,672.11 35.53 2,403,344,314.16\n2025年末 2024年末\n本期末比上\n年同期末增\n减（%）\n2023年末\n归属于上市公\n司股东的净资\n产\n9,583,869,471.42 9,177,502,109.34 4.43 8,252,709,655.32\n总资产 17,340,328,855.25 16,068,609,650.73 7.91 13,941,609,309.86",
+            "selector": {
+              "page": 7,
+              "start": "七、",
+              "end": "(二)",
+              "size": 1800
+            }
+          },
+          {
+            "page_or_section": "PDF第11页",
+            "text": "4、销售模式\n①摩托车整车业务：国内采用经销商直销与区域代理相结合的模式，结算方式主要为货到付\n款；海外主要通过进口国区域代理商销售，采用 FOB 模式，以美元或人民币结算。\n②发动机业务：国内主要为整机厂提供配套供应，辅以区域代理，结算依客户采用到货或使\n用后付款；出口以 OEM/ODM 模式为主，采用 FOB 模式结算。\n③通用机械业务：国内主要为整机厂商提供配套产品；出口以与国际大客户的 OEM/ODM 合作\n为主，采用 FOB 模式结算。\n5、外汇结算\n公司积极推动跨境人民币结算。目前，欧洲市场已基本实现人民币结算；其他海外市场仍以\n美元结算为主。在美元结算业务中，部分采用人民币计价、美元结算的方式，并根据汇率波动调\n整价格，以管理汇率风险。",
+            "selector": {
+              "page": 11,
+              "start": "4、销售模式",
+              "end": "报告期内公司新增",
+              "size": 1800
+            }
+          }
+        ],
+        "read_at": "2026-10-17T16:42:13.138534+00:00",
+        "read_mode": "verified_source_snapshot"
+      }
+    },
+    {
+      "sequence": 7,
+      "at": "2026-10-17T16:42:14.116816+00:00",
+      "kind": "model_call",
+      "phase": "research-step-3",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 3825,
+        "completion_tokens": 20,
+        "prompt_tokens": 3805,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        }
+      },
+      "duration_seconds": 0.972,
+      "finish_reason": "stop",
+      "request_hash": "5184df6b7a8d053876b8fb46fb216ec336aa5ba86817e373320859c872a7fe5d"
+    },
+    {
+      "sequence": 8,
+      "at": "2026-10-17T16:42:14.119933+00:00",
+      "kind": "tool_started",
+      "tool": "read_source",
+      "args": {
+        "source_id": "loncin-reprint"
+      },
+      "decision_summary": ""
+    },
+    {
+      "sequence": 9,
+      "at": "2026-10-17T16:42:14.124166+00:00",
+      "kind": "tool_result",
+      "tool": "read_source",
+      "args": {
+        "source_id": "loncin-reprint"
+      },
+      "result": {
+        "source_id": "loncin-reprint",
+        "url": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12107316",
+        "title": "隆鑫通用2025年年度报告（转载）",
+        "publisher": "新浪财经",
+        "published_at": "2026-04-18",
+        "period": "2025年度",
+        "retrieved_at": "2026-10-17T16:33:54.977698+00:00",
+        "company_ids": [
+          "loncin"
+        ],
+        "kind": "reprint",
+        "canonical_source_id": "loncin-2025",
+        "sha256": "7a4f4fb5d9ec9df22953064841d4c10ab3a2ef2ca853549a8811b3b2e2fb3201",
+        "sections": [
+          {
+            "page_or_section": "近三年主要会计数据／营业收入行",
+            "text": "营业收入 19,135,154,464.95 16,822,240,957.81 13.75 13,066,481,258.18",
+            "selector": {
+              "start": "营业收入 19,135",
+              "end": "利润总额",
+              "size": 300
+            }
+          }
+        ],
+        "read_at": "2026-10-17T16:42:14.124160+00:00",
+        "read_mode": "verified_source_snapshot"
+      }
+    },
+    {
+      "sequence": 10,
+      "at": "2026-10-17T16:42:36.016298+00:00",
+      "kind": "model_call",
+      "phase": "research-step-4",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 5207,
+        "completion_tokens": 972,
+        "prompt_tokens": 4235,
+        "prompt_tokens_details": {
+          "cached_tokens": 2432
+        }
+      },
+      "duration_seconds": 21.889,
+      "finish_reason": "stop",
+      "request_hash": "1aa170e91cc1f0c3efb1e34377a5de37b631ee40f74945a4aed3cbcf4eb32e80"
+    },
+    {
+      "sequence": 11,
+      "at": "2026-10-17T16:42:36.021578+00:00",
+      "kind": "validation_failed",
+      "error": "事实数字无摘录支持：f1:2024; 假设引用未读取资料：h1"
+    },
+    {
+      "sequence": 12,
+      "at": "2026-10-17T16:42:37.220267+00:00",
+      "kind": "model_call",
+      "phase": "research-step-5",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 4300,
+        "completion_tokens": 23,
+        "prompt_tokens": 4277,
+        "prompt_tokens_details": {
+          "cached_tokens": 4096
+        }
+      },
+      "duration_seconds": 1.195,
+      "finish_reason": "stop",
+      "request_hash": "1eebe3feb6028e7c6f6b44d8c80ffc01e65a27aa4d396793c192fa17a4ccf40d"
+    },
+    {
+      "sequence": 13,
+      "at": "2026-10-17T16:42:37.223330+00:00",
+      "kind": "tool_started",
+      "tool": "read_source",
+      "args": {
+        "source_id": "loncin-2025"
+      },
+      "decision_summary": ""
+    },
+    {
+      "sequence": 14,
+      "at": "2026-10-17T16:42:37.225729+00:00",
+      "kind": "tool_result",
+      "tool": "read_source",
+      "args": {
+        "source_id": "loncin-2025"
+      },
+      "result": {
+        "source_id": "loncin-2025",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-04-18/1225117448.PDF",
+        "title": "隆鑫通用2025年年度报告",
+        "publisher": "隆鑫通用动力股份有限公司／巨潮资讯",
+        "published_at": "2026-04-18",
+        "period": "2025年度",
+        "retrieved_at": "2026-10-17T16:31:58.431729+00:00",
+        "company_ids": [
+          "loncin"
+        ],
+        "kind": "primary",
+        "canonical_source_id": "loncin-2025",
+        "sha256": "60a19723ff7f5158c46ae81afbd8eabab621836e1ed69063c8bbd59ed149d788",
+        "sections": [
+          {
+            "page_or_section": "PDF第7页",
+            "text": "七、 近三年主要会计数据和财务指标\n(一) 主要会计数据\n单位：元 币种：人民币\n主要会计数据 2025年 2024年\n本期比上年\n同期增减\n(%)\n2023年\n营业收入 19,135,154,464.95 16,822,240,957.81 13.75 13,066,481,258.18\n利润总额 1,927,589,946.81 1,275,632,523.02 51.11 558,456,326.12\n归属于上市公\n司股东的净利\n润\n1,647,750,370.76 1,121,271,674.75 46.95 583,421,845.98\n归属于上市公\n司股东的扣除\n非经常性损益\n的净利润\n1,631,187,044.72 1,095,669,781.91 48.88 641,549,247.77\n经营活动产生\n的现金流量净\n额\n2,876,130,710.51 2,122,199,672.11 35.53 2,403,344,314.16\n2025年末 2024年末\n本期末比上\n年同期末增\n减（%）\n2023年末\n归属于上市公\n司股东的净资\n产\n9,583,869,471.42 9,177,502,109.34 4.43 8,252,709,655.32\n总资产 17,340,328,855.25 16,068,609,650.73 7.91 13,941,609,309.86",
+            "selector": {
+              "page": 7,
+              "start": "七、",
+              "end": "(二)",
+              "size": 1800
+            }
+          },
+          {
+            "page_or_section": "PDF第11页",
+            "text": "4、销售模式\n①摩托车整车业务：国内采用经销商直销与区域代理相结合的模式，结算方式主要为货到付\n款；海外主要通过进口国区域代理商销售，采用 FOB 模式，以美元或人民币结算。\n②发动机业务：国内主要为整机厂提供配套供应，辅以区域代理，结算依客户采用到货或使\n用后付款；出口以 OEM/ODM 模式为主，采用 FOB 模式结算。\n③通用机械业务：国内主要为整机厂商提供配套产品；出口以与国际大客户的 OEM/ODM 合作\n为主，采用 FOB 模式结算。\n5、外汇结算\n公司积极推动跨境人民币结算。目前，欧洲市场已基本实现人民币结算；其他海外市场仍以\n美元结算为主。在美元结算业务中，部分采用人民币计价、美元结算的方式，并根据汇率波动调\n整价格，以管理汇率风险。",
+            "selector": {
+              "page": 11,
+              "start": "4、销售模式",
+              "end": "报告期内公司新增",
+              "size": 1800
+            }
+          }
+        ],
+        "read_at": "2026-10-17T16:42:37.225718+00:00",
+        "read_mode": "verified_source_snapshot"
+      }
+    },
+    {
+      "sequence": 15,
+      "at": "2026-10-17T16:42:57.528171+00:00",
+      "kind": "model_call",
+      "phase": "research-step-6",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 6353,
+        "completion_tokens": 883,
+        "prompt_tokens": 5470,
+        "prompt_tokens_details": {
+          "cached_tokens": 4096
+        }
+      },
+      "duration_seconds": 20.299,
+      "finish_reason": "stop",
+      "request_hash": "eab9705a9b39b374d97f0826ed2ea15bf204e2d7480a286eae25d4545f8edfdc"
+    },
+    {
+      "sequence": 16,
+      "at": "2026-10-17T16:42:57.533136+00:00",
+      "kind": "validation_failed",
+      "error": "事实数字无摘录支持：f1:2024"
+    },
+    {
+      "sequence": 17,
+      "at": "2026-10-17T16:42:58.730614+00:00",
+      "kind": "model_call",
+      "phase": "research-step-7",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 5522,
+        "completion_tokens": 23,
+        "prompt_tokens": 5499,
+        "prompt_tokens_details": {
+          "cached_tokens": 2048
+        }
+      },
+      "duration_seconds": 1.192,
+      "finish_reason": "stop",
+      "request_hash": "dca8c7043fe5287551e23254c736aa338344e7c2706d6a2d9655f3ca64eb1c14"
+    },
+    {
+      "sequence": 18,
+      "at": "2026-10-17T16:42:58.732998+00:00",
+      "kind": "tool_started",
+      "tool": "read_source",
+      "args": {
+        "source_id": "loncin-2025"
+      },
+      "decision_summary": ""
+    },
+    {
+      "sequence": 19,
+      "at": "2026-10-17T16:42:58.735234+00:00",
+      "kind": "tool_result",
+      "tool": "read_source",
+      "args": {
+        "source_id": "loncin-2025"
+      },
+      "result": {
+        "source_id": "loncin-2025",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-04-18/1225117448.PDF",
+        "title": "隆鑫通用2025年年度报告",
+        "publisher": "隆鑫通用动力股份有限公司／巨潮资讯",
+        "published_at": "2026-04-18",
+        "period": "2025年度",
+        "retrieved_at": "2026-10-17T16:31:58.431729+00:00",
+        "company_ids": [
+          "loncin"
+        ],
+        "kind": "primary",
+        "canonical_source_id": "loncin-2025",
+        "sha256": "60a19723ff7f5158c46ae81afbd8eabab621836e1ed69063c8bbd59ed149d788",
+        "sections": [
+          {
+            "page_or_section": "PDF第7页",
+            "text": "七、 近三年主要会计数据和财务指标\n(一) 主要会计数据\n单位：元 币种：人民币\n主要会计数据 2025年 2024年\n本期比上年\n同期增减\n(%)\n2023年\n营业收入 19,135,154,464.95 16,822,240,957.81 13.75 13,066,481,258.18\n利润总额 1,927,589,946.81 1,275,632,523.02 51.11 558,456,326.12\n归属于上市公\n司股东的净利\n润\n1,647,750,370.76 1,121,271,674.75 46.95 583,421,845.98\n归属于上市公\n司股东的扣除\n非经常性损益\n的净利润\n1,631,187,044.72 1,095,669,781.91 48.88 641,549,247.77\n经营活动产生\n的现金流量净\n额\n2,876,130,710.51 2,122,199,672.11 35.53 2,403,344,314.16\n2025年末 2024年末\n本期末比上\n年同期末增\n减（%）\n2023年末\n归属于上市公\n司股东的净资\n产\n9,583,869,471.42 9,177,502,109.34 4.43 8,252,709,655.32\n总资产 17,340,328,855.25 16,068,609,650.73 7.91 13,941,609,309.86",
+            "selector": {
+              "page": 7,
+              "start": "七、",
+              "end": "(二)",
+              "size": 1800
+            }
+          },
+          {
+            "page_or_section": "PDF第11页",
+            "text": "4、销售模式\n①摩托车整车业务：国内采用经销商直销与区域代理相结合的模式，结算方式主要为货到付\n款；海外主要通过进口国区域代理商销售，采用 FOB 模式，以美元或人民币结算。\n②发动机业务：国内主要为整机厂提供配套供应，辅以区域代理，结算依客户采用到货或使\n用后付款；出口以 OEM/ODM 模式为主，采用 FOB 模式结算。\n③通用机械业务：国内主要为整机厂商提供配套产品；出口以与国际大客户的 OEM/ODM 合作\n为主，采用 FOB 模式结算。\n5、外汇结算\n公司积极推动跨境人民币结算。目前，欧洲市场已基本实现人民币结算；其他海外市场仍以\n美元结算为主。在美元结算业务中，部分采用人民币计价、美元结算的方式，并根据汇率波动调\n整价格，以管理汇率风险。",
+            "selector": {
+              "page": 11,
+              "start": "4、销售模式",
+              "end": "报告期内公司新增",
+              "size": 1800
+            }
+          }
+        ],
+        "read_at": "2026-10-17T16:42:58.735226+00:00",
+        "read_mode": "verified_source_snapshot"
+      }
+    },
+    {
+      "sequence": 20,
+      "at": "2026-10-17T16:43:23.876709+00:00",
+      "kind": "model_call",
+      "phase": "research-step-8",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 7797,
+        "completion_tokens": 1105,
+        "prompt_tokens": 6692,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 25.139,
+      "finish_reason": "stop",
+      "request_hash": "cdb7e8ea58adb691bfc1a637ef6070dcd78e40efe7ae608b9eb77b90f2bc17df"
+    },
+    {
+      "sequence": 21,
+      "at": "2026-10-17T16:43:23.880763+00:00",
+      "kind": "validation_failed",
+      "error": "事实数字无摘录支持：f1:2024; 无匹配摘录或位置：f2"
+    },
+    {
+      "sequence": 22,
+      "at": "2026-10-17T16:43:25.054259+00:00",
+      "kind": "model_call",
+      "phase": "research-step-9",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 6755,
+        "completion_tokens": 23,
+        "prompt_tokens": 6732,
+        "prompt_tokens_details": {
+          "cached_tokens": 3712
+        }
+      },
+      "duration_seconds": 1.17,
+      "finish_reason": "stop",
+      "request_hash": "20d92eb9e0d377d6bfcbbb4e4bacac71678f25a97128301cff80aa5274fe1d77"
+    },
+    {
+      "sequence": 23,
+      "at": "2026-10-17T16:43:25.056449+00:00",
+      "kind": "tool_started",
+      "tool": "read_source",
+      "args": {
+        "source_id": "loncin-2025"
+      },
+      "decision_summary": ""
+    },
+    {
+      "sequence": 24,
+      "at": "2026-10-17T16:43:25.058210+00:00",
+      "kind": "tool_result",
+      "tool": "read_source",
+      "args": {
+        "source_id": "loncin-2025"
+      },
+      "result": {
+        "source_id": "loncin-2025",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-04-18/1225117448.PDF",
+        "title": "隆鑫通用2025年年度报告",
+        "publisher": "隆鑫通用动力股份有限公司／巨潮资讯",
+        "published_at": "2026-04-18",
+        "period": "2025年度",
+        "retrieved_at": "2026-10-17T16:31:58.431729+00:00",
+        "company_ids": [
+          "loncin"
+        ],
+        "kind": "primary",
+        "canonical_source_id": "loncin-2025",
+        "sha256": "60a19723ff7f5158c46ae81afbd8eabab621836e1ed69063c8bbd59ed149d788",
+        "sections": [
+          {
+            "page_or_section": "PDF第7页",
+            "text": "七、 近三年主要会计数据和财务指标\n(一) 主要会计数据\n单位：元 币种：人民币\n主要会计数据 2025年 2024年\n本期比上年\n同期增减\n(%)\n2023年\n营业收入 19,135,154,464.95 16,822,240,957.81 13.75 13,066,481,258.18\n利润总额 1,927,589,946.81 1,275,632,523.02 51.11 558,456,326.12\n归属于上市公\n司股东的净利\n润\n1,647,750,370.76 1,121,271,674.75 46.95 583,421,845.98\n归属于上市公\n司股东的扣除\n非经常性损益\n的净利润\n1,631,187,044.72 1,095,669,781.91 48.88 641,549,247.77\n经营活动产生\n的现金流量净\n额\n2,876,130,710.51 2,122,199,672.11 35.53 2,403,344,314.16\n2025年末 2024年末\n本期末比上\n年同期末增\n减（%）\n2023年末\n归属于上市公\n司股东的净资\n产\n9,583,869,471.42 9,177,502,109.34 4.43 8,252,709,655.32\n总资产 17,340,328,855.25 16,068,609,650.73 7.91 13,941,609,309.86",
+            "selector": {
+              "page": 7,
+              "start": "七、",
+              "end": "(二)",
+              "size": 1800
+            }
+          },
+          {
+            "page_or_section": "PDF第11页",
+            "text": "4、销售模式\n①摩托车整车业务：国内采用经销商直销与区域代理相结合的模式，结算方式主要为货到付\n款；海外主要通过进口国区域代理商销售，采用 FOB 模式，以美元或人民币结算。\n②发动机业务：国内主要为整机厂提供配套供应，辅以区域代理，结算依客户采用到货或使\n用后付款；出口以 OEM/ODM 模式为主，采用 FOB 模式结算。\n③通用机械业务：国内主要为整机厂商提供配套产品；出口以与国际大客户的 OEM/ODM 合作\n为主，采用 FOB 模式结算。\n5、外汇结算\n公司积极推动跨境人民币结算。目前，欧洲市场已基本实现人民币结算；其他海外市场仍以\n美元结算为主。在美元结算业务中，部分采用人民币计价、美元结算的方式，并根据汇率波动调\n整价格，以管理汇率风险。",
+            "selector": {
+              "page": 11,
+              "start": "4、销售模式",
+              "end": "报告期内公司新增",
+              "size": 1800
+            }
+          }
+        ],
+        "read_at": "2026-10-17T16:43:25.058204+00:00",
+        "read_mode": "verified_source_snapshot"
+      }
+    },
+    {
+      "sequence": 25,
+      "at": "2026-10-17T16:43:46.254823+00:00",
+      "kind": "model_call",
+      "phase": "research-step-10",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 8858,
+        "completion_tokens": 933,
+        "prompt_tokens": 7925,
+        "prompt_tokens_details": {
+          "cached_tokens": 5376
+        }
+      },
+      "duration_seconds": 21.194,
+      "finish_reason": "stop",
+      "request_hash": "96ac3a448046f5d327d307e571a4fd2a2e099a21e8cabc7a61caed04079c5d28"
+    },
+    {
+      "sequence": 26,
+      "at": "2026-10-17T16:43:46.258251+00:00",
+      "kind": "validation_failed",
+      "error": "事实数字无摘录支持：f1:2024; 无匹配摘录或位置：f2"
+    },
+    {
+      "sequence": 27,
+      "at": "2026-10-17T16:44:07.003449+00:00",
+      "kind": "model_call",
+      "phase": "research-step-11",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 8874,
+        "completion_tokens": 909,
+        "prompt_tokens": 7965,
+        "prompt_tokens_details": {
+          "cached_tokens": 7808
+        }
+      },
+      "duration_seconds": 20.741,
+      "finish_reason": "stop",
+      "request_hash": "c59f61d455623d153ada8ec36c7a20670f162f476425ca8ddf9064360a1fd11e"
+    },
+    {
+      "sequence": 28,
+      "at": "2026-10-17T16:44:07.009470+00:00",
+      "kind": "validation_failed",
+      "error": "事实数字无摘录支持：f1:2024; 无匹配摘录或位置：f2"
+    },
+    {
+      "sequence": 29,
+      "at": "2026-10-17T16:44:29.767982+00:00",
+      "kind": "model_call",
+      "phase": "research-step-12",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 8991,
+        "completion_tokens": 986,
+        "prompt_tokens": 8005,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        }
+      },
+      "duration_seconds": 22.752,
+      "finish_reason": "stop",
+      "request_hash": "99964b456fb944a8469a80fa1cde9e049531580a6fdda7335c1dac195c745c6a"
+    },
+    {
+      "sequence": 30,
+      "at": "2026-10-17T16:44:29.772528+00:00",
+      "kind": "validation_failed",
+      "error": "事实数字无摘录支持：f1:2024; 无匹配摘录或位置：f2"
+    },
+    {
+      "sequence": 31,
+      "at": "2026-10-17T16:44:49.728258+00:00",
+      "kind": "model_call",
+      "phase": "research-step-13",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 8925,
+        "completion_tokens": 880,
+        "prompt_tokens": 8045,
+        "prompt_tokens_details": {
+          "cached_tokens": 7808
+        }
+      },
+      "duration_seconds": 19.951,
+      "finish_reason": "stop",
+      "request_hash": "76fc6e030dc58bc4b75d62a485eda37d2e5b8ff6943cfffc2eecbb17a2ccdc48"
+    },
+    {
+      "sequence": 32,
+      "at": "2026-10-17T16:44:49.733242+00:00",
+      "kind": "validation_failed",
+      "error": "事实数字无摘录支持：f1:2024"
+    },
+    {
+      "sequence": 33,
+      "at": "2026-10-17T16:45:08.985363+00:00",
+      "kind": "model_call",
+      "phase": "research-step-14",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 8915,
+        "completion_tokens": 841,
+        "prompt_tokens": 8074,
+        "prompt_tokens_details": {
+          "cached_tokens": 5376
+        }
+      },
+      "duration_seconds": 19.247,
+      "finish_reason": "stop",
+      "request_hash": "33ed5a0167f0242ca92834a11af0315d6190a32e3d1fc626d2f3e1262897033f"
+    },
+    {
+      "sequence": 34,
+      "at": "2026-10-17T16:45:08.991717+00:00",
+      "kind": "completed",
+      "evidence_version": "c67a40bc99102437dafc86eed7d3d9442c83cae11d7c4748d5d477de22020e4e"
+    }
+  ],
+  "evidence": [
+    {
+      "source_id": "loncin-2025",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-04-18/1225117448.PDF",
+      "title": "隆鑫通用2025年年度报告",
+      "publisher": "隆鑫通用动力股份有限公司／巨潮资讯",
+      "published_at": "2026-04-18",
+      "period": "2025年度",
+      "retrieved_at": "2026-10-17T16:31:58.431729+00:00",
+      "company_ids": [
+        "loncin"
+      ],
+      "kind": "primary",
+      "canonical_source_id": "loncin-2025",
+      "sha256": "60a19723ff7f5158c46ae81afbd8eabab621836e1ed69063c8bbd59ed149d788",
+      "sections": [
+        {
+          "page_or_section": "PDF第7页",
+          "text": "七、 近三年主要会计数据和财务指标\n(一) 主要会计数据\n单位：元 币种：人民币\n主要会计数据 2025年 2024年\n本期比上年\n同期增减\n(%)\n2023年\n营业收入 19,135,154,464.95 16,822,240,957.81 13.75 13,066,481,258.18\n利润总额 1,927,589,946.81 1,275,632,523.02 51.11 558,456,326.12\n归属于上市公\n司股东的净利\n润\n1,647,750,370.76 1,121,271,674.75 46.95 583,421,845.98\n归属于上市公\n司股东的扣除\n非经常性损益\n的净利润\n1,631,187,044.72 1,095,669,781.91 48.88 641,549,247.77\n经营活动产生\n的现金流量净\n额\n2,876,130,710.51 2,122,199,672.11 35.53 2,403,344,314.16\n2025年末 2024年末\n本期末比上\n年同期末增\n减（%）\n2023年末\n归属于上市公\n司股东的净资\n产\n9,583,869,471.42 9,177,502,109.34 4.43 8,252,709,655.32\n总资产 17,340,328,855.25 16,068,609,650.73 7.91 13,941,609,309.86",
+          "selector": {
+            "page": 7,
+            "start": "七、",
+            "end": "(二)",
+            "size": 1800
+          }
+        },
+        {
+          "page_or_section": "PDF第11页",
+          "text": "4、销售模式\n①摩托车整车业务：国内采用经销商直销与区域代理相结合的模式，结算方式主要为货到付\n款；海外主要通过进口国区域代理商销售，采用 FOB 模式，以美元或人民币结算。\n②发动机业务：国内主要为整机厂提供配套供应，辅以区域代理，结算依客户采用到货或使\n用后付款；出口以 OEM/ODM 模式为主，采用 FOB 模式结算。\n③通用机械业务：国内主要为整机厂商提供配套产品；出口以与国际大客户的 OEM/ODM 合作\n为主，采用 FOB 模式结算。\n5、外汇结算\n公司积极推动跨境人民币结算。目前，欧洲市场已基本实现人民币结算；其他海外市场仍以\n美元结算为主。在美元结算业务中，部分采用人民币计价、美元结算的方式，并根据汇率波动调\n整价格，以管理汇率风险。",
+          "selector": {
+            "page": 11,
+            "start": "4、销售模式",
+            "end": "报告期内公司新增",
+            "size": 1800
+          }
+        }
+      ],
+      "read_at": "2026-10-17T16:43:25.058204+00:00",
+      "read_mode": "verified_source_snapshot"
+    },
+    {
+      "source_id": "loncin-reprint",
+      "url": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12107316",
+      "title": "隆鑫通用2025年年度报告（转载）",
+      "publisher": "新浪财经",
+      "published_at": "2026-04-18",
+      "period": "2025年度",
+      "retrieved_at": "2026-10-17T16:33:54.977698+00:00",
+      "company_ids": [
+        "loncin"
+      ],
+      "kind": "reprint",
+      "canonical_source_id": "loncin-2025",
+      "sha256": "7a4f4fb5d9ec9df22953064841d4c10ab3a2ef2ca853549a8811b3b2e2fb3201",
+      "sections": [
+        {
+          "page_or_section": "近三年主要会计数据／营业收入行",
+          "text": "营业收入 19,135,154,464.95 16,822,240,957.81 13.75 13,066,481,258.18",
+          "selector": {
+            "start": "营业收入 19,135",
+            "end": "利润总额",
+            "size": 300
+          }
+        }
+      ],
+      "read_at": "2026-10-17T16:42:14.124160+00:00",
+      "read_mode": "verified_source_snapshot"
+    }
+  ],
+  "calculations": [],
+  "result": {
+    "dossier": {
+      "company_id": "loncin",
+      "what_changed": "未获取到2024年营业收入具体数值的独立摘录；未在年报中定位到‘出口业务说明尚未进行汇率管理’的原文表述。",
+      "why_relevant": "年报是验证企业经营与风控事实的核心依据，缺失关键数字或风控声明将影响对出口风险敞口与授信支持方向的判断。",
+      "facts": [
+        {
+          "fact_id": "f1",
+          "company_id": "loncin",
+          "statement": "2024年营业收入为16,822,240,957.81元",
+          "source_id": "loncin-2025",
+          "excerpt": "营业收入 19,135,154,464.95 16,822,240,957.81 13.75 13,066,481,258.18",
+          "page_or_section": "PDF第7页",
+          "period": "2024年度",
+          "scope": "consolidated",
+          "limitations": "该数据为合并报表口径，未拆分出口收入；未说明是否含汇兑损益调整"
+        },
+        {
+          "fact_id": "f2",
+          "company_id": "loncin",
+          "statement": "公司积极推动跨境人民币结算；欧洲市场已基本实现人民币结算；其他海外市场仍以美元结算为主；在美元结算业务中，部分采用人民币计价、美元结算，并根据汇率波动调整价格以管理汇率风险",
+          "source_id": "loncin-2025",
+          "excerpt": "公司积极推动跨境人民币结算。目前，欧洲市场已基本实现人民币结算；其他海外市场仍以美元结算为主。在美元结算业务中，部分采用人民币计价、美元结算的方式，并根据汇率波动调整价格，以管理汇率风险。",
+          "page_or_section": "PDF第11页",
+          "period": "2025年度",
+          "scope": "company",
+          "limitations": "未披露套期保值工具使用情况、外汇衍生品持仓、对冲覆盖率等具体风控执行细节"
+        }
+      ],
+      "events": [],
+      "hypotheses": [
+        {
+          "hypothesis_id": "h1",
+          "title": "隆鑫通用存在未对冲的美元出口敞口，需银行提供远期结汇服务",
+          "supporting_evidence": [
+            "loncin-2025"
+          ],
+          "counter_evidence": [],
+          "reasoning_summary": "年报明确‘其他海外市场仍以美元结算为主’，且仅提及‘价格调整’作为管理手段，未提及其使用金融工具对冲，构成服务假设基础",
+          "missing_information": [
+            "美元结算占比",
+            "外汇衍生品使用情况",
+            "近12个月汇兑损益金额"
+          ],
+          "questions_to_verify": [
+            "2025年美元结算收入占出口总收入比例？",
+            "是否开立外汇衍生品专户？",
+            "近一年汇兑损益是否计入当期损益？"
+          ],
+          "status": "needs_review"
+        }
+      ],
+      "calculation_ids": [],
+      "missing_information": [
+        "2024年出口收入明细",
+        "汇率风险管理制度文本",
+        "外汇套保协议或备案文件"
+      ],
+      "next_questions": [
+        "请提供隆鑫通用2025年分币种收入明细表",
+        "请调取其在本行/他行的远期结汇业务流水",
+        "是否已签署《汇率避险服务意向书》？"
+      ],
+      "stop_reason": "原始年报未载明‘尚未进行汇率管理’表述，且无2024年单列出口收入及对冲执行证据；所有事实均严格引用PDF第7页与第11页原文，无补造",
+      "coverage_limit": "仅覆盖巨潮资讯发布的loncin-2025原始年报；转载源loncin-reprint未提供新增信息"
+    },
+    "evidence_version": "c67a40bc99102437dafc86eed7d3d9442c83cae11d7c4748d5d477de22020e4e",
+    "parent_run_id": null,
+    "delta": {
+      "new_facts": [],
+      "superseded_events": [],
+      "withdrawn_hypotheses": [],
+      "review_invalidated": false
+    },
+    "validation": "schema_and_quote_checked_semantics_need_human_review"
+  }
+}

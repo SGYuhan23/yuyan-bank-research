@@ -1,0 +1,209 @@
+{
+  "method": "5 paired development cases; same selected source sections and task; temperature 0; same configured model; unfiltered single-turn baseline vs bounded tool loop. Quote match is not semantic correctness. Author annotations are AI-assisted, non-blind, not an independent human trial.",
+  "cases": [
+    {
+      "case": "rifa",
+      "arm": "agent",
+      "status": "failed",
+      "returned_model": [
+        "qwen-plus"
+      ],
+      "model_calls": 12,
+      "usage_total_tokens": 112144,
+      "fact_count": 0,
+      "exact_quote_matches": 0,
+      "validation_rejections": 4,
+      "author_revision_items": [
+        "未交付：反复将fact_id放入source_id字段，最终耗尽12轮；失败草稿含“尚未开工、无缺口”的不当判断。"
+      ],
+      "author_revision_item_count": 1,
+      "human_review_seconds": null,
+      "blind_human_major_error_score": null
+    },
+    {
+      "case": "rifa",
+      "arm": "baseline",
+      "status": "completed",
+      "returned_model": [
+        "qwen-plus"
+      ],
+      "model_calls": 1,
+      "usage_total_tokens": 9089,
+      "fact_count": 5,
+      "exact_quote_matches": 5,
+      "validation_rejections": 0,
+      "author_revision_items": [
+        "自行生成项目编号rifa-expansion，不能当官方项目代码。",
+        "把未取得关联资料写成未涉及关联方。",
+        "没有投资构成明细却称全部是设备与环保投入、资本开支可控。",
+        "无来源引入制造业环保投资均值1–3%，并拿道路工程作比较。"
+      ],
+      "author_revision_item_count": 4,
+      "human_review_seconds": null,
+      "blind_human_major_error_score": null
+    },
+    {
+      "case": "qinan",
+      "arm": "agent",
+      "status": "failed",
+      "returned_model": [
+        "qwen-plus"
+      ],
+      "model_calls": 12,
+      "usage_total_tokens": 84631,
+      "fact_count": 0,
+      "exact_quote_matches": 0,
+      "validation_rejections": 5,
+      "author_revision_items": [
+        "未交付：上年同期表头校验误拒、fact_id/source_id错配，最终耗尽12轮。"
+      ],
+      "author_revision_item_count": 1,
+      "human_review_seconds": null,
+      "blind_human_major_error_score": null
+    },
+    {
+      "case": "qinan",
+      "arm": "baseline",
+      "status": "completed",
+      "returned_model": [
+        "qwen-plus"
+      ],
+      "model_calls": 1,
+      "usage_total_tokens": 6774,
+      "fact_count": 8,
+      "exact_quote_matches": 6,
+      "validation_rejections": 0,
+      "author_revision_items": [
+        "引入无来源的现金比率安全阈值和行业资产负债率均值50%–60%。",
+        "将所选节录未包含的信息泛化为整个年报未披露，年报220页实有并购付款信息。",
+        "对子公司关系摘录使用省略号而非连续原文，另有摘录顺序改写。"
+      ],
+      "author_revision_item_count": 3,
+      "human_review_seconds": null,
+      "blind_human_major_error_score": null
+    },
+    {
+      "case": "loncin",
+      "arm": "agent",
+      "status": "failed",
+      "returned_model": [
+        "qwen-plus"
+      ],
+      "model_calls": 12,
+      "usage_total_tokens": 76967,
+      "fact_count": 0,
+      "exact_quote_matches": 0,
+      "validation_rejections": 8,
+      "author_revision_items": [
+        "未交付：假设引用fact_id无法通过旧校验，耗尽12轮。"
+      ],
+      "author_revision_item_count": 1,
+      "human_review_seconds": null,
+      "blind_human_major_error_score": null
+    },
+    {
+      "case": "loncin",
+      "arm": "baseline",
+      "status": "completed",
+      "returned_model": [
+        "qwen-plus"
+      ],
+      "model_calls": 1,
+      "usage_total_tokens": 5092,
+      "fact_count": 5,
+      "exact_quote_matches": 4,
+      "validation_rejections": 0,
+      "author_revision_items": [
+        "把年报转载列作独立事件，并将source_id写入事件supersedes。",
+        "将转载选取段落未包含结算描述泛化为转载源缺失；已下载转载全文实际包含外汇结算段。",
+        "在未核实现有工具及银行覆盖时，称当前信息足以做衍生品补位设计。"
+      ],
+      "author_revision_item_count": 3,
+      "human_review_seconds": null,
+      "blind_human_major_error_score": null
+    },
+    {
+      "case": "qinan-cast",
+      "arm": "agent",
+      "status": "completed",
+      "returned_model": [
+        "qwen-plus"
+      ],
+      "model_calls": 3,
+      "usage_total_tokens": 10951,
+      "fact_count": 3,
+      "exact_quote_matches": 3,
+      "validation_rejections": 0,
+      "author_revision_items": [
+        "智能工厂名单列名标为approved，容易误读为工程审批；应为disclosed。",
+        "未读取完整附注却称单体财务未披露；应限于所读资料未核实。"
+      ],
+      "author_revision_item_count": 2,
+      "human_review_seconds": null,
+      "blind_human_major_error_score": null
+    },
+    {
+      "case": "qinan-cast",
+      "arm": "baseline",
+      "status": "completed",
+      "returned_model": [
+        "qwen-plus"
+      ],
+      "model_calls": 1,
+      "usage_total_tokens": 5278,
+      "fact_count": 3,
+      "exact_quote_matches": 2,
+      "validation_rejections": 0,
+      "author_revision_items": [
+        "把2025年末股权关系披露写成2025-12-31子公司成立事件。",
+        "两个工厂编号自拟且stage为accepted，均不是环评受理。",
+        "称209和222编号连续，并凭条目断言设备体系完全不兼容，无来源。",
+        "从截取页推定全文未拆分单体收入，证据范围不足。"
+      ],
+      "author_revision_item_count": 4,
+      "human_review_seconds": null,
+      "blind_human_major_error_score": null
+    },
+    {
+      "case": "zishuo",
+      "arm": "agent",
+      "status": "completed",
+      "returned_model": [
+        "qwen-plus"
+      ],
+      "model_calls": 6,
+      "usage_total_tokens": 31725,
+      "fact_count": 1,
+      "exact_quote_matches": 1,
+      "validation_rejections": 1,
+      "author_revision_items": [
+        "把环评批准解读为建设启动在即，并提出存在固定资产融资需求；资料不足，需撤回。",
+        "事件未表达阶段替代关系，事实正文只提名称，遗漏审批时间等关键变化。"
+      ],
+      "author_revision_item_count": 2,
+      "human_review_seconds": null,
+      "blind_human_major_error_score": null
+    },
+    {
+      "case": "zishuo",
+      "arm": "baseline",
+      "status": "completed",
+      "returned_model": [
+        "qwen-plus"
+      ],
+      "model_calls": 1,
+      "usage_total_tokens": 9234,
+      "fact_count": 6,
+      "exact_quote_matches": 6,
+      "validation_rejections": 0,
+      "author_revision_items": [
+        "无来源提出12–24个月融资期限与设备集中付款安排。",
+        "编入设备供应商品牌以及30%/60%/10%付款结构，原文没有供应商或合同。",
+        "未读取政策与项目资质便声称符合绿色/碳减排支持目录。"
+      ],
+      "author_revision_item_count": 3,
+      "human_review_seconds": null,
+      "blind_human_major_error_score": null
+    }
+  ]
+}

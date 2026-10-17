@@ -1,0 +1,243 @@
+{
+  "run_id": "489ddb2dcdbe4747",
+  "task": "研究隆鑫通用2025年度经营和访前服务方向；识别报告转载，核查“有出口所以尚无汇率管理”判断是否成立。",
+  "company_id": "loncin",
+  "started_at": "2026-10-17T16:49:30.096258+00:00",
+  "mode": "snapshot",
+  "status": "completed",
+  "records": [
+    {
+      "sequence": 1,
+      "at": "2026-10-17T16:50:14.114945+00:00",
+      "kind": "model_call",
+      "phase": "single-turn-baseline",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 5092,
+        "completion_tokens": 1951,
+        "prompt_tokens": 3141,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 44.015,
+      "finish_reason": "stop",
+      "request_hash": "39e3274881c012012e9f63dbd79933bc1a1bb9141d7e9998ba81b9dcb1b3679d"
+    },
+    {
+      "sequence": 2,
+      "at": "2026-10-17T16:50:14.117823+00:00",
+      "kind": "completed",
+      "note": "单轮全部相同资料，无工具及修复轮次"
+    }
+  ],
+  "evidence": [
+    {
+      "source_id": "loncin-2025",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-04-18/1225117448.PDF",
+      "title": "隆鑫通用2025年年度报告",
+      "publisher": "隆鑫通用动力股份有限公司／巨潮资讯",
+      "published_at": "2026-04-18",
+      "period": "2025年度",
+      "retrieved_at": "2026-10-17T16:31:58.431729+00:00",
+      "company_ids": [
+        "loncin"
+      ],
+      "kind": "primary",
+      "canonical_source_id": "loncin-2025",
+      "sha256": "60a19723ff7f5158c46ae81afbd8eabab621836e1ed69063c8bbd59ed149d788",
+      "sections": [
+        {
+          "page_or_section": "PDF第7页",
+          "text": "七、 近三年主要会计数据和财务指标\n(一) 主要会计数据\n单位：元 币种：人民币\n主要会计数据 2025年 2024年\n本期比上年\n同期增减\n(%)\n2023年\n营业收入 19,135,154,464.95 16,822,240,957.81 13.75 13,066,481,258.18\n利润总额 1,927,589,946.81 1,275,632,523.02 51.11 558,456,326.12\n归属于上市公\n司股东的净利\n润\n1,647,750,370.76 1,121,271,674.75 46.95 583,421,845.98\n归属于上市公\n司股东的扣除\n非经常性损益\n的净利润\n1,631,187,044.72 1,095,669,781.91 48.88 641,549,247.77\n经营活动产生\n的现金流量净\n额\n2,876,130,710.51 2,122,199,672.11 35.53 2,403,344,314.16\n2025年末 2024年末\n本期末比上\n年同期末增\n减（%）\n2023年末\n归属于上市公\n司股东的净资\n产\n9,583,869,471.42 9,177,502,109.34 4.43 8,252,709,655.32\n总资产 17,340,328,855.25 16,068,609,650.73 7.91 13,941,609,309.86",
+          "selector": {
+            "page": 7,
+            "start": "七、",
+            "end": "(二)",
+            "size": 1800
+          }
+        },
+        {
+          "page_or_section": "PDF第11页",
+          "text": "4、销售模式\n①摩托车整车业务：国内采用经销商直销与区域代理相结合的模式，结算方式主要为货到付\n款；海外主要通过进口国区域代理商销售，采用 FOB 模式，以美元或人民币结算。\n②发动机业务：国内主要为整机厂提供配套供应，辅以区域代理，结算依客户采用到货或使\n用后付款；出口以 OEM/ODM 模式为主，采用 FOB 模式结算。\n③通用机械业务：国内主要为整机厂商提供配套产品；出口以与国际大客户的 OEM/ODM 合作\n为主，采用 FOB 模式结算。\n5、外汇结算\n公司积极推动跨境人民币结算。目前，欧洲市场已基本实现人民币结算；其他海外市场仍以\n美元结算为主。在美元结算业务中，部分采用人民币计价、美元结算的方式，并根据汇率波动调\n整价格，以管理汇率风险。",
+          "selector": {
+            "page": 11,
+            "start": "4、销售模式",
+            "end": "报告期内公司新增",
+            "size": 1800
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "loncin-reprint",
+      "url": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12107316",
+      "title": "隆鑫通用2025年年度报告（转载）",
+      "publisher": "新浪财经",
+      "published_at": "2026-04-18",
+      "period": "2025年度",
+      "retrieved_at": "2026-10-17T16:33:54.977698+00:00",
+      "company_ids": [
+        "loncin"
+      ],
+      "kind": "reprint",
+      "canonical_source_id": "loncin-2025",
+      "sha256": "7a4f4fb5d9ec9df22953064841d4c10ab3a2ef2ca853549a8811b3b2e2fb3201",
+      "sections": [
+        {
+          "page_or_section": "近三年主要会计数据／营业收入行",
+          "text": "营业收入 19,135,154,464.95 16,822,240,957.81 13.75 13,066,481,258.18",
+          "selector": {
+            "start": "营业收入 19,135",
+            "end": "利润总额",
+            "size": 300
+          }
+        }
+      ]
+    }
+  ],
+  "calculations": [],
+  "result": {
+    "dossier": {
+      "company_id": "loncin",
+      "what_changed": "隆鑫通用2025年营业收入同比增长13.75%至191.35亿元，利润总额同比增长51.11%，经营活动现金流净额同比增长35.53%；出口业务明确采用FOB模式、以美元或人民币结算，且已开展汇率风险管理（如人民币计价+美元结算、价格动态调整）。",
+      "why_relevant": "识别其2025年经营趋势与跨境结算实操，是制定对公拜访服务方案（如汇率避险、跨境融资、供应链金融）的前提；‘有出口所以尚无汇率管理’属明显事实误判，需立即纠正并溯源核查。",
+      "facts": [
+        {
+          "fact_id": "f-001",
+          "company_id": "loncin",
+          "statement": "隆鑫通用2025年营业收入为19,135,154,464.95元，较2024年增长13.75%。",
+          "source_id": "loncin-2025",
+          "excerpt": "营业收入 19,135,154,464.95 16,822,240,957.81 13.75 13,066,481,258.18",
+          "page_or_section": "PDF第7页",
+          "period": "2025年度",
+          "scope": "consolidated",
+          "limitations": "未披露分业务/分地区收入构成；增长率基于合并报表，不含非经常性调整"
+        },
+        {
+          "fact_id": "f-002",
+          "company_id": "loncin",
+          "statement": "隆鑫通用海外销售主要通过进口国区域代理商进行，采用FOB模式，以美元或人民币结算。",
+          "source_id": "loncin-2025",
+          "excerpt": "①摩托车整车业务：……海外主要通过进口国区域代理商销售，采用 FOB 模式，以美元或人民币结算。",
+          "page_or_section": "PDF第11页",
+          "period": "2025年度",
+          "scope": "company",
+          "limitations": "未说明各币种结算占比；未列示具体国家/地区分布及对应结算货币"
+        },
+        {
+          "fact_id": "f-003",
+          "company_id": "loncin",
+          "statement": "公司积极推动跨境人民币结算，欧洲市场已基本实现人民币结算；其他海外市场仍以美元结算为主。",
+          "source_id": "loncin-2025",
+          "excerpt": "公司积极推动跨境人民币结算。目前，欧洲市场已基本实现人民币结算；其他海外市场仍以美元结算为主。",
+          "page_or_section": "PDF第11页",
+          "period": "2025年度",
+          "scope": "company",
+          "limitations": "未提供人民币结算金额/占比数据；‘基本实现’为定性表述，缺乏量化定义"
+        },
+        {
+          "fact_id": "f-004",
+          "company_id": "loncin",
+          "statement": "在美元结算业务中，部分采用人民币计价、美元结算的方式，并根据汇率波动调整价格，以管理汇率风险。",
+          "source_id": "loncin-2025",
+          "excerpt": "在美元结算业务中，部分采用人民币计价、美元结算的方式，并根据汇率波动调整价格，以管理汇率风险。",
+          "page_or_section": "PDF第11页",
+          "period": "2025年度",
+          "scope": "company",
+          "limitations": "‘部分’未界定比例或业务范围；未说明是否使用远期、期权等金融工具"
+        },
+        {
+          "fact_id": "f-005",
+          "company_id": "loncin",
+          "statement": "隆鑫通用2025年年度报告原始发布源为巨潮资讯网，新浪财经转载内容与原文关键财务数据一致。",
+          "source_id": "loncin-reprint",
+          "excerpt": "营业收入 19,135,154,464.95 16,822,240,957.81 13.75 13,066,481,258.18",
+          "page_or_section": "近三年主要会计数据／营业收入行",
+          "period": "2025年度",
+          "scope": "consolidated",
+          "limitations": "转载源未包含原文第11页关于外汇结算的详细描述，存在信息不完整风险"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "e-001",
+          "company_id": "loncin",
+          "project_id": null,
+          "event_type": "annual_report_publication",
+          "event_date": "2026-04-18",
+          "published_at": "2026-04-18",
+          "stage": "disclosed",
+          "source_ids": [
+            "loncin-2025"
+          ],
+          "supersedes": [],
+          "conflicts": []
+        },
+        {
+          "event_id": "e-002",
+          "company_id": "loncin",
+          "project_id": null,
+          "event_type": "report_reprint",
+          "event_date": "2026-04-18",
+          "published_at": "2026-04-18",
+          "stage": "disclosed",
+          "source_ids": [
+            "loncin-reprint"
+          ],
+          "supersedes": [
+            "loncin-2025"
+          ],
+          "conflicts": []
+        }
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "h-001",
+          "title": "‘隆鑫通用因有出口业务，故尚未建立汇率管理体系’判断不成立",
+          "supporting_evidence": [
+            "f-002",
+            "f-003",
+            "f-004"
+          ],
+          "counter_evidence": [],
+          "reasoning_summary": "原文明确指出公司已在美元结算中采用‘人民币计价+美元结算+价格动态调整’机制，并推动欧洲市场人民币结算，构成主动汇率风险管理实践；‘尚无汇率管理’与事实直接矛盾。",
+          "missing_information": [
+            "各币种结算金额及占比",
+            "汇率风险敞口规模（如外币应收余额）",
+            "是否使用衍生品工具（远期/掉期/期权）",
+            "是否有专职外汇管理岗位或制度文件"
+          ],
+          "questions_to_verify": [
+            "2025年末美元应收账款余额是多少？是否较2024年末变化？",
+            "公司是否签署过外汇远期合约？如有，名义本金与期限结构如何？",
+            "年报附注中‘财务费用—汇兑损益’科目金额及变动原因是否披露？",
+            "是否存在未在年报中体现的境外子公司或离岸账户？"
+          ],
+          "status": "proposed"
+        }
+      ],
+      "calculation_ids": [],
+      "missing_information": [
+        "2025年出口收入占总营收比重",
+        "分币种（USD/CNY/EUR）结算金额及占比",
+        "外币货币资金及应收应付账款期末余额（按币种）",
+        "汇兑损益绝对值及占净利润比例",
+        "是否设立外汇套保政策或经董事会审批的套保计划"
+      ],
+      "next_questions": [
+        "调取隆鑫通用2025年年报‘重要事项’及‘财务报告’附注章节，重点核查‘外币货币性项目’‘汇兑损益’‘金融工具’相关披露",
+        "检索隆鑫通用近3年公告，确认是否存在外汇套保相关董事会决议或套保业务进展公告",
+        "比对同行业可比公司（如春风动力、钱江摩托）2025年汇率管理披露颗粒度，评估隆鑫通用披露充分性",
+        "向企业初步问询：当前主要汇率风险缓释手段是否仅限于定价调整？有无引入银行合作开展套期保值？"
+      ],
+      "stop_reason": "原始年报已充分证伪‘尚无汇率管理’误判；但汇率管理深度（工具使用、制度建设、敞口量化）需进一步材料支撑，当前信息足以启动访前服务方案设计（聚焦价格联动机制优化与衍生品补位）。",
+      "coverage_limit": "本档案仅基于隆鑫通用2025年年报（loncin-2025）及其转载件（loncin-reprint）；未覆盖其子公司、关联方、未公开访谈纪要或监管问询函等延伸材料。"
+    },
+    "evidence_version": null,
+    "parent_run_id": null,
+    "delta": {},
+    "validation": "unfiltered_baseline_output"
+  }
+}

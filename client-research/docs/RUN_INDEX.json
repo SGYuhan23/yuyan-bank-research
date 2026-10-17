@@ -1,0 +1,202 @@
+[
+  {
+    "directory": "loncin",
+    "run_id": "af0da2ed46c6453a",
+    "status": "completed",
+    "mode": "snapshot",
+    "model_calls": 14,
+    "parent": null
+  },
+  {
+    "directory": "eval-loncin-baseline",
+    "run_id": "489ddb2dcdbe4747",
+    "status": "completed",
+    "mode": "snapshot",
+    "model_calls": 1,
+    "parent": null
+  },
+  {
+    "directory": "rifa-updated",
+    "run_id": "2187791c9a254b28",
+    "status": "failed",
+    "mode": "snapshot",
+    "model_calls": 16,
+    "parent": null
+  },
+  {
+    "directory": "qinan-reviewed-update",
+    "run_id": "1f14ef2a3bb6404f",
+    "status": "failed",
+    "mode": "snapshot",
+    "model_calls": 12,
+    "parent": null
+  },
+  {
+    "directory": "zishuo-guarded",
+    "run_id": "839522108a654ab3",
+    "status": "completed",
+    "mode": "deterministic_review_of_real_model_output",
+    "model_calls": 0,
+    "parent": "ee79d26015b14bda"
+  },
+  {
+    "directory": "eval-loncin-agent",
+    "run_id": "dbf075bcdcac4ace",
+    "status": "failed",
+    "mode": "snapshot",
+    "model_calls": 12,
+    "parent": null
+  },
+  {
+    "directory": "qinan-guarded-update",
+    "run_id": "7decc34aabf44800",
+    "status": "completed",
+    "mode": "deterministic_review_of_real_model_output",
+    "model_calls": 0,
+    "parent": "b94657ea281b41de"
+  },
+  {
+    "directory": "qinan",
+    "run_id": "eed98e57391243ca",
+    "status": "failed",
+    "mode": "snapshot",
+    "model_calls": 16,
+    "parent": null
+  },
+  {
+    "directory": "zishuo-updated-final",
+    "run_id": "ee79d26015b14bda",
+    "status": "completed",
+    "mode": "snapshot",
+    "model_calls": 1,
+    "parent": "6fefd63f23aa4c36"
+  },
+  {
+    "directory": "eval-zishuo-agent",
+    "run_id": "6fefd63f23aa4c36",
+    "status": "completed",
+    "mode": "snapshot",
+    "model_calls": 6,
+    "parent": null
+  },
+  {
+    "directory": "eval-qinan-agent",
+    "run_id": "7e3d109fa4814428",
+    "status": "failed",
+    "mode": "snapshot",
+    "model_calls": 12,
+    "parent": null
+  },
+  {
+    "directory": "eval-qinan-cast-agent",
+    "run_id": "6761953b26054c2d",
+    "status": "completed",
+    "mode": "snapshot",
+    "model_calls": 3,
+    "parent": null
+  },
+  {
+    "directory": "rifa-live-v2",
+    "run_id": "d1783aae6e6d4cce",
+    "status": "completed",
+    "mode": "live",
+    "model_calls": 8,
+    "parent": "80eec6715ba04308"
+  },
+  {
+    "directory": "eval-qinan-baseline",
+    "run_id": "0bfb58f214c84efd",
+    "status": "completed",
+    "mode": "snapshot",
+    "model_calls": 1,
+    "parent": null
+  },
+  {
+    "directory": "qinan-v3",
+    "run_id": "b94657ea281b41de",
+    "status": "completed",
+    "mode": "snapshot",
+    "model_calls": 8,
+    "parent": null
+  },
+  {
+    "directory": "qinan-updated-final",
+    "run_id": "3bd9bc4dcaa1444b",
+    "status": "completed",
+    "mode": "snapshot",
+    "model_calls": 1,
+    "parent": "b94657ea281b41de"
+  },
+  {
+    "directory": "qinan-source-audited",
+    "run_id": "a1591d5e59d44425",
+    "status": "completed",
+    "mode": "author_source_audit_not_human_signoff",
+    "model_calls": 0,
+    "parent": "7decc34aabf44800"
+  },
+  {
+    "directory": "eval-zishuo-baseline",
+    "run_id": "ff89e9cdecdd426d",
+    "status": "completed",
+    "mode": "snapshot",
+    "model_calls": 1,
+    "parent": null
+  },
+  {
+    "directory": "eval-rifa-agent",
+    "run_id": "ca7f0fb99ae64e47",
+    "status": "failed",
+    "mode": "snapshot",
+    "model_calls": 12,
+    "parent": null
+  },
+  {
+    "directory": "zishuo-reviewed",
+    "run_id": "8da58a38f6274dfa",
+    "status": "failed",
+    "mode": "snapshot",
+    "model_calls": 1,
+    "parent": null
+  },
+  {
+    "directory": "rifa-initial",
+    "run_id": "80eec6715ba04308",
+    "status": "completed",
+    "mode": "snapshot",
+    "model_calls": 3,
+    "parent": null
+  },
+  {
+    "directory": "eval-rifa-baseline",
+    "run_id": "5d2fdcf78a214b5f",
+    "status": "completed",
+    "mode": "snapshot",
+    "model_calls": 1,
+    "parent": null
+  },
+  {
+    "directory": "qinan-evidence-update",
+    "run_id": "c68d09cfc91e4b01",
+    "status": "failed",
+    "mode": "snapshot",
+    "model_calls": 1,
+    "parent": null
+  },
+  {
+    "directory": "eval-qinan-cast-baseline",
+    "run_id": "beb70d0ebcec46fb",
+    "status": "completed",
+    "mode": "snapshot",
+    "model_calls": 1,
+    "parent": null
+  },
+  {
+    "directory": "qinan-new-evidence",
+    "run_id": "5be07b2b9335413b",
+    "status": "failed",
+    "mode": "snapshot",
+    "model_calls": 12,
+    "parent": null
+  }
+]

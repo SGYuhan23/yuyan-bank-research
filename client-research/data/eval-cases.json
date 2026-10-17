@@ -1,0 +1,49 @@
+[
+  {
+    "id": "rifa",
+    "company": "rifa",
+    "sources": [
+      "rifa-accepted",
+      "rifa-proposed",
+      "rifa-approved"
+    ],
+    "task": "研究日发布料贴合扩建项目的阶段变化与主体，复算环保投资占计划总投资比例；提出访前服务假设及反证，明确不能推断开工或资金缺口。"
+  },
+  {
+    "id": "qinan",
+    "company": "qinan",
+    "sources": [
+      "qinan-2025",
+      "qinan-2026h1"
+    ],
+    "task": "研究秦安股份2025年与2026年半年经营变化，各自比较同比，审查收入下降能否推出资金短缺，不能混同子公司单体财务。"
+  },
+  {
+    "id": "loncin",
+    "company": "loncin",
+    "sources": [
+      "loncin-2025",
+      "loncin-reprint"
+    ],
+    "task": "研究隆鑫通用2025年度经营和访前服务方向；识别报告转载，核查“有出口所以尚无汇率管理”判断是否成立。"
+  },
+  {
+    "id": "qinan-cast",
+    "company": "qinan-cast",
+    "sources": [
+      "qinan-2025",
+      "smart-factory"
+    ],
+    "task": "研究重庆秦安铸造有限公司，核实与上市公司关系及智能工厂名单中的两个事项；证据不足时停止，不得把集团收入当成该企业单体收入。"
+  },
+  {
+    "id": "zishuo",
+    "company": "zishuo",
+    "sources": [
+      "rifa-accepted",
+      "rifa-proposed",
+      "rifa-approved"
+    ],
+    "task": "研究重庆紫硕汽车零部件有限公司一期项目，不要混同日发项目；现有公开信息是否足够判断金融需求？"
+  }
+]

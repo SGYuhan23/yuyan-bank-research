@@ -1,0 +1,76 @@
+[
+  {
+    "company_id": "rifa",
+    "legal_name": "重庆日发汽车零部件有限公司",
+    "aliases": [
+      "重庆日发"
+    ],
+    "parent_relationship": null,
+    "region": "重庆高新区曾家镇",
+    "industry": "汽车座椅复合布料",
+    "sources": [
+      "rifa-accepted",
+      "rifa-approved"
+    ]
+  },
+  {
+    "company_id": "qinan",
+    "legal_name": "重庆秦安机电股份有限公司",
+    "aliases": [
+      "秦安股份"
+    ],
+    "parent_relationship": null,
+    "region": "重庆",
+    "industry": "汽车零部件／真空镀膜",
+    "sources": [
+      "qinan-2025"
+    ]
+  },
+  {
+    "company_id": "qinan-cast",
+    "legal_name": "重庆秦安铸造有限公司",
+    "aliases": [
+      "秦安铸造"
+    ],
+    "parent_relationship": {
+      "parent_company_id": "qinan",
+      "relationship": "直接持股100%",
+      "as_of": "2025-12-31",
+      "source_id": "qinan-2025",
+      "page_or_section": "PDF第227页"
+    },
+    "region": "重庆江津区",
+    "industry": "汽车零部件制造",
+    "sources": [
+      "smart-factory",
+      "qinan-2025"
+    ]
+  },
+  {
+    "company_id": "loncin",
+    "legal_name": "隆鑫通用动力股份有限公司",
+    "aliases": [
+      "隆鑫通用"
+    ],
+    "parent_relationship": null,
+    "region": "重庆",
+    "industry": "摩托车及通用机械",
+    "sources": [
+      "loncin-2025"
+    ]
+  },
+  {
+    "company_id": "zishuo",
+    "legal_name": "重庆紫硕汽车零部件有限公司",
+    "aliases": [
+      "重庆紫硕"
+    ],
+    "parent_relationship": null,
+    "region": "重庆高新区含谷镇",
+    "industry": "汽车座椅",
+    "sources": [
+      "rifa-accepted",
+      "rifa-approved"
+    ]
+  }
+]

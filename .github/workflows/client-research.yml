@@ -1,0 +1,24 @@
+name: Check client research prototype
+on:
+  pull_request:
+    paths: ['client-research/**', '.github/workflows/client-research.yml']
+  push:
+    branches: ['codex/chongqing-client-research']
+    paths: ['client-research/**', '.github/workflows/client-research.yml']
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: pip install -r client-research/requirements.lock
+      - run: python -m unittest discover -s client-research/tests -v
+      - run: python -m py_compile client-research/*.py
+      - run: node --check client-research/web/app.js

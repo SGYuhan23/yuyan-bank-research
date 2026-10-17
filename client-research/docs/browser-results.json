@@ -1,0 +1,14 @@
+{
+  "tested_at": "2026-10-17T17:05:33.569Z",
+  "checks": [
+    "catalog connection",
+    "real historical run rendering",
+    "markdown export",
+    "390px no horizontal overflow",
+    "private source rejected",
+    "cross-origin write rejected",
+    "review saved and reloaded",
+    "stale evidence review rejected"
+  ],
+  "page_errors": []
+}

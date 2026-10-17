@@ -1,0 +1,516 @@
+{
+  "Company": {
+    "additionalProperties": false,
+    "properties": {
+      "company_id": {
+        "title": "Company Id",
+        "type": "string"
+      },
+      "legal_name": {
+        "title": "Legal Name",
+        "type": "string"
+      },
+      "aliases": {
+        "default": [],
+        "items": {
+          "type": "string"
+        },
+        "title": "Aliases",
+        "type": "array"
+      },
+      "parent_relationship": {
+        "anyOf": [
+          {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Parent Relationship"
+      },
+      "region": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Region"
+      },
+      "industry": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Industry"
+      },
+      "sources": {
+        "default": [],
+        "items": {
+          "type": "string"
+        },
+        "title": "Sources",
+        "type": "array"
+      }
+    },
+    "required": [
+      "company_id",
+      "legal_name"
+    ],
+    "title": "Company",
+    "type": "object"
+  },
+  "Evidence": {
+    "additionalProperties": false,
+    "properties": {
+      "source_id": {
+        "title": "Source Id",
+        "type": "string"
+      },
+      "url": {
+        "title": "Url",
+        "type": "string"
+      },
+      "title": {
+        "title": "Title",
+        "type": "string"
+      },
+      "publisher": {
+        "title": "Publisher",
+        "type": "string"
+      },
+      "published_at": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "title": "Published At"
+      },
+      "retrieved_at": {
+        "title": "Retrieved At",
+        "type": "string"
+      },
+      "excerpt": {
+        "title": "Excerpt",
+        "type": "string"
+      },
+      "page_or_section": {
+        "title": "Page Or Section",
+        "type": "string"
+      },
+      "period": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Period"
+      },
+      "sha256": {
+        "title": "Sha256",
+        "type": "string"
+      }
+    },
+    "required": [
+      "source_id",
+      "url",
+      "title",
+      "publisher",
+      "published_at",
+      "retrieved_at",
+      "excerpt",
+      "page_or_section",
+      "sha256"
+    ],
+    "title": "Evidence",
+    "type": "object"
+  },
+  "Dossier": {
+    "$defs": {
+      "Event": {
+        "additionalProperties": false,
+        "properties": {
+          "event_id": {
+            "title": "Event Id",
+            "type": "string"
+          },
+          "company_id": {
+            "title": "Company Id",
+            "type": "string"
+          },
+          "project_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Project Id"
+          },
+          "event_type": {
+            "title": "Event Type",
+            "type": "string"
+          },
+          "event_date": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Event Date"
+          },
+          "published_at": {
+            "title": "Published At",
+            "type": "string"
+          },
+          "stage": {
+            "enum": [
+              "accepted",
+              "proposed",
+              "approved",
+              "construction",
+              "completed",
+              "disclosed",
+              "unknown"
+            ],
+            "title": "Stage",
+            "type": "string"
+          },
+          "source_ids": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Source Ids",
+            "type": "array"
+          },
+          "supersedes": {
+            "default": [],
+            "items": {
+              "type": "string"
+            },
+            "title": "Supersedes",
+            "type": "array"
+          },
+          "conflicts": {
+            "default": [],
+            "items": {
+              "type": "string"
+            },
+            "title": "Conflicts",
+            "type": "array"
+          }
+        },
+        "required": [
+          "event_id",
+          "company_id",
+          "event_type",
+          "published_at",
+          "stage",
+          "source_ids"
+        ],
+        "title": "Event",
+        "type": "object"
+      },
+      "Fact": {
+        "additionalProperties": false,
+        "properties": {
+          "fact_id": {
+            "title": "Fact Id",
+            "type": "string"
+          },
+          "company_id": {
+            "title": "Company Id",
+            "type": "string"
+          },
+          "statement": {
+            "title": "Statement",
+            "type": "string"
+          },
+          "source_id": {
+            "title": "Source Id",
+            "type": "string"
+          },
+          "excerpt": {
+            "title": "Excerpt",
+            "type": "string"
+          },
+          "page_or_section": {
+            "title": "Page Or Section",
+            "type": "string"
+          },
+          "period": {
+            "title": "Period",
+            "type": "string"
+          },
+          "scope": {
+            "enum": [
+              "project",
+              "company",
+              "consolidated",
+              "subsidiary",
+              "unknown"
+            ],
+            "title": "Scope",
+            "type": "string"
+          },
+          "limitations": {
+            "title": "Limitations",
+            "type": "string"
+          }
+        },
+        "required": [
+          "fact_id",
+          "company_id",
+          "statement",
+          "source_id",
+          "excerpt",
+          "page_or_section",
+          "period",
+          "scope",
+          "limitations"
+        ],
+        "title": "Fact",
+        "type": "object"
+      },
+      "ServiceHypothesis": {
+        "additionalProperties": false,
+        "properties": {
+          "hypothesis_id": {
+            "title": "Hypothesis Id",
+            "type": "string"
+          },
+          "title": {
+            "title": "Title",
+            "type": "string"
+          },
+          "supporting_evidence": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Supporting Evidence",
+            "type": "array"
+          },
+          "counter_evidence": {
+            "default": [],
+            "items": {
+              "type": "string"
+            },
+            "title": "Counter Evidence",
+            "type": "array"
+          },
+          "reasoning_summary": {
+            "title": "Reasoning Summary",
+            "type": "string"
+          },
+          "missing_information": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Missing Information",
+            "type": "array"
+          },
+          "questions_to_verify": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Questions To Verify",
+            "type": "array"
+          },
+          "status": {
+            "enum": [
+              "proposed",
+              "insufficient",
+              "withdrawn",
+              "needs_review"
+            ],
+            "title": "Status",
+            "type": "string"
+          }
+        },
+        "required": [
+          "hypothesis_id",
+          "title",
+          "supporting_evidence",
+          "reasoning_summary",
+          "missing_information",
+          "questions_to_verify",
+          "status"
+        ],
+        "title": "ServiceHypothesis",
+        "type": "object"
+      }
+    },
+    "additionalProperties": false,
+    "properties": {
+      "company_id": {
+        "title": "Company Id",
+        "type": "string"
+      },
+      "what_changed": {
+        "title": "What Changed",
+        "type": "string"
+      },
+      "why_relevant": {
+        "title": "Why Relevant",
+        "type": "string"
+      },
+      "facts": {
+        "items": {
+          "$ref": "#/$defs/Fact"
+        },
+        "title": "Facts",
+        "type": "array"
+      },
+      "events": {
+        "items": {
+          "$ref": "#/$defs/Event"
+        },
+        "title": "Events",
+        "type": "array"
+      },
+      "hypotheses": {
+        "items": {
+          "$ref": "#/$defs/ServiceHypothesis"
+        },
+        "title": "Hypotheses",
+        "type": "array"
+      },
+      "calculation_ids": {
+        "default": [],
+        "items": {
+          "type": "string"
+        },
+        "title": "Calculation Ids",
+        "type": "array"
+      },
+      "missing_information": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Missing Information",
+        "type": "array"
+      },
+      "next_questions": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Next Questions",
+        "type": "array"
+      },
+      "stop_reason": {
+        "title": "Stop Reason",
+        "type": "string"
+      },
+      "coverage_limit": {
+        "title": "Coverage Limit",
+        "type": "string"
+      }
+    },
+    "required": [
+      "company_id",
+      "what_changed",
+      "why_relevant",
+      "facts",
+      "events",
+      "hypotheses",
+      "missing_information",
+      "next_questions",
+      "stop_reason",
+      "coverage_limit"
+    ],
+    "title": "Dossier",
+    "type": "object"
+  },
+  "Review": {
+    "additionalProperties": false,
+    "properties": {
+      "review_id": {
+        "title": "Review Id",
+        "type": "string"
+      },
+      "run_id": {
+        "title": "Run Id",
+        "type": "string"
+      },
+      "hypothesis_id": {
+        "title": "Hypothesis Id",
+        "type": "string"
+      },
+      "evidence_version": {
+        "title": "Evidence Version",
+        "type": "string"
+      },
+      "action": {
+        "enum": [
+          "confirm",
+          "modify",
+          "withdraw"
+        ],
+        "title": "Action",
+        "type": "string"
+      },
+      "before": {
+        "additionalProperties": true,
+        "title": "Before",
+        "type": "object"
+      },
+      "after": {
+        "additionalProperties": true,
+        "title": "After",
+        "type": "object"
+      },
+      "note": {
+        "title": "Note",
+        "type": "string"
+      },
+      "reviewer": {
+        "title": "Reviewer",
+        "type": "string"
+      },
+      "created_at": {
+        "title": "Created At",
+        "type": "string"
+      }
+    },
+    "required": [
+      "review_id",
+      "run_id",
+      "hypothesis_id",
+      "evidence_version",
+      "action",
+      "before",
+      "after",
+      "note",
+      "reviewer",
+      "created_at"
+    ],
+    "title": "Review",
+    "type": "object"
+  }
+}

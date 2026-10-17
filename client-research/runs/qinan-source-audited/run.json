@@ -1,0 +1,544 @@
+{
+  "run_id": "a1591d5e59d44425",
+  "task": "作者逐原文校核实际模型档案；不冒称客户经理确认",
+  "company_id": "qinan",
+  "started_at": "2026-10-17T17:01:44.817780+00:00",
+  "mode": "author_source_audit_not_human_signoff",
+  "engine_sha256": "67083f71f3d632e4818fd81c11fdc4a07c143a655953ef3db2f4464db787d239",
+  "prompt_sha256": "1f05a1eb98ff6c26ebeaa35298f6d61bb743e079454bc77e6db8814b26deeee9",
+  "status": "completed",
+  "records": [
+    {
+      "sequence": 1,
+      "at": "2026-10-17T17:01:44.825502+00:00",
+      "kind": "source_audit_revision",
+      "field": "why_relevant",
+      "before": "收入与利润趋势分化、并购带来结构性负债变化，现金充足不等于无结构性资金需求（如并购整合、技改、汇率管理）",
+      "after": "2025年全年与2026年上半年收入方向不同，且并购改变合并范围。可了解收入构成、并购后的账户与结算安排；当前资料不能证明资金缺口、未做汇率管理或技改融资需求。",
+      "editor": "Codex逐原文核校；非人类独立复核",
+      "evidence_version": "87d997ba6469f9e7543932635c832790c26e83fefe4c84efe04414fd63e41461"
+    },
+    {
+      "sequence": 2,
+      "at": "2026-10-17T17:01:44.828465+00:00",
+      "kind": "source_audit_revision",
+      "field": "f1.limitations",
+      "before": "未披露分产品/客户结构变动原因",
+      "after": "此处为合并全年数据；本次只选取部分页，不对完整报告披露范围作否定判断。",
+      "editor": "Codex逐原文核校；非人类独立复核",
+      "evidence_version": "87d997ba6469f9e7543932635c832790c26e83fefe4c84efe04414fd63e41461"
+    },
+    {
+      "sequence": 3,
+      "at": "2026-10-17T17:01:44.830935+00:00",
+      "kind": "source_audit_revision",
+      "field": "f2.limitations",
+      "before": "未披露非经常性损益明细影响",
+      "after": "利润总额不是归母净利润；当前片段不足以解释全部变动原因。",
+      "editor": "Codex逐原文核校；非人类独立复核",
+      "evidence_version": "87d997ba6469f9e7543932635c832790c26e83fefe4c84efe04414fd63e41461"
+    },
+    {
+      "sequence": 4,
+      "at": "2026-10-17T17:01:44.833330+00:00",
+      "kind": "source_audit_revision",
+      "field": "f3.limitations",
+      "before": "未提供2025年1-6月原始值，仅含同比结果",
+      "after": "原文已包含上年同期收入675,374,807.79元；半年同比不能与全年数据直接混算。",
+      "editor": "Codex逐原文核校；非人类独立复核",
+      "evidence_version": "87d997ba6469f9e7543932635c832790c26e83fefe4c84efe04414fd63e41461"
+    },
+    {
+      "sequence": 5,
+      "at": "2026-10-17T17:01:44.835564+00:00",
+      "kind": "source_audit_revision",
+      "field": "f4.limitations",
+      "before": "未说明利润下滑主因（如费用计提、汇兑损失、减值）",
+      "after": "原文已包含上年同期利润总额90,931,487.87元；变化原因仍需继续核实。",
+      "editor": "Codex逐原文核校；非人类独立复核",
+      "evidence_version": "87d997ba6469f9e7543932635c832790c26e83fefe4c84efe04414fd63e41461"
+    },
+    {
+      "sequence": 6,
+      "at": "2026-10-17T17:01:44.837751+00:00",
+      "kind": "source_audit_revision",
+      "field": "f5.limitations",
+      "before": "未披露亦高光电具体财务数据及整合进度",
+      "after": "这是公司合并口径披露，现金规模不能直接代表各子公司可用资金，也不能证明没有任何后续资金需求。",
+      "editor": "Codex逐原文核校；非人类独立复核",
+      "evidence_version": "87d997ba6469f9e7543932635c832790c26e83fefe4c84efe04414fd63e41461"
+    },
+    {
+      "sequence": 7,
+      "at": "2026-10-17T17:01:44.840032+00:00",
+      "kind": "source_audit_revision",
+      "field": "f6.limitations",
+      "before": "未披露其单体财务或产能利用情况",
+      "after": "此页记载主要经营地及注册地为重庆，不足以确认具体区县；不得用合并财务替代本法人财务。",
+      "editor": "Codex逐原文核校；非人类独立复核",
+      "evidence_version": "87d997ba6469f9e7543932635c832790c26e83fefe4c84efe04414fd63e41461"
+    },
+    {
+      "sequence": 8,
+      "at": "2026-10-17T17:01:44.842525+00:00",
+      "kind": "source_audit_revision",
+      "field": "f6.statement",
+      "before": "重庆秦安铸造有限公司为秦安股份100%持股子公司，注册地重庆江津区，业务性质为汽车零部件制造和销售",
+      "after": "重庆秦安铸造有限公司为秦安股份直接持股100%的子公司；该页主要经营地、注册地均列重庆，业务为汽车零部件制造和销售。",
+      "editor": "Codex逐原文核校；非人类独立复核",
+      "evidence_version": "87d997ba6469f9e7543932635c832790c26e83fefe4c84efe04414fd63e41461"
+    },
+    {
+      "sequence": 9,
+      "at": "2026-10-17T17:01:44.846692+00:00",
+      "kind": "source_audit_revision",
+      "field": "f7.limitations",
+      "before": "未披露分期支付安排及尾款状态",
+      "after": "补读原年报第220页，不是新公告；现金净额不能直接代表合同总价或未来付款义务。",
+      "editor": "Codex逐原文核校；非人类独立复核",
+      "evidence_version": "87d997ba6469f9e7543932635c832790c26e83fefe4c84efe04414fd63e41461"
+    },
+    {
+      "sequence": 10,
+      "at": "2026-10-17T17:01:44.849686+00:00",
+      "kind": "source_audit_revision",
+      "field": "f7.statement",
+      "before": "2025年收购亦高光电99%股权支付现金净额499,700,885.17元",
+      "after": "2025年取得子公司支付的现金净额为499,700,885.17元。",
+      "editor": "Codex逐原文核校；非人类独立复核",
+      "evidence_version": "87d997ba6469f9e7543932635c832790c26e83fefe4c84efe04414fd63e41461"
+    },
+    {
+      "sequence": 11,
+      "at": "2026-10-17T17:01:44.852394+00:00",
+      "kind": "source_audit_revision",
+      "field": "e1.event_date（年内完成不能补造12月31日交割）",
+      "before": "2025-12-31",
+      "after": null,
+      "editor": "Codex逐原文核校；非人类独立复核",
+      "evidence_version": "87d997ba6469f9e7543932635c832790c26e83fefe4c84efe04414fd63e41461"
+    },
+    {
+      "sequence": 12,
+      "at": "2026-10-17T17:01:44.855031+00:00",
+      "kind": "source_audit_revision",
+      "field": "next_questions",
+      "before": [
+        "2025年1-6月营收与利润具体数值是多少？亦高光电2026年上半年是否已并表盈利？外销收入中美元/欧元占比各多少？秦安铸造当前产线智能化水平如何？"
+      ],
+      "after": [
+        "2026年上半年收入同比增长中，原有汽车零部件业务和新增并表业务分别贡献多少？",
+        "并购后账户、收付款和资金调配如何安排，哪些结算环节仍需改进？",
+        "是否存在尚未落实的设备采购或付款安排？如有，请提供合同、时间表及既有资金来源。"
+      ],
+      "editor": "Codex逐原文核校；非人类独立复核",
+      "evidence_version": "87d997ba6469f9e7543932635c832790c26e83fefe4c84efe04414fd63e41461"
+    },
+    {
+      "sequence": 13,
+      "at": "2026-10-17T17:01:44.857489+00:00",
+      "kind": "source_audit_revision",
+      "field": "missing_information",
+      "before": [
+        "2025年1-6月原始营收/利润数据（用于交叉验证2026H1同比）、亦高光电单体财务、外销结构与汇率管理细节、秦安铸造技改进展"
+      ],
+      "after": [
+        "最新业务分部与并表贡献",
+        "单体财务及资金调配权限",
+        "当前采购/付款安排及现有银行服务覆盖"
+      ],
+      "editor": "Codex逐原文核校；非人类独立复核",
+      "evidence_version": "87d997ba6469f9e7543932635c832790c26e83fefe4c84efe04414fd63e41461"
+    },
+    {
+      "sequence": 14,
+      "at": "2026-10-17T17:01:44.860091+00:00",
+      "kind": "source_audit_revision",
+      "field": "stop_reason",
+      "before": "已完成核心财报数据提取、同比复算及并购事实确认；服务假设均基于原文事实提出，未预设银行合作或地理邻近；缺失信息已明确列出，不作补全推断",
+      "after": "已核实所选期间指标、并购及现金附注，4项同比由工具计算。无法仅据这些资料形成具体贷款或汇率产品需求判断，保留中性访前问题。",
+      "editor": "Codex逐原文核校；非人类独立复核",
+      "evidence_version": "87d997ba6469f9e7543932635c832790c26e83fefe4c84efe04414fd63e41461"
+    },
+    {
+      "sequence": 15,
+      "at": "2026-10-17T17:01:44.862019+00:00",
+      "kind": "source_audit_revision",
+      "field": "coverage_limit",
+      "before": "仅覆盖qinan-2025与qinan-2026h1两份公开报告，不含公告外经营动态、未披露合同或银行关系",
+      "after": "只覆盖2025年报第6、30、227、220页及2026年半年报摘要第2页，不宣称已检索完整最新公告。此次为Codex作者源文校核，不是银行人员或使用者签核。",
+      "editor": "Codex逐原文核校；非人类独立复核",
+      "evidence_version": "87d997ba6469f9e7543932635c832790c26e83fefe4c84efe04414fd63e41461"
+    },
+    {
+      "sequence": 16,
+      "at": "2026-10-17T17:01:44.865102+00:00",
+      "kind": "completed",
+      "evidence_version": "87d997ba6469f9e7543932635c832790c26e83fefe4c84efe04414fd63e41461"
+    }
+  ],
+  "evidence": [
+    {
+      "source_id": "qinan-2025",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-03-28/1225047393.PDF",
+      "title": "秦安股份2025年年度报告",
+      "publisher": "重庆秦安机电股份有限公司／巨潮资讯",
+      "published_at": "2026-03-28",
+      "period": "2025年度",
+      "retrieved_at": "2026-10-17T16:31:58.433988+00:00",
+      "company_ids": [
+        "qinan",
+        "qinan-cast"
+      ],
+      "kind": "primary",
+      "canonical_source_id": "qinan-2025",
+      "sha256": "92ebe9de0b6e0f5762cd627244323f4477a1c512da7dc19d96dd23e228631972",
+      "sections": [
+        {
+          "page_or_section": "PDF第6页",
+          "text": "七、 近三年主要会计数据和财务指标\n(一) 主要会计数据\n单位：元 币种：人民币\n主要会计数据 2025年 2024年 本期比上年\n同期增减(%) 2023年\n营业收入 1,352,249,546.74 1,599,923,214.87 -15.48 1,739,832,673.54\n利润总额 164,344,821.75 208,406,846.94 -21.14 302,004,362.66\n归属于上市公司股东的\n净利润 149,416,466.50 172,862,279.40 -13.56 260,726,069.69\n归属于上市公司股东的\n扣除非经常性损益的净\n利润\n141,182,372.24 200,727,958.91 -29.66 288,723,330.58\n经营活动产生的现金流\n量净额 269,925,911.42 406,027,435.45 -33.52 307,372,984.90\n2025年末 2024年末\n本期末比上\n年同期末增\n减（%）\n2023年末\n归属于上市公司股东的\n净资产 2,570,904,968.80 2,384,111,861.98 7.83 2,589,631,197.50\n总资产 3,898,243,236.30 2,884,489,843.36 35.14 3,158,679,344.25",
+          "selector": {
+            "page": 6,
+            "start": "七、",
+            "end": "(二)",
+            "size": 1800
+          }
+        },
+        {
+          "page_or_section": "PDF第30页",
+          "text": "截至 2025 年底，公司资产总额 38.98 亿元，净资产总额 25.74 亿元，负债总额 13.24 亿元，\n因本报告期收购亦高光电 99%股权完成股权交割及工商变更登记，亦高光电成为公司的控股公司\n并纳入合并报表范围，公司收购亦高光电 99%股权新增长期借款、其他应付款等，资产负债率由\n上年年末的 17.35%上升至 33.96%；公司货币资金和持有的交易性金融资产余额 11.34 亿元，现金\n比率 138.30%。公司资金充足，财务指标稳健，经营韧性及抗风险能力较强，为公司战略布局及\n后续持续发展投入需求提供了有力的资金保障。",
+          "selector": {
+            "page": 30,
+            "start": "截至 2025 年底",
+            "end": "(一)",
+            "size": 1800
+          }
+        },
+        {
+          "page_or_section": "PDF第227页",
+          "text": "十、在其他主体中的权益\n1、 在子公司中的权益\n(1).企业集团的构成\n√适用 □不适用\n单位：元 币种：人民币\n子公司\n名称\n主要经\n营地 注册资本 注册地 业务性质 持股比例(%) 取得\n方式直接 间接\n重庆秦安铸\n造有限公司 重庆 12,000 万元 重庆 汽车零部件制\n造和销售 100.00\n同一控制\n下企业合\n并",
+          "selector": {
+            "page": 227,
+            "start": "十、",
+            "end": "重庆美沣",
+            "size": 1800
+          }
+        }
+      ],
+      "read_at": "2026-10-17T16:56:57.836929+00:00",
+      "read_mode": "verified_source_snapshot"
+    },
+    {
+      "source_id": "qinan-cash-appendix",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-03-28/1225047393.PDF",
+      "title": "秦安2025年报补充读取：现金及并购支出附注",
+      "publisher": "重庆秦安机电股份有限公司／巨潮资讯",
+      "published_at": "2026-03-28",
+      "period": "2025年度",
+      "retrieved_at": "2026-10-17T16:52:47.969503+00:00",
+      "company_ids": [
+        "qinan"
+      ],
+      "kind": "primary",
+      "canonical_source_id": "qinan-2025",
+      "sha256": "92ebe9de0b6e0f5762cd627244323f4477a1c512da7dc19d96dd23e228631972",
+      "sections": [
+        {
+          "page_or_section": "PDF第220页",
+          "text": "重庆秦安机电股份有限公司2025 年年度报告\n220 / 259\n金额\n本期发生的企业合并于本期支付的现金或现金等价物 514,203,320.00\n其中：亦高光电 514,203,320.00\n减：购买日子公司持有的现金及现金等价物 14,502,434.83\n其中：亦高光电 14,502,434.83\n加：以前期间发生的企业合并于本期支付的现金或现金等价物\n取得子公司支付的现金净额 499,700,885.17\n其他说明：\n无\n(3).本期收到的处置子公司的现金净额\n□适用 √不适用\n(4).现金和现金等价物的构成\n√适用 □不适用\n单位：元 币种：人民币\n项目 期末余额 期初余额\n一、现金 1,026,155,658.34 1,068,017,733.10\n其中：库存现金 27,718.85 5,605.55\n可随时用于支付的银行存款 1,010,738,957.66 957,519,509.51\n可随时用于支付的其他货币资\n金 15,388,981.83 110,492,618.04\n可用于支付的存放中央银行款\n项\n存放同业款项\n拆放同业款项\n二、现金等价物\n其中：三个月内到期的债券投资\n三、期末现金及现金等价物余额 1,026,155,658.34 1,068,017,733.10\n其中：母公司或集团内子公司使用\n受限制的现金和现金等价物\n(5).使用范围受限但仍作为现金和现金等价物列示的情况\n□适用 √不适用\n(6).不属于现金及现金等价物的货币资金\n√适用 □不适用\n单位：元 币种：人民币\n项目 期末余额 期初余额 理由\n货币资金 5,304,222.23 6,705,513.89 通知存款及大额存单持有至\n资产负债表日的应计利息\n货币资金 15,666,000.00 票据保证金，使用受限\n货币资金 7,937,000.00 期货保证金\n合计 20,970,222.23 14,642,513.89 /\n其他说明：",
+          "selector": {
+            "page": 220,
+            "start": "",
+            "end": null,
+            "size": 1800
+          }
+        }
+      ],
+      "read_at": "2026-10-17T16:56:57.839020+00:00",
+      "read_mode": "verified_source_snapshot"
+    },
+    {
+      "source_id": "qinan-2026h1",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-08-22/1225493283.PDF",
+      "title": "秦安股份2026年半年度报告摘要",
+      "publisher": "重庆秦安机电股份有限公司／巨潮资讯",
+      "published_at": "2026-08-22",
+      "period": "2026年1-6月",
+      "retrieved_at": "2026-10-17T16:37:13.946901+00:00",
+      "company_ids": [
+        "qinan"
+      ],
+      "kind": "primary",
+      "canonical_source_id": "qinan-2026h1",
+      "sha256": "d5207079e1db356e605943c5d6c5da44c6a038be4ddd7a312a210b064c6097b4",
+      "sections": [
+        {
+          "page_or_section": "PDF第2页",
+          "text": "2.2 主要财务数据\n单位：元 币种：人民币\n本报告期末 上年度末 本报告期末比上年度末\n增减(%)\n总资产 3,712,873,647.93 3,898,243,236.30 -4.76\n归属于上市公司股\n东的净资产 2,618,386,599.55 2,570,904,968.80 1.85\n本报告期 上年同期 本报告期比上年同期增\n减(%)\n营业收入 705,550,828.01 675,374,807.79 4.47\n利润总额 50,653,862.92 90,931,487.87 -44.29",
+          "selector": {
+            "page": 2,
+            "start": "2.2",
+            "end": null,
+            "size": 1800
+          }
+        }
+      ],
+      "read_at": "2026-10-17T16:56:57.841041+00:00",
+      "read_mode": "verified_source_snapshot"
+    }
+  ],
+  "calculations": [
+    {
+      "calculation_id": "calc-1",
+      "operation": "percent_change",
+      "inputs": {
+        "left": "705550828.01",
+        "right": "675374807.79",
+        "unit": "CNY",
+        "period": "2026年1-6月同比2025年1-6月"
+      },
+      "formula": "(left-right)/right*100",
+      "result": "4.47",
+      "result_unit": "%",
+      "source_ids": [
+        "qinan-2026h1"
+      ]
+    },
+    {
+      "calculation_id": "calc-2",
+      "operation": "percent_change",
+      "inputs": {
+        "left": "50653862.92",
+        "right": "90931487.87",
+        "unit": "CNY",
+        "period": "2026年1-6月同比2025年1-6月"
+      },
+      "formula": "(left-right)/right*100",
+      "result": "-44.29",
+      "result_unit": "%",
+      "source_ids": [
+        "qinan-2026h1"
+      ]
+    },
+    {
+      "calculation_id": "calc-3",
+      "operation": "percent_change",
+      "inputs": {
+        "left": "1352249546.74",
+        "right": "1599923214.87",
+        "unit": "CNY",
+        "period": "2025年同比2024年"
+      },
+      "formula": "(left-right)/right*100",
+      "result": "-15.48",
+      "result_unit": "%",
+      "source_ids": [
+        "qinan-2025"
+      ]
+    },
+    {
+      "calculation_id": "calc-4",
+      "operation": "percent_change",
+      "inputs": {
+        "left": "164344821.75",
+        "right": "208406846.94",
+        "unit": "CNY",
+        "period": "2025年同比2024年"
+      },
+      "formula": "(left-right)/right*100",
+      "result": "-21.14",
+      "result_unit": "%",
+      "source_ids": [
+        "qinan-2025"
+      ]
+    }
+  ],
+  "result": {
+    "dossier": {
+      "company_id": "qinan",
+      "what_changed": "2025年营收同比下降15.48%，利润总额降21.14%；2026上半年营收同比增4.47%，利润总额降44.29%。并购亦高光电致资产负债率升至33.96%，货币资金+交易性金融资产11.34亿元。",
+      "why_relevant": "2025年全年与2026年上半年收入方向不同，且并购改变合并范围。可了解收入构成、并购后的账户与结算安排；当前资料不能证明资金缺口、未做汇率管理或技改融资需求。",
+      "facts": [
+        {
+          "fact_id": "f1",
+          "company_id": "qinan",
+          "statement": "2025年营业收入1,352,249,546.74元，较2024年下降15.48%",
+          "source_id": "qinan-2025",
+          "excerpt": "营业收入 1,352,249,546.74 1,599,923,214.87 -15.48 1,739,832,673.54",
+          "page_or_section": "PDF第6页",
+          "period": "2025年度",
+          "scope": "consolidated",
+          "limitations": "此处为合并全年数据；本次只选取部分页，不对完整报告披露范围作否定判断。"
+        },
+        {
+          "fact_id": "f2",
+          "company_id": "qinan",
+          "statement": "2025年利润总额164,344,821.75元，较2024年下降21.14%",
+          "source_id": "qinan-2025",
+          "excerpt": "利润总额 164,344,821.75 208,406,846.94 -21.14 302,004,362.66",
+          "page_or_section": "PDF第6页",
+          "period": "2025年度",
+          "scope": "consolidated",
+          "limitations": "利润总额不是归母净利润；当前片段不足以解释全部变动原因。"
+        },
+        {
+          "fact_id": "f3",
+          "company_id": "qinan",
+          "statement": "2026年上半年营业收入705,550,828.01元，较2025年同期增长4.47%",
+          "source_id": "qinan-2026h1",
+          "excerpt": "营业收入 705,550,828.01 675,374,807.79 4.47",
+          "page_or_section": "PDF第2页",
+          "period": "2026年1-6月",
+          "scope": "consolidated",
+          "limitations": "原文已包含上年同期收入675,374,807.79元；半年同比不能与全年数据直接混算。"
+        },
+        {
+          "fact_id": "f4",
+          "company_id": "qinan",
+          "statement": "2026年上半年利润总额50,653,862.92元，较2025年同期下降44.29%",
+          "source_id": "qinan-2026h1",
+          "excerpt": "利润总额 50,653,862.92 90,931,487.87 -44.29",
+          "page_or_section": "PDF第2页",
+          "period": "2026年1-6月",
+          "scope": "consolidated",
+          "limitations": "原文已包含上年同期利润总额90,931,487.87元；变化原因仍需继续核实。"
+        },
+        {
+          "fact_id": "f5",
+          "company_id": "qinan",
+          "statement": "2025年末因收购亦高光电99%股权，资产负债率由17.35%升至33.96%，货币资金及交易性金融资产合计11.34亿元",
+          "source_id": "qinan-2025",
+          "excerpt": "截至 2025 年底，公司资产总额 38.98 亿元，净资产总额 25.74 亿元，负债总额 13.24 亿元，\n因本报告期收购亦高光电 99%股权完成股权交割及工商变更登记，亦高光电成为公司的控股公司\n并纳入合并报表范围，公司收购亦高光电 99%股权新增长期借款、其他应付款等，资产负债率由\n上年年末的 17.35%上升至 33.96%；公司货币资金和持有的交易性金融资产余额 11.34 亿元，现金\n比率 138.30%。",
+          "page_or_section": "PDF第30页",
+          "period": "2025年末",
+          "scope": "consolidated",
+          "limitations": "这是公司合并口径披露，现金规模不能直接代表各子公司可用资金，也不能证明没有任何后续资金需求。"
+        },
+        {
+          "fact_id": "f6",
+          "company_id": "qinan",
+          "statement": "重庆秦安铸造有限公司为秦安股份直接持股100%的子公司；该页主要经营地、注册地均列重庆，业务为汽车零部件制造和销售。",
+          "source_id": "qinan-2025",
+          "excerpt": "子公司\n名称\n主要经\n营地 注册资本 注册地 业务性质 持股比例(%) 取得\n方式直接 间接\n重庆秦安铸\n造有限公司 重庆 12,000 万元 重庆 汽车零部件制\n造和销售 100.00\n同一控制\n下企业合\n并",
+          "page_or_section": "PDF第227页",
+          "period": "2025年末",
+          "scope": "subsidiary",
+          "limitations": "此页记载主要经营地及注册地为重庆，不足以确认具体区县；不得用合并财务替代本法人财务。"
+        },
+        {
+          "fact_id": "f7",
+          "company_id": "qinan",
+          "statement": "2025年取得子公司支付的现金净额为499,700,885.17元。",
+          "source_id": "qinan-cash-appendix",
+          "excerpt": "取得子公司支付的现金净额 499,700,885.17",
+          "page_or_section": "PDF第220页",
+          "period": "2025年度",
+          "scope": "consolidated",
+          "limitations": "补读原年报第220页，不是新公告；现金净额不能直接代表合同总价或未来付款义务。"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "e1",
+          "company_id": "qinan",
+          "project_id": null,
+          "event_type": "acquisition",
+          "event_date": null,
+          "published_at": "2026-03-28",
+          "stage": "completed",
+          "source_ids": [
+            "qinan-2025"
+          ],
+          "supersedes": [],
+          "conflicts": []
+        }
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "h1",
+          "title": "证据不足：撤回原服务需求断言",
+          "supporting_evidence": [
+            "qinan-2025"
+          ],
+          "counter_evidence": [
+            "qinan-cash-appendix"
+          ],
+          "reasoning_summary": "原表述把经营或审批信息进一步推成融资压力、产品需求或未开展风险管理。当前流程未核实这一前提，按保守规则停止该判断；原始表述及依据保留在trace，可补充直接证据后另行复核。",
+          "missing_information": [
+            "亦高光电2025年经营性现金流、应付账款账期、并购对价支付节奏"
+          ],
+          "questions_to_verify": [
+            "并购尾款是否已付清？亦高光电2026年上半年回款是否达标？是否存在应付账款集中到期？"
+          ],
+          "status": "withdrawn"
+        },
+        {
+          "hypothesis_id": "h2",
+          "title": "证据不足：撤回原服务需求断言",
+          "supporting_evidence": [
+            "qinan-2026h1"
+          ],
+          "counter_evidence": [],
+          "reasoning_summary": "原表述把经营或审批信息进一步推成融资压力、产品需求或未开展风险管理。当前流程未核实这一前提，按保守规则停止该判断；原始表述及依据保留在trace，可补充直接证据后另行复核。",
+          "missing_information": [
+            "外销占比、主要结算币种、2026H1汇兑损益金额、是否签署远期合约"
+          ],
+          "questions_to_verify": [
+            "2026年上半年外销收入占比多少？主要出口市场及结算币种？是否发生大额汇兑损失？"
+          ],
+          "status": "withdrawn"
+        },
+        {
+          "hypothesis_id": "h3",
+          "title": "证据不足：撤回原服务需求断言",
+          "supporting_evidence": [
+            "qinan-2025"
+          ],
+          "counter_evidence": [],
+          "reasoning_summary": "原表述把经营或审批信息进一步推成融资压力、产品需求或未开展风险管理。当前流程未核实这一前提，按保守规则停止该判断；原始表述及依据保留在trace，可补充直接证据后另行复核。",
+          "missing_information": [
+            "秦安铸造2026年技改项目立项、投资预算、环评状态"
+          ],
+          "questions_to_verify": [
+            "秦安铸造是否有在建或拟建技改项目？是否申报重庆市设备更新专项资金？"
+          ],
+          "status": "withdrawn"
+        }
+      ],
+      "calculation_ids": [
+        "calc-1",
+        "calc-2",
+        "calc-3",
+        "calc-4"
+      ],
+      "missing_information": [
+        "最新业务分部与并表贡献",
+        "单体财务及资金调配权限",
+        "当前采购/付款安排及现有银行服务覆盖"
+      ],
+      "next_questions": [
+        "2026年上半年收入同比增长中，原有汽车零部件业务和新增并表业务分别贡献多少？",
+        "并购后账户、收付款和资金调配如何安排，哪些结算环节仍需改进？",
+        "是否存在尚未落实的设备采购或付款安排？如有，请提供合同、时间表及既有资金来源。"
+      ],
+      "stop_reason": "已核实所选期间指标、并购及现金附注，4项同比由工具计算。无法仅据这些资料形成具体贷款或汇率产品需求判断，保留中性访前问题。",
+      "coverage_limit": "只覆盖2025年报第6、30、227、220页及2026年半年报摘要第2页，不宣称已检索完整最新公告。此次为Codex作者源文校核，不是银行人员或使用者签核。"
+    },
+    "evidence_version": "87d997ba6469f9e7543932635c832790c26e83fefe4c84efe04414fd63e41461",
+    "parent_run_id": "7decc34aabf44800",
+    "delta": {
+      "new_facts": [
+        "f6",
+        "f7"
+      ],
+      "superseded_events": [],
+      "withdrawn_hypotheses": [
+        "h1",
+        "h2",
+        "h3"
+      ],
+      "review_invalidated": true
+    },
+    "validation": "schema_and_quote_checked_semantics_need_human_review"
+  }
+}
