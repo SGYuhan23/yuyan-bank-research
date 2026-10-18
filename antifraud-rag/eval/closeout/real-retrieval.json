@@ -1,0 +1,172 @@
+{
+  "at": "2026-10-18T11:56:59.736270+00:00",
+  "method": "real existing embedding provider, no mock; auto default",
+  "results": [
+    {
+      "id": "colloquial-account",
+      "query": "老合作方说换了卡号，让我们今天打钱，先做什么？",
+      "expected": "bec-guidance",
+      "unit_ids": [
+        "bec-guidance",
+        "bec-case",
+        "receipt-guidance"
+      ],
+      "passed": true,
+      "events": [
+        {
+          "kind": "retrieval_started",
+          "method": "bm25"
+        },
+        {
+          "kind": "retrieval_attempt_completed",
+          "method": "bm25",
+          "unit_ids": [],
+          "source_ids": []
+        },
+        {
+          "kind": "retrieval_fallback",
+          "from_method": "bm25",
+          "to_method": "semantic",
+          "reason": "bm25_no_positive_score"
+        },
+        {
+          "kind": "retrieval_started",
+          "method": "semantic"
+        },
+        {
+          "kind": "retrieval_attempt_completed",
+          "method": "semantic",
+          "unit_ids": [
+            "bec-guidance",
+            "bec-case",
+            "receipt-guidance"
+          ],
+          "source_ids": [
+            "westpac-bec",
+            "scamwatch-case",
+            "westpac-receipt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "colloquial-receipt",
+      "query": "对方发来转账凭证，货可以给他了吗？",
+      "expected": "receipt-guidance",
+      "unit_ids": [
+        "receipt-guidance",
+        "bec-case",
+        "bec-guidance"
+      ],
+      "passed": true,
+      "events": [
+        {
+          "kind": "retrieval_started",
+          "method": "bm25"
+        },
+        {
+          "kind": "retrieval_attempt_completed",
+          "method": "bm25",
+          "unit_ids": [],
+          "source_ids": []
+        },
+        {
+          "kind": "retrieval_fallback",
+          "from_method": "bm25",
+          "to_method": "semantic",
+          "reason": "bm25_no_positive_score"
+        },
+        {
+          "kind": "retrieval_started",
+          "method": "semantic"
+        },
+        {
+          "kind": "retrieval_attempt_completed",
+          "method": "semantic",
+          "unit_ids": [
+            "receipt-guidance",
+            "bec-case",
+            "bec-guidance"
+          ],
+          "source_ids": [
+            "westpac-receipt",
+            "scamwatch-case",
+            "westpac-bec"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paraphrase-account",
+      "query": "熟人来信说收钱的卡换了，催着赶紧汇过去，要怎么确认？",
+      "expected": "bec-guidance",
+      "unit_ids": [
+        "bec-guidance",
+        "bec-case",
+        "receipt-guidance"
+      ],
+      "passed": true,
+      "events": [
+        {
+          "kind": "retrieval_started",
+          "method": "bm25"
+        },
+        {
+          "kind": "retrieval_attempt_completed",
+          "method": "bm25",
+          "unit_ids": [],
+          "source_ids": []
+        },
+        {
+          "kind": "retrieval_fallback",
+          "from_method": "bm25",
+          "to_method": "semantic",
+          "reason": "bm25_no_positive_score"
+        },
+        {
+          "kind": "retrieval_started",
+          "method": "semantic"
+        },
+        {
+          "kind": "retrieval_attempt_completed",
+          "method": "semantic",
+          "unit_ids": [
+            "bec-guidance",
+            "bec-case",
+            "receipt-guidance"
+          ],
+          "source_ids": [
+            "westpac-bec",
+            "scamwatch-case",
+            "westpac-receipt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paraphrase-receipt",
+      "query": "买家把汇款截屏给我了，我现在就发货行吗？",
+      "expected": "receipt-guidance",
+      "unit_ids": [
+        "receipt-guidance"
+      ],
+      "passed": true,
+      "events": [
+        {
+          "kind": "retrieval_started",
+          "method": "bm25"
+        },
+        {
+          "kind": "retrieval_attempt_completed",
+          "method": "bm25",
+          "unit_ids": [
+            "receipt-guidance"
+          ],
+          "source_ids": [
+            "westpac-receipt"
+          ]
+        }
+      ]
+    }
+  ]
+}

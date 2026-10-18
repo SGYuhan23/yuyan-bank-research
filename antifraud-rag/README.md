@@ -31,7 +31,7 @@ python antifraud-rag/pipeline.py '为新入职客服生成一份收款账户变�
 - `data/research/`保存项目研究建议；`data/training/`保存自编培训内容，不作为官方事实检索。
 - `docs/SOURCE_REVIEW.md`说明出处、范围及抓取失败。已核对后来提供的材料包索引；见`docs/PACKAGE_RECONCILIATION.md`，区分已获取、候选与未取得来源。
 
-BM25基线采用中英文词及中文二元组，索引中包含作者标记的主题标签（不是参考答案）。语义检索实际调用`text-embedding-v4`并做内存余弦排序，向量本地缓存，无向量库。CLI `--retriever semantic`可选择语义检索。默认BM25：当前小样本两者检索召回没有差异，尚无证据需要混合检索或重排。语义模式失败明确报错，不伪装成已执行。
+BM25基线采用中英文词及中文二元组，索引中包含作者标记的主题标签（不是参考答案）。语义检索实际调用`text-embedding-v4`并做内存余弦排序，向量本地缓存，无向量库。CLI `--retriever semantic`可选择语义检索。默认auto：先执行BM25，仅在无正分命中时调用现有embedding语义检索。默认网页与CLI一致；`--retriever bm25`和`--retriever semantic`可分别评测。服务失败显式报错，语义候选仍须经过充分性/冲突检查。未增加混合排序或重排。语义模式失败明确报错，不伪装成已执行。
 
 引用采用检索单元ID，程序附完整原文章节；模型若仍提供引文则检查逐字匹配，不能拼接省略。另一次同模型调用检查支持性；该检查已在本次发现漏判，不能当作人工审核。
 
@@ -55,3 +55,5 @@ python antifraud-rag/evaluate.py
 - [实际生成的两类输出](docs/ACTUAL_OUTPUTS.md)（可继续打开对应run.json）。
 - [评测与失败](docs/EVALUATION.md)、[材料包比对](docs/PACKAGE_RECONCILIATION.md)。
 - [已实现与未实现](docs/IMPLEMENTATION_STATUS.md)、[来源核对](docs/SOURCE_REVIEW.md)。
+
+本轮两项收尾的真实运行、mock故障测试及金额口径复核见[收尾验证](docs/CLOSEOUT.md)。

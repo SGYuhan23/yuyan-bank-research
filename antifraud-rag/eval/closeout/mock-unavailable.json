@@ -1,0 +1,56 @@
+{
+  "method": "mock embed network fault; not real provider outage",
+  "status": "failed",
+  "error": "语义检索不可用，本次检索失败；不能据此判断知识库没有相关资料。",
+  "records": [
+    {
+      "sequence": 1,
+      "at": "2026-10-18T11:57:32.511673+00:00",
+      "kind": "task_identified",
+      "task": "knowledge",
+      "query": "老合作方说换了卡号，让我们今天打钱，先做什么？"
+    },
+    {
+      "sequence": 2,
+      "at": "2026-10-18T11:57:32.515186+00:00",
+      "kind": "retrieval_started",
+      "method": "bm25"
+    },
+    {
+      "sequence": 3,
+      "at": "2026-10-18T11:57:32.520948+00:00",
+      "kind": "retrieval_attempt_completed",
+      "method": "bm25",
+      "unit_ids": [],
+      "source_ids": []
+    },
+    {
+      "sequence": 4,
+      "at": "2026-10-18T11:57:32.522566+00:00",
+      "kind": "retrieval_fallback",
+      "from_method": "bm25",
+      "to_method": "semantic",
+      "reason": "bm25_no_positive_score"
+    },
+    {
+      "sequence": 5,
+      "at": "2026-10-18T11:57:32.524055+00:00",
+      "kind": "retrieval_started",
+      "method": "semantic"
+    },
+    {
+      "sequence": 6,
+      "at": "2026-10-18T11:57:32.528520+00:00",
+      "kind": "retrieval_failed",
+      "method": "semantic",
+      "reason": "semantic_service_unavailable",
+      "source_ids": []
+    },
+    {
+      "sequence": 7,
+      "at": "2026-10-18T11:57:32.530061+00:00",
+      "kind": "failed",
+      "error": "语义检索不可用，本次检索失败；不能据此判断知识库没有相关资料。"
+    }
+  ]
+}

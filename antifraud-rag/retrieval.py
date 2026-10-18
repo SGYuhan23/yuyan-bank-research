@@ -30,7 +30,23 @@ def semantic(query,units):
  q=embed([query])[0]
  def cosine(v):return sum(a*b for a,b in zip(q,v))/(math.sqrt(sum(a*a for a in q))*math.sqrt(sum(a*a for a in v)))
  return sorted(zip(units,map(cosine,vectors)),key=lambda x:-x[1])
-def retrieve(query,mode='bm25',units=None,k=3):
+def retrieve(query,mode='auto',units=None,k=3,log=None):
+ if mode not in ('auto','bm25','semantic'):raise ValueError('INVALID_RETRIEVER')
  if units is None:units=json.loads((ROOT/'data/units.json').read_text())
- ranked=bm25(query,units) if mode=='bm25' else semantic(query,units)
- return [{'unit':u,'score':round(score,6)} for u,score in ranked[:k] if mode!='bm25' or score>0]
+ def emit(kind,**data):
+  if log:log(kind,**data)
+ def search(method):
+  emit('retrieval_started',method=method)
+  try:ranked=bm25(query,units) if method=='bm25' else semantic(query,units)
+  except Exception:
+   emit('retrieval_failed',method=method,reason='semantic_service_unavailable' if method=='semantic' else 'retrieval_error',source_ids=[])
+   raise RuntimeError('语义检索不可用，本次检索失败；不能据此判断知识库没有相关资料。' if method=='semantic' else 'BM25检索失败') from None
+  hits=[{'unit':u,'score':round(score,6)} for u,score in ranked[:k] if method!='bm25' or score>0]
+  emit('retrieval_attempt_completed',method=method,unit_ids=[x['unit']['unit_id'] for x in hits],source_ids=[x['unit']['source_id'] for x in hits])
+  return hits
+ if mode=='semantic':return search('semantic')
+ hits=search('bm25')
+ if mode=='auto' and not hits:
+  emit('retrieval_fallback',from_method='bm25',to_method='semantic',reason='bm25_no_positive_score')
+  return search('semantic')
+ return hits

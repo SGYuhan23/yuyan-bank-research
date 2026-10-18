@@ -27,7 +27,7 @@ class Handler(BaseHTTPRequestHandler):
    if not 0<length<20000:raise ValueError('INVALID_SIZE')
    d=json.loads(self.rfile.read(length))
    if not BUSY.acquire(False):return self.send({'error':'已有研究正在执行，请等待结束。'},409)
-   try:run=RagRun(d['query'],d['task'],'bm25')
+   try:run=RagRun(d['query'],d['task'],d.get('retriever','auto'))
    except Exception:BUSY.release();raise
    def work():
     try:run.run()

@@ -1,0 +1,20 @@
+{
+  "reviewer": "Codex author source-by-source review, not independent bank human approval",
+  "run_id": "4b48fa8dbff54fc4",
+  "source_id": "scamwatch-case",
+  "source_unit": "bec-case",
+  "reference_excerpt": " with the initial loss of $17,000, the delay in supply flowing from missed orders and broken contractual obligations, John’s company estimated their loss to be over $30,000.",
+  "checks": {
+    "estimated": true,
+    "total_over_30000_AUD": true,
+    "includes_initial_17000_AUD": true,
+    "supply_delay_and_contractual_impacts": true,
+    "not_additional_30000": true,
+    "scenario_marked_project_authored": true,
+    "pending_human_review": true
+  },
+  "scope": "Only case amount relationship reviewed; not a complete bank procedure approval",
+  "actual_amount_claims": [
+    "John案例中，企业估计总损失超过30,000澳元，包含最初17,000澳元的损失，以及供货延误、合同义务等影响；不能将两笔金额相加。"
+  ]
+}

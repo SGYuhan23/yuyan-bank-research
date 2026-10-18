@@ -1,0 +1,375 @@
+{
+  "at": "2026-10-18T11:58:20.304011+00:00",
+  "method": "actual default auto RagRun; no mock; author review separate",
+  "results": [
+    {
+      "id": "colloquial-account",
+      "run_id": "88a6b108e1604ba6",
+      "status": "completed",
+      "error": null,
+      "assessment": {
+        "sufficient": true,
+        "relevant_ids": [
+          "bec-guidance",
+          "bec-case"
+        ],
+        "missing": [],
+        "conflicts": [],
+        "calculation": "none"
+      },
+      "path": [
+        {
+          "sequence": 2,
+          "at": "2026-10-18T11:56:59.766752+00:00",
+          "kind": "retrieval_started",
+          "method": "bm25"
+        },
+        {
+          "sequence": 3,
+          "at": "2026-10-18T11:56:59.772036+00:00",
+          "kind": "retrieval_attempt_completed",
+          "method": "bm25",
+          "unit_ids": [],
+          "source_ids": []
+        },
+        {
+          "sequence": 4,
+          "at": "2026-10-18T11:56:59.780897+00:00",
+          "kind": "retrieval_fallback",
+          "from_method": "bm25",
+          "to_method": "semantic",
+          "reason": "bm25_no_positive_score"
+        },
+        {
+          "sequence": 5,
+          "at": "2026-10-18T11:56:59.782713+00:00",
+          "kind": "retrieval_started",
+          "method": "semantic"
+        },
+        {
+          "sequence": 6,
+          "at": "2026-10-18T11:57:02.081958+00:00",
+          "kind": "retrieval_attempt_completed",
+          "method": "semantic",
+          "unit_ids": [
+            "bec-guidance",
+            "bec-case",
+            "receipt-guidance"
+          ],
+          "source_ids": [
+            "westpac-bec",
+            "scamwatch-case",
+            "westpac-receipt"
+          ]
+        },
+        {
+          "sequence": 7,
+          "at": "2026-10-18T11:57:02.085631+00:00",
+          "kind": "retrieval_completed",
+          "ranked": [
+            {
+              "unit_id": "bec-guidance",
+              "score": 0.500932
+            },
+            {
+              "unit_id": "bec-case",
+              "score": 0.483798
+            },
+            {
+              "unit_id": "receipt-guidance",
+              "score": 0.418681
+            }
+          ],
+          "index_sha256": "f01ad3a4a244f5c15592d8435131c7e8d6b8ed2390280ee8503f6d159e9e511a",
+          "test_fixture_ids": []
+        }
+      ]
+    },
+    {
+      "id": "colloquial-receipt",
+      "run_id": "e939b58bd6e64512",
+      "status": "completed",
+      "error": null,
+      "assessment": {
+        "sufficient": true,
+        "relevant_ids": [
+          "receipt-guidance",
+          "bec-case",
+          "bec-guidance"
+        ],
+        "missing": [
+          "不能仅凭转账凭证确认资金已到账；不能保证该笔交易安全；不能判定对方是否为合法主体；无内部冻结或拦截流程说明；无签字层级、时限等Westpac内部规程信息"
+        ],
+        "conflicts": [],
+        "calculation": "none"
+      },
+      "path": [
+        {
+          "sequence": 2,
+          "at": "2026-10-18T11:56:59.766988+00:00",
+          "kind": "retrieval_started",
+          "method": "bm25"
+        },
+        {
+          "sequence": 3,
+          "at": "2026-10-18T11:56:59.779959+00:00",
+          "kind": "retrieval_attempt_completed",
+          "method": "bm25",
+          "unit_ids": [],
+          "source_ids": []
+        },
+        {
+          "sequence": 4,
+          "at": "2026-10-18T11:56:59.780699+00:00",
+          "kind": "retrieval_fallback",
+          "from_method": "bm25",
+          "to_method": "semantic",
+          "reason": "bm25_no_positive_score"
+        },
+        {
+          "sequence": 5,
+          "at": "2026-10-18T11:56:59.782684+00:00",
+          "kind": "retrieval_started",
+          "method": "semantic"
+        },
+        {
+          "sequence": 6,
+          "at": "2026-10-18T11:57:02.209161+00:00",
+          "kind": "retrieval_attempt_completed",
+          "method": "semantic",
+          "unit_ids": [
+            "receipt-guidance",
+            "bec-case",
+            "bec-guidance"
+          ],
+          "source_ids": [
+            "westpac-receipt",
+            "scamwatch-case",
+            "westpac-bec"
+          ]
+        },
+        {
+          "sequence": 7,
+          "at": "2026-10-18T11:57:02.216325+00:00",
+          "kind": "retrieval_completed",
+          "ranked": [
+            {
+              "unit_id": "receipt-guidance",
+              "score": 0.441284
+            },
+            {
+              "unit_id": "bec-case",
+              "score": 0.383371
+            },
+            {
+              "unit_id": "bec-guidance",
+              "score": 0.377829
+            }
+          ],
+          "index_sha256": "f01ad3a4a244f5c15592d8435131c7e8d6b8ed2390280ee8503f6d159e9e511a",
+          "test_fixture_ids": []
+        }
+      ]
+    },
+    {
+      "id": "normal",
+      "run_id": "d4262404262a417d",
+      "status": "completed",
+      "error": null,
+      "assessment": {
+        "sufficient": true,
+        "relevant_ids": [
+          "bec-guidance",
+          "bec-case"
+        ],
+        "missing": [],
+        "conflicts": [],
+        "calculation": "none"
+      },
+      "path": [
+        {
+          "sequence": 2,
+          "at": "2026-10-18T11:56:59.767090+00:00",
+          "kind": "retrieval_started",
+          "method": "bm25"
+        },
+        {
+          "sequence": 3,
+          "at": "2026-10-18T11:56:59.776068+00:00",
+          "kind": "retrieval_attempt_completed",
+          "method": "bm25",
+          "unit_ids": [
+            "bec-guidance",
+            "bec-case"
+          ],
+          "source_ids": [
+            "westpac-bec",
+            "scamwatch-case"
+          ]
+        },
+        {
+          "sequence": 4,
+          "at": "2026-10-18T11:56:59.780679+00:00",
+          "kind": "retrieval_completed",
+          "ranked": [
+            {
+              "unit_id": "bec-guidance",
+              "score": 8.831897
+            },
+            {
+              "unit_id": "bec-case",
+              "score": 4.4221
+            }
+          ],
+          "index_sha256": "f01ad3a4a244f5c15592d8435131c7e8d6b8ed2390280ee8503f6d159e9e511a",
+          "test_fixture_ids": []
+        }
+      ]
+    },
+    {
+      "id": "training",
+      "run_id": "4b48fa8dbff54fc4",
+      "status": "completed",
+      "error": null,
+      "assessment": {
+        "sufficient": true,
+        "relevant_ids": [
+          "bec-case",
+          "bec-guidance"
+        ],
+        "missing": [],
+        "conflicts": [],
+        "calculation": "none"
+      },
+      "path": [
+        {
+          "sequence": 2,
+          "at": "2026-10-18T11:57:16.416560+00:00",
+          "kind": "retrieval_started",
+          "method": "bm25"
+        },
+        {
+          "sequence": 3,
+          "at": "2026-10-18T11:57:16.421394+00:00",
+          "kind": "retrieval_attempt_completed",
+          "method": "bm25",
+          "unit_ids": [
+            "bec-case",
+            "bec-guidance",
+            "national-statistics"
+          ],
+          "source_ids": [
+            "scamwatch-case",
+            "westpac-bec",
+            "scamwatch-stats"
+          ]
+        },
+        {
+          "sequence": 4,
+          "at": "2026-10-18T11:57:16.422383+00:00",
+          "kind": "retrieval_completed",
+          "ranked": [
+            {
+              "unit_id": "bec-case",
+              "score": 14.887613
+            },
+            {
+              "unit_id": "bec-guidance",
+              "score": 6.869066
+            },
+            {
+              "unit_id": "national-statistics",
+              "score": 2.645551
+            }
+          ],
+          "index_sha256": "f01ad3a4a244f5c15592d8435131c7e8d6b8ed2390280ee8503f6d159e9e511a",
+          "test_fixture_ids": []
+        }
+      ]
+    },
+    {
+      "id": "unrelated",
+      "run_id": "a4e7559d4e264288",
+      "status": "completed",
+      "error": null,
+      "assessment": {
+        "sufficient": false,
+        "relevant_ids": [],
+        "missing": [
+          "火星环境参数",
+          "土豆种植农业科学数据",
+          "NASA或ESA火星表面温度研究"
+        ],
+        "conflicts": [],
+        "calculation": "none"
+      },
+      "path": [
+        {
+          "sequence": 2,
+          "at": "2026-10-18T11:57:17.087200+00:00",
+          "kind": "retrieval_started",
+          "method": "bm25"
+        },
+        {
+          "sequence": 3,
+          "at": "2026-10-18T11:57:17.093823+00:00",
+          "kind": "retrieval_attempt_completed",
+          "method": "bm25",
+          "unit_ids": [],
+          "source_ids": []
+        },
+        {
+          "sequence": 4,
+          "at": "2026-10-18T11:57:17.094992+00:00",
+          "kind": "retrieval_fallback",
+          "from_method": "bm25",
+          "to_method": "semantic",
+          "reason": "bm25_no_positive_score"
+        },
+        {
+          "sequence": 5,
+          "at": "2026-10-18T11:57:17.095912+00:00",
+          "kind": "retrieval_started",
+          "method": "semantic"
+        },
+        {
+          "sequence": 6,
+          "at": "2026-10-18T11:58:17.423305+00:00",
+          "kind": "retrieval_attempt_completed",
+          "method": "semantic",
+          "unit_ids": [
+            "national-statistics",
+            "investment-check",
+            "bec-case"
+          ],
+          "source_ids": [
+            "scamwatch-stats",
+            "asic-invest",
+            "scamwatch-case"
+          ]
+        },
+        {
+          "sequence": 7,
+          "at": "2026-10-18T11:58:17.424622+00:00",
+          "kind": "retrieval_completed",
+          "ranked": [
+            {
+              "unit_id": "national-statistics",
+              "score": 0.083277
+            },
+            {
+              "unit_id": "investment-check",
+              "score": 0.076131
+            },
+            {
+              "unit_id": "bec-case",
+              "score": 0.071961
+            }
+          ],
+          "index_sha256": "f01ad3a4a244f5c15592d8435131c7e8d6b8ed2390280ee8503f6d159e9e511a",
+          "test_fixture_ids": []
+        }
+      ]
+    }
+  ]
+}

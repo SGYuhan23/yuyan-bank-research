@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "method": "real local HTTP server, real default retrieval and model response; saved new training rendered",
+  "progress": "1. 识别用户任务\n2. 开始检索 · bm25\n3. 本次检索返回 · bm25 · 无命中\n4. BM25无命中，转语义检索\n5. 开始检索 · semantic\n6. 本次检索返回 · semantic · receipt-guidance、bec-case、bec-guidance\n7. 检索资料完成\n8. 模型处理资料 · 检查依据\n9. 模型调用返回 · 检查依据\n10. 检查依据充分性\n11. 模型处理资料 · 生成内容\n12. 模型调用返回 · 生成内容\n18. 按原文保留建议适用条件\n19. 模型处理资料 · 检查支持性\n20. 模型调用返回 · 检查支持性\n21. 核对引用与建议支持情况\n22. 结果已生成，待人工审核",
+  "training_run_id": "4b48fa8dbff54fc4",
+  "checks": [
+    "default API uses fallback",
+    "actual methods and source unit IDs visible",
+    "receipt response rendered",
+    "new training amount wording rendered",
+    "mobile no overflow",
+    "no page errors"
+  ]
+}

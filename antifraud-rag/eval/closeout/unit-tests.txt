@@ -1,0 +1,20 @@
+test_auto_fallback_logs (test_closeout.Closeout.test_auto_fallback_logs) ... ok
+test_bm25_hit_no_fallback (test_closeout.Closeout.test_bm25_hit_no_fallback) ... ok
+test_case_amount_reference_not_model_judged (test_closeout.Closeout.test_case_amount_reference_not_model_judged) ... ok
+test_explicit_bm25_no_fallback (test_closeout.Closeout.test_explicit_bm25_no_fallback) ... ok
+test_explicit_semantic (test_closeout.Closeout.test_explicit_semantic) ... ok
+test_unavailable_is_failure_not_no_evidence (test_closeout.Closeout.test_unavailable_is_failure_not_no_evidence) ... ok
+test_unrelated_amount_not_rewritten (test_closeout.Closeout.test_unrelated_amount_not_rewritten) ... ok
+test_baseline_empty_query (test_integrity.Integrity.test_baseline_empty_query) ... ok
+test_case_privacy_and_conditions_together (test_integrity.Integrity.test_case_privacy_and_conditions_together) ... ok
+test_conditional_scope_restored (test_integrity.Integrity.test_conditional_scope_restored) ... ok
+test_exact_citation_guard (test_integrity.Integrity.test_exact_citation_guard) ... ok
+test_full_section_citation_materialized (test_integrity.Integrity.test_full_section_citation_materialized) ... ok
+test_metadata_and_units (test_integrity.Integrity.test_metadata_and_units) ... ok
+test_production_does_not_read_eval (test_integrity.Integrity.test_production_does_not_read_eval) ... ok
+test_unknown_reference_guard (test_integrity.Integrity.test_unknown_reference_guard) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.029s
+
+OK
