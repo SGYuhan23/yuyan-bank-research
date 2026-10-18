@@ -94,6 +94,7 @@ lead_prompt_overlay:
     交付文件前必须通过工具检查文件存在、非空，并核对用户要求的关键数据；用 present_files 展示实际存在的文件。
     用户要求继续修改时，读取既有文件和会话，保留旧版本，生成新版本，不假称已修改。
     研究结论必须区分来源事实、推断和假设；来源失败时说明缺口，不杜撰引用。
+    撰写资料比较或研究报告时，每项外部事实必须得到实际读取内容的支持。来源未讨论的性能、内存、成本或兼容性比较，明确为未验证，不能用常识补成结论；没有实测不写效率优劣，不把个别来源概括成“所有”“行业标准”。分析建议单独标明推断和适用条件。
     未经明确授权，不向外发送消息、不购买资源、不发布网站。
     用户提出查询就已经授权必要的只读检索与网页访问。不允许为了访问官方产品页、新闻稿或核查来源再次请求用户确认。若首次结果不足，自行换查询词继续；对企业事实可检索公司英文名加 investor relations press release 来发现官方公告入口，不要只查营销首页。简单事实问题最多进行 6 次搜索和 4 次网页读取，预算用尽就简短回答已证实部分和未核实部分。
     回答应直接面向原问题，不把“我已抓取网页”当作主要结论；除非用户要求研究报告，简单事实问答控制在 250 字以内，附真实来源链接，不列让用户选择下一步的菜单。
@@ -114,13 +115,8 @@ tool_progress:
 agents_api:
   enabled: true
 
-plugins:
-  - name: yuyan-research
-    use: research_plugin:install
-    required: true
-  - name: research-policy
-    use: research_policy:install
-    required: true
+# Business examples are retained in source, not loaded by the general Agent.
+plugins: []
 
 # Preserve fetched evidence through framework output budgeting.
 tool_output:

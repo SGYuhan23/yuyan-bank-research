@@ -1,47 +1,62 @@
-# 渝研｜产业经营研究
+# 渝研 Agent
 
-先理解生意，再安排金融服务。以公开资料建立产业背景，用模拟客户与收付计划研究银行服务顺序和企业现金时点。
+一个可以查资料、处理文件、执行代码、制作图片，并交付可继续修改成果的中文 Agent 工作台。基于 DeerFlow 改造，使用 Qwen 与真实工具；默认单 Agent。
 
-**[打开交互研究页](https://sgyuhan23.github.io/yuyan-bank-research/)** · [三分钟演示](DEMO.md) · [下载研究报告](research-showcase/dist/渝研_产业经营研究报告.pdf) · [复算说明](REPRODUCIBILITY.md)
+输入任务或上传文件后，可以查看工具执行过程，在对话旁预览成果，下载文件，并继续要求修改。会话和执行状态保存在 PostgreSQL，文件按用户和会话隔离。
 
-## 当前两个案例
+## 主要能力
 
-**涪陵榨菜客户经营**：合作社、加工企业、经销商三个客户原型，比较付款紧迫性、核查材料、工时和停止条件。本周18小时先安排经销商6小时、合作社8小时，留4小时补件；新证据可以改变排序。不计算未经校准的银行收益排名。
-
-**汽车供应商资金周转**：比较现金、持票到期、次日贴现成功和现金晚14天。四种情景峰值缺口均为56万元，负余额期分别为94、185、95和108天；贴现成本为6,627.95元。这些都是模拟输入下的研究结果，不是实际企业表现或银行报价。
-
-页面无自由输入、无实时模型调用。经营情景是预设分析路径；汽车情景经参数确认后展示对应的确定性结果，不把预设文字包装成模型推理。公开来源、适用范围与模拟数据边界保留在“研究报告与依据”中。
-
-当前页面、报告、数据及复算源码位于 [research-showcase](research-showcase/README.md)。Pages 仅部署该目录的 dist，不混合旧版案例或报告。原后端、Agent、计算引擎和历史研究材料继续保留，属于原项目技术实现，不代表当前三个客户原型与56万元案例。
-
-## 保留的原项目源码
-
-这是完整源码作品仓库。保留 agent-ops / agent-platform 目录结构，不为展示重排 imports；依赖、运行账号与密钥由使用者在本地配置。
-
-| 路径 | 作用 |
+| 能力 | 实现 |
 |---|---|
-| [agent-ops/examples/fuling.py](agent-ops/examples/fuling.py) | 合成客群、按业务驱动估值的候选动作、工时与行业约束优化；保留明确的历史兼容代码 |
-| [supplier_ledger.py](agent-ops/research/supplier_ledger.py) | 合同支付依赖、事件状态、现金曲线、原子收付核对及只读情景计算 |
-| [ledger_store.py](agent-ops/research/ledger_store.py) | PostgreSQL 持久化、账户隔离、幂等、版本控制、确认快照存储 |
-| [scenario_request.py](agent-ops/research/scenario_request.py) | 绑定请求、客户、参数、确认状态与账本版本 |
-| [trace_guard.py](agent-ops/research/trace_guard.py) | 从成功工具结果生成受控回答，防止自由文本改写金额或状态 |
-| [research frontend page](agent-platform/frontend/src/app/workspace/research/page.tsx) | 两个案例的真实交互界面；读取 Python 结果并调用账本接口 |
-| [research_plugin.py](agent-ops/research_plugin.py) / [research_policy.py](agent-ops/research_policy.py) | 本项目 Agent 工具、API 扩展及回答边界 |
-| [agent-ops/test_*.py](agent-ops/) | 确定性模型、合同依赖、账本、语义、发布边界与集成测试 |
-| [build_data.py](agent-ops/research/build_data.py) / [build_reports.py](agent-ops/research/build_reports.py) | 标准库数据构建与报告生成 |
-| [portfolio_verify.py](scripts/portfolio_verify.py) | 公开仓库发布快照的文件哈希核对 |
-| [agent-platform/frontend](agent-platform/frontend) / [backend](agent-platform/backend) | 完整前后端、Agent 运行环境与本项目业务扩展源码 |
+| 联网查证 | Qwen 原生搜索、网页读取、来源链接及读取状态 |
+| 文件分析 | 上传文件，读取 CSV / 文本，在 Docker 沙箱执行 Python / bash |
+| 成果交付 | JSON、Markdown、HTML 等文件预览下载；明确文件生成请求有交付检查与有界重试 |
+| 图片与图形 | Qwen 图片生成/编辑、SVG 与可编辑 Draw.io 流程图 |
+| 多轮任务 | 保留会话、文件和检查点，继续修改；取消运行与重复提交幂等 |
+| 自定义助手 | 用户级模型、工具组与提示配置；默认关闭子 Agent 与第三方 MCP |
 
-完整目录见 [Repository Structure](docs/PUBLIC_REPO_TREE.md)。
+交付检查验证文件存在、非空、属于当前会话并已展示，不代替事实核验或内容正确性评测。支持的明确文件生成表达与限制见 [验收说明](docs/AGENT_ACCEPTANCE.md)。
 
-[原版浏览器 Demo 实现与一致性测试（历史案例，不是当前展示）](site/README.md)
+## 本地安装与启动
 
-## 本地运行
+要求：Python 3.12、uv、Node.js 22+、pnpm 10.26.2、Docker。默认端口 3000 / 8001 / 55433，仅监听本机。
 
-[复算与本地运行说明](REPRODUCIBILITY.md) 提供数据构建、测试、报告生成与完整平台启动步骤。独立复算不需要模型密钥或数据库；完整交互平台在本地运行。当前研究页展示预先由 Python 生成的情景结果，不提供后端服务。
+```bash
+git clone https://github.com/SGYuhan23/yuyan-bank-research.git
+cd yuyan-bank-research
+uv sync --project agent-platform/backend --locked --extra postgres
+cd agent-platform/frontend
+corepack pnpm install --frozen-lockfile
+cd ../..
+cp agent-ops/.env.example agent-ops/.env.local
+```
 
-## 技术栈
+编辑 `agent-ops/.env.local`：设置自己的 `QWEN_API_KEY`、`POSTGRES_PASSWORD`、`AGENT_DATABASE_URL`。数据库 URL 格式为 `postgresql://agent_platform:<URL编码后的密码>@127.0.0.1:55433/agent_platform`，与 POSTGRES_PASSWORD 一致。模型与端点可以显式配置，不会静默切换模型。不要提交此文件。
 
-Python 负责确定性业务计算与接口，PostgreSQL 保存账本状态，Next.js / React 提供完整本地交互；Qwen 用于自然语言理解与解释，Agent workflow 负责问题理解、参数确认、工具调用和结果组织。原版浏览器 Demo 的 React / TypeScript / Vite / Ant Design 与独立 JavaScript 计算引擎继续保留；当前公开入口使用 research-showcase/dist 中的静态研究页。
+```bash
+docker pull enterprise-public-cn-beijing.cr.volces.com/vefaas-public/all-in-one-sandbox:1.11.0
+agent-platform/backend/.venv/bin/python scripts/start_general_agent.py
+```
 
-[架构与责任划分](ARCHITECTURE.md) · [第三方说明](third_party/ATTRIBUTION.md) · [DeerFlow 许可证](agent-platform/LICENSE)
+打开 **http://127.0.0.1:3000/**，首次创建管理员，随后新建对话。macOS 可双击 `启动原版Agent.command`。Docker 数据卷、`.deer-flow` 和密钥文件应一起妥善备份。Windows 使用虚拟环境实际的 Python 可执行文件路径。
+
+尝试这些任务：
+
+- 上传 CSV：“读取文件，用 Python 汇总每项金额，生成 result.json 和 report.html 并展示。”
+- “保留原版，把第二项数量改为 5，重新计算并生成新版本。”
+- “查阅 Python 官方文档，比较 CSV 和 JSON，引用实际读取的来源。”
+- “画一张水彩风格的窗边橘猫图片。”
+- “画一个包含判断分支的流程图，交付 SVG 和 Draw.io 文件。”
+
+## 实现与验证
+
+- [架构与责任边界](ARCHITECTURE.md)
+- [Agent 验收结果与已知限制](docs/AGENT_ACCEPTANCE.md)
+- [开源参考与实际落实情况](docs/AGENT_REFERENCES.md)
+- [复现步骤](REPRODUCIBILITY.md)
+
+核心代码位于 `agent-platform/`，本项目工具、运行配置和验收位于 `agent-ops/`。DeerFlow 提供基础框架；本项目负责模型装配、联网/媒体工具、交付检查、中文交互和验证，不宣称从零自研框架或超过全部参考项目。
+
+旧银行研究、静态展示与案例源码保留为历史材料，不是当前主产品入口。GitHub Pages 已退出本项目的交付方式；本仓库交付真实可运行的 Agent 源码，不提供公共模型服务。
+
+[第三方归属](third_party/ATTRIBUTION.md) · [DeerFlow MIT 许可证](agent-platform/LICENSE)

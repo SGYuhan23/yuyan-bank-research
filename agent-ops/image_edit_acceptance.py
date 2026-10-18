@@ -2,7 +2,9 @@
 import json,time,hashlib
 from client import client,ROOT
 c=client()
-source=json.loads((ROOT/'agent-ops/evidence/media-0a42c926-7c8d-4d8e-b9b5-f6cfbc54bb82.json').read_text())
+sources=sorted((ROOT/'agent-ops/evidence').glob('media-*.json'),key=lambda p:p.stat().st_mtime,reverse=True)
+source=next((json.loads(p.read_text()) for p in sources if all(json.loads(p.read_text()).get('checks',{}).get(k) for k in ('finished','generated','presented_png'))),None)
+if source is None:raise SystemExit('Run media_acceptance.py successfully before image editing acceptance.')
 tid=source['thread'];path=next(p for p in source['state']['values']['artifacts'] if p.endswith('.png'))
 url=f'/api/threads/{tid}/artifacts/{path.lstrip("/")}'
 before=c.get(url);before.raise_for_status()

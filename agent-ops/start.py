@@ -4,7 +4,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 PLATFORM=ROOT/'agent-platform'
 logs=PLATFORM/'logs';logs.mkdir(exist_ok=True)
-python=PLATFORM/'backend/.venv/bin/python'
+python=Path(sys.executable)
 node=os.environ.get('AGENT_NODE','node')
 version=subprocess.check_output([node,'--version'],text=True).strip()
 if int(version.lstrip('v').split('.')[0])<22:
@@ -24,7 +24,7 @@ def shutdown(*_):
     for f in handles:f.close()
     raise SystemExit(0)
 signal.signal(signal.SIGINT,shutdown);signal.signal(signal.SIGTERM,shutdown)
-commands=[('gateway',[str(python),str(ROOT/'agent-ops/gateway.py')],ROOT),('frontend',[node,'node_modules/next/dist/bin/next','dev','--hostname','127.0.0.1','--port','3000'],PLATFORM/'frontend')]
+commands=[('gateway',[str(python),str(ROOT/'agent-ops/gateway.py')],ROOT),('frontend',[node,'node_modules/next/dist/bin/next','dev','--webpack','--hostname','127.0.0.1','--port','3000'],PLATFORM/'frontend')]
 for name,command,cwd in commands:
     handle=open(logs/f'{name}.log','a',encoding='utf-8');handles.append(handle)
     children.append(subprocess.Popen(command,cwd=cwd,stdout=handle,stderr=subprocess.STDOUT))

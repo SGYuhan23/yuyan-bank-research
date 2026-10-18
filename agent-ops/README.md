@@ -1,9 +1,11 @@
-# 渝研：本项目扩展与本地运行
+# 渝研 Agent 运行装配
 
-当前业务与作品入口以 [根 README](../README.md)、[DEMO](../DEMO.md) 和 [复算说明](../REPRODUCIBILITY.md) 为准。
+当前主产品是中文通用 Agent；安装和启动见 [根 README](../README.md)。默认工具为网页检索与读取、文件读写、沙箱代码执行、图片生成/编辑和图形生成。
 
-完整本地安装、环境变量、数据库、模型服务与复算步骤见 [REPRODUCIBILITY](../REPRODUCIBILITY.md)。必须显式配置 AGENT_DATABASE_URL；模型参数可通过进程环境或 YUQI_MODEL_ENV_FILE 指定的本地 dotenv 文件提供。runtime.py 仍保留可选旧路径查找，但旧 yuqi-core 源码不是运行依赖。账号文件只放在被忽略的 .deer-flow/acceptance 中。
+`delivery_guard.py`：明确文件请求的交付核验和有界续跑。
+`research_policy.py`：普通事实查证策略。
+`extensions.json`：通过框架的配置中间件机制加载上述策略。
+`config.qwen.yaml`：默认不加载银行业务插件，模型与预算显式配置。
+`start.py`：启动数据库、Gateway和原Next.js工作台；`scripts/start_general_agent.py` 负责加载私有本地设置。
 
-当前 Agent 扩展及既有媒体/查证工具全部保留；既有文件工具使用 Docker AIO 沙箱镜像 `enterprise-public-cn-beijing.cr.volces.com/vefaas-public/all-in-one-sandbox:1.11.0`，需用户自行获取。Agent 框架来自 DeerFlow，并非本项目从零自研。第三方说明见 [ATTRIBUTION](../third_party/ATTRIBUTION.md)。
-
-当前完整源码可以本地配置运行，未部署公网。业务已冻结，不增加 Agent、RAG 或模型。
+研究和业务案例源码保留，不是默认任务入口。实际验证结果见 [验收记录](../docs/AGENT_ACCEPTANCE.md)。

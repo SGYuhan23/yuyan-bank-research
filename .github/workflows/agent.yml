@@ -1,0 +1,30 @@
+name: Verify general agent
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: '3.12'
+      - run: uv sync --project agent-platform/backend --locked --extra postgres
+      - run: agent-platform/backend/.venv/bin/python -m pytest agent-ops/test_delivery_guard.py agent-ops/test_configuration.py agent-ops/test_research_policy.py agent-ops/test_media.py agent-ops/test_diagram.py agent-ops/test_web_fetch.py agent-ops/test_web_research.py agent-ops/test_local_interaction_policy.py -q
+      - run: python scripts/portfolio_verify.py
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.26.2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - working-directory: agent-platform/frontend
+        run: pnpm install --frozen-lockfile
+      - working-directory: agent-platform/frontend
+        run: pnpm typecheck && pnpm exec next build --webpack
+        env:
+          SKIP_ENV_VALIDATION: '1'

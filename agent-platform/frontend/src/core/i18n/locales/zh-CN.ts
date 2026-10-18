@@ -245,7 +245,7 @@ export const zhCN: Translations = {
   welcome: {
     greeting: "你好，欢迎回来！",
     description:
-      "上传资料或描述任务，让助手检索、分析并生成可下载的文件。\n你可以查看执行过程、检查来源，并继续修改产物。\n渝研是独立作品，未与银行合作或接入银行系统。",
+      "上传资料或描述任务，让助手检索、分析并生成可下载的文件。\n你可以查看执行过程、检查来源，并继续修改产物。\n支持联网查证、文件分析、代码执行和图片创作。",
 
     createYourOwnSkill: "创建你自己的 Agent SKill",
     createYourOwnSkillDescription:

@@ -1,55 +1,36 @@
-# 架构：把解释、计算和决策分开
+# 渝研 Agent 架构
 
-两个案例先作为独立经营研究与产品原型成立，再通过 Agent 提升资料整理和解释效率。关闭模型、DeerFlow 或 LangGraph，仍可运行确定性数据构建与模型测试。
+浏览器 Next.js 聊天工作台通过同源代理访问 FastAPI Gateway。Gateway 完成身份、会话和运行控制，LangGraph 编排 Qwen 与白名单工具；PostgreSQL 保存用户、会话、检查点和运行事件。Docker AIO 沙箱承担代码执行，产物目录按用户、会话隔离。
 
 ```mermaid
 flowchart LR
-    U[用户问题] --> L[LLM：理解 / 搜索 / 参数提议]
-    L --> P[ScenarioRequest 提案与校验]
-    P --> H[Human：逐项确认参数]
-    H --> T[Deterministic Engine]
-    T --> R[绑定参数快照与账本版本的结果]
-    R --> E[解释 + 最终受控回答]
-    E --> D[Human：经营判断 / 授信审批]
+  UI[中文聊天与成果预览] --> API[FastAPI Gateway]
+  API --> PG[(PostgreSQL)]
+  API --> Graph[LangGraph 单 Agent]
+  Graph --> Model[Qwen Plus]
+  Graph --> Tools[搜索 / 网页 / 图片 / 图形]
+  Graph --> Sandbox[Docker 文件与代码沙箱]
+  Sandbox --> Files[会话文件与成果]
+  Graph --> Guard[交付核验与有界续跑]
+  Guard --> UI
 ```
 
-| 责任 | 承担的工作 | 不应该承担的工作 |
-|---|---|---|
-| LLM | 理解问题、搜索与整理资料、提出结构化参数、解释 | 自行计算金额或暗中补齐歧义；替人确认 |
-| Deterministic Engine | 整数分金额、日期依赖、现金流、工时资源优化、校验、快照绑定 | 将合成输出宣称为银行业绩或信用决策 |
-| Human | 确认测算参数、核验材料、经营判断、授信与风险审批 | 把参数确认当作真实合同已落实 |
+## 本轮执行控制
 
-## Fuling：不把所有动作都写成余额乘系数
+`agent-ops/delivery_guard.py` 通过框架现有配置中间件机制接入，不改写上游 Agent 循环。每轮保存已展示文件基线；对明确生成文件的用户请求检查当前会话内的新成果、非空文件和展示状态。显式文件名必须齐全。缺少成果时最多续跑两次；仍不满足，使用框架已有错误标记结束，不能把运行状态success当作交付成功。
 
-`prototypes → candidate_actions → optimize_resources → v2.json → research page / PDFs`
+请求中的自然语言识别是有界规则，不声称理解任意表达；检查文件交付也不代表内容语义正确。澄清工具、正在进行的工具调用、模型错误和预算停止交由原框架处理。控制提醒仅进入下一次模型请求，不写入用户聊天历史。
 
-结算由年交易笔数驱动，代发由员工数驱动，供应链由合格连接数驱动，维护由既有关系贡献与流失情景驱动；余额用于存款动作。动作有成本、工时和停止条件。单客户互斥、5 小时粒度与行业实际分配工时上限均由 Python 计算；前端选择已有情景，不另写金融公式。
+`research_policy.py` 的普通事实查证策略通过同一配置机制接入，使其请求调整真实生效。旧观察型扩展包装器会保留原请求，不适合用于改变模型请求；因此不再通过该包装器加载执行策略。
 
-## Supplier：状态、条件与事务
+## 配置与数据
 
-`research page / tool → research_plugin → ledger_store → supplier_ledger → PostgreSQL`
+- `agent-ops/config.qwen.yaml`：模型、工具、数据库、沙箱和预算。
+- `agent-ops/extensions.json`：当前中间件与禁用的可选技能。
+- `agent-ops/.env.local`：本机私有凭据，不提交。
+- `agent-platform/.deer-flow`：私有上传、成果和用户运行状态，不提交。
+- 默认不加载银行业务插件；历史研究代码独立保留。
 
-- 固定日与开票后支付分开；只有 PROJECTED 允许沿条件链重推日期。
-- CONFIRMED 不等于现金；POSTED 不可覆盖。争议会使依赖预测不完整。
-- 实际收付与余额核对在事务副本执行，匹配才整体提交；版本冲突与幂等键防止重复或过期写入。
-- ScenarioRequest 明确提案、确认、版本与参数；工具不能用另一个情景冒充原请求。最终受控回答由 `trace_guard.py` 根据成功工具结果生成。
+## 能力边界
 
-## 完整平台与本项目扩展边界
-
-`agent-platform/` 是 [DeerFlow](https://github.com/bytedance/deer-flow) 的固定上游源码快照及本地适配，保留完整 Next.js 前端、Python 后端、LangGraph harness、工具与扩展机制。上游框架、认证/会话/沙箱/流式执行等基础设施不是本项目从零自研。
-
-本项目主要新增：`agent-ops/` 中的经营模型、供应商账本、ScenarioRequest、扩展 API/工具、回答边界、数据与 PDF 构建、测试；`agent-platform/frontend/src/app/workspace/research/page.tsx` 的研究界面及导航、中文品牌适配。另有既有媒体/查证扩展和历史 examples，源码保留，但不扩充本次银行作品的业务范围。
-
-准确上游提交与归属见 [ATTRIBUTION](third_party/ATTRIBUTION.md)。源码包无旧 `.git` 历史；保留 commit 标识用于归属核验，不是迁移原仓库历史。
-
-## GitHub 展示与本地执行
-
-GitHub Pages 浏览器 Agent Demo 与 GitHub 文档、真实截图和报告构成公开入口，不需要在线后端。录屏使用本地 Next.js + Gateway + PostgreSQL；登录账号和运行数据不公开。只有自行运行完整平台时才需要配置数据库与模型服务。
-
-当前公开仓库包含完整功能源码与依赖锁文件，不含已安装依赖、私有运行状态或生产部署承诺。早期 `yuqi-core` 未被当前银行案例或平台 import，已从公开包移除；旧 dotenv 默认查找路径可通过显式环境变量或 YUQI_MODEL_ENV_FILE 覆盖，不需要该旧目录。
-
-## 浏览器执行适配
-
-`site/` 使用 React / TypeScript / Vite / Ant Design 和 HashRouter。四个受控完整问题由场景预设提供参数，不开放自由文本输入；确认后的参数与账本版本绑定，追加问题立即标记旧结果失效。Fuling 分组背包、Supplier 逐日现金流、合同依赖和原子核对在浏览器运行，通过动态 Python 对照验证，Python 仍为计算依据。当前引导演示状态仅保存在内存中，重新进入案例即重置。
-
-历史 Qwen 脱敏记录独立展示为调用回放，不能冒充当前输入的新模型调用。Pages 不提供实时模型服务。构建与一致性测试在 GitHub Actions 执行，不向浏览器部署 Python 或测试答案。
+模型解释不代替工具结果；搜索失败不证明事物不存在。实际模型调用仍可能错误，明确失败与可继续任务比伪造成功更重要。没有公共生产服务、全面安全审计或任意复杂任务正确率承诺。
