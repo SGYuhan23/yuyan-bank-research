@@ -1,0 +1,2 @@
+# Preserve the exact captured source bytes used by provenance hashes.
+data/raw/*.txt -whitespace

@@ -1,0 +1,42 @@
+About us
+Media centre
+Media releases
+2025
+Using AI to put scammers out of business
+Media releases
+Using AI to put scammers out of business
+29 May 2025
+Westpac has built new AI technology which will revolutionise its customer support capabilities, including improving the bank’s ability to detect if a customer is being scammed.
+A first of its kind in Australia, the real-time call assistant technology is being integrated within the bank’s frontline customer service and operations platforms to aid bankers with customer interactions. The AI synthesises information from customer phone conversations in real-time to highlight key indicators enabling bankers to respond more effectively.
+Currently being piloted in the bank’s specialist scam and fraud team, the technology is helping these operators stop more scams, more quickly for customers.
+Westpac CEO Anthony Miller says the AI is improving support for customers in crucial moments.
+“Our customer service specialists are often trying to solve complex puzzles with many missing pieces. In urgent circumstances, like when a customer thinks they’ve been scammed, these calls can be very emotive with lots of information that our operators need to synthesise very quickly. This AI tool is helping fill some of those gaps and is aiding our teams in real-time so they can more effectively respond,” Miller said.
+“As an example, when a customer is on the phone to Westpac, the AI tool will offer prompts to our operators where it detects the customer may have fallen victim to a scam. In these instances, the tool will provide suggested questions to help our customer service representative determine if the customer is at risk. It helps ensure we can deliver consistently for our customers, enhancing the skills and capability of our team.”
+The AI can aid operators with live transcripts, provide alerts when key indicators are detected and offer prompts to help reach an outcome more efficiently. It can also help uncover instances where a scammer may be coaching a customer in the background.
+“Early results from our pilot demonstrates the potential this technology has to unlock faster and more effective and consistent outcomes for customers in important moments,” Miller added.
+“The response from team members involved in the pilot has been equally positive. They’re having deeper conversations and getting results with those using the technology successfully stopping more scams and reaching that outcome faster than those who aren’t. This is immensely satisfying for our team who are so committed to helping our customers in those difficult moments.
+“Beyond scams and fraud this tool has significant potential. While still in trial phase we’re already thinking about how the AI could be deployed elsewhere in the bank to improve and streamline how our bankers support customers.”
+This technology is one of the first frontline AI innovations running through the bank’s ‘AI Accelerator’, bolstering its scam detection and prevention capabilities.
+Over the past two years Westpac has invested over $100 million stopping scams, saving customers over $500 million from being lost to scammers. This has included:
+Westpac SafeBlock
+– rolling out later this year, it will allow customers to immediately block their account in the Westpac app or online banking, when they suspect they are being scammed.
+Westpac SafeCall
+– provides customers with calls via the app that are Westpac branded, verified by Optus and show a reason for the call.
+Westpac SaferPay
+– presents customers with a series of questions in instances where a payment is considered a high risk of being a scam.
+Westpac Verify
+– alerts customers when there is a potential account name mismatch when they’re adding a new payee using a BSB and account number. Verify was recently introduced for St.George, Bank of Melbourne, and BankSA customers.
+Dynamic CVC
+– changes the three-digit code on the back of the digital card every 24-hours. This feature is also available for St.George, Bank of Melbourne, and BankSA customers.
+Cryptocurrency blocks
+– for payments to certain digital currency exchanges.
+Merchant blocks
+– for payments to businesses deemed high-risk of being a scam (e.g. offering fake or misleading products and services).
+Call spoofing measures
+– added 94,000 Westpac numbers to the ‘Do Not Originate’ list preventing scammers from impersonating the bank’s phone numbers.
+Inbound payment detection
+– monitoring on some payments coming into the bank to check for potential scam indicators, with funds held where a scam is detected.
+Sophisticated detection technology
+– advanced behavioural tool helping combat remote access scams.
+Media Contact:
+media@westpac.com.au

@@ -1,0 +1,11 @@
+legitimate completed None
+supplier failed CONDITIONS_NOT_PRESERVED:['PayID建议须明确以收款方已开通/可用为前提。']
+training completed None
+receipt completed None
+population completed None
+override completed None
+conflict completed None
+missing completed None
+injection completed None
+calculation completed None
+registration completed None

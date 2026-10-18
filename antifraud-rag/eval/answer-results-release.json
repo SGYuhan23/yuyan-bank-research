@@ -1,0 +1,77 @@
+{
+  "method": "11 author-designed cases; production BM25 k=3; same-provider model judge, not human blind review; all fixtures isolated from production index",
+  "results": [
+    {
+      "case_id": "training",
+      "run_id": "4bcc7e7a3a0e422d",
+      "status": "completed",
+      "error": null,
+      "task": "training",
+      "checks": {
+        "supported": true,
+        "required_checks": [
+          {
+            "requirement": "情境标为项目编写，不是真实客户",
+            "passed": true,
+            "evidence": "\"scenario_label\": \"project_authored_training\""
+          },
+          {
+            "requirement": "风险线索、建议追问、参考处理思路和来源齐全",
+            "passed": true,
+            "evidence": "包含risks（2条）、questions（3条）、steps（3条）、boundaries（4条），且每项均带citations或明确标注来源unit_id（bec-guidance, bec-case）"
+          },
+          {
+            "requirement": "待人工审核",
+            "passed": true,
+            "evidence": "\"review_status\": \"pending_human_review\" 和 notice中明确声明'生成内容待人工审核'"
+          },
+          {
+            "requirement": "不冒称内部操作规程",
+            "passed": true,
+            "evidence": "boundaries首条：'本培训材料基于澳大利亚公开反诈指引，不构成Westpac内部操作规程'；notice中重申'非Westpac内部规程'"
+          }
+        ],
+        "unsupported_claims": [],
+        "omissions": [],
+        "training_distinction": true,
+        "insufficiency_or_conflict_handled": true
+      }
+    },
+    {
+      "case_id": "supplier",
+      "run_id": "a533136669ef4279",
+      "status": "completed",
+      "error": null,
+      "task": "knowledge",
+      "checks": {
+        "supported": true,
+        "required_checks": [
+          {
+            "requirement": "独立取得电话口头核实请求及账户",
+            "passed": true,
+            "evidence": "使用你方已存档的、独立核实过的电话号码（非邮件中提供的号码）致电供应商，口头确认账户变更请求是否真实。"
+          },
+          {
+            "requirement": "不用变更邮件中的联系方式",
+            "passed": true,
+            "evidence": "Always use a phone number you have on file, or a publicly sourced number. Never use contact details provided in the email."
+          },
+          {
+            "requirement": "熟悉发件人也不免核实",
+            "passed": true,
+            "evidence": "Even if such requests came from someone associated with you, do not make any changes to account details until you've verbally verified the request using a phone number you sourced yourself."
+          },
+          {
+            "requirement": "不认定必然诈骗",
+            "passed": true,
+            "evidence": "账户变更本身不构成欺诈证据，仅作为需核实的关键信号。"
+          }
+        ],
+        "unsupported_claims": [],
+        "omissions": [],
+        "training_distinction": true,
+        "insufficiency_or_conflict_handled": true
+      }
+    }
+  ]
+}

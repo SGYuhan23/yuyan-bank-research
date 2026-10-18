@@ -1,0 +1,339 @@
+{
+  "at": "2026-10-18T11:18:35.146151+00:00",
+  "results": [
+    {
+      "id": "supplier",
+      "mode": "bm25",
+      "ids": [
+        "bec-guidance",
+        "bec-case"
+      ],
+      "scores": [
+        8.831897,
+        4.4221
+      ],
+      "recall_at_3": 1.0,
+      "error": null
+    },
+    {
+      "id": "training",
+      "mode": "bm25",
+      "ids": [
+        "bec-guidance",
+        "bec-case"
+      ],
+      "scores": [
+        6.869066,
+        5.30652
+      ],
+      "recall_at_3": 1.0,
+      "error": null
+    },
+    {
+      "id": "legitimate",
+      "mode": "bm25",
+      "ids": [
+        "bec-guidance",
+        "bec-case"
+      ],
+      "scores": [
+        6.491793,
+        3.53768
+      ],
+      "recall_at_3": 1.0,
+      "error": null
+    },
+    {
+      "id": "receipt",
+      "mode": "bm25",
+      "ids": [
+        "receipt-guidance"
+      ],
+      "scores": [
+        7.535767
+      ],
+      "recall_at_3": 1.0,
+      "error": null
+    },
+    {
+      "id": "registration",
+      "mode": "bm25",
+      "ids": [
+        "investment-check",
+        "national-statistics"
+      ],
+      "scores": [
+        10.615749,
+        1.024023
+      ],
+      "recall_at_3": 1.0,
+      "error": null
+    },
+    {
+      "id": "population",
+      "mode": "bm25",
+      "ids": [
+        "national-statistics",
+        "receipt-guidance"
+      ],
+      "scores": [
+        10.491477,
+        1.527149
+      ],
+      "recall_at_3": 1.0,
+      "error": null
+    },
+    {
+      "id": "override",
+      "mode": "bm25",
+      "ids": [
+        "bec-guidance",
+        "bec-case",
+        "investment-check"
+      ],
+      "scores": [
+        6.869066,
+        5.30652,
+        1.092553
+      ],
+      "recall_at_3": 1.0,
+      "error": null
+    },
+    {
+      "id": "injection",
+      "mode": "bm25",
+      "ids": [
+        "bec-guidance",
+        "bec-case"
+      ],
+      "scores": [
+        7.397585,
+        4.4221
+      ],
+      "recall_at_3": 1.0,
+      "error": null
+    },
+    {
+      "id": "conflict",
+      "mode": "bm25",
+      "ids": [
+        "bec-guidance",
+        "bec-case"
+      ],
+      "scores": [
+        5.057481,
+        3.53768
+      ],
+      "recall_at_3": 1.0,
+      "error": null
+    },
+    {
+      "id": "missing",
+      "mode": "bm25",
+      "ids": [
+        "receipt-guidance",
+        "national-statistics",
+        "bec-guidance"
+      ],
+      "scores": [
+        1.527149,
+        1.024023,
+        0.905792
+      ],
+      "recall_at_3": null,
+      "error": null
+    },
+    {
+      "id": "calculation",
+      "mode": "bm25",
+      "ids": [
+        "national-statistics",
+        "bec-case",
+        "bec-guidance"
+      ],
+      "scores": [
+        22.170544,
+        1.88265,
+        1.503969
+      ],
+      "recall_at_3": 1.0,
+      "error": null
+    },
+    {
+      "id": "supplier",
+      "mode": "semantic",
+      "ids": [
+        "bec-guidance",
+        "bec-case",
+        "receipt-guidance"
+      ],
+      "scores": [
+        0.705973,
+        0.673514,
+        0.522997
+      ],
+      "recall_at_3": 1.0,
+      "error": null
+    },
+    {
+      "id": "training",
+      "mode": "semantic",
+      "ids": [
+        "bec-case",
+        "bec-guidance",
+        "receipt-guidance"
+      ],
+      "scores": [
+        0.536986,
+        0.510008,
+        0.364814
+      ],
+      "recall_at_3": 1.0,
+      "error": null
+    },
+    {
+      "id": "legitimate",
+      "mode": "semantic",
+      "ids": [
+        "bec-case",
+        "bec-guidance",
+        "receipt-guidance"
+      ],
+      "scores": [
+        0.641761,
+        0.621291,
+        0.482447
+      ],
+      "recall_at_3": 1.0,
+      "error": null
+    },
+    {
+      "id": "receipt",
+      "mode": "semantic",
+      "ids": [
+        "receipt-guidance",
+        "bec-guidance",
+        "bec-case"
+      ],
+      "scores": [
+        0.532857,
+        0.450253,
+        0.419247
+      ],
+      "recall_at_3": 1.0,
+      "error": null
+    },
+    {
+      "id": "registration",
+      "mode": "semantic",
+      "ids": [
+        "investment-check",
+        "receipt-guidance",
+        "bec-guidance"
+      ],
+      "scores": [
+        0.583202,
+        0.423675,
+        0.421126
+      ],
+      "recall_at_3": 1.0,
+      "error": null
+    },
+    {
+      "id": "population",
+      "mode": "semantic",
+      "ids": [
+        "national-statistics",
+        "receipt-guidance",
+        "investment-check"
+      ],
+      "scores": [
+        0.618859,
+        0.443206,
+        0.419832
+      ],
+      "recall_at_3": 1.0,
+      "error": null
+    },
+    {
+      "id": "override",
+      "mode": "semantic",
+      "ids": [
+        "bec-case",
+        "bec-guidance",
+        "receipt-guidance"
+      ],
+      "scores": [
+        0.644639,
+        0.61203,
+        0.467986
+      ],
+      "recall_at_3": 1.0,
+      "error": null
+    },
+    {
+      "id": "injection",
+      "mode": "semantic",
+      "ids": [
+        "bec-guidance",
+        "bec-case",
+        "receipt-guidance"
+      ],
+      "scores": [
+        0.62408,
+        0.560302,
+        0.453385
+      ],
+      "recall_at_3": 1.0,
+      "error": null
+    },
+    {
+      "id": "conflict",
+      "mode": "semantic",
+      "ids": [
+        "bec-guidance",
+        "bec-case",
+        "receipt-guidance"
+      ],
+      "scores": [
+        0.594973,
+        0.587776,
+        0.374515
+      ],
+      "recall_at_3": 1.0,
+      "error": null
+    },
+    {
+      "id": "missing",
+      "mode": "semantic",
+      "ids": [
+        "receipt-guidance",
+        "bec-guidance",
+        "bec-case"
+      ],
+      "scores": [
+        0.350925,
+        0.341849,
+        0.314614
+      ],
+      "recall_at_3": null,
+      "error": null
+    },
+    {
+      "id": "calculation",
+      "mode": "semantic",
+      "ids": [
+        "national-statistics",
+        "bec-case",
+        "bec-guidance"
+      ],
+      "scores": [
+        0.699115,
+        0.470259,
+        0.425679
+      ],
+      "recall_at_3": 1.0,
+      "error": null
+    }
+  ]
+}

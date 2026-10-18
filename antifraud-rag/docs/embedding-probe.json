@@ -1,0 +1,6 @@
+{
+  "at": "2026-10-18T11:16:35.093622+00:00",
+  "status": 200,
+  "model": "text-embedding-v4",
+  "dimensions": 1024
+}

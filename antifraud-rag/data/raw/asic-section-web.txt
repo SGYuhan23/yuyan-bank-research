@@ -1,0 +1,190 @@
+Check before you invest - Moneysmart.gov.au (https://moneysmart.gov.au/check-and-report-scams/check-before-you-invest)
+citeturn14view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://moneysmart.gov.au/check-and-report-scams/check-before-you-invest","lineno":401}); Total lines: 547
+L0: cite0†iframe†www.googletagmanager.com cite1†Skip to main content L1: 
+L2: [Button: menu] cite2†Home [Button: search] [Button: close]
+L3:   * cite3†Banking and budgeting L4:     * cite4†Banking L5:       * cite5†Savings accounts L6:       * cite6†Transaction accounts and debit cards L7:       * cite7†Joint accounts L8:       * cite8†Direct debits L9:       * cite9†Bank transaction problems L10:       * cite10†Sending money overseas L11:     * cite11†Budgeting L12:       * cite12†Cost of living help L13:       * cite13†How to do a budget L14:       * cite14†Track your spending L15:       * cite15†Managing on a low income L16:       * cite16†Managing on a casual income L17:       * cite17†Simple money manager L18:       * cite18†Budget planner L19:       * cite19†Avoiding sales pressure L20:       * cite20†Ways to save on food and fuel L21:       * cite21†Ways to save on energy costs L22:     * cite22†Saving L23:       * cite23†Savings goals calculator L24:       * cite24†Compound interest L25:       * cite25†Save for an emergency fund L26:       * cite26†Simple ways to save money L27:       * cite27†Save for a house deposit L28:       * cite28†How to start saving L29:       * cite29†Ways to buy a home sooner L30:       * cite30†Compound interest calculator L31:     * cite31†Work and tax L32:       * cite32†GST calculator L33:       * cite33†Income tax calculator L34:       * cite34†Income tax L35:       * cite35†Lodging a tax return L36:       * cite36†Salary packaging L37:       * cite37†Returning to work after parental leave L38:       * cite38†Losing your job L39:       * cite39†Self-employment L40:       * cite40†Choosing an accountant L41:     * cite41†Family and relationships L42:       * cite42†Relationships and money L43:       * cite43†Marriage and money L44:       * cite44†Having a baby L45:       * cite45†Teaching kids about money L46:       * cite46†Getting a pet L47:       * cite47†Reducing back-to-school costs L48:       * cite48†Getting divorced or separating L49:       * cite49†Divorce and separation financial checklist L50:       * cite50†Dealing with illness L51:       * cite51†Losing your partner L52:       * cite52†Financial abuse L53:       * cite53†How to support older Australians L54:   * cite54†Loans, credit and debt L55:     * cite55†Loans L56:       * cite56†Going guarantor on a loan L57:       * cite57†Car loans L58:       * cite58†Loan rejection L59:       * cite59†Payday loans L60:       * cite60†No Interest Loans L61:       * cite61†Personal loans L62:       * cite62†Personal loan calculator L63:       * cite63†Payday loan calculator L64:     * cite64†Other ways to borrow L65:       * cite65†Buy now pay later services L66:       * cite66†Pay advance services L67:       * cite67†Interest-free deals L68:       * cite68†Consumer leases L69:       * cite69†Rent vs buy calculator L70:     * cite70†Credit cards L71:       * cite71†Choosing a credit card L72:       * cite72†Pay off your credit card L73:       * cite73†Credit card calculator L74:       * cite74†Credit card balance transfers L75:       * cite75†Cancel a credit card L76:     * cite76†Home loans L77:       * cite77†Buying a house L78:       * cite78†Choosing a home loan L79:       * cite79†Using a mortgage broker L80:       * cite80†Fixed vs variable home loan interest rates L81:       * cite81†Mortgage calculator L82:       * cite82†Interest-only home loans L83:       * cite83†Interest-only mortgage calculator L84:       * cite84†Switching home loans L85:       * cite85†Mortgage switching calculator L86:       * cite86†Pay off your mortgage faster L87:       * cite87†Problems paying your mortgage L88:       * cite88†Mortgage offset accounts L89:     * cite89†Managing debt L90:       * cite90†Get debt under control L91:       * cite91†Urgent help with money L92:       * cite92†Financial counselling L93:       * cite93†Financial hardship L94:       * cite94†Problems paying your bills and fines L95:       * cite95†Credit scores and credit reports L96:       * cite96†Credit repair L97:       * cite97†Debt consolidation and refinancing L98:       * cite98†Pros and cons of debt management L99:       * cite99†Free legal advice L100:       * cite100†Dealing with debt collectors L101:       * cite101†Repossessed car or goods L102:       * cite102†Bankruptcy and debt agreements L103:       * cite103†Net worth calculator L104:   * cite104†Investing and planning L105:     * cite105†How to invest L106:       * cite106†Investment diversification L107:       * cite107†Develop an investing plan L108:       * cite108†Choose your investments L109:       * cite109†Track your investments L110:       * cite110†Investment platforms L111:       * cite111†Investing and tax L112:       * cite112†Borrowing to invest L113:       * cite113†Environmental Social Governance (ESG) investing L114:       * cite114†Islamic finance in Australia L115:       * cite115†Micro-investing L116:     * cite116†Financial advice L117:       * cite117†What is financial advice L118:       * cite118†General and personal financial advice L119:       * cite119†Financial advice costs L120:       * cite120†Choosing a financial adviser L121:       * cite121†Working with a financial adviser L122:       * cite122†Problems with a financial adviser L123:       * cite123†Financial advisers register L124:     * cite124†Shares L125:       * cite125†Choosing shares to buy L126:       * cite126†How to buy and sell shares L127:       * cite127†Employee share schemes L128:       * cite128†Shares: What is an IPO L129:       * cite129†Buying shares through crowd-sourced funding L130:       * cite130†What is share market volatility L131:       * cite131†Fractional share trading L132:     * cite132†Managed funds and ETFs L133:       * cite133†What is a managed fund L134:       * cite134†Choosing a managed fund L135:       * cite135†Managed funds fee calculator L136:       * cite136†Exchange traded funds (ETFs) L137:       * cite137†Hedge funds L138:       * cite138†Listed investment companies and trusts L139:     * cite139†Property investment L140:       * cite140†Buying an investment property L141:       * cite141†Property funds L142:       * cite142†SMSFs and property L143:       * cite143†Land banking L144:       * cite144†Timeshares L145:     * cite145†Investments paying interest L146:       * cite146†Bonds L147:       * cite147†Debentures, secured and unsecured notes L148:       * cite148†Hybrid securities and notes L149:       * cite149†Term deposits L150:     * cite150†Investment warnings L151:       * cite151†Lead generation and how it works L152:       * cite152†Investment seminars L153:       * cite153†Don't get burned by investment hype L154:       * cite154†Binary options L155:       * cite155†Company director fraud L156:       * cite156†Insider trading L157:       * cite157†Pump and dump schemes L158:       * cite158†Prediction markets L159:     * cite159†Complex investment products L160:       * cite160†What is private credit? L161:       * cite161†Exchange-traded options L162:       * cite162†Futures contracts L163:       * cite163†Crypto assets L164:       * cite164†Contracts for difference (CFDs) L165:       * cite165†Bills of exchange L166:       * cite166†Forex trading L167:   * cite167†Super and retirement L168:     * cite168†Retirement L169:       * cite169†Case study: Lillian's health scare L170:       * cite170†Case study: Bill's mortgage decision L171:       * cite171†Case study: Helen and Joe retire L172:       * cite172†Retirement for First Nations people L173:       * cite173†Campaign resources L174:       * cite174†Translated resources L175:     * cite175†How super works L176:       * cite176†Superannuation L177:       * cite177†What is Payday Super L178:       * cite178†Choosing a super fund L179:       * cite179†Types of super funds L180:       * cite180†Self-managed super fund (SMSF) L181:       * cite181†Defined benefit super explained L182:       * cite182†Getting your super L183:       * cite183†When you can access your super early L184:       * cite184†Find lost super L185:       * cite185†Consolidating super funds L186:       * cite186†Tax and super L187:       * cite187†Superannuation calculator L188:       * cite188†Who gets your super if you die L189:       * cite189†Claiming a super death benefit L190:       * cite190†Stapled super fund L191:     * cite191†Grow your super L192:       * cite192†Employer contributions calculator L193:       * cite193†How much super should I have L194:       * cite194†Super contributions L195:       * cite195†Downsizer super contributions L196:       * cite196†Super for self-employed people L197:       * cite197†Super investment options L198:       * cite198†Switching super funds L199:       * cite199†Super contributions optimiser L200:       * cite200†How to check your super L201:       * cite201†Tips to keep your retirement savings on track L202:       * cite202†Grow your super over time L203:     * cite203†Plan for your retirement L204:       * cite204†Work out how much you need to retire L205:       * cite205†Super and pension age calculator L206:       * cite206†Make a retirement plan L207:       * cite207†Retirement planner L208:       * cite208†What happens to your super when you retire L209:       * cite209†Managing unexpected retirement L210:       * cite210†Your home in retirement L211:       * cite211†Wills and powers of attorney L212:       * cite212†Super and the Age Pension L213:     * cite213†Retirement income sources L214:       * cite214†Types of retirement income L215:       * cite215†Retirement income calculator L216:       * cite216†Age Pension and government benefits L217:       * cite217†Account-based pensions L218:       * cite218†Account-based pension calculator L219:       * cite219†Super lump sum L220:       * cite220†Transition to retirement L221:       * cite221†Lifetime income streams L222:       * cite222†Annuities L223:       * cite223†Reverse mortgage and home equity release L224:       * cite224†Reverse mortgage calculator L225:     * cite225†Manage your money in retirement L226:       * cite226†Make your money last in retirement L227:       * cite227†Retirement income and tax L228:       * cite228†Manage health costs in retirement L229:       * cite229†Get help in retirement L230:       * cite230†Protect your money in retirement L231:       * cite231†Downsizing in retirement L232:       * cite232†Aged care L233:       * cite233†Paying for your funeral L234:       * cite234†Memory loss, dementia and your money L235:   * cite235†Insurance L236:     * cite236†Insurance L237:     * cite237†How life insurance works L238:       * cite238†Life insurance calculator L239:       * cite239†Income protection insurance L240:       * cite240†Life insurance cover L241:       * cite241†Total and permanent disability (TPD) insurance L242:       * cite242†Insurance through super L243:       * cite243†Life insurance claims comparison tool L244:       * cite244†Trauma insurance L245:       * cite245†Making a life insurance claim L246:     * cite246†Car insurance L247:       * cite247†Choosing car insurance L248:       * cite248†Claiming on your car insurance L249:       * cite249†No claim bonus on car insurance L250:       * cite250†Add-on car insurance L251:       * cite251†How to save money on car insurance L252:     * cite252†Home insurance L253:       * cite253†Choosing home insurance L254:       * cite254†Contents insurance L255:       * cite255†Storm, flood and fire insurance L256:       * cite256†How to make a home insurance claim L257:       * cite257†Home underinsurance L258:       * cite258†How home insurance cash settlements work L259:     * cite259†Add-on insurance L260:       * cite260†Mobile phone, tablet and laptop insurance L261:       * cite261†Consumer credit insurance L262:       * cite262†Pet insurance L263:     * cite263†Other types of insurance L264:       * cite264†Health insurance L265:       * cite265†Funeral insurance L266:       * cite266†Travel insurance L267:     * cite267†Dealing with natural disasters L268:       * cite268†How to prepare for a natural disaster L269:       * cite269†What to do after a natural disaster L270:       * cite270†Recovering from a natural disaster L271:       * cite271†Be aware of disaster chasers L272:   * cite272†Scams and online safety L273:     * cite273†Online safety L274:       * cite274†Protect yourself from scams L275:       * cite275†Online shopping safety L276:       * cite276†Identity theft L277:       * cite277†Using comparison websites L278:       * cite278†How to spot a scam website L279:       * cite279†AI and money decisions L280:       * cite280†What is a finfluencer L281:     * cite281†Financial scams L282:       * cite282†Banking scams L283:       * cite283†Crypto scams L284:       * cite284†Imposter bond investment scams L285:       * cite285†Investment scams L286:       * cite286†Ponzi schemes L287:       * cite287†Superannuation scams L288:       * cite288†An AI investment scam journey L289:     * cite289†Check and report scams L290:       * cite290†Report an investment scam L291:       * cite291†Check before you invest L292:       * cite292†Investor alert list L293:       * cite293†What to do if you've been scammed L294:   * cite294†Community resources L295:     * cite295†Find unclaimed money L296:       * cite296†Claim money from bank accounts and bank dividends L297:       * cite297†Claim money from life insurance policies L298:       * cite298†Claim money from shares and investments L299:       * cite299†Claim money owed to a deregistered company L300:       * cite300†Proof of ownership for unclaimed money L301:       * cite301†Money held by state governments L302:       * cite302†Interest paid on unclaimed money L303:     * cite303†Moneysmart for teachers L304:       * cite304†Lesson plans L305:       * cite305†Teaching consumer and financial literacy L306:     * cite306†Student life and money L307:       * cite307†Studying L308:       * cite308†Moving out of home L309:       * cite309†Rental bonds and leases L310:       * cite310†Starting a job L311:       * cite311†Credit and debt L312:       * cite312†Choosing a mobile phone plan L313:       * cite313†Buying and running a car L314:     * cite314†Publications and resources L315:       * cite315†Publications L316:       * cite316†Money tips in other languages L317:       * cite317†How to complain L318:     * cite318†Supporting First Nations people with money matters L319:       * cite319†Book up L320:       * cite320†Dealing with family pressure about money L321:       * cite321†Door-to-door sales L322:       * cite322†Managing large sums of money L323:       * cite323†Paying for funerals L324:       * cite324†Buying a hamper L325:       * cite325†Superannuation for First Nations people L326:       * cite326†How to prove your identity L327:       * cite327†Bank accounts L328:       * cite328†Cash loans L329:       * cite329†How insurance works L330:       * cite330†How to choose insurance L331:       * cite331†Making an insurance claim L332:       * cite332†First Nations services that can help L333:     * cite333†Your stories L334:       * cite334†"Stay mindful and be resourceful" L335:       * cite335†"It's not too late to have aspirations for retirement" L336:       * cite336†"One of my main goals is to travel Australia" L337:   * cite337†About us L338:   * cite338†Contact us L339:   * cite339†Glossary L340:   * cite340†Media centre L341: 
+L342:   * cite341†Like MoneySmart on Facebook†www.facebook.com L343:   * cite342†Subscribe to MoneySmart on Youtube†www.youtube.com L344:   * cite343†Follow MoneySmart on Instagram†www.instagram.com L345: cite344†Image: Australian Government crest†static.moneysmart.gov.au L346: # Check before you invest
+L347: 
+L348: Last updated: 4 September 2026
+L349: 
+L350: Before you invest your money, take time to check who you’re dealing with and what you’re investing in.
+L351: ## Your quick investment scam checklist
+L352: 
+L353: According to the National Anti-Scam Centre (NASC), Australians reported losing more than $837 million to investment scams in 2025. This checklist can help protect you.
+L354: 
+L355: STOP
+L356: 
+L357: Before you invest, stop and ask yourself:
+L358:   * Am I being pressured to invest quickly?
+L359:   * Does the investment promise high returns with little or no risk?
+L360:   * Am I relying on testimonials, celebrity endorsements, social media posts or online reviews?
+L361:   * Have I taken time to research the investment independently?
+L362: 
+L363: CHECK
+L364: 
+L365: Before you invest, check:
+L366:   * The company is cite345†licensed by ASIC†www.asic.gov.au to advise on or offer the investment.
+L367:   * The company is not fake or impersonating a real company or licensee.
+L368:   * You have independently verified the company’s contact details.
+L369:   * You understand how the investment works – you can explain how the investment makes money and where the returns come from.
+L370:   * You have read the offer documents.
+L371:   * If it might be an cite285†investment scam or a cite278†scam website .
+L372:   * Recent scam warnings from cite346†ASIC’s scams hub†www.asic.gov.au and recent alerts from the MoneySmart cite292†Investor Alert List .
+L373: PROTECT
+L374: 
+L375: Protect yourself by making sure you know:
+L376: 
+L377:   * What to do if cite289†something goes wrong .
+L378:   * How to cite317†make a complaint about the financial product or service.
+L379:   * The warning signs of investment scams and investment scam journeys.
+L380:   * How to cite290†report a scam .
+L381: ## STOP: Watch out for investment scams
+L382: 
+L383: Investment scams are serious crimes and scammers are sophisticated. They use professional-looking websites, social media, advertising and AI technology to make scams appear genuine.
+L384: 
+L385: If an offer sounds too good to be true – like easy money or guaranteed returns – stop and step back.
+L386: 
+L387: Understanding how investment scams work can help you avoid losing money. It’s important to know that anyone can be a victim.
+L388: Watch out for these red flags, if the person or company offering the investment:
+L389: 
+L390:   * does not have an Australian financial services (AFS) license or says they don't need one
+L391:   * constantly contacts you (phone calls, texts or emails) and pressures you to make a quick decision
+L392:   * uses the name of a reputable organisation to gain credibility
+L393:   * has an investment prospectus that isn't cite347†registered with ASIC†www.asic.gov.au L394:   * offers you very high investment returns
+L395: If you spot any of these signs, hang up the phone or delete the email. If you manage to record any of the scammer's details, document these to note when you report the scam.
+L396: 
+L397: Learn more about how cite285†investment scams work.
+L398: Artificial intelligence (AI) is super-charging online scams. In the 2025/26 financial year, ASIC removed more than 19,400 online scams – up 182% on the previous year – including fake websites, social media ads, phishing scams and cryptocurrency investment scams. cite346†Learn more about ASIC's work†www.asic.gov.au .
+L399: 
+L400: Read our guide on cite288†AI-powered investment scams to learn how these scams work – and see how easily you can spot a scam.
+L401: ## CHECK: Is the company/person real and licensed or authorised
+L402: 
+L403: In Australia, companies or people offering investments must have an Australian Financial Services cite348†(AFS) licence or be authorised by someone who does.
+L404: 
+L405: An AFS licence:
+L406: 
+L407:   * controls what kinds of financial products they can sell
+L408:   * gives better protection to investors if things go wrong
+L409: It's important to know that holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice. It doesn't guarantee the investment is safe or that you won’t lose money from dealing with them.
+L410: 
+L411: With a proliferation of cite278†AI-generated scam websites , online reviews, videos, and social media posts, it’s also important to not rely on contact details, links or phone numbers provided in an investment offer, text message, email, social media post or online advertisement.
+L412: Scammers misuse AFS licence details by claiming to hold a licence, using another entity’s licence number, or impersonating a licensed financial services business.
+L413: 
+L414: Before investing, make sure you verify the licence holder’s name and number on cite345†ASIC’s professional registers†www.asic.gov.au , and ensure those details match the business or investment opportunity being promoted. Relying solely on advertisements, websites or online search results can put consumers at risk.
+L415: ### How to check on a company or person
+L416: 
+L417: If they say they are:  | Check this:
+L418: Licensed by ASIC (AFS licence) An authorised representative for a licensee (with an AFS licence) Offering an investment in a registered managed investment scheme  | cite349†ASIC's Professional Registers Search†service.asic.gov.au L419:   * enter the name, Australian Business Number, Australian Company Number or licence number
+L420:   * select Register: Australian financial services licensee or Australian financial services authorised representatives in drop-down menu
+L421:   * if a website URL is listed in the register, check that it matches any website URL you have been using
+L422: cite350†ASIC Connect†connectonline.asic.gov.au L423:   * search within: Banned and Disqualified
+L424:   * see if they have been banned from giving financial advice or managing a company
+L425: cite292†Moneysmart Investor Alert List L426: 
+L427:   * this is a list of suspicious companies, businesses and websites. They may be unlicensed or impersonating a real company or licensee.
+L428: A financial adviser who can advise you on, or sell you, an investment  | cite123†Financial advisers register L429:   * enter name, adviser number, or Australian Business Number
+L430:   * check what they are authorised to advise on
+L431: Registered or Certified by ASIC and direct you to cite351†ASIC Connect†connectonline.asic.gov.au to verify an investment opportunity   | ASIC Connect can be used to confirm company registration. However, registration alone doesn’t mean that a company is licensed or authorised to provide financial services.    To verify an investment opportunity, check cite349†ASIC's Professional Registers Search†service.asic.gov.au to see if the company is licensed or authorised.
+L432: Offering an investment in a registered managed investment scheme   | cite349†ASIC's Professional Registers Search †service.asic.gov.au L433:   * enter the scheme name, Australian Business Number, or Australian Company Number
+L434:   * check the scheme is registered
+L435:   * Note that registration does not mean that ASIC endorses the investment
+L436: Subscribe to ASIC's free cite352†Company Alert service†asic.gov.au for updates on a company. You'll get an email to tell you when they've lodged forms, and which ones. You’ll also be notified of notices if the company is placed in any type of external administration, or if the details of their external administrators cease or change.
+L437: ## CHECK: Do you understand the investment?
+L438: 
+L439: Make sure you understand how the investment works. A good way to test this is to see if you can easily explain the investment to someone else.
+L440: 
+L441: Ensure you know, and are comfortable with, how much risk you are taking on. Generally, the higher the projected return, the higher the risk involved.
+L442: If you can’t clearly explain how the investment works, or if the information doesn’t add up or make sense, you may be at risk of being deceived into investing in a fraudulent or high risk scheme.
+L443: 
+L444: For more tips on how to research an investment, see cite105†how to invest .
+L445: ### Find and read the offer documents
+L446: 
+L447: Before investing, get the official documents, like a product disclosure statement cite353†(PDS) or a cite354†prospectus .
+L448: 
+L449: Get the PDS or prospectus from:
+L450: 
+L451:   * the public website for the company
+L452:   * your financial adviser
+L453:   * searching cite355†ASIC’s Offer Notice Board†regulatoryportal.asic.gov.au L454: 
+L455: Learn more about cite356†how to read a prospectus (under 'Initial public offerings').
+L456: ### Be wary of high-risk or unregulated investments
+L457: 
+L458: Investments not regulated by ASIC include cite163†crypto or digital assets that are not financial products, direct investment in real estate or precious metals, and international investments not offered by licensed Australian providers.
+L459: 
+L460: Many of these investments are higher risk, so you may be more likely to lose your money. And you are not protected if things go wrong.
+L461: 
+L462: To find out more about high-risk investments, see cite150†investment warnings .
+L463: ## PROTECT: Know your rights if things go wrong
+L464: 
+L465: If you have a problem with a financial service or product from a licensed company or individual, you can complain. They are obligated to see if they can resolve the issue.
+L466: 
+L467: For detailed steps, see cite317†how to complain .
+L468: 
+L469: If you invest in something that is unlicensed and unregulated in Australia, it's harder to get help if things go wrong. If you think you have been scammed, act fast and cite293†follow these steps .
+L470: Anyone can be scammed - Australians lose billions each year. But keeping up to date on what to look out for can help reduce your risk. Visit cite357†Scamwatch†www.scamwatch.gov.au for more information.
+L471: 
+L472: 
+L473: 
+L474: Join thousands of Australians and get tools, tips and calculators to help with your money - straight to your inbox each month.
+L475: 
+L476: cite358†Sign up L477: 
+L478: Do you find this page useful?
+L479: 
+L480: [Input] Yes
+L481: 
+L482: [Input] No
+L483: 
+L484: Why?
+L485: 
+L486: [Input] It had the information I was looking for
+L487: 
+L488: [Input] The page makes sense
+L489: [Input] The information is balanced and unbiased
+L490: 
+L491: [Input] The information gave me a sense of what to do next
+L492: 
+L493: [Button: Submit] [Button: Any other feedback]
+L494: 
+L495: Why not?
+L496: 
+L497: [Input] It didn't have the information I was looking for
+L498: 
+L499: [Input] The page was confusing
+L500: 
+L501: [Input] The information overwhelmed me
+L502: 
+L503: [Input] There wasn't enough information for me to take action
+L504: 
+L505: [Button: Submit] [Button: Any other feedback]
+L506: 
+L507: Your feedback
+L508: 
+L509: Your feedback relates to: [Select]
+L510: 
+L511: You would like to: [Select]
+L512: 
+L513: Your issue is: [Select]
+L514: Error loading Partial View script (file: ~/Views/MacroPartials/MoneySmart/Standard text.cshtml)
+L515: 
+L516: Error loading Partial View script (file: ~/Views/MacroPartials/MoneySmart/Standard text.cshtml)
+L517: 
+L518: Error loading Partial View script (file: ~/Views/MacroPartials/MoneySmart/Standard text.cshtml)
+L519: 
+L520: Summary of your feedback: [Input]
+L521: 
+L522: Your comments:
+L523: 
+L524: The page/calculator/app you are referring to (eg. cut/paste URL): [Input]
+L525: 
+L526: [Button: Cancel] [Button: Send feedback]
+L527: ## Up next in Check and report scams
+L528: 
+L529:   * cite290†Report an investment scam Reporting a scam will help to warn others and stop the scam. Report all scams to Scamwatch 3 min read L530:   * cite292†Investor alert list This investor alert list can help you know which companies, businesses and websites (or ‘entities’) are not to be trusted 5 min read L531:   * cite293†What to do if you've been scammed Been scammed, or suspect a scam? Here's what to do now. 5 min read L532: 
+L533:   * cite359†Image†download.asic.gov.au L534: Djooroot Moort by
+L535: Peter Farmer
+L536: 
+L537: Acknowledgement of Country
+L538: 
+L539: ASIC acknowledges the Traditional Owners of the lands and waters on which we live and work. We pay respect to Elders past and present as the custodians of the world's oldest continuing cultures.
+L540: 
+L541:   * Moneysmart
+L542:   * cite337†About us L543:   * cite338†Contact us L544:   * cite339†Glossary L545:   * cite340†Media centre L546:   * cite358†Subscribe 

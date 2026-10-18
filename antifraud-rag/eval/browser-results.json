@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": [
+    "two entries",
+    "actual submit and insufficient evidence response",
+    "actual saved training result render",
+    "fiction and pending review labels",
+    "open source links",
+    "JSON export",
+    "mobile overflow",
+    "cross-origin request rejected",
+    "no page errors"
+  ]
+}

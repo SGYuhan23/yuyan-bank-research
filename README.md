@@ -1,3 +1,16 @@
+# 新增验证模块：银行反诈知识与培训辅助 Agent
+
+本分支在保留产业研究成果的基础上新增两个RAG任务：知识问答与培训材料生成。
+
+- [运行与启动](antifraud-rag/README.md)
+- [官方来源索引](antifraud-rag/docs/SOURCES.md)
+- [实际评测及失败样例](antifraud-rag/docs/EVALUATION.md)
+- [已实现 / 未实现](antifraud-rag/docs/IMPLEMENTATION_STATUS.md)
+
+未合并、未部署；公开指引不等于Westpac内部规程，培训材料待人工审核。
+
+---
+
 # 渝研｜重庆产业客户研究 Agent
 
 面向银行对公客户经理的访前研究：**企业最近发生了什么，这些变化可能对应什么服务方向，哪些有证据、哪些必须见面核实？**

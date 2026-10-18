@@ -1,0 +1,5 @@
+override completed None
+supplier failed UNSUPPORTED_QUOTE:bec-case
+training failed UNSUPPORTED_QUOTE:bec-case
+injection completed None
+calculation completed None

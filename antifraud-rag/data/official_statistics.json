@@ -1,0 +1,25 @@
+[
+  {
+    "unit_id": "national-statistics",
+    "source_id": "scamwatch-stats",
+    "title": "Targeting scams report — 2025 infographic",
+    "url": "https://www.scamwatch.gov.au/research-and-resources/targeting-scams-report",
+    "material_type": "official_statistics",
+    "published_or_updated_at": "2026-03-30",
+    "date_status": "report_publication_date",
+    "retrieved_at": "2026-10-18T11:16:32.767626+00:00",
+    "region": "Australia",
+    "file_sha256": "5125c9e38f2c457a2875f604af39d6b9e24605c5eb8a38562c4c8cce366f8e9e",
+    "hash_scope": "saved_web_tool_section_not_original_html",
+    "acquisition_method": "web_tool_original_url_extraction_after_direct_http_403",
+    "seed_provenance": "independently_discovered_material_pack_missing",
+    "review_status": "codex_author_checked_pending_independent_review",
+    "page_or_section": "2025 Infographic: Losses and top-five tables for 2025/2024",
+    "section": "2025 Infographic: Losses and top-five tables for 2025/2024",
+    "text": "### Targeting scams: report of the National Anti-Scam Centre on scams data and activity 2025 \nThis report provides insight into the scams targeting Australians in 2025 and highlights the impact of combined efforts by government, law enforcement, community sector and industry to combat these financial crimes.\n\n30 March 2026\n\n## Infographic\n\nImage: Losses to various scams 2025 \n###\n\nInfographic text\n\nView the accessible text version of the infographic ### Losses\n\nTotal combined losses reported to Scamwatch, ReportCyber, IDCARE, Australian Financial Crimes Exchange (AFCX) and Australian Securities and Investment Commission (ASIC): $2.18 billion (an increase of 7.8%)\n\n481,523 scam reports (a decrease of 2.3%)\n\n### Combined losses over last 5 years\n\n2021: $1.8 billion\n\n2022: $3.1 billion\n\n2023: $2.7 billion\n\n2024: $2.0 billion\n\n2025: $2.2 billion\n### Top 5 scams by loss 2025 (combined data)\n\n  * Investment: $837.7 million\n  * Payment redirection: $166.8 million\n  * Romance: $139.9 million\n  * Phishing: $97.6 million\n  * Remote access: $69.9 million\n\nThe losses from the top 5 scam types accounted for 60% of total losses in 2025.\n### Top 5 scams by loss 2024 (combined data)\n\n  * Investment: $945 million\n  * Romance: $156.8 million\n  * Payment redirection: $152.6 million\n  * Remote access: $106 million\n  * Phishing: $84.5 million\n\nThe losses from the top 5 scam types accounted for 71% of total losses in 2024.",
+    "search_labels": "全国 举报 统计 损失 数据 Westpac 客户 风险 2025 2024 增长 比例 reports statistics losses",
+    "limitations": "全国多机构合并举报口径，不是Westpac客户样本；不能推算单个客户风险。页面历史总额有四舍五入，不能用它重算精确同比。",
+    "unit_sha256": "5125c9e38f2c457a2875f604af39d6b9e24605c5eb8a38562c4c8cce366f8e9e",
+    "limitations_origin": "project_author_scope_note_not_official_quote"
+  }
+]

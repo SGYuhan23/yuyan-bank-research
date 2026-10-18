@@ -1,0 +1,407 @@
+{
+  "run_id": "bc5ae5b0a30c459b",
+  "query": "投资邀约网页很专业，机构也在ASIC登记了，是否证明这次邀约真实安全？",
+  "task": "knowledge",
+  "retriever": "bm25",
+  "status": "completed",
+  "started_at": "2026-10-18T11:19:58.404668+00:00",
+  "records": [
+    {
+      "sequence": 1,
+      "at": "2026-10-18T11:19:58.416616+00:00",
+      "kind": "task_identified",
+      "task": "knowledge",
+      "query": "投资邀约网页很专业，机构也在ASIC登记了，是否证明这次邀约真实安全？"
+    },
+    {
+      "sequence": 2,
+      "at": "2026-10-18T11:19:58.428416+00:00",
+      "kind": "retrieval_completed",
+      "ranked": [
+        {
+          "unit_id": "investment-check",
+          "score": 10.615749
+        },
+        {
+          "unit_id": "national-statistics",
+          "score": 1.024023
+        }
+      ],
+      "index_sha256": "164f485d0cad396d16ead9c23e5a90830f780649c1f42e56565ae99b8a4d9927",
+      "test_fixture_ids": []
+    },
+    {
+      "sequence": 3,
+      "at": "2026-10-18T11:19:58.432656+00:00",
+      "kind": "model_started",
+      "phase": "evidence_adequacy"
+    },
+    {
+      "sequence": 4,
+      "at": "2026-10-18T11:20:00.847954+00:00",
+      "kind": "model_call",
+      "phase": "evidence_adequacy",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 2912,
+        "completion_tokens": 37,
+        "prompt_tokens": 2875,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        }
+      },
+      "duration_seconds": 2.411,
+      "finish_reason": "stop",
+      "request_hash": "a7262013391a3ab8abde37edd835d66d2635f73aa53527f21b7b7a3c9dc9ace6"
+    },
+    {
+      "sequence": 5,
+      "at": "2026-10-18T11:20:00.852404+00:00",
+      "kind": "adequacy_checked",
+      "sufficient": true,
+      "relevant_ids": [
+        "investment-check"
+      ],
+      "missing": [],
+      "conflicts": [],
+      "calculation": "none"
+    },
+    {
+      "sequence": 6,
+      "at": "2026-10-18T11:20:00.858673+00:00",
+      "kind": "model_started",
+      "phase": "generate"
+    },
+    {
+      "sequence": 7,
+      "at": "2026-10-18T11:20:17.184053+00:00",
+      "kind": "model_call",
+      "phase": "generate",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 2693,
+        "completion_tokens": 716,
+        "prompt_tokens": 1977,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        }
+      },
+      "duration_seconds": 16.321,
+      "finish_reason": "stop",
+      "request_hash": "2d3bcc53f8c6d0135fb2f017f82b1562f5d115a3e7dbe0c5959def8ac5333887"
+    },
+    {
+      "sequence": 8,
+      "at": "2026-10-18T11:20:17.195399+00:00",
+      "kind": "model_started",
+      "phase": "citation_entailment_review"
+    },
+    {
+      "sequence": 9,
+      "at": "2026-10-18T11:20:17.933225+00:00",
+      "kind": "model_call",
+      "phase": "citation_entailment_review",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 3094,
+        "completion_tokens": 8,
+        "prompt_tokens": 3086,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 0.734,
+      "finish_reason": "stop",
+      "request_hash": "6a5d28f9c9ab6c0b0877b80119de98027404dc475128570f68ca4e8bd689857c"
+    },
+    {
+      "sequence": 10,
+      "at": "2026-10-18T11:20:17.938358+00:00",
+      "kind": "model_output_review",
+      "verdict": {
+        "pass": true,
+        "issues": []
+      },
+      "reviewer": "same_model_not_independent_human"
+    },
+    {
+      "sequence": 11,
+      "at": "2026-10-18T11:20:17.942475+00:00",
+      "kind": "completed",
+      "citation_check": "exact_quote_match",
+      "human_review": "pending"
+    },
+    {
+      "sequence": 12,
+      "at": "2026-10-18T11:20:17.951526+00:00",
+      "kind": "model_started",
+      "phase": "evaluation_only_rubric_judge"
+    },
+    {
+      "sequence": 13,
+      "at": "2026-10-18T11:20:24.039346+00:00",
+      "kind": "model_call",
+      "phase": "evaluation_only_rubric_judge",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 3459,
+        "completion_tokens": 245,
+        "prompt_tokens": 3214,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 6.083,
+      "finish_reason": "stop",
+      "request_hash": "24846585bae4cad77785023687d3d7769ddaef8a1eb132fac29c54e6bcae716b"
+    }
+  ],
+  "result": {
+    "answer": {
+      "steps": [
+        {
+          "text": "核实该公司是否持有有效的澳大利亚金融服务（AFS）牌照，且其牌照范围涵盖所推广的投资产品。",
+          "citations": [
+            {
+              "unit_id": "investment-check",
+              "quote": "In Australia, companies or people offering investments must have an Australian Financial Services (AFS) licence or be authorised by someone who does."
+            }
+          ]
+        },
+        {
+          "text": "在ASIC Professional Registers Search中，输入该公司名称、ABN、ACN或牌照号，核验其注册信息是否与邀约中声称的一致，包括官网URL是否匹配。",
+          "citations": [
+            {
+              "unit_id": "investment-check",
+              "quote": "Before investing, make sure you verify the licence holder’s name and number on ASIC’s professional registers , and ensure those details match the business or investment opportunity being promoted."
+            }
+          ]
+        },
+        {
+          "text": "检查ASIC Connect中该公司是否被列为‘Banned and Disqualified’，并查阅Moneysmart Investor Alert List确认其是否在可疑名单中。",
+          "citations": [
+            {
+              "unit_id": "investment-check",
+              "quote": "ASIC Connect   * search within: Banned and Disqualified\n  * see if they have been banned from giving financial advice or managing a company\nMoneysmart Investor Alert List \n  * this is a list of suspicious companies, businesses and websites. They may be unlicensed or impersonating a real company or licensee."
+            }
+          ]
+        }
+      ],
+      "risks": [
+        {
+          "text": "即使机构在ASIC登记，也不代表ASIC认可该投资、担保其安全性或确保投资者不会亏损。",
+          "citations": [
+            {
+              "unit_id": "investment-check",
+              "quote": "It's important to know that holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice. It doesn't guarantee the investment is safe or that you won’t lose money from dealing with them."
+            }
+          ]
+        },
+        {
+          "text": "诈骗者常滥用AFS牌照信息，例如盗用他人牌照号、冒充持牌机构，或使用AI生成高度专业但虚假的网站。",
+          "citations": [
+            {
+              "unit_id": "investment-check",
+              "quote": "Scammers misuse AFS licence details by claiming to hold a licence, using another entity’s licence number, or impersonating a licensed financial services business."
+            }
+          ]
+        }
+      ],
+      "boundaries": [
+        "仅适用于澳大利亚境内投资核验场景",
+        "ASIC注册（如公司注册）不等于获得AFS牌照或获准提供金融服务",
+        "AFS牌照存在不等于投资安全、不等于ASIC背书、不等于网站真实"
+      ],
+      "questions": [
+        "邀约中声称的AFS牌照号是否已在ASIC Professional Registers Search中查得且状态为‘Current’？",
+        "该邀约使用的网站URL是否与ASIC注册信息中列出的官方网址完全一致？",
+        "该公司是否出现在Moneysmart Investor Alert List或ASIC Banned and Disqualified名单中？"
+      ],
+      "scenario": null,
+      "scenario_label": "not_applicable",
+      "review_status": "pending_human_review"
+    },
+    "assessment": {
+      "sufficient": true,
+      "relevant_ids": [
+        "investment-check"
+      ],
+      "missing": [],
+      "conflicts": [],
+      "calculation": "none"
+    },
+    "calculations": [],
+    "sources": [
+      {
+        "unit_id": "investment-check",
+        "source_id": "asic-invest",
+        "title": "Check before you invest",
+        "url": "https://moneysmart.gov.au/check-and-report-scams/check-before-you-invest",
+        "material_type": "official_guidance",
+        "published_or_updated_at": null,
+        "date_status": "not_shown_in_read_section",
+        "retrieved_at": "2026-10-18T11:16:32.767626+00:00",
+        "region": "Australia",
+        "file_sha256": "aa5cf32f7264ae72183946613c4bff566cd704e1619a6d803720c3e3f1a13107",
+        "hash_scope": "saved_web_tool_section_not_original_html",
+        "acquisition_method": "web_tool_original_url_extraction_after_direct_http_403",
+        "seed_provenance": "independently_discovered_material_pack_missing",
+        "review_status": "codex_author_checked_pending_independent_review",
+        "page_or_section": "CHECK: Is the company/person real and licensed or authorised — full section and table",
+        "section": "CHECK: Is the company/person real and licensed or authorised — full section and table",
+        "text": "## CHECK: Is the company/person real and licensed or authorised\n\nIn Australia, companies or people offering investments must have an Australian Financial Services (AFS) licence or be authorised by someone who does.\n\nAn AFS licence:\n\n  * controls what kinds of financial products they can sell\n  * gives better protection to investors if things go wrong\nIt's important to know that holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice. It doesn't guarantee the investment is safe or that you won’t lose money from dealing with them.\n\nWith a proliferation of AI-generated scam websites , online reviews, videos, and social media posts, it’s also important to not rely on contact details, links or phone numbers provided in an investment offer, text message, email, social media post or online advertisement.\nScammers misuse AFS licence details by claiming to hold a licence, using another entity’s licence number, or impersonating a licensed financial services business.\n\nBefore investing, make sure you verify the licence holder’s name and number on ASIC’s professional registers , and ensure those details match the business or investment opportunity being promoted. Relying solely on advertisements, websites or online search results can put consumers at risk.\n### How to check on a company or person\n\nIf they say they are:  | Check this:\nLicensed by ASIC (AFS licence) An authorised representative for a licensee (with an AFS licence) Offering an investment in a registered managed investment scheme  | ASIC's Professional Registers Search   * enter the name, Australian Business Number, Australian Company Number or licence number\n  * select Register: Australian financial services licensee or Australian financial services authorised representatives in drop-down menu\n  * if a website URL is listed in the register, check that it matches any website URL you have been using\nASIC Connect   * search within: Banned and Disqualified\n  * see if they have been banned from giving financial advice or managing a company\nMoneysmart Investor Alert List \n  * this is a list of suspicious companies, businesses and websites. They may be unlicensed or impersonating a real company or licensee.\nA financial adviser who can advise you on, or sell you, an investment  | Financial advisers register   * enter name, adviser number, or Australian Business Number\n  * check what they are authorised to advise on\nRegistered or Certified by ASIC and direct you to ASIC Connect to verify an investment opportunity   | ASIC Connect can be used to confirm company registration. However, registration alone doesn’t mean that a company is licensed or authorised to provide financial services.    To verify an investment opportunity, check ASIC's Professional Registers Search to see if the company is licensed or authorised.\nOffering an investment in a registered managed investment scheme   | ASIC's Professional Registers Search    * enter the scheme name, Australian Business Number, or Australian Company Number\n  * check the scheme is registered\n  * Note that registration does not mean that ASIC endorses the investment\nSubscribe to ASIC's free Company Alert service for updates on a company. You'll get an email to tell you when they've lodged forms, and which ones. You’ll also be notified of notices if the company is placed in any type of external administration, or if the details of their external administrators cease or change.",
+        "search_labels": "投资 邀约 专业网页 机构登记 注册 公司 牌照 ASIC 真实 安全 website registration investment licence",
+        "limitations": "适用澳大利亚投资核验；注册不等于获许可，获许可不等于投资安全或ASIC认可。",
+        "unit_sha256": "aa5cf32f7264ae72183946613c4bff566cd704e1619a6d803720c3e3f1a13107"
+      },
+      {
+        "unit_id": "national-statistics",
+        "source_id": "scamwatch-stats",
+        "title": "Targeting scams report — 2025 infographic",
+        "url": "https://www.scamwatch.gov.au/research-and-resources/targeting-scams-report",
+        "material_type": "official_statistics",
+        "published_or_updated_at": "2026-03-30",
+        "date_status": "report_publication_date",
+        "retrieved_at": "2026-10-18T11:16:32.767626+00:00",
+        "region": "Australia",
+        "file_sha256": "5125c9e38f2c457a2875f604af39d6b9e24605c5eb8a38562c4c8cce366f8e9e",
+        "hash_scope": "saved_web_tool_section_not_original_html",
+        "acquisition_method": "web_tool_original_url_extraction_after_direct_http_403",
+        "seed_provenance": "independently_discovered_material_pack_missing",
+        "review_status": "codex_author_checked_pending_independent_review",
+        "page_or_section": "2025 Infographic: Losses and top-five tables for 2025/2024",
+        "section": "2025 Infographic: Losses and top-five tables for 2025/2024",
+        "text": "### Targeting scams: report of the National Anti-Scam Centre on scams data and activity 2025 \nThis report provides insight into the scams targeting Australians in 2025 and highlights the impact of combined efforts by government, law enforcement, community sector and industry to combat these financial crimes.\n\n30 March 2026\n\n## Infographic\n\nImage: Losses to various scams 2025 \n###\n\nInfographic text\n\nView the accessible text version of the infographic ### Losses\n\nTotal combined losses reported to Scamwatch, ReportCyber, IDCARE, Australian Financial Crimes Exchange (AFCX) and Australian Securities and Investment Commission (ASIC): $2.18 billion (an increase of 7.8%)\n\n481,523 scam reports (a decrease of 2.3%)\n\n### Combined losses over last 5 years\n\n2021: $1.8 billion\n\n2022: $3.1 billion\n\n2023: $2.7 billion\n\n2024: $2.0 billion\n\n2025: $2.2 billion\n### Top 5 scams by loss 2025 (combined data)\n\n  * Investment: $837.7 million\n  * Payment redirection: $166.8 million\n  * Romance: $139.9 million\n  * Phishing: $97.6 million\n  * Remote access: $69.9 million\n\nThe losses from the top 5 scam types accounted for 60% of total losses in 2025.\n### Top 5 scams by loss 2024 (combined data)\n\n  * Investment: $945 million\n  * Romance: $156.8 million\n  * Payment redirection: $152.6 million\n  * Remote access: $106 million\n  * Phishing: $84.5 million\n\nThe losses from the top 5 scam types accounted for 71% of total losses in 2024.",
+        "search_labels": "全国 举报 统计 损失 数据 Westpac 客户 风险 2025 2024 增长 比例 reports statistics losses",
+        "limitations": "全国多机构合并举报口径，不是Westpac客户样本；不能推算单个客户风险。页面历史总额有四舍五入，不能用它重算精确同比。",
+        "unit_sha256": "5125c9e38f2c457a2875f604af39d6b9e24605c5eb8a38562c4c8cce366f8e9e"
+      }
+    ],
+    "notice": "澳大利亚公开资料辅助；非Westpac内部规程；不执行交易判断或账户操作；生成内容待人工审核。"
+  },
+  "fixtures": false,
+  "code_sha256": "a75bb35417b0af5ddb86648d4f03c0072f484a8368f9d6a106fb4f82eaf42c7b",
+  "retrieved": [
+    {
+      "unit_id": "investment-check",
+      "source_id": "asic-invest",
+      "title": "Check before you invest",
+      "url": "https://moneysmart.gov.au/check-and-report-scams/check-before-you-invest",
+      "material_type": "official_guidance",
+      "published_or_updated_at": null,
+      "date_status": "not_shown_in_read_section",
+      "retrieved_at": "2026-10-18T11:16:32.767626+00:00",
+      "region": "Australia",
+      "file_sha256": "aa5cf32f7264ae72183946613c4bff566cd704e1619a6d803720c3e3f1a13107",
+      "hash_scope": "saved_web_tool_section_not_original_html",
+      "acquisition_method": "web_tool_original_url_extraction_after_direct_http_403",
+      "seed_provenance": "independently_discovered_material_pack_missing",
+      "review_status": "codex_author_checked_pending_independent_review",
+      "page_or_section": "CHECK: Is the company/person real and licensed or authorised — full section and table",
+      "section": "CHECK: Is the company/person real and licensed or authorised — full section and table",
+      "text": "## CHECK: Is the company/person real and licensed or authorised\n\nIn Australia, companies or people offering investments must have an Australian Financial Services (AFS) licence or be authorised by someone who does.\n\nAn AFS licence:\n\n  * controls what kinds of financial products they can sell\n  * gives better protection to investors if things go wrong\nIt's important to know that holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice. It doesn't guarantee the investment is safe or that you won’t lose money from dealing with them.\n\nWith a proliferation of AI-generated scam websites , online reviews, videos, and social media posts, it’s also important to not rely on contact details, links or phone numbers provided in an investment offer, text message, email, social media post or online advertisement.\nScammers misuse AFS licence details by claiming to hold a licence, using another entity’s licence number, or impersonating a licensed financial services business.\n\nBefore investing, make sure you verify the licence holder’s name and number on ASIC’s professional registers , and ensure those details match the business or investment opportunity being promoted. Relying solely on advertisements, websites or online search results can put consumers at risk.\n### How to check on a company or person\n\nIf they say they are:  | Check this:\nLicensed by ASIC (AFS licence) An authorised representative for a licensee (with an AFS licence) Offering an investment in a registered managed investment scheme  | ASIC's Professional Registers Search   * enter the name, Australian Business Number, Australian Company Number or licence number\n  * select Register: Australian financial services licensee or Australian financial services authorised representatives in drop-down menu\n  * if a website URL is listed in the register, check that it matches any website URL you have been using\nASIC Connect   * search within: Banned and Disqualified\n  * see if they have been banned from giving financial advice or managing a company\nMoneysmart Investor Alert List \n  * this is a list of suspicious companies, businesses and websites. They may be unlicensed or impersonating a real company or licensee.\nA financial adviser who can advise you on, or sell you, an investment  | Financial advisers register   * enter name, adviser number, or Australian Business Number\n  * check what they are authorised to advise on\nRegistered or Certified by ASIC and direct you to ASIC Connect to verify an investment opportunity   | ASIC Connect can be used to confirm company registration. However, registration alone doesn’t mean that a company is licensed or authorised to provide financial services.    To verify an investment opportunity, check ASIC's Professional Registers Search to see if the company is licensed or authorised.\nOffering an investment in a registered managed investment scheme   | ASIC's Professional Registers Search    * enter the scheme name, Australian Business Number, or Australian Company Number\n  * check the scheme is registered\n  * Note that registration does not mean that ASIC endorses the investment\nSubscribe to ASIC's free Company Alert service for updates on a company. You'll get an email to tell you when they've lodged forms, and which ones. You’ll also be notified of notices if the company is placed in any type of external administration, or if the details of their external administrators cease or change.",
+      "search_labels": "投资 邀约 专业网页 机构登记 注册 公司 牌照 ASIC 真实 安全 website registration investment licence",
+      "limitations": "适用澳大利亚投资核验；注册不等于获许可，获许可不等于投资安全或ASIC认可。",
+      "unit_sha256": "aa5cf32f7264ae72183946613c4bff566cd704e1619a6d803720c3e3f1a13107"
+    },
+    {
+      "unit_id": "national-statistics",
+      "source_id": "scamwatch-stats",
+      "title": "Targeting scams report — 2025 infographic",
+      "url": "https://www.scamwatch.gov.au/research-and-resources/targeting-scams-report",
+      "material_type": "official_statistics",
+      "published_or_updated_at": "2026-03-30",
+      "date_status": "report_publication_date",
+      "retrieved_at": "2026-10-18T11:16:32.767626+00:00",
+      "region": "Australia",
+      "file_sha256": "5125c9e38f2c457a2875f604af39d6b9e24605c5eb8a38562c4c8cce366f8e9e",
+      "hash_scope": "saved_web_tool_section_not_original_html",
+      "acquisition_method": "web_tool_original_url_extraction_after_direct_http_403",
+      "seed_provenance": "independently_discovered_material_pack_missing",
+      "review_status": "codex_author_checked_pending_independent_review",
+      "page_or_section": "2025 Infographic: Losses and top-five tables for 2025/2024",
+      "section": "2025 Infographic: Losses and top-five tables for 2025/2024",
+      "text": "### Targeting scams: report of the National Anti-Scam Centre on scams data and activity 2025 \nThis report provides insight into the scams targeting Australians in 2025 and highlights the impact of combined efforts by government, law enforcement, community sector and industry to combat these financial crimes.\n\n30 March 2026\n\n## Infographic\n\nImage: Losses to various scams 2025 \n###\n\nInfographic text\n\nView the accessible text version of the infographic ### Losses\n\nTotal combined losses reported to Scamwatch, ReportCyber, IDCARE, Australian Financial Crimes Exchange (AFCX) and Australian Securities and Investment Commission (ASIC): $2.18 billion (an increase of 7.8%)\n\n481,523 scam reports (a decrease of 2.3%)\n\n### Combined losses over last 5 years\n\n2021: $1.8 billion\n\n2022: $3.1 billion\n\n2023: $2.7 billion\n\n2024: $2.0 billion\n\n2025: $2.2 billion\n### Top 5 scams by loss 2025 (combined data)\n\n  * Investment: $837.7 million\n  * Payment redirection: $166.8 million\n  * Romance: $139.9 million\n  * Phishing: $97.6 million\n  * Remote access: $69.9 million\n\nThe losses from the top 5 scam types accounted for 60% of total losses in 2025.\n### Top 5 scams by loss 2024 (combined data)\n\n  * Investment: $945 million\n  * Romance: $156.8 million\n  * Payment redirection: $152.6 million\n  * Remote access: $106 million\n  * Phishing: $84.5 million\n\nThe losses from the top 5 scam types accounted for 71% of total losses in 2024.",
+      "search_labels": "全国 举报 统计 损失 数据 Westpac 客户 风险 2025 2024 增长 比例 reports statistics losses",
+      "limitations": "全国多机构合并举报口径，不是Westpac客户样本；不能推算单个客户风险。页面历史总额有四舍五入，不能用它重算精确同比。",
+      "unit_sha256": "5125c9e38f2c457a2875f604af39d6b9e24605c5eb8a38562c4c8cce366f8e9e"
+    }
+  ],
+  "assessment": {
+    "sufficient": true,
+    "relevant_ids": [
+      "investment-check"
+    ],
+    "missing": [],
+    "conflicts": [],
+    "calculation": "none"
+  },
+  "draft": {
+    "steps": [
+      {
+        "text": "核实该公司是否持有有效的澳大利亚金融服务（AFS）牌照，且其牌照范围涵盖所推广的投资产品。",
+        "citations": [
+          {
+            "unit_id": "investment-check",
+            "quote": "In Australia, companies or people offering investments must have an Australian Financial Services (AFS) licence or be authorised by someone who does."
+          }
+        ]
+      },
+      {
+        "text": "在ASIC Professional Registers Search中，输入该公司名称、ABN、ACN或牌照号，核验其注册信息是否与邀约中声称的一致，包括官网URL是否匹配。",
+        "citations": [
+          {
+            "unit_id": "investment-check",
+            "quote": "Before investing, make sure you verify the licence holder’s name and number on ASIC’s professional registers , and ensure those details match the business or investment opportunity being promoted."
+          }
+        ]
+      },
+      {
+        "text": "检查ASIC Connect中该公司是否被列为‘Banned and Disqualified’，并查阅Moneysmart Investor Alert List确认其是否在可疑名单中。",
+        "citations": [
+          {
+            "unit_id": "investment-check",
+            "quote": "ASIC Connect   * search within: Banned and Disqualified\n  * see if they have been banned from giving financial advice or managing a company\nMoneysmart Investor Alert List \n  * this is a list of suspicious companies, businesses and websites. They may be unlicensed or impersonating a real company or licensee."
+          }
+        ]
+      }
+    ],
+    "risks": [
+      {
+        "text": "即使机构在ASIC登记，也不代表ASIC认可该投资、担保其安全性或确保投资者不会亏损。",
+        "citations": [
+          {
+            "unit_id": "investment-check",
+            "quote": "It's important to know that holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice. It doesn't guarantee the investment is safe or that you won’t lose money from dealing with them."
+          }
+        ]
+      },
+      {
+        "text": "诈骗者常滥用AFS牌照信息，例如盗用他人牌照号、冒充持牌机构，或使用AI生成高度专业但虚假的网站。",
+        "citations": [
+          {
+            "unit_id": "investment-check",
+            "quote": "Scammers misuse AFS licence details by claiming to hold a licence, using another entity’s licence number, or impersonating a licensed financial services business."
+          }
+        ]
+      }
+    ],
+    "boundaries": [
+      "仅适用于澳大利亚境内投资核验场景",
+      "ASIC注册（如公司注册）不等于获得AFS牌照或获准提供金融服务",
+      "AFS牌照存在不等于投资安全、不等于ASIC背书、不等于网站真实"
+    ],
+    "questions": [
+      "邀约中声称的AFS牌照号是否已在ASIC Professional Registers Search中查得且状态为‘Current’？",
+      "该邀约使用的网站URL是否与ASIC注册信息中列出的官方网址完全一致？",
+      "该公司是否出现在Moneysmart Investor Alert List或ASIC Banned and Disqualified名单中？"
+    ],
+    "scenario": null,
+    "scenario_label": "not_applicable",
+    "review_status": "pending_human_review"
+  }
+}

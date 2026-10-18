@@ -1,0 +1,15 @@
+{
+  "source_id": "training-6c60f64f712d440e",
+  "title": "本项目编写培训场景",
+  "url": null,
+  "published_or_updated_at": "2026-10-18T11:19:51.501094+00:00",
+  "retrieved_at": "2026-10-18T11:19:51.501104+00:00",
+  "region": "Australia",
+  "material_type": "project_authored_training",
+  "page_or_section": "scenario",
+  "file_sha256": "4e44f9204b093bd2ffdd80deaa5fbe37e20e445ed3dfca98d8207ed07e432b40",
+  "hash_scope": "scenario_text",
+  "review_status": "pending_human_review",
+  "text": "客服接到企业客户来电：'我们刚收到供应商Zhang-Fei Industries邮件，要求将下一笔$15,000货款付至新账户，说他们银行系统升级了。我已在ERP里改了，现在要转账，能帮我快点处理吗？'",
+  "run_id": "6c60f64f712d440e"
+}

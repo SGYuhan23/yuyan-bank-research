@@ -1,0 +1,11 @@
+legitimate completed None
+training completed None
+supplier completed None
+population completed None
+receipt completed None
+override completed None
+registration completed None
+missing completed None
+conflict completed None
+injection completed None
+calculation failed UNSUPPORTED_QUOTE:national-statistics

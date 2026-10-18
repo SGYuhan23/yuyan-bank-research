@@ -1,0 +1,49 @@
+{
+  "method": "11 author-designed cases; production BM25 k=3; same-provider model judge, not human blind review; all fixtures isolated from production index",
+  "results": [
+    {
+      "case_id": "supplier",
+      "run_id": "750956a28bbe43af",
+      "status": "failed",
+      "error": "CONDITIONS_NOT_PRESERVED:['没有具体交易证据，不能确定性断言骗子控制线路或已经构成诈骗。']",
+      "task": "knowledge",
+      "checks": null
+    },
+    {
+      "case_id": "training",
+      "run_id": "a59310741f8c430d",
+      "status": "completed",
+      "error": null,
+      "task": "training",
+      "checks": {
+        "supported": true,
+        "required_checks": [
+          {
+            "requirement": "情境标为项目编写，不是真实客户",
+            "passed": true,
+            "evidence": "\"scenario_label\": \"project_authored_training\""
+          },
+          {
+            "requirement": "风险线索、建议追问、参考处理思路和来源齐全",
+            "passed": true,
+            "evidence": "包含risks（2条）、questions（4个）、steps（4步）、boundaries（4条）及明确unit_id引用（bec-guidance, bec-case）"
+          },
+          {
+            "requirement": "待人工审核",
+            "passed": true,
+            "evidence": "\"review_status\": \"pending_human_review\" 和 notice中'生成内容待人工审核'"
+          },
+          {
+            "requirement": "不冒称内部操作规程",
+            "passed": true,
+            "evidence": "boundaries中明确声明'本材料基于澳大利亚公开反诈指引，不构成Westpac内部操作规程'；sources中limitations注明'公开一般安全建议，非Westpac内部操作规程'"
+          }
+        ],
+        "unsupported_claims": [],
+        "omissions": [],
+        "training_distinction": true,
+        "insufficiency_or_conflict_handled": true
+      }
+    }
+  ]
+}

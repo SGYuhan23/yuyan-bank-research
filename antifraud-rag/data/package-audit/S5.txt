@@ -1,0 +1,128 @@
+Security
+Types of Scams
+Payment Redirection Scams
+Payment Redirection Scams
+Report a scam
+Report a scam
+Latest Scams
+Latest Scams
+What is a payment redirection scam?
+Scammers send emails from a compromised email account that ask the recipient to send money to new or updated payee details of a fraudulent bank account they control.
+You may think the sender is a:
+Supplier
+Colleague (including an executive manager or someone from your Human Resources department)
+Real estate agent or conveyancer
+However, their actual motivations are to steal your money via a fraudulent:
+Urgent payment request
+Invoice
+Deposit
+HR department request to redirect your salary
+Payment redirection scams are also commonly known as business email compromise or BEC scams. Despite what the name suggests, anyone can become the target, not just businesses. It’s important to know the warning signs to help protect yourself or your business.
+Signs this may be a scam
+They request payment to a new account number.
+Even if such requests came from someone associated with you, do not make any changes to account details until you've verbally verified the request using a phone number you sourced yourself.
+A CEO, executive or senior manager requests payment to a specific account.
+Pause and verify the request verbally, regardless of who the sender is or if the request is urgent.
+A supplier or employee claim they haven’t received payment.
+Do not make any more payments until you investigate the payment history and emails, to check if there were any requests made to amend account details.
+You’re paying them for the first time.
+When paying someone for the first time, such as a deposit to a real estate agent’s trust account for a property purchase, validate the request and payee details before sending money. You can do this verbally or request to pay using
+PayID®
+.
+Examples of scams*
+Real estate agent account change example
+Employee salary account change example
+Supplier account change example
+Executive impersonation example
+Real estate agent account change example
+John was excited after signing a contract to purchase his first home. He’d been in contact with the real estate agent via both the phone and email since his first inspection through to organising his contracts. Now he was nearing the end of the deal, and most of their communications were via email.
+Per his contract, John's deposit was due within the next 48hrs. He received an email from the agent containing details of the account to pay to. He made the payment without doing any additional checks.
+Later that day, he received a call from the agent congratulating him on the purchase and talking him through his email about the next steps. John confirmed he had already made the payment.
+The next day the real estate agent called to advise that he had not yet received the deposit. John forwarded the email he had received, however the agent advised that this had not been sent from his office and that the bank details were incorrect.
+John contacted the bank immediately to stop the transaction, however it had already left the bank. Although the email appeared to have come from the real estate agent’s email account, it had been compromised. The scammers had manipulated the email details, replacing the agent’s bank details with their own.
+Attempts to recover the funds from the recipient bank were unsuccessful as the scammers had already withdrawn all funds from the account.
+Employee salary account change example
+Priya in human resources received an email from Simon, saying he was having technical difficulties with the HR system and could she change his bank account details.
+After the next pay day, Simon called HR and complained about not being paid. HR advised Simon his pay had gone to his new account, per his recent email request. Simon advised he had not changed accounts and had not sent an email to do so.
+Further investigations determined HR had received an email from an email address that appeared the same as Simon's and they had processed the change without verbally confirming the request.
+Supplier account change example
+Steve noticed his most recent invoice from a regular wholesaler contained a note to pay to their new BSB and account number.
+He did not question this as the invoice looked identical to all the others he had received. There was really nothing that made Steve question the request - it had come from the same email address and all the other invoice details (invoice number, amount etc) were all as expected.
+When Steve received the next month’s invoice, he noticed it listed the last month’s balance as outstanding. Steve contacted his wholesaler and advised them he had paid it to the new account, as indicated on last month’s invoice.
+After an investigation at the wholesalers, they found out their email account had been compromised a few months earlier and other customers had received similar emails.
+Steve ended up out of pocket close to $45,000 as the original invoice still had to be paid.
+Executive impersonation example
+Penny had been on the phone to her boss Tom, closing out final details before he boarded the plane for his family holiday. He had told Penny he would be switching off his work phone but would be available for her to contact him on his personal mobile, in an emergency.
+Not long after, Penny received an email from him, advising he needed her to make an urgent payment. Penny didn’t recognise the account to be paid, and thought it was strange to receive this email from Tom, as they had finished their call just as the plane was about to leave.
+Penny was hesitant to make the payment without speaking to Tom first, as they had a process in place to confirm any new details, after hearing about other business scams at a recent scam seminar their bank had put on.
+She left a message on his personal phone to call her as soon as he got off the flight. Tom called back after landing and confirmed she did the right thing in waiting and checking, as he had not sent this request. By implementing scam education and empowering his employees to question email payment requests, Penny saved the business $83,000.
+Tips to minimise the risk of being scammed
+Always verbally confirm any requests for urgent or redirected payments. Always use a phone number you have on file, or a publicly sourced number. Never use contact details provided in the email.
+Request to pay using
+PayID
+if the payee has one. PayID displays the registered payee name onscreen, so if it's not your intended recipient you will know something is possibly unusual.
+Register your business for PayID
+by using your ABN and request this is how your account is credited.
+Use multifactor authentication and dual payment approvals where available.
+If you have a business, train your employees regularly on how to spot payment redirection scams. Empower them to question any payment related requests and verbally verify account details are correct. Update your processes to include these steps.
+What you can do if you
+come across a scam
+Let us know
+Please report scams or unusual activity immediately to Westpac at
+132 032
+or
++612 9155 7700
+(if calling from overseas).
+Forward unusual emails to
+hoax@westpac.com.au
+or SMS/text messages to
+0497 132 032
+then delete the email or message.
+You can also report all unusual activity to the Australian Cyber Security Centre at
+cyber.gov.au/report
+.
+Get support and stay in the know
+IDCARE provides free, confidential support and guidance to those impacted by fraud, scams, identity theft or compromise. Call them toll-free on
+1800 595 160
+or visit
+idcare.org
+.
+Keep up to date on scams by subscribing to the government's scam email alerts from
+scamwatch.gov.au/subscribe
+.
+Check out our latest scams, for copies of recently reported scams at
+westpac.com.au/scams
+.
+ScamSpot: a series of 2-minute bites to help spot the latest scams
+PayID quick set up guide
+In the Westpac App
+Make sure you have the
+latest version of the Westpac App
+Search for
+PayID
+, tap on it, then follow the prompts.
+In Online Banking
+Select
+Service
+>
+Services
+>
+PayID/Pay to Mobile
+Select
+Register now
+and follow the prompts.
+Set up PayID
+Set up PayID
+Latest scams
+See the latest Westpac scam examples to help you stay protected, plus learn how to spot common scams and what to do.
+Read more
+Report a scam
+If you receive any unusual calls, emails or SMS, or notice unusual activity on your account, it’s important that you let us know.
+Find out more
+Security Wellbeing Check
+Improve the security for your Online Banking via the App. We’ll let you know what you can do to protect yourself and your accounts.
+Start now
+Things you should know
+* Examples are based on one or more real scam reports received by Westpac. For privacy purposes real names have not been used.
+PayID® is a registered trademark of NPP Australia Limited and any use of its marks by Westpac is under license.
+This information is general in nature and has been prepared without taking your personal objectives, circumstances and needs into account. You should consider the appropriateness of the information to your own circumstances and, if necessary, seek appropriate professional advice.

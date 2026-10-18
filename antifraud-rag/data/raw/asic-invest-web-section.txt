@@ -1,0 +1,31 @@
+## CHECK: Is the company/person real and licensed or authorised
+
+In Australia, companies or people offering investments must have an Australian Financial Services (AFS) licence or be authorised by someone who does.
+
+An AFS licence:
+
+  * controls what kinds of financial products they can sell
+  * gives better protection to investors if things go wrong
+It's important to know that holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice. It doesn't guarantee the investment is safe or that you won’t lose money from dealing with them.
+
+With a proliferation of AI-generated scam websites , online reviews, videos, and social media posts, it’s also important to not rely on contact details, links or phone numbers provided in an investment offer, text message, email, social media post or online advertisement.
+Scammers misuse AFS licence details by claiming to hold a licence, using another entity’s licence number, or impersonating a licensed financial services business.
+
+Before investing, make sure you verify the licence holder’s name and number on ASIC’s professional registers , and ensure those details match the business or investment opportunity being promoted. Relying solely on advertisements, websites or online search results can put consumers at risk.
+### How to check on a company or person
+
+If they say they are:  | Check this:
+Licensed by ASIC (AFS licence) An authorised representative for a licensee (with an AFS licence) Offering an investment in a registered managed investment scheme  | ASIC's Professional Registers Search   * enter the name, Australian Business Number, Australian Company Number or licence number
+  * select Register: Australian financial services licensee or Australian financial services authorised representatives in drop-down menu
+  * if a website URL is listed in the register, check that it matches any website URL you have been using
+ASIC Connect   * search within: Banned and Disqualified
+  * see if they have been banned from giving financial advice or managing a company
+Moneysmart Investor Alert List 
+  * this is a list of suspicious companies, businesses and websites. They may be unlicensed or impersonating a real company or licensee.
+A financial adviser who can advise you on, or sell you, an investment  | Financial advisers register   * enter name, adviser number, or Australian Business Number
+  * check what they are authorised to advise on
+Registered or Certified by ASIC and direct you to ASIC Connect to verify an investment opportunity   | ASIC Connect can be used to confirm company registration. However, registration alone doesn’t mean that a company is licensed or authorised to provide financial services.    To verify an investment opportunity, check ASIC's Professional Registers Search to see if the company is licensed or authorised.
+Offering an investment in a registered managed investment scheme   | ASIC's Professional Registers Search    * enter the scheme name, Australian Business Number, or Australian Company Number
+  * check the scheme is registered
+  * Note that registration does not mean that ASIC endorses the investment
+Subscribe to ASIC's free Company Alert service for updates on a company. You'll get an email to tell you when they've lodged forms, and which ones. You’ll also be notified of notices if the company is placed in any type of external administration, or if the details of their external administrators cease or change.

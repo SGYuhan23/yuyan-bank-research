@@ -1,0 +1,102 @@
+Security
+Types of Scams
+Impersonation Scams
+Impersonation Scams
+Report a scam
+Report a scam
+Latest Scams
+Latest Scams
+Stay alert for postal delivery scams this holiday season and learn the warning signs below.
+What is
+an Impersonation scam
+?
+An impersonation scam is where scammers trick you into believing they are someone else – they may pretend to be from a trusted organisation such as your bank, a friend or family member, or someone else you can trust such as law enforcement, government employees, or postal and courier services. All with the goal of stealing your money and/or personal information.
+How do Impersonation scams work?
+At first the person can appear to be helpful,  offering to assist you through a service, or complete payments for the reasoning they have provided for contact. They may direct you to websites that look familiar or like those of the organisation they are impersonating. While the website may look real, it's often designed to capture your personal or financial details, like card numbers or Online Banking credentials. They may also offer to provide financial advice for an investment, or ask you to help them catch a hacker.
+Common tactics used by scammers
+Impersonation scams often start with scammers pretending to be trusted organisations like your bank, Australia Post, Customs, the Police or the ATO. They contact you about such as issues with deliveries or tax matters, to prompt you into action.
+Scammers use a series of different methods known as
+phishing
+via channels such as SMS or email to lure you into providing your personal or financial information. They may also attempt to contact you by phone or impersonation via fake websites that, for the most part, appear legitimate.
+They then use pressure tactics and create a sense of urgency and may advise consequences will occur if you do not participate in the activity. You may be requested to provide personal information, click links in an email or SMS, share your account or Online Banking details, make a payment for outstanding debts, or give access to your computer/mobile.
+For more information on specific types of impersonation scams visit
+Romance Scams
+,
+Remote Access Scams
+,
+Investment Scams,
+Tax Scams
+, and
+Buy/Sell Scams
+.
+Examples of scams*
+Postal delivery scam example
+Unusual transaction example
+Helping in a sting operation example
+Postal delivery scam example
+Sophie received a text message claiming to be from Australia Post, stating that her parcel could not be delivered due to unpaid customs fees. The message included a link to a website that looked almost identical to the official Australia Post site.
+The site asked Sophie to enter her personal details and credit card information to release the parcel. Fortunately, Sophie paused and checked the tracking number directly on the official Australia Post website, where she found no record of the delivery issue, she reported the scam and avoided sharing her sensitive information.
+Unusual transaction example
+Jake received a call from someone claiming to be from Westpac’s security team. They let Jake know that an unusual transaction had been detected on one of his accounts and that it had been compromised.
+They informed him the matter required immediate action to protect his funds from being stolen. He was then instructed to transfer the money from the ‘compromised’ account to a different account ‘to keep it safe’. Unsure as to whether the call was legitimate, he decided to play it safe. Jake asked for a reference number and hung up. He then called the Westpac phone number he found by navigating to our official website on his phone’s internet browser.
+We were able to inform him that the caller was a scammer attempting to trick him into sending money to their account.
+Helping in a sting operation example
+Tina was browsing the internet in search of a gift for her daughter. During her search she received a pop up on screen advising her anti-virus picked up her computer was infected and requested she call a phone number on screen.
+When calling the number on screen they advised they were from Microsoft and asked her to download a program to help remove the virus. She downloaded a program, which allowed them to access her computer by sharing a code displayed on screen. She could see the request to connect was coming from Microsoft.
+Once they had access and were removing the virus, they advised they had picked up 30 hackers on her IP and asked if she would be willing to participate in their sting operation. To do so, she would not be able to talk to anyone about this, including her bank.
+The representative she was speaking with then contacted their senior supervisor to get permission to credit her account with $40,000 to lure out the hackers. They provided her with account details to return the money to and aided her in performing this.
+What Tina did not know is that all of this was a scam. She had shared multiple Security Codes sent to her phone during the conversation but was always asked to delete them after sharing them. She did not realise that the codes she had gave them provided the scammers with the access to complete transactions within her banking and purchase gift cards with her credit card.
+Signs this may be a scam
+A sense of urgency.
+Scammers use scare-tactics to pressure you to act before thinking. Common claims made include unusual activity, unauthorised transactions, account blocks, overdue fees, fines, and threats of deportation.
+You’re instructed to click on a link.
+Never click on links, open attachments, or download software. Always sign in via the Westpac App or our official website by typing westpac.com.au into your browser.
+The call or message needs your action.
+Always call a company on their advertised phone number, particularly if you’re contacted unexpectedly or via email or SMS. The same applies to friends or family members who get new numbers; use your trusted contact details, not details you’ve just been provided.
+You’re asked for personal information or payment.
+Do not give it to anyone who’s contacted you directly. If you’re ever unsure who you’re talking to is from Westpac, ask for a reference number, hang up, and call us on
+132 032
+immediately.
+Important:
+Financial institutions, government agencies and most organisations will never contact you requesting access to your device, share your passwords, security codes, PINs or other personal information via a pop-up or a phone call. Never share these with anyone, regardless of the claims being made. Always call organisations back on trusted numbers found on their website or phone directory to validate any of these types of requests.
+What you can do if you
+come across a scam
+Let us know
+Please
+report scams or unusual activity
+to us immediately.
+Forward unusual emails to
+hoax@westpac.com.au
+or SMS/text messages to
+0497 132 032
+then delete the email or message.
+You can also report all unusual activity to the Australian Cyber Security Centre at
+cyber.gov.au/report
+.
+Get support and stay in the know
+IDCARE provides free, confidential support and guidance to those impacted by fraud, scams, identity theft or compromise. Call them toll-free on
+1800 595 160
+or visit
+idcare.org
+.
+Keep up to date on scams by subscribing to the government's scam email alerts from
+scamwatch.gov.au/subscribe
+.
+Check out our latest scams, for copies of recently reported scams at
+westpac.com.au/scams
+.
+From scam call to SafeCall
+Answer with confidence using SafeCall. An Australian-first in-app calling feature designed to help prevent scammers from impersonating us.
+Find out more
+Latest scams
+See the latest Westpac scam examples to help you stay protected, plus learn how to spot common scams and what to do.
+Read more
+Report a scam
+If you receive any unusual calls, emails or SMS, or notice unusual activity on your account, it’s important that you let us know.
+Find out more
+Security Wellbeing Check
+Improve the security for your Online Banking via the App. We’ll let you know what you can do to protect yourself and your accounts.
+Start now
+Things you should know
+* Examples are based on one or more real scam reports received by Westpac. For privacy purposes real names have not been used.
+This information is general in nature and has been prepared without taking your personal objectives, circumstances and needs into account. You should consider the appropriateness of the information to your own circumstances and, if necessary, seek appropriate professional advice.

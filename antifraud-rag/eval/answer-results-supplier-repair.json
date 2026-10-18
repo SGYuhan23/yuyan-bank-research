@@ -1,0 +1,41 @@
+{
+  "method": "11 author-designed cases; production BM25 k=3; same-provider model judge, not human blind review; all fixtures isolated from production index",
+  "results": [
+    {
+      "case_id": "supplier",
+      "run_id": "15605fdcf4a24212",
+      "status": "completed",
+      "error": null,
+      "task": "knowledge",
+      "checks": {
+        "supported": true,
+        "required_checks": [
+          {
+            "requirement": "独立取得电话口头核实请求及账户",
+            "passed": true,
+            "evidence": "必须通过电话口头核实该请求，使用你方自己掌握的、独立获取的供应商联系电话（如合同存档号码或官网公开号码），而非邮件中提供的任何联系方式。"
+          },
+          {
+            "requirement": "不用变更邮件中的联系方式",
+            "passed": true,
+            "evidence": "必须通过电话口头核实该请求，使用你方自己掌握的、独立获取的供应商联系电话（如合同存档号码或官网公开号码），而非邮件中提供的任何联系方式。"
+          },
+          {
+            "requirement": "熟悉发件人也不免核实",
+            "passed": true,
+            "evidence": "Even if such requests came from someone associated with you, do not make any changes to account details until you've verbally verified the request using a phone number you sourced yourself."
+          },
+          {
+            "requirement": "不认定必然诈骗",
+            "passed": true,
+            "evidence": "账户变更请求本身不构成欺诈证据，须经独立核实才能确认真伪"
+          }
+        ],
+        "unsupported_claims": [],
+        "omissions": [],
+        "training_distinction": true,
+        "insufficiency_or_conflict_handled": true
+      }
+    }
+  ]
+}
