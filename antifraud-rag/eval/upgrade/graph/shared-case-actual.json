@@ -1,0 +1,557 @@
+{
+  "case_id": "c1ee8e2d738a4fc39b4538526e31ad94",
+  "case_version": 1,
+  "run_id": "51cc86ac36594beabdd8be1ae760c369",
+  "graph": {
+    "synthetic": true,
+    "edges": [
+      {
+        "id": "1f1dc1cdf6bb6942517f31b405c1b551",
+        "from": "b82e25f23df7546abc2155ad8a5339eb",
+        "to": "14d3e82e7234a675815ec8bb058c9e01",
+        "amount": 5133.11,
+        "currency": "AUD",
+        "at": "2025-05-13"
+      },
+      {
+        "id": "47fcaa231ff25b855af559c88c75190e",
+        "from": "2a023f85d79f58252cd87c7277cdf3a2",
+        "to": "95fad506783cfdaad360cc9e6a44e700",
+        "amount": 2029.64,
+        "currency": "AUD",
+        "at": "2025-02-27"
+      },
+      {
+        "id": "b4aca4b38351483b3b095ca6f4f95c2e",
+        "from": "d75ba9794d7cf73ebd47607bffb72cb3",
+        "to": "4d4bc8562f0b8152bf445e191464d57d",
+        "amount": 7284.06,
+        "currency": "AUD",
+        "at": "2025-01-04"
+      },
+      {
+        "id": "cadea391100ba8de61b1e253ad3275b1",
+        "from": "ae340b0e6dbcf5655b0e15d7098356fb",
+        "to": "5d214a19b3cf4a30d7280b5cbe016170",
+        "amount": 709.73,
+        "currency": "AUD",
+        "at": "2025-05-21"
+      },
+      {
+        "id": "dd216da4dfad33474828234c32475534",
+        "from": "dbeb1393f0834d6ea8ace0ca35673f80",
+        "to": "58985afab2f7039dfddff508ae44effa",
+        "amount": 4848.48,
+        "currency": "AUD",
+        "at": "2025-02-22"
+      },
+      {
+        "id": "00b7dafb5fd685efa7ce7ce10e16c643",
+        "from": "199626aefc6d51f87a6e3a9cb481e492",
+        "to": "c57dfe21dac680b659cd4857a9132069",
+        "amount": 4228.92,
+        "currency": "AUD",
+        "at": "2025-04-15"
+      },
+      {
+        "id": "562ef082fac21995241566542fd61200",
+        "from": "be55b0646ac685eecd4ceaaf5529245f",
+        "to": "95b6b843d18db8cb9b511d51907ab31f",
+        "amount": 7498.91,
+        "currency": "AUD",
+        "at": "2025-05-04"
+      },
+      {
+        "id": "419f27d3c27dc208ce3fda3fcc3aa5ed",
+        "from": "439c01f7fbf1f3a89650ae92446568b2",
+        "to": "199626aefc6d51f87a6e3a9cb481e492",
+        "amount": 3322.85,
+        "currency": "AUD",
+        "at": "2025-01-24"
+      },
+      {
+        "id": "8ada082b4473d81fa66dd2ab8035ce8f",
+        "from": "6bfafdc911cb46398de0e4e3a3066194",
+        "to": "b82e25f23df7546abc2155ad8a5339eb",
+        "amount": 537.41,
+        "currency": "AUD",
+        "at": "2025-06-26"
+      },
+      {
+        "id": "42ba5713b2e7493cb36ea6f8d0e80ccd",
+        "from": "2a023f85d79f58252cd87c7277cdf3a2",
+        "to": "a2e656644d3ec58935988e5a70b283a8",
+        "amount": 1924.5,
+        "currency": "AUD",
+        "at": "2025-03-18"
+      },
+      {
+        "id": "126ae7344d47effcb2e7f33ef51c0829",
+        "from": "14d3e82e7234a675815ec8bb058c9e01",
+        "to": "ae340b0e6dbcf5655b0e15d7098356fb",
+        "amount": 1720.49,
+        "currency": "AUD",
+        "at": "2025-03-01"
+      },
+      {
+        "id": "64f1cc568c93c6a46d558a5d5ac75c01",
+        "from": "dbeb1393f0834d6ea8ace0ca35673f80",
+        "to": "0c535c1efc382689b3e5d437029f4221",
+        "amount": 1239.07,
+        "currency": "AUD",
+        "at": "2025-03-25"
+      },
+      {
+        "id": "738169bcca5601c36a05d8059988ee15",
+        "from": "2a023f85d79f58252cd87c7277cdf3a2",
+        "to": "b7eb75edb2a8a89cd3c8b77d2153f740",
+        "amount": 2829.16,
+        "currency": "AUD",
+        "at": "2025-05-08"
+      },
+      {
+        "id": "fcae13968299fa2364daffe0f7265aa0",
+        "from": "01fa7c2353b6f5222257c69e18a06256",
+        "to": "4cfd20f474d33c8eefc2520ba8931cfb",
+        "amount": 13147.3,
+        "currency": "AUD",
+        "at": "2025-06-08"
+      },
+      {
+        "id": "ea9bbd5d80a5059968b1cb0ed1c7e22c",
+        "from": "5d214a19b3cf4a30d7280b5cbe016170",
+        "to": "ffa1d41fa53f5464dbe809d10c7e3d6f",
+        "amount": 1684.64,
+        "currency": "AUD",
+        "at": "2025-02-27"
+      },
+      {
+        "id": "b33f609c9d7a74abc0414ae9924acb4b",
+        "from": "ffa1d41fa53f5464dbe809d10c7e3d6f",
+        "to": "6bfafdc911cb46398de0e4e3a3066194",
+        "amount": 3819.06,
+        "currency": "AUD",
+        "at": "2025-03-15"
+      },
+      {
+        "id": "f0dbb6ecea35a780c4a5203736aa1a2e",
+        "from": "be55b0646ac685eecd4ceaaf5529245f",
+        "to": "10cf3c2f0ff40c06127880ee1d33e274",
+        "amount": 2389.13,
+        "currency": "AUD",
+        "at": "2025-06-09"
+      },
+      {
+        "id": "a47ad4323614c6a97ae75d052e8f6aa6",
+        "from": "dbeb1393f0834d6ea8ace0ca35673f80",
+        "to": "356e20708a74e5582f1947db3f6b0177",
+        "amount": 2428.07,
+        "currency": "AUD",
+        "at": "2025-06-21"
+      },
+      {
+        "id": "43b1d0dbf980021521f49977c4f360f4",
+        "from": "be55b0646ac685eecd4ceaaf5529245f",
+        "to": "790136b01aa607b4929f39e7fddee9e0",
+        "amount": 5820.66,
+        "currency": "AUD",
+        "at": "2025-05-01"
+      },
+      {
+        "id": "b9d9c270892d4ea1c12facce17319310",
+        "from": "dbeb1393f0834d6ea8ace0ca35673f80",
+        "to": "81384211985902281935b7818ef02376",
+        "amount": 17496.54,
+        "currency": "AUD",
+        "at": "2025-01-15"
+      },
+      {
+        "id": "f27365b89d00209d79d208e890ebf2fb",
+        "from": "dbeb1393f0834d6ea8ace0ca35673f80",
+        "to": "7d19ecc9a5a9413694b50b2b7208a21f",
+        "amount": 2592.34,
+        "currency": "AUD",
+        "at": "2025-02-22"
+      },
+      {
+        "id": "690ffe25348bc128c3be45ac3a05346b",
+        "from": "b8cbfce3ea7dccdd5a0406b716a88b77",
+        "to": "a9a1f92bddd4c048f7349a5fec1e080f",
+        "amount": 285.49,
+        "currency": "AUD",
+        "at": "2025-02-13"
+      },
+      {
+        "id": "80e5920e634d7dc962a59f958a6387ba",
+        "from": "266480ae323d3ab0f35cb8a9fce5e9d7",
+        "to": "d75ba9794d7cf73ebd47607bffb72cb3",
+        "amount": 834.33,
+        "currency": "AUD",
+        "at": "2025-04-14"
+      },
+      {
+        "id": "fe52dae98e31d8f985f87a8361dfeff7",
+        "from": "4cfd20f474d33c8eefc2520ba8931cfb",
+        "to": "439c01f7fbf1f3a89650ae92446568b2",
+        "amount": 4022.98,
+        "currency": "AUD",
+        "at": "2025-02-13"
+      },
+      {
+        "id": "16ad52bd3b52a5dd60ef0b2e0d6fbdd7",
+        "from": "4d4bc8562f0b8152bf445e191464d57d",
+        "to": "b8cbfce3ea7dccdd5a0406b716a88b77",
+        "amount": 5011.57,
+        "currency": "AUD",
+        "at": "2025-05-09"
+      },
+      {
+        "id": "690078ebef0c9415d36df8c51b6cc51c",
+        "from": "a9a1f92bddd4c048f7349a5fec1e080f",
+        "to": "266480ae323d3ab0f35cb8a9fce5e9d7",
+        "amount": 1156.39,
+        "currency": "AUD",
+        "at": "2025-03-21"
+      },
+      {
+        "id": "5a70dff1b474cd3852ad366a6b292210",
+        "from": "a2e656644d3ec58935988e5a70b283a8",
+        "to": "95fad506783cfdaad360cc9e6a44e700",
+        "amount": 1213.88,
+        "currency": "AUD",
+        "at": "2025-05-24"
+      },
+      {
+        "id": "3d9769663d6be119349fe36854116e37",
+        "from": "c57dfe21dac680b659cd4857a9132069",
+        "to": "9da203cbb8c06a461d3d310e3b07d1d0",
+        "amount": 925.98,
+        "currency": "AUD",
+        "at": "2025-05-22"
+      },
+      {
+        "id": "87e3db597803a4d253d47d967d295729",
+        "from": "b7eb75edb2a8a89cd3c8b77d2153f740",
+        "to": "95fad506783cfdaad360cc9e6a44e700",
+        "amount": 14124.27,
+        "currency": "AUD",
+        "at": "2025-03-16"
+      },
+      {
+        "id": "a0383d651933db9aac273036ed4e3e9e",
+        "from": "be55b0646ac685eecd4ceaaf5529245f",
+        "to": "bc9ffc35d12ebc86fb09ab2c4d95684f",
+        "amount": 4236.7,
+        "currency": "AUD",
+        "at": "2025-01-13"
+      },
+      {
+        "id": "81b8bede541276ff8363a69efe6e6d17",
+        "from": "9da203cbb8c06a461d3d310e3b07d1d0",
+        "to": "01fa7c2353b6f5222257c69e18a06256",
+        "amount": 3531.55,
+        "currency": "AUD",
+        "at": "2025-01-18"
+      },
+      {
+        "id": "46dbd13ea2b6592e2ca49c4697167c6f",
+        "from": "297c4c808dd48ad34f1f6dc93897d542",
+        "to": "95fad506783cfdaad360cc9e6a44e700",
+        "amount": 6152.36,
+        "currency": "AUD",
+        "at": "2025-01-15"
+      },
+      {
+        "id": "d1564d8e663eb5911b62038abdbbc8b5",
+        "from": "2a023f85d79f58252cd87c7277cdf3a2",
+        "to": "297c4c808dd48ad34f1f6dc93897d542",
+        "amount": 8768.84,
+        "currency": "AUD",
+        "at": "2025-06-18"
+      }
+    ],
+    "as_of": "2025-12-31"
+  },
+  "analysis": {
+    "synthetic": true,
+    "accounts": 33,
+    "transactions": 33,
+    "cyclic_components": [
+      [
+        "14d3e82e7234a675815ec8bb058c9e01",
+        "5d214a19b3cf4a30d7280b5cbe016170",
+        "6bfafdc911cb46398de0e4e3a3066194",
+        "ae340b0e6dbcf5655b0e15d7098356fb",
+        "b82e25f23df7546abc2155ad8a5339eb",
+        "ffa1d41fa53f5464dbe809d10c7e3d6f"
+      ],
+      [
+        "266480ae323d3ab0f35cb8a9fce5e9d7",
+        "4d4bc8562f0b8152bf445e191464d57d",
+        "a9a1f92bddd4c048f7349a5fec1e080f",
+        "b8cbfce3ea7dccdd5a0406b716a88b77",
+        "d75ba9794d7cf73ebd47607bffb72cb3"
+      ],
+      [
+        "01fa7c2353b6f5222257c69e18a06256",
+        "199626aefc6d51f87a6e3a9cb481e492",
+        "439c01f7fbf1f3a89650ae92446568b2",
+        "4cfd20f474d33c8eefc2520ba8931cfb",
+        "9da203cbb8c06a461d3d310e3b07d1d0",
+        "c57dfe21dac680b659cd4857a9132069"
+      ]
+    ],
+    "edge_ids": [
+      "1f1dc1cdf6bb6942517f31b405c1b551",
+      "47fcaa231ff25b855af559c88c75190e",
+      "b4aca4b38351483b3b095ca6f4f95c2e",
+      "cadea391100ba8de61b1e253ad3275b1",
+      "dd216da4dfad33474828234c32475534",
+      "00b7dafb5fd685efa7ce7ce10e16c643",
+      "562ef082fac21995241566542fd61200",
+      "419f27d3c27dc208ce3fda3fcc3aa5ed",
+      "8ada082b4473d81fa66dd2ab8035ce8f",
+      "42ba5713b2e7493cb36ea6f8d0e80ccd",
+      "126ae7344d47effcb2e7f33ef51c0829",
+      "64f1cc568c93c6a46d558a5d5ac75c01",
+      "738169bcca5601c36a05d8059988ee15",
+      "fcae13968299fa2364daffe0f7265aa0",
+      "ea9bbd5d80a5059968b1cb0ed1c7e22c",
+      "b33f609c9d7a74abc0414ae9924acb4b",
+      "f0dbb6ecea35a780c4a5203736aa1a2e",
+      "a47ad4323614c6a97ae75d052e8f6aa6",
+      "43b1d0dbf980021521f49977c4f360f4",
+      "b9d9c270892d4ea1c12facce17319310",
+      "f27365b89d00209d79d208e890ebf2fb",
+      "690ffe25348bc128c3be45ac3a05346b",
+      "80e5920e634d7dc962a59f958a6387ba",
+      "fe52dae98e31d8f985f87a8361dfeff7",
+      "16ad52bd3b52a5dd60ef0b2e0d6fbdd7",
+      "690078ebef0c9415d36df8c51b6cc51c",
+      "5a70dff1b474cd3852ad366a6b292210",
+      "3d9769663d6be119349fe36854116e37",
+      "87e3db597803a4d253d47d967d295729",
+      "a0383d651933db9aac273036ed4e3e9e",
+      "81b8bede541276ff8363a69efe6e6d17",
+      "46dbd13ea2b6592e2ca49c4697167c6f",
+      "d1564d8e663eb5911b62038abdbbc8b5"
+    ],
+    "notice": "合法结算也可形成环；有环不是诈骗证明；不提供真实客户风险概率"
+  },
+  "score": {
+    "status": "ok",
+    "synthetic": true,
+    "model_version": "c87c7704ed4c0ad67ebb516c8c50c7c9886feb0131a88517a93f9148146653d5",
+    "rankings": [
+      {
+        "account": "a2e656644d3ec58935988e5a70b283a8",
+        "ranking_score": 0.7722256529815168
+      },
+      {
+        "account": "b7eb75edb2a8a89cd3c8b77d2153f740",
+        "ranking_score": 0.7175115843407279
+      },
+      {
+        "account": "d75ba9794d7cf73ebd47607bffb72cb3",
+        "ranking_score": 0.6736324163429708
+      },
+      {
+        "account": "b82e25f23df7546abc2155ad8a5339eb",
+        "ranking_score": 0.6680619118736408
+      },
+      {
+        "account": "14d3e82e7234a675815ec8bb058c9e01",
+        "ranking_score": 0.6494271402640124
+      },
+      {
+        "account": "439c01f7fbf1f3a89650ae92446568b2",
+        "ranking_score": 0.638555164694716
+      },
+      {
+        "account": "199626aefc6d51f87a6e3a9cb481e492",
+        "ranking_score": 0.6275145901673912
+      },
+      {
+        "account": "6bfafdc911cb46398de0e4e3a3066194",
+        "ranking_score": 0.5826306666430907
+      },
+      {
+        "account": "ffa1d41fa53f5464dbe809d10c7e3d6f",
+        "ranking_score": 0.5793671941015209
+      },
+      {
+        "account": "4cfd20f474d33c8eefc2520ba8931cfb",
+        "ranking_score": 0.5686713414008445
+      },
+      {
+        "account": "95fad506783cfdaad360cc9e6a44e700",
+        "ranking_score": 0.5551550995787998
+      },
+      {
+        "account": "9da203cbb8c06a461d3d310e3b07d1d0",
+        "ranking_score": 0.5322914156118296
+      },
+      {
+        "account": "ae340b0e6dbcf5655b0e15d7098356fb",
+        "ranking_score": 0.5123389660498815
+      },
+      {
+        "account": "01fa7c2353b6f5222257c69e18a06256",
+        "ranking_score": 0.5087058832419736
+      },
+      {
+        "account": "2a023f85d79f58252cd87c7277cdf3a2",
+        "ranking_score": 0.49975749666447156
+      },
+      {
+        "account": "266480ae323d3ab0f35cb8a9fce5e9d7",
+        "ranking_score": 0.49589095244016546
+      },
+      {
+        "account": "c57dfe21dac680b659cd4857a9132069",
+        "ranking_score": 0.4933400764040792
+      },
+      {
+        "account": "a9a1f92bddd4c048f7349a5fec1e080f",
+        "ranking_score": 0.4917451384123539
+      },
+      {
+        "account": "5d214a19b3cf4a30d7280b5cbe016170",
+        "ranking_score": 0.4912074971494726
+      },
+      {
+        "account": "4d4bc8562f0b8152bf445e191464d57d",
+        "ranking_score": 0.4898303453633009
+      }
+    ],
+    "notice": "未校准合成实验排序，不是欺诈概率；不得覆盖公开证据或据此操作账户"
+  },
+  "evidence": [
+    {
+      "evidence_id": "82b23d2737a2458ca2da8f93a3eec2cf",
+      "case_id": "c1ee8e2d738a4fc39b4538526e31ad94",
+      "case_version": 1,
+      "kind": "synthetic_observation",
+      "origin_id": "3b78fc2935604ae499d8802e07333bfc",
+      "span": {
+        "edges": [
+          "1f1dc1cdf6bb6942517f31b405c1b551",
+          "47fcaa231ff25b855af559c88c75190e",
+          "b4aca4b38351483b3b095ca6f4f95c2e",
+          "cadea391100ba8de61b1e253ad3275b1",
+          "dd216da4dfad33474828234c32475534",
+          "00b7dafb5fd685efa7ce7ce10e16c643",
+          "562ef082fac21995241566542fd61200",
+          "419f27d3c27dc208ce3fda3fcc3aa5ed",
+          "8ada082b4473d81fa66dd2ab8035ce8f",
+          "42ba5713b2e7493cb36ea6f8d0e80ccd",
+          "126ae7344d47effcb2e7f33ef51c0829",
+          "64f1cc568c93c6a46d558a5d5ac75c01",
+          "738169bcca5601c36a05d8059988ee15",
+          "fcae13968299fa2364daffe0f7265aa0",
+          "ea9bbd5d80a5059968b1cb0ed1c7e22c",
+          "b33f609c9d7a74abc0414ae9924acb4b",
+          "f0dbb6ecea35a780c4a5203736aa1a2e",
+          "a47ad4323614c6a97ae75d052e8f6aa6",
+          "43b1d0dbf980021521f49977c4f360f4",
+          "b9d9c270892d4ea1c12facce17319310",
+          "f27365b89d00209d79d208e890ebf2fb",
+          "690ffe25348bc128c3be45ac3a05346b",
+          "80e5920e634d7dc962a59f958a6387ba",
+          "fe52dae98e31d8f985f87a8361dfeff7",
+          "16ad52bd3b52a5dd60ef0b2e0d6fbdd7",
+          "690078ebef0c9415d36df8c51b6cc51c",
+          "5a70dff1b474cd3852ad366a6b292210",
+          "3d9769663d6be119349fe36854116e37",
+          "87e3db597803a4d253d47d967d295729",
+          "a0383d651933db9aac273036ed4e3e9e",
+          "81b8bede541276ff8363a69efe6e6d17",
+          "46dbd13ea2b6592e2ca49c4697167c6f",
+          "d1564d8e663eb5911b62038abdbbc8b5"
+        ]
+      },
+      "source_hash": "d3ffe80337df9fc4c53d2c500b0343b445fa3927618883b59bf7c908f9a4216f",
+      "observed_at": "2026-10-19T15:09:08.345393+00:00",
+      "jurisdiction": "Australia",
+      "statement": "{\"synthetic\": true, \"accounts\": 33, \"transactions\": 33, \"cyclic_components\": [[\"14d3e82e7234a675815ec8bb058c9e01\", \"5d214a19b3cf4a30d7280b5cbe016170\", \"6bfafdc911cb46398de0e4e3a3066194\", \"ae340b0e6dbcf5655b0e15d7098356fb\", \"b82e25f23df7546abc2155ad8a5339eb\", \"ffa1d41fa53f5464dbe809d10c7e3d6f\"], [\"266480ae323d3ab0f35cb8a9fce5e9d7\", \"4d4bc8562f0b8152bf445e191464d57d\", \"a9a1f92bddd4c048f7349a5fec1e080f\", \"b8cbfce3ea7dccdd5a0406b716a88b77\", \"d75ba9794d7cf73ebd47607bffb72cb3\"], [\"01fa7c2353b6f5222257c69e18a06256\", \"199626aefc6d51f87a6e3a9cb481e492\", \"439c01f7fbf1f3a89650ae92446568b2\", \"4cfd20f474d33c8eefc2520ba8931cfb\", \"9da203cbb8c06a461d3d310e3b07d1d0\", \"c57dfe21dac680b659cd4857a9132069\"]], \"edge_ids\": [\"1f1dc1cdf6bb6942517f31b405c1b551\", \"47fcaa231ff25b855af559c88c75190e\", \"b4aca4b38351483b3b095ca6f4f95c2e\", \"cadea391100ba8de61b1e253ad3275b1\", \"dd216da4dfad33474828234c32475534\", \"00b7dafb5fd685efa7ce7ce10e16c643\", \"562ef082fac21995241566542fd61200\", \"419f27d3c27dc208ce3fda3fcc3aa5ed\", \"8ada082b4473d81fa66dd2ab8035ce8f\", \"42ba5713b2e7493cb36ea6f8d0e80ccd\", \"126ae7344d47effcb2e7f33ef51c0829\", \"64f1cc568c93c6a46d558a5d5ac75c01\", \"738169bcca5601c36a05d8059988ee15\", \"fcae13968299fa2364daffe0f7265aa0\", \"ea9bbd5d80a5059968b1cb0ed1c7e22c\", \"b33f609c9d7a74abc0414ae9924acb4b\", \"f0dbb6ecea35a780c4a5203736aa1a2e\", \"a47ad4323614c6a97ae75d052e8f6aa6\", \"43b1d0dbf980021521f49977c4f360f4\", \"b9d9c270892d4ea1c12facce17319310\", \"f27365b89d00209d79d208e890ebf2fb\", \"690ffe25348bc128c3be45ac3a05346b\", \"80e5920e634d7dc962a59f958a6387ba\", \"fe52dae98e31d8f985f87a8361dfeff7\", \"16ad52bd3b52a5dd60ef0b2e0d6fbdd7\", \"690078ebef0c9415d36df8c51b6cc51c\", \"5a70dff1b474cd3852ad366a6b292210\", \"3d9769663d6be119349fe36854116e37\", \"87e3db597803a4d253d47d967d295729\", \"a0383d651933db9aac273036ed4e3e9e\", \"81b8bede541276ff8363a69efe6e6d17\", \"46dbd13ea2b6592e2ca49c4697167c6f\", \"d1564d8e663eb5911b62038abdbbc8b5\"], \"notice\": \"合法结算也可形成环；有环不是诈骗证明；不提供真实客户风险概率\"}",
+      "limitations": [
+        "仅合成实验；分数非诈骗概率；结构/归因不证明违法"
+      ]
+    },
+    {
+      "evidence_id": "20400434ee2f475f9ba7b36d1a9b4194",
+      "case_id": "c1ee8e2d738a4fc39b4538526e31ad94",
+      "case_version": 1,
+      "kind": "synthetic_observation",
+      "origin_id": "6e40d9ac04014f9092791ff783598062",
+      "span": {
+        "edges": []
+      },
+      "source_hash": "f0b0ca95defd40c85de7b763314cb61bb869f3a7af6c9f40f8f3c0a595b0540f",
+      "observed_at": "2026-10-19T15:09:08.356931+00:00",
+      "jurisdiction": "Australia",
+      "statement": "{\"status\": \"ok\", \"synthetic\": true, \"model_version\": \"c87c7704ed4c0ad67ebb516c8c50c7c9886feb0131a88517a93f9148146653d5\", \"rankings\": [{\"account\": \"a2e656644d3ec58935988e5a70b283a8\", \"ranking_score\": 0.7722256529815168}, {\"account\": \"b7eb75edb2a8a89cd3c8b77d2153f740\", \"ranking_score\": 0.7175115843407279}, {\"account\": \"d75ba9794d7cf73ebd47607bffb72cb3\", \"ranking_score\": 0.6736324163429708}, {\"account\": \"b82e25f23df7546abc2155ad8a5339eb\", \"ranking_score\": 0.6680619118736408}, {\"account\": \"14d3e82e7234a675815ec8bb058c9e01\", \"ranking_score\": 0.6494271402640124}, {\"account\": \"439c01f7fbf1f3a89650ae92446568b2\", \"ranking_score\": 0.638555164694716}, {\"account\": \"199626aefc6d51f87a6e3a9cb481e492\", \"ranking_score\": 0.6275145901673912}, {\"account\": \"6bfafdc911cb46398de0e4e3a3066194\", \"ranking_score\": 0.5826306666430907}, {\"account\": \"ffa1d41fa53f5464dbe809d10c7e3d6f\", \"ranking_score\": 0.5793671941015209}, {\"account\": \"4cfd20f474d33c8eefc2520ba8931cfb\", \"ranking_score\": 0.5686713414008445}, {\"account\": \"95fad506783cfdaad360cc9e6a44e700\", \"ranking_score\": 0.5551550995787998}, {\"account\": \"9da203cbb8c06a461d3d310e3b07d1d0\", \"ranking_score\": 0.5322914156118296}, {\"account\": \"ae340b0e6dbcf5655b0e15d7098356fb\", \"ranking_score\": 0.5123389660498815}, {\"account\": \"01fa7c2353b6f5222257c69e18a06256\", \"ranking_score\": 0.5087058832419736}, {\"account\": \"2a023f85d79f58252cd87c7277cdf3a2\", \"ranking_score\": 0.49975749666447156}, {\"account\": \"266480ae323d3ab0f35cb8a9fce5e9d7\", \"ranking_score\": 0.49589095244016546}, {\"account\": \"c57dfe21dac680b659cd4857a9132069\", \"ranking_score\": 0.4933400764040792}, {\"account\": \"a9a1f92bddd4c048f7349a5fec1e080f\", \"ranking_score\": 0.4917451384123539}, {\"account\": \"5d214a19b3cf4a30d7280b5cbe016170\", \"ranking_score\": 0.4912074971494726}, {\"account\": \"4d4bc8562f0b8152bf445e191464d57d\", \"ranking_score\": 0.4898303453633009}], \"notice\": \"未校准合成实验排序，不是欺诈概率；不得覆盖公开证据或据此操作账户\"}",
+      "limitations": [
+        "仅合成实验；分数非诈骗概率；结构/归因不证明违法"
+      ]
+    }
+  ],
+  "tool_results": [
+    {
+      "call_id": "3b78fc2935604ae499d8802e07333bfc",
+      "case_id": "c1ee8e2d738a4fc39b4538526e31ad94",
+      "case_version": 1,
+      "tool_name": "graph",
+      "tool_version": "1",
+      "validated_args": {},
+      "args_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "input_evidence": [
+        {
+          "id": "case-input:c1ee8e2d738a4fc39b4538526e31ad94",
+          "hash": "b0e6d8cb7bc362575dd44c3883071b4cfc04aef2a4dbcef2118c4db3325fcd5e"
+        }
+      ],
+      "status": "ok",
+      "observations": [
+        {
+          "evidence_id": "82b23d2737a2458ca2da8f93a3eec2cf",
+          "statement": "{\"synthetic\": true, \"accounts\": 33, \"transactions\": 33, \"cyclic_components\": [[\"14d3e82e7234a675815ec8bb058c9e01\", \"5d214a19b3cf4a30d7280b5cbe016170\", \"6bfafdc911cb46398de0e4e3a3066194\", \"ae340b0e6dbcf5655b0e15d7098356fb\", \"b82e25f23df7546abc2155ad8a5339eb\", \"ffa1d41fa53f5464dbe809d10c7e3d6f\"], [\"266480ae323d3ab0f35cb8a9fce5e9d7\", \"4d4bc8562f0b8152bf445e191464d57d\", \"a9a1f92bddd4c048f7349a5fec1e080f\", \"b8cbfce3ea7dccdd5a0406b716a88b77\", \"d75ba9794d7cf73ebd47607bffb72cb3\"], [\"01fa7c2353b6f5222257c69e18a06256\", \"199626aefc6d51f87a6e3a9cb481e492\", \"439c01f7fbf1f3a89650ae92446568b2\", \"4cfd20f474d33c8eefc2520ba8931cfb\", \"9da203cbb8c06a461d3d310e3b07d1d0\", \"c57dfe21dac680b659cd4857a9132069\"]], \"edge_ids\": [\"1f1dc1cdf6bb6942517f31b405c1b551\", \"47fcaa231ff25b855af559c88c75190e\", \"b4aca4b38351483b3b095ca6f4f95c2e\", \"cadea391100ba8de61b1e253ad3275b1\", \"dd216da4dfad33474828234c32475534\", \"00b7dafb5fd685efa7ce7ce10e16c643\", \"562ef082fac21995241566542fd61200\", \"419f27d3c27dc208ce3fda3fcc3aa5ed\", \"8ada082b4473d81fa66dd2ab8035ce8f\", \"42ba5713b2e7493cb36ea6f8d0e80ccd\", \"126ae7344d47effcb2e7f33ef51c0829\", \"64f1cc568c93c6a46d558a5d5ac75c01\", \"738169bcca5601c36a05d8059988ee15\", \"fcae13968299fa2364daffe0f7265aa0\", \"ea9bbd5d80a5059968b1cb0ed1c7e22c\", \"b33f609c9d7a74abc0414ae9924acb4b\", \"f0dbb6ecea35a780c4a5203736aa1a2e\", \"a47ad4323614c6a97ae75d052e8f6aa6\", \"43b1d0dbf980021521f49977c4f360f4\", \"b9d9c270892d4ea1c12facce17319310\", \"f27365b89d00209d79d208e890ebf2fb\", \"690ffe25348bc128c3be45ac3a05346b\", \"80e5920e634d7dc962a59f958a6387ba\", \"fe52dae98e31d8f985f87a8361dfeff7\", \"16ad52bd3b52a5dd60ef0b2e0d6fbdd7\", \"690078ebef0c9415d36df8c51b6cc51c\", \"5a70dff1b474cd3852ad366a6b292210\", \"3d9769663d6be119349fe36854116e37\", \"87e3db597803a4d253d47d967d295729\", \"a0383d651933db9aac273036ed4e3e9e\", \"81b8bede541276ff8363a69efe6e6d17\", \"46dbd13ea2b6592e2ca49c4697167c6f\", \"d1564d8e663eb5911b62038abdbbc8b5\"], \"notice\": \"合法结算也可形成环；有环不是诈骗证明；不提供真实客户风险概率\"}"
+        }
+      ],
+      "limitations": [],
+      "latency_seconds": 1.342,
+      "usage": null,
+      "data_origin": "project_synthetic"
+    },
+    {
+      "call_id": "6e40d9ac04014f9092791ff783598062",
+      "case_id": "c1ee8e2d738a4fc39b4538526e31ad94",
+      "case_version": 1,
+      "tool_name": "score",
+      "tool_version": "1",
+      "validated_args": {},
+      "args_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "input_evidence": [
+        {
+          "id": "case-input:c1ee8e2d738a4fc39b4538526e31ad94",
+          "hash": "b0e6d8cb7bc362575dd44c3883071b4cfc04aef2a4dbcef2118c4db3325fcd5e"
+        },
+        {
+          "id": "82b23d2737a2458ca2da8f93a3eec2cf",
+          "hash": "d3ffe80337df9fc4c53d2c500b0343b445fa3927618883b59bf7c908f9a4216f"
+        }
+      ],
+      "status": "ok",
+      "observations": [
+        {
+          "evidence_id": "20400434ee2f475f9ba7b36d1a9b4194",
+          "statement": "{\"status\": \"ok\", \"synthetic\": true, \"model_version\": \"c87c7704ed4c0ad67ebb516c8c50c7c9886feb0131a88517a93f9148146653d5\", \"rankings\": [{\"account\": \"a2e656644d3ec58935988e5a70b283a8\", \"ranking_score\": 0.7722256529815168}, {\"account\": \"b7eb75edb2a8a89cd3c8b77d2153f740\", \"ranking_score\": 0.7175115843407279}, {\"account\": \"d75ba9794d7cf73ebd47607bffb72cb3\", \"ranking_score\": 0.6736324163429708}, {\"account\": \"b82e25f23df7546abc2155ad8a5339eb\", \"ranking_score\": 0.6680619118736408}, {\"account\": \"14d3e82e7234a675815ec8bb058c9e01\", \"ranking_score\": 0.6494271402640124}, {\"account\": \"439c01f7fbf1f3a89650ae92446568b2\", \"ranking_score\": 0.638555164694716}, {\"account\": \"199626aefc6d51f87a6e3a9cb481e492\", \"ranking_score\": 0.6275145901673912}, {\"account\": \"6bfafdc911cb46398de0e4e3a3066194\", \"ranking_score\": 0.5826306666430907}, {\"account\": \"ffa1d41fa53f5464dbe809d10c7e3d6f\", \"ranking_score\": 0.5793671941015209}, {\"account\": \"4cfd20f474d33c8eefc2520ba8931cfb\", \"ranking_score\": 0.5686713414008445}, {\"account\": \"95fad506783cfdaad360cc9e6a44e700\", \"ranking_score\": 0.5551550995787998}, {\"account\": \"9da203cbb8c06a461d3d310e3b07d1d0\", \"ranking_score\": 0.5322914156118296}, {\"account\": \"ae340b0e6dbcf5655b0e15d7098356fb\", \"ranking_score\": 0.5123389660498815}, {\"account\": \"01fa7c2353b6f5222257c69e18a06256\", \"ranking_score\": 0.5087058832419736}, {\"account\": \"2a023f85d79f58252cd87c7277cdf3a2\", \"ranking_score\": 0.49975749666447156}, {\"account\": \"266480ae323d3ab0f35cb8a9fce5e9d7\", \"ranking_score\": 0.49589095244016546}, {\"account\": \"c57dfe21dac680b659cd4857a9132069\", \"ranking_score\": 0.4933400764040792}, {\"account\": \"a9a1f92bddd4c048f7349a5fec1e080f\", \"ranking_score\": 0.4917451384123539}, {\"account\": \"5d214a19b3cf4a30d7280b5cbe016170\", \"ranking_score\": 0.4912074971494726}, {\"account\": \"4d4bc8562f0b8152bf445e191464d57d\", \"ranking_score\": 0.4898303453633009}], \"notice\": \"未校准合成实验排序，不是欺诈概率；不得覆盖公开证据或据此操作账户\"}"
+        }
+      ],
+      "limitations": [],
+      "latency_seconds": 0.011,
+      "usage": null,
+      "data_origin": "project_synthetic"
+    }
+  ]
+}

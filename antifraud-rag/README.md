@@ -92,4 +92,4 @@ node --check antifraud-rag/web/upgrade.js
 .venv/bin/python antifraud-rag/grade_upgrade.py --env /absolute/path/private.env --batch my-new-run
 ```
 
-浏览器脚本在 `eval/upgrade/browser/`，依赖Playwright及本机Chrome，当前连接端口8783。它们会实际调用本地Qwen并产生案件/审核记录；并非无成本mock。能力证据与未通过项见 [UPGRADE_EVIDENCE.md](docs/UPGRADE_EVIDENCE.md)。冻结对照之后只修复独立材料工具试跑发现的依赖调度和网页故障，未根据保留题改生成规则；对照成绩对应冻结代码，不冒称最新代码已重新通过保留集。
+浏览器脚本在 `eval/upgrade/browser/`，依赖Playwright及本机Chrome，默认连接端口8784，可用 BASE_URL 环境变量调整。它们会实际调用本地Qwen并产生案件/审核记录；并非无成本mock。能力证据与未通过项见 [UPGRADE_EVIDENCE.md](docs/UPGRADE_EVIDENCE.md)。冻结对照之后只修复独立材料工具试跑发现的依赖调度和网页故障，未根据保留题改生成规则；对照成绩对应冻结代码，不冒称最新代码已重新通过保留集。

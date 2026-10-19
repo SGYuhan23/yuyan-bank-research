@@ -113,3 +113,14 @@ class SourceBoundaries(unittest.TestCase):
    a=Artifact(case_id=c.case_id,sha256='original',mime='image/png',origin='project_synthetic',content='');c=s.update(c.case_id,1,{'artifacts':[a.model_dump()]});s.finish(c,{'run_id':'old','case_version':2,'status':'pending_review','recommendations':[]})
    a.corrections=[{'operator':'test','before':'1700','after':'17000'}];a.spans=[Span(method='human_correction',text='AUD 17000')];new=s.update(c.case_id,2,{'artifacts':[a.model_dump()]});self.assertEqual(new.version,3)
    with self.assertRaises(ValueError):s.review({'request_id':'r','case_id':c.case_id,'case_version':2,'result_id':'old','operator':'test','decision':'accept','note':'','revisions':[]})
+
+class SharedModeEvidence(unittest.TestCase):
+ def test_training_case_has_visible_claim_and_public_sources_only(self):
+  with tempfile.TemporaryDirectory() as d:
+   s=Store(Path(d)/'db');scenario=next(iter(training.scenarios()));session=training.start(s,scenario);c=s.get(session['case_id'])
+   self.assertEqual(c.mode,'training');self.assertTrue(any(e.kind=='reported_claim' for e in c.evidence));self.assertTrue(any(e.kind=='public_guidance' for e in c.evidence))
+   self.assertNotIn('latent_truth',c.model_dump_json())
+ def test_graph_api_persists_synthetic_tool_evidence(self):
+  from upgrade import api
+  with tempfile.TemporaryDirectory() as d,patch.object(api,'STORE',Store(Path(d)/'db')):
+   result=api.post('/api/graph/sample',{});c=api.STORE.get(result['case_id']);self.assertEqual(c.mode,'graph_lab');self.assertEqual(len(c.evidence),2);self.assertTrue(all(e.kind=='synthetic_observation' for e in c.evidence));self.assertEqual(api.STORE.result(result['run_id'])['case_version'],c.version)

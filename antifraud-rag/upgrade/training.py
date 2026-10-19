@@ -1,7 +1,7 @@
 """Deterministic client facts and separate trainee context. No latent truth sent to learner."""
 import re,json
 from pydantic import Field
-from .contracts import Strict,uid,now,digest
+from .contracts import Strict,uid,now,digest,CaseRecord,Evidence,ToolCall
 class ScenarioDefinition(Strict):
     scenario_id:str
     family_id:str
@@ -34,7 +34,15 @@ def scenarios():
 
 def public(s):return {'scenario_id':s.scenario_id,'family_id':s.family_id,'visible_facts':s.visible_facts,'source_basis_ids':s.source_basis_ids,'jurisdiction':s.jurisdiction,'label':'本项目编写的培训情境，非真实客户案例；待人工审核'}
 def start(store,sid):
-    s=scenarios()[sid];session={'session_id':uid(),'scenario_id':sid,'turns':[],'released':[],'score_revisions':[],'created_at':now()};store.session(session['session_id'],session);return {'session_id':session['session_id'],'scenario':public(s),'turns':[]}
+    s=scenarios()[sid]
+    from .tools import invoke
+    case=store.create(CaseRecord(query='\n'.join(s.visible_facts),mode='training',requester_role='培训学员',task_scene=[s.family_id]))
+    tool,evidence=invoke(case,ToolCall(tool_name='guidance',args={'mode':'all'}));case.evidence.extend(evidence)
+    case.evidence.append(Evidence(case_id=case.case_id,case_version=case.version,kind='reported_claim',origin_id=s.scenario_id,span={'section':'visible_facts'},source_hash=digest(s.visible_facts),jurisdiction=s.jurisdiction,statement='\n'.join(s.visible_facts),limitations=['项目编写培训情境，不是真实客户事实；隐藏设定不放入学员证据']))
+    rid=uid();case.status='pending_review'
+    store.finish(case,{'run_id':rid,'case_id':case.case_id,'case_version':case.version,'status':'pending_review','recommendations':[],'evidence':[e.model_dump() for e in case.evidence],'tool_results':[tool.model_dump()],'execution':'authored_training_live_state'})
+    session={'session_id':uid(),'scenario_id':sid,'case_id':case.case_id,'case_version':case.version,'basis_run_id':rid,'turns':[],'released':[],'score_revisions':[],'created_at':now()};store.session(session['session_id'],session)
+    return {'session_id':session['session_id'],'case_id':case.case_id,'case_version':case.version,'basis_run_id':rid,'scenario':public(s),'turns':[]}
 def turn(store,sid,text):
     if not isinstance(text,str) or not 1<=len(text)<=2000:raise ValueError('INVALID_TURN')
     session=store.session(sid);s=scenarios()[session['scenario_id']]

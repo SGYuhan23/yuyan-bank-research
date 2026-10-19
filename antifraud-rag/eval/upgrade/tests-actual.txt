@@ -32,6 +32,8 @@ test_material_is_reported_not_fact (test_upgrade.AdapterRegression.test_material
 test_ocr_unavailable_is_partial (test_upgrade.AdapterRegression.test_ocr_unavailable_is_partial) ... ok
 test_tool_results_bound_to_actual_input (test_upgrade.AdapterRegression.test_tool_results_bound_to_actual_input) ... ok
 test_extract_before_dependent_parallel_batch (test_upgrade.DependencyScheduling.test_extract_before_dependent_parallel_batch) ... ok
+test_graph_api_persists_synthetic_tool_evidence (test_upgrade.SharedModeEvidence.test_graph_api_persists_synthetic_tool_evidence) ... ok
+test_training_case_has_visible_claim_and_public_sources_only (test_upgrade.SharedModeEvidence.test_training_case_has_visible_claim_and_public_sources_only) ... ok
 test_as_of_excludes_future_dated_source (test_upgrade.SourceBoundaries.test_as_of_excludes_future_dated_source) ... ok
 test_corrected_ocr_invalidates_previous_review (test_upgrade.SourceBoundaries.test_corrected_ocr_invalidates_previous_review) ... ok
 test_existing_conflict_stops_generation (test_upgrade.SourceBoundaries.test_existing_conflict_stops_generation) ... ok
@@ -52,6 +54,6 @@ test_unknown_role_asks (test_upgrade.UpgradeTests.test_unknown_role_asks) ... ok
 test_url_never_visited (test_upgrade.UpgradeTests.test_url_never_visited) ... ok
 
 ----------------------------------------------------------------------
-Ran 52 tests in 3.338s
+Ran 54 tests in 3.771s
 
 OK

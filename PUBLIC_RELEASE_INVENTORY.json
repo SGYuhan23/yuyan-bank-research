@@ -1,6 +1,6 @@
 {
   "scope": "Full source portfolio; inventory excludes itself to avoid self-reference.",
-  "file_count_excluding_inventory": 4650,
+  "file_count_excluding_inventory": 4652,
   "files": {
     ".github/workflows/pages.yml": {
       "sha256": "46e5f8466c94ecd2d96c2b5c97a71d1a87bdb3034095078ccb434b2dd15124fd",
@@ -16727,8 +16727,8 @@
       "bytes": 66
     },
     "antifraud-rag/README.md": {
-      "sha256": "f88a1543ed7060bd3c57576ec42edff09ab85b20a10aff06f0c91cc2be107196",
-      "bytes": 7494
+      "sha256": "8d3be4cf58e77e490acbafa0c59a0220bb3c0d179ab485e3d31a82e3be417153",
+      "bytes": 7531
     },
     "antifraud-rag/acquire.py": {
       "sha256": "bbbb93dce26414ea5f19b7ca9e573d2bb93d4aabbb3174653403eb2ae81e5e05",
@@ -17899,8 +17899,8 @@
       "bytes": 2822
     },
     "antifraud-rag/docs/UPGRADE_CONTRACTS.md": {
-      "sha256": "2d07d921cd0b7bc7713df50b8ad57371351c19fb704212b66ff2ebf2691d1e80",
-      "bytes": 3040
+      "sha256": "502f2e375c565d5d6d9cfc3e0f04d2134f1cc7639f1c1104b8fefa7165d3448e",
+      "bytes": 3334
     },
     "antifraud-rag/docs/UPGRADE_DEMO.md": {
       "sha256": "f7c7e2c3afdae353e6adc6f60bad0a689f4cc736e45da01e04924f0089c86398",
@@ -17915,8 +17915,8 @@
       "bytes": 2985
     },
     "antifraud-rag/docs/UPGRADE_VALIDATION.md": {
-      "sha256": "0e84ee3604265b03eb3ea3f7a45241aef0d559b46ed89303cfb00e5fd72f12a5",
-      "bytes": 6557
+      "sha256": "362d2d9dfaebcfa9dff43330add0550f66aabff0379740c706407715e29e6ba2",
+      "bytes": 6989
     },
     "antifraud-rag/eval/upgrade/PROTOCOL.md": {
       "sha256": "241cfe0d01f980ffd51f7c7e1e4744dae23d29cd3ff154b03f777feeeb6711d9",
@@ -17951,15 +17951,15 @@
       "bytes": 2049
     },
     "antifraud-rag/eval/upgrade/browser/verify-case.cjs": {
-      "sha256": "381c12cd55b6280a3f02bc195d22ed9fe7a83212969418a84af415f5202f5037",
-      "bytes": 1734
+      "sha256": "061d8e706830e3ca8d4160d8e42ca7fbb892a3b769a650ee8a51f040f44164ce",
+      "bytes": 1756
     },
     "antifraud-rag/eval/upgrade/browser/verify-training-graph.cjs": {
-      "sha256": "2d7ee815fb0cca37aa1315954bc3064242a3d88ee2c6bd8c9eda18a884624a8a",
-      "bytes": 1309
+      "sha256": "e5c0e633be8d3a9bb022d49af10e8d6d04707af276731569f6c97abf581efb03",
+      "bytes": 1331
     },
     "antifraud-rag/eval/upgrade/build-checks.json": {
-      "sha256": "8e5f6f072674ac52018318ffc2bc2627b01bde238d8427ad55f8e1e411d7c91b",
+      "sha256": "3fabb328d2587db7d4b132512fb481844dae32ae5d7f9da65351b300bff63b80",
       "bytes": 703
     },
     "antifraud-rag/eval/upgrade/cases.json": {
@@ -18439,8 +18439,8 @@
       "bytes": 350
     },
     "antifraud-rag/eval/upgrade/tests-actual.txt": {
-      "sha256": "46b44176997f26a8557da5298b51c5ebe639bd318492d48bde44451a7f5bb6ab",
-      "bytes": 5666
+      "sha256": "e0a5a532ad21cdf2f103632108d9ed27e7d416f1b5d5f870820720a989f72f4f",
+      "bytes": 5966
     },
     "antifraud-rag/eval/upgrade/tool-track/email-70326a8c4b7648a8b19aa4e9a9282fb7.json": {
       "sha256": "e8e526c9b57a9300914028f41f11234c3e1d46095f19825e5b7dd5775d527bad",
@@ -18543,8 +18543,8 @@
       "bytes": 24841
     },
     "antifraud-rag/test_upgrade.py": {
-      "sha256": "16a81289f467bd159e7f4d4070e174868d8aaefee9b52e4d1ce20b1508076348",
-      "bytes": 9950
+      "sha256": "f99843890d086a4ff036d50e9a190b52fd91cb80c095376d858a69b03e77474e",
+      "bytes": 10951
     },
     "antifraud-rag/upgrade/__init__.py": {
       "sha256": "3d37c76bab5c1276b6f9b56d3707804bbfdf6f04fd95ab83ff4949a97aba1701",
@@ -18555,8 +18555,8 @@
       "bytes": 11865
     },
     "antifraud-rag/upgrade/api.py": {
-      "sha256": "5df55095882781d754e77b390acd2692caee877dd3a197f4c516f489f73f0653",
-      "bytes": 4344
+      "sha256": "ee5cba93485e215778da36dec61fa559f706ccdeb8e859dc822c868660950ce8",
+      "bytes": 5369
     },
     "antifraud-rag/upgrade/contracts.py": {
       "sha256": "0577a326e4e520d22cd545857c34d48e678cb4bd3eec492013b75893c0dbb6d8",
@@ -18583,8 +18583,8 @@
       "bytes": 8418
     },
     "antifraud-rag/upgrade/training.py": {
-      "sha256": "0853523101eda0f61b3b84e5c9a782f6fe55879ac513a253264460bc52b69a6d",
-      "bytes": 7923
+      "sha256": "27a5b8ee2bfd4dbd671ee374471e8a4d2413830dd14971cf61aa4f947128a864",
+      "bytes": 9057
     },
     "antifraud-rag/upgrade_cli.py": {
       "sha256": "5b53bc7b1e91c226a694df14d0923395a5d4e8af3ee924389b0b4e0e8b7039c6",
@@ -18601,6 +18601,14 @@
     "antifraud-rag/web/upgrade.js": {
       "sha256": "ebacb1b060ccc4eb2e9202635589041ba5c4a882c7216854315cf2938a68fcd0",
       "bytes": 9475
+    },
+    "antifraud-rag/eval/upgrade/graph/shared-case-actual.json": {
+      "sha256": "81b1f53a50127b6bdf8d59d653b276716c4640cfeadfe568fb270be31686220d",
+      "bytes": 26459
+    },
+    "antifraud-rag/eval/upgrade/training-case-actual.json": {
+      "sha256": "a03937f2ef115ab1c2a8602e197d3a5d49f429982e41df2c4aeb3d4a68b58399",
+      "bytes": 64356
     }
   }
 }

@@ -1,0 +1,462 @@
+{
+  "session": {
+    "session_id": "0724552ad4a743c290625f5f84b34b98",
+    "case_id": "8bd1c4658aa8429c946ae8a0f7f321b9",
+    "case_version": 1,
+    "basis_run_id": "13389b68977c4909adc7d49ea6102207",
+    "scenario": {
+      "scenario_id": "a28e33f334ec9e04",
+      "family_id": "seller_receipt",
+      "visible_facts": [
+        "我是卖家，买家发来付款截图，催我交货。"
+      ],
+      "source_basis_ids": [
+        "receipt-guidance"
+      ],
+      "jurisdiction": "Australia",
+      "label": "本项目编写的培训情境，非真实客户案例；待人工审核"
+    },
+    "turns": []
+  },
+  "export": {
+    "case": {
+      "case_id": "8bd1c4658aa8429c946ae8a0f7f321b9",
+      "version": 1,
+      "mode": "training",
+      "jurisdiction": "Australia",
+      "as_of": "2026-10-19T15:09:08.362146+00:00",
+      "task_scene": [
+        "seller_receipt"
+      ],
+      "requester_role": "培训学员",
+      "subject_role": "unknown",
+      "query": "我是卖家，买家发来付款截图，催我交货。",
+      "artifacts": [],
+      "evidence": [
+        {
+          "evidence_id": "5f030a0d1e5e49aaaf40e4bcbec65dcd",
+          "case_id": "8bd1c4658aa8429c946ae8a0f7f321b9",
+          "case_version": 1,
+          "kind": "public_guidance",
+          "origin_id": "westpac-bec",
+          "span": {
+            "section": "Signs this may be a scam + Tips to minimise the risk",
+            "url": "https://www.westpac.com.au/security/types-of-scams/business-email-scams/",
+            "unit_id": "bec-guidance",
+            "published_at": null
+          },
+          "source_hash": "b059afc9484892dba8710b0e35111d0f2c349b57010fb340bf994f8a86c898d6",
+          "observed_at": "2026-10-19T15:09:08.366112+00:00",
+          "jurisdiction": "Australia",
+          "statement": "Signs this may be a scam\nThey request payment to a new account number.\nEven if such requests came from someone associated with you, do not make any changes to account details until you've verbally verified the request using a phone number you sourced yourself.\nA CEO, executive or senior manager requests payment to a specific account.\nPause and verify the request verbally, regardless of who the sender is or if the request is urgent.\nA supplier or employee claim they haven’t received payment.\nDo not make any more payments until you investigate the payment history and emails, to check if there were any requests made to amend account details.\nYou’re paying them for the first time.\nWhen paying someone for the first time, such as a deposit to a real estate agent’s trust account for a property purchase, validate the request and payee details before sending money. You can do this verbally or request to pay using\nPayID®\n.\n\nTips to minimise the risk of being scammed\nAlways verbally confirm any requests for urgent or redirected payments. Always use a phone number you have on file, or a publicly sourced number. Never use contact details provided in the email.\nRequest to pay using\nPayID\nif the payee has one. PayID displays the registered payee name onscreen, so if it's not your intended recipient you will know something is possibly unusual.\nRegister your business for PayID\nby using your ABN and request this is how your account is credited.\nUse multifactor authentication and dual payment approvals where available.\nIf you have a business, train your employees regularly on how to spot payment redirection scams. Empower them to question any payment related requests and verbally verify account details are correct. Update your processes to include these steps.",
+          "limitations": [
+            "公开一般安全建议，非Westpac内部操作规程；账户变更是核实信号，不足以证明欺诈。PayID和双人审批以可用为条件。",
+            "未知发布日期不能证明在案件时点已生效"
+          ]
+        },
+        {
+          "evidence_id": "0b6851aa60624ed18a6a28ab9ba87e92",
+          "case_id": "8bd1c4658aa8429c946ae8a0f7f321b9",
+          "case_version": 1,
+          "kind": "public_guidance",
+          "origin_id": "scamwatch-case",
+          "span": {
+            "section": "Complete John case, privacy caveat and response",
+            "url": "https://www.scamwatch.gov.au/stop-check-protect/real-life-stories/false-billing-john-updated-supplier-details-and-it-ended-up-costing-thousands",
+            "unit_id": "bec-case",
+            "published_at": null
+          },
+          "source_hash": "fc47b2363ee603c6506d4c8a0cff494ce2eb1bdfa557c147886b61491b580985",
+          "observed_at": "2026-10-19T15:09:08.366133+00:00",
+          "jurisdiction": "Australia",
+          "statement": "John worked as an accounts manager for a local manufacturing business. Late on a Friday afternoon, he received an email which appeared to be from one of his regular suppliers, Mr Liu from Zhang-Fei Industries, a ball bearings supplier in Asia. Mr Liu’s email explained that due to a change in their internal finance system, he needed John to update their banking details, including a new account number.\nIf you receive an email with a request involving financial details that you know nothing about, don’t action it until you are sure it’s the real deal.\n\nJohn took the email at face value and changed the banking information in his company’s database. A few days later, John made a scheduled payment to Zhang-Fei Industries for $17,000.\nTwo weeks later the ball bearings from Zheng Fei industries had not arrived so John telephoned Mr Liu. Mr Liu said he hadn’t received payment for the last order and had consequently cancelled shipment. John told Mr Liu that he had processed the payment personally to make sure it was paid according to the new arrangements. After some investigation it became clear that Mr Liu had not sent any request to update his company’s banking details and John was the victim of a scam.\nIn the weeks to come, with the initial loss of $17,000, the delay in supply flowing from missed orders and broken contractual obligations, John’s company estimated their loss to be over $30,000.\n\n*The story above is based on one or more real scam reports received by the ACCC. For privacy purposes the names and images of victims have not been used.\n## Have you been scammed?\n\nIf you think you've been scammed or know someone who has, report it to the ACCC using our report a scam page.\n\nReport a scam \nIf you have lost money, contact your bank or financial institution immediately.",
+          "limitations": [
+            "官方基于一个或多个真实举报编写，姓名图像已处理；不是本项目客户案例，不能估计客户损失。",
+            "未知发布日期不能证明在案件时点已生效"
+          ]
+        },
+        {
+          "evidence_id": "cb6694d102d54f938e3b0754dae8cb9c",
+          "case_id": "8bd1c4658aa8429c946ae8a0f7f321b9",
+          "case_version": 1,
+          "kind": "public_guidance",
+          "origin_id": "westpac-receipt",
+          "span": {
+            "section": "April 2023 - PayID Scam",
+            "url": "https://www.westpac.com.au/security/latest-scams/past-scams-and-alerts/",
+            "unit_id": "receipt-guidance",
+            "published_at": null
+          },
+          "source_hash": "7f1fbefcc331d7493401d93fcdcf9025bd980299fe97742a6b803c151981da4d",
+          "observed_at": "2026-10-19T15:09:08.366142+00:00",
+          "jurisdiction": "Australia",
+          "statement": "April 2023 - PayID Scam\nBe alert to PayID Scams when selling items online\nUsing PayID is a safe and easy way to send and receive funds.\nAfter a conversation with a potential buyer through an Online Marketplace, such as Facebook or Gumtree, you're advised that you need to upgrade your PayID to a business account for you to receive the payment.\nThese scam emails state your account has been upgraded to a business account and you need to refund a deposit that has been credited to your account.\nDo not act on these emails and report the buyer/seller profile to the marketplace as a potential scam.\nReminder\n- PayID's are managed within your banking app. A PayID does not need to be upgraded or activated by making payments. For more information on how PayID's work and how you can set up a Westpac registered PayID, visit\nwestpac.com.au/payid\n.\nAlso, when selling items online, never provide the buyer with the item until you can see the funds in your account, within your own online or mobile banking. Never rely on a receipt or screenshot of a payment sent to you. Receipts can be falsified by scammers to appear as if they have made payment, when they have not.\nIf you have received an email, SMS or other request that you have identified as potentially fraudulent or which you think involves a scam account, it's always a good idea to report these through to us, before deleting it from your inbox or deleted items on your device.\nForward a copy to hoax@westpac.com.au or 0497 132 032.",
+          "limitations": [
+            "2023年4月公开提示，场景为网上出售物品；不能据此判定某笔交易已经到账或已构成诈骗。",
+            "未知发布日期不能证明在案件时点已生效"
+          ]
+        },
+        {
+          "evidence_id": "a313f17142bf4f168f95664f17cbe3f0",
+          "case_id": "8bd1c4658aa8429c946ae8a0f7f321b9",
+          "case_version": 1,
+          "kind": "public_guidance",
+          "origin_id": "asic-invest",
+          "span": {
+            "section": "CHECK: Is the company/person real and licensed or authorised — full section and table",
+            "url": "https://moneysmart.gov.au/check-and-report-scams/check-before-you-invest",
+            "unit_id": "investment-check",
+            "published_at": null
+          },
+          "source_hash": "aa5cf32f7264ae72183946613c4bff566cd704e1619a6d803720c3e3f1a13107",
+          "observed_at": "2026-10-19T15:09:08.366150+00:00",
+          "jurisdiction": "Australia",
+          "statement": "## CHECK: Is the company/person real and licensed or authorised\n\nIn Australia, companies or people offering investments must have an Australian Financial Services (AFS) licence or be authorised by someone who does.\n\nAn AFS licence:\n\n  * controls what kinds of financial products they can sell\n  * gives better protection to investors if things go wrong\nIt's important to know that holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice. It doesn't guarantee the investment is safe or that you won’t lose money from dealing with them.\n\nWith a proliferation of AI-generated scam websites , online reviews, videos, and social media posts, it’s also important to not rely on contact details, links or phone numbers provided in an investment offer, text message, email, social media post or online advertisement.\nScammers misuse AFS licence details by claiming to hold a licence, using another entity’s licence number, or impersonating a licensed financial services business.\n\nBefore investing, make sure you verify the licence holder’s name and number on ASIC’s professional registers , and ensure those details match the business or investment opportunity being promoted. Relying solely on advertisements, websites or online search results can put consumers at risk.\n### How to check on a company or person\n\nIf they say they are:  | Check this:\nLicensed by ASIC (AFS licence) An authorised representative for a licensee (with an AFS licence) Offering an investment in a registered managed investment scheme  | ASIC's Professional Registers Search   * enter the name, Australian Business Number, Australian Company Number or licence number\n  * select Register: Australian financial services licensee or Australian financial services authorised representatives in drop-down menu\n  * if a website URL is listed in the register, check that it matches any website URL you have been using\nASIC Connect   * search within: Banned and Disqualified\n  * see if they have been banned from giving financial advice or managing a company\nMoneysmart Investor Alert List \n  * this is a list of suspicious companies, businesses and websites. They may be unlicensed or impersonating a real company or licensee.\nA financial adviser who can advise you on, or sell you, an investment  | Financial advisers register   * enter name, adviser number, or Australian Business Number\n  * check what they are authorised to advise on\nRegistered or Certified by ASIC and direct you to ASIC Connect to verify an investment opportunity   | ASIC Connect can be used to confirm company registration. However, registration alone doesn’t mean that a company is licensed or authorised to provide financial services.    To verify an investment opportunity, check ASIC's Professional Registers Search to see if the company is licensed or authorised.\nOffering an investment in a registered managed investment scheme   | ASIC's Professional Registers Search    * enter the scheme name, Australian Business Number, or Australian Company Number\n  * check the scheme is registered\n  * Note that registration does not mean that ASIC endorses the investment\nSubscribe to ASIC's free Company Alert service for updates on a company. You'll get an email to tell you when they've lodged forms, and which ones. You’ll also be notified of notices if the company is placed in any type of external administration, or if the details of their external administrators cease or change.",
+          "limitations": [
+            "适用澳大利亚投资核验；注册不等于获许可，获许可不等于投资安全或ASIC认可。",
+            "未知发布日期不能证明在案件时点已生效"
+          ]
+        },
+        {
+          "evidence_id": "a9128edf89994121b21951c1c933b687",
+          "case_id": "8bd1c4658aa8429c946ae8a0f7f321b9",
+          "case_version": 1,
+          "kind": "public_guidance",
+          "origin_id": "scamwatch-stats",
+          "span": {
+            "section": "2025 Infographic: Losses and top-five tables for 2025/2024",
+            "url": "https://www.scamwatch.gov.au/research-and-resources/targeting-scams-report",
+            "unit_id": "national-statistics",
+            "published_at": "2026-03-30"
+          },
+          "source_hash": "5125c9e38f2c457a2875f604af39d6b9e24605c5eb8a38562c4c8cce366f8e9e",
+          "observed_at": "2026-10-19T15:09:08.366157+00:00",
+          "jurisdiction": "Australia",
+          "statement": "### Targeting scams: report of the National Anti-Scam Centre on scams data and activity 2025 \nThis report provides insight into the scams targeting Australians in 2025 and highlights the impact of combined efforts by government, law enforcement, community sector and industry to combat these financial crimes.\n\n30 March 2026\n\n## Infographic\n\nImage: Losses to various scams 2025 \n###\n\nInfographic text\n\nView the accessible text version of the infographic ### Losses\n\nTotal combined losses reported to Scamwatch, ReportCyber, IDCARE, Australian Financial Crimes Exchange (AFCX) and Australian Securities and Investment Commission (ASIC): $2.18 billion (an increase of 7.8%)\n\n481,523 scam reports (a decrease of 2.3%)\n\n### Combined losses over last 5 years\n\n2021: $1.8 billion\n\n2022: $3.1 billion\n\n2023: $2.7 billion\n\n2024: $2.0 billion\n\n2025: $2.2 billion\n### Top 5 scams by loss 2025 (combined data)\n\n  * Investment: $837.7 million\n  * Payment redirection: $166.8 million\n  * Romance: $139.9 million\n  * Phishing: $97.6 million\n  * Remote access: $69.9 million\n\nThe losses from the top 5 scam types accounted for 60% of total losses in 2025.\n### Top 5 scams by loss 2024 (combined data)\n\n  * Investment: $945 million\n  * Romance: $156.8 million\n  * Payment redirection: $152.6 million\n  * Remote access: $106 million\n  * Phishing: $84.5 million\n\nThe losses from the top 5 scam types accounted for 71% of total losses in 2024.",
+          "limitations": [
+            "全国多机构合并举报口径，不是Westpac客户样本；不能推算单个客户风险。页面历史总额有四舍五入，不能用它重算精确同比。",
+            "未知发布日期不能证明在案件时点已生效"
+          ]
+        },
+        {
+          "evidence_id": "9f7d29077b5d4de0ac6055d40ffedea4",
+          "case_id": "8bd1c4658aa8429c946ae8a0f7f321b9",
+          "case_version": 1,
+          "kind": "reported_claim",
+          "origin_id": "a28e33f334ec9e04",
+          "span": {
+            "section": "visible_facts"
+          },
+          "source_hash": "c525041fa8049d3b70ca56ba83d0f4e9f6b8df493d947c034c59829a74c61046",
+          "observed_at": "2026-10-19T15:09:08.366193+00:00",
+          "jurisdiction": "Australia",
+          "statement": "我是卖家，买家发来付款截图，催我交货。",
+          "limitations": [
+            "项目编写培训情境，不是真实客户事实；隐藏设定不放入学员证据"
+          ]
+        }
+      ],
+      "unresolved_questions": [],
+      "status": "pending_review",
+      "fields": {}
+    },
+    "results": [
+      {
+        "run_id": "13389b68977c4909adc7d49ea6102207",
+        "case_id": "8bd1c4658aa8429c946ae8a0f7f321b9",
+        "case_version": 1,
+        "status": "pending_review",
+        "recommendations": [],
+        "evidence": [
+          {
+            "evidence_id": "5f030a0d1e5e49aaaf40e4bcbec65dcd",
+            "case_id": "8bd1c4658aa8429c946ae8a0f7f321b9",
+            "case_version": 1,
+            "kind": "public_guidance",
+            "origin_id": "westpac-bec",
+            "span": {
+              "section": "Signs this may be a scam + Tips to minimise the risk",
+              "url": "https://www.westpac.com.au/security/types-of-scams/business-email-scams/",
+              "unit_id": "bec-guidance",
+              "published_at": null
+            },
+            "source_hash": "b059afc9484892dba8710b0e35111d0f2c349b57010fb340bf994f8a86c898d6",
+            "observed_at": "2026-10-19T15:09:08.366112+00:00",
+            "jurisdiction": "Australia",
+            "statement": "Signs this may be a scam\nThey request payment to a new account number.\nEven if such requests came from someone associated with you, do not make any changes to account details until you've verbally verified the request using a phone number you sourced yourself.\nA CEO, executive or senior manager requests payment to a specific account.\nPause and verify the request verbally, regardless of who the sender is or if the request is urgent.\nA supplier or employee claim they haven’t received payment.\nDo not make any more payments until you investigate the payment history and emails, to check if there were any requests made to amend account details.\nYou’re paying them for the first time.\nWhen paying someone for the first time, such as a deposit to a real estate agent’s trust account for a property purchase, validate the request and payee details before sending money. You can do this verbally or request to pay using\nPayID®\n.\n\nTips to minimise the risk of being scammed\nAlways verbally confirm any requests for urgent or redirected payments. Always use a phone number you have on file, or a publicly sourced number. Never use contact details provided in the email.\nRequest to pay using\nPayID\nif the payee has one. PayID displays the registered payee name onscreen, so if it's not your intended recipient you will know something is possibly unusual.\nRegister your business for PayID\nby using your ABN and request this is how your account is credited.\nUse multifactor authentication and dual payment approvals where available.\nIf you have a business, train your employees regularly on how to spot payment redirection scams. Empower them to question any payment related requests and verbally verify account details are correct. Update your processes to include these steps.",
+            "limitations": [
+              "公开一般安全建议，非Westpac内部操作规程；账户变更是核实信号，不足以证明欺诈。PayID和双人审批以可用为条件。",
+              "未知发布日期不能证明在案件时点已生效"
+            ]
+          },
+          {
+            "evidence_id": "0b6851aa60624ed18a6a28ab9ba87e92",
+            "case_id": "8bd1c4658aa8429c946ae8a0f7f321b9",
+            "case_version": 1,
+            "kind": "public_guidance",
+            "origin_id": "scamwatch-case",
+            "span": {
+              "section": "Complete John case, privacy caveat and response",
+              "url": "https://www.scamwatch.gov.au/stop-check-protect/real-life-stories/false-billing-john-updated-supplier-details-and-it-ended-up-costing-thousands",
+              "unit_id": "bec-case",
+              "published_at": null
+            },
+            "source_hash": "fc47b2363ee603c6506d4c8a0cff494ce2eb1bdfa557c147886b61491b580985",
+            "observed_at": "2026-10-19T15:09:08.366133+00:00",
+            "jurisdiction": "Australia",
+            "statement": "John worked as an accounts manager for a local manufacturing business. Late on a Friday afternoon, he received an email which appeared to be from one of his regular suppliers, Mr Liu from Zhang-Fei Industries, a ball bearings supplier in Asia. Mr Liu’s email explained that due to a change in their internal finance system, he needed John to update their banking details, including a new account number.\nIf you receive an email with a request involving financial details that you know nothing about, don’t action it until you are sure it’s the real deal.\n\nJohn took the email at face value and changed the banking information in his company’s database. A few days later, John made a scheduled payment to Zhang-Fei Industries for $17,000.\nTwo weeks later the ball bearings from Zheng Fei industries had not arrived so John telephoned Mr Liu. Mr Liu said he hadn’t received payment for the last order and had consequently cancelled shipment. John told Mr Liu that he had processed the payment personally to make sure it was paid according to the new arrangements. After some investigation it became clear that Mr Liu had not sent any request to update his company’s banking details and John was the victim of a scam.\nIn the weeks to come, with the initial loss of $17,000, the delay in supply flowing from missed orders and broken contractual obligations, John’s company estimated their loss to be over $30,000.\n\n*The story above is based on one or more real scam reports received by the ACCC. For privacy purposes the names and images of victims have not been used.\n## Have you been scammed?\n\nIf you think you've been scammed or know someone who has, report it to the ACCC using our report a scam page.\n\nReport a scam \nIf you have lost money, contact your bank or financial institution immediately.",
+            "limitations": [
+              "官方基于一个或多个真实举报编写，姓名图像已处理；不是本项目客户案例，不能估计客户损失。",
+              "未知发布日期不能证明在案件时点已生效"
+            ]
+          },
+          {
+            "evidence_id": "cb6694d102d54f938e3b0754dae8cb9c",
+            "case_id": "8bd1c4658aa8429c946ae8a0f7f321b9",
+            "case_version": 1,
+            "kind": "public_guidance",
+            "origin_id": "westpac-receipt",
+            "span": {
+              "section": "April 2023 - PayID Scam",
+              "url": "https://www.westpac.com.au/security/latest-scams/past-scams-and-alerts/",
+              "unit_id": "receipt-guidance",
+              "published_at": null
+            },
+            "source_hash": "7f1fbefcc331d7493401d93fcdcf9025bd980299fe97742a6b803c151981da4d",
+            "observed_at": "2026-10-19T15:09:08.366142+00:00",
+            "jurisdiction": "Australia",
+            "statement": "April 2023 - PayID Scam\nBe alert to PayID Scams when selling items online\nUsing PayID is a safe and easy way to send and receive funds.\nAfter a conversation with a potential buyer through an Online Marketplace, such as Facebook or Gumtree, you're advised that you need to upgrade your PayID to a business account for you to receive the payment.\nThese scam emails state your account has been upgraded to a business account and you need to refund a deposit that has been credited to your account.\nDo not act on these emails and report the buyer/seller profile to the marketplace as a potential scam.\nReminder\n- PayID's are managed within your banking app. A PayID does not need to be upgraded or activated by making payments. For more information on how PayID's work and how you can set up a Westpac registered PayID, visit\nwestpac.com.au/payid\n.\nAlso, when selling items online, never provide the buyer with the item until you can see the funds in your account, within your own online or mobile banking. Never rely on a receipt or screenshot of a payment sent to you. Receipts can be falsified by scammers to appear as if they have made payment, when they have not.\nIf you have received an email, SMS or other request that you have identified as potentially fraudulent or which you think involves a scam account, it's always a good idea to report these through to us, before deleting it from your inbox or deleted items on your device.\nForward a copy to hoax@westpac.com.au or 0497 132 032.",
+            "limitations": [
+              "2023年4月公开提示，场景为网上出售物品；不能据此判定某笔交易已经到账或已构成诈骗。",
+              "未知发布日期不能证明在案件时点已生效"
+            ]
+          },
+          {
+            "evidence_id": "a313f17142bf4f168f95664f17cbe3f0",
+            "case_id": "8bd1c4658aa8429c946ae8a0f7f321b9",
+            "case_version": 1,
+            "kind": "public_guidance",
+            "origin_id": "asic-invest",
+            "span": {
+              "section": "CHECK: Is the company/person real and licensed or authorised — full section and table",
+              "url": "https://moneysmart.gov.au/check-and-report-scams/check-before-you-invest",
+              "unit_id": "investment-check",
+              "published_at": null
+            },
+            "source_hash": "aa5cf32f7264ae72183946613c4bff566cd704e1619a6d803720c3e3f1a13107",
+            "observed_at": "2026-10-19T15:09:08.366150+00:00",
+            "jurisdiction": "Australia",
+            "statement": "## CHECK: Is the company/person real and licensed or authorised\n\nIn Australia, companies or people offering investments must have an Australian Financial Services (AFS) licence or be authorised by someone who does.\n\nAn AFS licence:\n\n  * controls what kinds of financial products they can sell\n  * gives better protection to investors if things go wrong\nIt's important to know that holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice. It doesn't guarantee the investment is safe or that you won’t lose money from dealing with them.\n\nWith a proliferation of AI-generated scam websites , online reviews, videos, and social media posts, it’s also important to not rely on contact details, links or phone numbers provided in an investment offer, text message, email, social media post or online advertisement.\nScammers misuse AFS licence details by claiming to hold a licence, using another entity’s licence number, or impersonating a licensed financial services business.\n\nBefore investing, make sure you verify the licence holder’s name and number on ASIC’s professional registers , and ensure those details match the business or investment opportunity being promoted. Relying solely on advertisements, websites or online search results can put consumers at risk.\n### How to check on a company or person\n\nIf they say they are:  | Check this:\nLicensed by ASIC (AFS licence) An authorised representative for a licensee (with an AFS licence) Offering an investment in a registered managed investment scheme  | ASIC's Professional Registers Search   * enter the name, Australian Business Number, Australian Company Number or licence number\n  * select Register: Australian financial services licensee or Australian financial services authorised representatives in drop-down menu\n  * if a website URL is listed in the register, check that it matches any website URL you have been using\nASIC Connect   * search within: Banned and Disqualified\n  * see if they have been banned from giving financial advice or managing a company\nMoneysmart Investor Alert List \n  * this is a list of suspicious companies, businesses and websites. They may be unlicensed or impersonating a real company or licensee.\nA financial adviser who can advise you on, or sell you, an investment  | Financial advisers register   * enter name, adviser number, or Australian Business Number\n  * check what they are authorised to advise on\nRegistered or Certified by ASIC and direct you to ASIC Connect to verify an investment opportunity   | ASIC Connect can be used to confirm company registration. However, registration alone doesn’t mean that a company is licensed or authorised to provide financial services.    To verify an investment opportunity, check ASIC's Professional Registers Search to see if the company is licensed or authorised.\nOffering an investment in a registered managed investment scheme   | ASIC's Professional Registers Search    * enter the scheme name, Australian Business Number, or Australian Company Number\n  * check the scheme is registered\n  * Note that registration does not mean that ASIC endorses the investment\nSubscribe to ASIC's free Company Alert service for updates on a company. You'll get an email to tell you when they've lodged forms, and which ones. You’ll also be notified of notices if the company is placed in any type of external administration, or if the details of their external administrators cease or change.",
+            "limitations": [
+              "适用澳大利亚投资核验；注册不等于获许可，获许可不等于投资安全或ASIC认可。",
+              "未知发布日期不能证明在案件时点已生效"
+            ]
+          },
+          {
+            "evidence_id": "a9128edf89994121b21951c1c933b687",
+            "case_id": "8bd1c4658aa8429c946ae8a0f7f321b9",
+            "case_version": 1,
+            "kind": "public_guidance",
+            "origin_id": "scamwatch-stats",
+            "span": {
+              "section": "2025 Infographic: Losses and top-five tables for 2025/2024",
+              "url": "https://www.scamwatch.gov.au/research-and-resources/targeting-scams-report",
+              "unit_id": "national-statistics",
+              "published_at": "2026-03-30"
+            },
+            "source_hash": "5125c9e38f2c457a2875f604af39d6b9e24605c5eb8a38562c4c8cce366f8e9e",
+            "observed_at": "2026-10-19T15:09:08.366157+00:00",
+            "jurisdiction": "Australia",
+            "statement": "### Targeting scams: report of the National Anti-Scam Centre on scams data and activity 2025 \nThis report provides insight into the scams targeting Australians in 2025 and highlights the impact of combined efforts by government, law enforcement, community sector and industry to combat these financial crimes.\n\n30 March 2026\n\n## Infographic\n\nImage: Losses to various scams 2025 \n###\n\nInfographic text\n\nView the accessible text version of the infographic ### Losses\n\nTotal combined losses reported to Scamwatch, ReportCyber, IDCARE, Australian Financial Crimes Exchange (AFCX) and Australian Securities and Investment Commission (ASIC): $2.18 billion (an increase of 7.8%)\n\n481,523 scam reports (a decrease of 2.3%)\n\n### Combined losses over last 5 years\n\n2021: $1.8 billion\n\n2022: $3.1 billion\n\n2023: $2.7 billion\n\n2024: $2.0 billion\n\n2025: $2.2 billion\n### Top 5 scams by loss 2025 (combined data)\n\n  * Investment: $837.7 million\n  * Payment redirection: $166.8 million\n  * Romance: $139.9 million\n  * Phishing: $97.6 million\n  * Remote access: $69.9 million\n\nThe losses from the top 5 scam types accounted for 60% of total losses in 2025.\n### Top 5 scams by loss 2024 (combined data)\n\n  * Investment: $945 million\n  * Romance: $156.8 million\n  * Payment redirection: $152.6 million\n  * Remote access: $106 million\n  * Phishing: $84.5 million\n\nThe losses from the top 5 scam types accounted for 71% of total losses in 2024.",
+            "limitations": [
+              "全国多机构合并举报口径，不是Westpac客户样本；不能推算单个客户风险。页面历史总额有四舍五入，不能用它重算精确同比。",
+              "未知发布日期不能证明在案件时点已生效"
+            ]
+          },
+          {
+            "evidence_id": "9f7d29077b5d4de0ac6055d40ffedea4",
+            "case_id": "8bd1c4658aa8429c946ae8a0f7f321b9",
+            "case_version": 1,
+            "kind": "reported_claim",
+            "origin_id": "a28e33f334ec9e04",
+            "span": {
+              "section": "visible_facts"
+            },
+            "source_hash": "c525041fa8049d3b70ca56ba83d0f4e9f6b8df493d947c034c59829a74c61046",
+            "observed_at": "2026-10-19T15:09:08.366193+00:00",
+            "jurisdiction": "Australia",
+            "statement": "我是卖家，买家发来付款截图，催我交货。",
+            "limitations": [
+              "项目编写培训情境，不是真实客户事实；隐藏设定不放入学员证据"
+            ]
+          }
+        ],
+        "tool_results": [
+          {
+            "call_id": "2b8c9b234dd44c36a290865fec29df69",
+            "case_id": "8bd1c4658aa8429c946ae8a0f7f321b9",
+            "case_version": 1,
+            "tool_name": "guidance",
+            "tool_version": "1",
+            "validated_args": {
+              "mode": "all"
+            },
+            "args_hash": "6c8b23c33265f003966d4727caac69c99166afafdbdd9700c6c02aea6ca382ff",
+            "input_evidence": [
+              {
+                "id": "case-input:8bd1c4658aa8429c946ae8a0f7f321b9",
+                "hash": "a8a6977e1831a4d141880d1bee4161bc65836468ca8317e0f161b80f108528c6"
+              }
+            ],
+            "status": "ok",
+            "observations": [
+              {
+                "evidence_id": "5f030a0d1e5e49aaaf40e4bcbec65dcd",
+                "statement": "Signs this may be a scam\nThey request payment to a new account number.\nEven if such requests came from someone associated with you, do not make any changes to account details until you've verbally verified the request using a phone number you sourced yourself.\nA CEO, executive or senior manager requests payment to a specific account.\nPause and verify the request verbally, regardless of who the sender is or if the request is urgent.\nA supplier or employee claim they haven’t received payment.\nDo not make any more payments until you investigate the payment history and emails, to check if there were any requests made to amend account details.\nYou’re paying them for the first time.\nWhen paying someone for the first time, such as a deposit to a real estate agent’s trust account for a property purchase, validate the request and payee details before sending money. You can do this verbally or request to pay using\nPayID®\n.\n\nTips to minimise the risk of being scammed\nAlways verbally confirm any requests for urgent or redirected payments. Always use a phone number you have on file, or a publicly sourced number. Never use contact details provided in the email.\nRequest to pay using\nPayID\nif the payee has one. PayID displays the registered payee name onscreen, so if it's not your intended recipient you will know something is possibly unusual.\nRegister your business for PayID\nby using your ABN and request this is how your account is credited.\nUse multifactor authentication and dual payment approvals where available.\nIf you have a business, train your employees regularly on how to spot payment redirection scams. Empower them to question any payment related requests and verbally verify account details are correct. Update your processes to include these steps.",
+                "unit": {
+                  "unit_id": "bec-guidance",
+                  "source_id": "westpac-bec",
+                  "title": "Payment Redirection Scams | Westpac",
+                  "url": "https://www.westpac.com.au/security/types-of-scams/business-email-scams/",
+                  "published_or_updated_at": null,
+                  "date_status": "not_yet_verified",
+                  "retrieved_at": "2026-10-18T11:14:57.079958+00:00",
+                  "region": "Australia",
+                  "material_type": "bank_public_guidance",
+                  "page_or_section": "Signs this may be a scam + Tips to minimise the risk",
+                  "file_sha256": "e1fa27d2a476351696c6e142358448fbf694367846636e0385c9cefdb6f7a822",
+                  "review_status": "codex_author_checked_pending_independent_review",
+                  "seed_provenance": "independently_discovered_official_source_material_pack_not_found",
+                  "hash_scope": "original_http_html",
+                  "acquisition_method": "httpx",
+                  "section": "Signs this may be a scam + Tips to minimise the risk",
+                  "text": "Signs this may be a scam\nThey request payment to a new account number.\nEven if such requests came from someone associated with you, do not make any changes to account details until you've verbally verified the request using a phone number you sourced yourself.\nA CEO, executive or senior manager requests payment to a specific account.\nPause and verify the request verbally, regardless of who the sender is or if the request is urgent.\nA supplier or employee claim they haven’t received payment.\nDo not make any more payments until you investigate the payment history and emails, to check if there were any requests made to amend account details.\nYou’re paying them for the first time.\nWhen paying someone for the first time, such as a deposit to a real estate agent’s trust account for a property purchase, validate the request and payee details before sending money. You can do this verbally or request to pay using\nPayID®\n.\n\nTips to minimise the risk of being scammed\nAlways verbally confirm any requests for urgent or redirected payments. Always use a phone number you have on file, or a publicly sourced number. Never use contact details provided in the email.\nRequest to pay using\nPayID\nif the payee has one. PayID displays the registered payee name onscreen, so if it's not your intended recipient you will know something is possibly unusual.\nRegister your business for PayID\nby using your ABN and request this is how your account is credited.\nUse multifactor authentication and dual payment approvals where available.\nIf you have a business, train your employees regularly on how to spot payment redirection scams. Empower them to question any payment related requests and verbally verify account details are correct. Update your processes to include these steps.",
+                  "search_labels": "供应商 收款账户变更 更换 银行 邮件 发票 核实 电话 紧急 客服 培训 invoice supplier account change verify",
+                  "limitations": "公开一般安全建议，非Westpac内部操作规程；账户变更是核实信号，不足以证明欺诈。PayID和双人审批以可用为条件。",
+                  "unit_sha256": "b059afc9484892dba8710b0e35111d0f2c349b57010fb340bf994f8a86c898d6",
+                  "limitations_origin": "project_author_scope_note_not_official_quote"
+                }
+              },
+              {
+                "evidence_id": "0b6851aa60624ed18a6a28ab9ba87e92",
+                "statement": "John worked as an accounts manager for a local manufacturing business. Late on a Friday afternoon, he received an email which appeared to be from one of his regular suppliers, Mr Liu from Zhang-Fei Industries, a ball bearings supplier in Asia. Mr Liu’s email explained that due to a change in their internal finance system, he needed John to update their banking details, including a new account number.\nIf you receive an email with a request involving financial details that you know nothing about, don’t action it until you are sure it’s the real deal.\n\nJohn took the email at face value and changed the banking information in his company’s database. A few days later, John made a scheduled payment to Zhang-Fei Industries for $17,000.\nTwo weeks later the ball bearings from Zheng Fei industries had not arrived so John telephoned Mr Liu. Mr Liu said he hadn’t received payment for the last order and had consequently cancelled shipment. John told Mr Liu that he had processed the payment personally to make sure it was paid according to the new arrangements. After some investigation it became clear that Mr Liu had not sent any request to update his company’s banking details and John was the victim of a scam.\nIn the weeks to come, with the initial loss of $17,000, the delay in supply flowing from missed orders and broken contractual obligations, John’s company estimated their loss to be over $30,000.\n\n*The story above is based on one or more real scam reports received by the ACCC. For privacy purposes the names and images of victims have not been used.\n## Have you been scammed?\n\nIf you think you've been scammed or know someone who has, report it to the ACCC using our report a scam page.\n\nReport a scam \nIf you have lost money, contact your bank or financial institution immediately.",
+                "unit": {
+                  "unit_id": "bec-case",
+                  "source_id": "scamwatch-case",
+                  "title": "False billing: John updated supplier details and it ended up costing thousands",
+                  "url": "https://www.scamwatch.gov.au/stop-check-protect/real-life-stories/false-billing-john-updated-supplier-details-and-it-ended-up-costing-thousands",
+                  "material_type": "official_public_case",
+                  "published_or_updated_at": null,
+                  "date_status": "not_shown_in_read_section",
+                  "retrieved_at": "2026-10-18T11:16:32.767626+00:00",
+                  "region": "Australia",
+                  "file_sha256": "fc47b2363ee603c6506d4c8a0cff494ce2eb1bdfa557c147886b61491b580985",
+                  "hash_scope": "saved_web_tool_section_not_original_html",
+                  "acquisition_method": "web_tool_original_url_extraction_after_direct_http_403",
+                  "seed_provenance": "independently_discovered_material_pack_missing",
+                  "review_status": "codex_author_checked_pending_independent_review",
+                  "page_or_section": "Complete John case, privacy caveat and response",
+                  "section": "Complete John case, privacy caveat and response",
+                  "text": "John worked as an accounts manager for a local manufacturing business. Late on a Friday afternoon, he received an email which appeared to be from one of his regular suppliers, Mr Liu from Zhang-Fei Industries, a ball bearings supplier in Asia. Mr Liu’s email explained that due to a change in their internal finance system, he needed John to update their banking details, including a new account number.\nIf you receive an email with a request involving financial details that you know nothing about, don’t action it until you are sure it’s the real deal.\n\nJohn took the email at face value and changed the banking information in his company’s database. A few days later, John made a scheduled payment to Zhang-Fei Industries for $17,000.\nTwo weeks later the ball bearings from Zheng Fei industries had not arrived so John telephoned Mr Liu. Mr Liu said he hadn’t received payment for the last order and had consequently cancelled shipment. John told Mr Liu that he had processed the payment personally to make sure it was paid according to the new arrangements. After some investigation it became clear that Mr Liu had not sent any request to update his company’s banking details and John was the victim of a scam.\nIn the weeks to come, with the initial loss of $17,000, the delay in supply flowing from missed orders and broken contractual obligations, John’s company estimated their loss to be over $30,000.\n\n*The story above is based on one or more real scam reports received by the ACCC. For privacy purposes the names and images of victims have not been used.\n## Have you been scammed?\n\nIf you think you've been scammed or know someone who has, report it to the ACCC using our report a scam page.\n\nReport a scam \nIf you have lost money, contact your bank or financial institution immediately.",
+                  "search_labels": "供应商 收款账户变更 官方 案例 John 培训 supplier account change case",
+                  "limitations": "官方基于一个或多个真实举报编写，姓名图像已处理；不是本项目客户案例，不能估计客户损失。",
+                  "unit_sha256": "fc47b2363ee603c6506d4c8a0cff494ce2eb1bdfa557c147886b61491b580985",
+                  "limitations_origin": "project_author_scope_note_not_official_quote"
+                }
+              },
+              {
+                "evidence_id": "cb6694d102d54f938e3b0754dae8cb9c",
+                "statement": "April 2023 - PayID Scam\nBe alert to PayID Scams when selling items online\nUsing PayID is a safe and easy way to send and receive funds.\nAfter a conversation with a potential buyer through an Online Marketplace, such as Facebook or Gumtree, you're advised that you need to upgrade your PayID to a business account for you to receive the payment.\nThese scam emails state your account has been upgraded to a business account and you need to refund a deposit that has been credited to your account.\nDo not act on these emails and report the buyer/seller profile to the marketplace as a potential scam.\nReminder\n- PayID's are managed within your banking app. A PayID does not need to be upgraded or activated by making payments. For more information on how PayID's work and how you can set up a Westpac registered PayID, visit\nwestpac.com.au/payid\n.\nAlso, when selling items online, never provide the buyer with the item until you can see the funds in your account, within your own online or mobile banking. Never rely on a receipt or screenshot of a payment sent to you. Receipts can be falsified by scammers to appear as if they have made payment, when they have not.\nIf you have received an email, SMS or other request that you have identified as potentially fraudulent or which you think involves a scam account, it's always a good idea to report these through to us, before deleting it from your inbox or deleted items on your device.\nForward a copy to hoax@westpac.com.au or 0497 132 032.",
+                "unit": {
+                  "unit_id": "receipt-guidance",
+                  "source_id": "westpac-receipt",
+                  "title": "Past Scams and Alerts | Westpac",
+                  "url": "https://www.westpac.com.au/security/latest-scams/past-scams-and-alerts/",
+                  "published_or_updated_at": null,
+                  "date_status": "page_update_not_shown_section_dated_2023_04",
+                  "retrieved_at": "2026-10-18T11:15:01.536289+00:00",
+                  "region": "Australia",
+                  "material_type": "bank_public_guidance",
+                  "page_or_section": "April 2023 - PayID Scam",
+                  "file_sha256": "cba10f00f84e9061c54b885148c1d8672d9b5940cc46cfe39c620b1b7df75bbd",
+                  "review_status": "codex_author_checked_pending_independent_review",
+                  "seed_provenance": "independently_discovered_official_source_material_pack_not_found",
+                  "hash_scope": "original_http_html",
+                  "acquisition_method": "httpx",
+                  "section": "April 2023 - PayID Scam",
+                  "text": "April 2023 - PayID Scam\nBe alert to PayID Scams when selling items online\nUsing PayID is a safe and easy way to send and receive funds.\nAfter a conversation with a potential buyer through an Online Marketplace, such as Facebook or Gumtree, you're advised that you need to upgrade your PayID to a business account for you to receive the payment.\nThese scam emails state your account has been upgraded to a business account and you need to refund a deposit that has been credited to your account.\nDo not act on these emails and report the buyer/seller profile to the marketplace as a potential scam.\nReminder\n- PayID's are managed within your banking app. A PayID does not need to be upgraded or activated by making payments. For more information on how PayID's work and how you can set up a Westpac registered PayID, visit\nwestpac.com.au/payid\n.\nAlso, when selling items online, never provide the buyer with the item until you can see the funds in your account, within your own online or mobile banking. Never rely on a receipt or screenshot of a payment sent to you. Receipts can be falsified by scammers to appear as if they have made payment, when they have not.\nIf you have received an email, SMS or other request that you have identified as potentially fraudulent or which you think involves a scam account, it's always a good idea to report these through to us, before deleting it from your inbox or deleted items on your device.\nForward a copy to hoax@westpac.com.au or 0497 132 032.",
+                  "search_labels": "付款截图 收据 到账 网银 卖货 交货 receipt screenshot payment funds",
+                  "limitations": "2023年4月公开提示，场景为网上出售物品；不能据此判定某笔交易已经到账或已构成诈骗。",
+                  "unit_sha256": "7f1fbefcc331d7493401d93fcdcf9025bd980299fe97742a6b803c151981da4d",
+                  "limitations_origin": "project_author_scope_note_not_official_quote",
+                  "section_date": "2023-04"
+                }
+              },
+              {
+                "evidence_id": "a313f17142bf4f168f95664f17cbe3f0",
+                "statement": "## CHECK: Is the company/person real and licensed or authorised\n\nIn Australia, companies or people offering investments must have an Australian Financial Services (AFS) licence or be authorised by someone who does.\n\nAn AFS licence:\n\n  * controls what kinds of financial products they can sell\n  * gives better protection to investors if things go wrong\nIt's important to know that holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice. It doesn't guarantee the investment is safe or that you won’t lose money from dealing with them.\n\nWith a proliferation of AI-generated scam websites , online reviews, videos, and social media posts, it’s also important to not rely on contact details, links or phone numbers provided in an investment offer, text message, email, social media post or online advertisement.\nScammers misuse AFS licence details by claiming to hold a licence, using another entity’s licence number, or impersonating a licensed financial services business.\n\nBefore investing, make sure you verify the licence holder’s name and number on ASIC’s professional registers , and ensure those details match the business or investment opportunity being promoted. Relying solely on advertisements, websites or online search results can put consumers at risk.\n### How to check on a company or person\n\nIf they say they are:  | Check this:\nLicensed by ASIC (AFS licence) An authorised representative for a licensee (with an AFS licence) Offering an investment in a registered managed investment scheme  | ASIC's Professional Registers Search   * enter the name, Australian Business Number, Australian Company Number or licence number\n  * select Register: Australian financial services licensee or Australian financial services authorised representatives in drop-down menu\n  * if a website URL is listed in the register, check that it matches any website URL you have been using\nASIC Connect   * search within: Banned and Disqualified\n  * see if they have been banned from giving financial advice or managing a company\nMoneysmart Investor Alert List \n  * this is a list of suspicious companies, businesses and websites. They may be unlicensed or impersonating a real company or licensee.\nA financial adviser who can advise you on, or sell you, an investment  | Financial advisers register   * enter name, adviser number, or Australian Business Number\n  * check what they are authorised to advise on\nRegistered or Certified by ASIC and direct you to ASIC Connect to verify an investment opportunity   | ASIC Connect can be used to confirm company registration. However, registration alone doesn’t mean that a company is licensed or authorised to provide financial services.    To verify an investment opportunity, check ASIC's Professional Registers Search to see if the company is licensed or authorised.\nOffering an investment in a registered managed investment scheme   | ASIC's Professional Registers Search    * enter the scheme name, Australian Business Number, or Australian Company Number\n  * check the scheme is registered\n  * Note that registration does not mean that ASIC endorses the investment\nSubscribe to ASIC's free Company Alert service for updates on a company. You'll get an email to tell you when they've lodged forms, and which ones. You’ll also be notified of notices if the company is placed in any type of external administration, or if the details of their external administrators cease or change.",
+                "unit": {
+                  "unit_id": "investment-check",
+                  "source_id": "asic-invest",
+                  "title": "Check before you invest",
+                  "url": "https://moneysmart.gov.au/check-and-report-scams/check-before-you-invest",
+                  "material_type": "official_guidance",
+                  "published_or_updated_at": null,
+                  "date_status": "not_shown_in_read_section",
+                  "retrieved_at": "2026-10-18T11:16:32.767626+00:00",
+                  "region": "Australia",
+                  "file_sha256": "aa5cf32f7264ae72183946613c4bff566cd704e1619a6d803720c3e3f1a13107",
+                  "hash_scope": "saved_web_tool_section_not_original_html",
+                  "acquisition_method": "web_tool_original_url_extraction_after_direct_http_403",
+                  "seed_provenance": "independently_discovered_material_pack_missing",
+                  "review_status": "codex_author_checked_pending_independent_review",
+                  "page_or_section": "CHECK: Is the company/person real and licensed or authorised — full section and table",
+                  "section": "CHECK: Is the company/person real and licensed or authorised — full section and table",
+                  "text": "## CHECK: Is the company/person real and licensed or authorised\n\nIn Australia, companies or people offering investments must have an Australian Financial Services (AFS) licence or be authorised by someone who does.\n\nAn AFS licence:\n\n  * controls what kinds of financial products they can sell\n  * gives better protection to investors if things go wrong\nIt's important to know that holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice. It doesn't guarantee the investment is safe or that you won’t lose money from dealing with them.\n\nWith a proliferation of AI-generated scam websites , online reviews, videos, and social media posts, it’s also important to not rely on contact details, links or phone numbers provided in an investment offer, text message, email, social media post or online advertisement.\nScammers misuse AFS licence details by claiming to hold a licence, using another entity’s licence number, or impersonating a licensed financial services business.\n\nBefore investing, make sure you verify the licence holder’s name and number on ASIC’s professional registers , and ensure those details match the business or investment opportunity being promoted. Relying solely on advertisements, websites or online search results can put consumers at risk.\n### How to check on a company or person\n\nIf they say they are:  | Check this:\nLicensed by ASIC (AFS licence) An authorised representative for a licensee (with an AFS licence) Offering an investment in a registered managed investment scheme  | ASIC's Professional Registers Search   * enter the name, Australian Business Number, Australian Company Number or licence number\n  * select Register: Australian financial services licensee or Australian financial services authorised representatives in drop-down menu\n  * if a website URL is listed in the register, check that it matches any website URL you have been using\nASIC Connect   * search within: Banned and Disqualified\n  * see if they have been banned from giving financial advice or managing a company\nMoneysmart Investor Alert List \n  * this is a list of suspicious companies, businesses and websites. They may be unlicensed or impersonating a real company or licensee.\nA financial adviser who can advise you on, or sell you, an investment  | Financial advisers register   * enter name, adviser number, or Australian Business Number\n  * check what they are authorised to advise on\nRegistered or Certified by ASIC and direct you to ASIC Connect to verify an investment opportunity   | ASIC Connect can be used to confirm company registration. However, registration alone doesn’t mean that a company is licensed or authorised to provide financial services.    To verify an investment opportunity, check ASIC's Professional Registers Search to see if the company is licensed or authorised.\nOffering an investment in a registered managed investment scheme   | ASIC's Professional Registers Search    * enter the scheme name, Australian Business Number, or Australian Company Number\n  * check the scheme is registered\n  * Note that registration does not mean that ASIC endorses the investment\nSubscribe to ASIC's free Company Alert service for updates on a company. You'll get an email to tell you when they've lodged forms, and which ones. You’ll also be notified of notices if the company is placed in any type of external administration, or if the details of their external administrators cease or change.",
+                  "search_labels": "投资 邀约 专业网页 机构登记 注册 公司 牌照 ASIC 真实 安全 website registration investment licence",
+                  "limitations": "适用澳大利亚投资核验；注册不等于获许可，获许可不等于投资安全或ASIC认可。",
+                  "unit_sha256": "aa5cf32f7264ae72183946613c4bff566cd704e1619a6d803720c3e3f1a13107",
+                  "limitations_origin": "project_author_scope_note_not_official_quote"
+                }
+              },
+              {
+                "evidence_id": "a9128edf89994121b21951c1c933b687",
+                "statement": "### Targeting scams: report of the National Anti-Scam Centre on scams data and activity 2025 \nThis report provides insight into the scams targeting Australians in 2025 and highlights the impact of combined efforts by government, law enforcement, community sector and industry to combat these financial crimes.\n\n30 March 2026\n\n## Infographic\n\nImage: Losses to various scams 2025 \n###\n\nInfographic text\n\nView the accessible text version of the infographic ### Losses\n\nTotal combined losses reported to Scamwatch, ReportCyber, IDCARE, Australian Financial Crimes Exchange (AFCX) and Australian Securities and Investment Commission (ASIC): $2.18 billion (an increase of 7.8%)\n\n481,523 scam reports (a decrease of 2.3%)\n\n### Combined losses over last 5 years\n\n2021: $1.8 billion\n\n2022: $3.1 billion\n\n2023: $2.7 billion\n\n2024: $2.0 billion\n\n2025: $2.2 billion\n### Top 5 scams by loss 2025 (combined data)\n\n  * Investment: $837.7 million\n  * Payment redirection: $166.8 million\n  * Romance: $139.9 million\n  * Phishing: $97.6 million\n  * Remote access: $69.9 million\n\nThe losses from the top 5 scam types accounted for 60% of total losses in 2025.\n### Top 5 scams by loss 2024 (combined data)\n\n  * Investment: $945 million\n  * Romance: $156.8 million\n  * Payment redirection: $152.6 million\n  * Remote access: $106 million\n  * Phishing: $84.5 million\n\nThe losses from the top 5 scam types accounted for 71% of total losses in 2024.",
+                "unit": {
+                  "unit_id": "national-statistics",
+                  "source_id": "scamwatch-stats",
+                  "title": "Targeting scams report — 2025 infographic",
+                  "url": "https://www.scamwatch.gov.au/research-and-resources/targeting-scams-report",
+                  "material_type": "official_statistics",
+                  "published_or_updated_at": "2026-03-30",
+                  "date_status": "report_publication_date",
+                  "retrieved_at": "2026-10-18T11:16:32.767626+00:00",
+                  "region": "Australia",
+                  "file_sha256": "5125c9e38f2c457a2875f604af39d6b9e24605c5eb8a38562c4c8cce366f8e9e",
+                  "hash_scope": "saved_web_tool_section_not_original_html",
+                  "acquisition_method": "web_tool_original_url_extraction_after_direct_http_403",
+                  "seed_provenance": "independently_discovered_material_pack_missing",
+                  "review_status": "codex_author_checked_pending_independent_review",
+                  "page_or_section": "2025 Infographic: Losses and top-five tables for 2025/2024",
+                  "section": "2025 Infographic: Losses and top-five tables for 2025/2024",
+                  "text": "### Targeting scams: report of the National Anti-Scam Centre on scams data and activity 2025 \nThis report provides insight into the scams targeting Australians in 2025 and highlights the impact of combined efforts by government, law enforcement, community sector and industry to combat these financial crimes.\n\n30 March 2026\n\n## Infographic\n\nImage: Losses to various scams 2025 \n###\n\nInfographic text\n\nView the accessible text version of the infographic ### Losses\n\nTotal combined losses reported to Scamwatch, ReportCyber, IDCARE, Australian Financial Crimes Exchange (AFCX) and Australian Securities and Investment Commission (ASIC): $2.18 billion (an increase of 7.8%)\n\n481,523 scam reports (a decrease of 2.3%)\n\n### Combined losses over last 5 years\n\n2021: $1.8 billion\n\n2022: $3.1 billion\n\n2023: $2.7 billion\n\n2024: $2.0 billion\n\n2025: $2.2 billion\n### Top 5 scams by loss 2025 (combined data)\n\n  * Investment: $837.7 million\n  * Payment redirection: $166.8 million\n  * Romance: $139.9 million\n  * Phishing: $97.6 million\n  * Remote access: $69.9 million\n\nThe losses from the top 5 scam types accounted for 60% of total losses in 2025.\n### Top 5 scams by loss 2024 (combined data)\n\n  * Investment: $945 million\n  * Romance: $156.8 million\n  * Payment redirection: $152.6 million\n  * Remote access: $106 million\n  * Phishing: $84.5 million\n\nThe losses from the top 5 scam types accounted for 71% of total losses in 2024.",
+                  "search_labels": "全国 举报 统计 损失 数据 Westpac 客户 风险 2025 2024 增长 比例 reports statistics losses",
+                  "limitations": "全国多机构合并举报口径，不是Westpac客户样本；不能推算单个客户风险。页面历史总额有四舍五入，不能用它重算精确同比。",
+                  "unit_sha256": "5125c9e38f2c457a2875f604af39d6b9e24605c5eb8a38562c4c8cce366f8e9e",
+                  "limitations_origin": "project_author_scope_note_not_official_quote"
+                }
+              }
+            ],
+            "limitations": [],
+            "latency_seconds": 0.001,
+            "usage": null,
+            "data_origin": "public_sources"
+          }
+        ],
+        "execution": "authored_training_live_state",
+        "stale": false
+      }
+    ],
+    "reviews": []
+  }
+}
