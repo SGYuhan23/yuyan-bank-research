@@ -31,7 +31,7 @@ def semantic(query,units):
  def cosine(v):return sum(a*b for a,b in zip(q,v))/(math.sqrt(sum(a*a for a in q))*math.sqrt(sum(a*a for a in v)))
  return sorted(zip(units,map(cosine,vectors)),key=lambda x:-x[1])
 def retrieve(query,mode='auto',units=None,k=3,log=None):
- if mode not in ('auto','bm25','semantic'):raise ValueError('INVALID_RETRIEVER')
+ if mode not in ('auto','bm25','semantic','hybrid','all'):raise ValueError('INVALID_RETRIEVER')
  if units is None:units=json.loads((ROOT/'data/units.json').read_text())
  def emit(kind,**data):
   if log:log(kind,**data)
@@ -44,6 +44,14 @@ def retrieve(query,mode='auto',units=None,k=3,log=None):
   hits=[{'unit':u,'score':round(score,6)} for u,score in ranked[:k] if method!='bm25' or score>0]
   emit('retrieval_attempt_completed',method=method,unit_ids=[x['unit']['unit_id'] for x in hits],source_ids=[x['unit']['source_id'] for x in hits])
   return hits
+ if mode=='all':return [{'unit':u,'score':1.0} for u in units]
+ if mode=='hybrid':
+  sparse=search('bm25');dense=search('semantic');scores={};lookup={}
+  for rows in (sparse,dense):
+   for rank,row in enumerate(rows,1):
+    uid=row['unit']['unit_id'];lookup[uid]=row['unit'];scores[uid]=scores.get(uid,0)+1/(60+rank)
+  emit('retrieval_fusion',method='rrf',constant=60)
+  return [{'unit':lookup[uid],'score':score} for uid,score in sorted(scores.items(),key=lambda x:-x[1])[:k]]
  if mode=='semantic':return search('semantic')
  hits=search('bm25')
  if mode=='auto' and not hits:

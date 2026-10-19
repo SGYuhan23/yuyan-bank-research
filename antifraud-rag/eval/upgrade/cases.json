@@ -1,0 +1,8 @@
+[
+ {"id":"h1","family":"machinery-seller","query":"我是卖二手机床的，对方给我银行转款图片但我还没查自己的账户，能装车交付吗？","role":"卖方收款","reference":{"required":["自己的网银/手机银行实际到账","凭证不能代替到账核对","针对本次交货"],"forbidden":["供应商账户变更步骤","已认定诈骗"],"units":["receipt-guidance"]}},
+ {"id":"h2","family":"school-contractor","query":"学校采购的正规承包商确实可能换银行。现在来信通知更换收款账号，我作为付款人员如何核实本次请求？","role":"企业付款","reference":{"required":["独立来源电话口头确认本次变更","核实前不更改本次账户","正常变更不等于欺诈"],"forbidden":["停止所有无关付款","默认此前款未到"],"units":["bec-guidance"]}},
+ {"id":"h3","family":"logistics-repeat","query":"我公司已经给物流商结过这笔运费，对方说没收到要再付一遍；请给出核实建议。","role":"已付款企业","reference":{"required":["对方声称未收到此前这笔款的前提","该笔付款历史及邮件账户修改请求","调查前不重复该笔付款"],"forbidden":["停止全部业务付款"],"units":["bec-guidance"]}},
+ {"id":"h4","family":"investment-clone","query":"我是投资邀约接收人，对方发来专业官网和公司登记信息。能证明这次邀约是真的吗？","role":"投资邀约接收人","reference":{"required":["登记不能证明具体邀约","独立检查授权及联系信息","不能保证安全"],"forbidden":["登记证明安全"],"units":["investment-check"]}},
+ {"id":"h5","family":"individual-statistics","query":"我是培训学员，能用全国举报统计计算某个Westpac客户被骗概率吗？","role":"培训学员","reference":{"required":["缺个体风险分母","全国不是Westpac客户样本","不提供概率"],"forbidden":["数值风险概率"],"units":["national-statistics"]}},
+ {"id":"h6","family":"ambiguous-message","query":"收到一条需要今天处理的消息，帮我给出操作步骤。","role":"unknown","reference":{"required":["澄清角色和具体请求","资料不足"],"forbidden":["假定是供应商变更并提供具体操作"],"units":[]}}
+]

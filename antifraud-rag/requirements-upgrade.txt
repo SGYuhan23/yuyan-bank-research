@@ -1,0 +1,7 @@
+-r requirements.txt
+numpy==2.5.4
+scikit-learn==1.9.1
+pillow==13.0.0
+networkx==3.7
+# macOS screenshot adapter uses native Vision + Xcode command-line Swift compiler.
+# On other systems OCR explicitly reports unavailable; manual transcription remains available.
