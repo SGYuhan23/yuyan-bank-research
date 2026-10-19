@@ -1,0 +1,122 @@
+{
+  "run_id": "5db8fe7799b54b53",
+  "query": "为新入职客服生成一份收款账户变更场景的培训材料，并说明John公开案例中最初17,000澳元与超过30,000澳元损失的关系。",
+  "task": "training",
+  "retriever": "auto",
+  "status": "audit_completed",
+  "started_at": "2026-10-19T03:02:23.283315+00:00",
+  "records": [
+    {
+      "sequence": 1,
+      "at": "2026-10-19T03:02:23.287105+00:00",
+      "kind": "model_started",
+      "phase": "citation_entailment_review"
+    },
+    {
+      "sequence": 2,
+      "at": "2026-10-19T03:02:57.344840+00:00",
+      "kind": "model_call",
+      "phase": "citation_entailment_review",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 7813,
+        "completion_tokens": 1493,
+        "prompt_tokens": 6320,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 34.052,
+      "finish_reason": "stop",
+      "request_hash": "93a0ecd66cdfaabfe6534a98f379b6ce42013d935fe96c63142a4e0f9b495c85"
+    }
+  ],
+  "result": null,
+  "fixtures": false,
+  "code_sha256": "62a38dd4ece64ea9f3e7ffddc2d2a1204b18ce0ceb289e572a317af3fc146ab0",
+  "audit_of_historical_run": "4b48fa8dbff54fc4",
+  "audit_verdict": {
+    "pass": false,
+    "issues": [
+      "step 0: target_bounded=false — 步骤未限定‘本次供应商账户变更请求、变更账户及相关付款’，仅泛称‘任何收款账户变更请求’，未绑定当前场景目标；原文要求‘核实本次变更前’且‘不扩大至无关付款’，但步骤未体现该限定。",
+      "step 1: scene mismatch — 该步骤描述的是unreceived_payment场景（供应商称未收到付款），但用户仅询问account_change场景；scope_rules明确区分二者，不得将unreceived_payment的触发条件（供应商称未收到）自动带入account_change培训材料。",
+      "step 2: target_bounded=false — ‘暂停后续支付动作’未限定为‘本次供应商账户变更所涉付款’，未排除无关付款，违反scope_rules.account_change.required_checks中‘不扩大至无关付款’要求。",
+      "risks[0]: source_supported=false — 引用bec-case原文描述John案例，但该段落未说明‘诈骗者常冒充长期合作供应商’为普遍规律，仅陈述John个案中‘regular suppliers’；‘常’字属过度泛化，无原文支持。",
+      "risks[1]: condition_preserved=true but phrasing risks misinterpretation — 虽正确指出30,000澳元是包含17,000澳元的估计总额，但‘不能将两笔金额相加’易被误读为数学禁止，而原文实为语义关系（‘with the initial loss of $17,000, ... estimated their loss to be over $30,000’），建议更精确表述为‘30,000澳元是包含17,000澳元在内的综合估计值，非额外现金损失’。",
+      "questions[0] and [1]: scope_supported=false — 问题未限定于‘本次变更请求’，如‘历史付款是否均使用同一账户’超出account_change场景必要核实范围（scope_rules.account_change.required_checks仅要求独立电话核实本次变更），属无关追问。",
+      "scenario_label='project_authored_training'但scenario中含‘客服C接到企业A来电咨询是否应执行变更’——该设定隐含客服需向企业A提供操作建议，但scope_rules与资料均未授权客服代企业执行核实或给出‘应/不应’判断，仅提供公众指引；此为角色越界风险。"
+    ],
+    "scene_checks": [
+      {
+        "scene": "account_change",
+        "essential_checks_present": false,
+        "reason": "scope_rules.account_change.required_checks要求：(1) 独立取得电话口头核实本次变更，不用请求中的联系方式；(2) 核实前不更改本次账户信息/不按本次变更支付，不扩大至无关付款。step 0和step 2均未明确限定‘本次’，且step 1错误引入unreceived_payment场景，导致两项必要核实动作未完整、准确覆盖。"
+      }
+    ],
+    "other_checks": [
+      {
+        "field": "risks",
+        "index": 0,
+        "scope_supported": false,
+        "reason": "原文bec-case仅描述John个案中对方是‘one of his regular suppliers’，未作统计性断言‘常冒充’；‘常’字无依据，属泛化推论。"
+      },
+      {
+        "field": "risks",
+        "index": 1,
+        "scope_supported": true,
+        "reason": "原文bec-case明确‘with the initial loss of $17,000, ... estimated their loss to be over $30,000’，文本准确反映包含关系，未拆解为额外损失。"
+      },
+      {
+        "field": "boundaries",
+        "index": 2,
+        "scope_supported": true,
+        "reason": "边界说明正确引用bec-case原文‘with the initial loss of $17,000, ... estimated their loss to be over $30,000’，并强调不可拆解，符合资料要求。"
+      },
+      {
+        "field": "questions",
+        "index": 0,
+        "scope_supported": false,
+        "reason": "问题‘该供应商是否为长期合作方？历史付款是否均使用同一账户？’超出account_change场景required_checks范围；scope_rules仅要求核实本次变更，不强制回溯历史账户使用情况。"
+      },
+      {
+        "field": "questions",
+        "index": 1,
+        "scope_supported": false,
+        "reason": "‘变更请求是否通过邮件单独发出？有无同步电话或书面盖章文件？’属于对请求形式的追问，但scope_rules.account_change未将此列为必要核实项；核实动作唯一强制要求是独立电话口头确认，无论原始请求形式如何。"
+      },
+      {
+        "field": "scenario",
+        "index": 0,
+        "scope_supported": false,
+        "reason": "scenario设定客服C需向企业A提供‘是否应执行变更’建议，但所有资料均未赋予客服决策权限；公众指引仅面向企业自身操作，客服角色在此场景中应限于转述核实步骤，而非代为判断。"
+      }
+    ],
+    "step_checks": [
+      {
+        "index": 0,
+        "role_matches": true,
+        "target_bounded": false,
+        "condition_preserved": true,
+        "source_supported": true,
+        "reason": "role=‘企业付款方’匹配；但target未限定‘本次供应商账户变更请求、变更账户及相关付款’，仅泛称‘任何收款账户变更请求’；原文bec-guidance要求‘verify the request’且‘do not make any changes to account details until you've verbally verified the request’，request须指当前具体请求，此处缺失限定。"
+      },
+      {
+        "index": 1,
+        "role_matches": false,
+        "target_bounded": false,
+        "condition_preserved": false,
+        "source_supported": true,
+        "reason": "role应为account_change场景下的‘企业付款方’，但该步骤触发条件为‘供应商称未收到付款’，属unreceived_payment场景；scope_rules明确分离二者，本步骤不应出现在account_change培训材料中。"
+      },
+      {
+        "index": 2,
+        "role_matches": true,
+        "target_bounded": false,
+        "condition_preserved": true,
+        "source_supported": true,
+        "reason": "role匹配；但‘暂停后续支付动作’未限定为‘本次供应商账户变更所涉付款’，违反scope_rules.account_change.required_checks中‘不扩大至无关付款’；原文bec-guidance仅要求‘do not make any changes to account details until you've verbally verified the request’，未授权泛化暂停。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+test_auto_fallback_logs (test_closeout.Closeout.test_auto_fallback_logs) ... ok
+test_bm25_hit_no_fallback (test_closeout.Closeout.test_bm25_hit_no_fallback) ... ok
+test_case_amount_reference_not_model_judged (test_closeout.Closeout.test_case_amount_reference_not_model_judged) ... ok
+test_explicit_bm25_no_fallback (test_closeout.Closeout.test_explicit_bm25_no_fallback) ... ok
+test_explicit_semantic (test_closeout.Closeout.test_explicit_semantic) ... ok
+test_unavailable_is_failure_not_no_evidence (test_closeout.Closeout.test_unavailable_is_failure_not_no_evidence) ... ok
+test_unrelated_amount_not_rewritten (test_closeout.Closeout.test_unrelated_amount_not_rewritten) ... ok
+test_baseline_empty_query (test_integrity.Integrity.test_baseline_empty_query) ... ok
+test_case_privacy_and_conditions_together (test_integrity.Integrity.test_case_privacy_and_conditions_together) ... ok
+test_cross_scene_template_removed (test_integrity.Integrity.test_cross_scene_template_removed) ... ok
+test_exact_citation_guard (test_integrity.Integrity.test_exact_citation_guard) ... ok
+test_full_section_citation_materialized (test_integrity.Integrity.test_full_section_citation_materialized) ... ok
+test_metadata_and_units (test_integrity.Integrity.test_metadata_and_units) ... ok
+test_production_does_not_read_eval (test_integrity.Integrity.test_production_does_not_read_eval) ... ok
+test_unknown_reference_guard (test_integrity.Integrity.test_unknown_reference_guard) ... ok
+test_account_change_does_not_imply_unreceived (test_scope.Scope.test_account_change_does_not_imply_unreceived) ... ok
+test_actual_historical_regressions_rejected_by_runtime (test_scope.Scope.test_actual_historical_regressions_rejected_by_runtime) ... ok
+test_comparison_allows_both_roles (test_scope.Scope.test_comparison_allows_both_roles) ... ok
+test_essential_checks_required_even_when_each_step_supported (test_scope.Scope.test_essential_checks_required_even_when_each_step_supported) ... ok
+test_global_approval_cannot_override_failed_step (test_scope.Scope.test_global_approval_cannot_override_failed_step) ... ok
+test_legitimate_unreceived_condition_and_source_preserved (test_scope.Scope.test_legitimate_unreceived_condition_and_source_preserved) ... ok
+test_missing_per_step_review_cannot_pass (test_scope.Scope.test_missing_per_step_review_cannot_pass) ... ok
+test_optional_null_scenario_audit_not_a_false_rejection (test_scope.Scope.test_optional_null_scenario_audit_not_a_false_rejection) ... ok
+test_question_cannot_bypass_scope_review (test_scope.Scope.test_question_cannot_bypass_scope_review) ... ok
+test_scope_fields_not_enough_to_pass_broad_actual_text (test_scope.Scope.test_scope_fields_not_enough_to_pass_broad_actual_text) ... ok
+test_scope_spans_keep_required_trigger_and_separate_other_scene (test_scope.Scope.test_scope_spans_keep_required_trigger_and_separate_other_scene) ... ok
+test_seller_cannot_take_supplier_action_even_if_conditional (test_scope.Scope.test_seller_cannot_take_supplier_action_even_if_conditional) ... ok
+test_wrong_source_cannot_support_seller_operation (test_scope.Scope.test_wrong_source_cannot_support_seller_operation) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 0.039s
+
+OK

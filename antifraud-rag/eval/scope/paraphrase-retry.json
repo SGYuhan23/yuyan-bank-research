@@ -1,0 +1,88 @@
+{
+  "run_id": "fdc66e51a4904612",
+  "status": "completed",
+  "result": {
+    "answer": {
+      "steps": [
+        {
+          "text": "交货前必须本人登录网银或手机银行，核对本次货款是否已实际到账；买家提供的汇款截屏不能替代实际到账确认。",
+          "citations": [
+            {
+              "unit_id": "receipt-guidance",
+              "quote": "April 2023 - PayID Scam\nBe alert to PayID Scams when selling items online\nUsing PayID is a safe and easy way to send and receive funds.\nAfter a conversation with a potential buyer through an Online Marketplace, such as Facebook or Gumtree, you're advised that you need to upgrade your PayID to a business account for you to receive the payment.\nThese scam emails state your account has been upgraded to a business account and you need to refund a deposit that has been credited to your account.\nDo not act on these emails and report the buyer/seller profile to the marketplace as a potential scam.\nReminder\n- PayID's are managed within your banking app. A PayID does not need to be upgraded or activated by making payments. For more information on how PayID's work and how you can set up a Westpac registered PayID, visit\nwestpac.com.au/payid\n.\nAlso, when selling items online, never provide the buyer with the item until you can see the funds in your account, within your own online or mobile banking. Never rely on a receipt or screenshot of a payment sent to you. Receipts can be falsified by scammers to appear as if they have made payment, when they have not.\nIf you have received an email, SMS or other request that you have identified as potentially fraudulent or which you think involves a scam account, it's always a good idea to report these through to us, before deleting it from your inbox or deleted items on your device.\nForward a copy to hoax@westpac.com.au or 0497 132 032."
+            }
+          ],
+          "scene": "seller_receipt",
+          "target": "本次卖给买家的货物及对应货款",
+          "trigger": "交货前核对自己的网银/手机银行实际到账，买家凭证不等于到账"
+        }
+      ],
+      "risks": [
+        {
+          "text": "收款截图可被伪造，显示虚假付款成功，而资金实际未到账。",
+          "citations": [
+            {
+              "unit_id": "receipt-guidance",
+              "quote": "April 2023 - PayID Scam\nBe alert to PayID Scams when selling items online\nUsing PayID is a safe and easy way to send and receive funds.\nAfter a conversation with a potential buyer through an Online Marketplace, such as Facebook or Gumtree, you're advised that you need to upgrade your PayID to a business account for you to receive the payment.\nThese scam emails state your account has been upgraded to a business account and you need to refund a deposit that has been credited to your account.\nDo not act on these emails and report the buyer/seller profile to the marketplace as a potential scam.\nReminder\n- PayID's are managed within your banking app. A PayID does not need to be upgraded or activated by making payments. For more information on how PayID's work and how you can set up a Westpac registered PayID, visit\nwestpac.com.au/payid\n.\nAlso, when selling items online, never provide the buyer with the item until you can see the funds in your account, within your own online or mobile banking. Never rely on a receipt or screenshot of a payment sent to you. Receipts can be falsified by scammers to appear as if they have made payment, when they have not.\nIf you have received an email, SMS or other request that you have identified as potentially fraudulent or which you think involves a scam account, it's always a good idea to report these through to us, before deleting it from your inbox or deleted items on your device.\nForward a copy to hoax@westpac.com.au or 0497 132 032."
+            }
+          ]
+        }
+      ],
+      "boundaries": [
+        "本指引适用于网上出售物品场景（2023年4月公开提示），不用于判定某笔交易是否已构成诈骗。",
+        "仅针对本次货款，不扩展至其他付款或账户操作。"
+      ],
+      "questions": [
+        "您是否已在本人网银或手机银行中查到该笔货款已入账？",
+        "该汇款截屏是否来自买家直接发送，还是通过第三方转发？"
+      ],
+      "scenario": null,
+      "scenario_label": "not_applicable",
+      "review_status": "pending_human_review"
+    },
+    "assessment": {
+      "sufficient": true,
+      "task_scenes": [
+        {
+          "scene": "seller_receipt",
+          "question_basis": "买家给了汇款截屏，我现在就把货寄走吗？"
+        }
+      ],
+      "relevant_ids": [
+        "receipt-guidance"
+      ],
+      "missing": [],
+      "conflicts": [],
+      "calculation": "none"
+    },
+    "calculations": [],
+    "sources": [
+      {
+        "unit_id": "receipt-guidance",
+        "source_id": "westpac-receipt",
+        "title": "Past Scams and Alerts | Westpac",
+        "url": "https://www.westpac.com.au/security/latest-scams/past-scams-and-alerts/",
+        "published_or_updated_at": null,
+        "date_status": "page_update_not_shown_section_dated_2023_04",
+        "retrieved_at": "2026-10-18T11:15:01.536289+00:00",
+        "region": "Australia",
+        "material_type": "bank_public_guidance",
+        "page_or_section": "April 2023 - PayID Scam",
+        "file_sha256": "cba10f00f84e9061c54b885148c1d8672d9b5940cc46cfe39c620b1b7df75bbd",
+        "review_status": "codex_author_checked_pending_independent_review",
+        "seed_provenance": "independently_discovered_official_source_material_pack_not_found",
+        "hash_scope": "original_http_html",
+        "acquisition_method": "httpx",
+        "section": "April 2023 - PayID Scam",
+        "text": "April 2023 - PayID Scam\nBe alert to PayID Scams when selling items online\nUsing PayID is a safe and easy way to send and receive funds.\nAfter a conversation with a potential buyer through an Online Marketplace, such as Facebook or Gumtree, you're advised that you need to upgrade your PayID to a business account for you to receive the payment.\nThese scam emails state your account has been upgraded to a business account and you need to refund a deposit that has been credited to your account.\nDo not act on these emails and report the buyer/seller profile to the marketplace as a potential scam.\nReminder\n- PayID's are managed within your banking app. A PayID does not need to be upgraded or activated by making payments. For more information on how PayID's work and how you can set up a Westpac registered PayID, visit\nwestpac.com.au/payid\n.\nAlso, when selling items online, never provide the buyer with the item until you can see the funds in your account, within your own online or mobile banking. Never rely on a receipt or screenshot of a payment sent to you. Receipts can be falsified by scammers to appear as if they have made payment, when they have not.\nIf you have received an email, SMS or other request that you have identified as potentially fraudulent or which you think involves a scam account, it's always a good idea to report these through to us, before deleting it from your inbox or deleted items on your device.\nForward a copy to hoax@westpac.com.au or 0497 132 032.",
+        "search_labels": "付款截图 收据 到账 网银 卖货 交货 receipt screenshot payment funds",
+        "limitations": "2023年4月公开提示，场景为网上出售物品；不能据此判定某笔交易已经到账或已构成诈骗。",
+        "unit_sha256": "7f1fbefcc331d7493401d93fcdcf9025bd980299fe97742a6b803c151981da4d",
+        "limitations_origin": "project_author_scope_note_not_official_quote",
+        "section_date": "2023-04"
+      }
+    ],
+    "notice": "澳大利亚公开资料辅助；非Westpac内部规程；不执行交易判断或账户操作；生成内容待人工审核。"
+  },
+  "error": null
+}

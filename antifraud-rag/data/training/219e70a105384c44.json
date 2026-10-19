@@ -1,0 +1,15 @@
+{
+  "source_id": "training-219e70a105384c44",
+  "title": "本项目编写培训场景",
+  "url": null,
+  "published_or_updated_at": "2026-10-19T02:54:51.018846+00:00",
+  "retrieved_at": "2026-10-19T02:54:51.018857+00:00",
+  "region": "Australia",
+  "material_type": "project_authored_training",
+  "page_or_section": "scenario",
+  "file_sha256": "ef69eb1b4dd0f6d94f044c89daeda30554f593c91220683ccad77e4e954f7088",
+  "hash_scope": "scenario_text",
+  "review_status": "pending_human_review",
+  "text": "企业A收到供应商B发来的邮件，称因财务系统升级需将收款账户变更为新账号，并附新账户信息及加盖电子章的‘通知函’。企业A新员工C拟按邮件指示在系统中更新账户并安排付款。",
+  "run_id": "219e70a105384c44"
+}

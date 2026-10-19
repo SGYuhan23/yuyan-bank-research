@@ -1,0 +1,75 @@
+{
+  "run_id": "06d1d6cd687b4193",
+  "query": "对方发来转账凭证，货可以给他了吗？",
+  "task": "knowledge",
+  "retriever": "auto",
+  "status": "audit_completed",
+  "started_at": "2026-10-19T02:56:09.291833+00:00",
+  "records": [
+    {
+      "sequence": 1,
+      "at": "2026-10-19T02:56:09.299509+00:00",
+      "kind": "model_started",
+      "phase": "citation_entailment_review"
+    },
+    {
+      "sequence": 2,
+      "at": "2026-10-19T02:56:26.226380+00:00",
+      "kind": "model_call",
+      "phase": "citation_entailment_review",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 5396,
+        "completion_tokens": 732,
+        "prompt_tokens": 4664,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        }
+      },
+      "duration_seconds": 16.922,
+      "finish_reason": "stop",
+      "request_hash": "b579c556dc415f69d2cc459694c94addc5bf63c0835ba64a1f63d4583a519240"
+    }
+  ],
+  "result": null,
+  "fixtures": false,
+  "code_sha256": "4e9c25bd142b1bd2bfa95d6b6a76e7770c2d32cdc3785d9017711d9ed57af01d",
+  "audit_of_historical_run": "e939b58bd6e64512",
+  "audit_verdict": {
+    "pass": false,
+    "issues": [
+      "step 1: text 正确对应 seller_receipt 场景，但 step 2 和 step 3 引用 bec-guidance，其 trigger 为 '供应商或员工称未收到付款' 或 '请求支付至新账户'，而用户问题仅是 '对方发来转账凭证，货可以给他了吗？'，未提及供应商声称未收款、也未涉及账户变更请求，因此 step 2 和 step 3 属于无关场景混入，违反 task_scenes 仅含 seller_receipt 的约束",
+      "step 2: text 中 '如果供应商或员工称未收到付款...' 引入了 unreceived_payment 场景的 trigger（供应商明确声称未收到此前付款），但用户问题中无此前提，condition_preserved=false",
+      "step 3: text 中 '如涉及供应商账户信息变更...' 引入 account_change 场景的 trigger（新账号请求），但用户问题中无任何账户变更要素，role_matches=false（用户角色是卖方收款，非企业付款方）",
+      "risks 第二条引用 bec-case 案例说明冒充供应商诱导改账户，但该案例属于 account_change 场景，与当前 seller_receipt 问题无逻辑关联，source_supported=false for this scene",
+      "questions 列表中 '你是否曾收到过要求更新该供应商银行账户信息的邮件...' 等三项均属 account_change/unreceived_payment 场景，与 seller_receipt 无关，超出 scope_rules.seller_receipt 定义的 target 和 trigger"
+    ],
+    "step_checks": [
+      {
+        "index": 0,
+        "role_matches": true,
+        "target_bounded": true,
+        "condition_preserved": true,
+        "source_supported": true,
+        "reason": "text 明确限定为卖方交货前核对自己网银到账，与 seller_receipt 的 role='卖方收款'、target='本次卖给买家的货物及对应货款'、trigger='交货前核对自己的网银/手机银行实际到账，买家凭证不等于到账' 完全一致；citations unit_id='receipt-guidance' 正确支持"
+      },
+      {
+        "index": 1,
+        "role_matches": false,
+        "target_bounded": false,
+        "condition_preserved": false,
+        "source_supported": false,
+        "reason": "text 主体是'供应商或员工称未收到付款'，对应 unreceived_payment 场景，但用户问题未出现该 trigger；role 应为已付款企业而非卖方；target 指向'此前那笔货款'，与本问题'本次货款是否可发货'无关；citations unit_id='bec-guidance' 不支持 seller_receipt 场景"
+      },
+      {
+        "index": 2,
+        "role_matches": false,
+        "target_bounded": false,
+        "condition_preserved": false,
+        "source_supported": false,
+        "reason": "text 主体是'供应商账户信息变更'，对应 account_change 场景，但用户问题未提及任何账户变更；role 应为企业付款方而非卖方；target 指向'本次供应商账户变更请求'，与本问题无关；citations unit_id='bec-guidance' 不支持 seller_receipt 场景"
+      }
+    ]
+  }
+}

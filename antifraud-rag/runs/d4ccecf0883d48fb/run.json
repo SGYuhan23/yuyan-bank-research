@@ -1,0 +1,137 @@
+{
+  "run_id": "d4ccecf0883d48fb",
+  "query": "为新入职客服生成一份收款账户变更场景的培训材料，并说明John公开案例中最初17,000澳元与超过30,000澳元损失的关系。",
+  "task": "training",
+  "retriever": "auto",
+  "status": "audit_completed",
+  "started_at": "2026-10-19T02:59:53.012625+00:00",
+  "records": [
+    {
+      "sequence": 1,
+      "at": "2026-10-19T02:59:53.015782+00:00",
+      "kind": "model_started",
+      "phase": "citation_entailment_review"
+    },
+    {
+      "sequence": 2,
+      "at": "2026-10-19T03:00:24.708884+00:00",
+      "kind": "model_call",
+      "phase": "citation_entailment_review",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 7494,
+        "completion_tokens": 1395,
+        "prompt_tokens": 6099,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 31.69,
+      "finish_reason": "stop",
+      "request_hash": "80f080ad8cd026e6f413b28976d15961d5e6ed427fbf77c6bbbc2f5f00a90254"
+    }
+  ],
+  "result": null,
+  "fixtures": false,
+  "code_sha256": "53e009e1ce7063b390c23314911a4a5f9be868cb563297f2c5555125e1a072ff",
+  "audit_of_historical_run": "4b48fa8dbff54fc4",
+  "audit_verdict": {
+    "pass": false,
+    "issues": [
+      "步骤1中'text'未明确限定'本次供应商账户变更请求、变更账户及相关付款'，仅泛称'任何收款账户变更请求'，target_bounded=false",
+      "步骤2中'text'将'unreceived_payment'场景的触发条件（供应商明确声称未收到此前付款）错误带入'account_change'场景，且未说明该条件不自动适用；原文中account_change与unreceived_payment是分离的两个trigger，此处混淆",
+      "步骤3中'text'写'不得执行新付款、补付或重复付款'，但未限定为'本次请求所涉付款'，也未排除无关历史付款，target_bounded=false",
+      "risks第二条正确指出'超过30,000澳元'是包含17,000澳元的估计总额，但steps中未体现该金额关系的培训要点，导致材料完整性缺失",
+      "scenario_label为'project_authored_training'，但材料中未标注'本培训情境为本项目新编写，非Westpac客户真实案例'，违反boundaries中'John案例为官方改编...不反映任何Westpac客户具体事件'的对应要求"
+    ],
+    "other_checks": [
+      {
+        "field": "risks",
+        "index": 0,
+        "scope_supported": true,
+        "reason": "风险描述对象为诈骗者冒充长期合作供应商，条件与bec-case中John收伪造邮件一致；引用unit_id=bec-case正确"
+      },
+      {
+        "field": "risks",
+        "index": 1,
+        "scope_supported": true,
+        "reason": "金额关系表述与bec-case原文完全一致：'initial loss of $17,000' + 'delay in supply...broken contractual obligations' → 'estimated their loss to be over $30,000'；未相加，用词为'with the initial loss...estimated to be over'，符合要求"
+      },
+      {
+        "field": "boundaries",
+        "index": 0,
+        "scope_supported": true,
+        "reason": "明确声明'基于Scamwatch公开案例与Westpac公众安全指引编写，非Westpac内部操作规程'，与资料中'公开安全指引不是Westpac内部规程'一致"
+      },
+      {
+        "field": "boundaries",
+        "index": 1,
+        "scope_supported": true,
+        "reason": "明确标注John案例为'官方改编的匿名化真实举报汇总'，与bec-case中'*The story above is based on one or more real scam reports...'及'For privacy purposes...'完全对应"
+      },
+      {
+        "field": "boundaries",
+        "index": 2,
+        "scope_supported": true,
+        "reason": "准确复述bec-case原文'with the initial loss of $17,000, the delay in supply...estimated their loss to be over $30,000'，未拆解、未相加，保留'including'语义"
+      },
+      {
+        "field": "boundaries",
+        "index": 3,
+        "scope_supported": true,
+        "reason": "限定'适用于澳大利亚境内企业客户场景'，与资料中'适用地区'限制一致；未延伸至跨境或司法流程"
+      },
+      {
+        "field": "questions",
+        "index": 0,
+        "scope_supported": true,
+        "reason": "问题聚焦供应商合作历史与账户一致性，属account_change场景必要核实点，与bec-guidance中'verbally verify'前提相关"
+      },
+      {
+        "field": "questions",
+        "index": 1,
+        "scope_supported": true,
+        "reason": "问题关注变更通知渠道（邮件/电话/盖章），对应bec-guidance中'Never use contact details provided in the email'及'publicly sourced number'要求"
+      },
+      {
+        "field": "questions",
+        "index": 2,
+        "scope_supported": true,
+        "reason": "问题指向MFA/双人审批，与bec-guidance中'Use multifactor authentication and dual payment approvals where available'直接对应"
+      },
+      {
+        "field": "scenario",
+        "index": 0,
+        "scope_supported": true,
+        "reason": "场景描述含'发件域名与历史往来不一致'，匹配bec-guidance中'emails with a request involving financial details that you know nothing about'和bec-case中伪造邮件特征"
+      }
+    ],
+    "step_checks": [
+      {
+        "index": 0,
+        "role_matches": true,
+        "target_bounded": false,
+        "condition_preserved": true,
+        "source_supported": true,
+        "reason": "role='企业付款方'正确；但text中'任何收款账户变更请求'未限定为'本次供应商账户变更请求、变更账户及相关付款'，target字段要求未满足；trigger要求'独立口头核实本次变更前'，text中'必须通过已知、独立来源的电话号码...口头确认变更请求的真实性'符合，但缺少'本次'限定"
+      },
+      {
+        "index": 1,
+        "role_matches": false,
+        "target_bounded": false,
+        "condition_preserved": false,
+        "source_supported": false,
+        "reason": "role应为'企业付款方'，但text内容实际对应'unreceived_payment'场景（'供应商或员工称未收到付款'），且trigger条件'供应商明确声称未收到此前付款'未在account_change场景中出现；原文中account_change与unreceived_payment是并列不同trigger，此处错误合并；citations引用bec-guidance正确段落，但该段落中此句属于unreceived_payment子项，非account_change通用步骤"
+      },
+      {
+        "index": 2,
+        "role_matches": true,
+        "target_bounded": false,
+        "condition_preserved": true,
+        "source_supported": true,
+        "reason": "role='企业付款方'正确；text中'暂停后续支付动作'对应bec-guidance中'Pause and verify...'，但未限定为'本次供应商账户变更请求所涉付款'，也未排除对其他无关付款的影响；原文中'Pause and verify the request verbally'明确指向当前request，此处泛化为'后续支付动作'，target_bounded=false"
+      }
+    ]
+  }
+}

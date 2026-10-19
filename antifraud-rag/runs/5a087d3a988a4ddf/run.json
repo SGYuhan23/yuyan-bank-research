@@ -1,0 +1,75 @@
+{
+  "run_id": "5a087d3a988a4ddf",
+  "query": "为新入职客服生成一份收款账户变更场景的培训材料，并说明John公开案例中最初17,000澳元与超过30,000澳元损失的关系。",
+  "task": "training",
+  "retriever": "auto",
+  "status": "audit_completed",
+  "started_at": "2026-10-19T02:56:09.296375+00:00",
+  "records": [
+    {
+      "sequence": 1,
+      "at": "2026-10-19T02:56:09.302205+00:00",
+      "kind": "model_started",
+      "phase": "citation_entailment_review"
+    },
+    {
+      "sequence": 2,
+      "at": "2026-10-19T02:56:25.002536+00:00",
+      "kind": "model_call",
+      "phase": "citation_entailment_review",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 6628,
+        "completion_tokens": 670,
+        "prompt_tokens": 5958,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 15.694,
+      "finish_reason": "stop",
+      "request_hash": "152127dea25507477d78c14d83bd619335bd6f7570dc117d3deb7eb4f3c549fa"
+    }
+  ],
+  "result": null,
+  "fixtures": false,
+  "code_sha256": "4e9c25bd142b1bd2bfa95d6b6a76e7770c2d32cdc3785d9017711d9ed57af01d",
+  "audit_of_historical_run": "4b48fa8dbff54fc4",
+  "audit_verdict": {
+    "pass": false,
+    "issues": [
+      "step 0: '核实任何收款账户变更请求'未明确限定为本次供应商账户变更请求及对应付款，target_bounded=false；原文要求'any requests for urgent or redirected payments'，但培训场景中未说明该请求是否属紧急或重定向，且未绑定到'本次变更账户及相关付款'；role_matches=true（企业付款方），但condition_preserved=false（缺少'独立口头核实本次变更前'这一前提条件的显性表达）",
+      "step 1: 引用bec-guidance中'A supplier or employee claim they haven’t received payment'条款，但用户问题仅聚焦account_change场景，未询问unreceived_payment；该步骤将account_change与unreceived_payment混入同一操作链，违反scene隔离原则；source_supported=true但scene_mismatch=true",
+      "step 2: '暂停后续支付动作'未限定'本次请求所涉新付款、补付或重复付款'，而是泛化为'后续支付动作'，target_bounded=false；原文'no more payments until you investigate...'特指对'claimed unreceived payment'的响应，不自动适用于account_change场景中尚未触发的付款行为",
+      "risks第2条正确指出'超过30,000澳元'是包含17,000澳元的估计总额，但steps中未体现该金额关系的培训要点，导致培训材料与问题要求脱节",
+      "boundaries中'不可拆解为额外现金损失'与steps无对应教学设计，培训材料未引导客服理解损失结构，question_basis未被完整覆盖"
+    ],
+    "step_checks": [
+      {
+        "index": 0,
+        "role_matches": true,
+        "target_bounded": false,
+        "condition_preserved": false,
+        "source_supported": true,
+        "reason": "正文未限定'本次供应商账户变更请求、变更账户及相关付款'，也未强调'必须在收到变更请求后、执行前'这一时间点；原文'any requests for urgent or redirected payments'未在text中锚定到当前场景的具体对象"
+      },
+      {
+        "index": 1,
+        "role_matches": true,
+        "target_bounded": false,
+        "condition_preserved": false,
+        "source_supported": true,
+        "reason": "该步骤触发条件为'unreceived_payment'场景（供应商明确声称未收到此前付款），但用户仅问account_change；text中未加限定如'若供应商同步声称此前付款未收到，则...'，导致越界引入未询问场景"
+      },
+      {
+        "index": 2,
+        "role_matches": true,
+        "target_bounded": false,
+        "condition_preserved": false,
+        "source_supported": true,
+        "reason": "text中'暂停后续支付动作'未限定为'本次账户变更所涉的新付款、补付或重复付款'，而是泛化表述；原文对应条款仅约束'unreceived_payment'情形下的'no more payments'，此处误迁移到account_change主流程"
+      }
+    ]
+  }
+}

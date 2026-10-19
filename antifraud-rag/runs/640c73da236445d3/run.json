@@ -1,0 +1,69 @@
+{
+  "run_id": "640c73da236445d3",
+  "query": "老合作方说换了卡号，让我们今天打钱，先做什么？",
+  "task": "knowledge",
+  "retriever": "auto",
+  "status": "audit_completed",
+  "started_at": "2026-10-19T02:53:44.917411+00:00",
+  "records": [
+    {
+      "sequence": 1,
+      "at": "2026-10-19T02:53:44.923676+00:00",
+      "kind": "model_started",
+      "phase": "citation_entailment_review"
+    },
+    {
+      "sequence": 2,
+      "at": "2026-10-19T02:53:55.329879+00:00",
+      "kind": "model_call",
+      "phase": "citation_entailment_review",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 6183,
+        "completion_tokens": 409,
+        "prompt_tokens": 5774,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 10.402,
+      "finish_reason": "stop",
+      "request_hash": "c1c1f84ecc189f1c6a24f00d121203b88b92fb7cbe16038a700aec3793ca2dc5"
+    }
+  ],
+  "result": null,
+  "fixtures": false,
+  "code_sha256": "6702dccd8d69e2558275f920b518ea5cb07a744b0e2f570e774132cf907222c3",
+  "audit_of_historical_run": "88a6b108e1604ba6",
+  "audit_verdict": {
+    "pass": true,
+    "issues": [],
+    "step_checks": [
+      {
+        "index": 0,
+        "role_matches": true,
+        "target_bounded": true,
+        "condition_preserved": true,
+        "source_supported": true,
+        "reason": "正文‘立即暂停付款操作，不执行任何账户变更或转账’明确限定于本次供应商账户变更请求及付款，与account_change场景中target‘本次供应商账户变更请求、变更账户及相关付款’一致；引用bec-guidance中‘do not make any changes to account details until you've verbally verified’直接支持。"
+      },
+      {
+        "index": 1,
+        "role_matches": true,
+        "target_bounded": true,
+        "condition_preserved": true,
+        "source_supported": true,
+        "reason": "正文‘使用你方存档中已有的、独立核实过的电话号码……直接致电该合作方负责人，口头确认收款账户变更请求是否真实’中角色为付款方（企业），target为本次变更请求，trigger为‘独立口头核实本次变更前’，与account_change定义完全匹配；引用bec-guidance中‘verbally verified the request using a phone number you sourced yourself’原文支持。"
+      },
+      {
+        "index": 2,
+        "role_matches": true,
+        "target_bounded": false,
+        "condition_preserved": false,
+        "source_supported": true,
+        "reason": "正文‘如果供应商或员工称未收到付款，先不要继续付款……’引入unreceived_payment场景的trigger（供应商明确声称未收到此前付款），但用户问题仅涉及account_change（‘老合作方说换了卡号，让我们今天打钱’），未提及‘此前付款未收到’；该步骤超出task_scenes指定范围，且未限定于本次请求，target_bounded=false，condition_preserved=false。"
+      }
+    ]
+  }
+}

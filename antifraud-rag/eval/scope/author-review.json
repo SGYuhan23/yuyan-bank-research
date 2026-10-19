@@ -1,0 +1,226 @@
+{
+  "reviewer": "Codex author checking original source passages; not independent bank human sign-off",
+  "scope": "current three business scenarios, training and explicit comparison; no general semantic correctness claim",
+  "results": [
+    {
+      "run_id": "f844e72e7022493a",
+      "task": "卖方收款",
+      "status": "core_scope_reviewed",
+      "steps": [
+        {
+          "text": "交货前必须本人登录网银或手机银行，核对本次货款是否已实际到账。",
+          "scene": "seller_receipt",
+          "target": "本次卖给买家的货物及对应货款",
+          "trigger": "对方发来转账凭证，货可以给他了吗？",
+          "source_ids": [
+            "receipt-guidance"
+          ]
+        },
+        {
+          "text": "买家提供的付款截图、收据或转账凭证不能替代本人网银/手机银行的实际到账核对；未确认到账前不得交付本次货物。",
+          "scene": "seller_receipt",
+          "target": "本次卖给买家的货物及对应货款",
+          "trigger": "对方发来转账凭证，货可以给他了吗？",
+          "source_ids": [
+            "receipt-guidance"
+          ]
+        }
+      ],
+      "source_comparison": "只让卖方查本人网银/手机银行的本次货款，未到账不交本次货物，无企业给供应商付款步骤。"
+    },
+    {
+      "run_id": "0f17d9d932264f39",
+      "task": "供应商账户变更",
+      "status": "core_scope_reviewed",
+      "steps": [
+        {
+          "text": "立即暂停按本次变更请求更改账户信息或支付货款，必须先独立取得电话口头核实。",
+          "scene": "account_change",
+          "target": "本次供应商账户变更请求、变更账户及相关付款",
+          "trigger": "独立口头核实本次变更前；不能默认供应商称此前款项未收到",
+          "source_ids": [
+            "bec-guidance"
+          ]
+        },
+        {
+          "text": "使用企业自己存档的电话号码，或公开渠道查得的号码（如官网、营业执照登记号对应号码），拨打供应商官方电话，直接向其财务或负责人确认本次账户变更请求是否真实。",
+          "scene": "account_change",
+          "target": "本次供应商账户变更请求、变更账户及相关付款",
+          "trigger": "独立口头核实本次变更前；不能默认供应商称此前款项未收到",
+          "source_ids": [
+            "bec-guidance"
+          ]
+        }
+      ],
+      "source_comparison": "暂停限定本次变更请求及货款，使用独立电话核实，未将未收款设为既定事实。"
+    },
+    {
+      "run_id": "1cb97841db9f48b4",
+      "task": "供应商称此前付款未收到",
+      "status": "core_scope_reviewed",
+      "steps": [
+        {
+          "text": "明确以供应商称上周该笔货款未收到为前提，暂停再次支付该笔款项。",
+          "scene": "unreceived_payment",
+          "target": "上周的货款",
+          "trigger": "供应商明确声称未收到此前付款",
+          "source_ids": [
+            "bec-guidance"
+          ]
+        },
+        {
+          "text": "核对上周该笔付款的历史记录与往来邮件，检查是否存在账户变更请求。",
+          "scene": "unreceived_payment",
+          "target": "上周的货款",
+          "trigger": "供应商明确声称未收到此前付款",
+          "source_ids": [
+            "bec-guidance"
+          ]
+        }
+      ],
+      "source_comparison": "明确未收到上周同笔款的前提，暂停再次支付该笔款项，查历史与邮件中的账户修改请求。"
+    },
+    {
+      "run_id": "692db6fe9cfe4413",
+      "task": "培训材料",
+      "status": "core_scope_reviewed",
+      "steps": [
+        {
+          "text": "新员工须知：收到供应商账户变更请求（如邮件、消息）时，必须独立取得电话号码并口头核实本次变更；不得使用请求中提供的联系方式。",
+          "scene": "account_change",
+          "target": "本次供应商账户变更请求、变更账户及相关付款",
+          "trigger": "独立口头核实本次变更前；不能默认供应商称此前款项未收到",
+          "source_ids": [
+            "bec-guidance"
+          ]
+        }
+      ],
+      "source_comparison": "编写情境为供应商账户变更，处理为独立电话核实本次请求，无普遍禁付；追问是否有未收款主张并未把它当事实或附带该场景操作，整体待人工审核。"
+    },
+    {
+      "run_id": "1eab222befb5402b",
+      "task": "两个场景比较",
+      "status": "core_scope_reviewed",
+      "steps": [
+        {
+          "text": "卖家须亲自登录本人网银或手机银行，核对本次货款是否已实际到账；买家提供的付款截图或收据不能替代本人到账核实。",
+          "scene": "seller_receipt",
+          "target": "本次卖给买家的货物及对应货款",
+          "trigger": "交货前核对自己的网银/手机银行实际到账，买家凭证不等于到账",
+          "source_ids": [
+            "receipt-guidance"
+          ]
+        },
+        {
+          "text": "企业付款方收到供应商账户变更请求后，必须使用自行掌握的、独立来源的电话号码（非邮件所附联系方式）进行口头核实；核实完成前不得更新本次账户信息，也不得按该请求支付本次货款。",
+          "scene": "account_change",
+          "target": "本次供应商账户变更请求、变更账户及相关付款",
+          "trigger": "独立口头核实本次变更前；不能默认供应商称此前款项未收到",
+          "source_ids": [
+            "bec-guidance"
+          ]
+        }
+      ],
+      "source_comparison": "卖方核对自己账户到账，付款企业独立核实供应商变更；分条区分角色，不互相替代。"
+    }
+  ],
+  "additional_checks": {
+    "amount_run": "e5d06d20700342ef",
+    "amount_reference": "17,000澳元为初始损失，包含于企业估计超过30,000澳元的总损失；包含供货延误和合同义务影响，不能相加",
+    "unrelated": "最后一轮仍因资料不足停止，不生成种植建议",
+    "retrieval": "两个核心口语问题仍实际走BM25无命中→semantic；retrieval.py未改动",
+    "intermediate_failure": "00cdfea07e284b92因审核额外给出null scenario检查项被误拒绝；修复该结构兼容问题，旧失败不改写，另做真实CLI复测"
+  },
+  "runtime_summary": [
+    {
+      "case": "seller",
+      "run_id": "f844e72e7022493a",
+      "status": "completed",
+      "retrieval_methods": [
+        "bm25",
+        "semantic"
+      ],
+      "sufficient": true
+    },
+    {
+      "case": "change",
+      "run_id": "0f17d9d932264f39",
+      "status": "completed",
+      "retrieval_methods": [
+        "bm25",
+        "semantic"
+      ],
+      "sufficient": true
+    },
+    {
+      "case": "unreceived",
+      "run_id": "1cb97841db9f48b4",
+      "status": "completed",
+      "retrieval_methods": [
+        "bm25"
+      ],
+      "sufficient": true
+    },
+    {
+      "case": "training",
+      "run_id": "692db6fe9cfe4413",
+      "status": "completed",
+      "retrieval_methods": [
+        "bm25"
+      ],
+      "sufficient": true
+    },
+    {
+      "case": "compare",
+      "run_id": "1eab222befb5402b",
+      "status": "completed",
+      "retrieval_methods": [
+        "bm25"
+      ],
+      "sufficient": true
+    },
+    {
+      "case": "seller-paraphrase",
+      "run_id": "00cdfea07e284b92",
+      "status": "failed",
+      "retrieval_methods": [
+        "bm25"
+      ],
+      "sufficient": true
+    },
+    {
+      "case": "change-paraphrase",
+      "run_id": "1a43b6ab7c2746ba",
+      "status": "completed",
+      "retrieval_methods": [
+        "bm25",
+        "semantic"
+      ],
+      "sufficient": true
+    },
+    {
+      "case": "amount",
+      "run_id": "e5d06d20700342ef",
+      "status": "completed",
+      "retrieval_methods": [
+        "bm25"
+      ],
+      "sufficient": true
+    },
+    {
+      "case": "unrelated",
+      "run_id": "bc8a792702084a08",
+      "status": "completed",
+      "retrieval_methods": [
+        "bm25",
+        "semantic"
+      ],
+      "sufficient": false
+    }
+  ],
+  "paraphrase_retry": {
+    "run_id": "fdc66e51a4904612",
+    "status": "completed",
+    "review": "默认CLI实际复测；卖方仅核对本人账户本次到账，凭证不能替代，无供应商付款步骤。"
+  }
+}

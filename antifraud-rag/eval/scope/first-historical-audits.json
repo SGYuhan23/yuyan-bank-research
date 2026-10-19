@@ -1,0 +1,116 @@
+{
+  "method": "actual current semantic scope reviewer on unchanged historical final answers, no mock",
+  "results": [
+    {
+      "old_run": "e939b58bd6e64512",
+      "audit_run": "08ae497f249e4bc7",
+      "verdict": {
+        "pass": false,
+        "issues": [
+          "step 1: text未明确限定'本次卖给买家的货物及对应货款'，仅泛称'卖货'，未满足target_bounded要求",
+          "step 2: 场景为seller_receipt，但该步骤内容属于unreceived_payment场景（供应商称未收到付款），与用户询问场景不匹配，role_matches=false",
+          "step 3: 场景为seller_receipt，但该步骤内容属于account_change场景（供应商账户信息变更），与用户询问场景不匹配，role_matches=false",
+          "risks中第二条引用bec-case，但bec-case描述的是企业付款方被诱导向诈骗账户付款，与seller_receipt（卖方收款）角色完全不符，role_matches=false",
+          "questions中三项均未限定于本次交易对象（如'该买家''该笔货款'），且第二问'电话联系过该供应商本人'混淆seller_receipt中买方/卖方关系——卖方无'供应商'，应为'买家'，role_matches=false"
+        ],
+        "step_checks": [
+          {
+            "index": 0,
+            "role_matches": true,
+            "target_bounded": false,
+            "condition_preserved": true,
+            "source_supported": true,
+            "reason": "原文'never provide the buyer with the item until you can see the funds in your account'对应卖方角色，但未限定'本次货物及对应货款'，仅泛称'item'和'funds'，缺乏本次交易对象绑定"
+          },
+          {
+            "index": 1,
+            "role_matches": false,
+            "target_bounded": false,
+            "condition_preserved": true,
+            "source_supported": true,
+            "reason": "原文出自bec-guidance中'A supplier or employee claim they haven’t received payment'，明确针对企业付款方（payer）核实历史付款，与seller_receipt中卖方（receiver）角色冲突；且未限定'本次请求'，target_bounded=false"
+          },
+          {
+            "index": 2,
+            "role_matches": false,
+            "target_bounded": false,
+            "condition_preserved": true,
+            "source_supported": true,
+            "reason": "原文出自bec-guidance中'They request payment to a new account number'，明确针对企业付款方验证供应商账户变更请求，与seller_receipt中卖方角色无关；且未限定'本次账户变更'，target_bounded=false"
+          }
+        ]
+      },
+      "accepted_by_runtime": false
+    },
+    {
+      "old_run": "4b48fa8dbff54fc4",
+      "audit_run": "7a6ef77b2ba44499",
+      "verdict": {
+        "pass": true,
+        "issues": [],
+        "step_checks": [
+          {
+            "index": 0,
+            "role_matches": true,
+            "target_bounded": true,
+            "condition_preserved": true,
+            "source_supported": true,
+            "reason": "正文明确针对'任何收款账户变更请求'，要求使用已知、独立来源电话号码口头核实，与account_change场景中'本次供应商账户变更请求、变更账户及相关付款'完全匹配；'不得使用邮件中提供的联系方式'严格限定核实方式，条件完整保留；引用bec-guidance原文中'Even if such requests came from someone associated with you, do not make any changes to account details until you've verbally verified the request using a phone number you sourced yourself.'，来源支持。"
+          },
+          {
+            "index": 1,
+            "role_matches": true,
+            "target_bounded": false,
+            "condition_preserved": true,
+            "source_supported": true,
+            "reason": "正文提及'A supplier or employee claim they haven’t received payment'并要求暂停付款、核对历史记录，但该操作属于unreceived_payment场景（target为'供应商称未收到的此前那笔货款及其重复支付请求'），而用户仅询问account_change场景；本步骤未限定'仅当供应商同步提出未收款主张时才触发'，亦未将该动作约束于本次变更请求关联的特定付款，target_bounded=false。"
+          },
+          {
+            "index": 2,
+            "role_matches": true,
+            "target_bounded": false,
+            "condition_preserved": true,
+            "source_supported": true,
+            "reason": "正文'暂停后续支付动作：在核实完成前，不得执行新付款、补付或重复付款'未明确限定'本次供应商账户变更所涉付款'，也未排除与本次变更无关的其他付款；'新付款、补付或重复付款'泛指所有类型，未绑定account_change场景的target（本次供应商账户变更请求、变更账户及相关付款），target_bounded=false。"
+          }
+        ]
+      },
+      "accepted_by_runtime": false
+    },
+    {
+      "old_run": "88a6b108e1604ba6",
+      "audit_run": "640c73da236445d3",
+      "verdict": {
+        "pass": true,
+        "issues": [],
+        "step_checks": [
+          {
+            "index": 0,
+            "role_matches": true,
+            "target_bounded": true,
+            "condition_preserved": true,
+            "source_supported": true,
+            "reason": "正文‘立即暂停付款操作，不执行任何账户变更或转账’明确限定于本次供应商账户变更请求及付款，与account_change场景中target‘本次供应商账户变更请求、变更账户及相关付款’一致；引用bec-guidance中‘do not make any changes to account details until you've verbally verified’直接支持。"
+          },
+          {
+            "index": 1,
+            "role_matches": true,
+            "target_bounded": true,
+            "condition_preserved": true,
+            "source_supported": true,
+            "reason": "正文‘使用你方存档中已有的、独立核实过的电话号码……直接致电该合作方负责人，口头确认收款账户变更请求是否真实’中角色为付款方（企业），target为本次变更请求，trigger为‘独立口头核实本次变更前’，与account_change定义完全匹配；引用bec-guidance中‘verbally verified the request using a phone number you sourced yourself’原文支持。"
+          },
+          {
+            "index": 2,
+            "role_matches": true,
+            "target_bounded": false,
+            "condition_preserved": false,
+            "source_supported": true,
+            "reason": "正文‘如果供应商或员工称未收到付款，先不要继续付款……’引入unreceived_payment场景的trigger（供应商明确声称未收到此前付款），但用户问题仅涉及account_change（‘老合作方说换了卡号，让我们今天打钱’），未提及‘此前付款未收到’；该步骤超出task_scenes指定范围，且未限定于本次请求，target_bounded=false，condition_preserved=false。"
+          }
+        ]
+      },
+      "accepted_by_runtime": false
+    }
+  ]
+}

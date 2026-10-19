@@ -57,3 +57,5 @@ python antifraud-rag/evaluate.py
 - [已实现与未实现](docs/IMPLEMENTATION_STATUS.md)、[来源核对](docs/SOURCE_REVIEW.md)。
 
 本轮两项收尾的真实运行、mock故障测试及金额口径复核见[收尾验证](docs/CLOSEOUT.md)。
+
+当前场景收尾：操作建议显式携带场景、对象、触发条件与来源，生成/审核只使用适用该场景的原文段落；删除原关键词整句模板。范围、真实复跑及已知局限见[场景收尾记录](docs/SCOPE_CLOSEOUT.md)。

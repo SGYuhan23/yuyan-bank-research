@@ -1,0 +1,602 @@
+{
+  "run_id": "00cdfea07e284b92",
+  "query": "买家给了汇款截屏，我现在就把货寄走吗？",
+  "task": "knowledge",
+  "retriever": "auto",
+  "status": "failed",
+  "started_at": "2026-10-19T03:03:46.786048+00:00",
+  "records": [
+    {
+      "sequence": 1,
+      "at": "2026-10-19T03:03:46.792839+00:00",
+      "kind": "task_identified",
+      "task": "knowledge",
+      "query": "买家给了汇款截屏，我现在就把货寄走吗？"
+    },
+    {
+      "sequence": 2,
+      "at": "2026-10-19T03:03:46.795950+00:00",
+      "kind": "retrieval_started",
+      "method": "bm25"
+    },
+    {
+      "sequence": 3,
+      "at": "2026-10-19T03:03:46.805198+00:00",
+      "kind": "retrieval_attempt_completed",
+      "method": "bm25",
+      "unit_ids": [
+        "receipt-guidance"
+      ],
+      "source_ids": [
+        "westpac-receipt"
+      ]
+    },
+    {
+      "sequence": 4,
+      "at": "2026-10-19T03:03:46.806149+00:00",
+      "kind": "retrieval_completed",
+      "ranked": [
+        {
+          "unit_id": "receipt-guidance",
+          "score": 1.507153
+        }
+      ],
+      "index_sha256": "f01ad3a4a244f5c15592d8435131c7e8d6b8ed2390280ee8503f6d159e9e511a",
+      "test_fixture_ids": []
+    },
+    {
+      "sequence": 5,
+      "at": "2026-10-19T03:03:46.808464+00:00",
+      "kind": "model_started",
+      "phase": "evidence_adequacy"
+    },
+    {
+      "sequence": 6,
+      "at": "2026-10-19T03:03:49.297187+00:00",
+      "kind": "model_call",
+      "phase": "evidence_adequacy",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 2288,
+        "completion_tokens": 80,
+        "prompt_tokens": 2208,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        }
+      },
+      "duration_seconds": 2.487,
+      "finish_reason": "stop",
+      "request_hash": "28149f298521e877a606e2611272c46970ac3e0d7cabc5744624162b0faaf5b8"
+    },
+    {
+      "sequence": 7,
+      "at": "2026-10-19T03:03:49.301115+00:00",
+      "kind": "adequacy_checked",
+      "sufficient": true,
+      "task_scenes": [
+        {
+          "scene": "seller_receipt",
+          "question_basis": "买家给了汇款截屏，我现在就把货寄走吗？"
+        }
+      ],
+      "relevant_ids": [
+        "receipt-guidance"
+      ],
+      "missing": [],
+      "conflicts": [],
+      "calculation": "none"
+    },
+    {
+      "sequence": 8,
+      "at": "2026-10-19T03:03:49.309003+00:00",
+      "kind": "model_started",
+      "phase": "generate"
+    },
+    {
+      "sequence": 9,
+      "at": "2026-10-19T03:03:59.101717+00:00",
+      "kind": "model_call",
+      "phase": "generate",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 2906,
+        "completion_tokens": 420,
+        "prompt_tokens": 2486,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 9.789,
+      "finish_reason": "stop",
+      "request_hash": "1219768265a5e7052ac72ea22e7c09322b7f8ec49a30a729bd3d556b2d1a01f9"
+    },
+    {
+      "sequence": 10,
+      "at": "2026-10-19T03:03:59.109615+00:00",
+      "kind": "citation_materialized",
+      "unit_id": "receipt-guidance",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "sequence": 11,
+      "at": "2026-10-19T03:03:59.113008+00:00",
+      "kind": "citation_materialized",
+      "unit_id": "receipt-guidance",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "sequence": 12,
+      "at": "2026-10-19T03:03:59.116505+00:00",
+      "kind": "citation_materialized",
+      "unit_id": "receipt-guidance",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "sequence": 13,
+      "at": "2026-10-19T03:03:59.119939+00:00",
+      "kind": "model_started",
+      "phase": "citation_entailment_review"
+    },
+    {
+      "sequence": 14,
+      "at": "2026-10-19T03:04:21.970193+00:00",
+      "kind": "model_call",
+      "phase": "citation_entailment_review",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 4265,
+        "completion_tokens": 897,
+        "prompt_tokens": 3368,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 22.847,
+      "finish_reason": "stop",
+      "request_hash": "0ce6a4499efe04e4d0fb548e17e7d664ddceaaf2b7643e3957661fb4a45c3250"
+    },
+    {
+      "sequence": 15,
+      "at": "2026-10-19T03:04:21.974442+00:00",
+      "kind": "model_output_review",
+      "verdict": {
+        "pass": true,
+        "issues": [],
+        "scene_checks": [
+          {
+            "scene": "seller_receipt",
+            "essential_checks_present": true,
+            "reason": "已包含两项必要核实动作：1) 本人网银/手机银行核对本次实际到账；2) 明确买家凭证不能替代到账核对，且未到账前不交本次货物。均与scope_rules.seller_receipt.required_checks完全一致。"
+          }
+        ],
+        "other_checks": [
+          {
+            "field": "risks",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "风险描述对象为卖方发货后钱货两空，条件明确指向付款截图伪造、显示已付但实际未到账，与receipt-guidance原文'Receipts can be falsified by scammers to appear as if they have made payment, when they have not.'严格对应，且限定于seller_receipt场景。"
+          },
+          {
+            "field": "boundaries",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "边界声明明确限定为卖方收款场景，排除account_change和unreceived_payment，与scope_rules中seller_receipt.role='卖方收款'及target='本次卖给买家的货物及对应货款'一致。"
+          },
+          {
+            "field": "boundaries",
+            "index": 1,
+            "scope_supported": true,
+            "reason": "注明指引为2023年4月公开提示、适用网上出售物品场景，并强调不构成交易是否诈骗的判定依据，与untrusted_evidence.section_date='2023-04'及limitations内容完全一致。"
+          },
+          {
+            "field": "questions",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "首问直接聚焦'是否已在本人网银或手机银行中查到这笔货款的实时入账记录？'，对象为本次货款，条件为本人渠道实时到账，符合trigger'交货前核对自己的网银/手机银行实际到账'。"
+          },
+          {
+            "field": "questions",
+            "index": 1,
+            "scope_supported": true,
+            "reason": "第二问核查付款人名称、金额、时间三要素是否与截图一致，属到账核对的合理延伸（验证凭证与实际入账匹配性），未超出receipt-guidance中'Never rely on a receipt or screenshot'隐含的比对要求，且未引入其他场景前提。"
+          },
+          {
+            "field": "scenario",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "scenario为null且scenario_label='not_applicable'，符合任务仅基于公开指引作知识响应、非编写培训情境的要求；未冒称真实客户案例或添加虚构细节。"
+          }
+        ],
+        "step_checks": [
+          {
+            "index": 0,
+            "role_matches": true,
+            "target_bounded": true,
+            "condition_preserved": true,
+            "source_supported": true,
+            "reason": "步骤text明确'交货前必须本人登录网银或手机银行，核对本次货款是否已实际到账'，角色=卖方收款，target=本次货物及对应货款，trigger=买家提供截屏，与scope_rules.seller_receipt完全一致；引用unit_id=receipt-guidance，quote原文含'never provide the buyer with the item until you can see the funds in your account, within your own online or mobile banking'。"
+          },
+          {
+            "index": 1,
+            "role_matches": true,
+            "target_bounded": true,
+            "condition_preserved": true,
+            "source_supported": true,
+            "reason": "步骤text明确'买家提供的付款凭证（如截图、收据）不能替代本人网银/手机银行的实际到账确认；未确认到账前不得寄出本次货物'，角色、target、trigger均与seller_receipt定义一致；引用unit_id=receipt-guidance，quote原文含'Never rely on a receipt or screenshot of a payment sent to you'。"
+          }
+        ]
+      },
+      "reviewer": "same_model_not_independent_human"
+    },
+    {
+      "sequence": 16,
+      "at": "2026-10-19T03:04:21.976992+00:00",
+      "kind": "scope_review_failed",
+      "verdict": {
+        "pass": true,
+        "issues": [],
+        "scene_checks": [
+          {
+            "scene": "seller_receipt",
+            "essential_checks_present": true,
+            "reason": "已包含两项必要核实动作：1) 本人网银/手机银行核对本次实际到账；2) 明确买家凭证不能替代到账核对，且未到账前不交本次货物。均与scope_rules.seller_receipt.required_checks完全一致。"
+          }
+        ],
+        "other_checks": [
+          {
+            "field": "risks",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "风险描述对象为卖方发货后钱货两空，条件明确指向付款截图伪造、显示已付但实际未到账，与receipt-guidance原文'Receipts can be falsified by scammers to appear as if they have made payment, when they have not.'严格对应，且限定于seller_receipt场景。"
+          },
+          {
+            "field": "boundaries",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "边界声明明确限定为卖方收款场景，排除account_change和unreceived_payment，与scope_rules中seller_receipt.role='卖方收款'及target='本次卖给买家的货物及对应货款'一致。"
+          },
+          {
+            "field": "boundaries",
+            "index": 1,
+            "scope_supported": true,
+            "reason": "注明指引为2023年4月公开提示、适用网上出售物品场景，并强调不构成交易是否诈骗的判定依据，与untrusted_evidence.section_date='2023-04'及limitations内容完全一致。"
+          },
+          {
+            "field": "questions",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "首问直接聚焦'是否已在本人网银或手机银行中查到这笔货款的实时入账记录？'，对象为本次货款，条件为本人渠道实时到账，符合trigger'交货前核对自己的网银/手机银行实际到账'。"
+          },
+          {
+            "field": "questions",
+            "index": 1,
+            "scope_supported": true,
+            "reason": "第二问核查付款人名称、金额、时间三要素是否与截图一致，属到账核对的合理延伸（验证凭证与实际入账匹配性），未超出receipt-guidance中'Never rely on a receipt or screenshot'隐含的比对要求，且未引入其他场景前提。"
+          },
+          {
+            "field": "scenario",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "scenario为null且scenario_label='not_applicable'，符合任务仅基于公开指引作知识响应、非编写培训情境的要求；未冒称真实客户案例或添加虚构细节。"
+          }
+        ],
+        "step_checks": [
+          {
+            "index": 0,
+            "role_matches": true,
+            "target_bounded": true,
+            "condition_preserved": true,
+            "source_supported": true,
+            "reason": "步骤text明确'交货前必须本人登录网银或手机银行，核对本次货款是否已实际到账'，角色=卖方收款，target=本次货物及对应货款，trigger=买家提供截屏，与scope_rules.seller_receipt完全一致；引用unit_id=receipt-guidance，quote原文含'never provide the buyer with the item until you can see the funds in your account, within your own online or mobile banking'。"
+          },
+          {
+            "index": 1,
+            "role_matches": true,
+            "target_bounded": true,
+            "condition_preserved": true,
+            "source_supported": true,
+            "reason": "步骤text明确'买家提供的付款凭证（如截图、收据）不能替代本人网银/手机银行的实际到账确认；未确认到账前不得寄出本次货物'，角色、target、trigger均与seller_receipt定义一致；引用unit_id=receipt-guidance，quote原文含'Never rely on a receipt or screenshot of a payment sent to you'。"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 17,
+      "at": "2026-10-19T03:04:21.984511+00:00",
+      "kind": "model_started",
+      "phase": "repair_scope"
+    },
+    {
+      "sequence": 18,
+      "at": "2026-10-19T03:04:32.029511+00:00",
+      "kind": "model_call",
+      "phase": "repair_scope",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 4853,
+        "completion_tokens": 420,
+        "prompt_tokens": 4433,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        }
+      },
+      "duration_seconds": 10.042,
+      "finish_reason": "stop",
+      "request_hash": "a162cc806cee8b5a39a9da04c58e367df5a4f88d397001a53ffaa67f17a4cca8"
+    },
+    {
+      "sequence": 19,
+      "at": "2026-10-19T03:04:32.034616+00:00",
+      "kind": "citation_materialized",
+      "unit_id": "receipt-guidance",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "sequence": 20,
+      "at": "2026-10-19T03:04:32.036686+00:00",
+      "kind": "citation_materialized",
+      "unit_id": "receipt-guidance",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "sequence": 21,
+      "at": "2026-10-19T03:04:32.038915+00:00",
+      "kind": "citation_materialized",
+      "unit_id": "receipt-guidance",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "sequence": 22,
+      "at": "2026-10-19T03:04:32.041560+00:00",
+      "kind": "model_started",
+      "phase": "citation_entailment_review"
+    },
+    {
+      "sequence": 23,
+      "at": "2026-10-19T03:04:50.438947+00:00",
+      "kind": "model_call",
+      "phase": "citation_entailment_review",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 4160,
+        "completion_tokens": 792,
+        "prompt_tokens": 3368,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 18.395,
+      "finish_reason": "stop",
+      "request_hash": "0ce6a4499efe04e4d0fb548e17e7d664ddceaaf2b7643e3957661fb4a45c3250"
+    },
+    {
+      "sequence": 24,
+      "at": "2026-10-19T03:04:50.444243+00:00",
+      "kind": "model_output_review",
+      "verdict": {
+        "pass": true,
+        "issues": [],
+        "scene_checks": [
+          {
+            "scene": "seller_receipt",
+            "essential_checks_present": true,
+            "reason": "已包含两项必要核实动作：1) 本人网银/手机银行核对本次实际到账；2) 买家凭证不能替代到账核对，且明确限定于本次货物及货款。两步均指向同一target，且trigger条件（买家提供汇款截屏）与scope_rules一致。"
+          }
+        ],
+        "other_checks": [
+          {
+            "field": "risks",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "风险描述对象为付款截图伪造导致钱货两空，与seller_receipt场景中买家提供截屏、卖方未核实即发货的后果完全对应；引用unit_id正确，且未超出公开指引范围。"
+          },
+          {
+            "field": "boundaries",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "边界声明明确限定为卖方收款场景，排除account_change和unreceived_payment，与用户问题及task_scenes完全一致。"
+          },
+          {
+            "field": "boundaries",
+            "index": 1,
+            "scope_supported": true,
+            "reason": "注明该指引为2023年4月公开安全提示、适用网上出售物品场景、不构成诈骗判定依据，与untrusted_evidence中section_date、limitations、scope_note严格一致。"
+          },
+          {
+            "field": "questions",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "首问‘是否已在本人网银或手机银行中查到这笔货款的实时入账记录？’直接对应required_checks第一条，对象为本次货款，条件明确。"
+          },
+          {
+            "field": "questions",
+            "index": 1,
+            "scope_supported": true,
+            "reason": "次问‘该笔货款的付款人名称、金额、时间是否与买家提供的截图完全一致？’虽未列在required_checks中，但属到账核对时自然延伸的验证动作，不违背原文，且未越界至其他场景。"
+          },
+          {
+            "field": "scenario",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "scenario为null且scenario_label='not_applicable'，符合要求：用户问题为真实操作咨询，非培训编写情境，故不适用scenario字段。"
+          }
+        ],
+        "step_checks": [
+          {
+            "index": 0,
+            "role_matches": true,
+            "target_bounded": true,
+            "condition_preserved": true,
+            "source_supported": true,
+            "reason": "text中‘本次货款’‘本次货物’与scope_rules.seller_receipt.target完全一致；trigger‘买家提供了汇款截屏’与question_basis匹配；‘必须本人登录网银或手机银行核对实际到账’是required_checks第一项的准确复述；引用unit_id正确。"
+          },
+          {
+            "index": 1,
+            "role_matches": true,
+            "target_bounded": true,
+            "condition_preserved": true,
+            "source_supported": true,
+            "reason": "text中‘买家提供的付款凭证（如截图、收据）不能替代本人网银/手机银行的实际到账确认’‘未确认到账前不得寄出本次货物’完整覆盖required_checks第二项；target限定为‘本次卖给买家的货物及对应货款’；trigger条件与question_basis一致；引用unit_id正确。"
+          }
+        ]
+      },
+      "reviewer": "same_model_not_independent_human"
+    },
+    {
+      "sequence": 25,
+      "at": "2026-10-19T03:04:50.449213+00:00",
+      "kind": "failed",
+      "error": "OUTPUT_SCOPE_REVIEW_FAILED:[]"
+    }
+  ],
+  "result": null,
+  "fixtures": false,
+  "code_sha256": "62a38dd4ece64ea9f3e7ffddc2d2a1204b18ce0ceb289e572a317af3fc146ab0",
+  "retrieved": [
+    {
+      "unit_id": "receipt-guidance",
+      "source_id": "westpac-receipt",
+      "title": "Past Scams and Alerts | Westpac",
+      "url": "https://www.westpac.com.au/security/latest-scams/past-scams-and-alerts/",
+      "published_or_updated_at": null,
+      "date_status": "page_update_not_shown_section_dated_2023_04",
+      "retrieved_at": "2026-10-18T11:15:01.536289+00:00",
+      "region": "Australia",
+      "material_type": "bank_public_guidance",
+      "page_or_section": "April 2023 - PayID Scam",
+      "file_sha256": "cba10f00f84e9061c54b885148c1d8672d9b5940cc46cfe39c620b1b7df75bbd",
+      "review_status": "codex_author_checked_pending_independent_review",
+      "seed_provenance": "independently_discovered_official_source_material_pack_not_found",
+      "hash_scope": "original_http_html",
+      "acquisition_method": "httpx",
+      "section": "April 2023 - PayID Scam",
+      "text": "April 2023 - PayID Scam\nBe alert to PayID Scams when selling items online\nUsing PayID is a safe and easy way to send and receive funds.\nAfter a conversation with a potential buyer through an Online Marketplace, such as Facebook or Gumtree, you're advised that you need to upgrade your PayID to a business account for you to receive the payment.\nThese scam emails state your account has been upgraded to a business account and you need to refund a deposit that has been credited to your account.\nDo not act on these emails and report the buyer/seller profile to the marketplace as a potential scam.\nReminder\n- PayID's are managed within your banking app. A PayID does not need to be upgraded or activated by making payments. For more information on how PayID's work and how you can set up a Westpac registered PayID, visit\nwestpac.com.au/payid\n.\nAlso, when selling items online, never provide the buyer with the item until you can see the funds in your account, within your own online or mobile banking. Never rely on a receipt or screenshot of a payment sent to you. Receipts can be falsified by scammers to appear as if they have made payment, when they have not.\nIf you have received an email, SMS or other request that you have identified as potentially fraudulent or which you think involves a scam account, it's always a good idea to report these through to us, before deleting it from your inbox or deleted items on your device.\nForward a copy to hoax@westpac.com.au or 0497 132 032.",
+      "search_labels": "付款截图 收据 到账 网银 卖货 交货 receipt screenshot payment funds",
+      "limitations": "2023年4月公开提示，场景为网上出售物品；不能据此判定某笔交易已经到账或已构成诈骗。",
+      "unit_sha256": "7f1fbefcc331d7493401d93fcdcf9025bd980299fe97742a6b803c151981da4d",
+      "limitations_origin": "project_author_scope_note_not_official_quote",
+      "section_date": "2023-04"
+    }
+  ],
+  "assessment": {
+    "sufficient": true,
+    "task_scenes": [
+      {
+        "scene": "seller_receipt",
+        "question_basis": "买家给了汇款截屏，我现在就把货寄走吗？"
+      }
+    ],
+    "relevant_ids": [
+      "receipt-guidance"
+    ],
+    "missing": [],
+    "conflicts": [],
+    "calculation": "none"
+  },
+  "draft": {
+    "steps": [
+      {
+        "text": "交货前必须本人登录网银或手机银行，核对本次货款是否已实际到账。",
+        "citations": [
+          {
+            "unit_id": "receipt-guidance",
+            "quote": ""
+          }
+        ],
+        "scene": "seller_receipt",
+        "target": "本次卖给买家的货物及对应货款",
+        "trigger": "买家提供了汇款截屏"
+      },
+      {
+        "text": "买家提供的付款凭证（如截图、收据）不能替代本人网银/手机银行的实际到账确认；未确认到账前不得寄出本次货物。",
+        "citations": [
+          {
+            "unit_id": "receipt-guidance",
+            "quote": ""
+          }
+        ],
+        "scene": "seller_receipt",
+        "target": "本次卖给买家的货物及对应货款",
+        "trigger": "买家提供了汇款截屏"
+      }
+    ],
+    "risks": [
+      {
+        "text": "付款截图可能被伪造，显示已付款但实际未到账，导致卖方发货后钱货两空。",
+        "citations": [
+          {
+            "unit_id": "receipt-guidance",
+            "quote": ""
+          }
+        ]
+      }
+    ],
+    "boundaries": [
+      "仅适用于卖方收款场景，不涉及买方账户变更或供应商称未收款等情形",
+      "该指引为2023年4月公开安全提示，针对网上出售物品场景，不构成对某笔交易是否已诈骗的判定依据"
+    ],
+    "questions": [
+      "您是否已在本人网银或手机银行中查到这笔货款的实时入账记录？",
+      "该笔货款的付款人名称、金额、时间是否与买家提供的截图完全一致？"
+    ],
+    "scenario": null,
+    "scenario_label": "not_applicable",
+    "review_status": "pending_human_review"
+  },
+  "scope_repair_draft": {
+    "steps": [
+      {
+        "text": "交货前必须本人登录网银或手机银行，核对本次货款是否已实际到账。",
+        "citations": [
+          {
+            "unit_id": "receipt-guidance",
+            "quote": ""
+          }
+        ],
+        "scene": "seller_receipt",
+        "target": "本次卖给买家的货物及对应货款",
+        "trigger": "买家提供了汇款截屏"
+      },
+      {
+        "text": "买家提供的付款凭证（如截图、收据）不能替代本人网银/手机银行的实际到账确认；未确认到账前不得寄出本次货物。",
+        "citations": [
+          {
+            "unit_id": "receipt-guidance",
+            "quote": ""
+          }
+        ],
+        "scene": "seller_receipt",
+        "target": "本次卖给买家的货物及对应货款",
+        "trigger": "买家提供了汇款截屏"
+      }
+    ],
+    "risks": [
+      {
+        "text": "付款截图可能被伪造，显示已付款但实际未到账，导致卖方发货后钱货两空。",
+        "citations": [
+          {
+            "unit_id": "receipt-guidance",
+            "quote": ""
+          }
+        ]
+      }
+    ],
+    "boundaries": [
+      "仅适用于卖方收款场景，不涉及买方账户变更或供应商称未收款等情形",
+      "该指引为2023年4月公开安全提示，针对网上出售物品场景，不构成对某笔交易是否已诈骗的判定依据"
+    ],
+    "questions": [
+      "您是否已在本人网银或手机银行中查到这笔货款的实时入账记录？",
+      "该笔货款的付款人名称、金额、时间是否与买家提供的截图完全一致？"
+    ],
+    "scenario": null,
+    "scenario_label": "not_applicable",
+    "review_status": "pending_human_review"
+  },
+  "error": "OUTPUT_SCOPE_REVIEW_FAILED:[]"
+}

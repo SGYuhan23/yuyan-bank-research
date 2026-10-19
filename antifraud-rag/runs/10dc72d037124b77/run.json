@@ -1,0 +1,112 @@
+{
+  "run_id": "10dc72d037124b77",
+  "query": "对方发来转账凭证，货可以给他了吗？",
+  "task": "knowledge",
+  "retriever": "auto",
+  "status": "audit_completed",
+  "started_at": "2026-10-19T02:59:53.006416+00:00",
+  "records": [
+    {
+      "sequence": 1,
+      "at": "2026-10-19T02:59:53.015347+00:00",
+      "kind": "model_started",
+      "phase": "citation_entailment_review"
+    },
+    {
+      "sequence": 2,
+      "at": "2026-10-19T03:00:19.721553+00:00",
+      "kind": "model_call",
+      "phase": "citation_entailment_review",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 5976,
+        "completion_tokens": 1171,
+        "prompt_tokens": 4805,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 26.704,
+      "finish_reason": "stop",
+      "request_hash": "f1339afe96170aad4050b4d978b00c5669dd0fdfc196f250399fb210b35f0f14"
+    }
+  ],
+  "result": null,
+  "fixtures": false,
+  "code_sha256": "53e009e1ce7063b390c23314911a4a5f9be868cb563297f2c5555125e1a072ff",
+  "audit_of_historical_run": "e939b58bd6e64512",
+  "audit_verdict": {
+    "pass": false,
+    "issues": [
+      "第二步和第三步文本内容超出'seller_receipt'场景范围：用户问题明确为卖方收到买家转账凭证后能否发货，但步骤2、3引入了'供应商称未收到付款''供应商账户变更'等account_change/unreceived_payment场景要素，与用户指定scene不匹配",
+      "风险项2引用bec-case案例，但该案例描述的是企业付款方（John）被诱导修改供应商账户信息后向诈骗账户付款，与当前seller_receipt场景（卖方等待买家付款到账）角色、对象、流程均不一致，属错误引用",
+      "questions中'你是否曾收到过要求更新该供应商银行账户信息的邮件或消息？'属于account_change场景，非seller_receipt场景应有追问；同理'你是否已通过自有通讯录中存档的号码，电话联系过该供应商本人核实付款情况？'隐含供应商身份，与买家-卖家关系不符",
+      "boundaries中'不适用于已通过银行端确认到账的交易'正确，但未强调本指引仅针对交货前判断，易引发歧义；且未说明'对方发来转账凭证'中的'对方'在seller_receipt中恒为买家，不可替换为供应商"
+    ],
+    "other_checks": [
+      {
+        "field": "risks",
+        "index": 0,
+        "scope_supported": true,
+        "reason": "风险1正文'转账凭证（截图、收据）可被伪造，无法证明资金已实际转入你的账户'与receipt-guidance原文'Never rely on a receipt or screenshot of a payment sent to you. Receipts can be falsified by scammers...'完全对应，对象为卖方、条件为交货前、来源明确"
+      },
+      {
+        "field": "risks",
+        "index": 1,
+        "scope_supported": false,
+        "reason": "风险2正文'对方可能冒充真实供应商发送虚假账户变更请求'将'对方'定义为供应商，但seller_receipt场景中'对方'是买家；bec-case案例描述的是企业付款方被钓鱼修改供应商账户，与卖方核验买家付款无关，角色、target、trigger均不匹配"
+      },
+      {
+        "field": "questions",
+        "index": 0,
+        "scope_supported": false,
+        "reason": "问题1'你是否曾收到过要求更新该供应商银行账户信息的邮件或消息？'中'供应商'与seller_receipt场景中买家身份冲突，且该问题属于account_change场景触发条件，非receipt-guidance覆盖范围"
+      },
+      {
+        "field": "questions",
+        "index": 1,
+        "scope_supported": false,
+        "reason": "问题2'你是否已通过自有通讯录中存档的号码，电话联系过该供应商本人核实付款情况？'中'供应商'指代错误，seller_receipt场景中应核实买家而非供应商；且receipt-guidance未要求电话核实，仅要求登录自身网银确认到账"
+      },
+      {
+        "field": "questions",
+        "index": 2,
+        "scope_supported": false,
+        "reason": "问题3'该笔款项是否为首次支付给该收款方？'中'收款方'在seller_receipt中是卖方自己，但问题逻辑指向付款方视角（如企业付款给供应商），与场景角色颠倒；bec-guidance中该问题用于首次付款给第三方（如房产中介），不适用于卖方收款"
+      },
+      {
+        "field": "scenario",
+        "index": 0,
+        "scope_supported": true,
+        "reason": "scenario_label为'not_applicable'且scenario为null，符合seller_receipt为公开指引非培训编写情境的要求"
+      }
+    ],
+    "step_checks": [
+      {
+        "index": 0,
+        "role_matches": true,
+        "target_bounded": true,
+        "condition_preserved": true,
+        "source_supported": true,
+        "reason": "step0文本'不要仅凭对方发来的转账凭证...确认货款已真实到账'中角色为卖方，target为本次卖给买家的货物及对应货款，trigger为交货前核对自己网银到账，与receipt-guidance原文'never provide the buyer with the item until you can see the funds in your account...Never rely on a receipt or screenshot...'完全一致"
+      },
+      {
+        "index": 1,
+        "role_matches": false,
+        "target_bounded": false,
+        "condition_preserved": false,
+        "source_supported": false,
+        "reason": "step1文本'如果供应商或员工称未收到付款...'中角色变为已付款企业（account_change/unreceived_payment场景），target变为供应商称未收到的此前付款，与seller_receipt场景中卖方等待买家付款完全无关；receipt-guidance未包含此内容，引用bec-guidance属跨场景错误"
+      },
+      {
+        "index": 2,
+        "role_matches": false,
+        "target_bounded": false,
+        "condition_preserved": false,
+        "source_supported": false,
+        "reason": "step2文本'如涉及供应商账户信息变更...'中角色为企业付款方，target为供应商账户变更请求，与seller_receipt场景中卖方核验买家付款无任何关联；bec-guidance原文适用条件为'payment redirection scams'，非卖方收款场景"
+      }
+    ]
+  }
+}

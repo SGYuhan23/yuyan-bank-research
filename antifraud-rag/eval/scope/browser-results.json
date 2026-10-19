@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "method": "render actual saved new runs through current local HTTP server; no new generation in browser",
+  "checks": [
+    "scene target trigger visible",
+    "new seller and training outputs",
+    "project-authored pending review",
+    "mobile overflow",
+    "no page errors"
+  ]
+}

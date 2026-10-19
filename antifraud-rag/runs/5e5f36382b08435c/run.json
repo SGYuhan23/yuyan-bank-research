@@ -1,0 +1,74 @@
+{
+  "run_id": "5e5f36382b08435c",
+  "query": "老合作方说换了卡号，让我们今天打钱，先做什么？",
+  "task": "knowledge",
+  "retriever": "auto",
+  "status": "audit_completed",
+  "started_at": "2026-10-19T02:56:09.296255+00:00",
+  "records": [
+    {
+      "sequence": 1,
+      "at": "2026-10-19T02:56:09.302062+00:00",
+      "kind": "model_started",
+      "phase": "citation_entailment_review"
+    },
+    {
+      "sequence": 2,
+      "at": "2026-10-19T02:56:23.974347+00:00",
+      "kind": "model_call",
+      "phase": "citation_entailment_review",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 5430,
+        "completion_tokens": 629,
+        "prompt_tokens": 4801,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        }
+      },
+      "duration_seconds": 14.667,
+      "finish_reason": "stop",
+      "request_hash": "3eb68ada2adc92aa682a551ad0fd3055f362396c4e8134b14ea41008a611d52a"
+    }
+  ],
+  "result": null,
+  "fixtures": false,
+  "code_sha256": "4e9c25bd142b1bd2bfa95d6b6a76e7770c2d32cdc3785d9017711d9ed57af01d",
+  "audit_of_historical_run": "88a6b108e1604ba6",
+  "audit_verdict": {
+    "pass": false,
+    "issues": [
+      "步骤2中'直接致电该合作方负责人'未明确限定为本次账户变更所涉付款的核实对象，target_bounded=false；原文仅要求'verbally verify the request'，未指定必须是'负责人'，角色不匹配。",
+      "步骤3将'unreceived_payment'场景混入account_change任务，但用户问题未提及'供应商称此前未收到付款'，trigger条件不满足，condition_preserved=false。",
+      "风险项2错误表述John案例中'30,000澳元'为'最初17,000澳元的损失，以及供货延误、合同义务等影响'并加'不能将两笔金额相加'，但原文明确'estimated their loss to be over $30,000'且说明'with the initial loss of $17,000, the delay... and broken contractual obligations'，即30,000是包含性总额估计，非两数相加结果，source_supported=false。",
+      "所有steps引用同一unit_id（bec-guidance）但quote字段为空字符串，符合要求；但步骤3的text内容实际对应'unreceived_payment'场景，与当前task_scenes中仅指定'account_change'冲突，scene不一致。"
+    ],
+    "step_checks": [
+      {
+        "index": 0,
+        "role_matches": true,
+        "target_bounded": true,
+        "condition_preserved": true,
+        "source_supported": true,
+        "reason": "text明确暂停'付款操作'及'账户变更或转账'，对应account_change场景中'本次供应商账户变更请求、变更账户及相关付款'；触发条件为独立口头核实前，与原文'pause and verify... regardless of who the sender is or if the request is urgent'一致。"
+      },
+      {
+        "index": 1,
+        "role_matches": false,
+        "target_bounded": false,
+        "condition_preserved": true,
+        "source_supported": true,
+        "reason": "text要求'致电该合作方负责人'，但原文仅要求'verbally verify the request using a phone number you sourced yourself'，未限定'负责人'；且未限定本次变更所涉付款（如'本次货款'或'本次账户变更请求'），target_bounded=false。"
+      },
+      {
+        "index": 2,
+        "role_matches": false,
+        "target_bounded": false,
+        "condition_preserved": false,
+        "source_supported": false,
+        "reason": "text引入'unreceived_payment'场景条件（供应商称未收到付款），但用户问题仅涉及'换了卡号，让我们今天打钱'，无'此前付款未收到'表述，trigger未被激活；且该步骤属于unreceived_payment场景，与task_scenes中唯一指定的account_change不匹配。"
+      }
+    ]
+  }
+}

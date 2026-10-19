@@ -1,0 +1,15 @@
+{
+  "source_id": "training-af2b7d726dcd4816",
+  "title": "本项目编写培训场景",
+  "url": null,
+  "published_or_updated_at": "2026-10-19T02:58:16.133904+00:00",
+  "retrieved_at": "2026-10-19T02:58:16.133914+00:00",
+  "region": "Australia",
+  "material_type": "project_authored_training",
+  "page_or_section": "scenario",
+  "file_sha256": "d906245f1b7d2f0658b0add7e833ec3c05ac46de65a63b1402d389e7da47e27b",
+  "hash_scope": "scenario_text",
+  "review_status": "pending_human_review",
+  "text": "企业A收到自称供应商B财务人员的邮件，称因内部系统升级需立即更新收款账户，并附新银行账号及开户行信息；邮件格式与以往发票邮件高度相似，但发件邮箱域名与历史记录不符。客服C在后台尚未修改账户前，需按流程完成核实。",
+  "run_id": "af2b7d726dcd4816"
+}

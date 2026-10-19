@@ -23,12 +23,9 @@ class Integrity(unittest.TestCase):
  def test_full_section_citation_materialized(self):
   run=object.__new__(RagRun);run.units={'a':{'text':'Original complete section.'}};events=[];run.log=lambda kind,**data:events.append(kind)
   claim=Claim(text='test',citations=[{'unit_id':'a'}]);run.check_citations([claim]);self.assertEqual(claim.citations[0].quote,'Original complete section.');self.assertIn('citation_materialized',events)
- def test_conditional_scope_restored(self):
-  run=object.__new__(RagRun);text='A supplier or employee claim they haven’t received payment. Investigate the payment history.'
-  run.units={'bec-guidance':{'text':text}};run.data={'task':'knowledge','query':'供应商账户变更'};run.calculations=[];events=[]
-  run.log=lambda kind,**data:events.append(kind);run.call=lambda *args,**kwargs:{'pass':True,'issues':[]}
-  run.assessment=Assessment(sufficient=True,relevant_ids=['bec-guidance'],missing=[],conflicts=[])
-  run.answer=Answer(steps=[Claim(text='核查付款历史',citations=[{'unit_id':'bec-guidance','quote':text}])],risks=[],boundaries=[],questions=[],scenario=None,scenario_label='not_applicable',review_status='pending_human_review')
-  run.validate({});self.assertTrue(run.data['result']['answer']['steps'][0]['text'].startswith('如果供应商或员工称未收到付款'));self.assertIn('condition_scope_applied',events)
+ def test_cross_scene_template_removed(self):
+  source=(ROOT/'pipeline.py').read_text()
+  self.assertNotIn("claim.text='如果供应商或员工称未收到付款",source)
+  self.assertNotIn("replace('暂停任何付款'",source)
  def test_baseline_empty_query(self):self.assertEqual(bm25('xyz',[{'search_labels':'供应商','text':'supplier','unit_id':'x'}])[0][1],0)
 if __name__=='__main__':unittest.main()

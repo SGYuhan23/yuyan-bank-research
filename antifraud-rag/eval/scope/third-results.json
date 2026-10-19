@@ -1,0 +1,59 @@
+{
+  "method": "actual auto RAG with current Qwen configuration; no mock; human/source review separate",
+  "results": [
+    {
+      "id": "seller",
+      "run_id": "282146821db345a9",
+      "status": "completed",
+      "error": null
+    },
+    {
+      "id": "change",
+      "run_id": "406516786b064634",
+      "status": "completed",
+      "error": null
+    },
+    {
+      "id": "unreceived",
+      "run_id": "a58af16b70034ec3",
+      "status": "completed",
+      "error": null
+    },
+    {
+      "id": "training",
+      "run_id": "e9cd50a2a71c4c25",
+      "status": "completed",
+      "error": null
+    },
+    {
+      "id": "compare",
+      "run_id": "b7a5d49907854ca5",
+      "status": "completed",
+      "error": null
+    },
+    {
+      "id": "seller-paraphrase",
+      "run_id": "86f26a32bc8f4b22",
+      "status": "failed",
+      "error": "OUTPUT_SCOPE_REVIEW_FAILED:[]"
+    },
+    {
+      "id": "change-paraphrase",
+      "run_id": "e89934d426fc430f",
+      "status": "completed",
+      "error": null
+    },
+    {
+      "id": "amount",
+      "run_id": "40ec1909e8734790",
+      "status": "completed",
+      "error": null
+    },
+    {
+      "id": "unrelated",
+      "run_id": "4f373e60a66d4334",
+      "status": "completed",
+      "error": null
+    }
+  ]
+}

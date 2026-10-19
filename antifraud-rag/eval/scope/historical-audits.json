@@ -1,0 +1,284 @@
+{
+  "method": "actual current semantic scope reviewer on unchanged historical final answers, no mock",
+  "results": [
+    {
+      "old_run": "e939b58bd6e64512",
+      "audit_run": "ee0c05e92d2f4798",
+      "verdict": {
+        "pass": false,
+        "issues": [
+          "steps[1]和steps[2]混入account_change与unreceived_payment场景，但用户仅询问seller_receipt（对方发来转账凭证，货可否发出）；scope_rules明确限定seller_receipt的trigger为'交货前核对自己的网银/手机银行实际到账，买家凭证不等于到账'，其余步骤超出当前核心场景且无用户请求依据",
+          "steps[1]中'text'正确引用receipt-guidance，但steps[2]和[3]的text内容分别对应unreceived_payment和account_change场景，未被用户提问，违反'仅选择用户实际询问的场景'指令",
+          "risks[1]正确匹配seller_receipt场景；但risks[2]引用bec-case中供应商账户被冒用案例，属account_change场景，用户未询问账户变更或供应商称未收款，该风险不适用当前seller_receipt问题",
+          "questions中'你是否曾收到过要求更新该供应商银行账户信息的邮件或消息？'和'你是否已通过自有通讯录中存档的号码，电话联系过该供应商本人核实付款情况？'属于account_change/unreceived_payment场景，非seller_receipt必要追问，违反'仅基于当前适用段落提出操作'要求",
+          "scenario为null且label='not_applicable'，但answer中未声明本问题不涉及培训情境编写，而training情境编写是本项目新编内容，需显式区分；当前输出未满足此边界要求"
+        ],
+        "scene_checks": [
+          {
+            "scene": "seller_receipt",
+            "essential_checks_present": true,
+            "reason": "required_checks要求：1)本人网银/手机银行核对本次实际到账；2)买家凭证不能替代到账核对；到账前不交本次货物。steps[0]完整覆盖两项，text与citations均严格对应receipt-guidance原文。"
+          }
+        ],
+        "other_checks": [
+          {
+            "field": "risks",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "risks[0]对象为'转账凭证（截图、收据）'，条件为'无法证明资金已实际转入你的账户'，来源receipt-guidance原文明确'Never rely on a receipt or screenshot... Receipts can be falsified...'，完全匹配seller_receipt场景。"
+          },
+          {
+            "field": "risks",
+            "index": 1,
+            "scope_supported": false,
+            "reason": "risks[2]对象为'对方可能冒充真实供应商发送虚假账户变更请求'，前提为供应商账户信息被篡改，属account_change场景；用户问题未提及账户变更、供应商称未收款或任何历史付款异常，无触发条件，超出seller_receipt scope。"
+          },
+          {
+            "field": "questions",
+            "index": 0,
+            "scope_supported": false,
+            "reason": "question '你是否曾收到过要求更新该供应商银行账户信息的邮件或消息？' 前提为存在账户变更请求，属account_change场景；用户仅提供'对方发来转账凭证'，无任何账户变更线索，该问超出seller_receipt required_checks。"
+          },
+          {
+            "field": "questions",
+            "index": 1,
+            "scope_supported": false,
+            "reason": "question '你是否已通过自有通讯录中存档的号码，电话联系过该供应商本人核实付款情况？' 隐含前提为供应商声称未收款或存在付款争议，属unreceived_payment场景；seller_receipt中卖方只需确认自己账户到账，无需联系买家核实凭证真伪，该问无依据。"
+          },
+          {
+            "field": "questions",
+            "index": 2,
+            "scope_supported": false,
+            "reason": "question '该笔款项是否为首次支付给该收款方？' 来源bec-guidance中'You’re paying them for the first time'条款，属account_change/unreceived_payment风控建议；seller_receipt场景不区分首次/多次付款，只关注本次凭证与到账一致性，该问不适用。"
+          }
+        ],
+        "step_checks": [
+          {
+            "index": 0,
+            "role_matches": true,
+            "target_bounded": true,
+            "condition_preserved": true,
+            "source_supported": true,
+            "reason": "role='卖方收款'，target='本次卖给买家的货物及对应货款'，trigger='交货前核对自己的网银/手机银行实际到账，买家凭证不等于到账'；text明确要求'必须亲自登录自己的网银或手机银行，确认货款已真实到账'，并强调'不要仅凭对方发来的转账凭证就发货'，完全符合receipt-guidance原文。"
+          },
+          {
+            "index": 1,
+            "role_matches": false,
+            "target_bounded": false,
+            "condition_preserved": false,
+            "source_supported": false,
+            "reason": "role应为'卖方收款'，但text主语为'你'（企业付款方），target指向'供应商称未收到的此前那笔货款'，属unreceived_payment场景；trigger要求'供应商明确声称未收到此前付款'，用户问题无此前提；citations指向bec-guidance，非receipt-guidance，完全偏离seller_receipt。"
+          },
+          {
+            "index": 2,
+            "role_matches": false,
+            "target_bounded": false,
+            "condition_preserved": false,
+            "source_supported": false,
+            "reason": "role应为'卖方收款'，但text主语为执行账户变更的企业，target为'供应商账户信息变更'，属account_change场景；trigger要求'独立口头核实本次变更前'，用户问题未提及任何账户变更请求；citations指向bec-guidance，与seller_receipt无关。"
+          }
+        ]
+      },
+      "accepted_by_runtime": false
+    },
+    {
+      "old_run": "4b48fa8dbff54fc4",
+      "audit_run": "5db8fe7799b54b53",
+      "verdict": {
+        "pass": false,
+        "issues": [
+          "step 0: target_bounded=false — 步骤未限定‘本次供应商账户变更请求、变更账户及相关付款’，仅泛称‘任何收款账户变更请求’，未绑定当前场景目标；原文要求‘核实本次变更前’且‘不扩大至无关付款’，但步骤未体现该限定。",
+          "step 1: scene mismatch — 该步骤描述的是unreceived_payment场景（供应商称未收到付款），但用户仅询问account_change场景；scope_rules明确区分二者，不得将unreceived_payment的触发条件（供应商称未收到）自动带入account_change培训材料。",
+          "step 2: target_bounded=false — ‘暂停后续支付动作’未限定为‘本次供应商账户变更所涉付款’，未排除无关付款，违反scope_rules.account_change.required_checks中‘不扩大至无关付款’要求。",
+          "risks[0]: source_supported=false — 引用bec-case原文描述John案例，但该段落未说明‘诈骗者常冒充长期合作供应商’为普遍规律，仅陈述John个案中‘regular suppliers’；‘常’字属过度泛化，无原文支持。",
+          "risks[1]: condition_preserved=true but phrasing risks misinterpretation — 虽正确指出30,000澳元是包含17,000澳元的估计总额，但‘不能将两笔金额相加’易被误读为数学禁止，而原文实为语义关系（‘with the initial loss of $17,000, ... estimated their loss to be over $30,000’），建议更精确表述为‘30,000澳元是包含17,000澳元在内的综合估计值，非额外现金损失’。",
+          "questions[0] and [1]: scope_supported=false — 问题未限定于‘本次变更请求’，如‘历史付款是否均使用同一账户’超出account_change场景必要核实范围（scope_rules.account_change.required_checks仅要求独立电话核实本次变更），属无关追问。",
+          "scenario_label='project_authored_training'但scenario中含‘客服C接到企业A来电咨询是否应执行变更’——该设定隐含客服需向企业A提供操作建议，但scope_rules与资料均未授权客服代企业执行核实或给出‘应/不应’判断，仅提供公众指引；此为角色越界风险。"
+        ],
+        "scene_checks": [
+          {
+            "scene": "account_change",
+            "essential_checks_present": false,
+            "reason": "scope_rules.account_change.required_checks要求：(1) 独立取得电话口头核实本次变更，不用请求中的联系方式；(2) 核实前不更改本次账户信息/不按本次变更支付，不扩大至无关付款。step 0和step 2均未明确限定‘本次’，且step 1错误引入unreceived_payment场景，导致两项必要核实动作未完整、准确覆盖。"
+          }
+        ],
+        "other_checks": [
+          {
+            "field": "risks",
+            "index": 0,
+            "scope_supported": false,
+            "reason": "原文bec-case仅描述John个案中对方是‘one of his regular suppliers’，未作统计性断言‘常冒充’；‘常’字无依据，属泛化推论。"
+          },
+          {
+            "field": "risks",
+            "index": 1,
+            "scope_supported": true,
+            "reason": "原文bec-case明确‘with the initial loss of $17,000, ... estimated their loss to be over $30,000’，文本准确反映包含关系，未拆解为额外损失。"
+          },
+          {
+            "field": "boundaries",
+            "index": 2,
+            "scope_supported": true,
+            "reason": "边界说明正确引用bec-case原文‘with the initial loss of $17,000, ... estimated their loss to be over $30,000’，并强调不可拆解，符合资料要求。"
+          },
+          {
+            "field": "questions",
+            "index": 0,
+            "scope_supported": false,
+            "reason": "问题‘该供应商是否为长期合作方？历史付款是否均使用同一账户？’超出account_change场景required_checks范围；scope_rules仅要求核实本次变更，不强制回溯历史账户使用情况。"
+          },
+          {
+            "field": "questions",
+            "index": 1,
+            "scope_supported": false,
+            "reason": "‘变更请求是否通过邮件单独发出？有无同步电话或书面盖章文件？’属于对请求形式的追问，但scope_rules.account_change未将此列为必要核实项；核实动作唯一强制要求是独立电话口头确认，无论原始请求形式如何。"
+          },
+          {
+            "field": "scenario",
+            "index": 0,
+            "scope_supported": false,
+            "reason": "scenario设定客服C需向企业A提供‘是否应执行变更’建议，但所有资料均未赋予客服决策权限；公众指引仅面向企业自身操作，客服角色在此场景中应限于转述核实步骤，而非代为判断。"
+          }
+        ],
+        "step_checks": [
+          {
+            "index": 0,
+            "role_matches": true,
+            "target_bounded": false,
+            "condition_preserved": true,
+            "source_supported": true,
+            "reason": "role=‘企业付款方’匹配；但target未限定‘本次供应商账户变更请求、变更账户及相关付款’，仅泛称‘任何收款账户变更请求’；原文bec-guidance要求‘verify the request’且‘do not make any changes to account details until you've verbally verified the request’，request须指当前具体请求，此处缺失限定。"
+          },
+          {
+            "index": 1,
+            "role_matches": false,
+            "target_bounded": false,
+            "condition_preserved": false,
+            "source_supported": true,
+            "reason": "role应为account_change场景下的‘企业付款方’，但该步骤触发条件为‘供应商称未收到付款’，属unreceived_payment场景；scope_rules明确分离二者，本步骤不应出现在account_change培训材料中。"
+          },
+          {
+            "index": 2,
+            "role_matches": true,
+            "target_bounded": false,
+            "condition_preserved": true,
+            "source_supported": true,
+            "reason": "role匹配；但‘暂停后续支付动作’未限定为‘本次供应商账户变更所涉付款’，违反scope_rules.account_change.required_checks中‘不扩大至无关付款’；原文bec-guidance仅要求‘do not make any changes to account details until you've verbally verified the request’，未授权泛化暂停。"
+          }
+        ]
+      },
+      "accepted_by_runtime": false
+    },
+    {
+      "old_run": "88a6b108e1604ba6",
+      "audit_run": "50bd213e9bb04251",
+      "verdict": {
+        "pass": false,
+        "issues": [
+          "step 0: '立即暂停付款操作，不执行任何账户变更或转账' — target_bounded=false：未限定为'本次供应商账户变更请求、变更账户及相关付款'，扩大至'任何账户变更或转账'，违反scope_rules.account_change.required_checks中'核实前不更改本次账户信息/不按本次变更支付，不扩大至无关付款'。",
+          "step 1: '使用你方存档中已有的、独立核实过的电话号码（非邮件中提供的号码），直接致电该合作方负责人，口头确认收款账户变更请求是否真实' — role_matches=true，但condition_preserved=false：原文要求'独立取得电话口头核实本次变更，不用请求中的联系方式'，而步骤中未明确'本次变更'对象（如本次拟付货款所涉账户变更），也未排除使用邮件中联系方式的隐含风险（仅说'非邮件中提供的号码'，未强调'必须用自己存档/公开渠道获取的号码'）。",
+          "step 2: '如果供应商或员工称未收到付款，先不要继续付款，核对付款历史及往来邮件，检查是否曾有人要求修改账户信息' — scene_mismatch：用户问题仅涉及'account_change'（老合作方说换了卡号，让我们今天打钱），未触发'unreceived_payment'场景（即供应商未声称此前某笔款未收到），此步属额外引入未询问场景，且未满足unreceived_payment.required_checks中'明确以供应商称此前该笔款未收到为前提'。",
+          "risks[1]: 'John案例中，企业估计总损失超过30,000澳元，包含最初17,000澳元的损失，以及供货延误、合同义务等影响；不能将两笔金额相加' — source_supported=false：原文明确'initial loss of $17,000'与'delay in supply... estimated their loss to be over $30,000'是总额包含关系（'with the initial loss..., ...estimated their loss to be over $30,000'），并非'不能相加'；该表述曲解原文逻辑，构成事实错误。",
+          "questions[0]: '您是否已通过独立渠道（如旧合同、过往对账单、官网公布的电话）联系到该合作方本人？' — scope_supported=false：该问题隐含'已联系'动作，但用户当前仅收到口头变更请求，尚未执行核实；问题应聚焦'是否已完成独立核实'而非'是否已联系'，否则混淆核实动作与核实结果。",
+          "boundaries中'账户变更本身不构成欺诈证明，仅触发核实义务'正确，但steps中step 0和step 2均未体现该边界，反而强化'暂停一切'和'不要继续付款'的绝对化禁令，未限定于本次请求。"
+        ],
+        "scene_checks": [
+          {
+            "scene": "account_change",
+            "essential_checks_present": false,
+            "reason": "required_checks要求：1) 独立取得电话口头核实本次变更，不用请求中的联系方式；2) 核实前不更改本次账户信息/不按本次变更支付，不扩大至无关付款。step 0扩大至'任何账户变更或转账'；step 1未明示'本次变更'对象；step 2引入未询问的unreceived_payment场景，缺失对'本次供应商账户变更请求、变更账户及相关付款'的精准限定。"
+          }
+        ],
+        "other_checks": [
+          {
+            "field": "risks",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "风险描述'对方声称‘换了卡号’是支付重定向诈骗（BEC）的典型信号'对应bec-guidance中'Signs this may be a scam: They request payment to a new account number'，unit_id引用正确。"
+          },
+          {
+            "field": "risks",
+            "index": 1,
+            "scope_supported": false,
+            "reason": "原文'initial loss of $17,000'与'loss to be over $30,000'为总额包含关系（'with the initial loss..., ...estimated their loss...'），'不能将两笔金额相加'系错误推断，违背provided_calculations为空且无计算依据的要求。"
+          },
+          {
+            "field": "boundaries",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "'本指引为澳大利亚公开安全建议，非Westpac内部操作规程'与untrusted_evidence中bec-guidance的limitations完全一致。"
+          },
+          {
+            "field": "boundaries",
+            "index": 1,
+            "scope_supported": true,
+            "reason": "'账户变更本身不构成欺诈证明，仅触发核实义务'与bec-guidance limitations中'账户变更是核实信号，不足以证明欺诈'一致。"
+          },
+          {
+            "field": "boundaries",
+            "index": 2,
+            "scope_supported": true,
+            "reason": "'PayID®功能仅在收款方已注册且我方系统支持时可用'对应bec-guidance中'if the payee has one'及'PayID displays the registered payee name onscreen'，条件限定准确。"
+          },
+          {
+            "field": "boundaries",
+            "index": 3,
+            "scope_supported": true,
+            "reason": "'所有核实必须使用我方独立掌握的联系方式，不得采信邮件内所附信息'对应bec-guidance中'Always use a phone number you have on file, or a publicly sourced number. Never use contact details provided in the email.'"
+          },
+          {
+            "field": "questions",
+            "index": 0,
+            "scope_supported": false,
+            "reason": "问题'您是否已通过独立渠道...联系到该合作方本人？'预设'已联系'动作，但核实动作本身（打电话）与核实结果（是否联系上本人）混淆；原文要求'verbally verify the request'，问题应聚焦'是否已完成口头核实'。"
+          },
+          {
+            "field": "questions",
+            "index": 1,
+            "scope_supported": true,
+            "reason": "'该合作方是否曾主动说明变更原因'对应bec-case中'Mr Liu’s email explained that due to a change in their internal finance system...'，属合理追问。"
+          },
+          {
+            "field": "questions",
+            "index": 2,
+            "scope_supported": true,
+            "reason": "'这笔付款是否属于首次支付，或此前已有稳定付款记录？'对应bec-guidance中'You’re paying them for the first time'与'Even if such requests came from someone associated with you'的区分，符合原文逻辑。"
+          },
+          {
+            "field": "questions",
+            "index": 3,
+            "scope_supported": true,
+            "reason": "'贵司是否已启用双人审批或多重身份验证等防控机制？'对应bec-guidance中'Use multifactor authentication and dual payment approvals where available.'"
+          }
+        ],
+        "step_checks": [
+          {
+            "index": 0,
+            "role_matches": true,
+            "target_bounded": false,
+            "condition_preserved": true,
+            "source_supported": true,
+            "reason": "role为企业付款方正确；source引用bec-guidance中'Pause and verify the request verbally...'正确；但target未限定'本次供应商账户变更请求、变更账户及相关付款'，扩大为'任何账户变更或转账'，违反required_checks中'不扩大至无关付款'。"
+          },
+          {
+            "index": 1,
+            "role_matches": true,
+            "target_bounded": false,
+            "condition_preserved": false,
+            "source_supported": true,
+            "reason": "role为企业付款方正确；source引用bec-guidance中'verbally verified the request using a phone number you sourced yourself'正确；但text未明示'本次变更'对象（如本次拟付货款所涉账户），且'你方存档中已有的、独立核实过的电话号码'未强调'必须用自己存档/公开渠道获取'（原文要求'sourced yourself'/'you have on file, or a publicly sourced number'），条件不完整。"
+          },
+          {
+            "index": 2,
+            "role_matches": false,
+            "target_bounded": false,
+            "condition_preserved": false,
+            "source_supported": false,
+            "reason": "scene为account_change，但step内容完全对应unreceived_payment场景（'供应商或员工称未收到付款'），用户问题未提及该前提；required_checks中unreceived_payment前提为'供应商明确声称未收到此前付款'，此处无依据引入；且该步未满足account_change.required_checks任何一项。"
+          }
+        ]
+      },
+      "accepted_by_runtime": false
+    }
+  ]
+}

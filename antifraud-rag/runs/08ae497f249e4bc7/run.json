@@ -1,0 +1,75 @@
+{
+  "run_id": "08ae497f249e4bc7",
+  "query": "对方发来转账凭证，货可以给他了吗？",
+  "task": "knowledge",
+  "retriever": "auto",
+  "status": "audit_completed",
+  "started_at": "2026-10-19T02:53:44.915435+00:00",
+  "records": [
+    {
+      "sequence": 1,
+      "at": "2026-10-19T02:53:44.923728+00:00",
+      "kind": "model_started",
+      "phase": "citation_entailment_review"
+    },
+    {
+      "sequence": 2,
+      "at": "2026-10-19T02:53:57.998080+00:00",
+      "kind": "model_call",
+      "phase": "citation_entailment_review",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 6181,
+        "completion_tokens": 541,
+        "prompt_tokens": 5640,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 13.071,
+      "finish_reason": "stop",
+      "request_hash": "82d5424bde7fed2a576dc4e3186968140d44e2f9266230696213ff49bbe351f0"
+    }
+  ],
+  "result": null,
+  "fixtures": false,
+  "code_sha256": "6702dccd8d69e2558275f920b518ea5cb07a744b0e2f570e774132cf907222c3",
+  "audit_of_historical_run": "e939b58bd6e64512",
+  "audit_verdict": {
+    "pass": false,
+    "issues": [
+      "step 1: text未明确限定'本次卖给买家的货物及对应货款'，仅泛称'卖货'，未满足target_bounded要求",
+      "step 2: 场景为seller_receipt，但该步骤内容属于unreceived_payment场景（供应商称未收到付款），与用户询问场景不匹配，role_matches=false",
+      "step 3: 场景为seller_receipt，但该步骤内容属于account_change场景（供应商账户信息变更），与用户询问场景不匹配，role_matches=false",
+      "risks中第二条引用bec-case，但bec-case描述的是企业付款方被诱导向诈骗账户付款，与seller_receipt（卖方收款）角色完全不符，role_matches=false",
+      "questions中三项均未限定于本次交易对象（如'该买家''该笔货款'），且第二问'电话联系过该供应商本人'混淆seller_receipt中买方/卖方关系——卖方无'供应商'，应为'买家'，role_matches=false"
+    ],
+    "step_checks": [
+      {
+        "index": 0,
+        "role_matches": true,
+        "target_bounded": false,
+        "condition_preserved": true,
+        "source_supported": true,
+        "reason": "原文'never provide the buyer with the item until you can see the funds in your account'对应卖方角色，但未限定'本次货物及对应货款'，仅泛称'item'和'funds'，缺乏本次交易对象绑定"
+      },
+      {
+        "index": 1,
+        "role_matches": false,
+        "target_bounded": false,
+        "condition_preserved": true,
+        "source_supported": true,
+        "reason": "原文出自bec-guidance中'A supplier or employee claim they haven’t received payment'，明确针对企业付款方（payer）核实历史付款，与seller_receipt中卖方（receiver）角色冲突；且未限定'本次请求'，target_bounded=false"
+      },
+      {
+        "index": 2,
+        "role_matches": false,
+        "target_bounded": false,
+        "condition_preserved": true,
+        "source_supported": true,
+        "reason": "原文出自bec-guidance中'They request payment to a new account number'，明确针对企业付款方验证供应商账户变更请求，与seller_receipt中卖方角色无关；且未限定'本次账户变更'，target_bounded=false"
+      }
+    ]
+  }
+}
