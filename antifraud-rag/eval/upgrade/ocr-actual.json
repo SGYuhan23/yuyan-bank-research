@@ -1,0 +1,17 @@
+{
+  "input": "project authored image PAYMENT SUCCESSFUL AUD 17000.00",
+  "adapter": "macOS Vision",
+  "actual_result": [
+    {
+      "confidence": 1,
+      "text": "PAYMENT SUCCESSFUL AUD 17000.00",
+      "region_normalized_bottom_left": [
+        0.03333332427083363,
+        0.5555555581617568,
+        0.7250000000000001,
+        0.18518517812093094
+      ]
+    }
+  ],
+  "limitation": "recognition only; not proof of actual payment"
+}

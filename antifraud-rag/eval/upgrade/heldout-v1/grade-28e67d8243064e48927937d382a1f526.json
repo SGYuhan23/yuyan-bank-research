@@ -1,0 +1,49 @@
+{
+  "id": "28e67d8243064e48927937d382a1f526",
+  "reviewer": "same Qwen blinded to system, not independent expert",
+  "grade": {
+    "required_checks": [
+      {
+        "requirement": "登记不能证明具体邀约",
+        "met": true,
+        "output_quote": "专业官网和公司登记信息本身不能证明投资邀约真实。"
+      },
+      {
+        "requirement": "独立检查授权及联系信息",
+        "met": true,
+        "output_quote": "即使显示ASIC牌照号，也需通过ASIC官方注册查询系统核验名称、号码及业务范围是否完全匹配。……切勿依赖邀约中提供的网址、电话或文件。"
+      },
+      {
+        "requirement": "不能保证安全",
+        "met": true,
+        "output_quote": "持牌也不代表投资安全或ASIC认可。……不等于获得金融牌照；……不 guarantee the investment is safe or that you won’t lose money……"
+      }
+    ],
+    "errors": [],
+    "completion": true,
+    "refusal": false,
+    "uncertain": [
+      "Judge quote not verbatim: 即使显示ASIC牌照号，也需通过ASIC官方注册查询系统核验名称、号码及业务范围是否完全匹配。……切勿依赖邀约中提供的网址、电话或文件。",
+      "Judge quote not verbatim: 持牌也不代表投资安全或ASIC认可。……不等于获得金融牌照；……不 guarantee the investment is safe or that you won’t lose money……"
+    ]
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "blind_auxiliary_grade",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 1710,
+        "completion_tokens": 207,
+        "prompt_tokens": 1503,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 5.409,
+      "finish_reason": "stop",
+      "request_hash": "ee6419c0e808ed0e367fc4812586ed17166b8b546470575680e384d75fec8aab"
+    }
+  ]
+}

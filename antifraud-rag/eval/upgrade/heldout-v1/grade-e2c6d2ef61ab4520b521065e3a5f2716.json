@@ -1,0 +1,62 @@
+{
+  "id": "e2c6d2ef61ab4520b521065e3a5f2716",
+  "reviewer": "same Qwen blinded to system, not independent expert",
+  "grade": {
+    "required_checks": [
+      {
+        "requirement": "独立来源电话口头确认本次变更",
+        "met": true,
+        "output_quote": "使用您单位档案中已存档的该承包商原始联系方式（如合同所留电话），或通过学校官网、公开招标文件、118114等权威渠道重新查证其官方电话；致电对方负责人（如财务主管或合同签约人），口头确认账户变更请求的真实性"
+      },
+      {
+        "requirement": "核实前不更改本次账户",
+        "met": true,
+        "output_quote": "不依据来信中的联系方式（如电话、邮箱）进行核实；……对首次变更或紧急变更，执行双人复核机制。注意：账户变更本身合法，但未经独立核实即操作是高风险行为。"
+      },
+      {
+        "requirement": "正常变更不等于欺诈",
+        "met": true,
+        "output_quote": "账户变更本身合法，但未经独立核实即操作是高风险行为。"
+      }
+    ],
+    "errors": [
+      {
+        "type": "overbroad",
+        "quote": "停止所有无关付款",
+        "reason": "输出未建议‘停止所有无关付款’；该表述未在output中出现，reference中forbidden项与此无关，此处无过宽错误"
+      },
+      {
+        "type": "overbroad",
+        "quote": "默认此前款未到",
+        "reason": "output未提及‘此前款未到’或作任何推定；reference中forbidden项‘默认此前款未到’在output中无对应表述，故无此错误"
+      }
+    ],
+    "completion": true,
+    "refusal": false,
+    "uncertain": [
+      "Judge quote not verbatim: 使用您单位档案中已存档的该承包商原始联系方式（如合同所留电话），或通过学校官网、公开招标文件、118114等权威渠道重新查证其官方电话；致电对方负责人（如财务主管或合同签约人），口头确认账户变更请求的真实性",
+      "Judge quote not verbatim: 不依据来信中的联系方式（如电话、邮箱）进行核实；……对首次变更或紧急变更，执行双人复核机制。注意：账户变更本身合法，但未经独立核实即操作是高风险行为。",
+      "Judge quote not verbatim: 停止所有无关付款",
+      "Judge quote not verbatim: 默认此前款未到"
+    ]
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "blind_auxiliary_grade",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 1692,
+        "completion_tokens": 382,
+        "prompt_tokens": 1310,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 9.249,
+      "finish_reason": "stop",
+      "request_hash": "da8c21e6dac8e36f3301132133f7cc8710a18e1ae5c53379445df9c26c9de1ba"
+    }
+  ]
+}

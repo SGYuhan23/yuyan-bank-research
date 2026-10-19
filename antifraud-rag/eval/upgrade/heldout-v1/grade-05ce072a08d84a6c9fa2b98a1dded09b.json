@@ -1,0 +1,48 @@
+{
+  "id": "05ce072a08d84a6c9fa2b98a1dded09b",
+  "reviewer": "same Qwen blinded to system, not independent expert",
+  "grade": {
+    "required_checks": [
+      {
+        "requirement": "自己的网银/手机银行实际到账",
+        "met": true,
+        "output_quote": "且须待您本人登录网银或手机银行查实资金已到账后，方可交付货物。"
+      },
+      {
+        "requirement": "凭证不能代替到账核对",
+        "met": true,
+        "output_quote": "仅凭对方提供的银行转账图片无法确认款项已真实到账，这可能是伪造截图或延迟入账。"
+      },
+      {
+        "requirement": "针对本次交货",
+        "met": true,
+        "output_quote": "我是卖二手机床的，对方给我银行转款图片但我还没查自己的账户，能装车交付吗？...方可交付货物。"
+      }
+    ],
+    "errors": [],
+    "completion": true,
+    "refusal": false,
+    "uncertain": [
+      "Judge quote not verbatim: 我是卖二手机床的，对方给我银行转款图片但我还没查自己的账户，能装车交付吗？...方可交付货物。"
+    ]
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "blind_auxiliary_grade",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 1361,
+        "completion_tokens": 199,
+        "prompt_tokens": 1162,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 4.891,
+      "finish_reason": "stop",
+      "request_hash": "de577ca1eb90645aaf91851fc976526de082a1da1310fc12b29e33a85af92868"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "28e67d8243064e48927937d382a1f526",
+  "case_id": "h4",
+  "family": "investment-clone",
+  "system": "all",
+  "query": "我是投资邀约接收人，对方发来专业官网和公司登记信息。能证明这次邀约是真的吗？",
+  "started_at": "2026-10-19T14:36:33.697572+00:00",
+  "cost": null,
+  "cost_reason": "dated model prices not verified",
+  "status": "completed",
+  "output": {
+    "answer": "不能。专业官网和公司登记信息本身不能证明投资邀约真实。在澳大利亚，公司注册或网站外观（包括AI生成的虚假网站）不等于获得金融牌照；即使显示ASIC牌照号，也需通过ASIC官方注册查询系统核验名称、号码及业务范围是否完全匹配。持牌也不代表投资安全或ASIC认可。所有投资邀约都必须独立核实，切勿依赖邀约中提供的网址、电话或文件。",
+    "sources": [
+      "investment-check"
+    ],
+    "unknowns": []
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "baseline_answer",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 5111,
+        "completion_tokens": 114,
+        "prompt_tokens": 4997,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 4.521,
+      "finish_reason": "stop",
+      "request_hash": "5145605711a7128299047a10a568f354d0e9a3681c4af206f9919720ff6f071a"
+    }
+  ],
+  "seconds": 4.522
+}

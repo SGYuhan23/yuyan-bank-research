@@ -1,0 +1,38 @@
+{
+  "id": "235b0252a9ec4fa383a8e36bd5589a8d",
+  "case_id": "h4",
+  "family": "investment-clone",
+  "system": "direct",
+  "query": "我是投资邀约接收人，对方发来专业官网和公司登记信息。能证明这次邀约是真的吗？",
+  "started_at": "2026-10-19T14:36:30.669053+00:00",
+  "cost": null,
+  "cost_reason": "dated model prices not verified",
+  "status": "completed",
+  "output": {
+    "answer": "不能。诈骗者常伪造专业官网和公司登记信息，这些表面证据无法证明邀约真实。根据反诈公开指引，投资邀约需通过持牌金融机构、经ASIC注册并可查证的渠道进行；未经请求的主动邀约（尤其含高回报承诺）极可能是诈骗。建议通过ASIC官网（asic.gov.au）独立核实公司牌照状态，勿点击对方提供的链接，不向未验证实体转账。",
+    "sources": [
+      "unit_id_3"
+    ],
+    "unknowns": []
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "baseline_answer",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 533,
+        "completion_tokens": 113,
+        "prompt_tokens": 420,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        }
+      },
+      "duration_seconds": 3.026,
+      "finish_reason": "stop",
+      "request_hash": "f316b9668fc8a4a4de3fd89d81ac7aa56e4dc2e62d03c08d3436ca69a3e08643"
+    }
+  ],
+  "seconds": 3.026
+}

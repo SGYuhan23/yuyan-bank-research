@@ -1,0 +1,46 @@
+{
+  "id": "3b99026c013f463380ee43702bcff6e1",
+  "reviewer": "same Qwen blinded to system, not independent expert",
+  "grade": {
+    "required_checks": [
+      {
+        "requirement": "自己的网银/手机银行实际到账",
+        "met": true,
+        "output_quote": "您必须亲自登录自己的网上银行或手机银行，核实资金已实际进入您的账户后，方可交付货物。"
+      },
+      {
+        "requirement": "凭证不能代替到账核对",
+        "met": true,
+        "output_quote": "仅凭对方提供的银行转款图片（如付款截图、收据）无法确认款项是否真实到账，因为此类图片极易被伪造。"
+      },
+      {
+        "requirement": "针对本次交货",
+        "met": true,
+        "output_quote": "方可交付货物。这是防范支付欺诈的关键步骤。"
+      }
+    ],
+    "errors": [],
+    "completion": true,
+    "refusal": false,
+    "uncertain": []
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "blind_auxiliary_grade",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 1324,
+        "completion_tokens": 189,
+        "prompt_tokens": 1135,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 4.673,
+      "finish_reason": "stop",
+      "request_hash": "c771b11a39323598f80580927a666e92af8d9f9152cbd1ba90d0095b0842f1fd"
+    }
+  ]
+}

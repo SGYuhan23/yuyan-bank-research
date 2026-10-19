@@ -1,0 +1,168 @@
+{
+  "id": "a31ae8d74b1a472f84d029bb1808c7f3",
+  "case_id": "h3",
+  "family": "logistics-repeat",
+  "system": "fixed",
+  "query": "我公司已经给物流商结过这笔运费，对方说没收到要再付一遍；请给出核实建议。",
+  "started_at": "2026-10-19T14:36:21.463529+00:00",
+  "cost": null,
+  "cost_reason": "dated model prices not verified",
+  "status": "failed",
+  "output": null,
+  "run_id": "0e4682957df24ca6",
+  "records": [
+    {
+      "sequence": 1,
+      "at": "2026-10-19T14:36:21.484262+00:00",
+      "kind": "task_identified",
+      "task": "knowledge",
+      "query": "我公司已经给物流商结过这笔运费，对方说没收到要再付一遍；请给出核实建议。"
+    },
+    {
+      "sequence": 2,
+      "at": "2026-10-19T14:36:21.486211+00:00",
+      "kind": "retrieval_started",
+      "method": "bm25"
+    },
+    {
+      "sequence": 3,
+      "at": "2026-10-19T14:36:21.491000+00:00",
+      "kind": "retrieval_attempt_completed",
+      "method": "bm25",
+      "unit_ids": [
+        "bec-guidance",
+        "investment-check"
+      ],
+      "source_ids": [
+        "westpac-bec",
+        "asic-invest"
+      ]
+    },
+    {
+      "sequence": 4,
+      "at": "2026-10-19T14:36:21.491906+00:00",
+      "kind": "retrieval_completed",
+      "ranked": [
+        {
+          "unit_id": "bec-guidance",
+          "score": 1.434312
+        },
+        {
+          "unit_id": "investment-check",
+          "score": 1.092553
+        }
+      ],
+      "index_sha256": "f01ad3a4a244f5c15592d8435131c7e8d6b8ed2390280ee8503f6d159e9e511a",
+      "test_fixture_ids": []
+    },
+    {
+      "sequence": 5,
+      "at": "2026-10-19T14:36:21.493653+00:00",
+      "kind": "model_started",
+      "phase": "evidence_adequacy"
+    },
+    {
+      "sequence": 6,
+      "at": "2026-10-19T14:36:23.894311+00:00",
+      "kind": "model_call",
+      "phase": "evidence_adequacy",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 3471,
+        "completion_tokens": 86,
+        "prompt_tokens": 3385,
+        "prompt_tokens_details": {
+          "cached_tokens": 1280
+        }
+      },
+      "duration_seconds": 2.399,
+      "finish_reason": "stop",
+      "request_hash": "e8f52cc515748d4a2c3dc67c988e2ecc95e1b849b35b4efbc945625e93ad7365"
+    },
+    {
+      "sequence": 7,
+      "at": "2026-10-19T14:36:23.899598+00:00",
+      "kind": "adequacy_checked",
+      "sufficient": true,
+      "task_scenes": [
+        {
+          "scene": "unreceived_payment",
+          "question_basis": "我公司已经给物流商结过这笔运费，对方说没收到要再付一遍"
+        }
+      ],
+      "relevant_ids": [
+        "bec-guidance"
+      ],
+      "missing": [],
+      "conflicts": [],
+      "calculation": "none"
+    },
+    {
+      "sequence": 8,
+      "at": "2026-10-19T14:36:23.919645+00:00",
+      "kind": "model_started",
+      "phase": "generate"
+    },
+    {
+      "sequence": 9,
+      "at": "2026-10-19T14:36:35.947567+00:00",
+      "kind": "model_call",
+      "phase": "generate",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 2996,
+        "completion_tokens": 521,
+        "prompt_tokens": 2475,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        }
+      },
+      "duration_seconds": 12.024,
+      "finish_reason": "stop",
+      "request_hash": "bf4b7e54f39789b70e67f9e3c2ba2554913368c867e677dba25b983755d1c66a"
+    },
+    {
+      "sequence": 10,
+      "at": "2026-10-19T14:36:35.953752+00:00",
+      "kind": "citation_materialized",
+      "unit_id": "bec-guidance",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "sequence": 11,
+      "at": "2026-10-19T14:36:35.956483+00:00",
+      "kind": "citation_materialized",
+      "unit_id": "bec-guidance",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "sequence": 12,
+      "at": "2026-10-19T14:36:35.959584+00:00",
+      "kind": "citation_materialized",
+      "unit_id": "bec-guidance",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "sequence": 13,
+      "at": "2026-10-19T14:36:35.963023+00:00",
+      "kind": "citation_materialized",
+      "unit_id": "bec-guidance",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "sequence": 14,
+      "at": "2026-10-19T14:36:35.970129+00:00",
+      "kind": "model_started",
+      "phase": "citation_entailment_review"
+    },
+    {
+      "sequence": 15,
+      "at": "2026-10-19T14:47:56.065492+00:00",
+      "kind": "failed",
+      "error": "MODEL_UNAVAILABLE：网络或结构化响应失败 RemoteProtocolError"
+    }
+  ],
+  "seconds": 59.842
+}

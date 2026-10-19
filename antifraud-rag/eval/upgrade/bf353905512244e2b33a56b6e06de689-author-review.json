@@ -1,0 +1,16 @@
+{
+  "request": {
+    "request_id": "author-reject-bf353905512244e2b33a56b6e06de689",
+    "case_id": "7dc1b4b8476f4af5b48c1960aaf394b1",
+    "case_version": 1,
+    "result_id": "bf353905512244e2b33a56b6e06de689",
+    "operator": "Codex-project-author-source-review-not-bank-expert",
+    "decision": "reject",
+    "note": "正常变更对照增加唯一有效账户、盖章文件、预设密语等无来源要求；且未充分响应已完成口头核实的输入。",
+    "revisions": []
+  },
+  "at": "2026-10-19T15:03:27.699613+00:00",
+  "evidence_version_hash": "7a86767c0131981e5cc4d689c4dddffe5da1ae2aa5de51b0ec23847a44468055",
+  "identity_notice": "local operator name, not authenticated enterprise identity",
+  "revision_notice": "human-authored revision, not model validation"
+}

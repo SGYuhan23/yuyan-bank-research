@@ -1,0 +1,229 @@
+{
+  "id": "8ec614611994497bb987b9f0cd56d74b",
+  "case_id": "h5",
+  "family": "individual-statistics",
+  "system": "fixed",
+  "query": "我是培训学员，能用全国举报统计计算某个Westpac客户被骗概率吗？",
+  "started_at": "2026-10-19T14:48:51.008500+00:00",
+  "cost": null,
+  "cost_reason": "dated model prices not verified",
+  "status": "completed",
+  "output": {
+    "answer": {
+      "steps": [],
+      "risks": [],
+      "boundaries": [
+        "当前依据不足或存在冲突，不能形成所请求的具体结论；请补充适用的正式资料。"
+      ],
+      "questions": [
+        "全国举报统计不能用于计算单个Westpac客户被骗概率；资料明确指出该统计是多机构合并口径，非Westpac客户样本，且不能推算个体风险"
+      ],
+      "scenario": null,
+      "scenario_label": "not_applicable",
+      "review_status": "pending_human_review"
+    },
+    "assessment": {
+      "sufficient": false,
+      "task_scenes": [
+        {
+          "scene": "other",
+          "question_basis": "我是培训学员，能用全国举报统计计算某个Westpac客户被骗概率吗？"
+        }
+      ],
+      "relevant_ids": [
+        "national-statistics"
+      ],
+      "missing": [
+        "全国举报统计不能用于计算单个Westpac客户被骗概率；资料明确指出该统计是多机构合并口径，非Westpac客户样本，且不能推算个体风险"
+      ],
+      "conflicts": [],
+      "calculation": "none"
+    },
+    "calculations": [],
+    "sources": [
+      {
+        "unit_id": "national-statistics",
+        "source_id": "scamwatch-stats",
+        "title": "Targeting scams report — 2025 infographic",
+        "url": "https://www.scamwatch.gov.au/research-and-resources/targeting-scams-report",
+        "material_type": "official_statistics",
+        "published_or_updated_at": "2026-03-30",
+        "date_status": "report_publication_date",
+        "retrieved_at": "2026-10-18T11:16:32.767626+00:00",
+        "region": "Australia",
+        "file_sha256": "5125c9e38f2c457a2875f604af39d6b9e24605c5eb8a38562c4c8cce366f8e9e",
+        "hash_scope": "saved_web_tool_section_not_original_html",
+        "acquisition_method": "web_tool_original_url_extraction_after_direct_http_403",
+        "seed_provenance": "independently_discovered_material_pack_missing",
+        "review_status": "codex_author_checked_pending_independent_review",
+        "page_or_section": "2025 Infographic: Losses and top-five tables for 2025/2024",
+        "section": "2025 Infographic: Losses and top-five tables for 2025/2024",
+        "text": "### Targeting scams: report of the National Anti-Scam Centre on scams data and activity 2025 \nThis report provides insight into the scams targeting Australians in 2025 and highlights the impact of combined efforts by government, law enforcement, community sector and industry to combat these financial crimes.\n\n30 March 2026\n\n## Infographic\n\nImage: Losses to various scams 2025 \n###\n\nInfographic text\n\nView the accessible text version of the infographic ### Losses\n\nTotal combined losses reported to Scamwatch, ReportCyber, IDCARE, Australian Financial Crimes Exchange (AFCX) and Australian Securities and Investment Commission (ASIC): $2.18 billion (an increase of 7.8%)\n\n481,523 scam reports (a decrease of 2.3%)\n\n### Combined losses over last 5 years\n\n2021: $1.8 billion\n\n2022: $3.1 billion\n\n2023: $2.7 billion\n\n2024: $2.0 billion\n\n2025: $2.2 billion\n### Top 5 scams by loss 2025 (combined data)\n\n  * Investment: $837.7 million\n  * Payment redirection: $166.8 million\n  * Romance: $139.9 million\n  * Phishing: $97.6 million\n  * Remote access: $69.9 million\n\nThe losses from the top 5 scam types accounted for 60% of total losses in 2025.\n### Top 5 scams by loss 2024 (combined data)\n\n  * Investment: $945 million\n  * Romance: $156.8 million\n  * Payment redirection: $152.6 million\n  * Remote access: $106 million\n  * Phishing: $84.5 million\n\nThe losses from the top 5 scam types accounted for 71% of total losses in 2024.",
+        "search_labels": "全国 举报 统计 损失 数据 Westpac 客户 风险 2025 2024 增长 比例 reports statistics losses",
+        "limitations": "全国多机构合并举报口径，不是Westpac客户样本；不能推算单个客户风险。页面历史总额有四舍五入，不能用它重算精确同比。",
+        "unit_sha256": "5125c9e38f2c457a2875f604af39d6b9e24605c5eb8a38562c4c8cce366f8e9e",
+        "limitations_origin": "project_author_scope_note_not_official_quote"
+      },
+      {
+        "unit_id": "receipt-guidance",
+        "source_id": "westpac-receipt",
+        "title": "Past Scams and Alerts | Westpac",
+        "url": "https://www.westpac.com.au/security/latest-scams/past-scams-and-alerts/",
+        "published_or_updated_at": null,
+        "date_status": "page_update_not_shown_section_dated_2023_04",
+        "retrieved_at": "2026-10-18T11:15:01.536289+00:00",
+        "region": "Australia",
+        "material_type": "bank_public_guidance",
+        "page_or_section": "April 2023 - PayID Scam",
+        "file_sha256": "cba10f00f84e9061c54b885148c1d8672d9b5940cc46cfe39c620b1b7df75bbd",
+        "review_status": "codex_author_checked_pending_independent_review",
+        "seed_provenance": "independently_discovered_official_source_material_pack_not_found",
+        "hash_scope": "original_http_html",
+        "acquisition_method": "httpx",
+        "section": "April 2023 - PayID Scam",
+        "text": "April 2023 - PayID Scam\nBe alert to PayID Scams when selling items online\nUsing PayID is a safe and easy way to send and receive funds.\nAfter a conversation with a potential buyer through an Online Marketplace, such as Facebook or Gumtree, you're advised that you need to upgrade your PayID to a business account for you to receive the payment.\nThese scam emails state your account has been upgraded to a business account and you need to refund a deposit that has been credited to your account.\nDo not act on these emails and report the buyer/seller profile to the marketplace as a potential scam.\nReminder\n- PayID's are managed within your banking app. A PayID does not need to be upgraded or activated by making payments. For more information on how PayID's work and how you can set up a Westpac registered PayID, visit\nwestpac.com.au/payid\n.\nAlso, when selling items online, never provide the buyer with the item until you can see the funds in your account, within your own online or mobile banking. Never rely on a receipt or screenshot of a payment sent to you. Receipts can be falsified by scammers to appear as if they have made payment, when they have not.\nIf you have received an email, SMS or other request that you have identified as potentially fraudulent or which you think involves a scam account, it's always a good idea to report these through to us, before deleting it from your inbox or deleted items on your device.\nForward a copy to hoax@westpac.com.au or 0497 132 032.",
+        "search_labels": "付款截图 收据 到账 网银 卖货 交货 receipt screenshot payment funds",
+        "limitations": "2023年4月公开提示，场景为网上出售物品；不能据此判定某笔交易已经到账或已构成诈骗。",
+        "unit_sha256": "7f1fbefcc331d7493401d93fcdcf9025bd980299fe97742a6b803c151981da4d",
+        "limitations_origin": "project_author_scope_note_not_official_quote",
+        "section_date": "2023-04"
+      },
+      {
+        "unit_id": "bec-guidance",
+        "source_id": "westpac-bec",
+        "title": "Payment Redirection Scams | Westpac",
+        "url": "https://www.westpac.com.au/security/types-of-scams/business-email-scams/",
+        "published_or_updated_at": null,
+        "date_status": "not_yet_verified",
+        "retrieved_at": "2026-10-18T11:14:57.079958+00:00",
+        "region": "Australia",
+        "material_type": "bank_public_guidance",
+        "page_or_section": "Signs this may be a scam + Tips to minimise the risk",
+        "file_sha256": "e1fa27d2a476351696c6e142358448fbf694367846636e0385c9cefdb6f7a822",
+        "review_status": "codex_author_checked_pending_independent_review",
+        "seed_provenance": "independently_discovered_official_source_material_pack_not_found",
+        "hash_scope": "original_http_html",
+        "acquisition_method": "httpx",
+        "section": "Signs this may be a scam + Tips to minimise the risk",
+        "text": "Signs this may be a scam\nThey request payment to a new account number.\nEven if such requests came from someone associated with you, do not make any changes to account details until you've verbally verified the request using a phone number you sourced yourself.\nA CEO, executive or senior manager requests payment to a specific account.\nPause and verify the request verbally, regardless of who the sender is or if the request is urgent.\nA supplier or employee claim they haven’t received payment.\nDo not make any more payments until you investigate the payment history and emails, to check if there were any requests made to amend account details.\nYou’re paying them for the first time.\nWhen paying someone for the first time, such as a deposit to a real estate agent’s trust account for a property purchase, validate the request and payee details before sending money. You can do this verbally or request to pay using\nPayID®\n.\n\nTips to minimise the risk of being scammed\nAlways verbally confirm any requests for urgent or redirected payments. Always use a phone number you have on file, or a publicly sourced number. Never use contact details provided in the email.\nRequest to pay using\nPayID\nif the payee has one. PayID displays the registered payee name onscreen, so if it's not your intended recipient you will know something is possibly unusual.\nRegister your business for PayID\nby using your ABN and request this is how your account is credited.\nUse multifactor authentication and dual payment approvals where available.\nIf you have a business, train your employees regularly on how to spot payment redirection scams. Empower them to question any payment related requests and verbally verify account details are correct. Update your processes to include these steps.",
+        "search_labels": "供应商 收款账户变更 更换 银行 邮件 发票 核实 电话 紧急 客服 培训 invoice supplier account change verify",
+        "limitations": "公开一般安全建议，非Westpac内部操作规程；账户变更是核实信号，不足以证明欺诈。PayID和双人审批以可用为条件。",
+        "unit_sha256": "b059afc9484892dba8710b0e35111d0f2c349b57010fb340bf994f8a86c898d6",
+        "limitations_origin": "project_author_scope_note_not_official_quote"
+      }
+    ],
+    "notice": "澳大利亚公开资料辅助；非Westpac内部规程；不执行交易判断或账户操作；生成内容待人工审核。"
+  },
+  "run_id": "11e558eeec5a4fdc",
+  "records": [
+    {
+      "sequence": 1,
+      "at": "2026-10-19T14:48:51.024619+00:00",
+      "kind": "task_identified",
+      "task": "knowledge",
+      "query": "我是培训学员，能用全国举报统计计算某个Westpac客户被骗概率吗？"
+    },
+    {
+      "sequence": 2,
+      "at": "2026-10-19T14:48:51.029026+00:00",
+      "kind": "retrieval_started",
+      "method": "bm25"
+    },
+    {
+      "sequence": 3,
+      "at": "2026-10-19T14:48:51.041577+00:00",
+      "kind": "retrieval_attempt_completed",
+      "method": "bm25",
+      "unit_ids": [
+        "national-statistics",
+        "receipt-guidance",
+        "bec-guidance"
+      ],
+      "source_ids": [
+        "scamwatch-stats",
+        "westpac-receipt",
+        "westpac-bec"
+      ]
+    },
+    {
+      "sequence": 4,
+      "at": "2026-10-19T14:48:51.044943+00:00",
+      "kind": "retrieval_completed",
+      "ranked": [
+        {
+          "unit_id": "national-statistics",
+          "score": 7.510136
+        },
+        {
+          "unit_id": "receipt-guidance",
+          "score": 1.527149
+        },
+        {
+          "unit_id": "bec-guidance",
+          "score": 0.905792
+        }
+      ],
+      "index_sha256": "f01ad3a4a244f5c15592d8435131c7e8d6b8ed2390280ee8503f6d159e9e511a",
+      "test_fixture_ids": []
+    },
+    {
+      "sequence": 5,
+      "at": "2026-10-19T14:48:51.052919+00:00",
+      "kind": "model_started",
+      "phase": "evidence_adequacy"
+    },
+    {
+      "sequence": 6,
+      "at": "2026-10-19T14:48:54.372831+00:00",
+      "kind": "model_call",
+      "phase": "evidence_adequacy",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 4124,
+        "completion_tokens": 121,
+        "prompt_tokens": 4003,
+        "prompt_tokens_details": {
+          "cached_tokens": 1280
+        }
+      },
+      "duration_seconds": 3.318,
+      "finish_reason": "stop",
+      "request_hash": "776668604498013d4ef94a84c940850fb3345877b5f04342ac909acc96d14597"
+    },
+    {
+      "sequence": 7,
+      "at": "2026-10-19T14:48:54.375040+00:00",
+      "kind": "adequacy_checked",
+      "sufficient": false,
+      "task_scenes": [
+        {
+          "scene": "other",
+          "question_basis": "我是培训学员，能用全国举报统计计算某个Westpac客户被骗概率吗？"
+        }
+      ],
+      "relevant_ids": [
+        "national-statistics"
+      ],
+      "missing": [
+        "全国举报统计不能用于计算单个Westpac客户被骗概率；资料明确指出该统计是多机构合并口径，非Westpac客户样本，且不能推算个体风险"
+      ],
+      "conflicts": [],
+      "calculation": "none"
+    },
+    {
+      "sequence": 8,
+      "at": "2026-10-19T14:48:54.377344+00:00",
+      "kind": "generation_stopped",
+      "reason": "insufficient_or_conflicting_evidence"
+    },
+    {
+      "sequence": 9,
+      "at": "2026-10-19T14:48:54.379172+00:00",
+      "kind": "completed",
+      "citation_check": "exact_quote_match",
+      "human_review": "pending"
+    }
+  ],
+  "seconds": 3.374
+}

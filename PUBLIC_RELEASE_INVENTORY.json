@@ -1,6 +1,6 @@
 {
   "scope": "Full source portfolio; inventory excludes itself to avoid self-reference.",
-  "file_count_excluding_inventory": 4474,
+  "file_count_excluding_inventory": 4650,
   "files": {
     ".github/workflows/pages.yml": {
       "sha256": "46e5f8466c94ecd2d96c2b5c97a71d1a87bdb3034095078ccb434b2dd15124fd",
@@ -16719,16 +16719,16 @@
       "bytes": 1937
     },
     ".github/workflows/antifraud-rag.yml": {
-      "sha256": "0938a0eb8e6ae1715c9c6b773b03df0b5ff49ea61ced9b071af77376d5add06e",
-      "bytes": 760
+      "sha256": "eb145ee7c298f2e81302b9acb73cd2bca7032e742e2471693a2c5647bcc33f40",
+      "bytes": 854
     },
     "antifraud-rag/.gitignore": {
       "sha256": "8f6db169de73ae9c2c1287cdcee3b72b09c7cbd47b44f49615b96143920437c2",
       "bytes": 66
     },
     "antifraud-rag/README.md": {
-      "sha256": "7262a0f4668ef47f22c239f70acfc5ccf13b438991ddd0a26c51ea8f7f28a025",
-      "bytes": 4509
+      "sha256": "f88a1543ed7060bd3c57576ec42edff09ab85b20a10aff06f0c91cc2be107196",
+      "bytes": 7494
     },
     "antifraud-rag/acquire.py": {
       "sha256": "bbbb93dce26414ea5f19b7ca9e573d2bb93d4aabbb3174653403eb2ae81e5e05",
@@ -16859,16 +16859,16 @@
       "bytes": 17274
     },
     "antifraud-rag/docs/ACTUAL_OUTPUTS.md": {
-      "sha256": "e2f5d2521655b611956b5a679910d6b8a5d6991fb5850696046b8b30bb7b3c8d",
-      "bytes": 4414
+      "sha256": "60036da7a815adbe0aaed012a1516dc0a1b2356d940c1c5dbe73fdf0ea113449",
+      "bytes": 6153
     },
     "antifraud-rag/docs/EVALUATION.md": {
-      "sha256": "1e599b9a879b91eab26650b2bb4a727149232635724483eb9a6fa8e99b8a5a09",
-      "bytes": 4207
+      "sha256": "0db0ff3044505c8e74b8d193f77b4b9a48fbdff87f784e38f6746b53c491f235",
+      "bytes": 4580
     },
     "antifraud-rag/docs/IMPLEMENTATION_STATUS.md": {
-      "sha256": "a22b1613e76e1953e0b638ef00dc22397064bfeca714e4fb12348ba2fa10d617",
-      "bytes": 3948
+      "sha256": "359780ca0ed56ff902f5ae9df94b5f34cd6dd47d9ef00a30ebb1746df19c776a",
+      "bytes": 4352
     },
     "antifraud-rag/docs/PACKAGE_RECONCILIATION.md": {
       "sha256": "4d63786d98562a722bbd8663b676d2b3d13796a66f88000c515c6b6c13db7663",
@@ -17015,8 +17015,8 @@
       "bytes": 80
     },
     "antifraud-rag/retrieval.py": {
-      "sha256": "8d54beca22d8659700475901de659b1738e3dd050edcbc0dc3797532f4eb2034",
-      "bytes": 3178
+      "sha256": "c7cdcf434fad7d8d1b6b1a940f6c832f3a15bf1dc23769e38944b94ca118db9e",
+      "bytes": 3671
     },
     "antifraud-rag/runs/00eb5b16a4f04ed2/run.json": {
       "sha256": "5fdba43493aba78955a78f117d435e9eafc5df5abbb96b76da1ba67600de5660",
@@ -17279,8 +17279,8 @@
       "bytes": 17845
     },
     "antifraud-rag/server.py": {
-      "sha256": "267a2cf22342c8a2d05bfa0fc99b946c69e20d061bb0e4a7fdfbd3ffa3199a46",
-      "bytes": 2660
+      "sha256": "904ba08b6609ad6c5e94adeb4053d866b88e957dcbde2d82e10d6b9966c43edb",
+      "bytes": 2995
     },
     "antifraud-rag/summarize.py": {
       "sha256": "22e81814d0521fc069ce47c078458b9ea6a24fc47a445aeb2d162f5eff4117e2",
@@ -17897,6 +17897,710 @@
     "antifraud-rag/verify_scope.py": {
       "sha256": "6d200ddff9d3616ec8d147316b4bbdabf1747367e2cd0c7461121c45f236245f",
       "bytes": 2822
+    },
+    "antifraud-rag/docs/UPGRADE_CONTRACTS.md": {
+      "sha256": "2d07d921cd0b7bc7713df50b8ad57371351c19fb704212b66ff2ebf2691d1e80",
+      "bytes": 3040
+    },
+    "antifraud-rag/docs/UPGRADE_DEMO.md": {
+      "sha256": "f7c7e2c3afdae353e6adc6f60bad0a689f4cc736e45da01e04924f0089c86398",
+      "bytes": 2305
+    },
+    "antifraud-rag/docs/UPGRADE_EVIDENCE.md": {
+      "sha256": "d079da4cb09b35096488349648449706102bba1df81fd7043045cbb0fa076ec6",
+      "bytes": 2667
+    },
+    "antifraud-rag/docs/UPGRADE_REFERENCES.md": {
+      "sha256": "3ea3eebd8c3c88614b856a11e42f4f87445ee2c6f484f7bd1a65bae95571db24",
+      "bytes": 2985
+    },
+    "antifraud-rag/docs/UPGRADE_VALIDATION.md": {
+      "sha256": "0e84ee3604265b03eb3ea3f7a45241aef0d559b46ed89303cfb00e5fd72f12a5",
+      "bytes": 6557
+    },
+    "antifraud-rag/eval/upgrade/PROTOCOL.md": {
+      "sha256": "241cfe0d01f980ffd51f7c7e1e4744dae23d29cd3ff154b03f777feeeb6711d9",
+      "bytes": 2910
+    },
+    "antifraud-rag/eval/upgrade/bf353905512244e2b33a56b6e06de689-author-review.json": {
+      "sha256": "09a28672933e191339b0be4c38fe9baf20d5ed37d20c899e0f1e81a6e105f02e",
+      "bytes": 785
+    },
+    "antifraud-rag/eval/upgrade/browser/antifraud-case.png": {
+      "sha256": "f569d859d56d977e02456a21b999ef170881c6fa74d2158265f4c474265fc050",
+      "bytes": 391455
+    },
+    "antifraud-rag/eval/upgrade/browser/antifraud-graph.png": {
+      "sha256": "0f6f00d9ec8511e08433734331c4bd8d713b870bbc611b286c08753bcc419760",
+      "bytes": 136339
+    },
+    "antifraud-rag/eval/upgrade/browser/antifraud-mobile.png": {
+      "sha256": "3ce0228d593d6b57dbd26acc67621c42fde5dad4a7373d8acf1cd86e1b507a61",
+      "bytes": 85106
+    },
+    "antifraud-rag/eval/upgrade/browser/antifraud-training.png": {
+      "sha256": "62f41449c253d7ba45bde66f32e32b19fcbcf4041164cd3e2d25d0f207e08cdf",
+      "bytes": 353224
+    },
+    "antifraud-rag/eval/upgrade/browser/case-export.json": {
+      "sha256": "2d3a25d0fc4338af5c56d0c69555ca69824a09babeffffcfb2a783f641045d7a",
+      "bytes": 47690
+    },
+    "antifraud-rag/eval/upgrade/browser/result.json": {
+      "sha256": "4109432f9694c01e187b492c26f1844afcf84031cf9a57e50c6545504baafcc5",
+      "bytes": 2049
+    },
+    "antifraud-rag/eval/upgrade/browser/verify-case.cjs": {
+      "sha256": "381c12cd55b6280a3f02bc195d22ed9fe7a83212969418a84af415f5202f5037",
+      "bytes": 1734
+    },
+    "antifraud-rag/eval/upgrade/browser/verify-training-graph.cjs": {
+      "sha256": "2d7ee815fb0cca37aa1315954bc3064242a3d88ee2c6bd8c9eda18a884624a8a",
+      "bytes": 1309
+    },
+    "antifraud-rag/eval/upgrade/build-checks.json": {
+      "sha256": "8e5f6f072674ac52018318ffc2bc2627b01bde238d8427ad55f8e1e411d7c91b",
+      "bytes": 703
+    },
+    "antifraud-rag/eval/upgrade/cases.json": {
+      "sha256": "7e92b20be415e0762d5c1713d3cea5478cb5f283223760cd621e1bc7eabab513",
+      "bytes": 2256
+    },
+    "antifraud-rag/eval/upgrade/ced1d61357bb4bd38d71b6929b4e82a8-author-review.json": {
+      "sha256": "9c6e95e7917ceed4918a91b45946aa3874c461f0bf046d1169d9ce6bc0fd1282",
+      "bytes": 756
+    },
+    "antifraud-rag/eval/upgrade/dev/change-09308b677b5d41e6a919e16e54631795.json": {
+      "sha256": "eb7def37964dd428635694681024ddd23838b7ca3972410b1cf54c1361dda088",
+      "bytes": 48789
+    },
+    "antifraud-rag/eval/upgrade/dev/change-2ba2d5ef4884491e9bf5de843f4c72c3.json": {
+      "sha256": "4ceb35cfdd687f9daa79889a67f4a07e65e774a8b3fb471c2e4477f762770f81",
+      "bytes": 48206
+    },
+    "antifraud-rag/eval/upgrade/dev/change-3b1fdad33da54df08262bbfda63582fc.json": {
+      "sha256": "c32b1eda7bc78ec26a51c38b35a84f983431e02564391032c1583591637f9af7",
+      "bytes": 32094
+    },
+    "antifraud-rag/eval/upgrade/dev/change-3c3c6902309f445db512b24ba823ebe6.json": {
+      "sha256": "7f07040204283483c62145aeb32342e09384d577eeb8ddb3b04c745c4a87d7b3",
+      "bytes": 1808
+    },
+    "antifraud-rag/eval/upgrade/dev/change-3c4fdee30e3744b698c8780e8b409509.json": {
+      "sha256": "cdff95a9bed3e756beb33cee36454ef508a4af391254d8aa720367f0aaee5bc3",
+      "bytes": 27483
+    },
+    "antifraud-rag/eval/upgrade/dev/change-473c58b4e4ed457e96e069b93dd18589.json": {
+      "sha256": "38fcf5f562397d7f13f74f0ae202c0d13b3e6d08734cb2a08012f6f27692a744",
+      "bytes": 31928
+    },
+    "antifraud-rag/eval/upgrade/dev/change-8936600fbe2a42c08b5b007536d86a8c.json": {
+      "sha256": "f71a4e11dac58945492269d0cd8c868e05add2f5ec147121efc1a7632859c0d9",
+      "bytes": 31472
+    },
+    "antifraud-rag/eval/upgrade/dev/seller-0bb707027a624e7bacbe6858dc019a7e.json": {
+      "sha256": "015dbf912f2512414229335a1b26693041ba825284b4892d8487d29c645b4fa1",
+      "bytes": 45136
+    },
+    "antifraud-rag/eval/upgrade/dev/seller-236e9c618f2240cca79b771749fe2e20.json": {
+      "sha256": "fc167a6477d5cd91ac33624c581207221f396c513ac554d19e042e705f0307a5",
+      "bytes": 45470
+    },
+    "antifraud-rag/eval/upgrade/dev/seller-435ee7280ec34b80b8ec4c83dab54035.json": {
+      "sha256": "6f43b2a3f01f408a32a8181903fd5a167228ada002d8974ffcf840c06badb453",
+      "bytes": 1721
+    },
+    "antifraud-rag/eval/upgrade/dev/seller-6d99889c0ba8412a99d12f4436a2f345.json": {
+      "sha256": "ce9f27dbe15e4780f257b7e3fefc846eadc2fd6af942e0b25bf716fd7f6902eb",
+      "bytes": 31740
+    },
+    "antifraud-rag/eval/upgrade/dev/seller-9f6661773e97412a84eadf31eb91ed49.json": {
+      "sha256": "16ae2e7def040ca372bd737dfc79cb126a86066dfd80e6abcf3304c6d0741d98",
+      "bytes": 45570
+    },
+    "antifraud-rag/eval/upgrade/dev/seller-dfcb98c4edcf41fa8aae023a980f04b7.json": {
+      "sha256": "0d6b3c995a273186973b1c214c1e51e7395ebb3addf3fcccad24145254f271f7",
+      "bytes": 31536
+    },
+    "antifraud-rag/eval/upgrade/dev/seller-fa86fdbc5ae44fb1a2a7de7da14675d0.json": {
+      "sha256": "7dc7fbb10bc1a48bc7470e98c9b88b8ccb05690dd49e60df5992ae9d83428eb5",
+      "bytes": 42247
+    },
+    "antifraud-rag/eval/upgrade/dev/unpaid-018e18737a894f89921aa92f731e1382.json": {
+      "sha256": "61a869a21374a5aa3fcc9790d0be552e8fab1cd41f6f7ccdd2d56ecadf2ba12f",
+      "bytes": 27649
+    },
+    "antifraud-rag/eval/upgrade/dev/unpaid-60a44e33a29043f181b3de49f2aa6bc3.json": {
+      "sha256": "75b99379bf44a6bae6126fc9be615f4fb97d8428c21e0cc5c5153ccc69592588",
+      "bytes": 22875
+    },
+    "antifraud-rag/eval/upgrade/dev/unpaid-a8599bc2d6364e3ca17ca53f51936d3a.json": {
+      "sha256": "8cecba64c21aa6dc5e9732ebbdb24052b88426d35ce76eb8129feda39a93ca34",
+      "bytes": 27289
+    },
+    "antifraud-rag/eval/upgrade/dev/unpaid-a9e20432f2284742b06fe48364524d84.json": {
+      "sha256": "2478b1efb7589e1249fd677419f47ad0aeac687e3602af7e26185af23d8bab55",
+      "bytes": 21904
+    },
+    "antifraud-rag/eval/upgrade/dev/unpaid-c10c144da5324ad4b4d7f9773f8083d2.json": {
+      "sha256": "196af66b04c8209491fddb2e02845eb6b9af0562daed40bf99d44c289e85c7ef",
+      "bytes": 23275
+    },
+    "antifraud-rag/eval/upgrade/dev/unpaid-d281488b696a44678091735600813233.json": {
+      "sha256": "4cd87034963e0374f6ad0e2e598d1e0016e7eebf3de773f5733118731ff7e598",
+      "bytes": 22072
+    },
+    "antifraud-rag/eval/upgrade/dev/unpaid-d4192aa782714864a19f8b3e94b31840.json": {
+      "sha256": "632846488c0903ad3b075a8be04d3ec6fd9f86424a7b829e4e0718eebe09f2bf",
+      "bytes": 50094
+    },
+    "antifraud-rag/eval/upgrade/development-reviewed.json": {
+      "sha256": "95068b3015ae59a96e09310e5fca3f1b1ca08dfdcf053240ab5baa6932464500",
+      "bytes": 3557
+    },
+    "antifraud-rag/eval/upgrade/graph/dev-labels.json": {
+      "sha256": "f453580f3e093fad7df2a79d999af02d27999d995ea96183ca67bfa8699f8a8f",
+      "bytes": 30399
+    },
+    "antifraud-rag/eval/upgrade/graph/dev-observations.json": {
+      "sha256": "9c60bd464bcf1fc14c9a76b8fd2012d470a3bd41b638b01da0c71effdb818248",
+      "bytes": 78422
+    },
+    "antifraud-rag/eval/upgrade/graph/model-manifest.json": {
+      "sha256": "faf7ab859d85859b2512ea976d09dc27544cfe4bb1efd241aed077131b09fec1",
+      "bytes": 307
+    },
+    "antifraud-rag/eval/upgrade/graph/report.json": {
+      "sha256": "2af6edb9d0b09c0d044f0fe55a4a5bd4ab6586b3600ce6ee089264e24ede889d",
+      "bytes": 8193
+    },
+    "antifraud-rag/eval/upgrade/graph/structural-heldout-labels.json": {
+      "sha256": "d4f1621df4c2e672c73c3b0b7c95e4833b16687f88a986cd98e72bedce76fcbe",
+      "bytes": 24399
+    },
+    "antifraud-rag/eval/upgrade/graph/structural-heldout-observations.json": {
+      "sha256": "7ac2b89f7c096666f1e801c922cf0825f7c3851aab9a1891b2ce7fbcef7189d4",
+      "bytes": 93611
+    },
+    "antifraud-rag/eval/upgrade/graph/structural-heldout-report.json": {
+      "sha256": "0d38dd0fb76ed573848e93852dadeb981ea41d082683d29224f4e6284025ad66",
+      "bytes": 2762
+    },
+    "antifraud-rag/eval/upgrade/graph/test-labels.json": {
+      "sha256": "1a50ec9b45616e6032b6e9195369858c184d4e3ba327e5e15e840eb453251c9f",
+      "bytes": 43734
+    },
+    "antifraud-rag/eval/upgrade/graph/test-observations.json": {
+      "sha256": "19a8298a1b945526244a391a1179d99a53ec00bebb365a6e3b5cf0ecc2236a7c",
+      "bytes": 113718
+    },
+    "antifraud-rag/eval/upgrade/graph/train-labels.json": {
+      "sha256": "2d7b416b8712e1a24d69f94262677bc108c7cbc47c1a4e9481a38db3627392fa",
+      "bytes": 20770
+    },
+    "antifraud-rag/eval/upgrade/graph/train-observations.json": {
+      "sha256": "b6a349c22857a1636e03fb2c7b2ac9da7f7bd7ea7ee71fb80e1c9f71791876ec",
+      "bytes": 47778
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/REPORT.md": {
+      "sha256": "24773455784957ad096ac7e53d933444d287a6fb6e3cc34dd3a52c7cf7a8ba1a",
+      "bytes": 2733
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/author-source-review.json": {
+      "sha256": "74b34331bf532a1295f5621425b247fab730e0f3d3eccf1b165260d990ba2a87",
+      "bytes": 4249
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/auxiliary-summary.json": {
+      "sha256": "f6daa82a34b78a823c1d4309d52ea8fd7074e5e3e2e8c47c1d2ae84901c641e7",
+      "bytes": 1050
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/blind.json": {
+      "sha256": "10c2c8a9d7878aa0cb994a3bcd8b1b7f32f30b4dbf139942ce5d5922642c8230",
+      "bytes": 49101
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/execution-summary.json": {
+      "sha256": "11c1b6c8caf309519a5429a31b93f488afdf4a082a65e7e3dbb6a05d708ab65a",
+      "bytes": 1036
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/freeze.json": {
+      "sha256": "73ceeb18bbcc7b1f55719c1752fe11ea2a719f355b407472db05ce94d1222b9d",
+      "bytes": 1334
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-05ce072a08d84a6c9fa2b98a1dded09b.json": {
+      "sha256": "5ac0e96cdb4aa528530f3e905dde710386d5be5396c0ef32138e8fc5b7a324f5",
+      "bytes": 1655
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-08777211ab4e4ecfbbeb3e100beb43af.json": {
+      "sha256": "a7782b864ac7846659457f2b16bc33b1e745213e212aac5e6250157b796135a4",
+      "bytes": 2877
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-0a1eaaff9ccb48eba473ad32dde258ee.json": {
+      "sha256": "e666f21e90064e41d2eeb34fda699a9cb2ee49e2cb79558073e1b61b78f72f1a",
+      "bytes": 1615
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-0fbf6029b84245a88b2e1a4dc6d4586b.json": {
+      "sha256": "cd25e6a6112792b78c29ed3f5faa976a16539b428dca3c6cc68546931e9ed822",
+      "bytes": 1636
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-108c7a13b6854c369530881c2c2bf4ee.json": {
+      "sha256": "fcf8cc2504da08cbb67771f9299befc67af78f455bca18b95957fcf1db8f7321",
+      "bytes": 2878
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-13a68ba9ef08468690ae805365e69b8b.json": {
+      "sha256": "42f57909a4e40c1160847e2f34c4e7a5e76dd2f3847d210dd457ccd6e35c8eec",
+      "bytes": 2400
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-235b0252a9ec4fa383a8e36bd5589a8d.json": {
+      "sha256": "d2f41909b1542225ec5c149a258f2b18953a1db1c03b96c868b7f9c64aa79327",
+      "bytes": 3360
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-28e67d8243064e48927937d382a1f526.json": {
+      "sha256": "e6471639bb23db1e494afc24274ef0d45d768e7c5eb553cd89060e2f08fd695d",
+      "bytes": 1974
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-3b99026c013f463380ee43702bcff6e1.json": {
+      "sha256": "7730a93f82588b08cd67ebabc2f1b607fa9f0edb6d19bed0a55374c4ebae8ae6",
+      "bytes": 1468
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-4116b31e36c3450a9f0d994451e14b26.json": {
+      "sha256": "66d87ce605614d5cfaceed06e9e04e3b361a0536e91891a98952e8f1f110297d",
+      "bytes": 2878
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-42380b74b82943b18e40ba93fa6c6ec7.json": {
+      "sha256": "0591849753c254f89cbfde18fdb4e8902261027ae67717d4af87baf2dcd5972f",
+      "bytes": 2008
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-52ddf34aa267411696ba24f34d6bbdf7.json": {
+      "sha256": "0b1f0ab6a9b0ce5eba321f2c01e32905a6841447a06c29283f24af00eaae6da2",
+      "bytes": 1415
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-531d476ad69244639d07d894fb1d13df.json": {
+      "sha256": "0076babedc6db997e572d6ae0736b4d01f3639321a5471a94a67eb4a1351e184",
+      "bytes": 1805
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-535bb0fb48c4459eb9d3cdac9da3aa73.json": {
+      "sha256": "5160f07cd1302dda2a5e87d7283d02968b20bf54c710a4917ab93153994eb891",
+      "bytes": 2230
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-5984e7b8397c448e8279a2d7ae5b2e92.json": {
+      "sha256": "d55efa61efdede570cba1f83632f36486f0a2a05afb27489a57a7dfc1beaa593",
+      "bytes": 1693
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-625be2f578224fe99cd0625c715c2134.json": {
+      "sha256": "fb0e14296dbbde555093d928af2cb257622443c3e96988a19cda2cd4847bc59b",
+      "bytes": 3111
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-661713d84547421f926fe48ee265b0ad.json": {
+      "sha256": "f29066ee287643b994ebd6feccc2a05414f72c66b0751a87b22b46ddd986b8c4",
+      "bytes": 1414
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-6eca430bc1344d758a0b9e0b3acefacf.json": {
+      "sha256": "7361c0e3b69bedc6511c7eeba99a1a49c0cdde1198fbd9a9806939a10398d489",
+      "bytes": 1750
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-7b4eff68bc81486f9619f72d3ad52905.json": {
+      "sha256": "2f76b2aa79f8507aad3e82ad2c60d83de330902101a730daa6de46265a93e9ca",
+      "bytes": 1779
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-86789cd4b1ba4ab3b1530b056a46bc9a.json": {
+      "sha256": "6cb05ab906e06750371269cbadffac254e1d4c34a947723ec623e966d568ebdb",
+      "bytes": 2196
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-8ec614611994497bb987b9f0cd56d74b.json": {
+      "sha256": "66b3f7dfe0b9b3265b05f5fb8f4df27509e765ffede110fbd4f751c94d9e112c",
+      "bytes": 2051
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-8f8172fd8e86415bacee288c1c60c635.json": {
+      "sha256": "42d707726ff8d8ea9d4ebe4a0046ff8b428301e326f9dad7c4292f714d5664ee",
+      "bytes": 1483
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-96e8168d2ac041bdbbe31ebf2dc9ce3f.json": {
+      "sha256": "1d38bf110ba82ed5c751d5b67796794a18c397f6e69a1cade356043d1c4b5e84",
+      "bytes": 1175
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-9bb4240743c94600aea64cab294eff91.json": {
+      "sha256": "bcb386e62ec4920ae9e8fb84232fd9fa3bb8d1c91cc8a03b50d0f9860a9043ca",
+      "bytes": 1737
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-a31ae8d74b1a472f84d029bb1808c7f3.json": {
+      "sha256": "2e0811bf95726a57418e62dec8b0058a7f9bc94a1777362f417fcc4483aa56f2",
+      "bytes": 1490
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-b76bf249e8b74b55a99f25c98d8f53a3.json": {
+      "sha256": "6ab7e295198355affdf49c90344d42b5972f316d62dfc2e4f2738600dd6cc004",
+      "bytes": 1511
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-bf984961d7e641aeaffd5325f900c2ac.json": {
+      "sha256": "34c3b3a0488e72dfc3a1c8d700db8ce7e618792d87120e98135b6869257c97cd",
+      "bytes": 1290
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-c3e06cdb1eed473ab4b9398b90487c8c.json": {
+      "sha256": "ea66e2af0baa53b9d91b8d5e321169c0eef402b75859c52a8932e03c2e6ece71",
+      "bytes": 2226
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-c49b2584e66642bd8f753c9f36a69c24.json": {
+      "sha256": "90d76130308a6d9c74320a896a78f7889e8ddf71d7582ba87c9299271ed3c7c5",
+      "bytes": 1781
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-c6b51ffb9b674ad3b0ae0007a6a00aeb.json": {
+      "sha256": "358b4c986109a0ef7ccb9201f73eed3d6050f27d30c6f2318ab7dc8c4476e751",
+      "bytes": 1523
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-d5a2eecbdf354fe99bbd296c03d32523.json": {
+      "sha256": "c40d2dd7a15bc21b817be4f51bf8353bb44f81606f738a8c757bee9fcd30f612",
+      "bytes": 1482
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-dff44a91e2764c5295c491f69b2fd0a1.json": {
+      "sha256": "b36b8985b007f3eedf4c2f81e408864184100e3b80c78d49697498a8c3692611",
+      "bytes": 2965
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-e2c6d2ef61ab4520b521065e3a5f2716.json": {
+      "sha256": "e0282d6c2cfbd6afb3aa500bb207149d1455ad88d4daff1be18e95368a09b387",
+      "bytes": 2980
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-e8731999e3024ff38769251a454abdcd.json": {
+      "sha256": "16b2a21adc58b220eb5d2d6e0424d3c44d094ad3a9a30800374469fd6b8523fe",
+      "bytes": 3209
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-edd55f2f7f5349799208ffd7699aab0a.json": {
+      "sha256": "355e7486e2476f7e11973511ddc1ed2e7f3af3cae1b2aa49d880aacb5fc53034",
+      "bytes": 1758
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/grade-f9080861db43401a912d338f92b3374e.json": {
+      "sha256": "6e764898437eaec10df2961689f928145f5123261537b40f98192b37a4c40b14",
+      "bytes": 1702
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h1-all.json": {
+      "sha256": "985662ff2de739e5b7845a7f15e427d5dfdc92b075cf83785f3206c62019a14d",
+      "bytes": 1360
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h1-direct.json": {
+      "sha256": "a010de997a9b4e2502733775d24d0560cc5b431227218d76f803252aa65f218e",
+      "bytes": 1382
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h1-fixed.json": {
+      "sha256": "3d873689d8352a48a0e797cf40e6cd34618d6dfb5d21edb868b68c228fc49d2f",
+      "bytes": 4610
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h1-retrieved.json": {
+      "sha256": "e8e7240d06e65e41e023fcff07c0a7d39862af47136c9f43c26e1c0e6e8eac44",
+      "bytes": 1787
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h1-same_observations.json": {
+      "sha256": "78b9ec7696d53ceba0e8fde514cef4e379b0a9332708ad42ca421f170527e4bc",
+      "bytes": 1548
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h1-tools.json": {
+      "sha256": "317d8a0431946468532b49005278ac5ef452bc975c95e61e96bffe493225e79b",
+      "bytes": 32250
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h2-all.json": {
+      "sha256": "9fd4ce5458340a79e04e6905c701043a1de692c69b9eff779a57a04aaf9460d5",
+      "bytes": 1829
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h2-direct.json": {
+      "sha256": "a5389b162f7e09e0724de9d2bb228073a3879ce980cbb272e912af9fc3f82e4d",
+      "bytes": 1545
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h2-fixed.json": {
+      "sha256": "425d84bb7bf3d80ed4832f90a583e2de48bd1e25667384394d26dc0f59939030",
+      "bytes": 6761
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h2-retrieved.json": {
+      "sha256": "3f61e09c6e822c63b066dfb6b4d71a1b2e285a48b6231cc35607583661928d23",
+      "bytes": 2372
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h2-same_observations.json": {
+      "sha256": "340cf221ba1f62c0c249014d49a6ca0f4fa806025bf76bfb7a87ac1447f6c65f",
+      "bytes": 1694
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h2-tools.json": {
+      "sha256": "4ada531f1478d90a54205233b225e7334f521680efdadc8a21fc79c53d1dfb01",
+      "bytes": 44910
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h3-all.json": {
+      "sha256": "a90aba250eb94b474faad33f6f86ba355d8b0593a866c74525cad18cf2227113",
+      "bytes": 1732
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h3-direct.json": {
+      "sha256": "e016c14ca1b6d80e5351c88661d5b4dc450f3433f555ff432914d3ca81e8d76e",
+      "bytes": 1406
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h3-fixed.json": {
+      "sha256": "95eb91d6d14d0a957e7d4f6ccea28ffc0f0d7f1b38946b927601597678254902",
+      "bytes": 4760
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h3-retrieved.json": {
+      "sha256": "5aa657df0414c2d247e62af6dc83ee72e1c0e00aeb246a8c0ce2a71487699e5a",
+      "bytes": 1829
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h3-same_observations.json": {
+      "sha256": "0a7bfc7b3268fdc1201a2280c00f4340f6eb204969a7886f61a53ccaad6c9ec5",
+      "bytes": 1699
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h3-tools.json": {
+      "sha256": "6cef73e56dab374ac249bf7acdc99f488d1c991a2d34a040a36d5576fb216c04",
+      "bytes": 64558
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h4-all.json": {
+      "sha256": "4b77d61dc5fe7ddff878b595ec12575cb8ec2379ee161882f5b7be201a6f5d3f",
+      "bytes": 1493
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h4-direct.json": {
+      "sha256": "547de1a97a87071f7f9649e7fc6f4a578f894b7627d624830975694c2eca98d6",
+      "bytes": 1461
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h4-fixed.json": {
+      "sha256": "3ea5e7f2f0672fb08d656dfb577d218ad5638a0d8e0b9c8382bda771ccc7c4d6",
+      "bytes": 17486
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h4-retrieved.json": {
+      "sha256": "000362ef6bc9ff4dbcf40cbb53f890ea0117d40b852504caff947501e91bfaf8",
+      "bytes": 787
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h4-same_observations.json": {
+      "sha256": "55437861b0c1292964262b41ae2447d25f2d601925d0c43b57a755f78ecf492a",
+      "bytes": 1696
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h4-tools.json": {
+      "sha256": "76fd8642a8b3b74d38b695a86631330ce2fe88ba52873932df6ab0bc53c2c553",
+      "bytes": 58893
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h5-all.json": {
+      "sha256": "8028b903dcee841a12468cd93c8da94b0a1d059bd078d96d8671916b03577882",
+      "bytes": 1456
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h5-direct.json": {
+      "sha256": "4f98a84f4c69ee0e9e69a36c7b143a833a1d80560c70c034dbc5b9ab06720db4",
+      "bytes": 1358
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h5-fixed.json": {
+      "sha256": "469f9ca134a6c1fe52897adcb0af23bd068a5c12c9c3a170f46b88354b509629",
+      "bytes": 14061
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h5-retrieved.json": {
+      "sha256": "adced2f07d0bd5ef2f9f241d743b63e37bd016a90a0f782a48c0399b083528ee",
+      "bytes": 1731
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h5-same_observations.json": {
+      "sha256": "e2ab5b275d6834bb0bb0092c960765e8cf20a5d8ab2cf303bad436e447584771",
+      "bytes": 1564
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h5-tools.json": {
+      "sha256": "bf70efbc607acd60b6d61ab3b5b29692df3d697d9175600b9f8b02489d18af71",
+      "bytes": 33703
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h6-all.json": {
+      "sha256": "0b546b2713ec7eabed85a596e9b7a081c72e87a68c94d13e0134d46ed7ac0e2a",
+      "bytes": 1593
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h6-direct.json": {
+      "sha256": "a6deab1f0c5a39b0bde96129673c1f2bab913dca698873f31c36ec6939fc24bd",
+      "bytes": 1390
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h6-fixed.json": {
+      "sha256": "4751d9bb1515999b3660c8beb9e9c509cf005bf137628c30e7ccebd7d9b73a09",
+      "bytes": 14913
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h6-retrieved.json": {
+      "sha256": "5d16de603688f3e63c5336faf00b5818b7225e04774a7968d450e896421ab48a",
+      "bytes": 2537
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h6-same_observations.json": {
+      "sha256": "629e8bae7c1c35604fb0ee744bcfd6393b657a4838c6f8909a55ffdfee8c8f36",
+      "bytes": 1354
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/h6-tools.json": {
+      "sha256": "9e477519ae8e7b469f44cad8825095aad1bf8d83ff6a87ce0ebecf86ac0ba98d",
+      "bytes": 3873
+    },
+    "antifraud-rag/eval/upgrade/heldout-v1/key.json": {
+      "sha256": "6812d27075d7df58321012da12a755c4e6c92959d9cf3cac611ebab6d29d497c",
+      "bytes": 3620
+    },
+    "antifraud-rag/eval/upgrade/link-actual.json": {
+      "sha256": "324a891b00d6ad33b010935b99d6992c49fce9e9756fec4c80fc1725a718d1ad",
+      "bytes": 1850
+    },
+    "antifraud-rag/eval/upgrade/normal-demo-bf353905512244e2b33a56b6e06de689.json": {
+      "sha256": "4dcf5b712bcfab582eec449fde261cbd9a2d687b12226d59c0dd77bf0a67c9ec",
+      "bytes": 48506
+    },
+    "antifraud-rag/eval/upgrade/ocr-actual.json": {
+      "sha256": "b7f42fe11a5d8b2661e40b0b4f6036691c35b5a562cb878c853864bff13a5f2d",
+      "bytes": 437
+    },
+    "antifraud-rag/eval/upgrade/ocr-tool-actual.json": {
+      "sha256": "21b24238d78f7e53caf86ce669d44f122e836cca3c505a6a49022a9d368aa0f4",
+      "bytes": 1637
+    },
+    "antifraud-rag/eval/upgrade/security-probes.json": {
+      "sha256": "0c29f881ad41cb0385ea0bdfdd24e6ee933bd942b2a7eb4c25b6d5a93c026947",
+      "bytes": 350
+    },
+    "antifraud-rag/eval/upgrade/tests-actual.txt": {
+      "sha256": "46b44176997f26a8557da5298b51c5ebe639bd318492d48bde44451a7f5bb6ab",
+      "bytes": 5666
+    },
+    "antifraud-rag/eval/upgrade/tool-track/email-70326a8c4b7648a8b19aa4e9a9282fb7.json": {
+      "sha256": "e8e526c9b57a9300914028f41f11234c3e1d46095f19825e5b7dd5775d527bad",
+      "bytes": 1969
+    },
+    "antifraud-rag/eval/upgrade/tool-track/email-ced1d61357bb4bd38d71b6929b4e82a8.json": {
+      "sha256": "1eed50f27a365b74ae4a8039d7925f6b047e146fccc1ce25ec9a140fc05ab5c4",
+      "bytes": 68345
+    },
+    "antifraud-rag/eval/upgrade/tool-track/email-failed-first-control.json": {
+      "sha256": "f9d3003385ffa7eef07703925db4fe644c783fc3d0f8ea9e2dcdaba413b19d83",
+      "bytes": 1040
+    },
+    "antifraud-rag/eval/upgrade/tool-track/email-same-observations.json": {
+      "sha256": "0e4e332b77ec40c8e120fefd2ccbf62d93aafa7453028b74b4d22e17ac83e684",
+      "bytes": 1385
+    },
+    "antifraud-rag/eval/upgrade/tool-track/image-068a628861a64cd9a602e19ea4adf302.json": {
+      "sha256": "7e6ffa9fc1e0feb3917cb3b03f5826e76e1623f7c336a6aecc8ca6db6711611d",
+      "bytes": 1731
+    },
+    "antifraud-rag/eval/upgrade/tool-track/image-22201878577546c9a7f262c63bab170d.json": {
+      "sha256": "60cee99b4ee1b5a16a9091b749b6421a7b1831a9769774017cb45c7d064e76e5",
+      "bytes": 39382
+    },
+    "antifraud-rag/eval/upgrade/tool-track/image-failed-first-control.json": {
+      "sha256": "c0c936dac5c8922a4ab2cdc91b47457f4c38319f9487ac45d232cf306f66e698",
+      "bytes": 1419
+    },
+    "antifraud-rag/eval/upgrade/tool-track/image-same-observations.json": {
+      "sha256": "f477bfaa03618a538f516f9a8f91ac30e01f94b7415fed98bd47cf159c675571",
+      "bytes": 1150
+    },
+    "antifraud-rag/eval/upgrade/training-actual.json": {
+      "sha256": "9432b6902ed42f42591405431dc11174268ed2b099268a52f6044af74c221dd1",
+      "bytes": 6898
+    },
+    "antifraud-rag/eval/upgrade/training-failed-first.json": {
+      "sha256": "ee977fe1802410e1f11b9ee62c962e5069797d91b3c7f86ccbee1364e8568605",
+      "bytes": 2882
+    },
+    "antifraud-rag/evaluate_upgrade.py": {
+      "sha256": "447adc1e8574d66e9845d6ae8bc741e394affd09883caca58798ace9e1e20e9a",
+      "bytes": 4521
+    },
+    "antifraud-rag/grade_upgrade.py": {
+      "sha256": "1b53362dcc840827198b1f1dda1433e1d82b9b790aae52cd1551becc443b50e0",
+      "bytes": 3300
+    },
+    "antifraud-rag/requirements-upgrade.txt": {
+      "sha256": "ea2ed501ddea342135a02474e18723eb03485add2d2b704d01f19eef382c18c8",
+      "bytes": 260
+    },
+    "antifraud-rag/runs/0e4682957df24ca6/pipeline-source.py": {
+      "sha256": "544132f730e0d20cd7926689ddf8c429bafadb8e7bc2a28ee56717276224419d",
+      "bytes": 27223
+    },
+    "antifraud-rag/runs/0e4682957df24ca6/run.json": {
+      "sha256": "ddd25b706b79757ceabe9d8eadd88b97fa0555214c58e0af16e2fad0617148f2",
+      "bytes": 15782
+    },
+    "antifraud-rag/runs/11e558eeec5a4fdc/pipeline-source.py": {
+      "sha256": "544132f730e0d20cd7926689ddf8c429bafadb8e7bc2a28ee56717276224419d",
+      "bytes": 27223
+    },
+    "antifraud-rag/runs/11e558eeec5a4fdc/run.json": {
+      "sha256": "7bfea877f1b3100d4a293da1eadbde62b47c889723f0031022776adaf3ff5d59",
+      "bytes": 23681
+    },
+    "antifraud-rag/runs/571b2f9a9d0b4293/pipeline-source.py": {
+      "sha256": "544132f730e0d20cd7926689ddf8c429bafadb8e7bc2a28ee56717276224419d",
+      "bytes": 27223
+    },
+    "antifraud-rag/runs/571b2f9a9d0b4293/run.json": {
+      "sha256": "a1eaacca59322af7f006af1a35150dffa399ce6eb123d4e8af72c8603ae5bf8c",
+      "bytes": 15377
+    },
+    "antifraud-rag/runs/9c76d54df4784bb9/pipeline-source.py": {
+      "sha256": "544132f730e0d20cd7926689ddf8c429bafadb8e7bc2a28ee56717276224419d",
+      "bytes": 27223
+    },
+    "antifraud-rag/runs/9c76d54df4784bb9/run.json": {
+      "sha256": "db50a8229a6f53e82a1407fd23c272d26e91b2a5e79629aaafe757e8070776a4",
+      "bytes": 25726
+    },
+    "antifraud-rag/runs/d9af045dfbed4200/pipeline-source.py": {
+      "sha256": "544132f730e0d20cd7926689ddf8c429bafadb8e7bc2a28ee56717276224419d",
+      "bytes": 27223
+    },
+    "antifraud-rag/runs/d9af045dfbed4200/run.json": {
+      "sha256": "75100afb134ae679d6074c76c5903c47b7cf97919bf452b4f5c90fb55077bbfc",
+      "bytes": 21468
+    },
+    "antifraud-rag/runs/da46c26192a446d0/pipeline-source.py": {
+      "sha256": "544132f730e0d20cd7926689ddf8c429bafadb8e7bc2a28ee56717276224419d",
+      "bytes": 27223
+    },
+    "antifraud-rag/runs/da46c26192a446d0/run.json": {
+      "sha256": "2d9ced22ba8123a2f8a1d9c691abd8746ed2c169d6c65b47fd571dc0e9d7e2cf",
+      "bytes": 24841
+    },
+    "antifraud-rag/test_upgrade.py": {
+      "sha256": "16a81289f467bd159e7f4d4070e174868d8aaefee9b52e4d1ce20b1508076348",
+      "bytes": 9950
+    },
+    "antifraud-rag/upgrade/__init__.py": {
+      "sha256": "3d37c76bab5c1276b6f9b56d3707804bbfdf6f04fd95ab83ff4949a97aba1701",
+      "bytes": 81
+    },
+    "antifraud-rag/upgrade/agent.py": {
+      "sha256": "680a462e77c785a0009c619423573f4adcb85a1690539b169ab5a46896f5f3de",
+      "bytes": 11865
+    },
+    "antifraud-rag/upgrade/api.py": {
+      "sha256": "5df55095882781d754e77b390acd2692caee877dd3a197f4c516f489f73f0653",
+      "bytes": 4344
+    },
+    "antifraud-rag/upgrade/contracts.py": {
+      "sha256": "0577a326e4e520d22cd545857c34d48e678cb4bd3eec492013b75893c0dbb6d8",
+      "bytes": 3558
+    },
+    "antifraud-rag/upgrade/graph_lab.py": {
+      "sha256": "155991ee6899464aef6be7e396f02694004034540e62bc00742d8bc6c2f8406f",
+      "bytes": 11282
+    },
+    "antifraud-rag/upgrade/ocr.py": {
+      "sha256": "c21aadd8f123180a77b9864a134786c439d267c6c696d4b81fd971d6c37e7b93",
+      "bytes": 747
+    },
+    "antifraud-rag/upgrade/ocr.swift": {
+      "sha256": "8a96734929a54d387b9fccca4e8dab542338aae8b96fc328e3b149bc1c08a0b2",
+      "bytes": 732
+    },
+    "antifraud-rag/upgrade/store.py": {
+      "sha256": "8151f9957773c023a037a7958212667363a38d66331debc4a5833bab77f2433f",
+      "bytes": 6345
+    },
+    "antifraud-rag/upgrade/tools.py": {
+      "sha256": "535d95d5028771b47bf340b1b644df0ace57dd229b8302b844e75eceb613c828",
+      "bytes": 8418
+    },
+    "antifraud-rag/upgrade/training.py": {
+      "sha256": "0853523101eda0f61b3b84e5c9a782f6fe55879ac513a253264460bc52b69a6d",
+      "bytes": 7923
+    },
+    "antifraud-rag/upgrade_cli.py": {
+      "sha256": "5b53bc7b1e91c226a694df14d0923395a5d4e8af3ee924389b0b4e0e8b7039c6",
+      "bytes": 853
+    },
+    "antifraud-rag/web/upgrade.css": {
+      "sha256": "9327085a983c19946ddf5624341d2f4858d1bbadcae14bef1d400068d14f4c6d",
+      "bytes": 1715
+    },
+    "antifraud-rag/web/upgrade.html": {
+      "sha256": "0e6cca92e5f41727ebc75f80864034977bcbcd00565ac244982446d00176bff2",
+      "bytes": 3836
+    },
+    "antifraud-rag/web/upgrade.js": {
+      "sha256": "ebacb1b060ccc4eb2e9202635589041ba5c4a882c7216854315cf2938a68fcd0",
+      "bytes": 9475
     }
   }
 }

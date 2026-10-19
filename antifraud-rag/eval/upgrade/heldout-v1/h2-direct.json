@@ -1,0 +1,38 @@
+{
+  "id": "f9080861db43401a912d338f92b3374e",
+  "case_id": "h2",
+  "family": "school-contractor",
+  "system": "direct",
+  "query": "学校采购的正规承包商确实可能换银行。现在来信通知更换收款账号，我作为付款人员如何核实本次请求？",
+  "started_at": "2026-10-19T14:35:11.562145+00:00",
+  "cost": null,
+  "cost_reason": "dated model prices not verified",
+  "status": "completed",
+  "output": {
+    "answer": "请勿仅凭邮件或电话更改付款账户。应通过已知、独立的官方渠道（如合同中预留的固定电话、官网公布的联系方式）直接联系承包商确认；核对来信中所有细节（如公司全称、税号、签约人姓名）是否与历史记录一致；如存疑，暂停付款并上报单位财务负责人及反诈联络员。正规承包商变更账户属重大操作，通常需加盖公章的正式函件并附工商变更备案等佐证材料。",
+    "sources": [
+      "unit_id_3"
+    ],
+    "unknowns": []
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "baseline_answer",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 552,
+        "completion_tokens": 129,
+        "prompt_tokens": 423,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        }
+      },
+      "duration_seconds": 3.394,
+      "finish_reason": "stop",
+      "request_hash": "b753ec04911558f1d4653216bb2d0354ff0c1acc65bd283149126fc998eda0fd"
+    }
+  ],
+  "seconds": 3.394
+}

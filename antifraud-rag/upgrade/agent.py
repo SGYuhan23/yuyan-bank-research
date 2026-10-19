@@ -47,7 +47,7 @@ class Agent:
                 if getattr(self,'plan_error',None):raise ValueError('INVALID_OR_REPEATED_TOOL')
                 self.plan_error='工具不在当前允许列表或已执行。无附件不能extract。已有指引可draft给出一般建议；若确实需新材料则ask_user，不能虚构附件。'
                 self.log('plan_rejected',reason=self.plan_error,calls=names);return {'next':'plan'}
-            if 'extract' in names and len(names)>1:raise ValueError('EXTRACTION_MUST_PRECEDE_DEPENDENT_TOOLS')
+            if 'extract' in names and len(names)>1:self.log('dependency_ordered',first='extract',then=[n for n in names if n!='extract'])
             if self.calls+len(names)>8:raise ValueError('TOOL_BUDGET')
             return {'next':'tools'}
         if self.action.action=='draft':
@@ -60,10 +60,18 @@ class Agent:
         for c in calls:
             if c.tool_name=='guidance':c.args['mode']=self.retriever
         self.log('tools_started',names=[c.tool_name for c in calls],concurrent=len(calls)>1)
+        rows=[]
+        extraction=[c for c in calls if c.tool_name=='extract']
+        remaining=[c for c in calls if c.tool_name!='extract']
+        if extraction:
+            extracted=invoke(self.case,extraction[0],self.log);rows.append(extracted)
+            # Dependent tools can read extracted claims only after extraction returned.
+            self.case.evidence.extend(extracted[1])
         with ThreadPoolExecutor(max_workers=4) as pool:
-            rows=list(pool.map(lambda call:invoke(self.case,call,self.log),calls))
+            rows.extend(pool.map(lambda call:invoke(self.case,call,self.log),remaining))
         for t,ev in rows:
-            self.calls+=1;self.used.add(t.tool_name);self.data['tool_results'].append(t.model_dump());self.case.evidence.extend(ev)
+            self.calls+=1;self.used.add(t.tool_name);self.data['tool_results'].append(t.model_dump());
+            if t.tool_name!='extract':self.case.evidence.extend(ev)
             for o in t.observations:
                 if 'unit' in o:self.units[o['unit']['unit_id']]=o['unit']
             self.log('tool_completed',tool=t.tool_name,status=t.status,call_id=t.call_id)

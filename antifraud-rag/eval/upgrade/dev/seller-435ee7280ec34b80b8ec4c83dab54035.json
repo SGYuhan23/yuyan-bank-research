@@ -1,0 +1,64 @@
+{
+  "run_id": "435ee7280ec34b80b8ec4c83dab54035",
+  "case_id": "f9cc1d20a3594b0aa9c23ca13bb8f384",
+  "case_version": 1,
+  "status": "failed",
+  "records": [
+    {
+      "kind": "model_call",
+      "at": "2026-10-19T14:22:59.499030+00:00",
+      "phase": "plan",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 874,
+        "completion_tokens": 66,
+        "prompt_tokens": 808,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 2.298,
+      "finish_reason": "stop",
+      "request_hash": "c78283c100fe7dff552d2d73379b24faa823faa2a08aa28c676e936e1a64734d"
+    },
+    {
+      "kind": "next_action",
+      "at": "2026-10-19T14:22:59.499123+00:00",
+      "action": "call_tools",
+      "calls": [
+        {
+          "tool_name": "guidance",
+          "args": {
+            "query": "对方发来转账凭证，货可以给他了吗？",
+            "role": "卖方收款",
+            "mode": "case"
+          }
+        }
+      ],
+      "questions": [],
+      "summary": "调用guidance工具提供反诈指引"
+    },
+    {
+      "kind": "tools_started",
+      "at": "2026-10-19T14:22:59.499853+00:00",
+      "names": [
+        "guidance"
+      ],
+      "concurrent": false
+    },
+    {
+      "kind": "failed",
+      "at": "2026-10-19T14:22:59.500261+00:00",
+      "error": "ValueError: UNEXPECTED_TOOL_ARGUMENT"
+    }
+  ],
+  "tool_results": [],
+  "recommendations": [],
+  "started_at": "2026-10-19T14:22:57.179671+00:00",
+  "execution": "live",
+  "error": "ValueError: UNEXPECTED_TOOL_ARGUMENT",
+  "finished_at": "2026-10-19T14:22:59.500343+00:00",
+  "duration_seconds": 2.321,
+  "evidence": []
+}

@@ -1,0 +1,56 @@
+{
+  "id": "edd55f2f7f5349799208ffd7699aab0a",
+  "case_id": "h5",
+  "family": "individual-statistics",
+  "system": "retrieved",
+  "query": "我是培训学员，能用全国举报统计计算某个Westpac客户被骗概率吗？",
+  "started_at": "2026-10-19T14:48:48.458717+00:00",
+  "cost": null,
+  "cost_reason": "dated model prices not verified",
+  "status": "completed",
+  "output": {
+    "answer": "不能。全国举报统计（如Scamwatch等多机构合并数据）反映的是澳大利亚整体 scam情况，不是Westpac客户样本，也不包含客户个体特征、行为或交易上下文，因此无法用于计算某个Westpac客户被骗的概率。银行不会基于此类宏观统计对单个客户进行风险概率推断。",
+    "sources": [
+      "national-statistics"
+    ],
+    "unknowns": []
+  },
+  "records": [
+    {
+      "kind": "retrieval_started",
+      "method": "bm25"
+    },
+    {
+      "kind": "retrieval_attempt_completed",
+      "method": "bm25",
+      "unit_ids": [
+        "national-statistics",
+        "receipt-guidance",
+        "bec-guidance"
+      ],
+      "source_ids": [
+        "scamwatch-stats",
+        "westpac-receipt",
+        "westpac-bec"
+      ]
+    },
+    {
+      "kind": "model_call",
+      "phase": "baseline_answer",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 3086,
+        "completion_tokens": 87,
+        "prompt_tokens": 2999,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        }
+      },
+      "duration_seconds": 2.536,
+      "finish_reason": "stop",
+      "request_hash": "94d5de654908380816e6c6b13d5434ff6da4a4fd678287a6b613f22df01f1d36"
+    }
+  ],
+  "seconds": 2.547
+}

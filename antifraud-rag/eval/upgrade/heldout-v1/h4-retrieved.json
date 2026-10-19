@@ -1,0 +1,29 @@
+{
+  "id": "108c7a13b6854c369530881c2c2bf4ee",
+  "case_id": "h4",
+  "family": "investment-clone",
+  "system": "retrieved",
+  "query": "我是投资邀约接收人，对方发来专业官网和公司登记信息。能证明这次邀约是真的吗？",
+  "started_at": "2026-10-19T14:36:38.222219+00:00",
+  "cost": null,
+  "cost_reason": "dated model prices not verified",
+  "status": "failed",
+  "error": "ResearchError: MODEL_UNAVAILABLE：网络或结构化响应失败 ReadTimeout",
+  "records": [
+    {
+      "kind": "retrieval_started",
+      "method": "bm25"
+    },
+    {
+      "kind": "retrieval_attempt_completed",
+      "method": "bm25",
+      "unit_ids": [
+        "investment-check"
+      ],
+      "source_ids": [
+        "asic-invest"
+      ]
+    }
+  ],
+  "seconds": 100.143
+}

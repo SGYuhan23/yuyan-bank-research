@@ -1,0 +1,55 @@
+{
+  "id": "05ce072a08d84a6c9fa2b98a1dded09b",
+  "case_id": "h1",
+  "family": "machinery-seller",
+  "system": "retrieved",
+  "query": "我是卖二手机床的，对方给我银行转款图片但我还没查自己的账户，能装车交付吗？",
+  "started_at": "2026-10-19T14:35:17.209596+00:00",
+  "cost": null,
+  "cost_reason": "dated model prices not verified",
+  "status": "completed",
+  "output": {
+    "answer": "不能装车交付。仅凭对方提供的银行转账图片无法确认款项已真实到账，这可能是伪造截图或延迟入账。根据反诈指引，首次收款或账户信息变更时，必须通过独立核实的联系方式（如您原有记录中的电话）与付款方语音确认付款真实性及账户信息准确性，且须待您本人登录网银或手机银行查实资金已到账后，方可交付货物。",
+    "sources": [
+      "bec-guidance",
+      "bec-case"
+    ],
+    "unknowns": []
+  },
+  "records": [
+    {
+      "kind": "retrieval_started",
+      "method": "bm25"
+    },
+    {
+      "kind": "retrieval_attempt_completed",
+      "method": "bm25",
+      "unit_ids": [
+        "bec-guidance",
+        "bec-case"
+      ],
+      "source_ids": [
+        "westpac-bec",
+        "scamwatch-case"
+      ]
+    },
+    {
+      "kind": "model_call",
+      "phase": "baseline_answer",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 2194,
+        "completion_tokens": 112,
+        "prompt_tokens": 2082,
+        "prompt_tokens_details": {
+          "cached_tokens": 1920
+        }
+      },
+      "duration_seconds": 3.493,
+      "finish_reason": "stop",
+      "request_hash": "e5653b883d37d28367215d2cec5ed2a434c7af7e3aa4b219ac3a88bfdcbea406"
+    }
+  ],
+  "seconds": 3.504
+}

@@ -1,0 +1,65 @@
+{
+  "run_id": "70326a8c4b7648a8b19aa4e9a9282fb7",
+  "case_id": "e92615d7507040eba85982a16377f048",
+  "case_version": 2,
+  "query": "我是企业付款人。请提取邮件，比较我提供的新旧收款字段，检查链接并整理时间线，再说明本次变更该如何核实。",
+  "status": "failed",
+  "records": [
+    {
+      "kind": "model_call",
+      "at": "2026-10-19T14:58:10.353208+00:00",
+      "phase": "plan",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 988,
+        "completion_tokens": 126,
+        "prompt_tokens": 862,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 5.318,
+      "finish_reason": "stop",
+      "request_hash": "042aaab6b97a3443dbdc4130fa4d6f29aee57fcbf642435ef75f685e7d05e2fa"
+    },
+    {
+      "kind": "next_action",
+      "at": "2026-10-19T14:58:10.353375+00:00",
+      "action": "call_tools",
+      "calls": [
+        {
+          "tool_name": "extract",
+          "args": {}
+        },
+        {
+          "tool_name": "compare",
+          "args": {}
+        },
+        {
+          "tool_name": "timeline",
+          "args": {}
+        },
+        {
+          "tool_name": "links",
+          "args": {}
+        }
+      ],
+      "questions": [],
+      "summary": "已调用extract提取邮件内容，compare比对新旧收款字段，timeline整理事件时间线，links检查相关链接。下一步将基于结果提供核实指引。"
+    },
+    {
+      "kind": "failed",
+      "at": "2026-10-19T14:58:10.353727+00:00",
+      "error": "ValueError: EXTRACTION_MUST_PRECEDE_DEPENDENT_TOOLS"
+    }
+  ],
+  "tool_results": [],
+  "recommendations": [],
+  "started_at": "2026-10-19T14:58:05.024592+00:00",
+  "execution": "live",
+  "error": "ValueError: EXTRACTION_MUST_PRECEDE_DEPENDENT_TOOLS",
+  "finished_at": "2026-10-19T14:58:10.353791+00:00",
+  "duration_seconds": 5.329,
+  "evidence": []
+}

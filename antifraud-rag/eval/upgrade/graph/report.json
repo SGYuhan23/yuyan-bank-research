@@ -1,0 +1,313 @@
+{
+  "synthetic": true,
+  "representation": "fixed one-hop mean aggregation; not GraphSAGE or NVIDIA reproduction",
+  "feature_allowlist": [
+    "in_count",
+    "out_count",
+    "incoming_amount",
+    "outgoing_amount",
+    "balance_ratio"
+  ],
+  "scores": "uncalibrated experimental ranking",
+  "results": {
+    "dev": {
+      "cycle_rule": {
+        "account": {
+          "n": 332,
+          "positive": 107,
+          "pr_auc": 0.3349769170138498,
+          "precision": 0.36,
+          "recall": 0.3364485981308411,
+          "fpr": 0.28444444444444444,
+          "review_budget_k": 34,
+          "recall_at_k": 0.11214953271028037
+        },
+        "transaction": {
+          "n": 335,
+          "positive": 139,
+          "pr_auc": 0.40070009663910666,
+          "precision": 0.36,
+          "recall": 0.2589928057553957,
+          "fpr": 0.32653061224489793,
+          "review_budget_k": 34,
+          "recall_at_k": 0.07194244604316546
+        },
+        "ring_coverage": {
+          "detected": 7,
+          "total": 7,
+          "ratio": 1.0
+        }
+      },
+      "tabular": {
+        "account": {
+          "n": 332,
+          "positive": 107,
+          "pr_auc": 0.5149698615090812,
+          "precision": 0.5390070921985816,
+          "recall": 0.7102803738317757,
+          "fpr": 0.28888888888888886,
+          "review_budget_k": 34,
+          "recall_at_k": 0.1308411214953271
+        },
+        "transaction": {
+          "n": 335,
+          "positive": 139,
+          "pr_auc": 0.5598584754960876,
+          "precision": 0.6484848484848484,
+          "recall": 0.7697841726618705,
+          "fpr": 0.29591836734693877,
+          "review_budget_k": 34,
+          "recall_at_k": 0.07194244604316546
+        },
+        "ring_coverage": {
+          "detected": 1,
+          "total": 7,
+          "ratio": 0.14285714285714285
+        }
+      },
+      "graph_mean": {
+        "account": {
+          "n": 332,
+          "positive": 107,
+          "pr_auc": 0.8724130482634682,
+          "precision": 0.6595744680851063,
+          "recall": 0.8691588785046729,
+          "fpr": 0.21333333333333335,
+          "review_budget_k": 34,
+          "recall_at_k": 0.308411214953271
+        },
+        "transaction": {
+          "n": 335,
+          "positive": 139,
+          "pr_auc": 0.9257069600422301,
+          "precision": 0.7292817679558011,
+          "recall": 0.9496402877697842,
+          "fpr": 0.25,
+          "review_budget_k": 34,
+          "recall_at_k": 0.2446043165467626
+        },
+        "ring_coverage": {
+          "detected": 0,
+          "total": 7,
+          "ratio": 0.0
+        }
+      },
+      "structure_removed": {
+        "account": {
+          "n": 332,
+          "positive": 107,
+          "pr_auc": 0.5149698615090812,
+          "precision": 0.5390070921985816,
+          "recall": 0.7102803738317757,
+          "fpr": 0.28888888888888886,
+          "review_budget_k": 34,
+          "recall_at_k": 0.1308411214953271
+        },
+        "transaction": {
+          "n": 335,
+          "positive": 139,
+          "pr_auc": 0.5598584754960876,
+          "precision": 0.6484848484848484,
+          "recall": 0.7697841726618705,
+          "fpr": 0.29591836734693877,
+          "review_budget_k": 34,
+          "recall_at_k": 0.07194244604316546
+        },
+        "ring_coverage": {
+          "detected": 1,
+          "total": 7,
+          "ratio": 0.14285714285714285
+        }
+      }
+    },
+    "test": {
+      "cycle_rule": {
+        "account": {
+          "n": 447,
+          "positive": 186,
+          "pr_auc": 0.4577044278278311,
+          "precision": 0.5128205128205128,
+          "recall": 0.43010752688172044,
+          "fpr": 0.29118773946360155,
+          "review_budget_k": 45,
+          "recall_at_k": 0.11290322580645161
+        },
+        "transaction": {
+          "n": 486,
+          "positive": 250,
+          "pr_auc": 0.5138968027856916,
+          "precision": 0.5128205128205128,
+          "recall": 0.32,
+          "fpr": 0.3220338983050847,
+          "review_budget_k": 49,
+          "recall_at_k": 0.108
+        },
+        "ring_coverage": {
+          "detected": 11,
+          "total": 11,
+          "ratio": 1.0
+        }
+      },
+      "tabular": {
+        "account": {
+          "n": 447,
+          "positive": 186,
+          "pr_auc": 0.6290567103418858,
+          "precision": 0.6523809523809524,
+          "recall": 0.7365591397849462,
+          "fpr": 0.2796934865900383,
+          "review_budget_k": 45,
+          "recall_at_k": 0.15591397849462366
+        },
+        "transaction": {
+          "n": 486,
+          "positive": 250,
+          "pr_auc": 0.6641911331060858,
+          "precision": 0.7420634920634921,
+          "recall": 0.748,
+          "fpr": 0.2754237288135593,
+          "review_budget_k": 49,
+          "recall_at_k": 0.112
+        },
+        "ring_coverage": {
+          "detected": 3,
+          "total": 11,
+          "ratio": 0.2727272727272727
+        }
+      },
+      "graph_mean": {
+        "account": {
+          "n": 447,
+          "positive": 186,
+          "pr_auc": 0.8821133705227111,
+          "precision": 0.766497461928934,
+          "recall": 0.8118279569892473,
+          "fpr": 0.17624521072796934,
+          "review_budget_k": 45,
+          "recall_at_k": 0.23118279569892472
+        },
+        "transaction": {
+          "n": 486,
+          "positive": 250,
+          "pr_auc": 0.9435175723521227,
+          "precision": 0.8021201413427562,
+          "recall": 0.908,
+          "fpr": 0.23728813559322035,
+          "review_budget_k": 49,
+          "recall_at_k": 0.196
+        },
+        "ring_coverage": {
+          "detected": 0,
+          "total": 11,
+          "ratio": 0.0
+        }
+      },
+      "structure_removed": {
+        "account": {
+          "n": 447,
+          "positive": 186,
+          "pr_auc": 0.6290567103418858,
+          "precision": 0.6523809523809524,
+          "recall": 0.7365591397849462,
+          "fpr": 0.2796934865900383,
+          "review_budget_k": 45,
+          "recall_at_k": 0.15591397849462366
+        },
+        "transaction": {
+          "n": 486,
+          "positive": 250,
+          "pr_auc": 0.6641911331060858,
+          "precision": 0.7420634920634921,
+          "recall": 0.748,
+          "fpr": 0.2754237288135593,
+          "review_budget_k": 49,
+          "recall_at_k": 0.112
+        },
+        "ring_coverage": {
+          "detected": 3,
+          "total": 11,
+          "ratio": 0.2727272727272727
+        }
+      }
+    }
+  },
+  "cost": "CPU local; no vendor inference fee",
+  "dev_candidate": "graph_mean",
+  "selected_on_dev": "tabular",
+  "default_reason": "single synthetic experiment; reliability across independent structure distributions not established; conservative tabular default",
+  "selection_rule": "PR-AUC > tabular + 0.05 and FPR no worse; otherwise tabular",
+  "leakage_audit": {
+    "train": {
+      "amount_ranges": {
+        "0": [
+          100.31,
+          52224.42
+        ],
+        "1": [
+          119.66,
+          152229.14
+        ]
+      },
+      "id_features": false,
+      "description_features": false,
+      "labels_separate": true,
+      "future_edges_excluded": true,
+      "structure_sizes": [
+        3,
+        4
+      ],
+      "time_range": [
+        "2024-01-02",
+        "2024-06-28"
+      ]
+    },
+    "dev": {
+      "amount_ranges": {
+        "0": [
+          183.3,
+          84981.53
+        ],
+        "1": [
+          77.14,
+          118585.14
+        ]
+      },
+      "id_features": false,
+      "description_features": false,
+      "labels_separate": true,
+      "future_edges_excluded": true,
+      "structure_sizes": [
+        5,
+        6
+      ],
+      "time_range": [
+        "2025-01-01",
+        "2025-06-29"
+      ]
+    },
+    "test": {
+      "amount_ranges": {
+        "0": [
+          131.04,
+          46861.81
+        ],
+        "1": [
+          145.72,
+          120323.54
+        ]
+      },
+      "id_features": false,
+      "description_features": false,
+      "labels_separate": true,
+      "future_edges_excluded": true,
+      "structure_sizes": [
+        7,
+        8
+      ],
+      "time_range": [
+        "2026-01-01",
+        "2026-06-28"
+      ]
+    }
+  }
+}

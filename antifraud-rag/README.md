@@ -59,3 +59,37 @@ python antifraud-rag/evaluate.py
 本轮两项收尾的真实运行、mock故障测试及金额口径复核见[收尾验证](docs/CLOSEOUT.md)。
 
 当前场景收尾：操作建议显式携带场景、对象、触发条件与来源，生成/审核只使用适用该场景的原文段落；删除原关键词整句模板。范围、真实复跑及已知局限见[场景收尾记录](docs/SCOPE_CLOSEOUT.md)。
+
+## 独立升级分支：本地工具工作台
+
+保留原知识与培训材料流程 `/legacy` 及历史运行。新入口 `/` 包含案例研判、交互培训和独立合成图实验。当前名称仍为“银行反诈知识与培训辅助 Agent”，不将探索验证包装成银行上线系统。
+
+```bash
+python3.12 -m venv .venv
+.venv/bin/pip install -r antifraud-rag/requirements-upgrade.txt
+# 环境文件自行保存在仓库外，包含已有 QWEN_API_KEY / QWEN_ENDPOINT / QWEN_MODEL
+OMP_NUM_THREADS=1 .venv/bin/python antifraud-rag/server.py --env /absolute/path/private.env --port 8782
+# 默认 auto：BM25 无命中才转真实 embedding；显式 bm25/semantic/hybrid/all 可比较
+.venv/bin/python antifraud-rag/upgrade_cli.py '对方发来转账凭证，货可以给他了吗？' --role 卖方收款 --env /absolute/path/private.env
+# 训练本地合成实验模型；缺失模型时网页明确 unavailable，不返回伪分数
+cd antifraud-rag
+OMP_NUM_THREADS=1 ../.venv/bin/python -m upgrade.graph_lab
+# 额外未见结构对照，使用训练得到的同一组模型，不调参
+OMP_NUM_THREADS=1 ../.venv/bin/python -c 'from upgrade.graph_lab import structural_holdout; structural_holdout()'
+```
+
+案例、上传材料和模型文件在忽略的 `antifraud-rag/local/` 下；不提交私人材料。图片使用 macOS Vision（需 Swift 命令行工具），其他系统返回 OCR 不可用并允许人工转录。支持文本、PNG/JPEG；不宣称支持所有文档格式。链接默认只解析域名，不访问目标；可选 `SAFEBROWSING_API_KEY` 仅向固定服务查询脱敏后的来源域，未配置会明确显示 unavailable。
+
+新代码：[数据契约与边界](docs/UPGRADE_CONTRACTS.md)、[参考源码审查](docs/UPGRADE_REFERENCES.md)、[三分钟演示](docs/UPGRADE_DEMO.md)、[升级验证](docs/UPGRADE_VALIDATION.md)。重排器没有进入默认路径；图表示不是 GraphSAGE/GPU 复现。人工审核为本地记录，不是企业认证或授信审批。
+
+验证命令（仓库根目录）：
+```bash
+OMP_NUM_THREADS=1 .venv/bin/python -m unittest discover -s antifraud-rag -p 'test_*.py' -v
+.venv/bin/python -m compileall -q antifraud-rag
+node --check antifraud-rag/web/upgrade.js
+# 新批次目录；冻结文件不同则拒绝覆盖旧评测
+.venv/bin/python antifraud-rag/evaluate_upgrade.py --env /absolute/path/private.env --batch my-new-run
+.venv/bin/python antifraud-rag/grade_upgrade.py --env /absolute/path/private.env --batch my-new-run
+```
+
+浏览器脚本在 `eval/upgrade/browser/`，依赖Playwright及本机Chrome，当前连接端口8783。它们会实际调用本地Qwen并产生案件/审核记录；并非无成本mock。能力证据与未通过项见 [UPGRADE_EVIDENCE.md](docs/UPGRADE_EVIDENCE.md)。冻结对照之后只修复独立材料工具试跑发现的依赖调度和网页故障，未根据保留题改生成规则；对照成绩对应冻结代码，不冒称最新代码已重新通过保留集。

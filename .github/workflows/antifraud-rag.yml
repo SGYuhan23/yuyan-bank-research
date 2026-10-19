@@ -1,7 +1,7 @@
 name: Validate antifraud RAG
 on:
   push:
-    branches: ['codex/antifraud-rag']
+    branches: ['codex/antifraud-rag', 'codex/antifraud-tools-upgrade']
     paths: ['antifraud-rag/**', '.github/workflows/antifraud-rag.yml']
   pull_request:
     paths: ['antifraud-rag/**', '.github/workflows/antifraud-rag.yml']
@@ -18,7 +18,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: pip install -r antifraud-rag/requirements.txt
+      - run: pip install -r antifraud-rag/requirements-upgrade.txt
       - run: python -m unittest discover -s antifraud-rag -p 'test_*.py' -v
-      - run: python -m py_compile antifraud-rag/*.py
+      - run: python -m compileall -q antifraud-rag
       - run: node --check antifraud-rag/web/app.js
+      - run: node --check antifraud-rag/web/upgrade.js

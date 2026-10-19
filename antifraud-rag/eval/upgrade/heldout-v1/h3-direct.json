@@ -1,0 +1,38 @@
+{
+  "id": "8f8172fd8e86415bacee288c1c60c635",
+  "case_id": "h3",
+  "family": "logistics-repeat",
+  "system": "direct",
+  "query": "我公司已经给物流商结过这笔运费，对方说没收到要再付一遍；请给出核实建议。",
+  "started_at": "2026-10-19T14:36:10.358163+00:00",
+  "cost": null,
+  "cost_reason": "dated model prices not verified",
+  "status": "completed",
+  "output": {
+    "answer": "请立即暂停付款，通过原始合同约定的官方联系方式（非当前对方提供的电话/邮箱）联系物流商总部财务部门，核对收款账户、发票号及入账状态；同时检查本次付款指令是否经公司内部多级审批、是否与历史付款模式一致（如账户、金额、时间规律），警惕冒充物流商的钓鱼邮件或通讯。",
+    "sources": [
+      "unit_id_3"
+    ],
+    "unknowns": []
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "baseline_answer",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 519,
+        "completion_tokens": 99,
+        "prompt_tokens": 420,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        }
+      },
+      "duration_seconds": 2.695,
+      "finish_reason": "stop",
+      "request_hash": "5812e1fb794e80a41d8a5f98464611140bca40db674a65c93a3e0382912e491b"
+    }
+  ],
+  "seconds": 2.696
+}

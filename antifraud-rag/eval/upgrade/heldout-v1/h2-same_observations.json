@@ -1,0 +1,39 @@
+{
+  "id": "531d476ad69244639d07d894fb1d13df",
+  "case_id": "h2",
+  "family": "school-contractor",
+  "system": "same_observations",
+  "query": "学校采购的正规承包商确实可能换银行。现在来信通知更换收款账号，我作为付款人员如何核实本次请求？",
+  "started_at": "2026-10-19T14:36:26.554097+00:00",
+  "cost": null,
+  "cost_reason": "dated model prices not verified",
+  "status": "completed",
+  "output": {
+    "answer": "作为付款人员，您应严格遵循以下核实步骤：1）不直接依据来信更改账户信息；2）必须通过您自己掌握的、独立核实的电话号码（如合同存档、官网公布的号码），与承包商财务或授权负责人进行语音确认；3）确认内容须包括本次收款账号变更的真实性、原因及授权人身份；4）若对方有PayID，优先使用PayID支付，系统将显示注册姓名供核对；5）执行双人审批（如制度允许）并保留全部核实记录。账户变更本身合法，但未经语音验证即操作是高风险行为。",
+    "sources": [
+      "bec-guidance",
+      "bec-case"
+    ],
+    "unknowns": []
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "baseline_answer",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 4584,
+        "completion_tokens": 155,
+        "prompt_tokens": 4429,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 4.109,
+      "finish_reason": "stop",
+      "request_hash": "02d0f39d4e9843da085e7ce40690bb098e589bda6df6c098024966d13d8de5a8"
+    }
+  ],
+  "seconds": 4.109
+}

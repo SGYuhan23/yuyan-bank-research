@@ -1,0 +1,38 @@
+{
+  "id": "d5a2eecbdf354fe99bbd296c03d32523",
+  "case_id": "h5",
+  "family": "individual-statistics",
+  "system": "direct",
+  "query": "我是培训学员，能用全国举报统计计算某个Westpac客户被骗概率吗？",
+  "started_at": "2026-10-19T14:48:42.267040+00:00",
+  "cost": null,
+  "cost_reason": "dated model prices not verified",
+  "status": "completed",
+  "output": {
+    "answer": "不能。全国举报统计反映整体趋势，不能用于推算个体客户的被骗概率。Westpac不提供、也不支持基于宏观统计数据对具体客户进行风险概率评估。每个客户的情况具有独特性，实际风险需结合具体交易行为、账户活动及实时风控模型综合判断，而非套用全国平均值。",
+    "sources": [
+      "unit_id_3"
+    ],
+    "unknowns": []
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "baseline_answer",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 500,
+        "completion_tokens": 87,
+        "prompt_tokens": 413,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        }
+      },
+      "duration_seconds": 2.492,
+      "finish_reason": "stop",
+      "request_hash": "5239f259c7074a6cdcfc977f3290c2e8396fb4e742cb6c28577555cd7320a057"
+    }
+  ],
+  "seconds": 2.492
+}

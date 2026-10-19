@@ -1,0 +1,707 @@
+{
+  "run_id": "09308b677b5d41e6a919e16e54631795",
+  "case_id": "34fc32cf779748a49338c50bb3e0e199",
+  "case_version": 1,
+  "query": "老合作方说换了卡号，让我们今天打钱，先做什么？",
+  "status": "pending_review",
+  "records": [
+    {
+      "kind": "model_call",
+      "at": "2026-10-19T14:32:40.310857+00:00",
+      "phase": "plan",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 723,
+        "completion_tokens": 38,
+        "prompt_tokens": 685,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 1.314,
+      "finish_reason": "stop",
+      "request_hash": "10868c10cd56e7f8c4e1cf95970f1defa59d912ae16d4f9785a0ec1eb2b837a8"
+    },
+    {
+      "kind": "next_action",
+      "at": "2026-10-19T14:32:40.311024+00:00",
+      "action": "call_tools",
+      "calls": [
+        {
+          "tool_name": "guidance",
+          "args": {}
+        }
+      ],
+      "questions": [],
+      "summary": "先提供一般安全核实指引，确认更换卡号的流程是否合规。"
+    },
+    {
+      "kind": "tools_started",
+      "at": "2026-10-19T14:32:40.312614+00:00",
+      "names": [
+        "guidance"
+      ],
+      "concurrent": false
+    },
+    {
+      "kind": "retrieval_started",
+      "at": "2026-10-19T14:32:40.317363+00:00",
+      "method": "bm25"
+    },
+    {
+      "kind": "retrieval_attempt_completed",
+      "at": "2026-10-19T14:32:40.324490+00:00",
+      "method": "bm25",
+      "unit_ids": [],
+      "source_ids": []
+    },
+    {
+      "kind": "retrieval_fallback",
+      "at": "2026-10-19T14:32:40.324520+00:00",
+      "from_method": "bm25",
+      "to_method": "semantic",
+      "reason": "bm25_no_positive_score"
+    },
+    {
+      "kind": "retrieval_started",
+      "at": "2026-10-19T14:32:40.324525+00:00",
+      "method": "semantic"
+    },
+    {
+      "kind": "retrieval_attempt_completed",
+      "at": "2026-10-19T14:32:40.727223+00:00",
+      "method": "semantic",
+      "unit_ids": [
+        "bec-guidance",
+        "bec-case",
+        "receipt-guidance"
+      ],
+      "source_ids": [
+        "westpac-bec",
+        "scamwatch-case",
+        "westpac-receipt"
+      ]
+    },
+    {
+      "kind": "tool_completed",
+      "at": "2026-10-19T14:32:40.727480+00:00",
+      "tool": "guidance",
+      "status": "ok",
+      "call_id": "cba95e56ab87456b80f5a3cba1956207"
+    },
+    {
+      "kind": "model_call",
+      "at": "2026-10-19T14:32:42.238938+00:00",
+      "phase": "plan",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 742,
+        "completion_tokens": 48,
+        "prompt_tokens": 694,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 1.51,
+      "finish_reason": "stop",
+      "request_hash": "435e40cc781df374aa77d07ba4a5504826d343f679f954455ca55dba7547a49a"
+    },
+    {
+      "kind": "next_action",
+      "at": "2026-10-19T14:32:42.239087+00:00",
+      "action": "call_tools",
+      "calls": [
+        {
+          "tool_name": "timeline",
+          "args": {}
+        }
+      ],
+      "questions": [],
+      "summary": "先核对合作方变更卡号的时间线，确认换卡是否在合理业务周期内发生，避免突发异常要求。"
+    },
+    {
+      "kind": "tools_started",
+      "at": "2026-10-19T14:32:42.240218+00:00",
+      "names": [
+        "timeline"
+      ],
+      "concurrent": false
+    },
+    {
+      "kind": "tool_completed",
+      "at": "2026-10-19T14:32:42.241833+00:00",
+      "tool": "timeline",
+      "status": "ok",
+      "call_id": "8550fe3497b2471e9b03c5d2193cbb6f"
+    },
+    {
+      "kind": "model_call",
+      "at": "2026-10-19T14:32:45.433416+00:00",
+      "phase": "plan",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 824,
+        "completion_tokens": 119,
+        "prompt_tokens": 705,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        }
+      },
+      "duration_seconds": 3.189,
+      "finish_reason": "stop",
+      "request_hash": "c53f88e8f7c2f8c30f75fff0e349cead7e3237c0e453fa32363afc3c0467208a"
+    },
+    {
+      "kind": "next_action",
+      "at": "2026-10-19T14:32:45.433477+00:00",
+      "action": "draft",
+      "calls": [],
+      "questions": [],
+      "summary": "先核实新卡号的真实性与归属：① 通过历史合作记录比对对方公司名称、开户行是否一致；② 要求对方提供加盖公章的账户变更书面通知（含旧卡号、新卡号、变更事由、签章）；③ 若有合同，核查账户变更条款及通知方式要求；④ 建议暂缓付款，待内部财务或法务确认无误后再操作。不建议仅凭口头/即时消息直接打款。"
+    },
+    {
+      "kind": "model_started",
+      "at": "2026-10-19T14:32:45.434699+00:00",
+      "phase": "evidence_adequacy"
+    },
+    {
+      "kind": "model_call",
+      "at": "2026-10-19T14:32:48.153355+00:00",
+      "phase": "evidence_adequacy",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 3959,
+        "completion_tokens": 86,
+        "prompt_tokens": 3873,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 2.718,
+      "finish_reason": "stop",
+      "request_hash": "2e4b3cc9cfe88b26bc2653ae35a4482c63e47fc935c60ba1773258fd0abca79e"
+    },
+    {
+      "kind": "adequacy_checked",
+      "at": "2026-10-19T14:32:48.153464+00:00",
+      "sufficient": true,
+      "task_scenes": [
+        {
+          "scene": "account_change",
+          "question_basis": "老合作方说换了卡号，让我们今天打钱，先做什么？"
+        }
+      ],
+      "relevant_ids": [
+        "bec-guidance",
+        "bec-case"
+      ],
+      "missing": [],
+      "conflicts": [],
+      "calculation": "none"
+    },
+    {
+      "kind": "model_started",
+      "at": "2026-10-19T14:32:48.154688+00:00",
+      "phase": "generate"
+    },
+    {
+      "kind": "model_call",
+      "at": "2026-10-19T14:32:58.165426+00:00",
+      "phase": "generate",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 4439,
+        "completion_tokens": 395,
+        "prompt_tokens": 4044,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 10.011,
+      "finish_reason": "stop",
+      "request_hash": "45b3b4deba58dc11e4f08eafa688f33d4c8e9e12be59fda260fc2dcc9dfbbd27"
+    },
+    {
+      "kind": "citation_materialized",
+      "at": "2026-10-19T14:32:58.165478+00:00",
+      "unit_id": "bec-guidance",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "kind": "citation_materialized",
+      "at": "2026-10-19T14:32:58.165513+00:00",
+      "unit_id": "bec-case",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "kind": "case_amount_scope_applied",
+      "at": "2026-10-19T14:32:58.165655+00:00",
+      "before": "若直接按新账户打款，可能向诈骗分子控制的账户转账，导致资金无法追回；案例中John因未核实即更新账户，造成17,000澳元初始损失及后续超30,000澳元总损失。",
+      "after": "John案例中，企业估计总损失超过30,000澳元，包含最初17,000澳元的损失，以及供货延误、合同义务等影响；不能将两笔金额相加。",
+      "source_id": "scamwatch-case",
+      "scope": "bec-case known 17000 included in estimated total over 30000 only"
+    },
+    {
+      "kind": "model_started",
+      "at": "2026-10-19T14:32:58.165803+00:00",
+      "phase": "citation_entailment_review"
+    },
+    {
+      "kind": "model_call",
+      "at": "2026-10-19T14:33:20.049217+00:00",
+      "phase": "citation_entailment_review",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 5601,
+        "completion_tokens": 964,
+        "prompt_tokens": 4637,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        }
+      },
+      "duration_seconds": 21.883,
+      "finish_reason": "stop",
+      "request_hash": "c67fc9d170cbf2cd9b6cbbce859191b8264ebc9f601ef0da5026ed781419f7f6"
+    },
+    {
+      "kind": "model_output_review",
+      "at": "2026-10-19T14:33:20.049294+00:00",
+      "verdict": {
+        "pass": true,
+        "issues": [],
+        "scene_checks": [
+          {
+            "scene": "account_change",
+            "essential_checks_present": true,
+            "reason": "steps中明确要求‘立即暂停本次账户变更操作’‘不使用对方提供的任何联系方式’‘通过企业自己存档的、此前独立核实过的供应商电话号码进行口头确认’，完全覆盖scope_rules.required_checks中两项：1) 独立取得电话口头核实本次变更，不用请求中的联系方式；2) 核实前不更改本次账户信息/不按本次变更支付，不扩大至无关付款。"
+          }
+        ],
+        "other_checks": [
+          {
+            "field": "risks",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "文本明确引用John案例中‘企业估计总损失超过30,000澳元，包含最初17,000澳元的损失，以及供货延误、合同义务等影响’，与bec-case原文‘In the weeks to come, with the initial loss of $17,000, the delay in supply flowing from missed orders and broken contractual obligations, John’s company estimated their loss to be over $30,000.’严格一致，未将两笔金额相加，未断言必然追不回，未将凭证构造特征当作核验依据。"
+          },
+          {
+            "field": "boundaries",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "‘本指引为公开安全建议，非Westpac内部操作规程’与bec-guidance limitations中‘公开一般安全建议，非Westpac内部操作规程’一致。"
+          },
+          {
+            "field": "boundaries",
+            "index": 1,
+            "scope_supported": true,
+            "reason": "‘仅适用于本次供应商提出的账户变更请求，不自动扩展至其他付款或历史账务’与scope_rules.account_change.target中‘本次供应商账户变更请求、变更账户及相关付款’及required_checks中‘不扩大至无关付款’一致。"
+          },
+          {
+            "field": "boundaries",
+            "index": 2,
+            "scope_supported": true,
+            "reason": "‘核实必须使用企业自持的、独立来源的电话号码，不可使用请求中附带的联系方式’与bec-guidance原文‘use a phone number you have on file, or a publicly sourced number. Never use contact details provided in the email.’及scope_rules.required_checks第一项完全对应。"
+          },
+          {
+            "field": "questions",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "‘您企业是否存有该供应商此前经核实有效的联系电话？’直接对应scope_rules.account_change.required_checks第一项前提条件，是核实能否执行的必要追问。"
+          },
+          {
+            "field": "questions",
+            "index": 1,
+            "scope_supported": true,
+            "reason": "‘本次变更请求是通过什么渠道（如邮件、微信、电话）提出的？’对应bec-guidance中‘email with a request involving financial details’及‘Never use contact details provided in the email’，用于判断是否触发独立核实义务。"
+          },
+          {
+            "field": "questions",
+            "index": 2,
+            "scope_supported": true,
+            "reason": "‘该请求是否标注‘紧急’‘今日必付’等施压措辞？’对应bec-guidance中‘urgent or redirected payments’及‘regardless of who the sender is or if the request is urgent’，属典型风险信号。"
+          }
+        ],
+        "step_checks": [
+          {
+            "index": 0,
+            "role_matches": true,
+            "target_bounded": true,
+            "condition_preserved": true,
+            "source_supported": true,
+            "reason": "text中‘立即暂停本次账户变更操作’‘不使用对方提供的任何联系方式’‘通过企业自己存档的、此前独立核实过的供应商电话号码，进行口头确认’，角色为‘企业付款方’，target明确限定为‘本次供应商账户变更请求、变更账户及相关付款’，trigger‘独立口头核实本次变更前’完整保留，且所有动作均源自bec-guidance原文‘verbally verified the request using a phone number you sourced yourself’‘Always use a phone number you have on file... Never use contact details provided in the email’。"
+          }
+        ]
+      },
+      "reviewer": "same_model_not_independent_human"
+    },
+    {
+      "kind": "completed",
+      "at": "2026-10-19T14:33:20.049448+00:00",
+      "citation_check": "exact_quote_match",
+      "human_review": "pending"
+    }
+  ],
+  "tool_results": [
+    {
+      "call_id": "cba95e56ab87456b80f5a3cba1956207",
+      "case_id": "34fc32cf779748a49338c50bb3e0e199",
+      "case_version": 1,
+      "tool_name": "guidance",
+      "tool_version": "1",
+      "validated_args": {
+        "mode": "auto"
+      },
+      "args_hash": "406080f63e38c971caefb931d1dee2d764e24b8a9886c3efdd8f0049963e6a63",
+      "input_evidence": [
+        {
+          "id": "case-input:34fc32cf779748a49338c50bb3e0e199",
+          "hash": "236e92b083b67c4fe51c160e4590a79223b52b4168b12fe8b63256dabdd65166"
+        }
+      ],
+      "status": "ok",
+      "observations": [
+        {
+          "evidence_id": "903e1324cdc34efb8ca0acf9013ccd49",
+          "statement": "Signs this may be a scam\nThey request payment to a new account number.\nEven if such requests came from someone associated with you, do not make any changes to account details until you've verbally verified the request using a phone number you sourced yourself.\nA CEO, executive or senior manager requests payment to a specific account.\nPause and verify the request verbally, regardless of who the sender is or if the request is urgent.\nA supplier or employee claim they haven’t received payment.\nDo not make any more payments until you investigate the payment history and emails, to check if there were any requests made to amend account details.\nYou’re paying them for the first time.\nWhen paying someone for the first time, such as a deposit to a real estate agent’s trust account for a property purchase, validate the request and payee details before sending money. You can do this verbally or request to pay using\nPayID®\n.\n\nTips to minimise the risk of being scammed\nAlways verbally confirm any requests for urgent or redirected payments. Always use a phone number you have on file, or a publicly sourced number. Never use contact details provided in the email.\nRequest to pay using\nPayID\nif the payee has one. PayID displays the registered payee name onscreen, so if it's not your intended recipient you will know something is possibly unusual.\nRegister your business for PayID\nby using your ABN and request this is how your account is credited.\nUse multifactor authentication and dual payment approvals where available.\nIf you have a business, train your employees regularly on how to spot payment redirection scams. Empower them to question any payment related requests and verbally verify account details are correct. Update your processes to include these steps.",
+          "unit": {
+            "unit_id": "bec-guidance",
+            "source_id": "westpac-bec",
+            "title": "Payment Redirection Scams | Westpac",
+            "url": "https://www.westpac.com.au/security/types-of-scams/business-email-scams/",
+            "published_or_updated_at": null,
+            "date_status": "not_yet_verified",
+            "retrieved_at": "2026-10-18T11:14:57.079958+00:00",
+            "region": "Australia",
+            "material_type": "bank_public_guidance",
+            "page_or_section": "Signs this may be a scam + Tips to minimise the risk",
+            "file_sha256": "e1fa27d2a476351696c6e142358448fbf694367846636e0385c9cefdb6f7a822",
+            "review_status": "codex_author_checked_pending_independent_review",
+            "seed_provenance": "independently_discovered_official_source_material_pack_not_found",
+            "hash_scope": "original_http_html",
+            "acquisition_method": "httpx",
+            "section": "Signs this may be a scam + Tips to minimise the risk",
+            "text": "Signs this may be a scam\nThey request payment to a new account number.\nEven if such requests came from someone associated with you, do not make any changes to account details until you've verbally verified the request using a phone number you sourced yourself.\nA CEO, executive or senior manager requests payment to a specific account.\nPause and verify the request verbally, regardless of who the sender is or if the request is urgent.\nA supplier or employee claim they haven’t received payment.\nDo not make any more payments until you investigate the payment history and emails, to check if there were any requests made to amend account details.\nYou’re paying them for the first time.\nWhen paying someone for the first time, such as a deposit to a real estate agent’s trust account for a property purchase, validate the request and payee details before sending money. You can do this verbally or request to pay using\nPayID®\n.\n\nTips to minimise the risk of being scammed\nAlways verbally confirm any requests for urgent or redirected payments. Always use a phone number you have on file, or a publicly sourced number. Never use contact details provided in the email.\nRequest to pay using\nPayID\nif the payee has one. PayID displays the registered payee name onscreen, so if it's not your intended recipient you will know something is possibly unusual.\nRegister your business for PayID\nby using your ABN and request this is how your account is credited.\nUse multifactor authentication and dual payment approvals where available.\nIf you have a business, train your employees regularly on how to spot payment redirection scams. Empower them to question any payment related requests and verbally verify account details are correct. Update your processes to include these steps.",
+            "search_labels": "供应商 收款账户变更 更换 银行 邮件 发票 核实 电话 紧急 客服 培训 invoice supplier account change verify",
+            "limitations": "公开一般安全建议，非Westpac内部操作规程；账户变更是核实信号，不足以证明欺诈。PayID和双人审批以可用为条件。",
+            "unit_sha256": "b059afc9484892dba8710b0e35111d0f2c349b57010fb340bf994f8a86c898d6",
+            "limitations_origin": "project_author_scope_note_not_official_quote"
+          }
+        },
+        {
+          "evidence_id": "945e9ec6b7a34bc89c36f7561463d127",
+          "statement": "John worked as an accounts manager for a local manufacturing business. Late on a Friday afternoon, he received an email which appeared to be from one of his regular suppliers, Mr Liu from Zhang-Fei Industries, a ball bearings supplier in Asia. Mr Liu’s email explained that due to a change in their internal finance system, he needed John to update their banking details, including a new account number.\nIf you receive an email with a request involving financial details that you know nothing about, don’t action it until you are sure it’s the real deal.\n\nJohn took the email at face value and changed the banking information in his company’s database. A few days later, John made a scheduled payment to Zhang-Fei Industries for $17,000.\nTwo weeks later the ball bearings from Zheng Fei industries had not arrived so John telephoned Mr Liu. Mr Liu said he hadn’t received payment for the last order and had consequently cancelled shipment. John told Mr Liu that he had processed the payment personally to make sure it was paid according to the new arrangements. After some investigation it became clear that Mr Liu had not sent any request to update his company’s banking details and John was the victim of a scam.\nIn the weeks to come, with the initial loss of $17,000, the delay in supply flowing from missed orders and broken contractual obligations, John’s company estimated their loss to be over $30,000.\n\n*The story above is based on one or more real scam reports received by the ACCC. For privacy purposes the names and images of victims have not been used.\n## Have you been scammed?\n\nIf you think you've been scammed or know someone who has, report it to the ACCC using our report a scam page.\n\nReport a scam \nIf you have lost money, contact your bank or financial institution immediately.",
+          "unit": {
+            "unit_id": "bec-case",
+            "source_id": "scamwatch-case",
+            "title": "False billing: John updated supplier details and it ended up costing thousands",
+            "url": "https://www.scamwatch.gov.au/stop-check-protect/real-life-stories/false-billing-john-updated-supplier-details-and-it-ended-up-costing-thousands",
+            "material_type": "official_public_case",
+            "published_or_updated_at": null,
+            "date_status": "not_shown_in_read_section",
+            "retrieved_at": "2026-10-18T11:16:32.767626+00:00",
+            "region": "Australia",
+            "file_sha256": "fc47b2363ee603c6506d4c8a0cff494ce2eb1bdfa557c147886b61491b580985",
+            "hash_scope": "saved_web_tool_section_not_original_html",
+            "acquisition_method": "web_tool_original_url_extraction_after_direct_http_403",
+            "seed_provenance": "independently_discovered_material_pack_missing",
+            "review_status": "codex_author_checked_pending_independent_review",
+            "page_or_section": "Complete John case, privacy caveat and response",
+            "section": "Complete John case, privacy caveat and response",
+            "text": "John worked as an accounts manager for a local manufacturing business. Late on a Friday afternoon, he received an email which appeared to be from one of his regular suppliers, Mr Liu from Zhang-Fei Industries, a ball bearings supplier in Asia. Mr Liu’s email explained that due to a change in their internal finance system, he needed John to update their banking details, including a new account number.\nIf you receive an email with a request involving financial details that you know nothing about, don’t action it until you are sure it’s the real deal.\n\nJohn took the email at face value and changed the banking information in his company’s database. A few days later, John made a scheduled payment to Zhang-Fei Industries for $17,000.\nTwo weeks later the ball bearings from Zheng Fei industries had not arrived so John telephoned Mr Liu. Mr Liu said he hadn’t received payment for the last order and had consequently cancelled shipment. John told Mr Liu that he had processed the payment personally to make sure it was paid according to the new arrangements. After some investigation it became clear that Mr Liu had not sent any request to update his company’s banking details and John was the victim of a scam.\nIn the weeks to come, with the initial loss of $17,000, the delay in supply flowing from missed orders and broken contractual obligations, John’s company estimated their loss to be over $30,000.\n\n*The story above is based on one or more real scam reports received by the ACCC. For privacy purposes the names and images of victims have not been used.\n## Have you been scammed?\n\nIf you think you've been scammed or know someone who has, report it to the ACCC using our report a scam page.\n\nReport a scam \nIf you have lost money, contact your bank or financial institution immediately.",
+            "search_labels": "供应商 收款账户变更 官方 案例 John 培训 supplier account change case",
+            "limitations": "官方基于一个或多个真实举报编写，姓名图像已处理；不是本项目客户案例，不能估计客户损失。",
+            "unit_sha256": "fc47b2363ee603c6506d4c8a0cff494ce2eb1bdfa557c147886b61491b580985",
+            "limitations_origin": "project_author_scope_note_not_official_quote"
+          }
+        },
+        {
+          "evidence_id": "894821becf5d4b60b564efb2520e2de4",
+          "statement": "April 2023 - PayID Scam\nBe alert to PayID Scams when selling items online\nUsing PayID is a safe and easy way to send and receive funds.\nAfter a conversation with a potential buyer through an Online Marketplace, such as Facebook or Gumtree, you're advised that you need to upgrade your PayID to a business account for you to receive the payment.\nThese scam emails state your account has been upgraded to a business account and you need to refund a deposit that has been credited to your account.\nDo not act on these emails and report the buyer/seller profile to the marketplace as a potential scam.\nReminder\n- PayID's are managed within your banking app. A PayID does not need to be upgraded or activated by making payments. For more information on how PayID's work and how you can set up a Westpac registered PayID, visit\nwestpac.com.au/payid\n.\nAlso, when selling items online, never provide the buyer with the item until you can see the funds in your account, within your own online or mobile banking. Never rely on a receipt or screenshot of a payment sent to you. Receipts can be falsified by scammers to appear as if they have made payment, when they have not.\nIf you have received an email, SMS or other request that you have identified as potentially fraudulent or which you think involves a scam account, it's always a good idea to report these through to us, before deleting it from your inbox or deleted items on your device.\nForward a copy to hoax@westpac.com.au or 0497 132 032.",
+          "unit": {
+            "unit_id": "receipt-guidance",
+            "source_id": "westpac-receipt",
+            "title": "Past Scams and Alerts | Westpac",
+            "url": "https://www.westpac.com.au/security/latest-scams/past-scams-and-alerts/",
+            "published_or_updated_at": null,
+            "date_status": "page_update_not_shown_section_dated_2023_04",
+            "retrieved_at": "2026-10-18T11:15:01.536289+00:00",
+            "region": "Australia",
+            "material_type": "bank_public_guidance",
+            "page_or_section": "April 2023 - PayID Scam",
+            "file_sha256": "cba10f00f84e9061c54b885148c1d8672d9b5940cc46cfe39c620b1b7df75bbd",
+            "review_status": "codex_author_checked_pending_independent_review",
+            "seed_provenance": "independently_discovered_official_source_material_pack_not_found",
+            "hash_scope": "original_http_html",
+            "acquisition_method": "httpx",
+            "section": "April 2023 - PayID Scam",
+            "text": "April 2023 - PayID Scam\nBe alert to PayID Scams when selling items online\nUsing PayID is a safe and easy way to send and receive funds.\nAfter a conversation with a potential buyer through an Online Marketplace, such as Facebook or Gumtree, you're advised that you need to upgrade your PayID to a business account for you to receive the payment.\nThese scam emails state your account has been upgraded to a business account and you need to refund a deposit that has been credited to your account.\nDo not act on these emails and report the buyer/seller profile to the marketplace as a potential scam.\nReminder\n- PayID's are managed within your banking app. A PayID does not need to be upgraded or activated by making payments. For more information on how PayID's work and how you can set up a Westpac registered PayID, visit\nwestpac.com.au/payid\n.\nAlso, when selling items online, never provide the buyer with the item until you can see the funds in your account, within your own online or mobile banking. Never rely on a receipt or screenshot of a payment sent to you. Receipts can be falsified by scammers to appear as if they have made payment, when they have not.\nIf you have received an email, SMS or other request that you have identified as potentially fraudulent or which you think involves a scam account, it's always a good idea to report these through to us, before deleting it from your inbox or deleted items on your device.\nForward a copy to hoax@westpac.com.au or 0497 132 032.",
+            "search_labels": "付款截图 收据 到账 网银 卖货 交货 receipt screenshot payment funds",
+            "limitations": "2023年4月公开提示，场景为网上出售物品；不能据此判定某笔交易已经到账或已构成诈骗。",
+            "unit_sha256": "7f1fbefcc331d7493401d93fcdcf9025bd980299fe97742a6b803c151981da4d",
+            "limitations_origin": "project_author_scope_note_not_official_quote",
+            "section_date": "2023-04"
+          }
+        }
+      ],
+      "limitations": [],
+      "latency_seconds": 0.414,
+      "usage": null,
+      "data_origin": "public_sources"
+    },
+    {
+      "call_id": "8550fe3497b2471e9b03c5d2193cbb6f",
+      "case_id": "34fc32cf779748a49338c50bb3e0e199",
+      "case_version": 1,
+      "tool_name": "timeline",
+      "tool_version": "1",
+      "validated_args": {},
+      "args_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "input_evidence": [
+        {
+          "id": "case-input:34fc32cf779748a49338c50bb3e0e199",
+          "hash": "236e92b083b67c4fe51c160e4590a79223b52b4168b12fe8b63256dabdd65166"
+        },
+        {
+          "id": "903e1324cdc34efb8ca0acf9013ccd49",
+          "hash": "b059afc9484892dba8710b0e35111d0f2c349b57010fb340bf994f8a86c898d6"
+        },
+        {
+          "id": "945e9ec6b7a34bc89c36f7561463d127",
+          "hash": "fc47b2363ee603c6506d4c8a0cff494ce2eb1bdfa557c147886b61491b580985"
+        },
+        {
+          "id": "894821becf5d4b60b564efb2520e2de4",
+          "hash": "7f1fbefcc331d7493401d93fcdcf9025bd980299fe97742a6b803c151981da4d"
+        }
+      ],
+      "status": "ok",
+      "observations": [
+        {
+          "evidence_id": "40d6967aa1884c54a70a8982d72c99e4",
+          "statement": "{\"dated_mentions\": [], \"relative_unresolved\": [\"今天\"], \"order\": \"按原材料位置，不推定事件先后\", \"conflicts\": \"不同陈述同时保留，日期本身不判真实性\"}"
+        }
+      ],
+      "limitations": [],
+      "latency_seconds": 0.001,
+      "usage": null,
+      "data_origin": "user_supplied"
+    }
+  ],
+  "recommendations": [
+    {
+      "scene": "account_change",
+      "target": "本次供应商账户变更请求、变更账户及相关付款",
+      "trigger": "独立口头核实本次变更前；不能默认供应商称此前款项未收到",
+      "action": "立即暂停本次账户变更操作，不使用对方提供的任何联系方式（如邮件、短信中的电话或链接），而是通过企业自己存档的、此前独立核实过的供应商电话号码，进行口头确认。",
+      "supporting_evidence_ids": [
+        "903e1324cdc34efb8ca0acf9013ccd49"
+      ],
+      "unmet_conditions": [
+        "您企业是否存有该供应商此前经核实有效的联系电话？",
+        "本次变更请求是通过什么渠道（如邮件、微信、电话）提出的？",
+        "该请求是否标注‘紧急’‘今日必付’等施压措辞？"
+      ],
+      "counter_evidence_ids": [],
+      "review_status": "pending"
+    }
+  ],
+  "started_at": "2026-10-19T14:32:38.989965+00:00",
+  "execution": "live",
+  "assessment": {
+    "sufficient": true,
+    "task_scenes": [
+      {
+        "scene": "account_change",
+        "question_basis": "老合作方说换了卡号，让我们今天打钱，先做什么？"
+      }
+    ],
+    "relevant_ids": [
+      "bec-guidance",
+      "bec-case"
+    ],
+    "missing": [],
+    "conflicts": [],
+    "calculation": "none"
+  },
+  "draft": {
+    "steps": [
+      {
+        "text": "立即暂停本次账户变更操作，不使用对方提供的任何联系方式（如邮件、短信中的电话或链接），而是通过企业自己存档的、此前独立核实过的供应商电话号码，进行口头确认。",
+        "citations": [
+          {
+            "unit_id": "bec-guidance",
+            "quote": ""
+          }
+        ],
+        "scene": "account_change",
+        "target": "本次供应商账户变更请求、变更账户及相关付款",
+        "trigger": "独立口头核实本次变更前；不能默认供应商称此前款项未收到"
+      }
+    ],
+    "risks": [
+      {
+        "text": "若直接按新账户打款，可能向诈骗分子控制的账户转账，导致资金无法追回；案例中John因未核实即更新账户，造成17,000澳元初始损失及后续超30,000澳元总损失。",
+        "citations": [
+          {
+            "unit_id": "bec-case",
+            "quote": ""
+          }
+        ]
+      }
+    ],
+    "boundaries": [
+      "本指引为公开安全建议，非Westpac内部操作规程",
+      "仅适用于本次供应商提出的账户变更请求，不自动扩展至其他付款或历史账务",
+      "核实必须使用企业自持的、独立来源的电话号码，不可使用请求中附带的联系方式"
+    ],
+    "questions": [
+      "您企业是否存有该供应商此前经核实有效的联系电话？",
+      "本次变更请求是通过什么渠道（如邮件、微信、电话）提出的？",
+      "该请求是否标注‘紧急’‘今日必付’等施压措辞？"
+    ],
+    "scenario": null,
+    "scenario_label": "not_applicable",
+    "review_status": "pending_human_review"
+  },
+  "summary": "已形成限定对象与前提的核实建议，待人工审核。",
+  "unresolved_questions": [
+    "您企业是否存有该供应商此前经核实有效的联系电话？",
+    "本次变更请求是通过什么渠道（如邮件、微信、电话）提出的？",
+    "该请求是否标注‘紧急’‘今日必付’等施压措辞？"
+  ],
+  "limitations": [
+    "本指引为公开安全建议，非Westpac内部操作规程",
+    "仅适用于本次供应商提出的账户变更请求，不自动扩展至其他付款或历史账务",
+    "核实必须使用企业自持的、独立来源的电话号码，不可使用请求中附带的联系方式"
+  ],
+  "answer": {
+    "steps": [
+      {
+        "text": "立即暂停本次账户变更操作，不使用对方提供的任何联系方式（如邮件、短信中的电话或链接），而是通过企业自己存档的、此前独立核实过的供应商电话号码，进行口头确认。",
+        "citations": [
+          {
+            "unit_id": "bec-guidance",
+            "quote": "Signs this may be a scam\nThey request payment to a new account number.\nEven if such requests came from someone associated with you, do not make any changes to account details until you've verbally verified the request using a phone number you sourced yourself.\nA CEO, executive or senior manager requests payment to a specific account.\nPause and verify the request verbally, regardless of who the sender is or if the request is urgent.\nA supplier or employee claim they haven’t received payment.\nDo not make any more payments until you investigate the payment history and emails, to check if there were any requests made to amend account details.\nYou’re paying them for the first time.\nWhen paying someone for the first time, such as a deposit to a real estate agent’s trust account for a property purchase, validate the request and payee details before sending money. You can do this verbally or request to pay using\nPayID®\n.\n\nTips to minimise the risk of being scammed\nAlways verbally confirm any requests for urgent or redirected payments. Always use a phone number you have on file, or a publicly sourced number. Never use contact details provided in the email.\nRequest to pay using\nPayID\nif the payee has one. PayID displays the registered payee name onscreen, so if it's not your intended recipient you will know something is possibly unusual.\nRegister your business for PayID\nby using your ABN and request this is how your account is credited.\nUse multifactor authentication and dual payment approvals where available.\nIf you have a business, train your employees regularly on how to spot payment redirection scams. Empower them to question any payment related requests and verbally verify account details are correct. Update your processes to include these steps."
+          }
+        ],
+        "scene": "account_change",
+        "target": "本次供应商账户变更请求、变更账户及相关付款",
+        "trigger": "独立口头核实本次变更前；不能默认供应商称此前款项未收到"
+      }
+    ],
+    "risks": [
+      {
+        "text": "John案例中，企业估计总损失超过30,000澳元，包含最初17,000澳元的损失，以及供货延误、合同义务等影响；不能将两笔金额相加。",
+        "citations": [
+          {
+            "unit_id": "bec-case",
+            "quote": "John worked as an accounts manager for a local manufacturing business. Late on a Friday afternoon, he received an email which appeared to be from one of his regular suppliers, Mr Liu from Zhang-Fei Industries, a ball bearings supplier in Asia. Mr Liu’s email explained that due to a change in their internal finance system, he needed John to update their banking details, including a new account number.\nIf you receive an email with a request involving financial details that you know nothing about, don’t action it until you are sure it’s the real deal.\n\nJohn took the email at face value and changed the banking information in his company’s database. A few days later, John made a scheduled payment to Zhang-Fei Industries for $17,000.\nTwo weeks later the ball bearings from Zheng Fei industries had not arrived so John telephoned Mr Liu. Mr Liu said he hadn’t received payment for the last order and had consequently cancelled shipment. John told Mr Liu that he had processed the payment personally to make sure it was paid according to the new arrangements. After some investigation it became clear that Mr Liu had not sent any request to update his company’s banking details and John was the victim of a scam.\nIn the weeks to come, with the initial loss of $17,000, the delay in supply flowing from missed orders and broken contractual obligations, John’s company estimated their loss to be over $30,000.\n\n*The story above is based on one or more real scam reports received by the ACCC. For privacy purposes the names and images of victims have not been used.\n## Have you been scammed?\n\nIf you think you've been scammed or know someone who has, report it to the ACCC using our report a scam page.\n\nReport a scam \nIf you have lost money, contact your bank or financial institution immediately."
+          }
+        ]
+      }
+    ],
+    "boundaries": [
+      "本指引为公开安全建议，非Westpac内部操作规程",
+      "仅适用于本次供应商提出的账户变更请求，不自动扩展至其他付款或历史账务",
+      "核实必须使用企业自持的、独立来源的电话号码，不可使用请求中附带的联系方式"
+    ],
+    "questions": [
+      "您企业是否存有该供应商此前经核实有效的联系电话？",
+      "本次变更请求是通过什么渠道（如邮件、微信、电话）提出的？",
+      "该请求是否标注‘紧急’‘今日必付’等施压措辞？"
+    ],
+    "scenario": null,
+    "scenario_label": "not_applicable",
+    "review_status": "pending_human_review"
+  },
+  "finished_at": "2026-10-19T14:33:20.050450+00:00",
+  "duration_seconds": 41.06,
+  "evidence": [
+    {
+      "evidence_id": "903e1324cdc34efb8ca0acf9013ccd49",
+      "case_id": "34fc32cf779748a49338c50bb3e0e199",
+      "case_version": 1,
+      "kind": "public_guidance",
+      "origin_id": "westpac-bec",
+      "span": {
+        "section": "Signs this may be a scam + Tips to minimise the risk",
+        "url": "https://www.westpac.com.au/security/types-of-scams/business-email-scams/",
+        "unit_id": "bec-guidance",
+        "published_at": null
+      },
+      "source_hash": "b059afc9484892dba8710b0e35111d0f2c349b57010fb340bf994f8a86c898d6",
+      "observed_at": "2026-10-19T14:32:40.727284+00:00",
+      "jurisdiction": "Australia",
+      "statement": "Signs this may be a scam\nThey request payment to a new account number.\nEven if such requests came from someone associated with you, do not make any changes to account details until you've verbally verified the request using a phone number you sourced yourself.\nA CEO, executive or senior manager requests payment to a specific account.\nPause and verify the request verbally, regardless of who the sender is or if the request is urgent.\nA supplier or employee claim they haven’t received payment.\nDo not make any more payments until you investigate the payment history and emails, to check if there were any requests made to amend account details.\nYou’re paying them for the first time.\nWhen paying someone for the first time, such as a deposit to a real estate agent’s trust account for a property purchase, validate the request and payee details before sending money. You can do this verbally or request to pay using\nPayID®\n.\n\nTips to minimise the risk of being scammed\nAlways verbally confirm any requests for urgent or redirected payments. Always use a phone number you have on file, or a publicly sourced number. Never use contact details provided in the email.\nRequest to pay using\nPayID\nif the payee has one. PayID displays the registered payee name onscreen, so if it's not your intended recipient you will know something is possibly unusual.\nRegister your business for PayID\nby using your ABN and request this is how your account is credited.\nUse multifactor authentication and dual payment approvals where available.\nIf you have a business, train your employees regularly on how to spot payment redirection scams. Empower them to question any payment related requests and verbally verify account details are correct. Update your processes to include these steps.",
+      "limitations": [
+        "公开一般安全建议，非Westpac内部操作规程；账户变更是核实信号，不足以证明欺诈。PayID和双人审批以可用为条件。",
+        "未知发布日期不能证明在案件时点已生效"
+      ]
+    },
+    {
+      "evidence_id": "945e9ec6b7a34bc89c36f7561463d127",
+      "case_id": "34fc32cf779748a49338c50bb3e0e199",
+      "case_version": 1,
+      "kind": "public_guidance",
+      "origin_id": "scamwatch-case",
+      "span": {
+        "section": "Complete John case, privacy caveat and response",
+        "url": "https://www.scamwatch.gov.au/stop-check-protect/real-life-stories/false-billing-john-updated-supplier-details-and-it-ended-up-costing-thousands",
+        "unit_id": "bec-case",
+        "published_at": null
+      },
+      "source_hash": "fc47b2363ee603c6506d4c8a0cff494ce2eb1bdfa557c147886b61491b580985",
+      "observed_at": "2026-10-19T14:32:40.727306+00:00",
+      "jurisdiction": "Australia",
+      "statement": "John worked as an accounts manager for a local manufacturing business. Late on a Friday afternoon, he received an email which appeared to be from one of his regular suppliers, Mr Liu from Zhang-Fei Industries, a ball bearings supplier in Asia. Mr Liu’s email explained that due to a change in their internal finance system, he needed John to update their banking details, including a new account number.\nIf you receive an email with a request involving financial details that you know nothing about, don’t action it until you are sure it’s the real deal.\n\nJohn took the email at face value and changed the banking information in his company’s database. A few days later, John made a scheduled payment to Zhang-Fei Industries for $17,000.\nTwo weeks later the ball bearings from Zheng Fei industries had not arrived so John telephoned Mr Liu. Mr Liu said he hadn’t received payment for the last order and had consequently cancelled shipment. John told Mr Liu that he had processed the payment personally to make sure it was paid according to the new arrangements. After some investigation it became clear that Mr Liu had not sent any request to update his company’s banking details and John was the victim of a scam.\nIn the weeks to come, with the initial loss of $17,000, the delay in supply flowing from missed orders and broken contractual obligations, John’s company estimated their loss to be over $30,000.\n\n*The story above is based on one or more real scam reports received by the ACCC. For privacy purposes the names and images of victims have not been used.\n## Have you been scammed?\n\nIf you think you've been scammed or know someone who has, report it to the ACCC using our report a scam page.\n\nReport a scam \nIf you have lost money, contact your bank or financial institution immediately.",
+      "limitations": [
+        "官方基于一个或多个真实举报编写，姓名图像已处理；不是本项目客户案例，不能估计客户损失。",
+        "未知发布日期不能证明在案件时点已生效"
+      ]
+    },
+    {
+      "evidence_id": "894821becf5d4b60b564efb2520e2de4",
+      "case_id": "34fc32cf779748a49338c50bb3e0e199",
+      "case_version": 1,
+      "kind": "public_guidance",
+      "origin_id": "westpac-receipt",
+      "span": {
+        "section": "April 2023 - PayID Scam",
+        "url": "https://www.westpac.com.au/security/latest-scams/past-scams-and-alerts/",
+        "unit_id": "receipt-guidance",
+        "published_at": null
+      },
+      "source_hash": "7f1fbefcc331d7493401d93fcdcf9025bd980299fe97742a6b803c151981da4d",
+      "observed_at": "2026-10-19T14:32:40.727317+00:00",
+      "jurisdiction": "Australia",
+      "statement": "April 2023 - PayID Scam\nBe alert to PayID Scams when selling items online\nUsing PayID is a safe and easy way to send and receive funds.\nAfter a conversation with a potential buyer through an Online Marketplace, such as Facebook or Gumtree, you're advised that you need to upgrade your PayID to a business account for you to receive the payment.\nThese scam emails state your account has been upgraded to a business account and you need to refund a deposit that has been credited to your account.\nDo not act on these emails and report the buyer/seller profile to the marketplace as a potential scam.\nReminder\n- PayID's are managed within your banking app. A PayID does not need to be upgraded or activated by making payments. For more information on how PayID's work and how you can set up a Westpac registered PayID, visit\nwestpac.com.au/payid\n.\nAlso, when selling items online, never provide the buyer with the item until you can see the funds in your account, within your own online or mobile banking. Never rely on a receipt or screenshot of a payment sent to you. Receipts can be falsified by scammers to appear as if they have made payment, when they have not.\nIf you have received an email, SMS or other request that you have identified as potentially fraudulent or which you think involves a scam account, it's always a good idea to report these through to us, before deleting it from your inbox or deleted items on your device.\nForward a copy to hoax@westpac.com.au or 0497 132 032.",
+      "limitations": [
+        "2023年4月公开提示，场景为网上出售物品；不能据此判定某笔交易已经到账或已构成诈骗。",
+        "未知发布日期不能证明在案件时点已生效"
+      ]
+    },
+    {
+      "evidence_id": "40d6967aa1884c54a70a8982d72c99e4",
+      "case_id": "34fc32cf779748a49338c50bb3e0e199",
+      "case_version": 1,
+      "kind": "tool_observation",
+      "origin_id": "8550fe3497b2471e9b03c5d2193cbb6f",
+      "span": {
+        "start": 0,
+        "end": 25
+      },
+      "source_hash": "81f748b014b8d8ac858247848e63d0c9aae827230e7a4fe91421bcb55b6f05e8",
+      "observed_at": "2026-10-19T14:32:42.241549+00:00",
+      "jurisdiction": "Australia",
+      "statement": "{\"dated_mentions\": [], \"relative_unresolved\": [\"今天\"], \"order\": \"按原材料位置，不推定事件先后\", \"conflicts\": \"不同陈述同时保留，日期本身不判真实性\"}",
+      "limitations": [
+        "材料可能有矛盾；相对日期须由用户核对"
+      ]
+    }
+  ]
+}

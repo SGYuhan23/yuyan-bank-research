@@ -1,0 +1,38 @@
+{
+  "id": "3b99026c013f463380ee43702bcff6e1",
+  "case_id": "h1",
+  "family": "machinery-seller",
+  "system": "all",
+  "query": "我是卖二手机床的，对方给我银行转款图片但我还没查自己的账户，能装车交付吗？",
+  "started_at": "2026-10-19T14:35:14.436637+00:00",
+  "cost": null,
+  "cost_reason": "dated model prices not verified",
+  "status": "completed",
+  "output": {
+    "answer": "不能装车交付。仅凭对方提供的银行转款图片（如付款截图、收据）无法确认款项是否真实到账，因为此类图片极易被伪造。您必须亲自登录自己的网上银行或手机银行，核实资金已实际进入您的账户后，方可交付货物。这是防范支付欺诈的关键步骤。",
+    "sources": [
+      "receipt-guidance"
+    ],
+    "unknowns": []
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "baseline_answer",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 5082,
+        "completion_tokens": 85,
+        "prompt_tokens": 4997,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 2.767,
+      "finish_reason": "stop",
+      "request_hash": "dd975f52834d7f2b3a7ce9ebff76621a63bfea2f76fbe4bf442b26183deb16cf"
+    }
+  ],
+  "seconds": 2.77
+}

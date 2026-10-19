@@ -1,0 +1,110 @@
+{
+  "family": "two cycles sharing one treasury hub, unseen in training",
+  "label_caveat": "legitimate and anomalous purpose can have identical observable topology; intended irreducible uncertainty",
+  "results": {
+    "cycle_rule": {
+      "account": {
+        "n": 360,
+        "positive": 180,
+        "pr_auc": 0.5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "fpr": 1.0,
+        "review_budget_k": 36,
+        "recall_at_k": 0.11666666666666667
+      },
+      "transaction": {
+        "n": 400,
+        "positive": 200,
+        "pr_auc": 0.5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "fpr": 1.0,
+        "review_budget_k": 40,
+        "recall_at_k": 0.14
+      },
+      "ring_coverage": {
+        "detected": 40,
+        "total": 40
+      }
+    },
+    "tabular": {
+      "account": {
+        "n": 360,
+        "positive": 180,
+        "pr_auc": 0.4653076768127986,
+        "precision": 0.49070631970260226,
+        "recall": 0.7333333333333333,
+        "fpr": 0.7611111111111111,
+        "review_budget_k": 36,
+        "recall_at_k": 0.08333333333333333
+      },
+      "transaction": {
+        "n": 400,
+        "positive": 200,
+        "pr_auc": 0.4630084171496738,
+        "precision": 0.48024316109422494,
+        "recall": 0.79,
+        "fpr": 0.855,
+        "review_budget_k": 40,
+        "recall_at_k": 0.065
+      },
+      "ring_coverage": {
+        "detected": 12,
+        "total": 40
+      }
+    },
+    "graph_mean": {
+      "account": {
+        "n": 360,
+        "positive": 180,
+        "pr_auc": 0.5192847610879259,
+        "precision": 0.5167464114832536,
+        "recall": 0.6,
+        "fpr": 0.5611111111111111,
+        "review_budget_k": 36,
+        "recall_at_k": 0.10555555555555556
+      },
+      "transaction": {
+        "n": 400,
+        "positive": 200,
+        "pr_auc": 0.5270461131992749,
+        "precision": 0.5451388888888888,
+        "recall": 0.785,
+        "fpr": 0.655,
+        "review_budget_k": 40,
+        "recall_at_k": 0.115
+      },
+      "ring_coverage": {
+        "detected": 2,
+        "total": 40
+      }
+    },
+    "structure_removed": {
+      "account": {
+        "n": 360,
+        "positive": 180,
+        "pr_auc": 0.4653076768127986,
+        "precision": 0.49070631970260226,
+        "recall": 0.7333333333333333,
+        "fpr": 0.7611111111111111,
+        "review_budget_k": 36,
+        "recall_at_k": 0.08333333333333333
+      },
+      "transaction": {
+        "n": 400,
+        "positive": 200,
+        "pr_auc": 0.4630084171496738,
+        "precision": 0.48024316109422494,
+        "recall": 0.79,
+        "fpr": 0.855,
+        "review_budget_k": 40,
+        "recall_at_k": 0.065
+      },
+      "ring_coverage": {
+        "detected": 12,
+        "total": 40
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "7b4eff68bc81486f9619f72d3ad52905",
+  "case_id": "h3",
+  "family": "logistics-repeat",
+  "system": "all",
+  "query": "我公司已经给物流商结过这笔运费，对方说没收到要再付一遍；请给出核实建议。",
+  "started_at": "2026-10-19T14:36:13.056845+00:00",
+  "cost": null,
+  "cost_reason": "dated model prices not verified",
+  "status": "completed",
+  "output": {
+    "answer": "请立即暂停付款，并按以下步骤核实：1. 查阅原始合同或历史付款记录，确认此前支付的收款账户是否与本次对方声称未收到款项所用账户一致；2. 若近期收到过对方要求变更收款账户的邮件或信息，切勿直接采信，须通过已存档的、独立核实过的电话号码（非邮件中提供的联系方式）致电物流商官方客服或对接人，口头确认账户信息及付款状态；3. 登录贵司网银或银行对账单，核实该笔运费是否确已成功划出、到账时间及最终收款户名/账号；4. 如发现账户被篡改或存在异常，立即联系开户行并同步向ACCC ScamWatch举报。",
+    "sources": [
+      "bec-guidance",
+      "bec-case"
+    ],
+    "unknowns": []
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "baseline_answer",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 5179,
+        "completion_tokens": 182,
+        "prompt_tokens": 4997,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 4.829,
+      "finish_reason": "stop",
+      "request_hash": "8edb607ddd0aecc5d6467b48c7b5ef7c5a7caad4d8bdd20dc06ede29566e67cb"
+    }
+  ],
+  "seconds": 4.83
+}

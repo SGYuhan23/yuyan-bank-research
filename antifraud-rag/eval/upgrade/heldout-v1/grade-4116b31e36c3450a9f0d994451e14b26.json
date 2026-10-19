@@ -1,0 +1,50 @@
+{
+  "id": "4116b31e36c3450a9f0d994451e14b26",
+  "reviewer": "same Qwen blinded to system, not independent expert",
+  "grade": {
+    "required_checks": [
+      {
+        "requirement": "登记不能证明具体邀约",
+        "met": true,
+        "output_quote": "ASIC Connect can be used to confirm company registration. However, registration alone doesn’t mean that a company is licensed or authorised to provide financial services. To verify an investment opportunity, check ASIC's Professional Registers Search to see if the company is licensed or authorised."
+      },
+      {
+        "requirement": "独立检查授权及联系信息",
+        "met": true,
+        "output_quote": "Before investing, make sure you verify the licence holder’s name and number on ASIC’s professional registers, and ensure those details match the business or investment opportunity being promoted. Relying solely on advertisements, websites or online search results can put consumers at risk."
+      },
+      {
+        "requirement": "不能保证安全",
+        "met": true,
+        "output_quote": "It's important to know that holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice. It doesn't guarantee the investment is safe or that you won’t lose money from dealing with them."
+      }
+    ],
+    "errors": [],
+    "completion": true,
+    "refusal": false,
+    "uncertain": [
+      "Judge quote not verbatim: ASIC Connect can be used to confirm company registration. However, registration alone doesn’t mean that a company is licensed or authorised to provide financial services. To verify an investment opportunity, check ASIC's Professional Registers Search to see if the company is licensed or authorised.",
+      "Judge quote not verbatim: Before investing, make sure you verify the licence holder’s name and number on ASIC’s professional registers, and ensure those details match the business or investment opportunity being promoted. Relying solely on advertisements, websites or online search results can put consumers at risk.",
+      "Judge quote not verbatim: It's important to know that holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice. It doesn't guarantee the investment is safe or that you won’t lose money from dealing with them."
+    ]
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "blind_auxiliary_grade",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 1658,
+        "completion_tokens": 267,
+        "prompt_tokens": 1391,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 6.516,
+      "finish_reason": "stop",
+      "request_hash": "eee65ee845bf92d1a3920770f9db66822642775ec606ffbf8915b2c40cec9601"
+    }
+  ]
+}

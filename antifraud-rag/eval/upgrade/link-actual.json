@@ -1,0 +1,47 @@
+{
+  "tool": {
+    "call_id": "59677f4b3d3b48efad0a1ea3b053bad1",
+    "case_id": "faa5b874167d462d95ebb1be1ce7bd33",
+    "case_version": 1,
+    "tool_name": "links",
+    "tool_version": "1",
+    "validated_args": {},
+    "args_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "input_evidence": [
+      {
+        "id": "case-input:faa5b874167d462d95ebb1be1ce7bd33",
+        "hash": "7d2e52917668b26b61df737be5b6e36f48585943794ebc727c40d5f3c16f3adb"
+      }
+    ],
+    "status": "partial",
+    "observations": [
+      {
+        "evidence_id": "4db515e83af3405fb0aa592667d00fbc",
+        "statement": "{\"hostname\": \"example.invalid\", \"scheme\": \"https\", \"private_or_local\": false, \"credentials_present\": false, \"query_and_path_not_sent\": true, \"reputation\": \"unavailable\", \"visited\": false}"
+      }
+    ],
+    "limitations": [],
+    "latency_seconds": 0.001,
+    "usage": null,
+    "data_origin": "user_supplied"
+  },
+  "evidence": [
+    {
+      "evidence_id": "4db515e83af3405fb0aa592667d00fbc",
+      "case_id": "faa5b874167d462d95ebb1be1ce7bd33",
+      "case_version": 1,
+      "kind": "tool_observation",
+      "origin_id": "59677f4b3d3b48efad0a1ea3b053bad1",
+      "span": {
+        "material": "URL origin only"
+      },
+      "source_hash": "c69da44f469418e457f7061d92703226191b8884d1d242bcd624bb6c4a656a91",
+      "observed_at": "2026-10-19T14:33:20.389997+00:00",
+      "jurisdiction": "Australia",
+      "statement": "{\"hostname\": \"example.invalid\", \"scheme\": \"https\", \"private_or_local\": false, \"credentials_present\": false, \"query_and_path_not_sent\": true, \"reputation\": \"unavailable\", \"visited\": false}",
+      "limitations": [
+        "not_flagged不代表安全；未访问网址；未检查路径和查询参数；域名不是邀约真实性证明"
+      ]
+    }
+  ]
+}

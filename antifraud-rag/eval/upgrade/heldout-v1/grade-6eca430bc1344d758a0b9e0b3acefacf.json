@@ -1,0 +1,49 @@
+{
+  "id": "6eca430bc1344d758a0b9e0b3acefacf",
+  "reviewer": "same Qwen blinded to system, not independent expert",
+  "grade": {
+    "required_checks": [
+      {
+        "requirement": "对方声称未收到此前这笔款的前提",
+        "met": true,
+        "output_quote": "对方说没收到要再付一遍"
+      },
+      {
+        "requirement": "该笔付款历史及邮件账户修改请求",
+        "met": true,
+        "output_quote": "查阅原始合同与历史付款记录，确认运费是否已支付及收款账户信息；检查近期是否收到过任何要求变更收款账户的邮件或通知，尤其注意发件人邮箱是否异常"
+      },
+      {
+        "requirement": "调查前不重复该笔付款",
+        "met": true,
+        "output_quote": "请立即暂停付款"
+      }
+    ],
+    "errors": [],
+    "completion": true,
+    "refusal": false,
+    "uncertain": [
+      "Judge quote not verbatim: 对方说没收到要再付一遍",
+      "Judge quote not verbatim: 查阅原始合同与历史付款记录，确认运费是否已支付及收款账户信息；检查近期是否收到过任何要求变更收款账户的邮件或通知，尤其注意发件人邮箱是否异常"
+    ]
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "blind_auxiliary_grade",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 1419,
+        "completion_tokens": 183,
+        "prompt_tokens": 1236,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 4.558,
+      "finish_reason": "stop",
+      "request_hash": "ed6a48786853a318c681f399939a81bff31945b3a76bc12ac81e37c0e633815d"
+    }
+  ]
+}

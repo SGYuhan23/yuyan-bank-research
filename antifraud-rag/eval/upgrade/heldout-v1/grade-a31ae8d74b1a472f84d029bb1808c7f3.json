@@ -1,0 +1,52 @@
+{
+  "id": "a31ae8d74b1a472f84d029bb1808c7f3",
+  "reviewer": "same Qwen blinded to system, not independent expert",
+  "grade": {
+    "required_checks": [
+      {
+        "requirement": "对方声称未收到此前这笔款的前提",
+        "met": false,
+        "output_quote": ""
+      },
+      {
+        "requirement": "该笔付款历史及邮件账户修改请求",
+        "met": false,
+        "output_quote": ""
+      },
+      {
+        "requirement": "调查前不重复该笔付款",
+        "met": false,
+        "output_quote": ""
+      }
+    ],
+    "errors": [
+      {
+        "type": "omission",
+        "quote": "",
+        "reason": "输出为空（null），未提供任何核实建议，完全遗漏全部三项必需检查项；参考要求明确需覆盖'前提''历史及邮件账户修改请求''调查前不重复付款'，但输出未响应任一要求。"
+      }
+    ],
+    "completion": false,
+    "refusal": true,
+    "uncertain": []
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "blind_auxiliary_grade",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 1275,
+        "completion_tokens": 201,
+        "prompt_tokens": 1074,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 4.948,
+      "finish_reason": "stop",
+      "request_hash": "b22e038522a428f57f5346ff886948ba454bd264547f477cb596e2497b353d52"
+    }
+  ]
+}

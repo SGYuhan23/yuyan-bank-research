@@ -1,0 +1,90 @@
+{
+  "reviewer": "Codex project author, non-blind source audit, not bank expert",
+  "sample": "12 selected outputs/failures across all six families; not full independent scoring",
+  "findings": [
+    {
+      "file": "h1-all.json",
+      "quote": "您必须亲自登录自己的网上银行或手机银行，核实资金已实际进入您的账户后，方可交付货物。",
+      "finding": "核心到账步骤得到receipt-guidance支持；具体交易真实性仍未知。",
+      "assessment": "supported_core",
+      "quote_verified_in_raw": true
+    },
+    {
+      "file": "h1-tools.json",
+      "quote": "UNSUPPORTED_QUOTE:receipt-guidance",
+      "finding": "BM25有正命中但只取到bec来源；因此不触发无命中语义兜底，后续生成引用了未取得的receipt来源而失败。不是引用校验可以修补的召回问题。",
+      "assessment": "failed_retrieval_coverage",
+      "quote_verified_in_raw": true
+    },
+    {
+      "file": "h2-all.json",
+      "quote": "并在财务系统中留痕",
+      "finding": "当前原文未规定此内部流程；同答还展开用户未问PayID。引用存在不代表全部步骤支持。",
+      "assessment": "unsupported_specificity",
+      "quote_verified_in_raw": true
+    },
+    {
+      "file": "h2-tools.json",
+      "quote": "CONDITIONS_NOT_PRESERVED",
+      "finding": "旧规则匹配“一定是诈骗”等短语，否定句中的同样短语也触发。保留集未为此调规则，记录为误拒绝风险。",
+      "assessment": "false_rejection",
+      "quote_verified_in_raw": true
+    },
+    {
+      "file": "h3-tools.json",
+      "quote": "在完成上述调查前，不得就该笔运费再次支付。",
+      "finding": "此前未收到、付款历史、邮件和同笔重复付款对象均保留。首步“银行端是否已成功支付并到账”较原文payment history具体，不能理解为本系统可验证收款账户。",
+      "assessment": "core_supported_with_specificity_caveat",
+      "quote_verified_in_raw": true
+    },
+    {
+      "file": "h3-same_observations.json",
+      "quote": "银行入账查询编号（BSB/Account Number）",
+      "finding": "BSB/账户号码不是入账查询编号，且原文没有要求这一编号。辅助盲评未报错，说明同模型评审并不可靠。",
+      "assessment": "unsupported_and_incorrect",
+      "quote_verified_in_raw": true
+    },
+    {
+      "file": "h4-tools.json",
+      "quote": "OUTPUT_SCOPE_REVIEW_FAILED",
+      "finding": "因审核结构/范围检查未通过而拒绝输出；不可计为正确回答。",
+      "assessment": "failed",
+      "quote_verified_in_raw": true
+    },
+    {
+      "file": "h5-all.json",
+      "quote": "$2.18亿总损失",
+      "finding": "来源为$2.18 billion，即21.8亿澳元，模型写成2.18亿。另把本项目limitations注释称为公开指引原文，来源类型混淆。拒绝个体概率的方向正确，但金额与引文口径错误。",
+      "assessment": "amount_and_provenance_error",
+      "quote_verified_in_raw": true
+    },
+    {
+      "file": "h5-same_observations.json",
+      "quote": "$2.18亿总损失",
+      "finding": "同样存在十倍金额口径错误。John专用金额规则并不覆盖全国统计单位。",
+      "assessment": "amount_error",
+      "quote_verified_in_raw": true
+    },
+    {
+      "file": "h5-tools.json",
+      "quote": "全国举报统计不能用于计算单个Westpac客户被骗概率",
+      "finding": "正确限制所请求的个体推断；状态needs_input不应简单当作回答质量失败或答案完成。",
+      "assessment": "appropriate_limitation",
+      "quote_verified_in_raw": true
+    },
+    {
+      "file": "h6-all.json",
+      "quote": "不执行任何付款或账户信息变更",
+      "finding": "未知角色消息被套进付款账户场景并扩大对象，参考要求应澄清。",
+      "assessment": "wrong_role_overbroad",
+      "quote_verified_in_raw": true
+    },
+    {
+      "file": "h6-tools.json",
+      "quote": "您当前的角色是什么",
+      "finding": "先询问角色和消息类型，未虚构业务情境；合理澄清。",
+      "assessment": "appropriate_clarification",
+      "quote_verified_in_raw": true
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "b76bf249e8b74b55a99f25c98d8f53a3",
+  "reviewer": "same Qwen blinded to system, not independent expert",
+  "grade": {
+    "required_checks": [
+      {
+        "requirement": "登记不能证明具体邀约",
+        "met": true,
+        "output_quote": "公司注册仅表明其为合法实体，不等于获准从事金融活动"
+      },
+      {
+        "requirement": "独立检查授权及联系信息",
+        "met": true,
+        "output_quote": "必须通过ASIC官方渠道（如Professional Registers Search）核验牌照状态、授权范围及网址一致性，并查阅Moneysmart投资者警示名单和ASIC Connect禁令名单，不可依赖邀约中提供的链接或联系方式"
+      },
+      {
+        "requirement": "不能保证安全",
+        "met": true,
+        "output_quote": "AFS牌照也不代表ASIC认可该投资产品或保证资金安全"
+      }
+    ],
+    "errors": [],
+    "completion": true,
+    "refusal": false,
+    "uncertain": []
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "blind_auxiliary_grade",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 1739,
+        "completion_tokens": 197,
+        "prompt_tokens": 1542,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 5.834,
+      "finish_reason": "stop",
+      "request_hash": "b7335b0b7611f556ee5fcab8e571551995995f38a8b1acd462f0bfe4ce081e73"
+    }
+  ]
+}

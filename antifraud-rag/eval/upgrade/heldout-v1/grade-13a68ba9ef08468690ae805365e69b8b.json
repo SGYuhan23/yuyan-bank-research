@@ -1,0 +1,50 @@
+{
+  "id": "13a68ba9ef08468690ae805365e69b8b",
+  "reviewer": "same Qwen blinded to system, not independent expert",
+  "grade": {
+    "required_checks": [
+      {
+        "requirement": "缺个体风险分母",
+        "met": true,
+        "output_quote": "全国举报统计……其数据来源、口径和样本均不针对Westpac客户，也不包含客户个体特征、行为或账户信息，因此无法用于计算某个具体Westpac客户被骗的概率。"
+      },
+      {
+        "requirement": "全国不是Westpac客户样本",
+        "met": true,
+        "output_quote": "全国举报统计（如Scamwatch、ReportCyber等机构汇总的$2.18亿总损失、481,523起报告）反映的是澳大利亚整体 scam活动趋势，其数据来源、口径和样本均不针对Westpac客户……"
+      },
+      {
+        "requirement": "不提供概率",
+        "met": true,
+        "output_quote": "不能。……因此无法用于计算某个具体Westpac客户被骗的概率。银行反诈培训中强调：统计数字不可用于个体风险推断……"
+      }
+    ],
+    "errors": [],
+    "completion": true,
+    "refusal": false,
+    "uncertain": [
+      "Judge quote not verbatim: 全国举报统计……其数据来源、口径和样本均不针对Westpac客户，也不包含客户个体特征、行为或账户信息，因此无法用于计算某个具体Westpac客户被骗的概率。",
+      "Judge quote not verbatim: 全国举报统计（如Scamwatch、ReportCyber等机构汇总的$2.18亿总损失、481,523起报告）反映的是澳大利亚整体 scam活动趋势，其数据来源、口径和样本均不针对Westpac客户……",
+      "Judge quote not verbatim: 不能。……因此无法用于计算某个具体Westpac客户被骗的概率。银行反诈培训中强调：统计数字不可用于个体风险推断……"
+    ]
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "blind_auxiliary_grade",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 1597,
+        "completion_tokens": 249,
+        "prompt_tokens": 1348,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 5.959,
+      "finish_reason": "stop",
+      "request_hash": "60c4534b224c94b8c84137af1c1974873b13360e691619cb9e12c914e44f2d93"
+    }
+  ]
+}

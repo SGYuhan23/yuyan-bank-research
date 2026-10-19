@@ -1,0 +1,230 @@
+{
+  "id": "0fbf6029b84245a88b2e1a4dc6d4586b",
+  "case_id": "h2",
+  "family": "school-contractor",
+  "system": "fixed",
+  "query": "学校采购的正规承包商确实可能换银行。现在来信通知更换收款账号，我作为付款人员如何核实本次请求？",
+  "started_at": "2026-10-19T14:35:26.810230+00:00",
+  "cost": null,
+  "cost_reason": "dated model prices not verified",
+  "status": "failed",
+  "output": null,
+  "run_id": "d9af045dfbed4200",
+  "records": [
+    {
+      "sequence": 1,
+      "at": "2026-10-19T14:35:26.827389+00:00",
+      "kind": "task_identified",
+      "task": "knowledge",
+      "query": "学校采购的正规承包商确实可能换银行。现在来信通知更换收款账号，我作为付款人员如何核实本次请求？"
+    },
+    {
+      "sequence": 2,
+      "at": "2026-10-19T14:35:26.829515+00:00",
+      "kind": "retrieval_started",
+      "method": "bm25"
+    },
+    {
+      "sequence": 3,
+      "at": "2026-10-19T14:35:26.836817+00:00",
+      "kind": "retrieval_attempt_completed",
+      "method": "bm25",
+      "unit_ids": [
+        "bec-guidance",
+        "bec-case",
+        "receipt-guidance"
+      ],
+      "source_ids": [
+        "westpac-bec",
+        "scamwatch-case",
+        "westpac-receipt"
+      ]
+    },
+    {
+      "sequence": 4,
+      "at": "2026-10-19T14:35:26.838241+00:00",
+      "kind": "retrieval_completed",
+      "ranked": [
+        {
+          "unit_id": "bec-guidance",
+          "score": 6.114519
+        },
+        {
+          "unit_id": "bec-case",
+          "score": 1.76884
+        },
+        {
+          "unit_id": "receipt-guidance",
+          "score": 1.507153
+        }
+      ],
+      "index_sha256": "f01ad3a4a244f5c15592d8435131c7e8d6b8ed2390280ee8503f6d159e9e511a",
+      "test_fixture_ids": []
+    },
+    {
+      "sequence": 5,
+      "at": "2026-10-19T14:35:26.841263+00:00",
+      "kind": "model_started",
+      "phase": "evidence_adequacy"
+    },
+    {
+      "sequence": 6,
+      "at": "2026-10-19T14:35:29.666768+00:00",
+      "kind": "model_call",
+      "phase": "evidence_adequacy",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 3983,
+        "completion_tokens": 98,
+        "prompt_tokens": 3885,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 2.824,
+      "finish_reason": "stop",
+      "request_hash": "b4be5d756cc226dd9c9ad50b29e93e1750fd00ae377d14534a380bf69cfea30c"
+    },
+    {
+      "sequence": 7,
+      "at": "2026-10-19T14:35:29.672092+00:00",
+      "kind": "adequacy_checked",
+      "sufficient": true,
+      "task_scenes": [
+        {
+          "scene": "account_change",
+          "question_basis": "学校采购的正规承包商确实可能换银行。现在来信通知更换收款账号，我作为付款人员如何核实本次请求？"
+        }
+      ],
+      "relevant_ids": [
+        "bec-guidance",
+        "bec-case"
+      ],
+      "missing": [],
+      "conflicts": [],
+      "calculation": "none"
+    },
+    {
+      "sequence": 8,
+      "at": "2026-10-19T14:35:29.683508+00:00",
+      "kind": "model_started",
+      "phase": "generate"
+    },
+    {
+      "sequence": 9,
+      "at": "2026-10-19T14:35:41.577763+00:00",
+      "kind": "model_call",
+      "phase": "generate",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 3872,
+        "completion_tokens": 509,
+        "prompt_tokens": 3363,
+        "prompt_tokens_details": {
+          "cached_tokens": 1792
+        }
+      },
+      "duration_seconds": 11.891,
+      "finish_reason": "stop",
+      "request_hash": "72eab63f9e3dd2b50372e45bf39abb1c9f551d77b2febee4f3facad355ebc0c6"
+    },
+    {
+      "sequence": 10,
+      "at": "2026-10-19T14:35:41.589367+00:00",
+      "kind": "citation_materialized",
+      "unit_id": "bec-guidance",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "sequence": 11,
+      "at": "2026-10-19T14:35:41.593712+00:00",
+      "kind": "citation_materialized",
+      "unit_id": "bec-guidance",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "sequence": 12,
+      "at": "2026-10-19T14:35:41.600805+00:00",
+      "kind": "citation_materialized",
+      "unit_id": "bec-case",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "sequence": 13,
+      "at": "2026-10-19T14:35:41.604085+00:00",
+      "kind": "citation_materialized",
+      "unit_id": "bec-case",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "sequence": 14,
+      "at": "2026-10-19T14:35:41.609678+00:00",
+      "kind": "condition_guard_failed",
+      "issues": [
+        "没有具体交易证据，不能确定性断言骗子控制线路或已经构成诈骗。"
+      ]
+    },
+    {
+      "sequence": 15,
+      "at": "2026-10-19T14:35:41.613807+00:00",
+      "kind": "model_started",
+      "phase": "repair_conditions"
+    },
+    {
+      "sequence": 16,
+      "at": "2026-10-19T14:35:53.893403+00:00",
+      "kind": "model_call",
+      "phase": "repair_conditions",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 5615,
+        "completion_tokens": 509,
+        "prompt_tokens": 5106,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 12.277,
+      "finish_reason": "stop",
+      "request_hash": "cf773c825e2250d0b89e96709113b9eccc73050268cf15839dc47a57f7cd1130"
+    },
+    {
+      "sequence": 17,
+      "at": "2026-10-19T14:35:53.902771+00:00",
+      "kind": "citation_materialized",
+      "unit_id": "bec-guidance",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "sequence": 18,
+      "at": "2026-10-19T14:35:53.906639+00:00",
+      "kind": "citation_materialized",
+      "unit_id": "bec-guidance",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "sequence": 19,
+      "at": "2026-10-19T14:35:53.916870+00:00",
+      "kind": "citation_materialized",
+      "unit_id": "bec-case",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "sequence": 20,
+      "at": "2026-10-19T14:35:53.920501+00:00",
+      "kind": "citation_materialized",
+      "unit_id": "bec-case",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "sequence": 21,
+      "at": "2026-10-19T14:35:53.924873+00:00",
+      "kind": "failed",
+      "error": "CONDITIONS_NOT_PRESERVED:['没有具体交易证据，不能确定性断言骗子控制线路或已经构成诈骗。']"
+    }
+  ],
+  "seconds": 27.119
+}

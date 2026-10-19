@@ -1,0 +1,61 @@
+{
+  "id": "625be2f578224fe99cd0625c715c2134",
+  "reviewer": "same Qwen blinded to system, not independent expert",
+  "grade": {
+    "required_checks": [
+      {
+        "requirement": "登记不能证明具体邀约",
+        "met": true,
+        "output_quote": "登记 alone doesn’t mean that a company is licensed or authorised to provide financial services."
+      },
+      {
+        "requirement": "独立检查授权及联系信息",
+        "met": true,
+        "output_quote": "Before investing, make sure you verify the licence holder’s name and number on ASIC’s professional registers, and ensure those details match the business or investment opportunity being promoted. Relying solely on advertisements, websites or online search results can put consumers at risk."
+      },
+      {
+        "requirement": "不能保证安全",
+        "met": true,
+        "output_quote": "It's important to know that holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice. It doesn't guarantee the investment is safe or that you won’t lose money from dealing with them."
+      }
+    ],
+    "errors": [
+      {
+        "type": "wrong_role",
+        "quote": "ValueError: OUTPUT_SCOPE_REVIEW_FAILED:[]",
+        "reason": "输出为系统错误（ValueError），非面向用户的自然语言响应，完全未履行盲评辅助角色；应提供结构化核验建议而非抛出异常"
+      },
+      {
+        "type": "omission",
+        "quote": "ValueError: OUTPUT_SCOPE_REVIEW_FAILED:[]",
+        "reason": "未执行任何要求的核验动作（如指出登记≠邀约真实、未提示独立查证ASIC register、未否定安全保证），全部required_checks虽在原文存在，但输出中零引用、零传达"
+      }
+    ],
+    "completion": false,
+    "refusal": false,
+    "uncertain": [
+      "Judge quote not verbatim: 登记 alone doesn’t mean that a company is licensed or authorised to provide financial services.",
+      "Judge quote not verbatim: Before investing, make sure you verify the licence holder’s name and number on ASIC’s professional registers, and ensure those details match the business or investment opportunity being promoted. Relying solely on advertisements, websites or online search results can put consumers at risk.",
+      "Judge quote not verbatim: It's important to know that holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice. It doesn't guarantee the investment is safe or that you won’t lose money from dealing with them."
+    ]
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "blind_auxiliary_grade",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 1809,
+        "completion_tokens": 383,
+        "prompt_tokens": 1426,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 8.893,
+      "finish_reason": "stop",
+      "request_hash": "4925f4b025db0c4951aaaae27c68018c4e127e3307018d84f2719875c7ac5ccd"
+    }
+  ]
+}

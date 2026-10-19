@@ -1,0 +1,56 @@
+{
+  "retrieved": {
+    "n": 6,
+    "completed": 5,
+    "seconds": 121.806,
+    "model_calls": 5,
+    "input_tokens": 13208,
+    "output_tokens": 777,
+    "cost": null
+  },
+  "direct": {
+    "n": 6,
+    "completed": 6,
+    "seconds": 17.328,
+    "model_calls": 6,
+    "input_tokens": 2503,
+    "output_tokens": 627,
+    "cost": null
+  },
+  "tools": {
+    "n": 6,
+    "completed": 1,
+    "seconds": 174.64600000000002,
+    "model_calls": 26,
+    "input_tokens": 62707,
+    "output_tokens": 6994,
+    "cost": null
+  },
+  "same_observations": {
+    "n": 6,
+    "completed": 6,
+    "seconds": 24.247999999999998,
+    "model_calls": 6,
+    "input_tokens": 19135,
+    "output_tokens": 826,
+    "cost": null
+  },
+  "all": {
+    "n": 6,
+    "completed": 6,
+    "seconds": 27.034,
+    "model_calls": 6,
+    "input_tokens": 29965,
+    "output_tokens": 867,
+    "cost": null
+  },
+  "fixed": {
+    "n": 6,
+    "completed": 2,
+    "seconds": 168.676,
+    "model_calls": 15,
+    "input_tokens": 53554,
+    "output_tokens": 5027,
+    "cost": null
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "run_id": "068a628861a64cd9a602e19ea4adf302",
+  "case_id": "3647a6e69983491985e12a88b7688968",
+  "case_version": 2,
+  "query": "我是卖方，对方提供这张付款截图。交货前该核实什么？",
+  "status": "failed",
+  "records": [
+    {
+      "kind": "model_call",
+      "at": "2026-10-19T14:58:00.389500+00:00",
+      "phase": "plan",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 792,
+        "completion_tokens": 65,
+        "prompt_tokens": 727,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        }
+      },
+      "duration_seconds": 1.988,
+      "finish_reason": "stop",
+      "request_hash": "806372a94c1917520f7e8f81f2789e78db0e22c586e41e46c945938ad8a4027d"
+    },
+    {
+      "kind": "next_action",
+      "at": "2026-10-19T14:58:00.389690+00:00",
+      "action": "call_tools",
+      "calls": [
+        {
+          "tool_name": "guidance",
+          "args": {}
+        },
+        {
+          "tool_name": "extract",
+          "args": {}
+        }
+      ],
+      "questions": [],
+      "summary": "需先获取通用安全收款指引，并从付款截图中提取关键信息（如交易号、金额、时间、对方账户等），为后续核实提供依据。"
+    },
+    {
+      "kind": "failed",
+      "at": "2026-10-19T14:58:00.390255+00:00",
+      "error": "ValueError: EXTRACTION_MUST_PRECEDE_DEPENDENT_TOOLS"
+    }
+  ],
+  "tool_results": [],
+  "recommendations": [],
+  "started_at": "2026-10-19T14:57:58.390349+00:00",
+  "execution": "live",
+  "error": "ValueError: EXTRACTION_MUST_PRECEDE_DEPENDENT_TOOLS",
+  "finished_at": "2026-10-19T14:58:00.390414+00:00",
+  "duration_seconds": 2.0,
+  "evidence": []
+}

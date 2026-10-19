@@ -1,0 +1,31 @@
+{
+  "output": {
+    "answer": "交货前必须亲自登录自己的网上银行或手机银行，确认17,000澳元已真实到账；切勿仅凭对方提供的付款截图（可能被伪造）放货。如对方要求变更收款账户、升级PayID或提供新账户信息，须通过您自己掌握的可靠电话号码（非截图或邮件中提供的号码）进行语音核实。",
+    "sources": [
+      "receipt-guidance",
+      "bec-guidance"
+    ],
+    "unknowns": []
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "baseline_answer",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 3684,
+        "completion_tokens": 104,
+        "prompt_tokens": 3580,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 2.929,
+      "finish_reason": "stop",
+      "request_hash": "5cce91c15662508bd1339e14f439fa5a98c5f17ba541040888ad8ad5a25ed48c"
+    }
+  ],
+  "input_observation_run_id": "22201878577546c9a7f262c63bab170d",
+  "input_capability": "same extracted text observations; no direct image advantage"
+}

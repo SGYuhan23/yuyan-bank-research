@@ -1,0 +1,48 @@
+{
+  "id": "42380b74b82943b18e40ba93fa6c6ec7",
+  "reviewer": "same Qwen blinded to system, not independent expert",
+  "grade": {
+    "required_checks": [
+      {
+        "requirement": "缺个体风险分母",
+        "met": true,
+        "output_quote": "全国举报统计（如Scamwatch 2025年报告中$2.18亿总损失、481,523份报告）反映的是全澳多机构汇总的宏观趋势，不是Westpac客户样本数据，也不包含客户个体特征、行为、风控措施等变量，因此无法用于计算某个具体Westpac客户被骗的概率。"
+      },
+      {
+        "requirement": "全国不是Westpac客户样本",
+        "met": true,
+        "output_quote": "全国举报统计（如Scamwatch 2025年报告中$2.18亿总损失、481,523份报告）反映的是全澳多机构汇总的宏观趋势，不是Westpac客户样本数据……"
+      },
+      {
+        "requirement": "不提供概率",
+        "met": true,
+        "output_quote": "因此无法用于计算某个具体Westpac客户被骗的概率。公开指引明确指出：'全国多机构合并举报口径，不是Westpac客户样本；不能推算单个客户风险。'"
+      }
+    ],
+    "errors": [],
+    "completion": true,
+    "refusal": false,
+    "uncertain": [
+      "Judge quote not verbatim: 全国举报统计（如Scamwatch 2025年报告中$2.18亿总损失、481,523份报告）反映的是全澳多机构汇总的宏观趋势，不是Westpac客户样本数据……"
+    ]
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "blind_auxiliary_grade",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 1627,
+        "completion_tokens": 290,
+        "prompt_tokens": 1337,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 7.832,
+      "finish_reason": "stop",
+      "request_hash": "659ac3c6b7adcae161f898cb47cec938b50534f3ebfd07e391563b79be34adef"
+    }
+  ]
+}

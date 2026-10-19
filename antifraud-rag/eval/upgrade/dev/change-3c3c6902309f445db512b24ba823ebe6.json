@@ -1,0 +1,64 @@
+{
+  "run_id": "3c3c6902309f445db512b24ba823ebe6",
+  "case_id": "07e545bc6a964d9f96500d5413f42ab6",
+  "case_version": 1,
+  "status": "failed",
+  "records": [
+    {
+      "kind": "model_call",
+      "at": "2026-10-19T14:23:01.853835+00:00",
+      "phase": "plan",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 892,
+        "completion_tokens": 80,
+        "prompt_tokens": 812,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        }
+      },
+      "duration_seconds": 2.323,
+      "finish_reason": "stop",
+      "request_hash": "46afb154f11b255b52a129540823002ad424a199c428248a41e27256a0b871d9"
+    },
+    {
+      "kind": "next_action",
+      "at": "2026-10-19T14:23:01.853985+00:00",
+      "action": "call_tools",
+      "calls": [
+        {
+          "tool_name": "guidance",
+          "args": {
+            "query": "老合作方说换了卡号，让我们今天打钱，先做什么？",
+            "role": "企业付款",
+            "mode": "case"
+          }
+        }
+      ],
+      "questions": [],
+      "summary": "依据公开安全指引，需先通过独立可信渠道核实收款方账户变更请求的真实性。"
+    },
+    {
+      "kind": "tools_started",
+      "at": "2026-10-19T14:23:01.855286+00:00",
+      "names": [
+        "guidance"
+      ],
+      "concurrent": false
+    },
+    {
+      "kind": "failed",
+      "at": "2026-10-19T14:23:01.855934+00:00",
+      "error": "ValueError: UNEXPECTED_TOOL_ARGUMENT"
+    }
+  ],
+  "tool_results": [],
+  "recommendations": [],
+  "started_at": "2026-10-19T14:22:59.524549+00:00",
+  "execution": "live",
+  "error": "ValueError: UNEXPECTED_TOOL_ARGUMENT",
+  "finished_at": "2026-10-19T14:23:01.855985+00:00",
+  "duration_seconds": 2.331,
+  "evidence": []
+}

@@ -1,0 +1,38 @@
+{
+  "id": "42380b74b82943b18e40ba93fa6c6ec7",
+  "case_id": "h5",
+  "family": "individual-statistics",
+  "system": "all",
+  "query": "我是培训学员，能用全国举报统计计算某个Westpac客户被骗概率吗？",
+  "started_at": "2026-10-19T14:48:44.761255+00:00",
+  "cost": null,
+  "cost_reason": "dated model prices not verified",
+  "status": "completed",
+  "output": {
+    "answer": "不能。全国举报统计（如Scamwatch 2025年报告中$2.18亿总损失、481,523份报告）反映的是全澳多机构汇总的宏观趋势，不是Westpac客户样本数据，也不包含客户个体特征、行为、风控措施等变量，因此无法用于计算某个具体Westpac客户被骗的概率。公开指引明确指出：'全国多机构合并举报口径，不是Westpac客户样本；不能推算单个客户风险。'",
+    "sources": [
+      "national-statistics"
+    ],
+    "unknowns": []
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "baseline_answer",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 5116,
+        "completion_tokens": 126,
+        "prompt_tokens": 4990,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 3.695,
+      "finish_reason": "stop",
+      "request_hash": "052cd9f3e65a5e7786a4271d070a2307b0d6902d43c6a65c6bb6779812259c57"
+    }
+  ],
+  "seconds": 3.696
+}

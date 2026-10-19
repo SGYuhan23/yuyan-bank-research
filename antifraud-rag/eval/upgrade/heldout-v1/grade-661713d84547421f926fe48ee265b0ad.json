@@ -1,0 +1,52 @@
+{
+  "id": "661713d84547421f926fe48ee265b0ad",
+  "reviewer": "same Qwen blinded to system, not independent expert",
+  "grade": {
+    "required_checks": [
+      {
+        "requirement": "自己的网银/手机银行实际到账",
+        "met": false,
+        "output_quote": ""
+      },
+      {
+        "requirement": "凭证不能代替到账核对",
+        "met": false,
+        "output_quote": ""
+      },
+      {
+        "requirement": "针对本次交货",
+        "met": false,
+        "output_quote": ""
+      }
+    ],
+    "errors": [
+      {
+        "type": "omission",
+        "quote": "",
+        "reason": "输出为空（null），未提供任何判断、建议或引用，完全遗漏对三项必需核查点的回应，也未体现‘凭证不能代替到账核对’这一核心警示。"
+      }
+    ],
+    "completion": false,
+    "refusal": false,
+    "uncertain": []
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "blind_auxiliary_grade",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 1237,
+        "completion_tokens": 185,
+        "prompt_tokens": 1052,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 4.749,
+      "finish_reason": "stop",
+      "request_hash": "fc373b242d5e31a1cb35d3a8ca34a7be5401c791b81ab99e83c1a819bb8d64a0"
+    }
+  ]
+}

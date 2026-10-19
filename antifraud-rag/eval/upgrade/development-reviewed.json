@@ -1,0 +1,125 @@
+[
+  {
+    "run_id": "09308b677b5d41e6a919e16e54631795",
+    "file": "antifraud-rag/eval/upgrade/dev/change-09308b677b5d41e6a919e16e54631795.json",
+    "status": "pending_review",
+    "retrieval": [
+      {
+        "kind": "retrieval_started",
+        "at": "2026-10-19T14:32:40.317363+00:00",
+        "method": "bm25"
+      },
+      {
+        "kind": "retrieval_attempt_completed",
+        "at": "2026-10-19T14:32:40.324490+00:00",
+        "method": "bm25",
+        "unit_ids": [],
+        "source_ids": []
+      },
+      {
+        "kind": "retrieval_fallback",
+        "at": "2026-10-19T14:32:40.324520+00:00",
+        "from_method": "bm25",
+        "to_method": "semantic",
+        "reason": "bm25_no_positive_score"
+      },
+      {
+        "kind": "retrieval_started",
+        "at": "2026-10-19T14:32:40.324525+00:00",
+        "method": "semantic"
+      },
+      {
+        "kind": "retrieval_attempt_completed",
+        "at": "2026-10-19T14:32:40.727223+00:00",
+        "method": "semantic",
+        "unit_ids": [
+          "bec-guidance",
+          "bec-case",
+          "receipt-guidance"
+        ],
+        "source_ids": [
+          "westpac-bec",
+          "scamwatch-case",
+          "westpac-receipt"
+        ]
+      }
+    ],
+    "source_review": "Codex project author, not bank expert",
+    "verdict": "core role and bounded action retained; does not verify real funds"
+  },
+  {
+    "run_id": "d4192aa782714864a19f8b3e94b31840",
+    "file": "antifraud-rag/eval/upgrade/dev/unpaid-d4192aa782714864a19f8b3e94b31840.json",
+    "status": "pending_review",
+    "retrieval": [
+      {
+        "kind": "retrieval_started",
+        "at": "2026-10-19T14:33:21.517691+00:00",
+        "method": "bm25"
+      },
+      {
+        "kind": "retrieval_attempt_completed",
+        "at": "2026-10-19T14:33:21.524138+00:00",
+        "method": "bm25",
+        "unit_ids": [
+          "bec-guidance",
+          "bec-case"
+        ],
+        "source_ids": [
+          "westpac-bec",
+          "scamwatch-case"
+        ]
+      }
+    ],
+    "source_review": "Codex project author, not bank expert",
+    "verdict": "core role and bounded action retained; does not verify real funds"
+  },
+  {
+    "run_id": "236e9c618f2240cca79b771749fe2e20",
+    "file": "antifraud-rag/eval/upgrade/dev/seller-236e9c618f2240cca79b771749fe2e20.json",
+    "status": "pending_review",
+    "retrieval": [
+      {
+        "kind": "retrieval_started",
+        "at": "2026-10-19T14:32:02.878943+00:00",
+        "method": "bm25"
+      },
+      {
+        "kind": "retrieval_attempt_completed",
+        "at": "2026-10-19T14:32:02.889004+00:00",
+        "method": "bm25",
+        "unit_ids": [],
+        "source_ids": []
+      },
+      {
+        "kind": "retrieval_fallback",
+        "at": "2026-10-19T14:32:02.889016+00:00",
+        "from_method": "bm25",
+        "to_method": "semantic",
+        "reason": "bm25_no_positive_score"
+      },
+      {
+        "kind": "retrieval_started",
+        "at": "2026-10-19T14:32:02.889020+00:00",
+        "method": "semantic"
+      },
+      {
+        "kind": "retrieval_attempt_completed",
+        "at": "2026-10-19T14:32:03.189312+00:00",
+        "method": "semantic",
+        "unit_ids": [
+          "receipt-guidance",
+          "bec-case",
+          "bec-guidance"
+        ],
+        "source_ids": [
+          "westpac-receipt",
+          "scamwatch-case",
+          "westpac-bec"
+        ]
+      }
+    ],
+    "source_review": "Codex project author, not bank expert",
+    "verdict": "core role and bounded action retained; does not verify real funds"
+  }
+]

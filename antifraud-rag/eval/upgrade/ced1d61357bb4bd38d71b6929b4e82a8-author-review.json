@@ -1,0 +1,16 @@
+{
+  "request": {
+    "request_id": "author-reject-ced1d61357bb4bd38d71b6929b4e82a8",
+    "case_id": "f5a96ccc5ce4416bafbc12f002fdb071",
+    "case_version": 2,
+    "result_id": "ced1d61357bb4bd38d71b6929b4e82a8",
+    "operator": "Codex-project-author-source-review-not-bank-expert",
+    "decision": "reject",
+    "note": "账户变更场景的追问混入付款历史/凭证，用户未说明此前款未收到；同模型审核漏检。",
+    "revisions": []
+  },
+  "at": "2026-10-19T15:03:27.693798+00:00",
+  "evidence_version_hash": "e0aa7c1461ecf73bc865909fd3632bd36a3b3651eb6235852f893a6e83a0d861",
+  "identity_notice": "local operator name, not authenticated enterprise identity",
+  "revision_notice": "human-authored revision, not model validation"
+}

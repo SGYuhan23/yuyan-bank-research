@@ -80,3 +80,36 @@ class AdapterRegression(unittest.TestCase):
   from pipeline import preserve_case_loss,CASE_LOSS_TEXT
   units=json.loads((Path(__file__).parent/'data/units.json').read_text());text=next(u['text'] for u in units if u['unit_id']=='bec-case')
   self.assertEqual(preserve_case_loss('损失17000及额外30000',text),CASE_LOSS_TEXT)
+
+class DependencyScheduling(unittest.TestCase):
+ def test_extract_before_dependent_parallel_batch(self):
+  with tempfile.TemporaryDirectory() as d:
+   store=Store(Path(d)/'db');c=store.create(CaseRecord(query='读取文本',requester_role='卖方收款'))
+   c=store.update(c.case_id,1,{'artifacts':[Artifact(case_id=c.case_id,sha256='s',mime='text/plain',origin='project_synthetic',content='2026-10-01 付款成功',spans=[Span(method='user_text',text='2026-10-01 付款成功')]).model_dump()]})
+   agent=Agent(store,c.case_id,c.version);agent.action=NextAction(action='call_tools',calls=[ToolCall(tool_name='timeline'),ToolCall(tool_name='extract')],summary='test')
+   agent.tools({});self.assertEqual([t['tool_name'] for t in agent.data['tool_results']],['extract','timeline'])
+   timeline=agent.data['tool_results'][1];self.assertTrue(any(x['id']==agent.case.evidence[0].evidence_id for x in timeline['input_evidence']))
+
+class SourceBoundaries(unittest.TestCase):
+ def test_as_of_excludes_future_dated_source(self):
+  c=CaseRecord(query='全国统计',requester_role='培训学员',as_of='2025-01-01T00:00:00Z')
+  observed=[]
+  def search(query,mode,units,log):observed.extend(units);return []
+  with patch('upgrade.tools.retrieve',side_effect=search):invoke(c,ToolCall(tool_name='guidance'))
+  self.assertNotIn('national-statistics',[u['unit_id'] for u in observed]);self.assertTrue(any(u['published_or_updated_at'] is None for u in observed))
+ def test_existing_conflict_stops_generation(self):
+  from pipeline import RagRun,Assessment
+  r=object.__new__(RagRun);r.assessment=Assessment(sufficient=False,relevant_ids=[],task_scenes=[],missing=['来源冲突待核实'],conflicts=[]);r.log=lambda *a,**k:None
+  r.generate({});self.assertEqual(r.answer.steps,[]);self.assertIn('冲突',r.answer.boundaries[0])
+ def test_url_provider_timeout_is_not_safe(self):
+  import os,httpx
+  c=CaseRecord(query='https://example.invalid/path?private=secret')
+  with patch.dict(os.environ,{'SAFEBROWSING_API_KEY':'mock-not-real'}),patch('httpx.post',side_effect=httpx.ReadTimeout('test')):
+   t,e=invoke(c,ToolCall(tool_name='links'))
+  self.assertEqual(t.status,'partial');self.assertEqual(json.loads(e[0].statement)['reputation'],'unavailable')
+ def test_corrected_ocr_invalidates_previous_review(self):
+  with tempfile.TemporaryDirectory() as d:
+   s=Store(Path(d)/'db');c=s.create(CaseRecord(query='截图金额'))
+   a=Artifact(case_id=c.case_id,sha256='original',mime='image/png',origin='project_synthetic',content='');c=s.update(c.case_id,1,{'artifacts':[a.model_dump()]});s.finish(c,{'run_id':'old','case_version':2,'status':'pending_review','recommendations':[]})
+   a.corrections=[{'operator':'test','before':'1700','after':'17000'}];a.spans=[Span(method='human_correction',text='AUD 17000')];new=s.update(c.case_id,2,{'artifacts':[a.model_dump()]});self.assertEqual(new.version,3)
+   with self.assertRaises(ValueError):s.review({'request_id':'r','case_id':c.case_id,'case_version':2,'result_id':'old','operator':'test','decision':'accept','note':'','revisions':[]})

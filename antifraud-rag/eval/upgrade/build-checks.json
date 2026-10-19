@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-19T15:05:12.675446+00:00",
+  "checks": [
+    {
+      "command": [
+        "client-research/.venv/bin/python",
+        "-m",
+        "compileall",
+        "-q",
+        "antifraud-rag"
+      ],
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "antifraud-rag/web/app.js"
+      ],
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "antifraud-rag/web/upgrade.js"
+      ],
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ]
+}

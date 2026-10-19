@@ -1,0 +1,49 @@
+{
+  "id": "c3e06cdb1eed473ab4b9398b90487c8c",
+  "reviewer": "same Qwen blinded to system, not independent expert",
+  "grade": {
+    "required_checks": [
+      {
+        "requirement": "自己的网银/手机银行实际到账",
+        "met": true,
+        "output_quote": "务必亲自登录网银或拨打银行客服电话核实资金是否真实到账（注意：仅看短信、APP通知或截图均不可靠）。在确认款项已实际进入您名下账户前，切勿交付货物或提供任何服务。"
+      },
+      {
+        "requirement": "凭证不能代替到账核对",
+        "met": true,
+        "output_quote": "银行转账图片极易伪造，诈骗分子常使用PS或虚假网银截图制造已付款假象。…… Never rely on a receipt or screenshot of a payment sent to you. Receipts can be falsified by scammers to appear as if they have made payment, when they have not."
+      },
+      {
+        "requirement": "针对本次交货",
+        "met": true,
+        "output_quote": "不能装车交付。……在确认款项已实际进入您名下账户前，切勿交付货物或提供任何服务。"
+      }
+    ],
+    "errors": [],
+    "completion": true,
+    "refusal": false,
+    "uncertain": [
+      "Judge quote not verbatim: 银行转账图片极易伪造，诈骗分子常使用PS或虚假网银截图制造已付款假象。…… Never rely on a receipt or screenshot of a payment sent to you. Receipts can be falsified by scammers to appear as if they have made payment, when they have not.",
+      "Judge quote not verbatim: 不能装车交付。……在确认款项已实际进入您名下账户前，切勿交付货物或提供任何服务。"
+    ]
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "blind_auxiliary_grade",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 1411,
+        "completion_tokens": 261,
+        "prompt_tokens": 1150,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 6.269,
+      "finish_reason": "stop",
+      "request_hash": "39dcdaec7d44c96137e63f9ad4f0ef489e57ee07c27d02277c632469af6bf5fe"
+    }
+  ]
+}

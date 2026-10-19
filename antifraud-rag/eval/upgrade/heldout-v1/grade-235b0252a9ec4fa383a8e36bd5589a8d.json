@@ -1,0 +1,61 @@
+{
+  "id": "235b0252a9ec4fa383a8e36bd5589a8d",
+  "reviewer": "same Qwen blinded to system, not independent expert",
+  "grade": {
+    "required_checks": [
+      {
+        "requirement": "登记不能证明具体邀约",
+        "met": true,
+        "output_quote": "登记 alone doesn’t mean that a company is licensed or authorised to provide financial services."
+      },
+      {
+        "requirement": "独立检查授权及联系信息",
+        "met": true,
+        "output_quote": "verify the licence holder’s name and number on ASIC’s professional registers, and ensure those details match the business or investment opportunity being promoted. Relying solely on advertisements, websites or online search results can put consumers at risk."
+      },
+      {
+        "requirement": "不能保证安全",
+        "met": true,
+        "output_quote": "holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice. It doesn't guarantee the investment is safe or that you won’t lose money from dealing with them."
+      }
+    ],
+    "errors": [
+      {
+        "type": "overbroad",
+        "quote": "诈骗者常伪造专业官网和公司登记信息，这些表面证据无法证明邀约真实。",
+        "reason": "原文未断言‘公司登记信息’可被伪造（仅明确指出 scammer misuse AFS licence details、impersonate licensed businesses、use AI-generated scam websites）；而公司登记（ASIC Connect 公司注册查询）本身是真实存在的法定记录，不可伪造，但‘登记存在’不等于‘获金融许可’——输出将‘登记信息’整体归为可伪造的‘表面证据’，混淆了注册事实与许可资质，超出原文支持范围。"
+      },
+      {
+        "type": "unsupported",
+        "quote": "未经请求的主动邀约（尤其含高回报承诺）极可能是诈骗。",
+        "reason": "原文未提及‘未经请求的主动邀约’或‘高回报承诺’作为判断诈骗的指标；该表述缺乏对应依据，属于额外添加的风险推断。"
+      }
+    ],
+    "completion": true,
+    "refusal": false,
+    "uncertain": [
+      "Judge quote not verbatim: 登记 alone doesn’t mean that a company is licensed or authorised to provide financial services.",
+      "Judge quote not verbatim: verify the licence holder’s name and number on ASIC’s professional registers, and ensure those details match the business or investment opportunity being promoted. Relying solely on advertisements, websites or online search results can put consumers at risk.",
+      "Judge quote not verbatim: holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice. It doesn't guarantee the investment is safe or that you won’t lose money from dealing with them."
+    ]
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "blind_auxiliary_grade",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 1946,
+        "completion_tokens": 444,
+        "prompt_tokens": 1502,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 10.326,
+      "finish_reason": "stop",
+      "request_hash": "7a1b0f8d31bd469e267bc9828060b50952e7c81a91930db6bfb65d68eb1d57a1"
+    }
+  ]
+}

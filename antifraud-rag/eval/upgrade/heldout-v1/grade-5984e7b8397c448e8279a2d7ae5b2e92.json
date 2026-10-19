@@ -1,0 +1,52 @@
+{
+  "id": "5984e7b8397c448e8279a2d7ae5b2e92",
+  "reviewer": "same Qwen blinded to system, not independent expert",
+  "grade": {
+    "required_checks": [
+      {
+        "requirement": "独立来源电话口头确认本次变更",
+        "met": false,
+        "output_quote": ""
+      },
+      {
+        "requirement": "核实前不更改本次账户",
+        "met": false,
+        "output_quote": ""
+      },
+      {
+        "requirement": "正常变更不等于欺诈",
+        "met": true,
+        "output_quote": "没有具体交易证据，不能确定性断言骗子控制线路或已经构成诈骗。"
+      }
+    ],
+    "errors": [
+      {
+        "type": "omission",
+        "quote": "",
+        "reason": "输出未提供任何核实操作建议（如：使用独立来源电话号码口头确认、暂不修改账户），完全缺失对三项必需检查中前两项的响应；reference明确要求'独立来源电话口头确认本次变更'和'核实前不更改本次账户'，但output中recommendations为空数组，summary为null，无任何可执行指引。"
+      }
+    ],
+    "completion": false,
+    "refusal": false,
+    "uncertain": []
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "blind_auxiliary_grade",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 1371,
+        "completion_tokens": 240,
+        "prompt_tokens": 1131,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 5.868,
+      "finish_reason": "stop",
+      "request_hash": "b98efaf92d851b863f1a53a894c519f6ed8e35e50c1ad738458f9ae43e9be190"
+    }
+  ]
+}

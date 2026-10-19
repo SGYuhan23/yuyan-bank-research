@@ -1,0 +1,74 @@
+{
+  "id": "e8731999e3024ff38769251a454abdcd",
+  "case_id": "h6",
+  "family": "ambiguous-message",
+  "system": "retrieved",
+  "query": "收到一条需要今天处理的消息，帮我给出操作步骤。",
+  "started_at": "2026-10-19T14:49:13.732452+00:00",
+  "cost": null,
+  "cost_reason": "dated model prices not verified",
+  "status": "completed",
+  "output": {
+    "answer": "请按以下步骤操作：1. 不要立即处理，先暂停所有操作；2. 若消息涉及收款账户变更、紧急付款或要求提供截图/收据，请务必电话核实——使用您已知的、独立来源的联系方式（如官网公布的号码），而非消息中提供的联系方式；3. 登录您的网银或手机银行，亲自确认资金是否真实到账（勿轻信截图或短信通知）；4. 如为PayID相关请求，请记住：PayID由您在银行App内自主管理，无需‘升级’或‘激活’，任何要求您为此操作的消息均为诈骗；5. 若怀疑是诈骗，请立即转发该消息至Westpac反诈邮箱hoax@westpac.com.au或短信至0497 132 032；6. 如已转账且发现异常，请立即联系Westpac客服并同步向ACCC报告。",
+    "sources": [
+      "receipt-guidance",
+      "bec-guidance",
+      "bec-case"
+    ],
+    "unknowns": []
+  },
+  "records": [
+    {
+      "kind": "retrieval_started",
+      "method": "bm25"
+    },
+    {
+      "kind": "retrieval_attempt_completed",
+      "method": "bm25",
+      "unit_ids": [],
+      "source_ids": []
+    },
+    {
+      "kind": "retrieval_fallback",
+      "from_method": "bm25",
+      "to_method": "semantic",
+      "reason": "bm25_no_positive_score"
+    },
+    {
+      "kind": "retrieval_started",
+      "method": "semantic"
+    },
+    {
+      "kind": "retrieval_attempt_completed",
+      "method": "semantic",
+      "unit_ids": [
+        "receipt-guidance",
+        "bec-guidance",
+        "bec-case"
+      ],
+      "source_ids": [
+        "westpac-receipt",
+        "westpac-bec",
+        "scamwatch-case"
+      ]
+    },
+    {
+      "kind": "model_call",
+      "phase": "baseline_answer",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 3084,
+        "completion_tokens": 219,
+        "prompt_tokens": 2865,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 5.895,
+      "finish_reason": "stop",
+      "request_hash": "2874ebe8b381d7f4d8508b69cb677c043abe2ecf33d88f5fab9bfa355c7b400a"
+    }
+  ],
+  "seconds": 6.278
+}

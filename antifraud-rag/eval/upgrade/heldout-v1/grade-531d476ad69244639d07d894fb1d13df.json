@@ -1,0 +1,48 @@
+{
+  "id": "531d476ad69244639d07d894fb1d13df",
+  "reviewer": "same Qwen blinded to system, not independent expert",
+  "grade": {
+    "required_checks": [
+      {
+        "requirement": "独立来源电话口头确认本次变更",
+        "met": true,
+        "output_quote": "必须通过您自己掌握的、独立核实的电话号码（如合同存档、官网公布的号码），与承包商财务或授权负责人进行语音确认；确认内容须包括本次收款账号变更的真实性、原因及授权人身份"
+      },
+      {
+        "requirement": "核实前不更改本次账户",
+        "met": true,
+        "output_quote": "1）不直接依据来信更改账户信息"
+      },
+      {
+        "requirement": "正常变更不等于欺诈",
+        "met": true,
+        "output_quote": "账户变更本身合法，但未经语音验证即操作是高风险行为。"
+      }
+    ],
+    "errors": [],
+    "completion": true,
+    "refusal": false,
+    "uncertain": [
+      "Judge quote not verbatim: 必须通过您自己掌握的、独立核实的电话号码（如合同存档、官网公布的号码），与承包商财务或授权负责人进行语音确认；确认内容须包括本次收款账号变更的真实性、原因及授权人身份"
+    ]
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "blind_auxiliary_grade",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 1429,
+        "completion_tokens": 198,
+        "prompt_tokens": 1231,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 4.891,
+      "finish_reason": "stop",
+      "request_hash": "340101b68e42b56912c8327ce8b07e3449fea34fbf5352027b71d8b00da47a5b"
+    }
+  ]
+}

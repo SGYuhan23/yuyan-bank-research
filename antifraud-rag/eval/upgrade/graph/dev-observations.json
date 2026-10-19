@@ -1,0 +1,2686 @@
+{
+  "synthetic": true,
+  "edges": [
+    {
+      "id": "f4e7e620b7eb7026c7b5d1e2a3be62c9",
+      "from": "98cbe6c7b35f4fbba0019f82daa1e947",
+      "to": "5b123856e0ffbac44e86f27768761415",
+      "amount": 431.51,
+      "currency": "AUD",
+      "at": "2025-05-16"
+    },
+    {
+      "id": "912ae631f606a51302effbb2e76b9f75",
+      "from": "dece759a66540171ca88541bd95af083",
+      "to": "51912e3dfc51df9177b99599472afb2a",
+      "amount": 4017.35,
+      "currency": "AUD",
+      "at": "2025-01-12"
+    },
+    {
+      "id": "faed72eeec0ead50e419e387bfc24260",
+      "from": "b667e669142a7d4d179b5c2ff3fbe02c",
+      "to": "4f14c9799f53f9d47b8eeadb32f4c3d6",
+      "amount": 6975.15,
+      "currency": "AUD",
+      "at": "2025-05-10"
+    },
+    {
+      "id": "20ce55bce0158613f8cb7594545e3783",
+      "from": "5d80a557cce7d499e2069637afba55a7",
+      "to": "617976ba88d82c8f7307abc5ed5ddb22",
+      "amount": 84981.53,
+      "currency": "AUD",
+      "at": "2025-03-20"
+    },
+    {
+      "id": "1e30ed8191f454ddd7031813fc0fea76",
+      "from": "5387a5b457fe7324e0d33af67b6ed5cb",
+      "to": "b7fd8b5cf7519976d8974f7624a1876b",
+      "amount": 4099.93,
+      "currency": "AUD",
+      "at": "2025-06-03"
+    },
+    {
+      "id": "38889d6db01676b58cff4eb80ce5806a",
+      "from": "ea3867a51557e1a26f76bcd1441e863c",
+      "to": "77db16be2eae170fd4495b18bb70c35d",
+      "amount": 6195.83,
+      "currency": "AUD",
+      "at": "2025-01-23"
+    },
+    {
+      "id": "d29eba72623f3d89fae98ab1376e0b2a",
+      "from": "af5f3eed31a9387f6797d0d2ac1c1d2b",
+      "to": "42a4617967495073935c8b9fef69ad42",
+      "amount": 1047.71,
+      "currency": "AUD",
+      "at": "2025-04-10"
+    },
+    {
+      "id": "02aa1e2b7239065fb85977a107d2329c",
+      "from": "767b711cc70acc9f3c095f35f8be449e",
+      "to": "784be6fa45fa4ae702d90c400bf71a96",
+      "amount": 765.61,
+      "currency": "AUD",
+      "at": "2025-06-23"
+    },
+    {
+      "id": "2b613e420bcb6eeca505f8ca3ba0b3ff",
+      "from": "ce87b08e5ac41ca07f1bac9b82cba482",
+      "to": "335beba07ed6bf01fe5cbd02ee93ea0c",
+      "amount": 6058.34,
+      "currency": "AUD",
+      "at": "2025-05-09"
+    },
+    {
+      "id": "f10686cfd5f2b3e35e6fa5eca07adfa6",
+      "from": "ce87b08e5ac41ca07f1bac9b82cba482",
+      "to": "f8d638fa865f899d57c2ca106d469a94",
+      "amount": 3413.07,
+      "currency": "AUD",
+      "at": "2025-01-31"
+    },
+    {
+      "id": "9caad85e0d7d30fa3b758ac29a58e1c2",
+      "from": "926b10a7a9e10d4b3340774ddba3c906",
+      "to": "b34e8fbf3ab122976a912777d6b2bf0a",
+      "amount": 9920.12,
+      "currency": "AUD",
+      "at": "2025-04-20"
+    },
+    {
+      "id": "4e966d7e735859745b3ff49c0690c9b0",
+      "from": "09bc59d36eb6fc11de8e69181d35af2e",
+      "to": "bc524cc033d15ed2106a8187ae0ff6bb",
+      "amount": 340.48,
+      "currency": "AUD",
+      "at": "2025-01-09"
+    },
+    {
+      "id": "56f258564026d3ab9428ebff71aeb9ef",
+      "from": "c4a8f21a0fb208a70557ccd59b730384",
+      "to": "12bc4e80d556f72b974e65e74777c2c4",
+      "amount": 313.03,
+      "currency": "AUD",
+      "at": "2025-04-28"
+    },
+    {
+      "id": "95637be462cad44829919eb97845a21c",
+      "from": "4405a529da5832ed6af83294556e0f82",
+      "to": "0208536ec100c7c07142926c55d83dc1",
+      "amount": 596.61,
+      "currency": "AUD",
+      "at": "2025-02-07"
+    },
+    {
+      "id": "cbaee2640006b9d6e433c6a005d8925d",
+      "from": "73951ba9e5614da8a920422b93aa2cd8",
+      "to": "e743fdbb56061b92b9f5408724a9d3db",
+      "amount": 1068.68,
+      "currency": "AUD",
+      "at": "2025-06-29"
+    },
+    {
+      "id": "926bf09b7b217f6d894048d7d4ddcbd3",
+      "from": "10844e204e4c997ee5774b199e054d7b",
+      "to": "f9a14515fc06705d2e6b548d3c2508f9",
+      "amount": 394.67,
+      "currency": "AUD",
+      "at": "2025-05-30"
+    },
+    {
+      "id": "dba92d7db34ce74d11e7fb44208d4c36",
+      "from": "37a0c89bcf0dbf3c546eccd83345f2a0",
+      "to": "f7543df7743abffc2a983b67d45ff6b9",
+      "amount": 1315.21,
+      "currency": "AUD",
+      "at": "2025-03-24"
+    },
+    {
+      "id": "e4e10fd60f859097f40d8973b6b0da2c",
+      "from": "5387a5b457fe7324e0d33af67b6ed5cb",
+      "to": "b6869dcec72e5d784a3165daf1dd84be",
+      "amount": 641.87,
+      "currency": "AUD",
+      "at": "2025-06-25"
+    },
+    {
+      "id": "60383fa01fe2a062d1f9effa1b784c44",
+      "from": "24d8cea5c33f4584b23bc1d8493cd016",
+      "to": "7404359018a61865cafedacfb2ccdfa7",
+      "amount": 540.84,
+      "currency": "AUD",
+      "at": "2025-02-09"
+    },
+    {
+      "id": "276e49569e8a22f2c4a598655a481637",
+      "from": "73951ba9e5614da8a920422b93aa2cd8",
+      "to": "8b26cc7bd0da1d28a0c2e44c04a5a71d",
+      "amount": 10907.17,
+      "currency": "AUD",
+      "at": "2025-06-22"
+    },
+    {
+      "id": "74948913a46bb542677f83180fa7e858",
+      "from": "4889eddc628c124cc5f8a730dfd74be9",
+      "to": "911a68df22ca744eb1058400c098964f",
+      "amount": 1291.35,
+      "currency": "AUD",
+      "at": "2025-02-24"
+    },
+    {
+      "id": "187e2adf413c4d23fc6d2a7cc1e3c223",
+      "from": "f03a68e6b0070fe12db6a24123de8863",
+      "to": "b7645def81ef168196b365a2a45aee1e",
+      "amount": 4033.26,
+      "currency": "AUD",
+      "at": "2025-02-09"
+    },
+    {
+      "id": "564ed6b6a5e3850de5714aaa2efda808",
+      "from": "458d3ca15917780448fd22856a65799f",
+      "to": "b2c5d95b9820134f751acefafe6b5793",
+      "amount": 44386.24,
+      "currency": "AUD",
+      "at": "2025-01-24"
+    },
+    {
+      "id": "44b2013c311f2fa6ee7deeec45634690",
+      "from": "e8f14ca431f2ba9b7e2458e1b357e4ad",
+      "to": "75047937d048a54dd3ab58f38490ee35",
+      "amount": 4739.7,
+      "currency": "AUD",
+      "at": "2025-02-04"
+    },
+    {
+      "id": "59d2212ca70aa9d44f5b5bc71989c046",
+      "from": "4237650981c9204ea918fd23fe9d704b",
+      "to": "793a5afda31821ffbad7317628fe45ef",
+      "amount": 583.32,
+      "currency": "AUD",
+      "at": "2025-04-14"
+    },
+    {
+      "id": "5badd3cc1569f64bc60e43ae9a1394ff",
+      "from": "f81bd0ee120287d69abf39b8ac0072c7",
+      "to": "1d0159fda9a3d6238d4de4f9fe4c06d4",
+      "amount": 31551.65,
+      "currency": "AUD",
+      "at": "2025-02-02"
+    },
+    {
+      "id": "957fce24307b5fb154f41d7502c09efc",
+      "from": "6138c5f14e19790e0b5f1af70f8525e0",
+      "to": "b6ddea5f3a175b495c001136c68b8a1e",
+      "amount": 1196.56,
+      "currency": "AUD",
+      "at": "2025-06-21"
+    },
+    {
+      "id": "32374ebd91c1b9226d3372d488d58698",
+      "from": "f1585917ee1a8e5916cb150bc04b849d",
+      "to": "34a3a0479a0d393847800913d6aa3e8d",
+      "amount": 1804.04,
+      "currency": "AUD",
+      "at": "2025-03-16"
+    },
+    {
+      "id": "7a4c53b497ef379d56d01eb92a0000e5",
+      "from": "e66844a9d686f338a880aa130b669a56",
+      "to": "59cda5e03ce647eefe88f24baacfb582",
+      "amount": 10565.85,
+      "currency": "AUD",
+      "at": "2025-04-28"
+    },
+    {
+      "id": "a7ae15e6f90da9e9ef66cd8c32f275f0",
+      "from": "5b123856e0ffbac44e86f27768761415",
+      "to": "01f66467496615e53a683bd1f431de44",
+      "amount": 11366.5,
+      "currency": "AUD",
+      "at": "2025-02-14"
+    },
+    {
+      "id": "85d8e9a078da7e9ac490b728d90c983b",
+      "from": "3ea4065fc4c8910fef4b1c86d0e23e16",
+      "to": "223f9b036b27819cc74b00c260550d9d",
+      "amount": 1679.83,
+      "currency": "AUD",
+      "at": "2025-04-28"
+    },
+    {
+      "id": "eae45336519500ebf084a80f923218b5",
+      "from": "52ba65172b87ab2598dbf122515dc679",
+      "to": "a2f4f72330f033982028d0c9185a266d",
+      "amount": 362.29,
+      "currency": "AUD",
+      "at": "2025-03-20"
+    },
+    {
+      "id": "9d3a864e4da268f85028c7c98e620b66",
+      "from": "82d9ccfa822fbe9f9e4ae100f393199d",
+      "to": "b8aa3635996d9e79abcd625438caeaca",
+      "amount": 3895.16,
+      "currency": "AUD",
+      "at": "2025-01-03"
+    },
+    {
+      "id": "d6a5081c5182d471d3ed95a7aec60613",
+      "from": "a7e63409d6cb149d7c8c4417829f3a8d",
+      "to": "7f56c6134d272e7d2c29fe0a002f00ac",
+      "amount": 7824.06,
+      "currency": "AUD",
+      "at": "2025-01-06"
+    },
+    {
+      "id": "9b3665998b066c22c102280855bea6d3",
+      "from": "3eac1d1f0c53321563b836aec6a300aa",
+      "to": "becb29072c9cce891f486227e1ea817c",
+      "amount": 2742.89,
+      "currency": "AUD",
+      "at": "2025-05-28"
+    },
+    {
+      "id": "8b741eb133a9635f34c1fcc1491378f9",
+      "from": "3ea4065fc4c8910fef4b1c86d0e23e16",
+      "to": "4a17cf9618f49022dc4f9b98badd1910",
+      "amount": 4275.04,
+      "currency": "AUD",
+      "at": "2025-03-17"
+    },
+    {
+      "id": "01ca7f1625df2747612985006c1559ca",
+      "from": "f1585917ee1a8e5916cb150bc04b849d",
+      "to": "d74d273bf535816d84bc5af8b7088db0",
+      "amount": 6579.68,
+      "currency": "AUD",
+      "at": "2025-01-05"
+    },
+    {
+      "id": "4585250f5037a60ead22a9fbad0ba0de",
+      "from": "5527d78fefd16cf013062765beb37cf3",
+      "to": "354bb23a85722c9b5c55e53855e4e38e",
+      "amount": 4157.05,
+      "currency": "AUD",
+      "at": "2025-01-21"
+    },
+    {
+      "id": "c12890a64566d584c85b261a4d7bf827",
+      "from": "bc524cc033d15ed2106a8187ae0ff6bb",
+      "to": "8e2a5de08edc54dd1a555717a829f296",
+      "amount": 8771.4,
+      "currency": "AUD",
+      "at": "2025-03-22"
+    },
+    {
+      "id": "044dd073d326b5727c21ed29e92dfb20",
+      "from": "9ba5757365d8f03d4738f69242540bc2",
+      "to": "ccbb50847dc3e20c52375b11b630edee",
+      "amount": 6410.78,
+      "currency": "AUD",
+      "at": "2025-05-14"
+    },
+    {
+      "id": "1919e15b8730aa6522824cb3b2d64df9",
+      "from": "1b8e26e5f6c124f442cecefe1c743435",
+      "to": "f437462b4e00040e939b484b6c6b5819",
+      "amount": 8818.38,
+      "currency": "AUD",
+      "at": "2025-05-28"
+    },
+    {
+      "id": "84132f8c16b71ee4e6c8051c60e22f6e",
+      "from": "cb352c098b07f68a891e98af58d49f29",
+      "to": "7bf1fbc98b0d861d61e543c4c8bf0e81",
+      "amount": 894.44,
+      "currency": "AUD",
+      "at": "2025-03-25"
+    },
+    {
+      "id": "aaa8c2bcdc84eb1216f97b8e1930d149",
+      "from": "153a9b9fdf2fa3882909f247ceaf0b3b",
+      "to": "90eecdd8cea815e6b2d393646103900d",
+      "amount": 1215.66,
+      "currency": "AUD",
+      "at": "2025-04-12"
+    },
+    {
+      "id": "91e60ffc5c2eb8b654a2b3e36a981bcc",
+      "from": "8e2a5de08edc54dd1a555717a829f296",
+      "to": "826997e4cf6e57ee6e2c4137eca5ee22",
+      "amount": 1802.66,
+      "currency": "AUD",
+      "at": "2025-04-25"
+    },
+    {
+      "id": "3ceadc471fdad2dfd5d0adc4662f5361",
+      "from": "4a22591507c69e1c0a66ee4160948fef",
+      "to": "486e66d0360683cf53c8ee75fd637db8",
+      "amount": 16365.05,
+      "currency": "AUD",
+      "at": "2025-06-22"
+    },
+    {
+      "id": "b6a2c13bdda0e57a9b021f0b91bb8bb0",
+      "from": "8a19cbc8955c326e10ff56bf65cc9811",
+      "to": "5441b3fd372164f912df07c3d684f1dd",
+      "amount": 1069.31,
+      "currency": "AUD",
+      "at": "2025-05-29"
+    },
+    {
+      "id": "ac6caa5b0d8939d36d18acba4c30948b",
+      "from": "14687223a95b4f0de7ae9f325f06ba92",
+      "to": "85eeb73295a5e92d119f28a07e8247b9",
+      "amount": 2280.79,
+      "currency": "AUD",
+      "at": "2025-01-25"
+    },
+    {
+      "id": "896ab37751619c23d28eaea96cec5551",
+      "from": "2a8a0056d19277ef60e6fac8fa9d27a4",
+      "to": "d2b101dfc86a22d9c819cd5adf5a2819",
+      "amount": 978.4,
+      "currency": "AUD",
+      "at": "2025-02-02"
+    },
+    {
+      "id": "f9e3441c06849a8f00ab8458e47287e7",
+      "from": "3c7f61443d7ad0a66dfe9dbb089f882d",
+      "to": "ed232b297d55bc58d761fb7d60892b94",
+      "amount": 2009.46,
+      "currency": "AUD",
+      "at": "2025-03-20"
+    },
+    {
+      "id": "b619794d4e08f501a08609338e6e086f",
+      "from": "ec8313943fe977bc3f883fda3662094a",
+      "to": "06d5d9f0b64bb7269d21b485edaa3ff7",
+      "amount": 12184.96,
+      "currency": "AUD",
+      "at": "2025-05-11"
+    },
+    {
+      "id": "81a7a848544b0d76566f0bafd7efbf20",
+      "from": "4eb96ba7c08f279d2a5db3dfbf2758f0",
+      "to": "63a2508697a2a10a636243b2d8ae3b18",
+      "amount": 2279.96,
+      "currency": "AUD",
+      "at": "2025-03-11"
+    },
+    {
+      "id": "444651e6ce75e0073549f4d4ba00ce03",
+      "from": "5527d78fefd16cf013062765beb37cf3",
+      "to": "fe81c84a29b6c6115d36c2ab6122a549",
+      "amount": 985.52,
+      "currency": "AUD",
+      "at": "2025-06-15"
+    },
+    {
+      "id": "351eaf15bac7ad44028ec91e392971ca",
+      "from": "1b0224af6cd32f2c607199303375b2e9",
+      "to": "89c827ab42d9f95250073c2a5410cf59",
+      "amount": 3856.2,
+      "currency": "AUD",
+      "at": "2025-05-02"
+    },
+    {
+      "id": "5a0fcfa8beee8153e9fdb75f8019973d",
+      "from": "784be6fa45fa4ae702d90c400bf71a96",
+      "to": "6138c5f14e19790e0b5f1af70f8525e0",
+      "amount": 2344.56,
+      "currency": "AUD",
+      "at": "2025-04-09"
+    },
+    {
+      "id": "99e403db805f8a5bb0199eba8b66cc33",
+      "from": "373efc2f86b0244103f59085253a00ba",
+      "to": "b261a511895eb7d773264da5b91e521a",
+      "amount": 118585.14,
+      "currency": "AUD",
+      "at": "2025-01-05"
+    },
+    {
+      "id": "e61cf82ccd9134e7238177384522258f",
+      "from": "9187f7fa781bbdd76b01a3739cd25311",
+      "to": "bd845d1029ea519cccfa262ff9f22b90",
+      "amount": 1744.33,
+      "currency": "AUD",
+      "at": "2025-03-26"
+    },
+    {
+      "id": "f3fe50d92a2fa38e0a39b95ace32a29f",
+      "from": "82f1325cfb97acf718566d287996a724",
+      "to": "cb352c098b07f68a891e98af58d49f29",
+      "amount": 581.52,
+      "currency": "AUD",
+      "at": "2025-03-15"
+    },
+    {
+      "id": "13041523a08dc17e58765eae956b6d3b",
+      "from": "f4cc75b30d3fff7a6275bf5b1860f6c6",
+      "to": "e9360c8771935cbbc81f4d1bc841582c",
+      "amount": 378.23,
+      "currency": "AUD",
+      "at": "2025-02-26"
+    },
+    {
+      "id": "c8826d952d864c4a899f09152f90e1bf",
+      "from": "efc3282ed8f30b8734c2901ab7bd86bf",
+      "to": "af5f3eed31a9387f6797d0d2ac1c1d2b",
+      "amount": 1473.24,
+      "currency": "AUD",
+      "at": "2025-02-18"
+    },
+    {
+      "id": "06a7c921de002ee51cd2b8a2376f7dc2",
+      "from": "153a9b9fdf2fa3882909f247ceaf0b3b",
+      "to": "9f97fbaa2569a2bf781ff4d129045896",
+      "amount": 1472.18,
+      "currency": "AUD",
+      "at": "2025-02-01"
+    },
+    {
+      "id": "d0d9c4cfd5bfc39cbcf9da492462f287",
+      "from": "30938e8e486e94730ebf847b835970be",
+      "to": "d2b101dfc86a22d9c819cd5adf5a2819",
+      "amount": 3040.71,
+      "currency": "AUD",
+      "at": "2025-03-29"
+    },
+    {
+      "id": "f7c6d99b9024c9bacc5517e30ba91320",
+      "from": "aa766b7862be5bfbd6deec594bc3a8c0",
+      "to": "009376c871a7bb4fb619d4bad1cabf44",
+      "amount": 1278.71,
+      "currency": "AUD",
+      "at": "2025-05-10"
+    },
+    {
+      "id": "724fd2380eb2d7d2ea9643b49751e3c9",
+      "from": "c9c6a3e1738b03b4bb6dcd920e00c839",
+      "to": "ce8cc773aafb11c3b7d37c5b55b20417",
+      "amount": 5908.79,
+      "currency": "AUD",
+      "at": "2025-03-15"
+    },
+    {
+      "id": "cb10f484f62fc70bd8e9d403f25a8cdd",
+      "from": "167d4740e76a23ba17658868c03f7e09",
+      "to": "16580337fa586f312e105f0b11fe3b88",
+      "amount": 4062.79,
+      "currency": "AUD",
+      "at": "2025-05-14"
+    },
+    {
+      "id": "943555271c8dabd5f37c9b478167d3bf",
+      "from": "e99691cb68a0bd8a961951489820e204",
+      "to": "58d4cab265dd854e53cd3343cceb51f7",
+      "amount": 1703.43,
+      "currency": "AUD",
+      "at": "2025-03-30"
+    },
+    {
+      "id": "81da5ce95bfd9186b9086d4402bffee0",
+      "from": "f3f0bb9887b3bc82778c1d94941d3335",
+      "to": "75047937d048a54dd3ab58f38490ee35",
+      "amount": 50326.92,
+      "currency": "AUD",
+      "at": "2025-03-01"
+    },
+    {
+      "id": "064203832cd06a0935ff166263b0584e",
+      "from": "dcbe32100881d3c26a5a4f6f9bae5d97",
+      "to": "436a9fc773775751f2a4f3d24f3e351a",
+      "amount": 1136.32,
+      "currency": "AUD",
+      "at": "2025-03-01"
+    },
+    {
+      "id": "14fe88465931a2f8cf16fcba6d41e90e",
+      "from": "486e66d0360683cf53c8ee75fd637db8",
+      "to": "da2e5ba1959c031263e8340f02987077",
+      "amount": 224.24,
+      "currency": "AUD",
+      "at": "2025-05-15"
+    },
+    {
+      "id": "aa4b7f09cec764afa0c95bfb29a8123e",
+      "from": "d6219857a03ce18d2faa5a66f0cd1b8f",
+      "to": "032bf3fcd67f77a11a119a8bb20fd0b1",
+      "amount": 1250.93,
+      "currency": "AUD",
+      "at": "2025-05-20"
+    },
+    {
+      "id": "6308b85bc5b5849620f2c3607ef85d5b",
+      "from": "24d8cea5c33f4584b23bc1d8493cd016",
+      "to": "04e77af59be6a8ea7f8ec4c2994b7a56",
+      "amount": 3643.22,
+      "currency": "AUD",
+      "at": "2025-06-02"
+    },
+    {
+      "id": "0832f72d0d0b8a41c80ad8ef545d496e",
+      "from": "01f66467496615e53a683bd1f431de44",
+      "to": "bf1dbe8a7551524cbc1ce075508a205f",
+      "amount": 2590.7,
+      "currency": "AUD",
+      "at": "2025-06-16"
+    },
+    {
+      "id": "17f2d9fff364863b16cd1924f7671b55",
+      "from": "29bcbd7daf2acdc61c268661eade320c",
+      "to": "e3022402605ca8f7082ef60c840723ce",
+      "amount": 7916.76,
+      "currency": "AUD",
+      "at": "2025-02-15"
+    },
+    {
+      "id": "cf938efcfdf7a230f8265f1e34fe723a",
+      "from": "a28ef9c8bfd51e16636f0cb4731b8f8a",
+      "to": "4eb96ba7c08f279d2a5db3dfbf2758f0",
+      "amount": 15355.78,
+      "currency": "AUD",
+      "at": "2025-01-22"
+    },
+    {
+      "id": "adf751376cdb18855d9ad9d8f3ecae0a",
+      "from": "e9360c8771935cbbc81f4d1bc841582c",
+      "to": "56881d33eead64241031c3ced6f5eb3b",
+      "amount": 3614.94,
+      "currency": "AUD",
+      "at": "2025-05-20"
+    },
+    {
+      "id": "08cafbccdf8780d85831228ef9e9c5e3",
+      "from": "97ca66b1f9ba0df077c5b78546adfd54",
+      "to": "ea4277d146ab845e6615f74c3a488097",
+      "amount": 3747.11,
+      "currency": "AUD",
+      "at": "2025-04-27"
+    },
+    {
+      "id": "9092a152076f9cce7229538e2fdb1695",
+      "from": "2d4866f03c8fc85c7038bb7e967326a8",
+      "to": "71518f9028093651ec439b2333a2c066",
+      "amount": 1466.53,
+      "currency": "AUD",
+      "at": "2025-06-26"
+    },
+    {
+      "id": "5ed0c272059255b6a90c21e55fa86f0e",
+      "from": "bab0ed80bbe9035a54ebed8b2159dc71",
+      "to": "89e1aaf1afd9db9f8fcff2eadeedf694",
+      "amount": 2452.06,
+      "currency": "AUD",
+      "at": "2025-04-23"
+    },
+    {
+      "id": "5cc9ee6e5a1f5dc6e37ce6183912e5f1",
+      "from": "a6607a83463c53c0a1f57759f4215bd4",
+      "to": "767b711cc70acc9f3c095f35f8be449e",
+      "amount": 5868.14,
+      "currency": "AUD",
+      "at": "2025-05-03"
+    },
+    {
+      "id": "2d049de65e6210cc12b7aa6c2264e054",
+      "from": "03b2bfbc2a7828c9567f9b543488ecc8",
+      "to": "d4a47d82deeccf95ca1a12f84dae1047",
+      "amount": 3753.88,
+      "currency": "AUD",
+      "at": "2025-06-24"
+    },
+    {
+      "id": "cbdac5fcf50887aa193a91be51c8be13",
+      "from": "bab0ed80bbe9035a54ebed8b2159dc71",
+      "to": "4f57c9fffb079556e6f790484508150f",
+      "amount": 9103.56,
+      "currency": "AUD",
+      "at": "2025-04-16"
+    },
+    {
+      "id": "689dbc189afff9a5bedd5cae7dd5ab08",
+      "from": "373efc2f86b0244103f59085253a00ba",
+      "to": "6076dc292a0e80dc86fc2873972115b3",
+      "amount": 31662.06,
+      "currency": "AUD",
+      "at": "2025-03-23"
+    },
+    {
+      "id": "6f05d2794bd3d5e8d1fc1111ab72b37f",
+      "from": "c66b922c1d58a627c118fd5d75286842",
+      "to": "75047937d048a54dd3ab58f38490ee35",
+      "amount": 2391.98,
+      "currency": "AUD",
+      "at": "2025-03-31"
+    },
+    {
+      "id": "fa3c9fcb722314cafee493091277f616",
+      "from": "9c98ca63d4a9b2ebd84f76500d5e14b2",
+      "to": "812164438314ccbaa285ca363ab7d7c9",
+      "amount": 183.3,
+      "currency": "AUD",
+      "at": "2025-01-22"
+    },
+    {
+      "id": "b64fc748f7f935d181c27ebac45a73ad",
+      "from": "373efc2f86b0244103f59085253a00ba",
+      "to": "4405a529da5832ed6af83294556e0f82",
+      "amount": 15852.73,
+      "currency": "AUD",
+      "at": "2025-05-01"
+    },
+    {
+      "id": "e7609ea3c5dccb54fd3b17a7045d845d",
+      "from": "b715e9a15c8ffa6ef489e08bba83f02a",
+      "to": "f7702500791aa55f0a9574a76f1a311e",
+      "amount": 556.02,
+      "currency": "AUD",
+      "at": "2025-03-28"
+    },
+    {
+      "id": "1ef559cfc77f8140643c06091425e892",
+      "from": "5527d78fefd16cf013062765beb37cf3",
+      "to": "991d1ac27e08cd833b9a566e2bba2ef0",
+      "amount": 10507.47,
+      "currency": "AUD",
+      "at": "2025-05-27"
+    },
+    {
+      "id": "b925ab1f7038e6d405e464a98b031c5c",
+      "from": "a7d922cd12728d8e996499a285e24ae4",
+      "to": "09bc59d36eb6fc11de8e69181d35af2e",
+      "amount": 13870.08,
+      "currency": "AUD",
+      "at": "2025-01-23"
+    },
+    {
+      "id": "381278a11557885ab28fb61aa27c1951",
+      "from": "b912d599aab97dc21b8f158a4988d28c",
+      "to": "2faba8b7f34fe78925b879b67abea1c8",
+      "amount": 29275.87,
+      "currency": "AUD",
+      "at": "2025-01-27"
+    },
+    {
+      "id": "339a82d754355cc24233af7e6dcac322",
+      "from": "98c13e36c4ec736f800e0243968b1687",
+      "to": "ab1a2d6893ad0f5768fddb5f11b7a192",
+      "amount": 2782.64,
+      "currency": "AUD",
+      "at": "2025-06-25"
+    },
+    {
+      "id": "4d924e2b616ada8399757d4f6d886d8a",
+      "from": "ea3867a51557e1a26f76bcd1441e863c",
+      "to": "c9ec3d15bda28e6a11efe89460f480d6",
+      "amount": 401.77,
+      "currency": "AUD",
+      "at": "2025-01-07"
+    },
+    {
+      "id": "ef15d3614151daecf6ec3db3ce4393e1",
+      "from": "8de4f96fab36841895e2fee31430c176",
+      "to": "b7fd8b5cf7519976d8974f7624a1876b",
+      "amount": 4312.34,
+      "currency": "AUD",
+      "at": "2025-06-27"
+    },
+    {
+      "id": "3f89df75f6c323fa4cffb95bbda99833",
+      "from": "d1cabb8e074c2b19c21981d10616413a",
+      "to": "ed5c0ba0f079f13ea5462e000db58646",
+      "amount": 2069.5,
+      "currency": "AUD",
+      "at": "2025-06-19"
+    },
+    {
+      "id": "183bb2b0d3e2e80dd852fc359b9533ca",
+      "from": "6076dc292a0e80dc86fc2873972115b3",
+      "to": "0208536ec100c7c07142926c55d83dc1",
+      "amount": 4363.77,
+      "currency": "AUD",
+      "at": "2025-02-10"
+    },
+    {
+      "id": "2de1c464f560349bd386a573eab240ae",
+      "from": "14687223a95b4f0de7ae9f325f06ba92",
+      "to": "b4c7db12596d8895fbb8f6115d90e862",
+      "amount": 2373.38,
+      "currency": "AUD",
+      "at": "2025-01-24"
+    },
+    {
+      "id": "3d1f138ea123411e3a9742df5410769e",
+      "from": "458d3ca15917780448fd22856a65799f",
+      "to": "59216241ee9c871af896d37e90f1bb13",
+      "amount": 38419.48,
+      "currency": "AUD",
+      "at": "2025-03-23"
+    },
+    {
+      "id": "715d6cfc755b493557812880106e4bad",
+      "from": "a70ec0fde4bc701ac51fd1b1e7868b90",
+      "to": "328b99d1fc33da0b301fc72e3b3afd42",
+      "amount": 1706.21,
+      "currency": "AUD",
+      "at": "2025-06-27"
+    },
+    {
+      "id": "b1999f879ee5fd4eae33ba317601978a",
+      "from": "b667e669142a7d4d179b5c2ff3fbe02c",
+      "to": "b323fd276c4903a9e818df173cf030c1",
+      "amount": 1462.67,
+      "currency": "AUD",
+      "at": "2025-02-13"
+    },
+    {
+      "id": "8041aeb004d33727d865d91b8077bb15",
+      "from": "b6ddea5f3a175b495c001136c68b8a1e",
+      "to": "21f9fc4da68ee25cb7eabeb6d5938872",
+      "amount": 4839.63,
+      "currency": "AUD",
+      "at": "2025-03-14"
+    },
+    {
+      "id": "7cfc5508c973dc860dd6d5360e29ec7a",
+      "from": "7bfb1e65d1b363627b92a82017bbc44e",
+      "to": "687f234812a3feebc41b411698ee0090",
+      "amount": 1244.92,
+      "currency": "AUD",
+      "at": "2025-04-19"
+    },
+    {
+      "id": "bbe5542b750be81603ec784c97cd8085",
+      "from": "436a9fc773775751f2a4f3d24f3e351a",
+      "to": "ff89b2fa55767151ce8980c43fac4438",
+      "amount": 5612.81,
+      "currency": "AUD",
+      "at": "2025-04-05"
+    },
+    {
+      "id": "a1b941890fdda577ba58af654e830ed6",
+      "from": "189b1707bbd99e5de31f22673246199a",
+      "to": "67e864a95e47f9bdce23a1f3ee733afc",
+      "amount": 3465.24,
+      "currency": "AUD",
+      "at": "2025-01-05"
+    },
+    {
+      "id": "4e51baeaffbc74d02a206eb38afc0c75",
+      "from": "9416afaa72726e53eb8179a4ec77754a",
+      "to": "16580337fa586f312e105f0b11fe3b88",
+      "amount": 3657.82,
+      "currency": "AUD",
+      "at": "2025-06-01"
+    },
+    {
+      "id": "1026d61967e14e2c6a0f1510d335fc22",
+      "from": "0f9d97835716b3d027cf2395fcd1ce22",
+      "to": "71518f9028093651ec439b2333a2c066",
+      "amount": 1488.15,
+      "currency": "AUD",
+      "at": "2025-03-24"
+    },
+    {
+      "id": "4f472cb37d05e48bef65810cabf928c6",
+      "from": "29bcbd7daf2acdc61c268661eade320c",
+      "to": "800e641974adc160659c02d637461e1c",
+      "amount": 605.71,
+      "currency": "AUD",
+      "at": "2025-05-13"
+    },
+    {
+      "id": "1dfdfef5a9a76eec7b76012f8c8c371d",
+      "from": "3ea4065fc4c8910fef4b1c86d0e23e16",
+      "to": "905bbce943674ac04cd5651ced67145a",
+      "amount": 1240.89,
+      "currency": "AUD",
+      "at": "2025-05-30"
+    },
+    {
+      "id": "67137996c7eceefa62f5db99d60648b7",
+      "from": "a03840b47e912218422ba55c4439ee9d",
+      "to": "509732a7f81a94791a1e482a6830ce31",
+      "amount": 1284.91,
+      "currency": "AUD",
+      "at": "2025-01-10"
+    },
+    {
+      "id": "b7937395ad4f9e4f2110f81855ffbe83",
+      "from": "5387a5b457fe7324e0d33af67b6ed5cb",
+      "to": "6dfd48fc921c02319125d460518416ee",
+      "amount": 2079.48,
+      "currency": "AUD",
+      "at": "2025-03-22"
+    },
+    {
+      "id": "61e928a7ec5af9ba8fc6dfc70c8a79c2",
+      "from": "ce87b08e5ac41ca07f1bac9b82cba482",
+      "to": "9f99eda60c08afb92467d3892f399067",
+      "amount": 183.46,
+      "currency": "AUD",
+      "at": "2025-02-12"
+    },
+    {
+      "id": "0be833075f76d5da13c525f198fd37e1",
+      "from": "9c98ca63d4a9b2ebd84f76500d5e14b2",
+      "to": "cfa8c93ce4f8e4cefa3ebf7cc3d6ea48",
+      "amount": 4427.77,
+      "currency": "AUD",
+      "at": "2025-06-15"
+    },
+    {
+      "id": "03ae7e1941e0bc4b26fa11c8adbd55ce",
+      "from": "2f20a70d1c6636591e7c30444b04ebfb",
+      "to": "1bddf71ddfeaa33dcb6e62ed8502861e",
+      "amount": 4582.12,
+      "currency": "AUD",
+      "at": "2025-06-17"
+    },
+    {
+      "id": "747e10901e0df9050dde3c8c8bd4c90f",
+      "from": "9187f7fa781bbdd76b01a3739cd25311",
+      "to": "4b371c04623dc6891813338d352bfc42",
+      "amount": 9657.67,
+      "currency": "AUD",
+      "at": "2025-06-15"
+    },
+    {
+      "id": "44cfa8b1ea90665df21980ac37029af3",
+      "from": "5c0219939f6387ac481b625aae112b7b",
+      "to": "163851c28ba82b49fc5ab1fcbae68fa1",
+      "amount": 9894.17,
+      "currency": "AUD",
+      "at": "2025-03-19"
+    },
+    {
+      "id": "a6950d1e9fb57b73dbd3782b598d251b",
+      "from": "509732a7f81a94791a1e482a6830ce31",
+      "to": "cbf973aa1bba94f549eb6b585204194a",
+      "amount": 507.57,
+      "currency": "AUD",
+      "at": "2025-03-23"
+    },
+    {
+      "id": "3fcb670d27948206641f1be5c3a3c883",
+      "from": "58d4cab265dd854e53cd3343cceb51f7",
+      "to": "efc3282ed8f30b8734c2901ab7bd86bf",
+      "amount": 1061.13,
+      "currency": "AUD",
+      "at": "2025-01-02"
+    },
+    {
+      "id": "af023c491982dab5f1a8e8c4fbf17b15",
+      "from": "926b10a7a9e10d4b3340774ddba3c906",
+      "to": "37a0c89bcf0dbf3c546eccd83345f2a0",
+      "amount": 64178.05,
+      "currency": "AUD",
+      "at": "2025-05-26"
+    },
+    {
+      "id": "57688103127e3f22d277d4b6b4af88d2",
+      "from": "ee907ec00cbd8a0f67b501a3aa5a2d9c",
+      "to": "f9a14515fc06705d2e6b548d3c2508f9",
+      "amount": 2589.19,
+      "currency": "AUD",
+      "at": "2025-04-30"
+    },
+    {
+      "id": "1915909371366a8d8a3b6d3d18fb789a",
+      "from": "89e1aaf1afd9db9f8fcff2eadeedf694",
+      "to": "ed232b297d55bc58d761fb7d60892b94",
+      "amount": 11248.12,
+      "currency": "AUD",
+      "at": "2025-03-12"
+    },
+    {
+      "id": "6bde6e4cba53146cd0100ce8510f00d5",
+      "from": "723633b857971401fbb0421e2a3b6298",
+      "to": "a5e9eafb1e52546ca73d09b4184a7acc",
+      "amount": 1319.25,
+      "currency": "AUD",
+      "at": "2025-01-02"
+    },
+    {
+      "id": "70745912935f488d6044a52e0d20e651",
+      "from": "b7645def81ef168196b365a2a45aee1e",
+      "to": "42cd38f43093dae1e837f4d5b632c97f",
+      "amount": 2543.03,
+      "currency": "AUD",
+      "at": "2025-06-11"
+    },
+    {
+      "id": "7baf18315ff42c3df239f050573ba7f2",
+      "from": "b34e8fbf3ab122976a912777d6b2bf0a",
+      "to": "f7543df7743abffc2a983b67d45ff6b9",
+      "amount": 1503.17,
+      "currency": "AUD",
+      "at": "2025-03-09"
+    },
+    {
+      "id": "e424439516acedcc0afc2395ebf4cc7a",
+      "from": "b912d599aab97dc21b8f158a4988d28c",
+      "to": "1670a634b2f2d77a72b1ca5a34a139b5",
+      "amount": 6949.94,
+      "currency": "AUD",
+      "at": "2025-05-23"
+    },
+    {
+      "id": "6d9ec58832e0f5273de51c64292bdf32",
+      "from": "458d3ca15917780448fd22856a65799f",
+      "to": "f3a6b418ffb647a9cca36360eac4440a",
+      "amount": 3974.02,
+      "currency": "AUD",
+      "at": "2025-05-22"
+    },
+    {
+      "id": "ad4d07cb8bdacc0c85d35457a64115f2",
+      "from": "dc1be824527d63095c4e69a04e101bec",
+      "to": "dece759a66540171ca88541bd95af083",
+      "amount": 1233.15,
+      "currency": "AUD",
+      "at": "2025-04-10"
+    },
+    {
+      "id": "c2424ab15cdc02c7d97acf0f48f28fd5",
+      "from": "c535778894102fbbad6a69827c08aeb2",
+      "to": "98cbe6c7b35f4fbba0019f82daa1e947",
+      "amount": 669.47,
+      "currency": "AUD",
+      "at": "2025-02-27"
+    },
+    {
+      "id": "a10c0c813c349f557b531455dcac75c6",
+      "from": "84a379565e41f6f12c95d0edf59e5489",
+      "to": "5bceef8598995ba0746f461a5242e15f",
+      "amount": 2439.93,
+      "currency": "AUD",
+      "at": "2025-04-21"
+    },
+    {
+      "id": "4a4573e74922f815d61f152bc708ee3e",
+      "from": "fb0e8b0b0bc076945998686189469fb6",
+      "to": "71518f9028093651ec439b2333a2c066",
+      "amount": 3838.11,
+      "currency": "AUD",
+      "at": "2025-06-19"
+    },
+    {
+      "id": "27a755b714ca0f05d8d6ca9183d5be32",
+      "from": "6dfd48fc921c02319125d460518416ee",
+      "to": "b7fd8b5cf7519976d8974f7624a1876b",
+      "amount": 14774.88,
+      "currency": "AUD",
+      "at": "2025-05-05"
+    },
+    {
+      "id": "42df56a113b70b455360cf577bc1a823",
+      "from": "4f57c9fffb079556e6f790484508150f",
+      "to": "ed232b297d55bc58d761fb7d60892b94",
+      "amount": 6154.22,
+      "currency": "AUD",
+      "at": "2025-05-09"
+    },
+    {
+      "id": "2f2839929e4154c8a0bb3ee063a351b7",
+      "from": "d1cabb8e074c2b19c21981d10616413a",
+      "to": "5c0219939f6387ac481b625aae112b7b",
+      "amount": 954.54,
+      "currency": "AUD",
+      "at": "2025-06-29"
+    },
+    {
+      "id": "944fbedc69d0ef6feb8ae20d70ac45c6",
+      "from": "cbf973aa1bba94f549eb6b585204194a",
+      "to": "82d9ccfa822fbe9f9e4ae100f393199d",
+      "amount": 822.03,
+      "currency": "AUD",
+      "at": "2025-01-02"
+    },
+    {
+      "id": "0718a7f3ae6cb11828dc792e90cbe833",
+      "from": "cd2e284974ac4fbc6e0650e0326e5912",
+      "to": "bd845d1029ea519cccfa262ff9f22b90",
+      "amount": 2605.58,
+      "currency": "AUD",
+      "at": "2025-05-22"
+    },
+    {
+      "id": "c3646cae7f0d56c03b2e999b64fe18ad",
+      "from": "9ba5757365d8f03d4738f69242540bc2",
+      "to": "a9e5a3e56805bf90d9887febb4af0a85",
+      "amount": 1288.99,
+      "currency": "AUD",
+      "at": "2025-01-03"
+    },
+    {
+      "id": "21831dc34d6fbbfad8e3e977567406fe",
+      "from": "5ce7af18b8234bee0c93a3081ccb0688",
+      "to": "f82eac28b36a0b4d3023638f411f816e",
+      "amount": 344.08,
+      "currency": "AUD",
+      "at": "2025-06-10"
+    },
+    {
+      "id": "7e11774a4768c96cf0a57e60c9b00cf8",
+      "from": "51643c1f409ff5876397f8dcd72c0b27",
+      "to": "16580337fa586f312e105f0b11fe3b88",
+      "amount": 4610.62,
+      "currency": "AUD",
+      "at": "2025-03-22"
+    },
+    {
+      "id": "cfa190ae7aa2b95e25f0bedafce711aa",
+      "from": "3ea4065fc4c8910fef4b1c86d0e23e16",
+      "to": "6031565a43a2b70bb26596990882602f",
+      "amount": 442.3,
+      "currency": "AUD",
+      "at": "2025-06-02"
+    },
+    {
+      "id": "ecb5a90bb654ca07a0b01b51dea97f48",
+      "from": "1eda181a3a0e9a2918ea2d73eea88098",
+      "to": "972198ab93b62a8406df515fe9ff079f",
+      "amount": 2237.39,
+      "currency": "AUD",
+      "at": "2025-04-01"
+    },
+    {
+      "id": "1403ae8be50d7d88c2e96e7e50f62e98",
+      "from": "c4a8f21a0fb208a70557ccd59b730384",
+      "to": "29f21ce0e01f157e8edd8d04b3774568",
+      "amount": 1003.18,
+      "currency": "AUD",
+      "at": "2025-06-22"
+    },
+    {
+      "id": "a6f6a9d83e70ad038bd5d1e598d5aa5c",
+      "from": "197021044f5f55b66abaf74515bf7168",
+      "to": "6b7c40a5b0c99bd832fed8bf47975da9",
+      "amount": 3576.07,
+      "currency": "AUD",
+      "at": "2025-04-02"
+    },
+    {
+      "id": "2fd2664ff5f2276780d4525c5b78ac6e",
+      "from": "826997e4cf6e57ee6e2c4137eca5ee22",
+      "to": "e9f9cc6b02c8c738211c8c37160703ea",
+      "amount": 2437.96,
+      "currency": "AUD",
+      "at": "2025-01-28"
+    },
+    {
+      "id": "ad91174eb526a9000eb2da21df5669ef",
+      "from": "34ae5ab1b92b6ea3a4ddadeebde53c8f",
+      "to": "52ba65172b87ab2598dbf122515dc679",
+      "amount": 1311.17,
+      "currency": "AUD",
+      "at": "2025-02-27"
+    },
+    {
+      "id": "9f6c6415d84481351816da590fa0448e",
+      "from": "7404359018a61865cafedacfb2ccdfa7",
+      "to": "5f53f26c939d61dc6eb108e2839aa6b0",
+      "amount": 1426.12,
+      "currency": "AUD",
+      "at": "2025-04-28"
+    },
+    {
+      "id": "7e3c3360f68ae4aa7a8f988fa33162f5",
+      "from": "153a9b9fdf2fa3882909f247ceaf0b3b",
+      "to": "e9d68c625ba4dd93d985d3cfdbe29ce8",
+      "amount": 1567.07,
+      "currency": "AUD",
+      "at": "2025-04-29"
+    },
+    {
+      "id": "94040cbce2a2dad6b3519c1f5b756a5f",
+      "from": "e9f9cc6b02c8c738211c8c37160703ea",
+      "to": "a7d922cd12728d8e996499a285e24ae4",
+      "amount": 1371.82,
+      "currency": "AUD",
+      "at": "2025-03-24"
+    },
+    {
+      "id": "4845e519aa15c298b5bba401e2c4d002",
+      "from": "9187f7fa781bbdd76b01a3739cd25311",
+      "to": "cd2e284974ac4fbc6e0650e0326e5912",
+      "amount": 20391.89,
+      "currency": "AUD",
+      "at": "2025-05-24"
+    },
+    {
+      "id": "0dfc39c9f3cbd7fffa359f6f108e1a5c",
+      "from": "ff8800082d536f29dac541ee25f1b1fb",
+      "to": "5bceef8598995ba0746f461a5242e15f",
+      "amount": 3021.97,
+      "currency": "AUD",
+      "at": "2025-03-10"
+    },
+    {
+      "id": "fbd8aea8d8435214714984372f79e8ab",
+      "from": "06d5d9f0b64bb7269d21b485edaa3ff7",
+      "to": "34ae5ab1b92b6ea3a4ddadeebde53c8f",
+      "amount": 12471.71,
+      "currency": "AUD",
+      "at": "2025-03-26"
+    },
+    {
+      "id": "d95d8a6f65f6dc2f42afe7ac9da52ec8",
+      "from": "59cda5e03ce647eefe88f24baacfb582",
+      "to": "267ecb182737971ab4bac5127003eb57",
+      "amount": 3464.66,
+      "currency": "AUD",
+      "at": "2025-05-31"
+    },
+    {
+      "id": "28fee8ec0bb293bb246b27a240ab9cd0",
+      "from": "73951ba9e5614da8a920422b93aa2cd8",
+      "to": "d4c81b21a2bf591434f13e90aaa20abe",
+      "amount": 1084.27,
+      "currency": "AUD",
+      "at": "2025-04-16"
+    },
+    {
+      "id": "a8e9c955b5df2537a73330b778fbdf19",
+      "from": "ecf5db5a8fdcd32d47f8059110f5fab1",
+      "to": "f9a14515fc06705d2e6b548d3c2508f9",
+      "amount": 3159.75,
+      "currency": "AUD",
+      "at": "2025-06-19"
+    },
+    {
+      "id": "953afbad426ddd9084c048f98da70733",
+      "from": "51912e3dfc51df9177b99599472afb2a",
+      "to": "4889eddc628c124cc5f8a730dfd74be9",
+      "amount": 4314.55,
+      "currency": "AUD",
+      "at": "2025-01-25"
+    },
+    {
+      "id": "58b04ae2525a79114cd2d53ddaa9ebf3",
+      "from": "c4a8f21a0fb208a70557ccd59b730384",
+      "to": "05d66a5e311980d5efb3b749e21b99db",
+      "amount": 17015.07,
+      "currency": "AUD",
+      "at": "2025-04-19"
+    },
+    {
+      "id": "aa1ef7024972993a0f8fa64e84f7c2c3",
+      "from": "c4a8f21a0fb208a70557ccd59b730384",
+      "to": "6b7bc9457befe900002217c171b7da06",
+      "amount": 1412.21,
+      "currency": "AUD",
+      "at": "2025-01-21"
+    },
+    {
+      "id": "4c43b36a0d84da011c8fe6f1e0857433",
+      "from": "ab1a2d6893ad0f5768fddb5f11b7a192",
+      "to": "03b2bfbc2a7828c9567f9b543488ecc8",
+      "amount": 1935.45,
+      "currency": "AUD",
+      "at": "2025-01-29"
+    },
+    {
+      "id": "da512baf8b564f4154bc1f9408bb4579",
+      "from": "97ca66b1f9ba0df077c5b78546adfd54",
+      "to": "6628afadb325931366e41a70a17ce940",
+      "amount": 976.73,
+      "currency": "AUD",
+      "at": "2025-03-29"
+    },
+    {
+      "id": "b094f9fdd0dd4bb523bacdef2114ad45",
+      "from": "1355677f8a11cf3493c655785e73e684",
+      "to": "60a410471cfe833148f148cc8824a14f",
+      "amount": 891.87,
+      "currency": "AUD",
+      "at": "2025-06-18"
+    },
+    {
+      "id": "e4007c35f1064b3e5757c8477b1a8061",
+      "from": "65dc8498a3aa1be23fee3d8fad668125",
+      "to": "0208536ec100c7c07142926c55d83dc1",
+      "amount": 1208.51,
+      "currency": "AUD",
+      "at": "2025-06-05"
+    },
+    {
+      "id": "8a6f8f085db6e9a665f6e6b4b6ac4f2d",
+      "from": "c527b9657ab64200444ce71b0df52095",
+      "to": "5bceef8598995ba0746f461a5242e15f",
+      "amount": 3726.39,
+      "currency": "AUD",
+      "at": "2025-05-01"
+    },
+    {
+      "id": "923fd2b41aea9b286624e7464749acc6",
+      "from": "f4cc75b30d3fff7a6275bf5b1860f6c6",
+      "to": "ae8558eefeff2c2ab9579db18020b7eb",
+      "amount": 9683.91,
+      "currency": "AUD",
+      "at": "2025-03-24"
+    },
+    {
+      "id": "9dbaa81a5f09a40411aa594bfdaca6e0",
+      "from": "df05dc13b614a3024e8513880f8518f5",
+      "to": "3ac1d874a786471625d5e800417bbb36",
+      "amount": 22010.86,
+      "currency": "AUD",
+      "at": "2025-04-25"
+    },
+    {
+      "id": "4bd120b42a6d06f0d6cf23c00fb87e07",
+      "from": "24d8cea5c33f4584b23bc1d8493cd016",
+      "to": "5f53f26c939d61dc6eb108e2839aa6b0",
+      "amount": 15917.11,
+      "currency": "AUD",
+      "at": "2025-03-12"
+    },
+    {
+      "id": "12d48c0ccb59c491a5c38d2ed65371ec",
+      "from": "1b0224af6cd32f2c607199303375b2e9",
+      "to": "1dcc06ad604a6f762fd4ce0503c5d1dd",
+      "amount": 4856.15,
+      "currency": "AUD",
+      "at": "2025-05-04"
+    },
+    {
+      "id": "6be0559f9f9cf62a7c0c631fbef01704",
+      "from": "51116fa392449525bd9aeadd09e3676b",
+      "to": "083bf2620ee43683da9ea138e9d27e96",
+      "amount": 43468.83,
+      "currency": "AUD",
+      "at": "2025-05-22"
+    },
+    {
+      "id": "7c45c06391de71d83eaad0602a8a024e",
+      "from": "0bd121ab876c30f16ba4c9df3b41fff0",
+      "to": "e66844a9d686f338a880aa130b669a56",
+      "amount": 542.32,
+      "currency": "AUD",
+      "at": "2025-02-16"
+    },
+    {
+      "id": "79cc15e20afc98dc79291bbf639acd0e",
+      "from": "6b7c40a5b0c99bd832fed8bf47975da9",
+      "to": "a5e9eafb1e52546ca73d09b4184a7acc",
+      "amount": 11194.94,
+      "currency": "AUD",
+      "at": "2025-02-18"
+    },
+    {
+      "id": "ceb64bfe92f7992b277364cfbb2a90cd",
+      "from": "1d0159fda9a3d6238d4de4f9fe4c06d4",
+      "to": "c7753887e63ce18b7eb39bc14c0897ce",
+      "amount": 527.43,
+      "currency": "AUD",
+      "at": "2025-03-20"
+    },
+    {
+      "id": "bb8946eade924918fa2ec4cdb65c0a9b",
+      "from": "19be8ce74489a06917f0f5973dc37efa",
+      "to": "793a5afda31821ffbad7317628fe45ef",
+      "amount": 72686.5,
+      "currency": "AUD",
+      "at": "2025-05-18"
+    },
+    {
+      "id": "f462be9f5ffab985a85a77255a50a378",
+      "from": "083bf2620ee43683da9ea138e9d27e96",
+      "to": "4a22591507c69e1c0a66ee4160948fef",
+      "amount": 2456.6,
+      "currency": "AUD",
+      "at": "2025-01-24"
+    },
+    {
+      "id": "533d1177347d54d85b3d7d65a0eec5f2",
+      "from": "b912d599aab97dc21b8f158a4988d28c",
+      "to": "6d2057ea8b3b041baccdb979ae49d0a6",
+      "amount": 2472.17,
+      "currency": "AUD",
+      "at": "2025-02-01"
+    },
+    {
+      "id": "94960bb0b28d4ee0ef6dd5c0d66bc48e",
+      "from": "458d3ca15917780448fd22856a65799f",
+      "to": "a043a03f267b6c7465101caa0faa8b53",
+      "amount": 1149.02,
+      "currency": "AUD",
+      "at": "2025-01-05"
+    },
+    {
+      "id": "7b10f417214183ac069a7bb6d70f6961",
+      "from": "73951ba9e5614da8a920422b93aa2cd8",
+      "to": "b1b496e966c1d772c60d9f25ea95277c",
+      "amount": 24708.45,
+      "currency": "AUD",
+      "at": "2025-02-25"
+    },
+    {
+      "id": "8f36e082f0bb8ddd2d61a152d908e66e",
+      "from": "5527d78fefd16cf013062765beb37cf3",
+      "to": "9f9cf62d62f7640816615fa0280aa3bb",
+      "amount": 16578.8,
+      "currency": "AUD",
+      "at": "2025-05-03"
+    },
+    {
+      "id": "32a259d45c7609e0d775ea702ece78de",
+      "from": "911a68df22ca744eb1058400c098964f",
+      "to": "5ffa88493f4d99a5cbaa0561a1f7e942",
+      "amount": 548.83,
+      "currency": "AUD",
+      "at": "2025-04-21"
+    },
+    {
+      "id": "8ec8f57b6838dec8a32bb02fe011b85c",
+      "from": "a9b653e7fc3a18832a8db437dd7e80c6",
+      "to": "6d5b72d030ec7b49e41129948084f2c1",
+      "amount": 3264.3,
+      "currency": "AUD",
+      "at": "2025-06-27"
+    },
+    {
+      "id": "6108f09f91ccea98730f8493adca6872",
+      "from": "5387a5b457fe7324e0d33af67b6ed5cb",
+      "to": "8de4f96fab36841895e2fee31430c176",
+      "amount": 4872.47,
+      "currency": "AUD",
+      "at": "2025-01-22"
+    },
+    {
+      "id": "9b3b049327708646d1cfe589b9ed733e",
+      "from": "1b0224af6cd32f2c607199303375b2e9",
+      "to": "7a978a5e44aafbe9173a92e50b39b99c",
+      "amount": 13339.13,
+      "currency": "AUD",
+      "at": "2025-01-07"
+    },
+    {
+      "id": "85892a8786a61b929ef412718f9e61f0",
+      "from": "bab0ed80bbe9035a54ebed8b2159dc71",
+      "to": "ed232b297d55bc58d761fb7d60892b94",
+      "amount": 2901.73,
+      "currency": "AUD",
+      "at": "2025-05-13"
+    },
+    {
+      "id": "1371c4be9e39f2794c0d64498f661781",
+      "from": "5527d78fefd16cf013062765beb37cf3",
+      "to": "ef0758b9178b48b9ec96f92096f039fb",
+      "amount": 7826.2,
+      "currency": "AUD",
+      "at": "2025-06-03"
+    },
+    {
+      "id": "ef20fcf5327ee39c236fd7d005d02f7d",
+      "from": "1eda181a3a0e9a2918ea2d73eea88098",
+      "to": "85e41bd6ebe097b3aa26d6d779a08eac",
+      "amount": 6798.24,
+      "currency": "AUD",
+      "at": "2025-03-24"
+    },
+    {
+      "id": "061410f306f6f3651892a86c0fac2b38",
+      "from": "42a4617967495073935c8b9fef69ad42",
+      "to": "e99691cb68a0bd8a961951489820e204",
+      "amount": 14900.93,
+      "currency": "AUD",
+      "at": "2025-05-20"
+    },
+    {
+      "id": "bcfaa5e59734a68c5f69462475a2d9af",
+      "from": "9ba5757365d8f03d4738f69242540bc2",
+      "to": "a00b65c82b121e73ca90b0122fb06630",
+      "amount": 2152.19,
+      "currency": "AUD",
+      "at": "2025-02-22"
+    },
+    {
+      "id": "24d3c9d91928c78a6801eff888cb8aed",
+      "from": "4ce5c77e2346a8c31ecfc77fbd1865ce",
+      "to": "71518f9028093651ec439b2333a2c066",
+      "amount": 2337.26,
+      "currency": "AUD",
+      "at": "2025-05-23"
+    },
+    {
+      "id": "a1fa61d3e40a28661e527db4aae18872",
+      "from": "ce87b08e5ac41ca07f1bac9b82cba482",
+      "to": "8ae1605ae40fc1ef257a35fbca8371fd",
+      "amount": 371.15,
+      "currency": "AUD",
+      "at": "2025-05-17"
+    },
+    {
+      "id": "665fcb189780302d9b0f5f68db1d8a13",
+      "from": "8930cf860dee333bf383d68d87423dc5",
+      "to": "aa766b7862be5bfbd6deec594bc3a8c0",
+      "amount": 39522.12,
+      "currency": "AUD",
+      "at": "2025-04-04"
+    },
+    {
+      "id": "1ff6e8d3d335a64a127d78e359c61e57",
+      "from": "29bcbd7daf2acdc61c268661eade320c",
+      "to": "e98371fe26879e602608c1f5f56b3122",
+      "amount": 25626.42,
+      "currency": "AUD",
+      "at": "2025-01-01"
+    },
+    {
+      "id": "976033c57b20cd43ed576ea2ab7231b2",
+      "from": "df05dc13b614a3024e8513880f8518f5",
+      "to": "17682a10cc90fda6ae694988075ebb82",
+      "amount": 5568.86,
+      "currency": "AUD",
+      "at": "2025-01-18"
+    },
+    {
+      "id": "71adad60fa25939c7b1efa9fb9015651",
+      "from": "1b0224af6cd32f2c607199303375b2e9",
+      "to": "26c26109935d8dc08a7a2dce2244d20b",
+      "amount": 5686.45,
+      "currency": "AUD",
+      "at": "2025-03-20"
+    },
+    {
+      "id": "c8d91326f1c9abdcf2e74ed58c16253e",
+      "from": "df2414805bf9b2ee6e29a3c3fc4215e8",
+      "to": "d2b101dfc86a22d9c819cd5adf5a2819",
+      "amount": 910.65,
+      "currency": "AUD",
+      "at": "2025-01-19"
+    },
+    {
+      "id": "4a5e7daf9dff8d134f47c8fd588a27f2",
+      "from": "d1cabb8e074c2b19c21981d10616413a",
+      "to": "30315085cf39bf5a5c08dfc562d424be",
+      "amount": 2175.58,
+      "currency": "AUD",
+      "at": "2025-04-07"
+    },
+    {
+      "id": "223ba65b5cd599eb83f10875bf171c77",
+      "from": "36aa0fe227f02ef8c9e8cd93217f70b4",
+      "to": "f03a68e6b0070fe12db6a24123de8863",
+      "amount": 8037.73,
+      "currency": "AUD",
+      "at": "2025-01-27"
+    },
+    {
+      "id": "739eb2dfc09d0662b52788ab40903b0a",
+      "from": "44ffbe91a5328186675f0ae195e585df",
+      "to": "89012a66cd2d4fe4761b5eb2c3aaaccb",
+      "amount": 8302.61,
+      "currency": "AUD",
+      "at": "2025-03-18"
+    },
+    {
+      "id": "5efc0f29b701790e0e63da23b2e9c2c5",
+      "from": "ea3867a51557e1a26f76bcd1441e863c",
+      "to": "8fe2f829d16592331cae762b269aed43",
+      "amount": 1881.61,
+      "currency": "AUD",
+      "at": "2025-02-27"
+    },
+    {
+      "id": "5532a3f95bb10d6f5244c251cde9e043",
+      "from": "a70ec0fde4bc701ac51fd1b1e7868b90",
+      "to": "cf5ea674bae3921ecb2e6bfa9c563ce8",
+      "amount": 779.07,
+      "currency": "AUD",
+      "at": "2025-04-04"
+    },
+    {
+      "id": "b54c068ff8e99cd26f1656d272a8c225",
+      "from": "617976ba88d82c8f7307abc5ed5ddb22",
+      "to": "c435f3ff5822b37e275d76eb089f7550",
+      "amount": 902.66,
+      "currency": "AUD",
+      "at": "2025-03-01"
+    },
+    {
+      "id": "b6a70124519a24b807fc5c4e6098e93a",
+      "from": "44ffbe91a5328186675f0ae195e585df",
+      "to": "d448d3b44596929f04a19312a0d69d50",
+      "amount": 2137.7,
+      "currency": "AUD",
+      "at": "2025-06-25"
+    },
+    {
+      "id": "532267b067915db35385fbc98df04557",
+      "from": "9187f7fa781bbdd76b01a3739cd25311",
+      "to": "0c01a1e5e41a0ca09c748692a5aafddf",
+      "amount": 2828.92,
+      "currency": "AUD",
+      "at": "2025-02-13"
+    },
+    {
+      "id": "6f3d59b2feade8684d2691165fdba935",
+      "from": "a70ec0fde4bc701ac51fd1b1e7868b90",
+      "to": "6b4dcc8776499ac0ff7f17997c6c3d33",
+      "amount": 7760.48,
+      "currency": "AUD",
+      "at": "2025-03-03"
+    },
+    {
+      "id": "a08f91f9a640a88cb65c03d552ec84c7",
+      "from": "826929d3ceb46c9ab7d930d9462a14a0",
+      "to": "ec8313943fe977bc3f883fda3662094a",
+      "amount": 1820.64,
+      "currency": "AUD",
+      "at": "2025-03-14"
+    },
+    {
+      "id": "6ecbe6949cadf1a495ea9410d9c3b76b",
+      "from": "373efc2f86b0244103f59085253a00ba",
+      "to": "0208536ec100c7c07142926c55d83dc1",
+      "amount": 10669.47,
+      "currency": "AUD",
+      "at": "2025-06-01"
+    },
+    {
+      "id": "e5ca95cbad6795898db235c88cbb1527",
+      "from": "14687223a95b4f0de7ae9f325f06ba92",
+      "to": "5ade7c2f3d57abca8f50795ebc83f648",
+      "amount": 1782.38,
+      "currency": "AUD",
+      "at": "2025-03-13"
+    },
+    {
+      "id": "f411f8185d1e922e0cd0950cb0bee137",
+      "from": "ae8558eefeff2c2ab9579db18020b7eb",
+      "to": "56881d33eead64241031c3ced6f5eb3b",
+      "amount": 17187.89,
+      "currency": "AUD",
+      "at": "2025-04-26"
+    },
+    {
+      "id": "22a635ea98def6c9b328017fb74ff857",
+      "from": "df05dc13b614a3024e8513880f8518f5",
+      "to": "5616669ebeec6a38f5c8225373d3ccb4",
+      "amount": 8399.72,
+      "currency": "AUD",
+      "at": "2025-05-15"
+    },
+    {
+      "id": "96efd07183b0c98df3a85353fa4e8315",
+      "from": "875f01df3103dcfccf2efbdc6a060915",
+      "to": "41008707a0c6460df1e321525901c93a",
+      "amount": 3554.78,
+      "currency": "AUD",
+      "at": "2025-05-06"
+    },
+    {
+      "id": "1ffe176a430a70a52fb885a8cd3223d6",
+      "from": "bab0ed80bbe9035a54ebed8b2159dc71",
+      "to": "3c7f61443d7ad0a66dfe9dbb089f882d",
+      "amount": 2350.74,
+      "currency": "AUD",
+      "at": "2025-04-25"
+    },
+    {
+      "id": "f87bd4afa955db5885ae71d7dd9ad463",
+      "from": "becb29072c9cce891f486227e1ea817c",
+      "to": "cf71b101346524087faf5ead8733e2a1",
+      "amount": 7874.91,
+      "currency": "AUD",
+      "at": "2025-03-22"
+    },
+    {
+      "id": "55fc0e42d3ddcb2043910ac9857a9545",
+      "from": "29bcbd7daf2acdc61c268661eade320c",
+      "to": "8ee742d93e54b2e32d0c6dc3174b26e6",
+      "amount": 1211.8,
+      "currency": "AUD",
+      "at": "2025-01-11"
+    },
+    {
+      "id": "abbcca35186a30a0716648cf6a83ff5a",
+      "from": "b9dfae4959fa813caa27124af974ea43",
+      "to": "60a410471cfe833148f148cc8824a14f",
+      "amount": 581.32,
+      "currency": "AUD",
+      "at": "2025-03-12"
+    },
+    {
+      "id": "36fe1abb385e93cb8debe0aea0c7bdf2",
+      "from": "a7e63409d6cb149d7c8c4417829f3a8d",
+      "to": "952e906405254488b8cfe991bb7ab71c",
+      "amount": 3196.48,
+      "currency": "AUD",
+      "at": "2025-01-21"
+    },
+    {
+      "id": "4f4443dc53970b96728e8781fd9709ed",
+      "from": "a70ec0fde4bc701ac51fd1b1e7868b90",
+      "to": "2b7cb5f241988b6c0f7091ce843f2fc5",
+      "amount": 1086.07,
+      "currency": "AUD",
+      "at": "2025-02-23"
+    },
+    {
+      "id": "46ca7c3b40ba92905b44fb8a0f08961c",
+      "from": "4f14c9799f53f9d47b8eeadb32f4c3d6",
+      "to": "787e7287c8fdbb32279774abe0f87cbd",
+      "amount": 1542.98,
+      "currency": "AUD",
+      "at": "2025-01-03"
+    },
+    {
+      "id": "2db51be8941dd8bbe74e0149085583c8",
+      "from": "9ba5757365d8f03d4738f69242540bc2",
+      "to": "a0bcfdebf26cd066690ed76492c536ea",
+      "amount": 16552.98,
+      "currency": "AUD",
+      "at": "2025-01-29"
+    },
+    {
+      "id": "75b2329edb2d9f69c8a91e2bd0e5a4cb",
+      "from": "b323fd276c4903a9e818df173cf030c1",
+      "to": "787e7287c8fdbb32279774abe0f87cbd",
+      "amount": 5798.73,
+      "currency": "AUD",
+      "at": "2025-01-11"
+    },
+    {
+      "id": "e2f234308c072307f275418cda2f966e",
+      "from": "24d8cea5c33f4584b23bc1d8493cd016",
+      "to": "abf10ac25eb0452176688387f59ba799",
+      "amount": 2364.39,
+      "currency": "AUD",
+      "at": "2025-04-22"
+    },
+    {
+      "id": "34f34348a408927b88e7b5497a84c5d9",
+      "from": "b487697e561b252016bd4ca75c11be94",
+      "to": "5bceef8598995ba0746f461a5242e15f",
+      "amount": 7253.65,
+      "currency": "AUD",
+      "at": "2025-05-22"
+    },
+    {
+      "id": "28bbc496d79d7536aea465b39648eaf0",
+      "from": "c9c6a3e1738b03b4bb6dcd920e00c839",
+      "to": "1a5b5805583117b63b7fab6610e41d00",
+      "amount": 284.0,
+      "currency": "AUD",
+      "at": "2025-01-21"
+    },
+    {
+      "id": "8c103125db92bf4ed843894e3f5ff04a",
+      "from": "d74d273bf535816d84bc5af8b7088db0",
+      "to": "032bf3fcd67f77a11a119a8bb20fd0b1",
+      "amount": 16497.91,
+      "currency": "AUD",
+      "at": "2025-03-10"
+    },
+    {
+      "id": "e50a7bf49ea664fb8ac959131d91bb5d",
+      "from": "94453c3f371c81166622d38afc7eb7e0",
+      "to": "95b323decfee6958c9cdffc3ce3e94f8",
+      "amount": 8379.64,
+      "currency": "AUD",
+      "at": "2025-04-18"
+    },
+    {
+      "id": "65a1ecfdc64e51c00ae7783d3e9d6de3",
+      "from": "b912d599aab97dc21b8f158a4988d28c",
+      "to": "43dc6c661511d2b301cf1dcf5bd450c1",
+      "amount": 3056.1,
+      "currency": "AUD",
+      "at": "2025-01-11"
+    },
+    {
+      "id": "e09ba5e5f7b0c187d7e670e202baed93",
+      "from": "0a406b827b06274e9302b2b8d04f85f6",
+      "to": "75047937d048a54dd3ab58f38490ee35",
+      "amount": 355.8,
+      "currency": "AUD",
+      "at": "2025-04-23"
+    },
+    {
+      "id": "ed67140f0789c9589557bacef7f8f1da",
+      "from": "97ca66b1f9ba0df077c5b78546adfd54",
+      "to": "7ab65214d2018fc220c7a3911bb6f58a",
+      "amount": 3560.85,
+      "currency": "AUD",
+      "at": "2025-02-20"
+    },
+    {
+      "id": "91146e44ffd5b193ee6fef91028f7057",
+      "from": "31e0f76153d65965e689fe0d6734cda1",
+      "to": "19be8ce74489a06917f0f5973dc37efa",
+      "amount": 2581.65,
+      "currency": "AUD",
+      "at": "2025-06-11"
+    },
+    {
+      "id": "a989d0136d9d478f35909f7596557950",
+      "from": "44ffbe91a5328186675f0ae195e585df",
+      "to": "78eb3d8fe58d19642b11def6265267e6",
+      "amount": 4435.5,
+      "currency": "AUD",
+      "at": "2025-02-01"
+    },
+    {
+      "id": "4b68b65bc70ce10783d848697d966e1a",
+      "from": "44ffbe91a5328186675f0ae195e585df",
+      "to": "416187c8a3a253c31cac3c2e882c5b58",
+      "amount": 300.96,
+      "currency": "AUD",
+      "at": "2025-04-23"
+    },
+    {
+      "id": "f45e876f6a3520cdbfc85206a1d11dd2",
+      "from": "373efc2f86b0244103f59085253a00ba",
+      "to": "65dc8498a3aa1be23fee3d8fad668125",
+      "amount": 4441.55,
+      "currency": "AUD",
+      "at": "2025-06-23"
+    },
+    {
+      "id": "c3ba1668a510ea9daad93933f5c0a34c",
+      "from": "7639c8b4f54854fc0211d9db3714dc08",
+      "to": "4cd7b381c438561f9fa330b7021d974e",
+      "amount": 3233.65,
+      "currency": "AUD",
+      "at": "2025-01-16"
+    },
+    {
+      "id": "f3d0a45b2eb82899174a039f3c4a1422",
+      "from": "189b1707bbd99e5de31f22673246199a",
+      "to": "aac505350f4769f58db93fad32c379d1",
+      "amount": 4238.15,
+      "currency": "AUD",
+      "at": "2025-02-09"
+    },
+    {
+      "id": "aeb8fdb0756116a99fbd3da84c886533",
+      "from": "5475e5bcac752806970443d6fceebe43",
+      "to": "60a410471cfe833148f148cc8824a14f",
+      "amount": 10636.91,
+      "currency": "AUD",
+      "at": "2025-03-15"
+    },
+    {
+      "id": "2faceb6887e39400e9ea2ddb6370c470",
+      "from": "e2cba0024d8cf8392e77f695f2cc7581",
+      "to": "36aa0fe227f02ef8c9e8cd93217f70b4",
+      "amount": 6418.15,
+      "currency": "AUD",
+      "at": "2025-03-07"
+    },
+    {
+      "id": "490cbf60e31e87c8ffe34dad56787756",
+      "from": "0c01a1e5e41a0ca09c748692a5aafddf",
+      "to": "bd845d1029ea519cccfa262ff9f22b90",
+      "amount": 4710.42,
+      "currency": "AUD",
+      "at": "2025-04-02"
+    },
+    {
+      "id": "8db6fd9370af996969c5469f640e7aec",
+      "from": "687f234812a3feebc41b411698ee0090",
+      "to": "8fd9378f39e9332ec5dea269698d8c1c",
+      "amount": 4955.02,
+      "currency": "AUD",
+      "at": "2025-06-10"
+    },
+    {
+      "id": "3625447ba7063401f3e660ff5c1e138f",
+      "from": "0933e8e2be0b49cc80fc53ab54791dc0",
+      "to": "75047937d048a54dd3ab58f38490ee35",
+      "amount": 3086.1,
+      "currency": "AUD",
+      "at": "2025-06-22"
+    },
+    {
+      "id": "024a32601b4757dcf4215a69a5f60dcd",
+      "from": "42cd38f43093dae1e837f4d5b632c97f",
+      "to": "e2cba0024d8cf8392e77f695f2cc7581",
+      "amount": 7072.66,
+      "currency": "AUD",
+      "at": "2025-06-22"
+    },
+    {
+      "id": "1e672cefbf8fae1b243840aaa5dfb1a5",
+      "from": "1eda181a3a0e9a2918ea2d73eea88098",
+      "to": "29a11fca4575fb7f16116ab4b881c839",
+      "amount": 1507.45,
+      "currency": "AUD",
+      "at": "2025-03-20"
+    },
+    {
+      "id": "58d97b447c5b280c280ae66fe5c6c5df",
+      "from": "a7e63409d6cb149d7c8c4417829f3a8d",
+      "to": "19736d5a0e6196b99700652ae465de6d",
+      "amount": 14895.74,
+      "currency": "AUD",
+      "at": "2025-04-11"
+    },
+    {
+      "id": "82c630cd4e52578f7b63cfb329041273",
+      "from": "f4cc75b30d3fff7a6275bf5b1860f6c6",
+      "to": "ae0825323db54f26fe29d9cce6becd1a",
+      "amount": 4242.55,
+      "currency": "AUD",
+      "at": "2025-06-14"
+    },
+    {
+      "id": "918dccccb784389c7514634aab54da2b",
+      "from": "f437462b4e00040e939b484b6c6b5819",
+      "to": "42534ed7e4dbc0ad0cc000d6097bb32d",
+      "amount": 468.47,
+      "currency": "AUD",
+      "at": "2025-03-05"
+    },
+    {
+      "id": "534b713412aff2f17709efc683d48c4e",
+      "from": "ce8cc773aafb11c3b7d37c5b55b20417",
+      "to": "1bddf71ddfeaa33dcb6e62ed8502861e",
+      "amount": 1077.12,
+      "currency": "AUD",
+      "at": "2025-04-19"
+    },
+    {
+      "id": "5c93d55c97ae0fd6ee77a854f15b2466",
+      "from": "8fd9378f39e9332ec5dea269698d8c1c",
+      "to": "875f01df3103dcfccf2efbdc6a060915",
+      "amount": 10798.4,
+      "currency": "AUD",
+      "at": "2025-04-05"
+    },
+    {
+      "id": "e9eec7f76e0e13b2b228c91867c5798e",
+      "from": "d1cabb8e074c2b19c21981d10616413a",
+      "to": "163851c28ba82b49fc5ab1fcbae68fa1",
+      "amount": 617.4,
+      "currency": "AUD",
+      "at": "2025-06-18"
+    },
+    {
+      "id": "d2b50bd46bd775d7b65db02f116976d7",
+      "from": "31e0f76153d65965e689fe0d6734cda1",
+      "to": "793a5afda31821ffbad7317628fe45ef",
+      "amount": 1529.59,
+      "currency": "AUD",
+      "at": "2025-06-05"
+    },
+    {
+      "id": "e14af22fe4dd8657bc9ac3b696725c05",
+      "from": "31e0f76153d65965e689fe0d6734cda1",
+      "to": "4237650981c9204ea918fd23fe9d704b",
+      "amount": 2766.12,
+      "currency": "AUD",
+      "at": "2025-05-29"
+    },
+    {
+      "id": "d33a5205875d527194cdade174b66988",
+      "from": "f4cc75b30d3fff7a6275bf5b1860f6c6",
+      "to": "56881d33eead64241031c3ced6f5eb3b",
+      "amount": 854.74,
+      "currency": "AUD",
+      "at": "2025-04-01"
+    },
+    {
+      "id": "c181070c913f6fb249a5b83785829f58",
+      "from": "97ca66b1f9ba0df077c5b78546adfd54",
+      "to": "18cd502b4c4b58ad471361feee334a28",
+      "amount": 957.29,
+      "currency": "AUD",
+      "at": "2025-06-17"
+    },
+    {
+      "id": "348902afde2b0bc8b8a86cd495092d32",
+      "from": "197021044f5f55b66abaf74515bf7168",
+      "to": "a5e9eafb1e52546ca73d09b4184a7acc",
+      "amount": 2445.39,
+      "currency": "AUD",
+      "at": "2025-05-04"
+    },
+    {
+      "id": "be2deab9417e239121175d593c378298",
+      "from": "197021044f5f55b66abaf74515bf7168",
+      "to": "723633b857971401fbb0421e2a3b6298",
+      "amount": 3426.44,
+      "currency": "AUD",
+      "at": "2025-06-25"
+    },
+    {
+      "id": "a4525626c978097dcd05d5092f337aca",
+      "from": "189b1707bbd99e5de31f22673246199a",
+      "to": "9db6c49896b517546fb48a919bed6c4f",
+      "amount": 52114.36,
+      "currency": "AUD",
+      "at": "2025-04-18"
+    },
+    {
+      "id": "70f23bac92c726d52c1546f04345ad5b",
+      "from": "df05dc13b614a3024e8513880f8518f5",
+      "to": "1ebc6cf8fd95e15fe4192236216082ed",
+      "amount": 899.9,
+      "currency": "AUD",
+      "at": "2025-05-09"
+    },
+    {
+      "id": "f2a3d1b5ec715338e3424c316e4c6fb5",
+      "from": "b667e669142a7d4d179b5c2ff3fbe02c",
+      "to": "787e7287c8fdbb32279774abe0f87cbd",
+      "amount": 4989.78,
+      "currency": "AUD",
+      "at": "2025-01-02"
+    },
+    {
+      "id": "ab207f12aa7cf567c5a28bbdbee040a5",
+      "from": "b47157eab9e9ece760054043d1422848",
+      "to": "dcbe32100881d3c26a5a4f6f9bae5d97",
+      "amount": 35598.32,
+      "currency": "AUD",
+      "at": "2025-05-25"
+    },
+    {
+      "id": "035abee5a33d31deb46ff86871d16d53",
+      "from": "458d3ca15917780448fd22856a65799f",
+      "to": "9709fe04fe5d9f57fd0e9dd2b0e125f8",
+      "amount": 1834.53,
+      "currency": "AUD",
+      "at": "2025-04-08"
+    },
+    {
+      "id": "bf7861c083f4e3b5a98f784e0fc1671d",
+      "from": "a2f4f72330f033982028d0c9185a266d",
+      "to": "826929d3ceb46c9ab7d930d9462a14a0",
+      "amount": 2614.61,
+      "currency": "AUD",
+      "at": "2025-03-22"
+    },
+    {
+      "id": "b640341cb3dda6af22aa241d74af0a47",
+      "from": "926b10a7a9e10d4b3340774ddba3c906",
+      "to": "f7543df7743abffc2a983b67d45ff6b9",
+      "amount": 26638.65,
+      "currency": "AUD",
+      "at": "2025-03-08"
+    },
+    {
+      "id": "e8ec0db059a664ef59bec820a39cc2bd",
+      "from": "c9c6a3e1738b03b4bb6dcd920e00c839",
+      "to": "1bddf71ddfeaa33dcb6e62ed8502861e",
+      "amount": 3138.0,
+      "currency": "AUD",
+      "at": "2025-02-01"
+    },
+    {
+      "id": "2585702d09b8aa4c964ee498716d78b2",
+      "from": "c7753887e63ce18b7eb39bc14c0897ce",
+      "to": "b715e9a15c8ffa6ef489e08bba83f02a",
+      "amount": 6456.36,
+      "currency": "AUD",
+      "at": "2025-01-01"
+    },
+    {
+      "id": "e0d108c3ab08cebde4eaeb9076dfeb24",
+      "from": "14a1bab70d88ea36d3bfc8ad7a101920",
+      "to": "c535778894102fbbad6a69827c08aeb2",
+      "amount": 5610.74,
+      "currency": "AUD",
+      "at": "2025-04-10"
+    },
+    {
+      "id": "18a0dcc373f8a10b072a2e40ced69d2c",
+      "from": "da2e5ba1959c031263e8340f02987077",
+      "to": "51116fa392449525bd9aeadd09e3676b",
+      "amount": 77.14,
+      "currency": "AUD",
+      "at": "2025-02-28"
+    },
+    {
+      "id": "38cb746a70f3dba001e0234b9dd3cd55",
+      "from": "b24859f84f144cc496eb303688d1bdb7",
+      "to": "4cd7b381c438561f9fa330b7021d974e",
+      "amount": 3470.57,
+      "currency": "AUD",
+      "at": "2025-04-12"
+    },
+    {
+      "id": "3fdd341917529a3773b4521b6091c556",
+      "from": "3ea4065fc4c8910fef4b1c86d0e23e16",
+      "to": "c84718fb5e22c9e96b4ba9aed8293d1e",
+      "amount": 2015.69,
+      "currency": "AUD",
+      "at": "2025-02-10"
+    },
+    {
+      "id": "e53fb387166184abc3c45c9f831a6a46",
+      "from": "9187f7fa781bbdd76b01a3739cd25311",
+      "to": "d7557643c1b33bcd1684e26ae16d9a58",
+      "amount": 2275.98,
+      "currency": "AUD",
+      "at": "2025-03-31"
+    },
+    {
+      "id": "a8ef209218c013c78e91045c406f5a30",
+      "from": "ed5c0ba0f079f13ea5462e000db58646",
+      "to": "163851c28ba82b49fc5ab1fcbae68fa1",
+      "amount": 2017.93,
+      "currency": "AUD",
+      "at": "2025-03-06"
+    },
+    {
+      "id": "f7b93f3355745c3385d02ddc6b018b7e",
+      "from": "189b1707bbd99e5de31f22673246199a",
+      "to": "9564108e961254f6b65a4f8098692912",
+      "amount": 1858.57,
+      "currency": "AUD",
+      "at": "2025-01-26"
+    },
+    {
+      "id": "6f02cd52b94b16aa6d82975c9c2cbd2e",
+      "from": "1b0224af6cd32f2c607199303375b2e9",
+      "to": "3c8b2ca9331f09e73e17077cb14c1dbe",
+      "amount": 6506.06,
+      "currency": "AUD",
+      "at": "2025-05-13"
+    },
+    {
+      "id": "3ff74620ae2f76a91fa14da5becaf904",
+      "from": "e26e77bb29d07f02c375a5b825188c5b",
+      "to": "ed232b297d55bc58d761fb7d60892b94",
+      "amount": 10556.27,
+      "currency": "AUD",
+      "at": "2025-02-24"
+    },
+    {
+      "id": "d0dc9844a3c6ac9dfea35cf584a7bcf3",
+      "from": "7d0e066b12c5e640dbbf22d28ab24d83",
+      "to": "793a5afda31821ffbad7317628fe45ef",
+      "amount": 10559.56,
+      "currency": "AUD",
+      "at": "2025-06-17"
+    },
+    {
+      "id": "5a38d0736b12256dc5b355003547ba36",
+      "from": "ea3867a51557e1a26f76bcd1441e863c",
+      "to": "83065facca16774d5066d14541939d56",
+      "amount": 1942.06,
+      "currency": "AUD",
+      "at": "2025-06-01"
+    },
+    {
+      "id": "0b0fe6cd5b455a6f27693e9f435fa8cb",
+      "from": "cceb0cfbb602a563b835ed7bb138bc65",
+      "to": "d2b101dfc86a22d9c819cd5adf5a2819",
+      "amount": 824.91,
+      "currency": "AUD",
+      "at": "2025-05-09"
+    },
+    {
+      "id": "f991b537766fbf3568588c2ad01deb18",
+      "from": "267ecb182737971ab4bac5127003eb57",
+      "to": "a9b653e7fc3a18832a8db437dd7e80c6",
+      "amount": 1142.42,
+      "currency": "AUD",
+      "at": "2025-05-13"
+    },
+    {
+      "id": "aecfcb5dd440c98cd528ac1faf925cc6",
+      "from": "926b10a7a9e10d4b3340774ddba3c906",
+      "to": "228f9ddbf30e28f9205dd9ba52aef7e8",
+      "amount": 18369.7,
+      "currency": "AUD",
+      "at": "2025-02-25"
+    },
+    {
+      "id": "a9db4cf23ebb1431f2c5e6d0cebe0bad",
+      "from": "bab0ed80bbe9035a54ebed8b2159dc71",
+      "to": "e26e77bb29d07f02c375a5b825188c5b",
+      "amount": 2184.44,
+      "currency": "AUD",
+      "at": "2025-02-25"
+    },
+    {
+      "id": "49b0ae205674b8f81d7d0c15c2d9a440",
+      "from": "153a9b9fdf2fa3882909f247ceaf0b3b",
+      "to": "62054064de2e13e1aa675b6f46b7555f",
+      "amount": 4099.71,
+      "currency": "AUD",
+      "at": "2025-04-01"
+    },
+    {
+      "id": "682f1beaec0868a6cfef3ed567070f93",
+      "from": "b135fe6049ffc86c85f2c685a2bc8a5f",
+      "to": "1bddf71ddfeaa33dcb6e62ed8502861e",
+      "amount": 961.78,
+      "currency": "AUD",
+      "at": "2025-06-15"
+    },
+    {
+      "id": "b3f91505c115bff5eff5ca26424ce83f",
+      "from": "f7702500791aa55f0a9574a76f1a311e",
+      "to": "f81bd0ee120287d69abf39b8ac0072c7",
+      "amount": 1314.48,
+      "currency": "AUD",
+      "at": "2025-04-27"
+    },
+    {
+      "id": "3d812fd803de2855c95b5a4bb8ea58ac",
+      "from": "ae0825323db54f26fe29d9cce6becd1a",
+      "to": "56881d33eead64241031c3ced6f5eb3b",
+      "amount": 2796.23,
+      "currency": "AUD",
+      "at": "2025-05-24"
+    },
+    {
+      "id": "781b28acdd2db019eed55a6dbd19bb42",
+      "from": "95b323decfee6958c9cdffc3ce3e94f8",
+      "to": "43ea743d0967b0a6a6b0885d58a338b8",
+      "amount": 7974.47,
+      "currency": "AUD",
+      "at": "2025-02-03"
+    },
+    {
+      "id": "964211cd2b82f268c5c230a514248af2",
+      "from": "44ffbe91a5328186675f0ae195e585df",
+      "to": "53dff11a6b7eb42ac6818f67ce8108aa",
+      "amount": 7122.47,
+      "currency": "AUD",
+      "at": "2025-01-14"
+    },
+    {
+      "id": "2e5abcd4a8fa531dc36e31b2b9f47881",
+      "from": "59cbdfd0c701bcae9c879175d9dec069",
+      "to": "787e7287c8fdbb32279774abe0f87cbd",
+      "amount": 6442.09,
+      "currency": "AUD",
+      "at": "2025-02-16"
+    },
+    {
+      "id": "944a3004c1f004cbbe4523b430a96559",
+      "from": "a307458c509b260631b53f960be14452",
+      "to": "60a410471cfe833148f148cc8824a14f",
+      "amount": 5668.68,
+      "currency": "AUD",
+      "at": "2025-05-24"
+    },
+    {
+      "id": "657c452cd59f01228f06aaba612f56be",
+      "from": "1eda181a3a0e9a2918ea2d73eea88098",
+      "to": "62ed2e8fafd722913447b227f6b0c6df",
+      "amount": 1792.29,
+      "currency": "AUD",
+      "at": "2025-06-20"
+    },
+    {
+      "id": "0fb48bc19e74d58b4b09c1630633ac82",
+      "from": "1eda181a3a0e9a2918ea2d73eea88098",
+      "to": "28bf49cc80189575af9e4801a4ea1743",
+      "amount": 563.18,
+      "currency": "AUD",
+      "at": "2025-03-27"
+    },
+    {
+      "id": "8567eca021d057f65e2c2b7a7729bc8f",
+      "from": "c9c6a3e1738b03b4bb6dcd920e00c839",
+      "to": "2f20a70d1c6636591e7c30444b04ebfb",
+      "amount": 2124.29,
+      "currency": "AUD",
+      "at": "2025-06-18"
+    },
+    {
+      "id": "454b2b91ed4b4a47acad2c42f7e7f883",
+      "from": "43ea743d0967b0a6a6b0885d58a338b8",
+      "to": "1b8e26e5f6c124f442cecefe1c743435",
+      "amount": 1501.03,
+      "currency": "AUD",
+      "at": "2025-03-11"
+    },
+    {
+      "id": "b028764e795dd6a05fa439ff54662743",
+      "from": "41008707a0c6460df1e321525901c93a",
+      "to": "7bfb1e65d1b363627b92a82017bbc44e",
+      "amount": 855.9,
+      "currency": "AUD",
+      "at": "2025-01-04"
+    },
+    {
+      "id": "149592ad640b54c1f15e4afe9c57dec7",
+      "from": "b189bb0fbf9d7165da6d23bd6b2c0480",
+      "to": "f9a14515fc06705d2e6b548d3c2508f9",
+      "amount": 7516.26,
+      "currency": "AUD",
+      "at": "2025-04-06"
+    },
+    {
+      "id": "23bad0341806db032242ed0e8d4a1f70",
+      "from": "70c4a889929a953d9fdff08385645879",
+      "to": "4cd7b381c438561f9fa330b7021d974e",
+      "amount": 22005.77,
+      "currency": "AUD",
+      "at": "2025-05-10"
+    },
+    {
+      "id": "233f367578bbca9337f6f1b15923c158",
+      "from": "6d5b72d030ec7b49e41129948084f2c1",
+      "to": "0bd121ab876c30f16ba4c9df3b41fff0",
+      "amount": 8888.34,
+      "currency": "AUD",
+      "at": "2025-06-16"
+    },
+    {
+      "id": "788deb996c40d89ecf9bcc3e33fdfbff",
+      "from": "153a9b9fdf2fa3882909f247ceaf0b3b",
+      "to": "fdf59347786729c48149824752158b25",
+      "amount": 2863.7,
+      "currency": "AUD",
+      "at": "2025-02-28"
+    },
+    {
+      "id": "571b4aee65c1a0c1057ad1993c2ff043",
+      "from": "14687223a95b4f0de7ae9f325f06ba92",
+      "to": "5c75cbb915e9990f496ec04575429f77",
+      "amount": 712.97,
+      "currency": "AUD",
+      "at": "2025-01-07"
+    },
+    {
+      "id": "678399b03220303cd39721b2ee76fec3",
+      "from": "65866259469f8e66368b68b69c5836a6",
+      "to": "b47157eab9e9ece760054043d1422848",
+      "amount": 16085.25,
+      "currency": "AUD",
+      "at": "2025-04-21"
+    },
+    {
+      "id": "23d4f4ebeff648b9c310b015efaedabc",
+      "from": "63a2508697a2a10a636243b2d8ae3b18",
+      "to": "3eac1d1f0c53321563b836aec6a300aa",
+      "amount": 10232.65,
+      "currency": "AUD",
+      "at": "2025-05-07"
+    },
+    {
+      "id": "50bf5b563a1d775e80691f8517181056",
+      "from": "c9c6a3e1738b03b4bb6dcd920e00c839",
+      "to": "b135fe6049ffc86c85f2c685a2bc8a5f",
+      "amount": 2311.8,
+      "currency": "AUD",
+      "at": "2025-04-08"
+    },
+    {
+      "id": "27ffdd66e927dd4e9fae61413a1e5b56",
+      "from": "ea3867a51557e1a26f76bcd1441e863c",
+      "to": "117f336ddeb96d8b2160a7022ca102b8",
+      "amount": 2651.1,
+      "currency": "AUD",
+      "at": "2025-05-01"
+    },
+    {
+      "id": "ff4fc490168d9e421213db17eee02523",
+      "from": "bf1dbe8a7551524cbc1ce075508a205f",
+      "to": "14a1bab70d88ea36d3bfc8ad7a101920",
+      "amount": 7542.76,
+      "currency": "AUD",
+      "at": "2025-02-06"
+    },
+    {
+      "id": "8c03be6784a47fff4d9ada102e782ab1",
+      "from": "34a3a0479a0d393847800913d6aa3e8d",
+      "to": "032bf3fcd67f77a11a119a8bb20fd0b1",
+      "amount": 1088.18,
+      "currency": "AUD",
+      "at": "2025-03-25"
+    },
+    {
+      "id": "58ac63268c25267f5ecdc081b0f88087",
+      "from": "9c98ca63d4a9b2ebd84f76500d5e14b2",
+      "to": "033fe25587ec433a7e621b3028906dd7",
+      "amount": 2089.39,
+      "currency": "AUD",
+      "at": "2025-04-23"
+    },
+    {
+      "id": "5b43a7e0e5319ce9078f1ef6fb5e94b5",
+      "from": "d1b4df69fe8c28406e451cf257146df3",
+      "to": "16580337fa586f312e105f0b11fe3b88",
+      "amount": 13514.62,
+      "currency": "AUD",
+      "at": "2025-05-20"
+    },
+    {
+      "id": "6fe57398f3be5c8c48fc823882e43a26",
+      "from": "228f9ddbf30e28f9205dd9ba52aef7e8",
+      "to": "f7543df7743abffc2a983b67d45ff6b9",
+      "amount": 1769.13,
+      "currency": "AUD",
+      "at": "2025-01-04"
+    },
+    {
+      "id": "c93f36c7f0c259365b1e408c699e1a4e",
+      "from": "197021044f5f55b66abaf74515bf7168",
+      "to": "ee3c9fb420a2dba5978b8feab75cef25",
+      "amount": 1241.34,
+      "currency": "AUD",
+      "at": "2025-06-19"
+    },
+    {
+      "id": "8822741d6a216adc6bc141b2fa960e08",
+      "from": "b667e669142a7d4d179b5c2ff3fbe02c",
+      "to": "59cbdfd0c701bcae9c879175d9dec069",
+      "amount": 10081.24,
+      "currency": "AUD",
+      "at": "2025-03-23"
+    },
+    {
+      "id": "757a91b00cf1adb57315e0b472bb4725",
+      "from": "ee3c9fb420a2dba5978b8feab75cef25",
+      "to": "a5e9eafb1e52546ca73d09b4184a7acc",
+      "amount": 3063.61,
+      "currency": "AUD",
+      "at": "2025-02-09"
+    },
+    {
+      "id": "0ef658fd7f1b5d6992efc534c85d843c",
+      "from": "d4a47d82deeccf95ca1a12f84dae1047",
+      "to": "8a19cbc8955c326e10ff56bf65cc9811",
+      "amount": 5547.37,
+      "currency": "AUD",
+      "at": "2025-05-04"
+    },
+    {
+      "id": "920f98331f9ca37b6b5b23714421a1ee",
+      "from": "5ffa88493f4d99a5cbaa0561a1f7e942",
+      "to": "dc1be824527d63095c4e69a04e101bec",
+      "amount": 1157.9,
+      "currency": "AUD",
+      "at": "2025-01-06"
+    },
+    {
+      "id": "2057b0de2ab49ae170547e0bb37ee754",
+      "from": "04e77af59be6a8ea7f8ec4c2994b7a56",
+      "to": "5f53f26c939d61dc6eb108e2839aa6b0",
+      "amount": 4014.92,
+      "currency": "AUD",
+      "at": "2025-01-21"
+    },
+    {
+      "id": "55e046c06d6dbc1ad6dfa6b5e9df6bff",
+      "from": "97ca66b1f9ba0df077c5b78546adfd54",
+      "to": "74e2d6111c0f3cd70b8b0cb05a678892",
+      "amount": 1014.45,
+      "currency": "AUD",
+      "at": "2025-05-07"
+    },
+    {
+      "id": "e14ed05abc452b427a83dc123957941c",
+      "from": "ce87b08e5ac41ca07f1bac9b82cba482",
+      "to": "23860b2774325e0a1968dd4a933ed309",
+      "amount": 1898.04,
+      "currency": "AUD",
+      "at": "2025-04-23"
+    },
+    {
+      "id": "2a9c03bbdd992c22bb9b798fef16acc2",
+      "from": "7bf1fbc98b0d861d61e543c4c8bf0e81",
+      "to": "5ce7af18b8234bee0c93a3081ccb0688",
+      "amount": 2182.18,
+      "currency": "AUD",
+      "at": "2025-04-28"
+    },
+    {
+      "id": "966affa7cb1c32f56d97d9f5ebf85eb7",
+      "from": "d6ccb68c02a9cbfe80e3364aec1aa67a",
+      "to": "163851c28ba82b49fc5ab1fcbae68fa1",
+      "amount": 6895.6,
+      "currency": "AUD",
+      "at": "2025-05-30"
+    },
+    {
+      "id": "c14384caa0dbe61c2d14ca4fee667ec9",
+      "from": "9c98ca63d4a9b2ebd84f76500d5e14b2",
+      "to": "3adec60285d48cf5bab14bc691733ba2",
+      "amount": 3655.43,
+      "currency": "AUD",
+      "at": "2025-05-22"
+    },
+    {
+      "id": "dbefc40f0968989f4b60a794da97dcb5",
+      "from": "6fd6ecbca426729a36991aca98693aa0",
+      "to": "60a410471cfe833148f148cc8824a14f",
+      "amount": 1612.11,
+      "currency": "AUD",
+      "at": "2025-06-13"
+    },
+    {
+      "id": "7132896cf3aac9a276730afbc385f18a",
+      "from": "4b371c04623dc6891813338d352bfc42",
+      "to": "bd845d1029ea519cccfa262ff9f22b90",
+      "amount": 3692.16,
+      "currency": "AUD",
+      "at": "2025-05-10"
+    },
+    {
+      "id": "cc826e343d6832f19ee0baf7171c1cd5",
+      "from": "f1585917ee1a8e5916cb150bc04b849d",
+      "to": "032bf3fcd67f77a11a119a8bb20fd0b1",
+      "amount": 1117.83,
+      "currency": "AUD",
+      "at": "2025-01-29"
+    },
+    {
+      "id": "ae6e5d5a14cb7c33e0ff8da251309a98",
+      "from": "a7e63409d6cb149d7c8c4417829f3a8d",
+      "to": "d08982c493718f7a6b2c9a01b9743f1a",
+      "amount": 27055.49,
+      "currency": "AUD",
+      "at": "2025-06-02"
+    },
+    {
+      "id": "1abd22a79b7b2c21a571698f1e19521f",
+      "from": "ff89b2fa55767151ce8980c43fac4438",
+      "to": "65866259469f8e66368b68b69c5836a6",
+      "amount": 2677.47,
+      "currency": "AUD",
+      "at": "2025-01-16"
+    },
+    {
+      "id": "95d374bcb0ecb490fb22231ef5fb8369",
+      "from": "29bcbd7daf2acdc61c268661eade320c",
+      "to": "3797d9f98624c016708aebfc9eaf2abb",
+      "amount": 4534.57,
+      "currency": "AUD",
+      "at": "2025-02-27"
+    },
+    {
+      "id": "9691f2431f722a0d29f0b17d706e9585",
+      "from": "f1585917ee1a8e5916cb150bc04b849d",
+      "to": "d6219857a03ce18d2faa5a66f0cd1b8f",
+      "amount": 3318.62,
+      "currency": "AUD",
+      "at": "2025-01-22"
+    },
+    {
+      "id": "518a9d9045015ac6f21c50765675b59a",
+      "from": "31e0f76153d65965e689fe0d6734cda1",
+      "to": "7d0e066b12c5e640dbbf22d28ab24d83",
+      "amount": 15745.36,
+      "currency": "AUD",
+      "at": "2025-01-15"
+    },
+    {
+      "id": "79582997f64d621bb37694c42a29ecf9",
+      "from": "d1cabb8e074c2b19c21981d10616413a",
+      "to": "d6ccb68c02a9cbfe80e3364aec1aa67a",
+      "amount": 1617.34,
+      "currency": "AUD",
+      "at": "2025-04-05"
+    },
+    {
+      "id": "6169cec2de19eb9547429ba28549f950",
+      "from": "30315085cf39bf5a5c08dfc562d424be",
+      "to": "163851c28ba82b49fc5ab1fcbae68fa1",
+      "amount": 471.52,
+      "currency": "AUD",
+      "at": "2025-01-15"
+    },
+    {
+      "id": "f0da30ee4796a5d2cec777516917b0ff",
+      "from": "e7897606052c8b5b2488fef65dbb15ee",
+      "to": "d2b101dfc86a22d9c819cd5adf5a2819",
+      "amount": 746.73,
+      "currency": "AUD",
+      "at": "2025-04-15"
+    },
+    {
+      "id": "2b86dab163043a177a8a5c3d52da3859",
+      "from": "3ab8f085003e9dc9576c71635b95c3d8",
+      "to": "4cd7b381c438561f9fa330b7021d974e",
+      "amount": 16909.35,
+      "currency": "AUD",
+      "at": "2025-03-10"
+    },
+    {
+      "id": "cc5f3ba86025a84cd60d7b23fc8d62ef",
+      "from": "1a5b5805583117b63b7fab6610e41d00",
+      "to": "1bddf71ddfeaa33dcb6e62ed8502861e",
+      "amount": 645.3,
+      "currency": "AUD",
+      "at": "2025-03-17"
+    },
+    {
+      "id": "2f4cdf1709efb7dc4e5446cb876d1bb5",
+      "from": "42534ed7e4dbc0ad0cc000d6097bb32d",
+      "to": "94453c3f371c81166622d38afc7eb7e0",
+      "amount": 3793.35,
+      "currency": "AUD",
+      "at": "2025-05-04"
+    },
+    {
+      "id": "b9acf0385c5113a193b991889df937c0",
+      "from": "d7557643c1b33bcd1684e26ae16d9a58",
+      "to": "bd845d1029ea519cccfa262ff9f22b90",
+      "amount": 9541.99,
+      "currency": "AUD",
+      "at": "2025-05-16"
+    },
+    {
+      "id": "24349bfcced58d2f14d859075c48bd63",
+      "from": "cf71b101346524087faf5ead8733e2a1",
+      "to": "a28ef9c8bfd51e16636f0cb4731b8f8a",
+      "amount": 235.19,
+      "currency": "AUD",
+      "at": "2025-04-03"
+    },
+    {
+      "id": "d7f648c909350d4a57a93011f18860bc",
+      "from": "b6869dcec72e5d784a3165daf1dd84be",
+      "to": "b7fd8b5cf7519976d8974f7624a1876b",
+      "amount": 2827.13,
+      "currency": "AUD",
+      "at": "2025-02-04"
+    },
+    {
+      "id": "fbde27aa06e0b3a02b94b514eaab0852",
+      "from": "5441b3fd372164f912df07c3d684f1dd",
+      "to": "98c13e36c4ec736f800e0243968b1687",
+      "amount": 1091.37,
+      "currency": "AUD",
+      "at": "2025-03-20"
+    },
+    {
+      "id": "d0469667db0e5e65fcfcbc361a60e033",
+      "from": "abf10ac25eb0452176688387f59ba799",
+      "to": "5f53f26c939d61dc6eb108e2839aa6b0",
+      "amount": 7369.33,
+      "currency": "AUD",
+      "at": "2025-05-30"
+    },
+    {
+      "id": "e27e484ed6fa190330ffec1a416644a6",
+      "from": "f4cc75b30d3fff7a6275bf5b1860f6c6",
+      "to": "2c4c93c47f18c6b02a89c7a55805f35c",
+      "amount": 1259.13,
+      "currency": "AUD",
+      "at": "2025-05-29"
+    },
+    {
+      "id": "7b546d5ce70116788d490c76c0fee651",
+      "from": "b8aa3635996d9e79abcd625438caeaca",
+      "to": "a03840b47e912218422ba55c4439ee9d",
+      "amount": 16038.31,
+      "currency": "AUD",
+      "at": "2025-03-07"
+    },
+    {
+      "id": "d913451b63c005850bb768a17eaa5791",
+      "from": "f82eac28b36a0b4d3023638f411f816e",
+      "to": "82f1325cfb97acf718566d287996a724",
+      "amount": 4011.03,
+      "currency": "AUD",
+      "at": "2025-02-21"
+    },
+    {
+      "id": "dfc2760d34baf92b698fda12b2e882cd",
+      "from": "009376c871a7bb4fb619d4bad1cabf44",
+      "to": "5d80a557cce7d499e2069637afba55a7",
+      "amount": 11030.67,
+      "currency": "AUD",
+      "at": "2025-06-01"
+    },
+    {
+      "id": "72e979057ac4c7a39498e0b35cb23618",
+      "from": "9c98ca63d4a9b2ebd84f76500d5e14b2",
+      "to": "c2c3fc034424f49033c6360da6d65089",
+      "amount": 1558.16,
+      "currency": "AUD",
+      "at": "2025-01-05"
+    },
+    {
+      "id": "117e7b4df299bd3f00c0c836d7ae6582",
+      "from": "c435f3ff5822b37e275d76eb089f7550",
+      "to": "8930cf860dee333bf383d68d87423dc5",
+      "amount": 4244.8,
+      "currency": "AUD",
+      "at": "2025-06-15"
+    },
+    {
+      "id": "683a1a5e2347e9493e45fb56bbc0ee47",
+      "from": "2c4c93c47f18c6b02a89c7a55805f35c",
+      "to": "56881d33eead64241031c3ced6f5eb3b",
+      "amount": 4785.4,
+      "currency": "AUD",
+      "at": "2025-03-13"
+    },
+    {
+      "id": "4d6e4b1c7a4ca705b7a63358614b76c0",
+      "from": "21f9fc4da68ee25cb7eabeb6d5938872",
+      "to": "a6607a83463c53c0a1f57759f4215bd4",
+      "amount": 1844.57,
+      "currency": "AUD",
+      "at": "2025-06-05"
+    },
+    {
+      "id": "c7d1dc146cdfa1eab52e379d9252f839",
+      "from": "fb058569b93112850b45f1a1b134e001",
+      "to": "f9a14515fc06705d2e6b548d3c2508f9",
+      "amount": 3445.87,
+      "currency": "AUD",
+      "at": "2025-01-29"
+    },
+    {
+      "id": "77c35ec3442828a7e16067efcb37f0a8",
+      "from": "b261a511895eb7d773264da5b91e521a",
+      "to": "0208536ec100c7c07142926c55d83dc1",
+      "amount": 1036.59,
+      "currency": "AUD",
+      "at": "2025-03-18"
+    }
+  ],
+  "as_of": "2025-12-31"
+}

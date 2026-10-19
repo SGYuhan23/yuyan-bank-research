@@ -1,0 +1,52 @@
+{
+  "id": "c6b51ffb9b674ad3b0ae0007a6a00aeb",
+  "reviewer": "same Qwen blinded to system, not independent expert",
+  "grade": {
+    "required_checks": [
+      {
+        "requirement": "自己的网银/手机银行实际到账",
+        "met": false,
+        "output_quote": ""
+      },
+      {
+        "requirement": "凭证不能代替到账核对",
+        "met": false,
+        "output_quote": ""
+      },
+      {
+        "requirement": "针对本次交货",
+        "met": false,
+        "output_quote": ""
+      }
+    ],
+    "errors": [
+      {
+        "type": "unsupported",
+        "quote": "ValueError: UNSUPPORTED_QUOTE:receipt-guidance",
+        "reason": "输出中出现未定义的UNSUPPORTED_QUOTE错误码，且引用了不存在的' receipt-guidance '标识符；参考要求中明确禁止使用该标识符作为输出内容，而输出直接抛出该异常，属于不支持的响应形式。"
+      }
+    ],
+    "completion": false,
+    "refusal": false,
+    "uncertain": []
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "blind_auxiliary_grade",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 1299,
+        "completion_tokens": 211,
+        "prompt_tokens": 1088,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 5.135,
+      "finish_reason": "stop",
+      "request_hash": "8983fbd4b6ca12fea0f0fe2ab035be9b24d50bcc64150f20879dd1ae47045b9b"
+    }
+  ]
+}

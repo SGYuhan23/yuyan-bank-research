@@ -1,0 +1,57 @@
+{
+  "id": "e2c6d2ef61ab4520b521065e3a5f2716",
+  "case_id": "h2",
+  "family": "school-contractor",
+  "system": "retrieved",
+  "query": "学校采购的正规承包商确实可能换银行。现在来信通知更换收款账号，我作为付款人员如何核实本次请求？",
+  "started_at": "2026-10-19T14:35:21.043419+00:00",
+  "cost": null,
+  "cost_reason": "dated model prices not verified",
+  "status": "completed",
+  "output": {
+    "answer": "作为付款人员，您应严格遵循以下核实步骤：1）不依据来信中的联系方式（如电话、邮箱）进行核实；2）使用您单位档案中已存档的该承包商原始联系方式（如合同所留电话），或通过学校官网、公开招标文件、118114等权威渠道重新查证其官方电话；3）致电对方负责人（如财务主管或合同签约人），口头确认账户变更请求的真实性，并核对变更原因、新账号、开户行等关键信息；4）若对方称已发邮件，须同步核验邮件发件域名是否为该承包商注册的官方域名（而非相似拼写或免费邮箱）；5）优先要求对方提供PayID（如已注册），支付前在网银界面确认显示的收款人名称与合同一致；6）对首次变更或紧急变更，执行双人复核机制。注意：账户变更本身合法，但未经独立核实即操作是高风险行为。",
+    "sources": [
+      "bec-guidance",
+      "bec-case"
+    ],
+    "unknowns": []
+  },
+  "records": [
+    {
+      "kind": "retrieval_started",
+      "method": "bm25"
+    },
+    {
+      "kind": "retrieval_attempt_completed",
+      "method": "bm25",
+      "unit_ids": [
+        "bec-guidance",
+        "bec-case",
+        "receipt-guidance"
+      ],
+      "source_ids": [
+        "westpac-bec",
+        "scamwatch-case",
+        "westpac-receipt"
+      ]
+    },
+    {
+      "kind": "model_call",
+      "phase": "baseline_answer",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 3115,
+        "completion_tokens": 234,
+        "prompt_tokens": 2881,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        }
+      },
+      "duration_seconds": 5.753,
+      "finish_reason": "stop",
+      "request_hash": "36d3b8d15797bd5b3eb82c82f4e292b69befb20df835a6fada5377f9ad95fd07"
+    }
+  ],
+  "seconds": 5.764
+}

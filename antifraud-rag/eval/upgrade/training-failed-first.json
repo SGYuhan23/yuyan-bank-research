@@ -1,0 +1,93 @@
+{
+  "session_id": "6e48287a429743e097180b69b5a25e73",
+  "visible_context": {
+    "scenario": {
+      "scenario_id": "b66f6cf70860e067",
+      "family_id": "account_change",
+      "visible_facts": [
+        "我是采购付款人员，熟悉供应商来邮件说换收款账户。"
+      ],
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "jurisdiction": "Australia",
+      "label": "本项目编写的培训情境，非真实客户案例；待人工审核"
+    },
+    "turns": [
+      {
+        "learner": "你是否用原先留存的电话独立确认了本次账户变更？",
+        "client": "还没有用留档电话独立口头核实。 邮件要求本次付款改到新账户，未声称以前款项未收到。 只涉及本次变更请求，其他付款未涉及。"
+      },
+      {
+        "learner": "本次请求核实前不要按这次变更付款，不影响其他无关付款。",
+        "client": "邮件要求本次付款改到新账户，未声称以前款项未收到。 只涉及本次变更请求，其他付款未涉及。"
+      },
+      {
+        "learner": "如果你是正常变更，也需要核实；我不能只凭这条请求认定诈骗。",
+        "client": "邮件要求本次付款改到新账户，未声称以前款项未收到。"
+      }
+    ]
+  },
+  "topic_review": {
+    "criteria": [
+      {
+        "criterion": "independent",
+        "matched_turns": [
+          0
+        ],
+        "omission": null
+      },
+      {
+        "criterion": "change",
+        "matched_turns": [
+          0,
+          1,
+          2
+        ],
+        "omission": null
+      },
+      {
+        "criterion": "scope",
+        "matched_turns": [
+          0,
+          1
+        ],
+        "omission": null
+      }
+    ],
+    "matched": 3,
+    "total": 3,
+    "scope_flags": [],
+    "source_basis_ids": [
+      "bec-guidance"
+    ],
+    "unknowns_review": "检查是否在未设定事实时承认未知；关键词匹配不能保证问法正确",
+    "score_revisions": [],
+    "review_status": "pending_human_review",
+    "notice": "自动匹配仅定位需复核的问句，不是员工绩效或语义正确率"
+  },
+  "semantic_review": {
+    "status": "unavailable",
+    "error": "ValueError",
+    "records": [
+      {
+        "kind": "model_call",
+        "phase": "training_debrief",
+        "model_requested": "qwen-plus",
+        "model_returned": "qwen-plus",
+        "usage": {
+          "total_tokens": 1761,
+          "completion_tokens": 545,
+          "prompt_tokens": 1216,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "duration_seconds": 12.561,
+        "finish_reason": "stop",
+        "request_hash": "d94862015322ae6ab8c886a35bad8ee37960b1f9d646c2f714bd6171f0093fa4"
+      }
+    ],
+    "notice": "语义复盘失败；关键词主题匹配不替代人工审核"
+  }
+}

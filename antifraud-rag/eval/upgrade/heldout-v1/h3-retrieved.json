@@ -1,0 +1,54 @@
+{
+  "id": "c49b2584e66642bd8f753c9f36a69c24",
+  "case_id": "h3",
+  "family": "logistics-repeat",
+  "system": "retrieved",
+  "query": "我公司已经给物流商结过这笔运费，对方说没收到要再付一遍；请给出核实建议。",
+  "started_at": "2026-10-19T14:36:17.890171+00:00",
+  "cost": null,
+  "cost_reason": "dated model prices not verified",
+  "status": "completed",
+  "output": {
+    "answer": "请立即暂停付款。核查以下三点：（1）调取历史付款记录，确认是否已向该物流商原账户成功支付；（2）检查近期往来邮件，确认是否存在被篡改的账户变更请求；（3）使用您存档中已有的物流商联系电话（勿用邮件中提供的号码），语音核实其收款账户信息及本次未收款原因。如发现账户信息不一致或无法联系到真实对接人，请立即向Westpac报告并保留全部通信证据。",
+    "sources": [
+      "bec-guidance"
+    ],
+    "unknowns": []
+  },
+  "records": [
+    {
+      "kind": "retrieval_started",
+      "method": "bm25"
+    },
+    {
+      "kind": "retrieval_attempt_completed",
+      "method": "bm25",
+      "unit_ids": [
+        "bec-guidance",
+        "investment-check"
+      ],
+      "source_ids": [
+        "westpac-bec",
+        "asic-invest"
+      ]
+    },
+    {
+      "kind": "model_call",
+      "phase": "baseline_answer",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 2506,
+        "completion_tokens": 125,
+        "prompt_tokens": 2381,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        }
+      },
+      "duration_seconds": 3.56,
+      "finish_reason": "stop",
+      "request_hash": "d79074bbb954ce7c5303e5f0e546bb6ebc4a6733f20bd1b4f6f9ea826929e0f0"
+    }
+  ],
+  "seconds": 3.57
+}

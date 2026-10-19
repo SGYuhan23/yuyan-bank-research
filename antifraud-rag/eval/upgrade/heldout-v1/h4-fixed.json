@@ -1,0 +1,434 @@
+{
+  "id": "4116b31e36c3450a9f0d994451e14b26",
+  "case_id": "h4",
+  "family": "investment-clone",
+  "system": "fixed",
+  "query": "我是投资邀约接收人，对方发来专业官网和公司登记信息。能证明这次邀约是真的吗？",
+  "started_at": "2026-10-19T14:48:53.133417+00:00",
+  "cost": null,
+  "cost_reason": "dated model prices not verified",
+  "status": "failed",
+  "output": null,
+  "run_id": "9c76d54df4784bb9",
+  "records": [
+    {
+      "sequence": 1,
+      "at": "2026-10-19T14:48:53.140843+00:00",
+      "kind": "task_identified",
+      "task": "knowledge",
+      "query": "我是投资邀约接收人，对方发来专业官网和公司登记信息。能证明这次邀约是真的吗？"
+    },
+    {
+      "sequence": 2,
+      "at": "2026-10-19T14:48:53.142823+00:00",
+      "kind": "retrieval_started",
+      "method": "bm25"
+    },
+    {
+      "sequence": 3,
+      "at": "2026-10-19T14:48:53.147012+00:00",
+      "kind": "retrieval_attempt_completed",
+      "method": "bm25",
+      "unit_ids": [
+        "investment-check"
+      ],
+      "source_ids": [
+        "asic-invest"
+      ]
+    },
+    {
+      "sequence": 4,
+      "at": "2026-10-19T14:48:53.148415+00:00",
+      "kind": "retrieval_completed",
+      "ranked": [
+        {
+          "unit_id": "investment-check",
+          "score": 5.462763
+        }
+      ],
+      "index_sha256": "f01ad3a4a244f5c15592d8435131c7e8d6b8ed2390280ee8503f6d159e9e511a",
+      "test_fixture_ids": []
+    },
+    {
+      "sequence": 5,
+      "at": "2026-10-19T14:48:53.150085+00:00",
+      "kind": "model_started",
+      "phase": "evidence_adequacy"
+    },
+    {
+      "sequence": 6,
+      "at": "2026-10-19T14:48:55.870691+00:00",
+      "kind": "model_call",
+      "phase": "evidence_adequacy",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 2657,
+        "completion_tokens": 89,
+        "prompt_tokens": 2568,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 2.72,
+      "finish_reason": "stop",
+      "request_hash": "fbd680e5f72bcdaf005bd7d1d434b4e3b0053b083db07838406145d3ba152f54"
+    },
+    {
+      "sequence": 7,
+      "at": "2026-10-19T14:48:55.872703+00:00",
+      "kind": "adequacy_checked",
+      "sufficient": true,
+      "task_scenes": [
+        {
+          "scene": "other",
+          "question_basis": "我是投资邀约接收人，对方发来专业官网和公司登记信息。能证明这次邀约是真的吗？"
+        }
+      ],
+      "relevant_ids": [
+        "investment-check"
+      ],
+      "missing": [],
+      "conflicts": [],
+      "calculation": "none"
+    },
+    {
+      "sequence": 8,
+      "at": "2026-10-19T14:48:55.875354+00:00",
+      "kind": "model_started",
+      "phase": "generate"
+    },
+    {
+      "sequence": 9,
+      "at": "2026-10-19T14:49:03.203764+00:00",
+      "kind": "model_call",
+      "phase": "generate",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 3406,
+        "completion_tokens": 302,
+        "prompt_tokens": 3104,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        }
+      },
+      "duration_seconds": 7.327,
+      "finish_reason": "stop",
+      "request_hash": "1f31dd7e57424d07fda383899c198f87c613bc5af5c705b6bf6e03f52ad7028e"
+    },
+    {
+      "sequence": 10,
+      "at": "2026-10-19T14:49:03.213746+00:00",
+      "kind": "citation_materialized",
+      "unit_id": "investment-check",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "sequence": 11,
+      "at": "2026-10-19T14:49:03.220459+00:00",
+      "kind": "citation_materialized",
+      "unit_id": "investment-check",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "sequence": 12,
+      "at": "2026-10-19T14:49:03.224990+00:00",
+      "kind": "model_started",
+      "phase": "citation_entailment_review"
+    },
+    {
+      "sequence": 13,
+      "at": "2026-10-19T14:49:19.349741+00:00",
+      "kind": "model_call",
+      "phase": "citation_entailment_review",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 4955,
+        "completion_tokens": 698,
+        "prompt_tokens": 4257,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 16.121,
+      "finish_reason": "stop",
+      "request_hash": "f91f5eb5c28949002bef7cb78478094e37c44197d2c75a09d32c2c1d340f9a5f"
+    },
+    {
+      "sequence": 14,
+      "at": "2026-10-19T14:49:19.354226+00:00",
+      "kind": "model_output_review",
+      "verdict": {
+        "pass": true,
+        "issues": [],
+        "scene_checks": [
+          {
+            "scene": "other",
+            "essential_checks_present": true,
+            "reason": "用户问题属投资邀约真实性核验，非seller_receipt/account_change/unreceived_payment三类核心场景；scope_rules中未对'other'定义required_checks，故无需执行该类检查；当前回答聚焦于investment-check资料，符合任务场景"
+          }
+        ],
+        "other_checks": [
+          {
+            "field": "risks",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "风险陈述‘专业官网和公司登记信息不能证明投资邀约真实’与原文‘scammers misuse AFS licence details... relying solely on advertisements, websites or online search results can put consumers at risk’完全对应；引用unit_id正确"
+          },
+          {
+            "field": "risks",
+            "index": 1,
+            "scope_supported": true,
+            "reason": "风险陈述‘持有AFS牌照不表示ASIC认可...不保证投资安全’直接引自原文‘holding an AFS licence doesn't mean that ASIC endorses... doesn't guarantee the investment is safe’；引用unit_id正确"
+          },
+          {
+            "field": "boundaries",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "边界声明‘仅适用于澳大利亚境内投资邀约核验’与资料region='Australia'及全文语境一致"
+          },
+          {
+            "field": "boundaries",
+            "index": 1,
+            "scope_supported": true,
+            "reason": "边界声明‘公司注册不等于获得ASIC金融服务许可’对应原文‘ASIC Connect can be used to confirm company registration. However, registration alone doesn’t mean that a company is licensed or authorised to provide financial services.’"
+          },
+          {
+            "field": "boundaries",
+            "index": 2,
+            "scope_supported": true,
+            "reason": "边界声明‘ASIC牌照信息必须通过官方渠道独立验证’对应原文‘verify the licence holder’s name and number on ASIC’s professional registers’及‘not rely on contact details, links or phone numbers provided in an investment offer’"
+          },
+          {
+            "field": "questions",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "追问‘是否已通过ASIC Professional Registers Search核验名称与牌照号匹配’对应原文‘verify the licence holder’s name and number on ASIC’s professional registers’及表格中‘enter the name...licence number’"
+          },
+          {
+            "field": "questions",
+            "index": 1,
+            "scope_supported": true,
+            "reason": "追问‘邀约中网址是否与ASIC注册信息中列出的官方网址一致’对应原文‘if a website URL is listed in the register, check that it matches any website URL you have been using’"
+          },
+          {
+            "field": "questions",
+            "index": 2,
+            "scope_supported": true,
+            "reason": "追问‘是否出现在ASIC Investor Alert List中’对应原文‘Moneysmart Investor Alert List * this is a list of suspicious companies...’"
+          }
+        ],
+        "step_checks": []
+      },
+      "reviewer": "same_model_not_independent_human"
+    },
+    {
+      "sequence": 15,
+      "at": "2026-10-19T14:49:19.358435+00:00",
+      "kind": "scope_review_failed",
+      "verdict": {
+        "pass": true,
+        "issues": [],
+        "scene_checks": [
+          {
+            "scene": "other",
+            "essential_checks_present": true,
+            "reason": "用户问题属投资邀约真实性核验，非seller_receipt/account_change/unreceived_payment三类核心场景；scope_rules中未对'other'定义required_checks，故无需执行该类检查；当前回答聚焦于investment-check资料，符合任务场景"
+          }
+        ],
+        "other_checks": [
+          {
+            "field": "risks",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "风险陈述‘专业官网和公司登记信息不能证明投资邀约真实’与原文‘scammers misuse AFS licence details... relying solely on advertisements, websites or online search results can put consumers at risk’完全对应；引用unit_id正确"
+          },
+          {
+            "field": "risks",
+            "index": 1,
+            "scope_supported": true,
+            "reason": "风险陈述‘持有AFS牌照不表示ASIC认可...不保证投资安全’直接引自原文‘holding an AFS licence doesn't mean that ASIC endorses... doesn't guarantee the investment is safe’；引用unit_id正确"
+          },
+          {
+            "field": "boundaries",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "边界声明‘仅适用于澳大利亚境内投资邀约核验’与资料region='Australia'及全文语境一致"
+          },
+          {
+            "field": "boundaries",
+            "index": 1,
+            "scope_supported": true,
+            "reason": "边界声明‘公司注册不等于获得ASIC金融服务许可’对应原文‘ASIC Connect can be used to confirm company registration. However, registration alone doesn’t mean that a company is licensed or authorised to provide financial services.’"
+          },
+          {
+            "field": "boundaries",
+            "index": 2,
+            "scope_supported": true,
+            "reason": "边界声明‘ASIC牌照信息必须通过官方渠道独立验证’对应原文‘verify the licence holder’s name and number on ASIC’s professional registers’及‘not rely on contact details, links or phone numbers provided in an investment offer’"
+          },
+          {
+            "field": "questions",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "追问‘是否已通过ASIC Professional Registers Search核验名称与牌照号匹配’对应原文‘verify the licence holder’s name and number on ASIC’s professional registers’及表格中‘enter the name...licence number’"
+          },
+          {
+            "field": "questions",
+            "index": 1,
+            "scope_supported": true,
+            "reason": "追问‘邀约中网址是否与ASIC注册信息中列出的官方网址一致’对应原文‘if a website URL is listed in the register, check that it matches any website URL you have been using’"
+          },
+          {
+            "field": "questions",
+            "index": 2,
+            "scope_supported": true,
+            "reason": "追问‘是否出现在ASIC Investor Alert List中’对应原文‘Moneysmart Investor Alert List * this is a list of suspicious companies...’"
+          }
+        ],
+        "step_checks": []
+      }
+    },
+    {
+      "sequence": 16,
+      "at": "2026-10-19T14:49:19.364500+00:00",
+      "kind": "model_started",
+      "phase": "repair_scope"
+    },
+    {
+      "sequence": 17,
+      "at": "2026-10-19T14:49:27.142371+00:00",
+      "kind": "model_call",
+      "phase": "repair_scope",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 5432,
+        "completion_tokens": 302,
+        "prompt_tokens": 5130,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 7.775,
+      "finish_reason": "stop",
+      "request_hash": "bd654aead52c4db425f60da1992af261425d9a27fb0abe50831293b68020b790"
+    },
+    {
+      "sequence": 18,
+      "at": "2026-10-19T14:49:27.148335+00:00",
+      "kind": "citation_materialized",
+      "unit_id": "investment-check",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "sequence": 19,
+      "at": "2026-10-19T14:49:27.150860+00:00",
+      "kind": "citation_materialized",
+      "unit_id": "investment-check",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "sequence": 20,
+      "at": "2026-10-19T14:49:27.153295+00:00",
+      "kind": "model_started",
+      "phase": "citation_entailment_review"
+    },
+    {
+      "sequence": 21,
+      "at": "2026-10-19T14:49:45.278344+00:00",
+      "kind": "model_call",
+      "phase": "citation_entailment_review",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 4997,
+        "completion_tokens": 740,
+        "prompt_tokens": 4257,
+        "prompt_tokens_details": {
+          "cached_tokens": 4096
+        }
+      },
+      "duration_seconds": 18.123,
+      "finish_reason": "stop",
+      "request_hash": "f91f5eb5c28949002bef7cb78478094e37c44197d2c75a09d32c2c1d340f9a5f"
+    },
+    {
+      "sequence": 22,
+      "at": "2026-10-19T14:49:45.283392+00:00",
+      "kind": "model_output_review",
+      "verdict": {
+        "pass": true,
+        "issues": [],
+        "scene_checks": [
+          {
+            "scene": "other",
+            "essential_checks_present": true,
+            "reason": "当前场景为投资邀约真实性核验，不属于seller_receipt/account_change/unreceived_payment三类核心交易场景；scope_rules中未对'other'定义required_checks，且answer中未错误引入三类场景的操作步骤，符合规则。"
+          }
+        ],
+        "other_checks": [
+          {
+            "field": "risks",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "风险陈述‘专业官网和公司登记信息不能证明投资邀约真实’与原文‘relying solely on advertisements, websites or online search results can put consumers at risk’及‘scammers misuse AFS licence details...’完全对应；引用unit_id 'investment-check'准确。"
+          },
+          {
+            "field": "risks",
+            "index": 1,
+            "scope_supported": true,
+            "reason": "风险陈述‘持有AFS牌照不表示ASIC认可...不保证安全或不会亏损’直接引自原文‘holding an AFS licence doesn't mean that ASIC endorses...It doesn't guarantee the investment is safe...’；unit_id正确。"
+          },
+          {
+            "field": "boundaries",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "边界‘仅适用于澳大利亚境内投资邀约核验’与资料region='Australia'及全文语境一致；原文多处明确提及ASIC、AFS licence、Moneysmart等澳官方机制。"
+          },
+          {
+            "field": "boundaries",
+            "index": 1,
+            "scope_supported": true,
+            "reason": "边界‘公司注册（如ABN/ACN）不等于获得ASIC金融服务许可’对应原文‘ASIC Connect can be used to confirm company registration. However, registration alone doesn’t mean that a company is licensed or authorised to provide financial services.’"
+          },
+          {
+            "field": "boundaries",
+            "index": 2,
+            "scope_supported": true,
+            "reason": "边界‘ASIC牌照信息必须通过官方渠道独立验证’对应原文‘verify the licence holder’s name and number on ASIC’s professional registers’及‘not rely on contact details, links or phone numbers provided in an investment offer’。"
+          },
+          {
+            "field": "questions",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "问题‘是否已通过ASIC Professional Registers Search核验名称与牌照号匹配？’直接对应原文‘verify the licence holder’s name and number on ASIC’s professional registers’及表格中第一行检查项。"
+          },
+          {
+            "field": "questions",
+            "index": 1,
+            "scope_supported": true,
+            "reason": "问题‘邀约中提供的网址是否与ASIC注册信息中列出的官方网址一致？’对应原文‘if a website URL is listed in the register, check that it matches any website URL you have been using’。"
+          },
+          {
+            "field": "questions",
+            "index": 2,
+            "scope_supported": true,
+            "reason": "问题‘是否出现在ASIC Investor Alert List中？’对应原文‘Moneysmart Investor Alert List * this is a list of suspicious companies...’。"
+          }
+        ],
+        "step_checks": []
+      },
+      "reviewer": "same_model_not_independent_human"
+    },
+    {
+      "sequence": 23,
+      "at": "2026-10-19T14:49:45.287637+00:00",
+      "kind": "failed",
+      "error": "OUTPUT_SCOPE_REVIEW_FAILED:[]"
+    }
+  ],
+  "seconds": 52.162
+}

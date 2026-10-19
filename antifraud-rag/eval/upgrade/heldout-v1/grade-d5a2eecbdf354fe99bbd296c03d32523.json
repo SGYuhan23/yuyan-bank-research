@@ -1,0 +1,46 @@
+{
+  "id": "d5a2eecbdf354fe99bbd296c03d32523",
+  "reviewer": "same Qwen blinded to system, not independent expert",
+  "grade": {
+    "required_checks": [
+      {
+        "requirement": "缺个体风险分母",
+        "met": true,
+        "output_quote": "全国举报统计反映整体趋势，不能用于推算个体客户的被骗概率。"
+      },
+      {
+        "requirement": "全国不是Westpac客户样本",
+        "met": true,
+        "output_quote": "全国举报统计反映整体趋势，不能用于推算个体客户的被骗概率。Westpac不提供、也不支持基于宏观统计数据对具体客户进行风险概率评估。"
+      },
+      {
+        "requirement": "不提供概率",
+        "met": true,
+        "output_quote": "Westpac不提供、也不支持基于宏观统计数据对具体客户进行风险概率评估。"
+      }
+    ],
+    "errors": [],
+    "completion": true,
+    "refusal": false,
+    "uncertain": []
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "blind_auxiliary_grade",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 1486,
+        "completion_tokens": 188,
+        "prompt_tokens": 1298,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 4.674,
+      "finish_reason": "stop",
+      "request_hash": "fe23e4adf67620bac655aa70034fb204445e4a5b3d01b42f9b7f5e00d06af068"
+    }
+  ]
+}

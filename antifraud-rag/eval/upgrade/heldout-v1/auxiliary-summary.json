@@ -1,0 +1,60 @@
+{
+  "retrieved": {
+    "n": 6,
+    "judge_completed": 5,
+    "judge_errors": {
+      "overbroad": 2,
+      "wrong_role": 1
+    },
+    "uncertain": 11,
+    "grading_failures": 0
+  },
+  "direct": {
+    "n": 6,
+    "judge_completed": 5,
+    "judge_errors": {
+      "overbroad": 2,
+      "unsupported": 1,
+      "wrong_role": 1
+    },
+    "uncertain": 8,
+    "grading_failures": 0
+  },
+  "tools": {
+    "n": 6,
+    "judge_completed": 3,
+    "judge_errors": {
+      "omission": 2,
+      "wrong_role": 1,
+      "unsupported": 1
+    },
+    "uncertain": 4,
+    "grading_failures": 0
+  },
+  "same_observations": {
+    "n": 6,
+    "judge_completed": 6,
+    "judge_errors": {},
+    "uncertain": 8,
+    "grading_failures": 0
+  },
+  "all": {
+    "n": 6,
+    "judge_completed": 5,
+    "judge_errors": {
+      "overbroad": 2
+    },
+    "uncertain": 7,
+    "grading_failures": 0
+  },
+  "fixed": {
+    "n": 6,
+    "judge_completed": 3,
+    "judge_errors": {
+      "omission": 3,
+      "normal_false_alarm": 1
+    },
+    "uncertain": 3,
+    "grading_failures": 0
+  }
+}

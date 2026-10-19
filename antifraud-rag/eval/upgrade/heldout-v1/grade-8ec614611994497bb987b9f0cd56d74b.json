@@ -1,0 +1,52 @@
+{
+  "id": "8ec614611994497bb987b9f0cd56d74b",
+  "reviewer": "same Qwen blinded to system, not independent expert",
+  "grade": {
+    "required_checks": [
+      {
+        "requirement": "缺个体风险分母",
+        "met": true,
+        "output_quote": "全国举报统计不能用于计算单个Westpac客户被骗概率；资料明确指出该统计是多机构合并口径，非Westpac客户样本，且不能推算个体风险"
+      },
+      {
+        "requirement": "全国不是Westpac客户样本",
+        "met": true,
+        "output_quote": "全国举报统计不能用于计算单个Westpac客户被骗概率；资料明确指出该统计是多机构合并口径，非Westpac客户样本，且不能推算个体风险"
+      },
+      {
+        "requirement": "不提供概率",
+        "met": true,
+        "output_quote": "当前依据不足或存在冲突，不能形成所请求的具体结论；请补充适用的正式资料。"
+      }
+    ],
+    "errors": [
+      {
+        "type": "normal_false_alarm",
+        "quote": "当前依据不足或存在冲突，不能形成所请求的具体结论；请补充适用的正式资料。",
+        "reason": "该句属标准边界声明，符合参考要求中'不提供概率'的禁止性约束，且未生成数值概率，不属于错误；但因措辞偏宽泛（如'存在冲突'在本例中无实际冲突证据），易被误判为异常，故归类为normal_false_alarm"
+      }
+    ],
+    "completion": true,
+    "refusal": false,
+    "uncertain": []
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "blind_auxiliary_grade",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 4377,
+        "completion_tokens": 328,
+        "prompt_tokens": 4049,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 7.837,
+      "finish_reason": "stop",
+      "request_hash": "ff1a79c0d60a444a8dd892d502f96775e1b41f99b3139dccb2aeabd734e55d8f"
+    }
+  ]
+}

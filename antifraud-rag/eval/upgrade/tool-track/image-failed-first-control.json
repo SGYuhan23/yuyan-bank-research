@@ -1,0 +1,32 @@
+{
+  "output": {
+    "answer": "交货前应核实：1. 付款是否真实到账（登录网银或柜台查询账户余额及明细，不依赖截图）；2. 付款方名称是否与合同签约方一致；3. 付款金额、币种、附言/备注是否与合同约定完全匹配；4. 若为银行转账，确认交易状态为‘已清算’而非‘处理中’‘挂账’或‘待入账’；5. 警惕使用非对公账户、个人账户、境外账户或第三方代付——此类情形需额外验证资金来源及授权。所有核实必须通过银行官方渠道完成，切勿仅凭截图、短信或社交软件信息放货。",
+    "sources": [
+      "unit_id_301",
+      "unit_id_302",
+      "unit_id_305"
+    ],
+    "unknowns": []
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "baseline_answer",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 599,
+        "completion_tokens": 187,
+        "prompt_tokens": 412,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        }
+      },
+      "duration_seconds": 4.602,
+      "finish_reason": "stop",
+      "request_hash": "6190bfb528e73d82e1ff5270279856bab004bedaf81afee64b79fa3822521337"
+    }
+  ],
+  "input_observation_run_id": "068a628861a64cd9a602e19ea4adf302",
+  "input_capability": "same extracted text observations; no direct image advantage"
+}

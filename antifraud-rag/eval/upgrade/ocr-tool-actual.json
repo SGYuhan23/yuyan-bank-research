@@ -1,0 +1,57 @@
+{
+  "tool": {
+    "call_id": "4a7fbecfce784bbea5bff71b0c1c9171",
+    "case_id": "e697411987964a9fa74c7408ef393954",
+    "case_version": 2,
+    "tool_name": "extract",
+    "tool_version": "1",
+    "validated_args": {},
+    "args_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "input_evidence": [
+      {
+        "id": "case-input:e697411987964a9fa74c7408ef393954",
+        "hash": "bdf474c980a356c069811562d097e9978e7dff2ee0530a58deea2c42da0ff0d5"
+      }
+    ],
+    "status": "ok",
+    "observations": [
+      {
+        "evidence_id": "df3862a1e7294b81b301f8f78ac1a08c",
+        "statement": "PAYMENT SUCCESSFUL AUD 17000.00"
+      }
+    ],
+    "limitations": [],
+    "latency_seconds": 0.309,
+    "usage": null,
+    "data_origin": "user_supplied"
+  },
+  "evidence": [
+    {
+      "evidence_id": "df3862a1e7294b81b301f8f78ac1a08c",
+      "case_id": "e697411987964a9fa74c7408ef393954",
+      "case_version": 2,
+      "kind": "reported_claim",
+      "origin_id": "11ea272a3042408bb9499c0091c632a8",
+      "span": {
+        "method": "ocr",
+        "page": null,
+        "start": null,
+        "end": null,
+        "region": [
+          20,
+          46,
+          569,
+          34
+        ],
+        "text": "PAYMENT SUCCESSFUL AUD 17000.00"
+      },
+      "source_hash": "5eea790069d6f76ad917bac50d5917d1d51b01fc71ddf0bfb4468452b0f35b20",
+      "observed_at": "2026-10-19T14:33:20.786502+00:00",
+      "jurisdiction": "Australia",
+      "statement": "PAYMENT SUCCESSFUL AUD 17000.00",
+      "limitations": [
+        "材料陈述，不证明真实到账；OCR/人工转录可能有误"
+      ]
+    }
+  ]
+}

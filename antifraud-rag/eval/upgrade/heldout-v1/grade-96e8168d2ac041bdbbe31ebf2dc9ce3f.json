@@ -1,0 +1,41 @@
+{
+  "id": "96e8168d2ac041bdbbe31ebf2dc9ce3f",
+  "reviewer": "same Qwen blinded to system, not independent expert",
+  "grade": {
+    "required_checks": [
+      {
+        "requirement": "澄清角色和具体请求",
+        "met": true,
+        "output_quote": "请提供该消息的具体内容（如发件人、文字、链接、附件等），以便判断是否涉及诈骗风险。"
+      },
+      {
+        "requirement": "资料不足",
+        "met": true,
+        "output_quote": "当前无任何可分析信息，无法给出操作步骤。"
+      }
+    ],
+    "errors": [],
+    "completion": true,
+    "refusal": false,
+    "uncertain": []
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "blind_auxiliary_grade",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 445,
+        "completion_tokens": 127,
+        "prompt_tokens": 318,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 3.335,
+      "finish_reason": "stop",
+      "request_hash": "7a12e308244eea5250f0b2d529de17f0880913e3a1f0ae3fe1b91ff9b1c32470"
+    }
+  ]
+}

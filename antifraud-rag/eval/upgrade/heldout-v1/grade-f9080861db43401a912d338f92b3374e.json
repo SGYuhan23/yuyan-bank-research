@@ -1,0 +1,48 @@
+{
+  "id": "f9080861db43401a912d338f92b3374e",
+  "reviewer": "same Qwen blinded to system, not independent expert",
+  "grade": {
+    "required_checks": [
+      {
+        "requirement": "独立来源电话口头确认本次变更",
+        "met": true,
+        "output_quote": "应通过已知、独立的官方渠道（如合同中预留的固定电话、官网公布的联系方式）直接联系承包商确认"
+      },
+      {
+        "requirement": "核实前不更改本次账户",
+        "met": true,
+        "output_quote": "请勿仅凭邮件或电话更改付款账户。……如存疑，暂停付款并上报单位财务负责人及反诈联络员。"
+      },
+      {
+        "requirement": "正常变更不等于欺诈",
+        "met": true,
+        "output_quote": "正规承包商变更账户属重大操作，通常需加盖公章的正式函件并附工商变更备案等佐证材料。"
+      }
+    ],
+    "errors": [],
+    "completion": true,
+    "refusal": false,
+    "uncertain": [
+      "Judge quote not verbatim: 请勿仅凭邮件或电话更改付款账户。……如存疑，暂停付款并上报单位财务负责人及反诈联络员。"
+    ]
+  },
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "blind_auxiliary_grade",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 1412,
+        "completion_tokens": 207,
+        "prompt_tokens": 1205,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 5.495,
+      "finish_reason": "stop",
+      "request_hash": "7100da1d37fd5ca84ba2a75e623d028194315e1d5259109570d146dbf3d5bda4"
+    }
+  ]
+}

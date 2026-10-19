@@ -1,0 +1,22 @@
+{
+  "at": "2026-10-19T14:35:11.509824+00:00",
+  "files": {
+    "pipeline.py": "544132f730e0d20cd7926689ddf8c429bafadb8e7bc2a28ee56717276224419d",
+    "retrieval.py": "c7cdcf434fad7d8d1b6b1a940f6c832f3a15bf1dc23769e38944b94ca118db9e",
+    "upgrade/__init__.py": "3d37c76bab5c1276b6f9b56d3707804bbfdf6f04fd95ab83ff4949a97aba1701",
+    "upgrade/agent.py": "10387a27441b04dc81ca6d053d00b19aad8abfa69fb0eaf89d6d62dacd91d8f6",
+    "upgrade/api.py": "5df55095882781d754e77b390acd2692caee877dd3a197f4c516f489f73f0653",
+    "upgrade/contracts.py": "0577a326e4e520d22cd545857c34d48e678cb4bd3eec492013b75893c0dbb6d8",
+    "upgrade/graph_lab.py": "155991ee6899464aef6be7e396f02694004034540e62bc00742d8bc6c2f8406f",
+    "upgrade/ocr.py": "c21aadd8f123180a77b9864a134786c439d267c6c696d4b81fd971d6c37e7b93",
+    "upgrade/store.py": "8151f9957773c023a037a7958212667363a38d66331debc4a5833bab77f2433f",
+    "upgrade/tools.py": "535d95d5028771b47bf340b1b644df0ace57dd229b8302b844e75eceb613c828",
+    "upgrade/training.py": "0853523101eda0f61b3b84e5c9a782f6fe55879ac513a253264460bc52b69a6d",
+    "eval/upgrade/cases.json": "7e92b20be415e0762d5c1713d3cea5478cb5f283223760cd621e1bc7eabab513"
+  },
+  "temperature": 0,
+  "max_tokens": 6500,
+  "model_source": "QWEN_MODEL same environment for all",
+  "price": "unknown; no cost estimate",
+  "repetitions": 1
+}
