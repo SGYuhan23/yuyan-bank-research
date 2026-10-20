@@ -1,0 +1,181 @@
+{
+  "historical_run_id": "ced1d61357bb4bd38d71b6929b4e82a8",
+  "historical_file": "tool-track/email-ced1d61357bb4bd38d71b6929b4e82a8.json",
+  "method": "actual same-provider audit; exact source quote validation; not independent expert",
+  "issues": [
+    {
+      "field": "risks",
+      "index": 0,
+      "supported": false,
+      "applicable": true,
+      "already_answered": false,
+      "unit_id": null,
+      "source_quote": "",
+      "source_span_id": null,
+      "reason": "原文未提及example.invalid域名、钓鱼信号判定或链接安全分析；该风险判断依赖外部域名知识（IANA保留域），非来源材料内容，无对应source_span。"
+    },
+    {
+      "field": "risks",
+      "index": 1,
+      "supported": false,
+      "applicable": true,
+      "already_answered": false,
+      "unit_id": null,
+      "source_quote": "",
+      "source_span_id": null,
+      "reason": "原文未定义BECS、未描述‘伪造财务指令常见模式’、未将账户号变更+名称/金额/币种不变列为风险指标；该归纳超出材料范围，无source_span支持。"
+    },
+    {
+      "field": "questions",
+      "index": 2,
+      "supported": false,
+      "applicable": true,
+      "already_answered": false,
+      "unit_id": null,
+      "source_quote": "",
+      "source_span_id": null,
+      "reason": "原文未要求检查历史交易记录或原始付款凭证；案例中John在付款后两周才致电，且调查发生在被骗之后（bec-case:9），非事前核实步骤；该问题无source_span支持。"
+    }
+  ],
+  "rejected": true,
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "focused_grounding",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 5025,
+        "completion_tokens": 1139,
+        "prompt_tokens": 3886,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        }
+      },
+      "duration_seconds": 25.784,
+      "finish_reason": "stop",
+      "request_hash": "61c4e76e366c1b8842a9ad3ab807ff4ba4d59557d5ed5f9865df3b4ce04c1c76"
+    },
+    {
+      "kind": "focused_grounding_raw",
+      "attempt": 0,
+      "verdict": {
+        "checks": [
+          {
+            "field": "steps",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "",
+            "source_span_id": "bec-guidance:0",
+            "reason": "原文明确要求‘until you've verbally verified the request using a phone number you sourced yourself’，直接支持独立电话核实且不得使用邮件所附联系方式。"
+          },
+          {
+            "field": "steps",
+            "index": 1,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "",
+            "source_span_id": "bec-guidance:0",
+            "reason": "‘do not make any changes to account details until you've verbally verified’与‘不得在系统中更改…也不得按该邮件要求支付任何款项’完全对应；‘such requests’特指本次账户变更请求，故限制范围限定于本次变更所涉付款。"
+          },
+          {
+            "field": "risks",
+            "index": 0,
+            "supported": false,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": null,
+            "source_quote": "",
+            "source_span_id": null,
+            "reason": "原文未提及example.invalid域名、钓鱼信号判定或链接安全分析；该风险判断依赖外部域名知识（IANA保留域），非来源材料内容，无对应source_span。"
+          },
+          {
+            "field": "risks",
+            "index": 1,
+            "supported": false,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": null,
+            "source_quote": "",
+            "source_span_id": null,
+            "reason": "原文未定义BECS、未描述‘伪造财务指令常见模式’、未将账户号变更+名称/金额/币种不变列为风险指标；该归纳超出材料范围，无source_span支持。"
+          },
+          {
+            "field": "boundaries",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "",
+            "source_span_id": "bec-guidance:0",
+            "reason": "‘such requests’指代明确为本次账户变更请求；材料未延伸至‘此前付款未收到’等其他场景，与boundary表述一致。"
+          },
+          {
+            "field": "boundaries",
+            "index": 1,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "",
+            "source_span_id": "bec-guidance:0",
+            "reason": "‘verbally verified’与‘不能以邮件、短信或即时通讯工具确认替代’严格对应；原文强调‘using a phone number you sourced yourself’，排除非语音渠道。"
+          },
+          {
+            "field": "boundaries",
+            "index": 2,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "",
+            "source_span_id": "bec-guidance:0",
+            "reason": "材料明确标注‘公开安全指引非Westpac内部操作规程’，且limitations注明‘不规定签字层级、冻结时限或拦截流程’，与boundary完全一致。"
+          },
+          {
+            "field": "questions",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "",
+            "source_span_id": "bec-guidance:2",
+            "reason": "‘Always use a phone number you have on file, or a publicly sourced number’直接要求确认是否持有有效联系电话，问题与原文动作条件完全匹配。"
+          },
+          {
+            "field": "questions",
+            "index": 1,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "",
+            "source_span_id": "bec-guidance:1",
+            "reason": "‘Always verbally confirm any requests for urgent or redirected payments’中‘urgent’为原文明确用词，问题聚焦该施压措辞，有直接引文支持。"
+          },
+          {
+            "field": "questions",
+            "index": 2,
+            "supported": false,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": null,
+            "source_quote": "",
+            "source_span_id": null,
+            "reason": "原文未要求检查历史交易记录或原始付款凭证；案例中John在付款后两周才致电，且调查发生在被骗之后（bec-case:9），非事前核实步骤；该问题无source_span支持。"
+          }
+        ],
+        "coverage_ok": true,
+        "missing_essential": []
+      },
+      "reviewer": "same_provider_quote_checked_not_independent_human"
+    }
+  ]
+}

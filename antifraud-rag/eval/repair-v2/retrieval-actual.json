@@ -1,0 +1,571 @@
+{
+  "scope": "6 development queries; 18 searches; real query embeddings; document embeddings cache may be reused; recall is not answer accuracy",
+  "rows": [
+    {
+      "query": "老合作方说换了卡号，让我们今天打钱，先做什么？",
+      "expected": "bec-guidance",
+      "mode": "bm25",
+      "ids": [],
+      "hit": false,
+      "status": "completed",
+      "logs": [
+        {
+          "kind": "retrieval_started",
+          "method": "bm25"
+        },
+        {
+          "kind": "retrieval_attempt_completed",
+          "method": "bm25",
+          "unit_ids": [],
+          "source_ids": []
+        }
+      ],
+      "seconds": 0.004676291020587087
+    },
+    {
+      "query": "老合作方说换了卡号，让我们今天打钱，先做什么？",
+      "expected": "bec-guidance",
+      "mode": "auto",
+      "ids": [
+        "bec-guidance",
+        "bec-case",
+        "receipt-guidance"
+      ],
+      "hit": true,
+      "status": "completed",
+      "logs": [
+        {
+          "kind": "retrieval_started",
+          "method": "bm25"
+        },
+        {
+          "kind": "retrieval_attempt_completed",
+          "method": "bm25",
+          "unit_ids": [],
+          "source_ids": []
+        },
+        {
+          "kind": "retrieval_fallback",
+          "from_method": "bm25",
+          "to_method": "semantic",
+          "reason": "bm25_no_positive_score"
+        },
+        {
+          "kind": "retrieval_started",
+          "method": "semantic"
+        },
+        {
+          "kind": "retrieval_attempt_completed",
+          "method": "semantic",
+          "unit_ids": [
+            "bec-guidance",
+            "bec-case",
+            "receipt-guidance"
+          ],
+          "source_ids": [
+            "westpac-bec",
+            "scamwatch-case",
+            "westpac-receipt"
+          ]
+        }
+      ],
+      "seconds": 0.5379617919679731
+    },
+    {
+      "query": "老合作方说换了卡号，让我们今天打钱，先做什么？",
+      "expected": "bec-guidance",
+      "mode": "semantic",
+      "ids": [
+        "bec-guidance",
+        "bec-case",
+        "receipt-guidance"
+      ],
+      "hit": true,
+      "status": "completed",
+      "logs": [
+        {
+          "kind": "retrieval_started",
+          "method": "semantic"
+        },
+        {
+          "kind": "retrieval_attempt_completed",
+          "method": "semantic",
+          "unit_ids": [
+            "bec-guidance",
+            "bec-case",
+            "receipt-guidance"
+          ],
+          "source_ids": [
+            "westpac-bec",
+            "scamwatch-case",
+            "westpac-receipt"
+          ]
+        }
+      ],
+      "seconds": 0.3213383340043947
+    },
+    {
+      "query": "对方发来转账凭证，货可以给他了吗？",
+      "expected": "receipt-guidance",
+      "mode": "bm25",
+      "ids": [],
+      "hit": false,
+      "status": "completed",
+      "logs": [
+        {
+          "kind": "retrieval_started",
+          "method": "bm25"
+        },
+        {
+          "kind": "retrieval_attempt_completed",
+          "method": "bm25",
+          "unit_ids": [],
+          "source_ids": []
+        }
+      ],
+      "seconds": 0.006822791998274624
+    },
+    {
+      "query": "对方发来转账凭证，货可以给他了吗？",
+      "expected": "receipt-guidance",
+      "mode": "auto",
+      "ids": [
+        "receipt-guidance",
+        "bec-case",
+        "bec-guidance"
+      ],
+      "hit": true,
+      "status": "completed",
+      "logs": [
+        {
+          "kind": "retrieval_started",
+          "method": "bm25"
+        },
+        {
+          "kind": "retrieval_attempt_completed",
+          "method": "bm25",
+          "unit_ids": [],
+          "source_ids": []
+        },
+        {
+          "kind": "retrieval_fallback",
+          "from_method": "bm25",
+          "to_method": "semantic",
+          "reason": "bm25_no_positive_score"
+        },
+        {
+          "kind": "retrieval_started",
+          "method": "semantic"
+        },
+        {
+          "kind": "retrieval_attempt_completed",
+          "method": "semantic",
+          "unit_ids": [
+            "receipt-guidance",
+            "bec-case",
+            "bec-guidance"
+          ],
+          "source_ids": [
+            "westpac-receipt",
+            "scamwatch-case",
+            "westpac-bec"
+          ]
+        }
+      ],
+      "seconds": 0.25630995794199407
+    },
+    {
+      "query": "对方发来转账凭证，货可以给他了吗？",
+      "expected": "receipt-guidance",
+      "mode": "semantic",
+      "ids": [
+        "receipt-guidance",
+        "bec-case",
+        "bec-guidance"
+      ],
+      "hit": true,
+      "status": "completed",
+      "logs": [
+        {
+          "kind": "retrieval_started",
+          "method": "semantic"
+        },
+        {
+          "kind": "retrieval_attempt_completed",
+          "method": "semantic",
+          "unit_ids": [
+            "receipt-guidance",
+            "bec-case",
+            "bec-guidance"
+          ],
+          "source_ids": [
+            "westpac-receipt",
+            "scamwatch-case",
+            "westpac-bec"
+          ]
+        }
+      ],
+      "seconds": 1.3235679579665884
+    },
+    {
+      "query": "买家给了打款截图，现在能发货吗？",
+      "expected": "receipt-guidance",
+      "mode": "bm25",
+      "ids": [
+        "receipt-guidance"
+      ],
+      "hit": true,
+      "status": "completed",
+      "logs": [
+        {
+          "kind": "retrieval_started",
+          "method": "bm25"
+        },
+        {
+          "kind": "retrieval_attempt_completed",
+          "method": "bm25",
+          "unit_ids": [
+            "receipt-guidance"
+          ],
+          "source_ids": [
+            "westpac-receipt"
+          ]
+        }
+      ],
+      "seconds": 0.010075416998006403
+    },
+    {
+      "query": "买家给了打款截图，现在能发货吗？",
+      "expected": "receipt-guidance",
+      "mode": "auto",
+      "ids": [
+        "receipt-guidance"
+      ],
+      "hit": true,
+      "status": "completed",
+      "logs": [
+        {
+          "kind": "retrieval_started",
+          "method": "bm25"
+        },
+        {
+          "kind": "retrieval_attempt_completed",
+          "method": "bm25",
+          "unit_ids": [
+            "receipt-guidance"
+          ],
+          "source_ids": [
+            "westpac-receipt"
+          ]
+        }
+      ],
+      "seconds": 0.007704249932430685
+    },
+    {
+      "query": "买家给了打款截图，现在能发货吗？",
+      "expected": "receipt-guidance",
+      "mode": "semantic",
+      "ids": [
+        "receipt-guidance",
+        "bec-case",
+        "bec-guidance"
+      ],
+      "hit": true,
+      "status": "completed",
+      "logs": [
+        {
+          "kind": "retrieval_started",
+          "method": "semantic"
+        },
+        {
+          "kind": "retrieval_attempt_completed",
+          "method": "semantic",
+          "unit_ids": [
+            "receipt-guidance",
+            "bec-case",
+            "bec-guidance"
+          ],
+          "source_ids": [
+            "westpac-receipt",
+            "scamwatch-case",
+            "westpac-bec"
+          ]
+        }
+      ],
+      "seconds": 0.3940338749671355
+    },
+    {
+      "query": "一直合作的厂家突然通知用新银行卡收钱，如何确认？",
+      "expected": "bec-guidance",
+      "mode": "bm25",
+      "ids": [
+        "bec-guidance"
+      ],
+      "hit": true,
+      "status": "completed",
+      "logs": [
+        {
+          "kind": "retrieval_started",
+          "method": "bm25"
+        },
+        {
+          "kind": "retrieval_attempt_completed",
+          "method": "bm25",
+          "unit_ids": [
+            "bec-guidance"
+          ],
+          "source_ids": [
+            "westpac-bec"
+          ]
+        }
+      ],
+      "seconds": 0.0074552909936755896
+    },
+    {
+      "query": "一直合作的厂家突然通知用新银行卡收钱，如何确认？",
+      "expected": "bec-guidance",
+      "mode": "auto",
+      "ids": [
+        "bec-guidance"
+      ],
+      "hit": true,
+      "status": "completed",
+      "logs": [
+        {
+          "kind": "retrieval_started",
+          "method": "bm25"
+        },
+        {
+          "kind": "retrieval_attempt_completed",
+          "method": "bm25",
+          "unit_ids": [
+            "bec-guidance"
+          ],
+          "source_ids": [
+            "westpac-bec"
+          ]
+        }
+      ],
+      "seconds": 0.00566383299883455
+    },
+    {
+      "query": "一直合作的厂家突然通知用新银行卡收钱，如何确认？",
+      "expected": "bec-guidance",
+      "mode": "semantic",
+      "ids": [
+        "bec-guidance",
+        "bec-case",
+        "receipt-guidance"
+      ],
+      "hit": true,
+      "status": "completed",
+      "logs": [
+        {
+          "kind": "retrieval_started",
+          "method": "semantic"
+        },
+        {
+          "kind": "retrieval_attempt_completed",
+          "method": "semantic",
+          "unit_ids": [
+            "bec-guidance",
+            "bec-case",
+            "receipt-guidance"
+          ],
+          "source_ids": [
+            "westpac-bec",
+            "scamwatch-case",
+            "westpac-receipt"
+          ]
+        }
+      ],
+      "seconds": 0.2924621660495177
+    },
+    {
+      "query": "我是卖二手机床的，对方给我银行转款图片但我还没查自己的账户，能装车交付吗？",
+      "expected": "receipt-guidance",
+      "mode": "bm25",
+      "ids": [
+        "bec-guidance",
+        "bec-case"
+      ],
+      "hit": false,
+      "status": "completed",
+      "logs": [
+        {
+          "kind": "retrieval_started",
+          "method": "bm25"
+        },
+        {
+          "kind": "retrieval_attempt_completed",
+          "method": "bm25",
+          "unit_ids": [
+            "bec-guidance",
+            "bec-case"
+          ],
+          "source_ids": [
+            "westpac-bec",
+            "scamwatch-case"
+          ]
+        }
+      ],
+      "seconds": 0.009009166969917715
+    },
+    {
+      "query": "我是卖二手机床的，对方给我银行转款图片但我还没查自己的账户，能装车交付吗？",
+      "expected": "receipt-guidance",
+      "mode": "auto",
+      "ids": [
+        "bec-guidance",
+        "bec-case"
+      ],
+      "hit": false,
+      "status": "completed",
+      "logs": [
+        {
+          "kind": "retrieval_started",
+          "method": "bm25"
+        },
+        {
+          "kind": "retrieval_attempt_completed",
+          "method": "bm25",
+          "unit_ids": [
+            "bec-guidance",
+            "bec-case"
+          ],
+          "source_ids": [
+            "westpac-bec",
+            "scamwatch-case"
+          ]
+        }
+      ],
+      "seconds": 0.0067917919950559735
+    },
+    {
+      "query": "我是卖二手机床的，对方给我银行转款图片但我还没查自己的账户，能装车交付吗？",
+      "expected": "receipt-guidance",
+      "mode": "semantic",
+      "ids": [
+        "receipt-guidance",
+        "bec-case",
+        "bec-guidance"
+      ],
+      "hit": true,
+      "status": "completed",
+      "logs": [
+        {
+          "kind": "retrieval_started",
+          "method": "semantic"
+        },
+        {
+          "kind": "retrieval_attempt_completed",
+          "method": "semantic",
+          "unit_ids": [
+            "receipt-guidance",
+            "bec-case",
+            "bec-guidance"
+          ],
+          "source_ids": [
+            "westpac-receipt",
+            "scamwatch-case",
+            "westpac-bec"
+          ]
+        }
+      ],
+      "seconds": 0.2692846659338102
+    },
+    {
+      "query": "供应商说上周的货款没收到，现在催我再付一次，该核实什么？",
+      "expected": "bec-guidance",
+      "mode": "bm25",
+      "ids": [
+        "bec-guidance",
+        "bec-case"
+      ],
+      "hit": true,
+      "status": "completed",
+      "logs": [
+        {
+          "kind": "retrieval_started",
+          "method": "bm25"
+        },
+        {
+          "kind": "retrieval_attempt_completed",
+          "method": "bm25",
+          "unit_ids": [
+            "bec-guidance",
+            "bec-case"
+          ],
+          "source_ids": [
+            "westpac-bec",
+            "scamwatch-case"
+          ]
+        }
+      ],
+      "seconds": 0.006973083014599979
+    },
+    {
+      "query": "供应商说上周的货款没收到，现在催我再付一次，该核实什么？",
+      "expected": "bec-guidance",
+      "mode": "auto",
+      "ids": [
+        "bec-guidance",
+        "bec-case"
+      ],
+      "hit": true,
+      "status": "completed",
+      "logs": [
+        {
+          "kind": "retrieval_started",
+          "method": "bm25"
+        },
+        {
+          "kind": "retrieval_attempt_completed",
+          "method": "bm25",
+          "unit_ids": [
+            "bec-guidance",
+            "bec-case"
+          ],
+          "source_ids": [
+            "westpac-bec",
+            "scamwatch-case"
+          ]
+        }
+      ],
+      "seconds": 0.0056585840648040175
+    },
+    {
+      "query": "供应商说上周的货款没收到，现在催我再付一次，该核实什么？",
+      "expected": "bec-guidance",
+      "mode": "semantic",
+      "ids": [
+        "bec-guidance",
+        "bec-case",
+        "receipt-guidance"
+      ],
+      "hit": true,
+      "status": "completed",
+      "logs": [
+        {
+          "kind": "retrieval_started",
+          "method": "semantic"
+        },
+        {
+          "kind": "retrieval_attempt_completed",
+          "method": "semantic",
+          "unit_ids": [
+            "bec-guidance",
+            "bec-case",
+            "receipt-guidance"
+          ],
+          "source_ids": [
+            "westpac-bec",
+            "scamwatch-case",
+            "westpac-receipt"
+          ]
+        }
+      ],
+      "seconds": 0.272054583998397
+    }
+  ]
+}

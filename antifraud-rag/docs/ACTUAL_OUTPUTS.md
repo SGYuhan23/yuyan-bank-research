@@ -90,3 +90,14 @@
 - 交互培训会话：`1ed41b221e60496488163151c2b9194f`，确定性客户回复和实际Qwen复盘；复盘引用能定位学员原句，但语义评分仍需人审，不作客服绩效。
 
 完整内容在 `eval/upgrade/`；失败及驳回记录没有手工改写为成功。保留集汇总见 `eval/upgrade/heldout-v1/REPORT.md`。John案例金额规则仍只覆盖“最初17,000澳元包含于估计总损失超过30,000澳元”；全国统计等其他金额并未获得通用语义校验能力。
+
+## Latest integration follow-up (2026-10-20)
+
+See [repair-v2 results](../eval/repair-v2/REPORT.md); old records and errors remain unchanged. New source-reviewed seller output `7edc8178cda3426986d59733dbd38d21` states:
+
+> 交货前，必须亲自登录自己的网银或手机银行，核对本次货款是否已实际到账。
+> 买家提供的转账截图或付款收据不能替代本人银行账户的实际到账确认；未确认到账前不得交付本次货物。
+
+This excerpt is from the actual output in `followup-v2`, not a manual rewrite. Its scope is online selling and it cites receipt-guidance. Separated comparison run `9a2ef2ec26774a3faa6525bac1df3667` keeps seller receipt and company supplier-change steps distinct. Unsupported internal-policy run `c202abf2c86a483ab21cc7595d47b384` stops for insufficient evidence.
+
+Normal, unpaid and investment follow-up outputs were rejected by project-source review for residual unsupported wording/omitted conditions; their pending-review runtime status must not be presented as semantic approval. No new training-generation success is claimed for this batch. The previous John amount correction and historical training trace remain the evidence for that separately tested behaviour.

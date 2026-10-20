@@ -1,0 +1,135 @@
+{
+  "historical_run_id": "bf353905512244e2b33a56b6e06de689",
+  "historical_file": "normal-demo-bf353905512244e2b33a56b6e06de689.json",
+  "method": "actual same-provider audit; exact source quote validation; not independent expert",
+  "error": "GROUNDING_AUDIT_QUOTE_INVALID",
+  "rejected": true,
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "focused_grounding",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 4874,
+        "completion_tokens": 1188,
+        "prompt_tokens": 3686,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 27.03,
+      "finish_reason": "stop",
+      "request_hash": "6dd88e6b9d4a94cb8b939ea91a8b1f7aa062d343e9e36460bf5dc2f930165fa2"
+    },
+    {
+      "kind": "focused_grounding_raw",
+      "verdict": {
+        "checks": [
+          {
+            "field": "steps",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "Always verbally confirm any requests for urgent or redirected payments. Always use a phone number you have on file, or a publicly sourced number. Never use contact details provided in the email.",
+            "source_span_id": "bec-guidance:1",
+            "reason": "原文明确要求对账户变更类请求进行口头确认，并限定使用留档或公开电话号码，禁止使用邮件中提供的联系方式，与step 0完全匹配。"
+          },
+          {
+            "field": "steps",
+            "index": 1,
+            "supported": false,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": null,
+            "source_quote": "",
+            "source_span_id": null,
+            "reason": "原文未提及‘本次核实结果不得延用于其他付款’或‘不得据此更改无关付款账户设置’；该限制属于合理操作延伸，但无直接原文支持，故unsupported。"
+          },
+          {
+            "field": "risks",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "Even if such requests came from someone associated with you, do not make any changes to account details until you've verbally verified the request using a phone number you sourced yourself.",
+            "source_span_id": "bec-guidance:0",
+            "reason": "原文强调即使请求看似来自关联方，仍须独立核实，隐含攻击者可能已控制多渠道（如邮箱+电话），且‘verbal verification’本身不消除风险，与risk 0中‘无法排除呼叫转移、语音钓鱼’及‘不构成交易安全保证’一致。"
+          },
+          {
+            "field": "boundaries",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "This is general advice only and does not take into account your individual objectives, financial situation or needs.",
+            "source_span_id": null,
+            "reason": "原文limitations明确说明‘本指引为公开安全建议，非Westpac内部操作规程’，与boundary 0完全对应；虽该句未在source_spans中显式切分，但limitations字段属unit_id='bec-guidance'的权威元数据，符合source_span_id可为null、unit_id必须匹配的要求。"
+          },
+          {
+            "field": "boundaries",
+            "index": 1,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "account change is a verification signal, not proof of fraud",
+            "source_span_id": null,
+            "reason": "原文limitations直接陈述‘账户变更是核实信号，不足以证明欺诈’，与boundary 1逐字对应；该表述为unit_id='bec-guidance'的limitations字段内容，允许source_span_id=null。"
+          },
+          {
+            "field": "boundaries",
+            "index": 2,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "PayID and dual approval are conditional on availability.",
+            "source_span_id": null,
+            "reason": "原文limitations明确说明‘PayID和双人审批以可用为条件’，与boundary 2完全一致；该句为unit_id='bec-guidance'的limitations字段内容，允许source_span_id=null。"
+          },
+          {
+            "field": "questions",
+            "index": 0,
+            "supported": false,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": null,
+            "source_quote": "",
+            "source_span_id": null,
+            "reason": "原文未要求核实‘新账户是否归属公司名下且为唯一有效收款账户’；‘口头确认变更’仅指向请求真实性，不扩展至账户法律权属或排他性验证，无原文支持。"
+          },
+          {
+            "field": "questions",
+            "index": 1,
+            "supported": false,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": null,
+            "source_quote": "",
+            "source_span_id": null,
+            "reason": "原文仅要求‘口头确认’，未规定需盖章文件或预设密语等额外验证方式；bec-case中John亦无此类要求即完成变更，故该question超出原文支持范围。"
+          },
+          {
+            "field": "questions",
+            "index": 2,
+            "supported": false,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": null,
+            "source_quote": "",
+            "source_span_id": null,
+            "reason": "原文未将账户变更核实与合同/订单金额、币种、付款条件的一致性绑定；该question引入新维度（履约一致性），无任何source_span或limitations支持。"
+          }
+        ],
+        "coverage_ok": true,
+        "missing_essential": []
+      },
+      "reviewer": "same_provider_quote_checked_not_independent_human"
+    }
+  ]
+}

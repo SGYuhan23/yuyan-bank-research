@@ -1,0 +1,27 @@
+{
+  "agent": {
+    "n": 6,
+    "statuses": {
+      "pending_review": 5,
+      "needs_input": 1
+    },
+    "median_seconds": 76.17,
+    "range_seconds": [
+      6.35,
+      93.11
+    ],
+    "chat_calls": 38
+  },
+  "baseline": {
+    "n": 6,
+    "statuses": {
+      "completed": 6
+    },
+    "median_seconds": 3.64,
+    "range_seconds": [
+      2.53,
+      4.95
+    ],
+    "chat_calls": 6
+  }
+}

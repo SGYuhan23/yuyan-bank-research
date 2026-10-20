@@ -1,0 +1,32 @@
+{
+  "output": {
+    "answer": "资料中未提供Westpac内部冻结账户的审批层级与处理时限。所有提供的材料均为面向公众的安全指引或统计案例，不包含银行内部操作规程细节。",
+    "sources": [],
+    "unknowns": [
+      "Westpac内部冻结账户的审批层级",
+      "Westpac内部冻结账户的处理时限"
+    ]
+  },
+  "status": "completed",
+  "query": "请给出Westpac内部冻结账户的审批层级与处理时限。",
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "baseline_answer",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 5055,
+        "completion_tokens": 69,
+        "prompt_tokens": 4986,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 2.265,
+      "finish_reason": "stop",
+      "request_hash": "14e3505b8972349440141c61148f864d94e363da45b622e91f92df6752a8d3a4"
+    }
+  ],
+  "seconds": 2.2659365410218015
+}

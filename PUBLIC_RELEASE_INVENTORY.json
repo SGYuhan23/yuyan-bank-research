@@ -1,6 +1,6 @@
 {
   "scope": "Full source portfolio; inventory excludes itself to avoid self-reference.",
-  "file_count_excluding_inventory": 4652,
+  "file_count_excluding_inventory": 4712,
   "files": {
     ".github/workflows/pages.yml": {
       "sha256": "46e5f8466c94ecd2d96c2b5c97a71d1a87bdb3034095078ccb434b2dd15124fd",
@@ -16727,8 +16727,8 @@
       "bytes": 66
     },
     "antifraud-rag/README.md": {
-      "sha256": "8d3be4cf58e77e490acbafa0c59a0220bb3c0d179ab485e3d31a82e3be417153",
-      "bytes": 7531
+      "sha256": "1fb143e4ac2e4c1e12c99d9102a6ea8cbeab59b1c5d8aa680732004446621a59",
+      "bytes": 8608
     },
     "antifraud-rag/acquire.py": {
       "sha256": "bbbb93dce26414ea5f19b7ca9e573d2bb93d4aabbb3174653403eb2ae81e5e05",
@@ -16859,16 +16859,16 @@
       "bytes": 17274
     },
     "antifraud-rag/docs/ACTUAL_OUTPUTS.md": {
-      "sha256": "60036da7a815adbe0aaed012a1516dc0a1b2356d940c1c5dbe73fdf0ea113449",
-      "bytes": 6153
+      "sha256": "fe2050a75a93028ed87f1514780e749bfe92719e5bb0cf658804d2c7ab85beb1",
+      "bytes": 7396
     },
     "antifraud-rag/docs/EVALUATION.md": {
       "sha256": "0db0ff3044505c8e74b8d193f77b4b9a48fbdff87f784e38f6746b53c491f235",
       "bytes": 4580
     },
     "antifraud-rag/docs/IMPLEMENTATION_STATUS.md": {
-      "sha256": "359780ca0ed56ff902f5ae9df94b5f34cd6dd47d9ef00a30ebb1746df19c776a",
-      "bytes": 4352
+      "sha256": "708a60389ec10de17e4f7816b055a639fc7d694b656d14b38cf7265bc0b97317",
+      "bytes": 5075
     },
     "antifraud-rag/docs/PACKAGE_RECONCILIATION.md": {
       "sha256": "4d63786d98562a722bbd8663b676d2b3d13796a66f88000c515c6b6c13db7663",
@@ -16999,8 +16999,8 @@
       "bytes": 3244
     },
     "antifraud-rag/pipeline.py": {
-      "sha256": "544132f730e0d20cd7926689ddf8c429bafadb8e7bc2a28ee56717276224419d",
-      "bytes": 27223
+      "sha256": "3cf7c2ac0b131593834d2de746ef91928fef90355478cb6e1f3078469250d33a",
+      "bytes": 27806
     },
     "antifraud-rag/prepare.py": {
       "sha256": "5fafb4ecfe5e2897e9d4d66dbd906e6b9aab7825963af44fc30d48c6c0ca4384",
@@ -17911,12 +17911,12 @@
       "bytes": 2667
     },
     "antifraud-rag/docs/UPGRADE_REFERENCES.md": {
-      "sha256": "3ea3eebd8c3c88614b856a11e42f4f87445ee2c6f484f7bd1a65bae95571db24",
-      "bytes": 2985
+      "sha256": "932d894427cd381d8a1564bb9f8e0b9aaa2df3c21cdc9f64ff03c61680a3d2cd",
+      "bytes": 5029
     },
     "antifraud-rag/docs/UPGRADE_VALIDATION.md": {
-      "sha256": "362d2d9dfaebcfa9dff43330add0550f66aabff0379740c706407715e29e6ba2",
-      "bytes": 6989
+      "sha256": "a34d4450fafe9660307723a5ef757def1f09f70a628194f6d51d29d7e895aeb5",
+      "bytes": 7758
     },
     "antifraud-rag/eval/upgrade/PROTOCOL.md": {
       "sha256": "241cfe0d01f980ffd51f7c7e1e4744dae23d29cd3ff154b03f777feeeb6711d9",
@@ -18551,8 +18551,8 @@
       "bytes": 81
     },
     "antifraud-rag/upgrade/agent.py": {
-      "sha256": "680a462e77c785a0009c619423573f4adcb85a1690539b169ab5a46896f5f3de",
-      "bytes": 11865
+      "sha256": "f9fa26366a5b6d6cc13cee42a73b08db7f126cd878699a6e7844cef23687e635",
+      "bytes": 13391
     },
     "antifraud-rag/upgrade/api.py": {
       "sha256": "ee5cba93485e215778da36dec61fa559f706ccdeb8e859dc822c868660950ce8",
@@ -18599,8 +18599,8 @@
       "bytes": 3836
     },
     "antifraud-rag/web/upgrade.js": {
-      "sha256": "ebacb1b060ccc4eb2e9202635589041ba5c4a882c7216854315cf2938a68fcd0",
-      "bytes": 9475
+      "sha256": "0fa6f12cfb12d8b981ec3fa0a53bc49178cbf5e7de90b957fc828ccf551c59e0",
+      "bytes": 10166
     },
     "antifraud-rag/eval/upgrade/graph/shared-case-actual.json": {
       "sha256": "81b1f53a50127b6bdf8d59d653b276716c4640cfeadfe568fb270be31686220d",
@@ -18609,6 +18609,246 @@
     "antifraud-rag/eval/upgrade/training-case-actual.json": {
       "sha256": "a03937f2ef115ab1c2a8602e197d3a5d49f429982e41df2c4aeb3d4a68b58399",
       "bytes": 64356
+    },
+    "antifraud-rag/docs/RESUME_EVIDENCE.md": {
+      "sha256": "9b86ebe095887d8c8be537b83768e341ff1c65980571f1746a63a63ed772348b",
+      "bytes": 3423
+    },
+    "antifraud-rag/eval/repair-v2/PROTOCOL.md": {
+      "sha256": "6aac65f52e6933785dd10f693d4a68987101582c9fc65d13239b6a26b833267d",
+      "bytes": 1656
+    },
+    "antifraud-rag/eval/repair-v2/REPORT.md": {
+      "sha256": "cd706f9519690844c8cdf37d01861d73673d7a6a1617e50e369f54e8aab0a71b",
+      "bytes": 7010
+    },
+    "antifraud-rag/eval/repair-v2/browser/antifraud-browser-result.json": {
+      "sha256": "a37cdecdc65aa0dca99feae3eafaa8937cfb1e9629ccb70f5ddf0528d853333e",
+      "bytes": 1696
+    },
+    "antifraud-rag/eval/repair-v2/browser/antifraud-case-export.json": {
+      "sha256": "720548567eb61bb4133c879e772e4465ac01cdb45d38133ae4f986b4a43ab937",
+      "bytes": 52894
+    },
+    "antifraud-rag/eval/repair-v2/browser/antifraud-case.png": {
+      "sha256": "2cd36709f2d50835eba75bb7620223e1f5a1513df6bb1408144c28222b535136",
+      "bytes": 359881
+    },
+    "antifraud-rag/eval/repair-v2/browser/first-failed.json": {
+      "sha256": "2219d59fa7b9b6dedad4686e7e0bd11aafbbbc94382f358d5ff2307b14973f17",
+      "bytes": 18076
+    },
+    "antifraud-rag/eval/repair-v2/coverage-actual/partial-hit-15317071a3c54d9388dcb061793c41b7.json": {
+      "sha256": "812c3f7c81c38a388210d3ed83b483b36007b37b3ae0111dc06881fa6dc76322",
+      "bytes": 74214
+    },
+    "antifraud-rag/eval/repair-v2/coverage-actual/partial-hit-ef404937250b4522a3ce5771ba223cf1.json": {
+      "sha256": "528ae3cff7beac7a8b188cf8c3cbac3be3248e92bceed76308ec1776570c8d1a",
+      "bytes": 79800
+    },
+    "antifraud-rag/eval/repair-v2/dev/change-25f9dc8b4cdb4475b6b71fbbe3016119.json": {
+      "sha256": "8328e5baac5d80bdf4cae9119cdbb93c3b0963bbe642f1636d7835288fea3524",
+      "bytes": 52161
+    },
+    "antifraud-rag/eval/repair-v2/dev/change-62d875f4c15d4eb8873d9d3afd956a87.json": {
+      "sha256": "0e663ed18a7750ec047465e7a31fea924fbd9fee9b4ceb55d42fd9b4210f1028",
+      "bytes": 49503
+    },
+    "antifraud-rag/eval/repair-v2/dev/seller-3d140487d7f942cda0ae053db9857d69.json": {
+      "sha256": "7c8a68dc90d3f05fee1d946823fd4671ed04b17c42edae57f8054e60cf3529fb",
+      "bytes": 56433
+    },
+    "antifraud-rag/eval/repair-v2/dev/seller-d989c48138cb4a4caa38fae8563c8442.json": {
+      "sha256": "17322c3ff4b122b353468ce8c5c3884342041f4fb0c1c9482688f56a9d0ca840",
+      "bytes": 42098
+    },
+    "antifraud-rag/eval/repair-v2/dev/unpaid-84818512fccb4a9c9a5d3bf04c903eb5.json": {
+      "sha256": "135b5ebf6128b1c4e5dadb89ace6800c8dbeb76157163c1fa1207002f0807cd3",
+      "bytes": 37602
+    },
+    "antifraud-rag/eval/repair-v2/dev/unpaid-e4474ee25b2a47a2892f91507b5288e1.json": {
+      "sha256": "a89481e8071e25cd66676321604b61ed0ca54369a8f274e64a1c17c4f8887d7d",
+      "bytes": 41768
+    },
+    "antifraud-rag/eval/repair-v2/final-core/change-01283e0a90554039b31fe9aff59c9558.json": {
+      "sha256": "017a902f4c366bf35791355486cb21dbd146d1aa3b1ba53b02314ad8743f41aa",
+      "bytes": 53833
+    },
+    "antifraud-rag/eval/repair-v2/final-core/seller-751a7bf1cdbc4637bd8719673da45c07.json": {
+      "sha256": "e261f00e73b337dcb33175c9b5b7b8c838dd60cb76fe4a29935e5098aff2f59f",
+      "bytes": 61147
+    },
+    "antifraud-rag/eval/repair-v2/final-core/unpaid-84cab76ee0654f1a92150635c5c5074d.json": {
+      "sha256": "e1a7ce808be85afea92fba013e8b2ce6ec1a70ca49e83aa09fa42e5d85325235",
+      "bytes": 65700
+    },
+    "antifraud-rag/eval/repair-v2/followup-v1/comparison-agent-f14af023f4ac4b209f58d98dbeb2fc77.json": {
+      "sha256": "adf863bfd5c4a2cdaa0138432518c5688c89531a4c5f63004593e6c1bb12cee9",
+      "bytes": 58555
+    },
+    "antifraud-rag/eval/repair-v2/followup-v1/comparison-baseline.json": {
+      "sha256": "341dca5de9eb4156911ab85f5b238ddbc96328df23bde2ce88a6f07b860bc8f2",
+      "bytes": 1577
+    },
+    "antifraud-rag/eval/repair-v2/followup-v1/freeze.json": {
+      "sha256": "6ac01ff04d2e858a98477a3b814dd2483db479e0530ed9502c385d9e4c549f76",
+      "bytes": 2306
+    },
+    "antifraud-rag/eval/repair-v2/followup-v1/investment-agent-a1c33ce360864dcbaa0d69fff1765d2f.json": {
+      "sha256": "8bde031c63770eb650ce3ec52b1729bba225415d60d9d18f1e242d062fe5cd08",
+      "bytes": 48995
+    },
+    "antifraud-rag/eval/repair-v2/followup-v1/investment-baseline.json": {
+      "sha256": "171020cba7cd25188ccf5ce6aa931bcdaf9690693eace0884ea4389fc69938c1",
+      "bytes": 1350
+    },
+    "antifraud-rag/eval/repair-v2/followup-v1/normal-agent-c3697959df6f4ac88347829568fd4dbb.json": {
+      "sha256": "c83aafde68bc84ad873092a54d5aa10c2c6b4071bef6d6ad37bb7e152df6146a",
+      "bytes": 42925
+    },
+    "antifraud-rag/eval/repair-v2/followup-v1/normal-baseline.json": {
+      "sha256": "878d5a4bbf16121b3f7dde2d6f1aa4c2be7398982bcdc5dfd6684a9c96bc39e9",
+      "bytes": 1468
+    },
+    "antifraud-rag/eval/repair-v2/followup-v1/seller-agent-547a448ef91c48de9d2b5c272f5ecd51.json": {
+      "sha256": "8efda633f2959176990409168b387baa081f1a1ba01f5865649e75003b764635",
+      "bytes": 33444
+    },
+    "antifraud-rag/eval/repair-v2/followup-v1/seller-baseline.json": {
+      "sha256": "839d07ebd7f6c5296fb55cfc7b65e77d8f2eee089dcd80e7a06e98ce4a865270",
+      "bytes": 1166
+    },
+    "antifraud-rag/eval/repair-v2/followup-v1/unpaid-agent-7052375fe6bb47a4898309a7d524a86e.json": {
+      "sha256": "88fbb1a76e15acda5b8218b54e0114f19a6bce05c7bfecdb832f6904791ebe47",
+      "bytes": 44814
+    },
+    "antifraud-rag/eval/repair-v2/followup-v1/unpaid-baseline.json": {
+      "sha256": "1de6989598a31d4668df391ed85ef465fa44d1e612437ae323c71164b60081cd",
+      "bytes": 1280
+    },
+    "antifraud-rag/eval/repair-v2/followup-v1/unsupported-agent-c9430aa716bd4182afd8e22de54b28a5.json": {
+      "sha256": "c4a8cd84822f8678ac9197644def1f6836c5800e765d340003d24a68fd6fe228",
+      "bytes": 28123
+    },
+    "antifraud-rag/eval/repair-v2/followup-v1/unsupported-baseline.json": {
+      "sha256": "59bc01779c1b4c11735afeda92670dc0d008b6db8348b29c40e653e85553ee36",
+      "bytes": 1027
+    },
+    "antifraud-rag/eval/repair-v2/followup-v2/comparison-agent-9a2ef2ec26774a3faa6525bac1df3667.json": {
+      "sha256": "697fe4834bd674fb0ef41af46d80383786dd5f5ec4b218bbc5d942586f669f01",
+      "bytes": 61761
+    },
+    "antifraud-rag/eval/repair-v2/followup-v2/comparison-baseline.json": {
+      "sha256": "33b39c620ddefe86e0a5e8b6a3f51f3e5584e9373ca62b9f1e04ee22fb1012fd",
+      "bytes": 1568
+    },
+    "antifraud-rag/eval/repair-v2/followup-v2/freeze.json": {
+      "sha256": "af358f92f7dccc2f0f6d4afee9610e82e83db526c0683f986bc8a23f0f029928",
+      "bytes": 2306
+    },
+    "antifraud-rag/eval/repair-v2/followup-v2/investment-agent-447fb28ccc0c401b8418ff21aae08357.json": {
+      "sha256": "e90fc6e8e349fb5904cef9f7d4b481d766ef9c3981a84416e0e3ff435d85f05f",
+      "bytes": 47179
+    },
+    "antifraud-rag/eval/repair-v2/followup-v2/investment-baseline.json": {
+      "sha256": "60638c25cd600d7b876a6f3723c4fb18b94b0eec15731104a5d01e15785fdf86",
+      "bytes": 1366
+    },
+    "antifraud-rag/eval/repair-v2/followup-v2/normal-agent-cd1a053d551c43adac28760162a51cb9.json": {
+      "sha256": "91266211cadfd9f9e03ad9a8fffe15c30f9d07c76b29e09be0ec7416875d88a0",
+      "bytes": 50396
+    },
+    "antifraud-rag/eval/repair-v2/followup-v2/normal-baseline.json": {
+      "sha256": "c29e62b4d8fe952b35324dae534b75eaaef32a924d0de9c0e9a71c2d0aecd951",
+      "bytes": 1391
+    },
+    "antifraud-rag/eval/repair-v2/followup-v2/seller-agent-7edc8178cda3426986d59733dbd38d21.json": {
+      "sha256": "1659287ccbb40bb8477b1a73d5dd9b1e8367a2fe94469478fde0678b67f46f42",
+      "bytes": 43153
+    },
+    "antifraud-rag/eval/repair-v2/followup-v2/seller-baseline.json": {
+      "sha256": "f51ddcdb14cc015fe7b285d5e2d947ea0fcfb16b2ea6caff500af466d492db6d",
+      "bytes": 1268
+    },
+    "antifraud-rag/eval/repair-v2/followup-v2/source-reviews.json": {
+      "sha256": "a62387c13bfdac079e128f2b1533516b3c16eb3af70984356eee637edbae63e3",
+      "bytes": 4662
+    },
+    "antifraud-rag/eval/repair-v2/followup-v2/summary.json": {
+      "sha256": "d946b68674cf2fd6d10ad6e6bf0324d9d1ba4888d1ad1e561760226745dc1235",
+      "bytes": 391
+    },
+    "antifraud-rag/eval/repair-v2/followup-v2/unpaid-agent-73bb83edd6cb40f9933d9d4687453791.json": {
+      "sha256": "c964095bd12baa71f2ca49ded46645c4db9bdda5e819af02c3df8f8edeea6391",
+      "bytes": 57368
+    },
+    "antifraud-rag/eval/repair-v2/followup-v2/unpaid-baseline.json": {
+      "sha256": "c79ec3eccc4a12ace96ac758bb2d35d480a6db3fd8cb9e0e9bf5c65173a3db4f",
+      "bytes": 1216
+    },
+    "antifraud-rag/eval/repair-v2/followup-v2/unsupported-agent-c202abf2c86a483ab21cc7595d47b384.json": {
+      "sha256": "f6f5535ab0c44ff29f41c04bff1df81cb82ea122079946cb37d65579cca7bc44",
+      "bytes": 27920
+    },
+    "antifraud-rag/eval/repair-v2/followup-v2/unsupported-baseline.json": {
+      "sha256": "3a8da06468b4743d668288a2314a15ee5cad3ef89f3294ddb24f322a09b7c668",
+      "bytes": 1024
+    },
+    "antifraud-rag/eval/repair-v2/history-email.json": {
+      "sha256": "0b6a638734b86e4ce0ecc7350187c7c3168437a3f293206012d66e3f2fc9457e",
+      "bytes": 9220
+    },
+    "antifraud-rag/eval/repair-v2/history-normal.json": {
+      "sha256": "4f01df48caf5362067ace962dcd524db569c981b5136b351099f14107760724d",
+      "bytes": 11202
+    },
+    "antifraud-rag/eval/repair-v2/history-v2/history-email.json": {
+      "sha256": "c4b63e559b88ec1be617b0b95eacef224e3bca2438c9811d3cb6a527bb634e8f",
+      "bytes": 6963
+    },
+    "antifraud-rag/eval/repair-v2/history-v2/history-normal.json": {
+      "sha256": "920cd7078aea255d058714eef7a9c9eeb0967e3ef6d70630614f45ff4b60807c",
+      "bytes": 6463
+    },
+    "antifraud-rag/eval/repair-v2/history-v3/history-email.json": {
+      "sha256": "c29477df96b274dd21bce45aa0495cdd3f212d761ed483386501dc01f146d1b9",
+      "bytes": 7495
+    },
+    "antifraud-rag/eval/repair-v2/history-v3/history-normal.json": {
+      "sha256": "02e76cb3af40bfc9eb1534b46f07d3484a0a1a95c64299a35cea67ef04a70ca8",
+      "bytes": 7283
+    },
+    "antifraud-rag/eval/repair-v2/history_checks.py": {
+      "sha256": "9ca38f0efe2994f2d5862267883cafe8d6521a84cb125081353e39ec145dab47",
+      "bytes": 1477
+    },
+    "antifraud-rag/eval/repair-v2/retrieval-actual.json": {
+      "sha256": "06fe413141f4a1334cb0aac890683843c5d9ff870732ff1f0ee13a4051d783f2",
+      "bytes": 13879
+    },
+    "antifraud-rag/eval/repair-v2/retrieval_checks.py": {
+      "sha256": "c759ff98083da375b1953ed2f45ef1e07e51885fbb28d50d3399f47fc803fe90",
+      "bytes": 1831
+    },
+    "antifraud-rag/eval/repair-v2/run_checks.py": {
+      "sha256": "ecd42941fe0e6ff324ad5ef650f06975e692f9325774f36e9d8a0ce86a18f705",
+      "bytes": 2752
+    },
+    "antifraud-rag/eval/repair-v2/tests-actual.txt": {
+      "sha256": "5593c84836cdf860681b8d008eb6751a71f463ec4c200f66707377ed78911d7c",
+      "bytes": 163
+    },
+    "antifraud-rag/eval/upgrade/normal-demo-006b3263933e4ba48e2deab243c31adc.json": {
+      "sha256": "76768880b1401980922ac2e7f5ad4237f4ab04b336219e1ec54c3f31848e8080",
+      "bytes": 45561
+    },
+    "antifraud-rag/test_repair_v2.py": {
+      "sha256": "e63bd8540b6c5f5ee7f31db9018d643b3dae418ec72ed9c0a000c3aac0ac47c8",
+      "bytes": 5550
+    },
+    "antifraud-rag/upgrade/grounding.py": {
+      "sha256": "6eb561a591dcc66b758dcd53200e961662b5cea67d04db29d23ec0cbf235834a",
+      "bytes": 8589
     }
   }
 }

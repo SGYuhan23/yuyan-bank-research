@@ -1,0 +1,85 @@
+{
+  "method": "Codex source comparison, not independent human expert; 2 accepted and 3 rejected generated outputs. Unsupported question correctly declined, counted separately.",
+  "records": [
+    {
+      "request": {
+        "request_id": "repair-v2-source-7edc8178cda3426986d59733dbd38d21",
+        "case_id": "ecd770048485460b85518d956523db08",
+        "case_version": 1,
+        "result_id": "7edc8178cda3426986d59733dbd38d21",
+        "operator": "Codex project-source review; not independent bank expert",
+        "decision": "accept",
+        "note": "核心建议与receipt-guidance网上卖货段落一致：本人网银/手机银行实际到账、凭证不能替代。仅核对来源与任务，不认定交易安全。",
+        "revisions": []
+      },
+      "at": "2026-10-20T01:27:48.745371+00:00",
+      "evidence_version_hash": "9e0104f0a4dff3ca8680cf56d44d59e0ccf62849a97a4e31132eab806162c595",
+      "identity_notice": "local operator name, not authenticated enterprise identity",
+      "revision_notice": "human-authored revision, not model validation"
+    },
+    {
+      "request": {
+        "request_id": "repair-v2-source-cd1a053d551c43adac28760162a51cb9",
+        "case_id": "ce78cbc3136446d1a14db8a0e1961d20",
+        "case_version": 1,
+        "result_id": "cd1a053d551c43adac28760162a51cb9",
+        "operator": "Codex project-source review; not independent bank expert",
+        "decision": "reject",
+        "note": "虽然已删除盖章/密语/唯一账户追问，但“诈骗高发信号”无频率统计依据；“内部系统升级”等正常原因不是本来源证实的当前事实。仍需修订措辞。",
+        "revisions": []
+      },
+      "at": "2026-10-20T01:27:48.751179+00:00",
+      "evidence_version_hash": "a97485f66c30b17c7ada628d403d6e87badd187a5cf9c4029cc5ff96c9bff641",
+      "identity_notice": "local operator name, not authenticated enterprise identity",
+      "revision_notice": "human-authored revision, not model validation"
+    },
+    {
+      "request": {
+        "request_id": "repair-v2-source-73bb83edd6cb40f9933d9d4687453791",
+        "case_id": "af95b326e1b84acca3ac469479617fa0",
+        "case_version": 1,
+        "result_id": "73bb83edd6cb40f9933d9d4687453791",
+        "operator": "Codex project-source review; not independent bank expert",
+        "decision": "reject",
+        "note": "核查历史/邮件及同笔款调查前不重付均有体现，但未明确要求从邮件核查账户修改请求；追问默认存在本次要求的新账户，并引入付款通知核查，依据不足。",
+        "revisions": []
+      },
+      "at": "2026-10-20T01:27:48.756459+00:00",
+      "evidence_version_hash": "43e76f6076888f7448172761be6cf90223c9d60d22faf2cb55f8a4b0cc0ce830",
+      "identity_notice": "local operator name, not authenticated enterprise identity",
+      "revision_notice": "human-authored revision, not model validation"
+    },
+    {
+      "request": {
+        "request_id": "repair-v2-source-447fb28ccc0c401b8418ff21aae08357",
+        "case_id": "b7c217450be944f4a0d4c820e7dad6c5",
+        "case_version": 1,
+        "result_id": "447fb28ccc0c401b8418ff21aae08357",
+        "operator": "Codex project-source review; not independent bank expert",
+        "decision": "reject",
+        "note": "核心不以登记/网页保证安全正确；询问URL是否匹配时遗漏原文if a website URL is listed in the register条件。",
+        "revisions": []
+      },
+      "at": "2026-10-20T01:27:48.761983+00:00",
+      "evidence_version_hash": "395545fd83f2672b48b51fa7a01f5fae0941732881c753a8e1f3336e10c7ced2",
+      "identity_notice": "local operator name, not authenticated enterprise identity",
+      "revision_notice": "human-authored revision, not model validation"
+    },
+    {
+      "request": {
+        "request_id": "repair-v2-source-9a2ef2ec26774a3faa6525bac1df3667",
+        "case_id": "de05dd62fcfa48278949c29b7ec1b584",
+        "case_version": 1,
+        "result_id": "9a2ef2ec26774a3faa6525bac1df3667",
+        "operator": "Codex project-source review; not independent bank expert",
+        "decision": "accept",
+        "note": "两场景步骤分开，卖方看自己银行到账；企业独立电话核实本次变更，并限定本次请求。来源支持。仅范围复核，不核实交易安全。",
+        "revisions": []
+      },
+      "at": "2026-10-20T01:27:48.768429+00:00",
+      "evidence_version_hash": "356c2fffaf5c1f32aa27879d87380cca1d898f373f6c1b3e82965da40e2b517c",
+      "identity_notice": "local operator name, not authenticated enterprise identity",
+      "revision_notice": "human-authored revision, not model validation"
+    }
+  ]
+}

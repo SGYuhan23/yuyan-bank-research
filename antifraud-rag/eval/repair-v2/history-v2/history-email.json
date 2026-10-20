@@ -1,0 +1,146 @@
+{
+  "historical_run_id": "ced1d61357bb4bd38d71b6929b4e82a8",
+  "historical_file": "tool-track/email-ced1d61357bb4bd38d71b6929b4e82a8.json",
+  "method": "actual same-provider audit; exact source quote validation; not independent expert",
+  "error": "GROUNDING_AUDIT_QUOTE_INVALID",
+  "rejected": true,
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "focused_grounding",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 4968,
+        "completion_tokens": 1223,
+        "prompt_tokens": 3745,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 27.51,
+      "finish_reason": "stop",
+      "request_hash": "9d7d3e6e3693e083c4ab40238c37ae19f7f2e81f9619fcae32f3ec1624feba37"
+    },
+    {
+      "kind": "focused_grounding_raw",
+      "verdict": {
+        "checks": [
+          {
+            "field": "steps",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "Even if such requests came from someone associated with you, do not make any changes to account details until you've verbally verified the request using a phone number you sourced yourself.",
+            "source_span_id": "bec-guidance:0",
+            "reason": "Directly supports independent telephone verification using self-sourced number before account change."
+          },
+          {
+            "field": "steps",
+            "index": 1,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "Even if such requests came from someone associated with you, do not make any changes to account details until you've verbally verified the request using a phone number you sourced yourself.",
+            "source_span_id": "bec-guidance:0",
+            "reason": "Implies prohibition on system update and payment execution prior to verbal verification; 'do not make any changes' covers both database update and payment action under same condition."
+          },
+          {
+            "field": "risks",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "",
+            "source_span_id": null,
+            "reason": "No source explicitly identifies example.invalid as a reserved test domain or labels it 'typical phishing signal'; this is technical domain knowledge, not quoted source support. Unsupported by provided materials."
+          },
+          {
+            "field": "risks",
+            "index": 1,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-case",
+            "source_quote": "After some investigation it became clear that Mr Liu had not sent any request to update his company’s banking details and John was the victim of a scam.",
+            "source_span_id": "bec-case:9",
+            "reason": "Confirms BECS pattern: unchanged company name/amount/bank details except account number, paired with forged sender identity — matches 'SYNTHETIC-A → SYNTHETIC-B' scenario."
+          },
+          {
+            "field": "boundaries",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "This guidance applies to requests for urgent or redirected payments.",
+            "source_span_id": null,
+            "reason": "Source does not state boundary about non-extension to 'previously unpaid' scenarios; 'boundaries' claim lacks direct quote. The limitation note says 'account change is a signal, not proof', but does not restrict scope to only this request — unsupported."
+          },
+          {
+            "field": "boundaries",
+            "index": 1,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "Never use contact details provided in the email.",
+            "source_span_id": "bec-guidance:3",
+            "reason": "Explicitly forbids email-provided contacts; supports requirement for independent phone verification only."
+          },
+          {
+            "field": "boundaries",
+            "index": 2,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "public security guidance, not Westpac internal operational procedure",
+            "source_span_id": null,
+            "reason": "Limitations field states: 'public security guidance non-Westpac internal operational procedure'; matches 'not define sign-off level, freeze duration or interception process'. Supported by limitations, though not verbatim quote — unit_id valid, no direct text match, so source_quote left empty per rule 4."
+          },
+          {
+            "field": "questions",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "Always use a phone number you have on file, or a publicly sourced number.",
+            "source_span_id": "bec-guidance:2",
+            "reason": "Directly prompts verification of whether user holds valid pre-existing contact — required for compliant verification."
+          },
+          {
+            "field": "questions",
+            "index": 1,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "Always verbally confirm any requests for urgent or redirected payments.",
+            "source_span_id": "bec-guidance:1",
+            "reason": "Urgency ('urgent') is explicitly named as a trigger requiring verbal confirmation — justifies asking whether email contains 'emergency' language."
+          },
+          {
+            "field": "questions",
+            "index": 2,
+            "supported": false,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": null,
+            "source_quote": "",
+            "source_span_id": null,
+            "reason": "No source requires checking historical transaction records or original payment vouchers for *this* account change verification step. The case describes delayed discovery *after* payment, not a prerequisite check. Not supported."
+          }
+        ],
+        "coverage_ok": true,
+        "missing_essential": []
+      },
+      "reviewer": "same_provider_quote_checked_not_independent_human"
+    }
+  ]
+}

@@ -3,7 +3,7 @@ import json,time,threading
 from concurrent.futures import ThreadPoolExecutor
 from langgraph.graph import StateGraph,START,END
 from pydantic import Field
-from pipeline import RagRun,Assessment,SYSTEM,SCOPE_PROMPT
+from pipeline import RagRun,Assessment,SYSTEM,SCOPE_PROMPT,SCOPE_RULES
 from .contracts import *
 from .store import Store
 from .tools import invoke,allowed,material
@@ -87,7 +87,21 @@ class Agent:
         # This adapter avoids writing source snapshots or hidden model prompts into new traces.
         legacy=object.__new__(RagRun);legacy.id=self.id;legacy.model=self.model;legacy.log=self.log;legacy.save=lambda:None
         legacy.data={'query':self.case.query,'task':'knowledge','records':self.data['records']};legacy.units=self.units;legacy.calculations=[]
-        legacy.assess({});legacy.calculate({})
+        legacy.assess({})
+        missing_sources={SCOPE_RULES[s.scene]['source'] for s in legacy.assessment.task_scenes if s.scene in SCOPE_RULES}-set(self.units)
+        if missing_sources and self.retriever=='auto':
+            if self.calls>=8:raise ValueError('TOOL_BUDGET')
+            # A positive lexical hit is not evidence coverage. One real, logged semantic expansion.
+            self.log('coverage_retrieval_needed',missing_unit_ids=sorted(missing_sources),reason='task_source_missing_despite_positive_hits')
+            tool,ev=invoke(self.case,ToolCall(tool_name='guidance',args={'mode':'semantic'}),self.log)
+            self.calls+=1;self.data['tool_results'].append(tool.model_dump());self.case.evidence.extend(ev)
+            for o in tool.observations:
+                if 'unit' in o:self.units[o['unit']['unit_id']]=o['unit']
+            if tool.status!='ok':
+                self.action=NextAction(action='ask_user',summary='所需来源尚未找全，语义补检失败；不能据此认定没有相关资料',questions=['请稍后重试检索或补充可核对的正式资料']);return self.finish(state)
+            legacy.units=self.units;legacy.assess({})
+            public=[e for e in self.case.evidence if e.kind=='public_guidance']
+        legacy.calculate({})
         self.data['assessment']=legacy.assessment.model_dump()
         if not legacy.assessment.sufficient or legacy.assessment.conflicts:
             self.action=NextAction(action='ask_user',summary='依据不足或相互冲突',questions=legacy.assessment.missing or ['请补充可核对的依据']);return self.finish(state)
@@ -95,9 +109,11 @@ class Agent:
         # UUID evidence references are assigned by adapter, never inferred from source aliases.
         original_call=legacy.call
         def with_observations(prompt,payload,phase):
-            return original_call(prompt,{**payload,'untrusted_tool_observations':[t for t in self.data['tool_results'] if t['tool_name']!='guidance'],'material_notice':'工具与材料陈述不等于核实后的事实；失败工具不能当成功'},phase)
+            return original_call(prompt,{**payload,'untrusted_tool_observations':[t for t in self.data['tool_results'] if t['tool_name']!='guidance'],'material_notice':'工具与材料陈述不等于核实后的事实；失败工具不能当成功。用户明确说已完成的核实不再作为未知事项。追问可为空；不可增加盖章、唯一有效账户、预设密语、内部审批等来源未要求的门槛。' },phase)
         legacy.call=with_observations
         legacy.generate({});self.data['draft']=legacy.data.get('draft');legacy.validate({})
+        from .grounding import enforce_grounding
+        enforce_grounding(legacy,self)
         a=legacy.answer
         mapping={e.span.get('unit_id'):e.evidence_id for e in public}
         recs=[]

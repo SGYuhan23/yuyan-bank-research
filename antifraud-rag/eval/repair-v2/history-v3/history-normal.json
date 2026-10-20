@@ -1,0 +1,181 @@
+{
+  "historical_run_id": "bf353905512244e2b33a56b6e06de689",
+  "historical_file": "normal-demo-bf353905512244e2b33a56b6e06de689.json",
+  "method": "actual same-provider audit; exact source quote validation; not independent expert",
+  "issues": [
+    {
+      "field": "steps",
+      "index": 1,
+      "supported": false,
+      "applicable": true,
+      "already_answered": false,
+      "unit_id": null,
+      "source_quote": "",
+      "source_span_id": null,
+      "reason": "原文未限定核实结果不得延用于其他付款，亦未禁止据此更改无关付款账户设置；该限制属额外操作约束，无对应原文支持。"
+    },
+    {
+      "field": "questions",
+      "index": 0,
+      "supported": false,
+      "applicable": true,
+      "already_answered": false,
+      "unit_id": null,
+      "source_quote": "",
+      "source_span_id": null,
+      "reason": "原文未要求确认新账户归属公司名下或为唯一有效收款账户；该问题引入'唯一有效账户'等额外验证门槛，超出原文'verbal verification'范围。"
+    },
+    {
+      "field": "questions",
+      "index": 1,
+      "supported": false,
+      "applicable": true,
+      "already_answered": false,
+      "unit_id": null,
+      "source_quote": "",
+      "source_span_id": null,
+      "reason": "原文仅要求'verbally verify'，未提及盖章文件、预设密语等验证方式；该问题添加非原文要求的验证形式，无来源支持。"
+    },
+    {
+      "field": "questions",
+      "index": 2,
+      "supported": false,
+      "applicable": true,
+      "already_answered": false,
+      "unit_id": null,
+      "source_quote": "",
+      "source_span_id": null,
+      "reason": "原文未涉及合同/订单金额、币种、付款条件一致性核查；该问题属于独立付款合规审查，非账户变更核实的必要组成部分，无对应原文依据。"
+    }
+  ],
+  "rejected": true,
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "focused_grounding",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 4848,
+        "completion_tokens": 1021,
+        "prompt_tokens": 3827,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 23.152,
+      "finish_reason": "stop",
+      "request_hash": "dedf2e2e5aaaf8e3508c7cf83bd6eb766fe6cf59cf22109debc758d941d365cb"
+    },
+    {
+      "kind": "focused_grounding_raw",
+      "attempt": 0,
+      "verdict": {
+        "checks": [
+          {
+            "field": "steps",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "",
+            "source_span_id": "bec-guidance:2",
+            "reason": "原文明确要求'Always use a phone number you have on file, or a publicly sourced number.'，支持仅限使用原先留档电话号码进行口头核实，且排除邮件、短信或请求中提供的联系方式。"
+          },
+          {
+            "field": "steps",
+            "index": 1,
+            "supported": false,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": null,
+            "source_quote": "",
+            "source_span_id": null,
+            "reason": "原文未限定核实结果不得延用于其他付款，亦未禁止据此更改无关付款账户设置；该限制属额外操作约束，无对应原文支持。"
+          },
+          {
+            "field": "risks",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "",
+            "source_span_id": "bec-guidance:0",
+            "reason": "原文'Even if such requests came from someone associated with you, do not make any changes to account details until you've verbally verified the request using a phone number you sourced yourself.'隐含即使完成口头核实仍存在风险，与'无法排除攻击者已同步控制供应商邮箱与电话线路'逻辑一致，且明确不构成安全保证。"
+          },
+          {
+            "field": "boundaries",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "",
+            "source_span_id": "bec-guidance:0",
+            "reason": "原文标注为'Payment Redirection Scams | Westpac'公开页面，且limitations字段明示'公开一般安全建议，非Westpac内部操作规程'，直接支持该边界声明。"
+          },
+          {
+            "field": "boundaries",
+            "index": 1,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "",
+            "source_span_id": "bec-guidance:0",
+            "reason": "limitations字段明确写入'账户变更是核实信号，不足以证明欺诈'，与原文语义完全一致。"
+          },
+          {
+            "field": "boundaries",
+            "index": 2,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "",
+            "source_span_id": "bec-guidance:0",
+            "reason": "limitations字段明确写入'PayID和双人审批以可用为条件'，且注明'不在此任务范围内展开'，直接支持该边界。"
+          },
+          {
+            "field": "questions",
+            "index": 0,
+            "supported": false,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": null,
+            "source_quote": "",
+            "source_span_id": null,
+            "reason": "原文未要求确认新账户归属公司名下或为唯一有效收款账户；该问题引入'唯一有效账户'等额外验证门槛，超出原文'verbal verification'范围。"
+          },
+          {
+            "field": "questions",
+            "index": 1,
+            "supported": false,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": null,
+            "source_quote": "",
+            "source_span_id": null,
+            "reason": "原文仅要求'verbally verify'，未提及盖章文件、预设密语等验证方式；该问题添加非原文要求的验证形式，无来源支持。"
+          },
+          {
+            "field": "questions",
+            "index": 2,
+            "supported": false,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": null,
+            "source_quote": "",
+            "source_span_id": null,
+            "reason": "原文未涉及合同/订单金额、币种、付款条件一致性核查；该问题属于独立付款合规审查，非账户变更核实的必要组成部分，无对应原文依据。"
+          }
+        ],
+        "coverage_ok": true,
+        "missing_essential": []
+      },
+      "reviewer": "same_provider_quote_checked_not_independent_human"
+    }
+  ]
+}

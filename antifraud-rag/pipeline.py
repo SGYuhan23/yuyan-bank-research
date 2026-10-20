@@ -108,13 +108,18 @@ def scope_review_passes(verdict,step_count,answer=None,required_scenes=None):
  if answer is not None:
   expected={(field,i) for field in ['risks','boundaries','questions'] for i in range(len(answer.get(field,[])))}
   rows=verdict.get('other_checks',[])
+  # Explicit positive reviews of empty arrays have no substantive output to audit.
+  rows=[x for x in rows if not (x.get('field') in ('risks','boundaries','questions') and not answer.get(x['field']) and x.get('index')==0 and x.get('scope_supported') is True)]
   # A reviewer may explicitly audit a null scenario. Accept that redundant row, not missing substantive checks.
   if answer.get('scenario') or any(x.get('field')=='scenario' and x.get('index')==0 for x in rows):expected.add(('scenario',0))
   ancillary=(len(rows)==len(expected) and {(x.get('field'),x.get('index')) for x in rows}==expected and all(x.get('scope_supported') is True for x in rows))
  coverage=True
  if required_scenes is not None:
-  expected=set(required_scenes)&set(SCOPE_RULES);rows=verdict.get('scene_checks',[])
-  coverage=(len(rows)==len(expected) and {x.get('scene') for x in rows}==expected and all(x.get('essential_checks_present') is True for x in rows))
+  expected=set(required_scenes)&set(SCOPE_RULES);all_rows=verdict.get('scene_checks',[])
+  rows=[x for x in all_rows if x.get('scene') in SCOPE_RULES]
+  # Optional non-core audit is allowed only for a scene actually requested, and never hides a false verdict.
+  extras_ok=all(x.get('scene') in set(required_scenes) and x.get('essential_checks_present') is True for x in all_rows if x.get('scene') not in SCOPE_RULES)
+  coverage=(extras_ok and len(rows)==len(expected) and {x.get('scene') for x in rows}==expected and all(x.get('essential_checks_present') is True for x in rows))
  return (coverage and ancillary and verdict.get('pass') is True and len(checks)==step_count and
          {x.get('index') for x in checks}==set(range(step_count)) and
          all(all(x.get(k) is True for k in ['role_matches','target_bounded','condition_preserved','source_supported']) for x in checks))
@@ -188,9 +193,8 @@ JSON schema：'''+json.dumps(Answer.model_json_schema(),ensure_ascii=False)
     before=claim.text;claim.text=preserve_case_loss(before,self.units['bec-case']['text'])
     if before!=claim.text:self.log('case_amount_scope_applied',before=before,after=claim.text,source_id=self.units['bec-case']['source_id'],scope='bec-case known 17000 included in estimated total over 30000 only')
   conditions=scope_issues(a,self.assessment)
-  for claim in a.steps+a.risks:
-   quotes=' '.join(c.quote for c in claim.citations)
-   if any(x in claim.text for x in ['实则接入','必然是诈骗','一定是诈骗','实际收款账户已被','极可能系','不可逆转移']):conditions.append('没有具体交易证据，不能确定性断言骗子控制线路或已经构成诈骗。')
+  # Certainty is a semantic claim, not substring presence: negated/quoted claims must not be rejected as assertions.
+  # Full-output source review below checks actual unsupported certainty.
   if any(x in json.dumps(a.model_dump(),ensure_ascii=False) for x in ['小额支付','小额转账','试转账','测试性']):conditions.append('不得建议小额试支付来确认安全，原文未提供这个操作；建议追问也不能暗含这个未经支持的操作。')
   if a.scenario and any(x in a.scenario for x in ['John','Zhang','Steve','Liu']):conditions.append('培训场景请使用企业A、供应商B等占位称谓，不复用官方案例姓名或企业名。')
   for claim in a.steps:
@@ -218,7 +222,7 @@ JSON schema：'''+json.dumps(Answer.model_json_schema(),ensure_ascii=False)
    write(ROOT/'data/training'/f'{self.id}.json',training)
   return state
  def review_scope(self,answer):
-  return self.call(SCOPE_PROMPT+"""逐条按原文审核实际建议正文，不得仅看scene/target/trigger标签就放行。未知/隐含但必要的对象与条件算不通过。‘核实前不得执行新付款、补付或重复付款’若未明确限定本次请求/对象，target_bounded=false。对历史无结构字段的答案仍按其正文判断。检查每条建议的角色、对象、前提与来源，以及其他输出字段和培训情境是否一致。比较任务中分别说明两个场景是允许的。同时核对每个核心场景scope_rules.required_checks是否完整：未收款场景必须核对该笔历史与邮件中的账户修改请求，并在调查前不重复支付该笔款项；漏掉必要步骤也不通过。对risks/boundaries/questions逐项及scenario分别检查，不可省略：追问也不能插入用户没问的未收款操作（如“如是则额外核对付款历史”）；若风险确定性断言不可追回或凭证构造特征当作核验依据则指出。官方案例基于真实举报，不能写成模拟。没有支持的操作应指出，金额关系须保留估计、总额包含初始损失。返回JSON {"pass":true/false,"issues":[简短具体问题],"scene_checks":[{"scene":"当前核心场景","essential_checks_present":true/false,"reason":"逐项必要核实动作对照"}],"other_checks":[{"field":"risks/boundaries/questions/scenario之一","index":从0开始,"scope_supported":true/false,"reason":"具体对象条件、来源对照"}],"step_checks":[{"index":从0开始的步骤编号,"role_matches":true/false,"target_bounded":true/false,"condition_preserved":true/false,"source_supported":true/false,"reason":"正文对象/条件与原文的具体对照"}]}，每步都须审核。不输出隐藏思维链。""",{'question':self.data['query'],'task':self.data['task'],'task_scenes':[x.model_dump() for x in self.assessment.task_scenes],'scope_rules':SCOPE_RULES,'answer':answer,'untrusted_evidence':scoped_evidence(self.units,self.assessment),'provided_calculations':self.calculations},'citation_entailment_review')
+  return self.call(SCOPE_PROMPT+"""逐条按原文审核实际建议正文，不得仅看scene/target/trigger标签就放行。未知/隐含但必要的对象与条件算不通过。‘核实前不得执行新付款、补付或重复付款’若未明确限定本次请求/对象，target_bounded=false。对历史无结构字段的答案仍按其正文判断。检查每条建议的角色、对象、前提与来源，以及其他输出字段和培训情境是否一致。明确区分肯定诈骗断言与否定/转述：不能仅凭变更认定一定是诈骗属于限制判断，不是确定性定罪。比较任务中分别说明两个场景是允许的。同时核对每个核心场景scope_rules.required_checks是否完整：未收款场景必须核对该笔历史与邮件中的账户修改请求，并在调查前不重复支付该笔款项；漏掉必要步骤也不通过。对risks/boundaries/questions逐项及scenario分别检查，不可省略：追问也不能插入用户没问的未收款操作（如“如是则额外核对付款历史”）；若风险确定性断言不可追回或凭证构造特征当作核验依据则指出。官方案例基于真实举报，不能写成模拟。没有支持的操作应指出，金额关系须保留估计、总额包含初始损失。返回JSON {"pass":true/false,"issues":[简短具体问题],"scene_checks":[{"scene":"当前核心场景","essential_checks_present":true/false,"reason":"逐项必要核实动作对照"}],"other_checks":[{"field":"risks/boundaries/questions/scenario之一","index":从0开始,"scope_supported":true/false,"reason":"具体对象条件、来源对照"}],"step_checks":[{"index":从0开始的步骤编号,"role_matches":true/false,"target_bounded":true/false,"condition_preserved":true/false,"source_supported":true/false,"reason":"正文对象/条件与原文的具体对照"}]}，每步都须审核。不输出隐藏思维链。""",{'question':self.data['query'],'task':self.data['task'],'task_scenes':[x.model_dump() for x in self.assessment.task_scenes],'scope_rules':SCOPE_RULES,'answer':answer,'untrusted_evidence':scoped_evidence(self.units,self.assessment),'provided_calculations':self.calculations},'citation_entailment_review')
  def run(self):
   graph=StateGraph(dict)
   funcs=[('identify_and_retrieve',self.search),('check_adequacy',self.assess),('calculate',self.calculate),('generate',self.generate),('verify_citations',self.validate)]

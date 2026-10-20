@@ -1,0 +1,33 @@
+{
+  "output": {
+    "answer": "卖家核对买家到账，是指在个人或小商户网上出售物品时，必须亲自登录自身网银或手机银行，确认资金已真实进入自己账户后，方可交付商品；不可轻信买家提供的付款截图或收据，因其可被伪造（receipt-guidance）。企业核实供应商账户变更，是指企业在收到供应商要求更改收款账户的邮件时，必须通过已存档或公开渠道获取的电话号码，进行人工语音核实，确认该请求确由供应商本人发出，不得依据邮件内提供的联系方式或未经验证的信息执行变更（bec-guidance）；案例中John因未核实即更新账户，导致17,000澳元付款被骗，并引发后续供应链与合同损失（bec-case）。",
+    "sources": [
+      "receipt-guidance",
+      "bec-guidance",
+      "bec-case"
+    ],
+    "unknowns": []
+  },
+  "status": "completed",
+  "query": "分别说明卖家核对买家到账，与企业核实供应商账户变更的区别。",
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "baseline_answer",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 5175,
+        "completion_tokens": 187,
+        "prompt_tokens": 4988,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 4.859,
+      "finish_reason": "stop",
+      "request_hash": "6b8afb7c09083edd3b05a4a11ce8af4faedace88be6cc80bb0a1aa31a882e8d4"
+    }
+  ],
+  "seconds": 4.859521292033605
+}

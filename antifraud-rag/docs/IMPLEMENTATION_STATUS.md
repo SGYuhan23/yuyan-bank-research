@@ -37,3 +37,7 @@
 ## 独立工具升级分支（2026-10-19）
 
 `upgrade/` 在保留原固定流程基础上新增版本化案件、受限条件工具、交互培训和独立合成交易实验。新界面是真实本地接口，历史页面仍在 `/legacy`。本轮实际运行、失败、外部依赖和未实现范围以 [UPGRADE_VALIDATION.md](UPGRADE_VALIDATION.md) 为准，不能把旧运行归为新工具成绩。
+
+### 2026-10-20 integration follow-up
+
+Implemented: Agent task-source coverage retry, exact source-span binding in focused output checks, bounded contract/answer repair, removal of unsupported optional material, frontend actual retrieval-path labels. Legacy zero-hit fallback and known-case loss rule retained. Verified: 64 offline tests, real embedding comparison, two historical-error substantive checks, fresh actual model outputs and browser workflow. See `../eval/repair-v2/REPORT.md` for IDs, first failures and residual source-review rejections. Not verified: general semantic correctness, superior accuracy/efficiency, bank use. Resume evidence is in RESUME_EVIDENCE.md; no personal background fields were changed.

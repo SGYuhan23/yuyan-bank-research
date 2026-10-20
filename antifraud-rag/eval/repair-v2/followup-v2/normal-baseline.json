@@ -1,0 +1,32 @@
+{
+  "output": {
+    "answer": "建议适用范围：适用于所有企业付款方在收到供应商收款账户变更请求时的风险防范，尤其强调对邮件、短信等非当面渠道发起的变更必须进行独立核实。证据限制：仅口头确认（即使使用留档电话）不足以构成充分验证；该行为不能排除被冒用号码或中间人劫持风险；公开指引未授权银行据此冻结账户或拦截交易；账户变更本身不证明欺诈，合法供应商也可能因业务调整变更账户。",
+    "sources": [
+      "bec-guidance",
+      "bec-case"
+    ],
+    "unknowns": []
+  },
+  "status": "completed",
+  "query": "我是企业付款方，包装供应商变更收款账户，我们已经通过原先留档电话口头确认本次变更。请说明建议的适用范围与证据限制。",
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "baseline_answer",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 5128,
+        "completion_tokens": 123,
+        "prompt_tokens": 5005,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 4.154,
+      "finish_reason": "stop",
+      "request_hash": "2fe466e6efa6c14bc81d253acd7e738453b64b07f8bb2cd2d64bb4f79f3eda18"
+    }
+  ],
+  "seconds": 4.155246915994212
+}

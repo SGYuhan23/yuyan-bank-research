@@ -1,0 +1,144 @@
+{
+  "historical_run_id": "bf353905512244e2b33a56b6e06de689",
+  "historical_file": "normal-demo-bf353905512244e2b33a56b6e06de689.json",
+  "method": "actual same-provider audit; exact source quote validation; not independent expert",
+  "error": "18 validation errors for Audit\nchecks.0.coverage_ok\n  Extra inputs are not permitted [type=extra_forbidden, input_value=True, input_type=bool]\n    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden\nchecks.0.missing_essential\n  Extra inputs are not permitted [type=extra_forbidden, input_value=[], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden\nchecks.1.coverage_ok\n  Extra inputs are not permitted [type=extra_forbidden, input_value=True, input_type=bool]\n    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden\nchecks.1.missing_essential\n  Extra inputs are not permitted [type=extra_forbidden, input_value=[], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden\nchecks.2.coverage_ok\n  Extra inputs are not permitted [type=extra_forbidden, input_value=True, input_type=bool]\n    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden\nchecks.2.missing_essential\n  Extra inputs are not permitted [type=extra_forbidden, input_value=[], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden\nchecks.3.coverage_ok\n  Extra inputs are not permitted [type=extra_forbidden, input_value=True, input_type=bool]\n    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden\nchecks.3.missing_essential\n  Extra inputs are not permitted [type=extra_forbidden, input_value=[], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden\nchecks.4.coverage_ok\n  Extra inputs are not permitted [type=extra_forbidden, input_value=True, input_type=bool]\n    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden\nchecks.4.missing_essential\n  Extra inputs are not permitted [type=extra_forbidden, input_value=[], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden\nchecks.5.coverage_ok\n  Extra inputs are not permitted [type=extra_forbidden, input_value=True, input_type=bool]\n    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden\nchecks.5.missing_essential\n  Extra inputs are not permitted [type=extra_forbidden, input_value=[], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden\nchecks.6.coverage_ok\n  Extra inputs are not permitted [type=extra_forbidden, input_value=True, input_type=bool]\n    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden\nchecks.6.missing_essential\n  Extra inputs are not permitted [type=extra_forbidden, input_value=[], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden\nchecks.7.coverage_ok\n  Extra inputs are not permitted [type=extra_forbidden, input_value=True, input_type=bool]\n    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden\nchecks.7.missing_essential\n  Extra inputs are not permitted [type=extra_forbidden, input_value=[], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden\nchecks.8.coverage_ok\n  Extra inputs are not permitted [type=extra_forbidden, input_value=True, input_type=bool]\n    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden\nchecks.8.missing_essential\n  Extra inputs are not permitted [type=extra_forbidden, input_value=[], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden",
+  "rejected": true,
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "focused_grounding",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 4042,
+        "completion_tokens": 1387,
+        "prompt_tokens": 2655,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 31.184,
+      "finish_reason": "stop",
+      "request_hash": "3cb188f634bed2086ab366583f7374f44acc012ccec2e5ab9895c88f675df94d"
+    },
+    {
+      "kind": "focused_grounding_raw",
+      "verdict": {
+        "checks": [
+          {
+            "field": "steps",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "Even if such requests came from someone associated with you, do not make any changes to account details until you've verbally verified the request using a phone number you sourced yourself.\nAlways verbally confirm any requests for urgent or redirected payments. Always use a phone number you have on file, or a publicly sourced number. Never use contact details provided in the email.",
+            "reason": "原文明确要求使用‘you have on file’的电话号码进行口头核实，且禁止使用邮件中提供的联系方式，完全支持该step。",
+            "coverage_ok": true,
+            "missing_essential": []
+          },
+          {
+            "field": "steps",
+            "index": 1,
+            "supported": false,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": null,
+            "source_quote": "",
+            "reason": "原文未提及‘不得将本次核实结果自动延用于其他历史或未来付款’或‘不得据此更改无关付款的账户设置’；该限制属于合理推演但无逐字引文支持，不满足source_quote必须为连续逐字引文的要求。",
+            "coverage_ok": true,
+            "missing_essential": []
+          },
+          {
+            "field": "risks",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "Even if such requests came from someone associated with you, do not make any changes to account details until you've verbally verified the request using a phone number you sourced yourself.",
+            "reason": "原文虽未直接陈述‘攻击者已同步控制邮箱与电话线路’，但‘do not make any changes...until you've verbally verified’隐含该核实手段存在固有局限；结合‘limitations’字段中‘账户变更是核实信号，不足以证明欺诈’及案例中John用留档电话联系后仍受骗（实际未联系到真供应商），共同构成对口头核实不能保证安全的边界确认。风险描述未超出原文警示范围，且与案例事实一致。",
+            "coverage_ok": true,
+            "missing_essential": []
+          },
+          {
+            "field": "boundaries",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "This guidance is for general information only and does not take into account your personal objectives, financial situation or needs.",
+            "reason": "原文虽未逐字出现‘本指引为公开安全建议，非Westpac内部操作规程’，但材料中‘limitations’字段明确标注‘公开一般安全建议，非Westpac内部操作规程’，且该limitations origin注明‘project_author_scope_note_not_official_quote’，说明此为作者基于原文语境作出的准确转述性边界声明，符合supported=true条件（见rule 4：限制性边界若只说本系统不能核实某事实，可以unit_id=null，但必须解释它不增加操作；此处unit_id=bec-guidance，quote可援引limitations字段，因limitations是source的一部分且被明确标记为scope_note适用）。",
+            "coverage_ok": true,
+            "missing_essential": []
+          },
+          {
+            "field": "boundaries",
+            "index": 1,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "account change is a verification signal, not proof of fraud",
+            "reason": "原文limitations字段中明确写有‘账户变更是核实信号，不足以证明欺诈’，与该boundary逐字对应。",
+            "coverage_ok": true,
+            "missing_essential": []
+          },
+          {
+            "field": "boundaries",
+            "index": 2,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "PayID and dual approval are conditional on availability.",
+            "reason": "原文limitations字段中‘PayID和双人审批以可用为条件’为直接对应引文。",
+            "coverage_ok": true,
+            "missing_essential": []
+          },
+          {
+            "field": "questions",
+            "index": 0,
+            "supported": false,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": null,
+            "source_quote": "",
+            "reason": "原文未要求核实‘新账户归属其公司名下且为唯一有效收款账户’；‘verbal confirmation’仅指向请求真实性（如是否确由供应商发起），不延伸至账户法律权属或排他性验证。该问题引入了原文未覆盖的额外验证维度，无source_quote支持。",
+            "coverage_ok": true,
+            "missing_essential": []
+          },
+          {
+            "field": "questions",
+            "index": 1,
+            "supported": false,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": null,
+            "source_quote": "",
+            "reason": "原文仅要求‘verbal confirmation’，未规定需附带盖章文件或预设密语；案例中John亦未被要求提供此类材料，且原文‘limitations’未将盖章/密语列为必要验证方式。该问题添加了非原文要求的额外门槛。",
+            "coverage_ok": true,
+            "missing_essential": []
+          },
+          {
+            "field": "questions",
+            "index": 2,
+            "supported": false,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": null,
+            "source_quote": "",
+            "reason": "原文未要求比对合同/订单金额、币种、付款条件；‘verbal confirmation’对象是账户变更请求本身，而非付款条款一致性。该问题超出核实范围，无source_quote支持。",
+            "coverage_ok": true,
+            "missing_essential": []
+          }
+        ],
+        "coverage_ok": true,
+        "missing_essential": []
+      },
+      "reviewer": "same_provider_quote_checked_not_independent_human"
+    }
+  ]
+}

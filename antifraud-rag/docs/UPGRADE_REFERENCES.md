@@ -16,3 +16,17 @@ ASK has four clue levels, a 0–4 safety-first rubric, blinded response/key sepa
 Santander default fraud amount is 9999 versus ordinary uniform 10–500. High hardness jitters by 50% and adds legal decoys, but descriptions remain class-associated and normal/fraud timestamps differ (10:00 vs 12:00). Transaction numbering starts injected records after ordinary count; output folders also separate them. Account IDs are sampled from the account pool, so we do not claim every ID directly reveals labels. Normal decoy cycles defeat naive cycle rules, but cannot remove the other shortcuts. evaluate.py sets ring_fp=acc_fp, mixing account counts with ring_tp; we report ring coverage only.
 
 NVIDIA prepares transaction nodes plus users/merchants, supervised labels and graph train/validation/test sets, then trains SAGEConv embeddings with XGBoost through separate training/inference services. It predicts transaction labels; it does not verify whether a safety instruction applies to a question. Attribution describes model sensitivity, not causation/illegal conduct. We implement a small CPU fixed-neighborhood representation experiment, not a claimed reproduction of their model or GPU pipeline.
+
+## What is actually integrated (2026-10-20)
+
+This is a selection of relevant designs, not a survey of every open-source project or a claim of global superiority. Current web search was unavailable; the source review above is the basis. No third-party benchmark score is attributed to this project.
+
+| Reference idea | Existing implementation | Current evidence and deliberate limit |
+|---|---|---|
+| MINERVA: gather evidence with tools | Conditional LangGraph planner, allowlisted extraction/guidance/links/comparison/timeline/graph/score tools | Actual image/email tool runs; tool statuses and evidence versions persisted. No arbitrary URL browsing; external reputation remains unavailable. |
+| ASK: clue levels, blinded evaluation | 18 authored scenarios with separated latent facts, legitimate counterfactuals; six-system blinded comparison | 36 historical outputs for six stories; normal-case over-warning is a recorded failure, not rewarded as caution. |
+| NVIDIA: compare transaction and relationship features | Tabular versus fixed neighbor aggregation with the same classifier and ablation | Real synthetic experiment; no trained GNN reproduction, no real customer fraud detection. Out-of-distribution failure keeps tabular as default. |
+| Santander: controlled graph generation | Separate labels, legitimate cycles, time/size splits, extra structural holdout | Actual generated test sets and feature leakage audit; no claim that all leakage has been eliminated. |
+| This project's integration | Shared versioned case/evidence/tool/review store, source-scoped advice, bounded repair | New checks bind selected source-span IDs to original text, reject invalid references, and remove specifically unsupported optional content. Same-model auditing remains imperfect. |
+
+The useful combination is a traceable workflow and falsifiable experiments. More components do not automatically improve advice quality. See `RESUME_EVIDENCE.md` for defensible achievements and `../eval/repair-v2/REPORT.md` for the latest failures as well as results.

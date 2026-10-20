@@ -1,0 +1,31 @@
+{
+  "output": {
+    "answer": "交货前，切勿仅凭买家发来的转账截图就发货。必须通过您自己掌握的、独立核实的渠道（如官网电话、历史通讯录）电话联系买家，确认付款是否真实到账；同时登录您自己的网上银行或手机银行，亲自查看账户余额和交易明细，确保资金已实际入账。PayID等工具虽可显示收款人姓名，但截图仍可伪造，因此唯一可靠依据是您本人银行账户中实时可见的资金变动。",
+    "sources": [
+      "receipt-guidance"
+    ],
+    "unknowns": []
+  },
+  "status": "completed",
+  "query": "我是卖收藏品的，买家发来转账截图，交货之前应该核对什么？",
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "baseline_answer",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 5114,
+        "completion_tokens": 122,
+        "prompt_tokens": 4992,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        }
+      },
+      "duration_seconds": 3.416,
+      "finish_reason": "stop",
+      "request_hash": "cccb74d20b77c07f853da1ced20d6529896bb5dcc6d76c1747e892cc8d9c69d1"
+    }
+  ],
+  "seconds": 3.4176437499700114
+}

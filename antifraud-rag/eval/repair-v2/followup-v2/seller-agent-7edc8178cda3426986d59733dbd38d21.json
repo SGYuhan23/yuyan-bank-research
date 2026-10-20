@@ -1,0 +1,839 @@
+{
+  "run_id": "7edc8178cda3426986d59733dbd38d21",
+  "case_id": "ecd770048485460b85518d956523db08",
+  "case_version": 1,
+  "query": "我是卖收藏品的，买家发来转账截图，交货之前应该核对什么？",
+  "status": "pending_review",
+  "records": [
+    {
+      "kind": "model_call",
+      "at": "2026-10-20T01:21:49.705046+00:00",
+      "phase": "plan",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 720,
+        "completion_tokens": 36,
+        "prompt_tokens": 684,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        }
+      },
+      "duration_seconds": 1.4,
+      "finish_reason": "stop",
+      "request_hash": "0581b047945b574d906d3ce22b6285ec58eb9ecd2c9349f824b6609fff3ed52e"
+    },
+    {
+      "kind": "next_action",
+      "at": "2026-10-20T01:21:49.705089+00:00",
+      "action": "call_tools",
+      "calls": [
+        {
+          "tool_name": "guidance",
+          "args": {}
+        }
+      ],
+      "questions": [],
+      "summary": "提供公开安全指引，说明交货前应核实的关键点。"
+    },
+    {
+      "kind": "tools_started",
+      "at": "2026-10-20T01:21:49.705616+00:00",
+      "names": [
+        "guidance"
+      ],
+      "concurrent": false
+    },
+    {
+      "kind": "retrieval_started",
+      "at": "2026-10-20T01:21:49.707354+00:00",
+      "method": "bm25"
+    },
+    {
+      "kind": "retrieval_attempt_completed",
+      "at": "2026-10-20T01:21:49.712077+00:00",
+      "method": "bm25",
+      "unit_ids": [
+        "receipt-guidance"
+      ],
+      "source_ids": [
+        "westpac-receipt"
+      ]
+    },
+    {
+      "kind": "tool_completed",
+      "at": "2026-10-20T01:21:49.712267+00:00",
+      "tool": "guidance",
+      "status": "ok",
+      "call_id": "9498f6360da84d4a8a15a770f7c8ce75"
+    },
+    {
+      "kind": "model_call",
+      "at": "2026-10-20T01:21:54.442224+00:00",
+      "phase": "plan",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 878,
+        "completion_tokens": 185,
+        "prompt_tokens": 693,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        }
+      },
+      "duration_seconds": 4.729,
+      "finish_reason": "stop",
+      "request_hash": "52d4e9e73049143af639131fe86852f4d94a65f57d83b008548bf37c6bdac3ed"
+    },
+    {
+      "kind": "next_action",
+      "at": "2026-10-20T01:21:54.442372+00:00",
+      "action": "draft",
+      "calls": [],
+      "questions": [],
+      "summary": "作为卖方收款，在交货前应重点核对转账截图的真实性与资金到账情况：1. 检查截图是否含完整银行名称、账号（隐去部分）、交易时间、金额、交易状态（如‘处理中’‘已成功’）；2. 注意是否为延时到账、预约转账或伪造截图（如PS痕迹、模糊、无银行水印）；3. 不依赖截图，须登录本人网银或手机银行，核实账户是否真实收到款项；4. 若为对公账户，确认付款方户名与买家合同主体一致；5. 建议约定‘款到发货’，避免仅凭截图交货。注意：本系统无法验证截图真伪或查询银行流水，所有核实需您自行通过官方渠道完成。"
+    },
+    {
+      "kind": "model_started",
+      "at": "2026-10-20T01:21:54.445566+00:00",
+      "phase": "evidence_adequacy"
+    },
+    {
+      "kind": "model_call",
+      "at": "2026-10-20T01:21:57.536751+00:00",
+      "phase": "evidence_adequacy",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 2300,
+        "completion_tokens": 86,
+        "prompt_tokens": 2214,
+        "prompt_tokens_details": {
+          "cached_tokens": 1280
+        }
+      },
+      "duration_seconds": 3.091,
+      "finish_reason": "stop",
+      "request_hash": "1bb0744348f723374d83ca0440dabbc76b02b2454df1f37ec45fe428161c6851"
+    },
+    {
+      "kind": "adequacy_checked",
+      "at": "2026-10-20T01:21:57.536906+00:00",
+      "sufficient": true,
+      "task_scenes": [
+        {
+          "scene": "seller_receipt",
+          "question_basis": "我是卖收藏品的，买家发来转账截图，交货之前应该核对什么？"
+        }
+      ],
+      "relevant_ids": [
+        "receipt-guidance"
+      ],
+      "missing": [],
+      "conflicts": [],
+      "calculation": "none"
+    },
+    {
+      "kind": "model_started",
+      "at": "2026-10-20T01:21:57.539226+00:00",
+      "phase": "generate"
+    },
+    {
+      "kind": "model_call",
+      "at": "2026-10-20T01:22:07.723617+00:00",
+      "phase": "generate",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 3008,
+        "completion_tokens": 443,
+        "prompt_tokens": 2565,
+        "prompt_tokens_details": {
+          "cached_tokens": 2432
+        }
+      },
+      "duration_seconds": 10.184,
+      "finish_reason": "stop",
+      "request_hash": "8b8562d7ae6b44939a256ca37287de180665022e97b17f850291a5d869137f74"
+    },
+    {
+      "kind": "citation_materialized",
+      "at": "2026-10-20T01:22:07.723668+00:00",
+      "unit_id": "receipt-guidance",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "kind": "citation_materialized",
+      "at": "2026-10-20T01:22:07.723696+00:00",
+      "unit_id": "receipt-guidance",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "kind": "citation_materialized",
+      "at": "2026-10-20T01:22:07.723713+00:00",
+      "unit_id": "receipt-guidance",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "kind": "model_started",
+      "at": "2026-10-20T01:22:07.723865+00:00",
+      "phase": "citation_entailment_review"
+    },
+    {
+      "kind": "model_call",
+      "at": "2026-10-20T01:22:27.343508+00:00",
+      "phase": "citation_entailment_review",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 4362,
+        "completion_tokens": 862,
+        "prompt_tokens": 3500,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        }
+      },
+      "duration_seconds": 19.619,
+      "finish_reason": "stop",
+      "request_hash": "a890da6ff58a3b03a28f2b456dc8064c2129c26de74ab05aa4220dd817b76841"
+    },
+    {
+      "kind": "model_output_review",
+      "at": "2026-10-20T01:22:27.343539+00:00",
+      "verdict": {
+        "pass": true,
+        "issues": [],
+        "scene_checks": [
+          {
+            "scene": "seller_receipt",
+            "essential_checks_present": true,
+            "reason": "已包含两项必要核实动作：1. 本人网银/手机银行核对本次实际到账；2. 买家凭证不能替代到账核对，且明确限定于本次货物及对应货款。两项均与scope_rules.seller_receipt.required_checks完全一致。"
+          }
+        ],
+        "other_checks": [
+          {
+            "field": "risks",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "风险描述‘付款截图可能被伪造……导致卖方交货后钱货两空’严格对应原文‘Receipts can be falsified by scammers to appear as if they have made payment, when they have not.’，对象为卖方、前提为买家提供截图、后果为未到账即交货，来源unit_id正确。"
+          },
+          {
+            "field": "boundaries",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "边界说明‘仅适用于网上出售收藏品等物品的卖方场景’与原文‘when selling items online’及任务中‘我是卖收藏品的’一致；‘不涉及企业间对公付款、PayID配置或账户变更流程’符合原文仅针对个人卖家收款场景，且明确排除account_change/unreceived_payment。"
+          },
+          {
+            "field": "boundaries",
+            "index": 1,
+            "scope_supported": true,
+            "reason": "边界说明‘该指引为2023年4月发布的公开安全提示……不代表某笔交易已被证实为诈骗’与untrusted_evidence中limitations和section_date完全一致，且与系统指令‘公开安全指引不是Westpac内部规程’‘不能宣称某交易安全或必为诈骗’严格吻合。"
+          },
+          {
+            "field": "questions",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "追问‘您是否已在自己的网银或手机银行中查到这笔货款的入账记录？’直接对应trigger‘交货前核对自己的网银/手机银行实际到账’，对象为本次货款，无额外条件或扩展。"
+          },
+          {
+            "field": "questions",
+            "index": 1,
+            "scope_supported": true,
+            "reason": "追问‘买家是否要求您通过特定方式（如PayID、第三方平台）收款？’源自原文提及的PayID scam上下文（‘upgrade your PayID to a business account’），属合理延伸提问，未超出receipt-guidance适用范围。"
+          }
+        ],
+        "step_checks": [
+          {
+            "index": 0,
+            "role_matches": true,
+            "target_bounded": true,
+            "condition_preserved": true,
+            "source_supported": true,
+            "reason": "步骤text明确‘交货前，必须亲自登录自己的网银或手机银行，核对本次货款是否已实际到账’，角色为卖方，target限定为‘本次货款’，trigger条件‘交货前核对本人银行实际到账’完整保留，citations.unit_id=‘receipt-guidance’且quote含原文关键句。"
+          },
+          {
+            "index": 1,
+            "role_matches": true,
+            "target_bounded": true,
+            "condition_preserved": true,
+            "source_supported": true,
+            "reason": "步骤text明确‘买家提供的转账截图或付款收据不能替代本人银行账户的实际到账确认；未确认到账前不得交付本次货物’，角色为卖方，target限定为‘本次货物’，trigger中‘买家凭证不等于到账’及禁止交货前提完整呈现，citations.unit_id=‘receipt-guidance’且quote含原文‘Never rely on a receipt or screenshot... until you can see the funds in your account’。"
+          }
+        ]
+      },
+      "reviewer": "same_model_not_independent_human"
+    },
+    {
+      "kind": "completed",
+      "at": "2026-10-20T01:22:27.343594+00:00",
+      "citation_check": "exact_quote_match",
+      "human_review": "pending"
+    },
+    {
+      "kind": "model_call",
+      "at": "2026-10-20T01:22:45.705187+00:00",
+      "phase": "focused_grounding",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 2809,
+        "completion_tokens": 812,
+        "prompt_tokens": 1997,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 18.36,
+      "finish_reason": "stop",
+      "request_hash": "c507630196dbff07c6d7302401db60b38b357cf66942556eb9f3bb614a50ddf2"
+    },
+    {
+      "kind": "focused_grounding_raw",
+      "at": "2026-10-20T01:22:45.705237+00:00",
+      "attempt": 0,
+      "verdict": {
+        "checks": [
+          {
+            "field": "steps",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "receipt-guidance",
+            "source_quote": "",
+            "source_span_id": "receipt-guidance:0",
+            "reason": "原文明确要求'never provide the buyer with the item until you can see the funds in your account, within your own online or mobile banking'，直接支持该步骤。"
+          },
+          {
+            "field": "steps",
+            "index": 1,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "receipt-guidance",
+            "source_quote": "",
+            "source_span_id": "receipt-guidance:1",
+            "reason": "原文'Never rely on a receipt or screenshot of a payment sent to you'直接支持该步骤。"
+          },
+          {
+            "field": "risks",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "receipt-guidance",
+            "source_quote": "",
+            "source_span_id": "receipt-guidance:2",
+            "reason": "原文'Receipts can be falsified by scammers to appear as if they have made payment, when they have not'直接支持该风险描述。"
+          },
+          {
+            "field": "boundaries",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "receipt-guidance",
+            "source_quote": "",
+            "source_span_id": "receipt-guidance:0",
+            "reason": "原文'when selling items online'与'仅适用于网上出售收藏品等物品的卖方场景'一致；'PayID Scam'标题及上下文表明不涉及对公付款、PayID配置或账户变更流程，该边界有原文支持。"
+          },
+          {
+            "field": "boundaries",
+            "index": 1,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "receipt-guidance",
+            "source_quote": "",
+            "source_span_id": "receipt-guidance:0",
+            "reason": "原文为'April 2023 - PayID Scam'提示，且limitations注明'2023年4月公开提示'、'不能据此判定某笔交易已经到账或已构成诈骗'，支持该边界表述。"
+          },
+          {
+            "field": "questions",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "receipt-guidance",
+            "source_quote": "",
+            "source_span_id": "receipt-guidance:0",
+            "reason": "原文'never provide...until you can see the funds in your account, within your own online or mobile banking'直接对应该问题，用于确认是否已完成必要核实动作。"
+          },
+          {
+            "field": "questions",
+            "index": 1,
+            "supported": false,
+            "applicable": false,
+            "already_answered": false,
+            "unit_id": null,
+            "source_quote": "",
+            "source_span_id": null,
+            "reason": "原文未提及PayID收款方式要求、未涉及买家指定收款渠道的场景，亦无任何关于PayID配置或第三方平台收款的警示内容；该问题超出source_spans覆盖范围，无原文支持。"
+          }
+        ],
+        "coverage_ok": true,
+        "missing_essential": []
+      },
+      "reviewer": "same_provider_quote_checked_not_independent_human"
+    },
+    {
+      "kind": "focused_grounding_checked",
+      "at": "2026-10-20T01:22:45.705420+00:00",
+      "attempt": 0,
+      "issues": [
+        {
+          "field": "questions",
+          "index": 1,
+          "supported": false,
+          "applicable": false,
+          "already_answered": false,
+          "unit_id": null,
+          "source_quote": "",
+          "source_span_id": null,
+          "reason": "原文未提及PayID收款方式要求、未涉及买家指定收款渠道的场景，亦无任何关于PayID配置或第三方平台收款的警示内容；该问题超出source_spans覆盖范围，无原文支持。"
+        }
+      ]
+    },
+    {
+      "kind": "unsupported_optional_content_removed",
+      "at": "2026-10-20T01:22:45.705439+00:00",
+      "removed": [
+        {
+          "field": "questions",
+          "index": 1,
+          "content": "买家是否要求您通过特定方式（如PayID、第三方平台）收款？"
+        }
+      ]
+    },
+    {
+      "kind": "model_started",
+      "at": "2026-10-20T01:22:45.705973+00:00",
+      "phase": "citation_entailment_review"
+    },
+    {
+      "kind": "model_call",
+      "at": "2026-10-20T01:23:04.177111+00:00",
+      "phase": "citation_entailment_review",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 4293,
+        "completion_tokens": 812,
+        "prompt_tokens": 3481,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        }
+      },
+      "duration_seconds": 18.47,
+      "finish_reason": "stop",
+      "request_hash": "2b8a1c9ed60dff895b4f02041337bfcaf0b985e74277cd63c441c2254497107a"
+    },
+    {
+      "kind": "model_output_review",
+      "at": "2026-10-20T01:23:04.177201+00:00",
+      "verdict": {
+        "pass": true,
+        "issues": [],
+        "scene_checks": [
+          {
+            "scene": "seller_receipt",
+            "essential_checks_present": true,
+            "reason": "已包含两项必要核实动作：1. 本人网银/手机银行核对本次实际到账；2. 买家凭证不能替代到账核对，且明确限定于本次货物及货款。两项均在steps中完整呈现。"
+          }
+        ],
+        "other_checks": [
+          {
+            "field": "risks",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "风险描述‘付款截图可能被伪造’与原文‘Receipts can be falsified by scammers to appear as if they have made payment, when they have not’严格对应，对象为卖方、前提为买家提供截图、后果为交货后钱货两空，未越界断言诈骗定性或追回可能性。"
+          },
+          {
+            "field": "boundaries",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "边界说明‘仅适用于网上出售收藏品等物品的卖方场景’与原文‘when selling items online’一致；‘不涉及企业间对公付款、PayID配置或账户变更流程’符合原文限定范围及limitations中‘场景为网上出售物品’。"
+          },
+          {
+            "field": "boundaries",
+            "index": 1,
+            "scope_supported": true,
+            "reason": "边界说明‘该指引为2023年4月发布的公开安全提示，不构成实时风控判断依据，也不代表某笔交易已被证实为诈骗’与原文section_date=2023-04及limitations中‘不能据此判定某笔交易已经到账或已构成诈骗’完全一致。"
+          },
+          {
+            "field": "questions",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "追问‘您是否已在自己的网银或手机银行中查到这笔货款的入账记录？’直接对应trigger‘交货前核对自己的网银/手机银行实际到账’，聚焦本次货款，无额外扩展。"
+          },
+          {
+            "field": "scenario",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "scenario为null且scenario_label='not_applicable'，符合任务仅基于公开指引、非本项目新编培训情境的要求。"
+          }
+        ],
+        "step_checks": [
+          {
+            "index": 0,
+            "role_matches": true,
+            "target_bounded": true,
+            "condition_preserved": true,
+            "source_supported": true,
+            "reason": "step text明确要求‘亲自登录自己的网银或手机银行，核对本次货款是否已实际到账’，角色为卖方，target限定为‘本次货款’，trigger条件‘交货前核对本人到账’完整保留，来源unit_id=receipt-guidance，正文与原文‘never provide the buyer with the item until you can see the funds in your account, within your own online or mobile banking’一致。"
+          },
+          {
+            "index": 1,
+            "role_matches": true,
+            "target_bounded": true,
+            "condition_preserved": true,
+            "source_supported": true,
+            "reason": "step text明确指出‘买家提供的转账截图...不能替代本人银行账户的实际到账确认；未确认到账前不得交付本次货物’，角色、target（本次货物及货款）、trigger（买家凭证≠到账）全部清晰限定，来源unit_id=receipt-guidance，正文与原文‘Never rely on a receipt or screenshot of a payment sent to you’严格对应。"
+          }
+        ]
+      },
+      "reviewer": "same_model_not_independent_human"
+    },
+    {
+      "kind": "completed",
+      "at": "2026-10-20T01:23:04.177372+00:00",
+      "citation_check": "exact_quote_match",
+      "human_review": "pending"
+    },
+    {
+      "kind": "model_call",
+      "at": "2026-10-20T01:23:21.387842+00:00",
+      "phase": "focused_grounding",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 2723,
+        "completion_tokens": 760,
+        "prompt_tokens": 1963,
+        "prompt_tokens_details": {
+          "cached_tokens": 1152
+        }
+      },
+      "duration_seconds": 17.208,
+      "finish_reason": "stop",
+      "request_hash": "d7c52c4fb3c291092ddd68cc52189c382e2fb295dd0b721ae4351bfdecf11432"
+    },
+    {
+      "kind": "focused_grounding_raw",
+      "at": "2026-10-20T01:23:21.387926+00:00",
+      "attempt": 0,
+      "verdict": {
+        "checks": [
+          {
+            "field": "steps",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "receipt-guidance",
+            "source_quote": "",
+            "source_span_id": "receipt-guidance:0",
+            "reason": "原文明确要求'never provide the buyer with the item until you can see the funds in your account, within your own online or mobile banking'，直接支持该步骤。"
+          },
+          {
+            "field": "steps",
+            "index": 1,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "receipt-guidance",
+            "source_quote": "",
+            "source_span_id": "receipt-guidance:1",
+            "reason": "原文'Never rely on a receipt or screenshot of a payment sent to you'直接支持该步骤中对截图/收据不可替代性的强调。"
+          },
+          {
+            "field": "risks",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "receipt-guidance",
+            "source_quote": "",
+            "source_span_id": "receipt-guidance:2",
+            "reason": "原文'Receipts can be falsified by scammers to appear as if they have made payment, when they have not'直接对应伪造截图导致钱货两空的风险。"
+          },
+          {
+            "field": "boundaries",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "receipt-guidance",
+            "source_quote": "",
+            "source_span_id": "receipt-guidance:0",
+            "reason": "原文限定场景为'selling items online'，与'网上出售收藏品'匹配；'PayID Scam'上下文及limitations中'场景为网上出售物品'共同支持该边界限定。"
+          },
+          {
+            "field": "boundaries",
+            "index": 1,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "receipt-guidance",
+            "source_quote": "",
+            "source_span_id": "receipt-guidance:0",
+            "reason": "原文标注'April 2023 - PayID Scam'且limitations注明'2023年4月公开提示'，支持其为历史安全提示而非实时风控依据；'does not represent that a transaction has been confirmed as a scam'与原文'not constitute real-time risk assessment'语义一致。"
+          },
+          {
+            "field": "questions",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "receipt-guidance",
+            "source_quote": "",
+            "source_span_id": "receipt-guidance:0",
+            "reason": "原文'never provide... until you can see the funds in your account'隐含核实动作的必要性，问题直指该动作是否完成，符合原文逻辑闭环。"
+          }
+        ],
+        "coverage_ok": true,
+        "missing_essential": []
+      },
+      "reviewer": "same_provider_quote_checked_not_independent_human"
+    },
+    {
+      "kind": "focused_grounding_checked",
+      "at": "2026-10-20T01:23:21.388236+00:00",
+      "attempt": 1,
+      "issues": []
+    }
+  ],
+  "tool_results": [
+    {
+      "call_id": "9498f6360da84d4a8a15a770f7c8ce75",
+      "case_id": "ecd770048485460b85518d956523db08",
+      "case_version": 1,
+      "tool_name": "guidance",
+      "tool_version": "1",
+      "validated_args": {
+        "mode": "auto"
+      },
+      "args_hash": "406080f63e38c971caefb931d1dee2d764e24b8a9886c3efdd8f0049963e6a63",
+      "input_evidence": [
+        {
+          "id": "case-input:ecd770048485460b85518d956523db08",
+          "hash": "5aaf96b013c305a0da7e7e5538604c79ad5316fb58822de6bf934cac53bbc24d"
+        }
+      ],
+      "status": "ok",
+      "observations": [
+        {
+          "evidence_id": "f64d65f6790a46f2a7612b7fbef3328e",
+          "statement": "April 2023 - PayID Scam\nBe alert to PayID Scams when selling items online\nUsing PayID is a safe and easy way to send and receive funds.\nAfter a conversation with a potential buyer through an Online Marketplace, such as Facebook or Gumtree, you're advised that you need to upgrade your PayID to a business account for you to receive the payment.\nThese scam emails state your account has been upgraded to a business account and you need to refund a deposit that has been credited to your account.\nDo not act on these emails and report the buyer/seller profile to the marketplace as a potential scam.\nReminder\n- PayID's are managed within your banking app. A PayID does not need to be upgraded or activated by making payments. For more information on how PayID's work and how you can set up a Westpac registered PayID, visit\nwestpac.com.au/payid\n.\nAlso, when selling items online, never provide the buyer with the item until you can see the funds in your account, within your own online or mobile banking. Never rely on a receipt or screenshot of a payment sent to you. Receipts can be falsified by scammers to appear as if they have made payment, when they have not.\nIf you have received an email, SMS or other request that you have identified as potentially fraudulent or which you think involves a scam account, it's always a good idea to report these through to us, before deleting it from your inbox or deleted items on your device.\nForward a copy to hoax@westpac.com.au or 0497 132 032.",
+          "unit": {
+            "unit_id": "receipt-guidance",
+            "source_id": "westpac-receipt",
+            "title": "Past Scams and Alerts | Westpac",
+            "url": "https://www.westpac.com.au/security/latest-scams/past-scams-and-alerts/",
+            "published_or_updated_at": null,
+            "date_status": "page_update_not_shown_section_dated_2023_04",
+            "retrieved_at": "2026-10-18T11:15:01.536289+00:00",
+            "region": "Australia",
+            "material_type": "bank_public_guidance",
+            "page_or_section": "April 2023 - PayID Scam",
+            "file_sha256": "cba10f00f84e9061c54b885148c1d8672d9b5940cc46cfe39c620b1b7df75bbd",
+            "review_status": "codex_author_checked_pending_independent_review",
+            "seed_provenance": "independently_discovered_official_source_material_pack_not_found",
+            "hash_scope": "original_http_html",
+            "acquisition_method": "httpx",
+            "section": "April 2023 - PayID Scam",
+            "text": "April 2023 - PayID Scam\nBe alert to PayID Scams when selling items online\nUsing PayID is a safe and easy way to send and receive funds.\nAfter a conversation with a potential buyer through an Online Marketplace, such as Facebook or Gumtree, you're advised that you need to upgrade your PayID to a business account for you to receive the payment.\nThese scam emails state your account has been upgraded to a business account and you need to refund a deposit that has been credited to your account.\nDo not act on these emails and report the buyer/seller profile to the marketplace as a potential scam.\nReminder\n- PayID's are managed within your banking app. A PayID does not need to be upgraded or activated by making payments. For more information on how PayID's work and how you can set up a Westpac registered PayID, visit\nwestpac.com.au/payid\n.\nAlso, when selling items online, never provide the buyer with the item until you can see the funds in your account, within your own online or mobile banking. Never rely on a receipt or screenshot of a payment sent to you. Receipts can be falsified by scammers to appear as if they have made payment, when they have not.\nIf you have received an email, SMS or other request that you have identified as potentially fraudulent or which you think involves a scam account, it's always a good idea to report these through to us, before deleting it from your inbox or deleted items on your device.\nForward a copy to hoax@westpac.com.au or 0497 132 032.",
+            "search_labels": "付款截图 收据 到账 网银 卖货 交货 receipt screenshot payment funds",
+            "limitations": "2023年4月公开提示，场景为网上出售物品；不能据此判定某笔交易已经到账或已构成诈骗。",
+            "unit_sha256": "7f1fbefcc331d7493401d93fcdcf9025bd980299fe97742a6b803c151981da4d",
+            "limitations_origin": "project_author_scope_note_not_official_quote",
+            "section_date": "2023-04"
+          }
+        }
+      ],
+      "limitations": [],
+      "latency_seconds": 0.005,
+      "usage": null,
+      "data_origin": "public_sources"
+    }
+  ],
+  "recommendations": [
+    {
+      "scene": "seller_receipt",
+      "target": "本次卖给买家的货物及对应货款",
+      "trigger": "交货前核对自己的网银/手机银行实际到账，买家凭证不等于到账",
+      "action": "交货前，必须亲自登录自己的网银或手机银行，核对本次货款是否已实际到账。",
+      "supporting_evidence_ids": [
+        "f64d65f6790a46f2a7612b7fbef3328e"
+      ],
+      "unmet_conditions": [
+        "您是否已在自己的网银或手机银行中查到这笔货款的入账记录？"
+      ],
+      "counter_evidence_ids": [],
+      "review_status": "pending"
+    },
+    {
+      "scene": "seller_receipt",
+      "target": "本次卖给买家的货物及对应货款",
+      "trigger": "交货前核对自己的网银/手机银行实际到账，买家凭证不等于到账",
+      "action": "买家提供的转账截图或付款收据不能替代本人银行账户的实际到账确认；未确认到账前不得交付本次货物。",
+      "supporting_evidence_ids": [
+        "f64d65f6790a46f2a7612b7fbef3328e"
+      ],
+      "unmet_conditions": [
+        "您是否已在自己的网银或手机银行中查到这笔货款的入账记录？"
+      ],
+      "counter_evidence_ids": [],
+      "review_status": "pending"
+    }
+  ],
+  "started_at": "2026-10-20T01:21:48.280855+00:00",
+  "execution": "live",
+  "assessment": {
+    "sufficient": true,
+    "task_scenes": [
+      {
+        "scene": "seller_receipt",
+        "question_basis": "我是卖收藏品的，买家发来转账截图，交货之前应该核对什么？"
+      }
+    ],
+    "relevant_ids": [
+      "receipt-guidance"
+    ],
+    "missing": [],
+    "conflicts": [],
+    "calculation": "none"
+  },
+  "draft": {
+    "steps": [
+      {
+        "text": "交货前，必须亲自登录自己的网银或手机银行，核对本次货款是否已实际到账。",
+        "citations": [
+          {
+            "unit_id": "receipt-guidance",
+            "quote": ""
+          }
+        ],
+        "scene": "seller_receipt",
+        "target": "本次卖给买家的货物及对应货款",
+        "trigger": "交货前核对自己的网银/手机银行实际到账，买家凭证不等于到账"
+      },
+      {
+        "text": "买家提供的转账截图或付款收据不能替代本人银行账户的实际到账确认；未确认到账前不得交付本次货物。",
+        "citations": [
+          {
+            "unit_id": "receipt-guidance",
+            "quote": ""
+          }
+        ],
+        "scene": "seller_receipt",
+        "target": "本次卖给买家的货物及对应货款",
+        "trigger": "交货前核对自己的网银/手机银行实际到账，买家凭证不等于到账"
+      }
+    ],
+    "risks": [
+      {
+        "text": "付款截图可能被伪造，外观真实但实际未付款，导致卖方交货后钱货两空。",
+        "citations": [
+          {
+            "unit_id": "receipt-guidance",
+            "quote": ""
+          }
+        ]
+      }
+    ],
+    "boundaries": [
+      "仅适用于网上出售收藏品等物品的卖方场景；不涉及企业间对公付款、PayID配置或账户变更流程。",
+      "该指引为2023年4月发布的公开安全提示，不构成实时风控判断依据，也不代表某笔交易已被证实为诈骗。"
+    ],
+    "questions": [
+      "您是否已在自己的网银或手机银行中查到这笔货款的入账记录？",
+      "买家是否要求您通过特定方式（如PayID、第三方平台）收款？"
+    ],
+    "scenario": null,
+    "scenario_label": "not_applicable",
+    "review_status": "pending_human_review"
+  },
+  "summary": "已形成限定对象与前提的核实建议，待人工审核。",
+  "unresolved_questions": [
+    "您是否已在自己的网银或手机银行中查到这笔货款的入账记录？"
+  ],
+  "limitations": [
+    "仅适用于网上出售收藏品等物品的卖方场景；不涉及企业间对公付款、PayID配置或账户变更流程。",
+    "该指引为2023年4月发布的公开安全提示，不构成实时风控判断依据，也不代表某笔交易已被证实为诈骗。"
+  ],
+  "answer": {
+    "steps": [
+      {
+        "text": "交货前，必须亲自登录自己的网银或手机银行，核对本次货款是否已实际到账。",
+        "citations": [
+          {
+            "unit_id": "receipt-guidance",
+            "quote": "April 2023 - PayID Scam\nBe alert to PayID Scams when selling items online\nUsing PayID is a safe and easy way to send and receive funds.\nAfter a conversation with a potential buyer through an Online Marketplace, such as Facebook or Gumtree, you're advised that you need to upgrade your PayID to a business account for you to receive the payment.\nThese scam emails state your account has been upgraded to a business account and you need to refund a deposit that has been credited to your account.\nDo not act on these emails and report the buyer/seller profile to the marketplace as a potential scam.\nReminder\n- PayID's are managed within your banking app. A PayID does not need to be upgraded or activated by making payments. For more information on how PayID's work and how you can set up a Westpac registered PayID, visit\nwestpac.com.au/payid\n.\nAlso, when selling items online, never provide the buyer with the item until you can see the funds in your account, within your own online or mobile banking. Never rely on a receipt or screenshot of a payment sent to you. Receipts can be falsified by scammers to appear as if they have made payment, when they have not.\nIf you have received an email, SMS or other request that you have identified as potentially fraudulent or which you think involves a scam account, it's always a good idea to report these through to us, before deleting it from your inbox or deleted items on your device.\nForward a copy to hoax@westpac.com.au or 0497 132 032."
+          }
+        ],
+        "scene": "seller_receipt",
+        "target": "本次卖给买家的货物及对应货款",
+        "trigger": "交货前核对自己的网银/手机银行实际到账，买家凭证不等于到账"
+      },
+      {
+        "text": "买家提供的转账截图或付款收据不能替代本人银行账户的实际到账确认；未确认到账前不得交付本次货物。",
+        "citations": [
+          {
+            "unit_id": "receipt-guidance",
+            "quote": "April 2023 - PayID Scam\nBe alert to PayID Scams when selling items online\nUsing PayID is a safe and easy way to send and receive funds.\nAfter a conversation with a potential buyer through an Online Marketplace, such as Facebook or Gumtree, you're advised that you need to upgrade your PayID to a business account for you to receive the payment.\nThese scam emails state your account has been upgraded to a business account and you need to refund a deposit that has been credited to your account.\nDo not act on these emails and report the buyer/seller profile to the marketplace as a potential scam.\nReminder\n- PayID's are managed within your banking app. A PayID does not need to be upgraded or activated by making payments. For more information on how PayID's work and how you can set up a Westpac registered PayID, visit\nwestpac.com.au/payid\n.\nAlso, when selling items online, never provide the buyer with the item until you can see the funds in your account, within your own online or mobile banking. Never rely on a receipt or screenshot of a payment sent to you. Receipts can be falsified by scammers to appear as if they have made payment, when they have not.\nIf you have received an email, SMS or other request that you have identified as potentially fraudulent or which you think involves a scam account, it's always a good idea to report these through to us, before deleting it from your inbox or deleted items on your device.\nForward a copy to hoax@westpac.com.au or 0497 132 032."
+          }
+        ],
+        "scene": "seller_receipt",
+        "target": "本次卖给买家的货物及对应货款",
+        "trigger": "交货前核对自己的网银/手机银行实际到账，买家凭证不等于到账"
+      }
+    ],
+    "risks": [
+      {
+        "text": "付款截图可能被伪造，外观真实但实际未付款，导致卖方交货后钱货两空。",
+        "citations": [
+          {
+            "unit_id": "receipt-guidance",
+            "quote": "April 2023 - PayID Scam\nBe alert to PayID Scams when selling items online\nUsing PayID is a safe and easy way to send and receive funds.\nAfter a conversation with a potential buyer through an Online Marketplace, such as Facebook or Gumtree, you're advised that you need to upgrade your PayID to a business account for you to receive the payment.\nThese scam emails state your account has been upgraded to a business account and you need to refund a deposit that has been credited to your account.\nDo not act on these emails and report the buyer/seller profile to the marketplace as a potential scam.\nReminder\n- PayID's are managed within your banking app. A PayID does not need to be upgraded or activated by making payments. For more information on how PayID's work and how you can set up a Westpac registered PayID, visit\nwestpac.com.au/payid\n.\nAlso, when selling items online, never provide the buyer with the item until you can see the funds in your account, within your own online or mobile banking. Never rely on a receipt or screenshot of a payment sent to you. Receipts can be falsified by scammers to appear as if they have made payment, when they have not.\nIf you have received an email, SMS or other request that you have identified as potentially fraudulent or which you think involves a scam account, it's always a good idea to report these through to us, before deleting it from your inbox or deleted items on your device.\nForward a copy to hoax@westpac.com.au or 0497 132 032."
+          }
+        ]
+      }
+    ],
+    "boundaries": [
+      "仅适用于网上出售收藏品等物品的卖方场景；不涉及企业间对公付款、PayID配置或账户变更流程。",
+      "该指引为2023年4月发布的公开安全提示，不构成实时风控判断依据，也不代表某笔交易已被证实为诈骗。"
+    ],
+    "questions": [
+      "您是否已在自己的网银或手机银行中查到这笔货款的入账记录？"
+    ],
+    "scenario": null,
+    "scenario_label": "not_applicable",
+    "review_status": "pending_human_review"
+  },
+  "finished_at": "2026-10-20T01:23:21.389037+00:00",
+  "duration_seconds": 93.106,
+  "evidence": [
+    {
+      "evidence_id": "f64d65f6790a46f2a7612b7fbef3328e",
+      "case_id": "ecd770048485460b85518d956523db08",
+      "case_version": 1,
+      "kind": "public_guidance",
+      "origin_id": "westpac-receipt",
+      "span": {
+        "section": "April 2023 - PayID Scam",
+        "url": "https://www.westpac.com.au/security/latest-scams/past-scams-and-alerts/",
+        "unit_id": "receipt-guidance",
+        "published_at": null
+      },
+      "source_hash": "7f1fbefcc331d7493401d93fcdcf9025bd980299fe97742a6b803c151981da4d",
+      "observed_at": "2026-10-20T01:21:49.712170+00:00",
+      "jurisdiction": "Australia",
+      "statement": "April 2023 - PayID Scam\nBe alert to PayID Scams when selling items online\nUsing PayID is a safe and easy way to send and receive funds.\nAfter a conversation with a potential buyer through an Online Marketplace, such as Facebook or Gumtree, you're advised that you need to upgrade your PayID to a business account for you to receive the payment.\nThese scam emails state your account has been upgraded to a business account and you need to refund a deposit that has been credited to your account.\nDo not act on these emails and report the buyer/seller profile to the marketplace as a potential scam.\nReminder\n- PayID's are managed within your banking app. A PayID does not need to be upgraded or activated by making payments. For more information on how PayID's work and how you can set up a Westpac registered PayID, visit\nwestpac.com.au/payid\n.\nAlso, when selling items online, never provide the buyer with the item until you can see the funds in your account, within your own online or mobile banking. Never rely on a receipt or screenshot of a payment sent to you. Receipts can be falsified by scammers to appear as if they have made payment, when they have not.\nIf you have received an email, SMS or other request that you have identified as potentially fraudulent or which you think involves a scam account, it's always a good idea to report these through to us, before deleting it from your inbox or deleted items on your device.\nForward a copy to hoax@westpac.com.au or 0497 132 032.",
+      "limitations": [
+        "2023年4月公开提示，场景为网上出售物品；不能据此判定某笔交易已经到账或已构成诈骗。",
+        "未知发布日期不能证明在案件时点已生效"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "run_id": "c202abf2c86a483ab21cc7595d47b384",
+  "case_id": "3b511d8549674e6eb8212357f45be51f",
+  "case_version": 1,
+  "query": "请给出Westpac内部冻结账户的审批层级与处理时限。",
+  "status": "needs_input",
+  "records": [
+    {
+      "kind": "model_call",
+      "at": "2026-10-20T01:23:24.658135+00:00",
+      "phase": "plan",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 717,
+        "completion_tokens": 40,
+        "prompt_tokens": 677,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 1.364,
+      "finish_reason": "stop",
+      "request_hash": "819b564da4f01c1adb2f15a9c18007f56cf66a65fee654f0b32f406df46abf62"
+    },
+    {
+      "kind": "next_action",
+      "at": "2026-10-20T01:23:24.658261+00:00",
+      "action": "call_tools",
+      "calls": [
+        {
+          "tool_name": "guidance",
+          "args": {}
+        }
+      ],
+      "questions": [],
+      "summary": "提供关于Westpac内部冻结账户审批层级与处理时限的一般性安全指引。"
+    },
+    {
+      "kind": "tools_started",
+      "at": "2026-10-20T01:23:24.659367+00:00",
+      "names": [
+        "guidance"
+      ],
+      "concurrent": false
+    },
+    {
+      "kind": "retrieval_started",
+      "at": "2026-10-20T01:23:24.660454+00:00",
+      "method": "bm25"
+    },
+    {
+      "kind": "retrieval_attempt_completed",
+      "at": "2026-10-20T01:23:24.670393+00:00",
+      "method": "bm25",
+      "unit_ids": [
+        "receipt-guidance",
+        "national-statistics",
+        "bec-guidance"
+      ],
+      "source_ids": [
+        "westpac-receipt",
+        "scamwatch-stats",
+        "westpac-bec"
+      ]
+    },
+    {
+      "kind": "tool_completed",
+      "at": "2026-10-20T01:23:24.670639+00:00",
+      "tool": "guidance",
+      "status": "ok",
+      "call_id": "909ab4e58fb646f59cff93fda378edee"
+    },
+    {
+      "kind": "model_call",
+      "at": "2026-10-20T01:23:27.700006+00:00",
+      "phase": "plan",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 804,
+        "completion_tokens": 118,
+        "prompt_tokens": 686,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        }
+      },
+      "duration_seconds": 3.027,
+      "finish_reason": "stop",
+      "request_hash": "96b15c32cadb8e8739a702202d501e43f2aa91062337424dc3aae8d65ab30895"
+    },
+    {
+      "kind": "next_action",
+      "at": "2026-10-20T01:23:27.700146+00:00",
+      "action": "draft",
+      "calls": [],
+      "questions": [],
+      "summary": "Westpac内部冻结账户的审批层级与处理时限属于其内部合规操作规程，不对外公开披露。根据一般银行业实践及澳大利亚审慎监管要求（APRA），账户冻结通常需经合规/反洗钱（AML）部门初步评估，高风险情形须报高级管理层或专门委员会审批；处理时限依风险等级而定，紧急可疑交易可能即时冻结，常规审查一般在1–5个工作日内完成。具体流程请以Westpac官方培训材料或内控手册为准。"
+    },
+    {
+      "kind": "model_started",
+      "at": "2026-10-20T01:23:27.703612+00:00",
+      "phase": "evidence_adequacy"
+    },
+    {
+      "kind": "model_call",
+      "at": "2026-10-20T01:23:29.635974+00:00",
+      "phase": "evidence_adequacy",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 4064,
+        "completion_tokens": 65,
+        "prompt_tokens": 3999,
+        "prompt_tokens_details": {
+          "cached_tokens": 3840
+        }
+      },
+      "duration_seconds": 1.932,
+      "finish_reason": "stop",
+      "request_hash": "195db578b48a6c5d8d21b2089e72bad7d1d9efefccdf861897256ed781cc2f5a"
+    },
+    {
+      "kind": "adequacy_checked",
+      "at": "2026-10-20T01:23:29.636027+00:00",
+      "sufficient": false,
+      "task_scenes": [],
+      "relevant_ids": [],
+      "missing": [
+        "Westpac内部冻结账户的审批层级与处理时限不属于公开安全指引范围，所提供的资料中无相关内容。"
+      ],
+      "conflicts": [],
+      "calculation": "none"
+    }
+  ],
+  "tool_results": [
+    {
+      "call_id": "909ab4e58fb646f59cff93fda378edee",
+      "case_id": "3b511d8549674e6eb8212357f45be51f",
+      "case_version": 1,
+      "tool_name": "guidance",
+      "tool_version": "1",
+      "validated_args": {
+        "mode": "auto"
+      },
+      "args_hash": "406080f63e38c971caefb931d1dee2d764e24b8a9886c3efdd8f0049963e6a63",
+      "input_evidence": [
+        {
+          "id": "case-input:3b511d8549674e6eb8212357f45be51f",
+          "hash": "dbd53f7793158096f29d05297cf067c6cce53158ecd557e026e2a0ef3ae05304"
+        }
+      ],
+      "status": "ok",
+      "observations": [
+        {
+          "evidence_id": "e79bc69fee14466bbc68a4afeea46e3d",
+          "statement": "April 2023 - PayID Scam\nBe alert to PayID Scams when selling items online\nUsing PayID is a safe and easy way to send and receive funds.\nAfter a conversation with a potential buyer through an Online Marketplace, such as Facebook or Gumtree, you're advised that you need to upgrade your PayID to a business account for you to receive the payment.\nThese scam emails state your account has been upgraded to a business account and you need to refund a deposit that has been credited to your account.\nDo not act on these emails and report the buyer/seller profile to the marketplace as a potential scam.\nReminder\n- PayID's are managed within your banking app. A PayID does not need to be upgraded or activated by making payments. For more information on how PayID's work and how you can set up a Westpac registered PayID, visit\nwestpac.com.au/payid\n.\nAlso, when selling items online, never provide the buyer with the item until you can see the funds in your account, within your own online or mobile banking. Never rely on a receipt or screenshot of a payment sent to you. Receipts can be falsified by scammers to appear as if they have made payment, when they have not.\nIf you have received an email, SMS or other request that you have identified as potentially fraudulent or which you think involves a scam account, it's always a good idea to report these through to us, before deleting it from your inbox or deleted items on your device.\nForward a copy to hoax@westpac.com.au or 0497 132 032.",
+          "unit": {
+            "unit_id": "receipt-guidance",
+            "source_id": "westpac-receipt",
+            "title": "Past Scams and Alerts | Westpac",
+            "url": "https://www.westpac.com.au/security/latest-scams/past-scams-and-alerts/",
+            "published_or_updated_at": null,
+            "date_status": "page_update_not_shown_section_dated_2023_04",
+            "retrieved_at": "2026-10-18T11:15:01.536289+00:00",
+            "region": "Australia",
+            "material_type": "bank_public_guidance",
+            "page_or_section": "April 2023 - PayID Scam",
+            "file_sha256": "cba10f00f84e9061c54b885148c1d8672d9b5940cc46cfe39c620b1b7df75bbd",
+            "review_status": "codex_author_checked_pending_independent_review",
+            "seed_provenance": "independently_discovered_official_source_material_pack_not_found",
+            "hash_scope": "original_http_html",
+            "acquisition_method": "httpx",
+            "section": "April 2023 - PayID Scam",
+            "text": "April 2023 - PayID Scam\nBe alert to PayID Scams when selling items online\nUsing PayID is a safe and easy way to send and receive funds.\nAfter a conversation with a potential buyer through an Online Marketplace, such as Facebook or Gumtree, you're advised that you need to upgrade your PayID to a business account for you to receive the payment.\nThese scam emails state your account has been upgraded to a business account and you need to refund a deposit that has been credited to your account.\nDo not act on these emails and report the buyer/seller profile to the marketplace as a potential scam.\nReminder\n- PayID's are managed within your banking app. A PayID does not need to be upgraded or activated by making payments. For more information on how PayID's work and how you can set up a Westpac registered PayID, visit\nwestpac.com.au/payid\n.\nAlso, when selling items online, never provide the buyer with the item until you can see the funds in your account, within your own online or mobile banking. Never rely on a receipt or screenshot of a payment sent to you. Receipts can be falsified by scammers to appear as if they have made payment, when they have not.\nIf you have received an email, SMS or other request that you have identified as potentially fraudulent or which you think involves a scam account, it's always a good idea to report these through to us, before deleting it from your inbox or deleted items on your device.\nForward a copy to hoax@westpac.com.au or 0497 132 032.",
+            "search_labels": "付款截图 收据 到账 网银 卖货 交货 receipt screenshot payment funds",
+            "limitations": "2023年4月公开提示，场景为网上出售物品；不能据此判定某笔交易已经到账或已构成诈骗。",
+            "unit_sha256": "7f1fbefcc331d7493401d93fcdcf9025bd980299fe97742a6b803c151981da4d",
+            "limitations_origin": "project_author_scope_note_not_official_quote",
+            "section_date": "2023-04"
+          }
+        },
+        {
+          "evidence_id": "2736b63584394194af4d50bbcbd2cb24",
+          "statement": "### Targeting scams: report of the National Anti-Scam Centre on scams data and activity 2025 \nThis report provides insight into the scams targeting Australians in 2025 and highlights the impact of combined efforts by government, law enforcement, community sector and industry to combat these financial crimes.\n\n30 March 2026\n\n## Infographic\n\nImage: Losses to various scams 2025 \n###\n\nInfographic text\n\nView the accessible text version of the infographic ### Losses\n\nTotal combined losses reported to Scamwatch, ReportCyber, IDCARE, Australian Financial Crimes Exchange (AFCX) and Australian Securities and Investment Commission (ASIC): $2.18 billion (an increase of 7.8%)\n\n481,523 scam reports (a decrease of 2.3%)\n\n### Combined losses over last 5 years\n\n2021: $1.8 billion\n\n2022: $3.1 billion\n\n2023: $2.7 billion\n\n2024: $2.0 billion\n\n2025: $2.2 billion\n### Top 5 scams by loss 2025 (combined data)\n\n  * Investment: $837.7 million\n  * Payment redirection: $166.8 million\n  * Romance: $139.9 million\n  * Phishing: $97.6 million\n  * Remote access: $69.9 million\n\nThe losses from the top 5 scam types accounted for 60% of total losses in 2025.\n### Top 5 scams by loss 2024 (combined data)\n\n  * Investment: $945 million\n  * Romance: $156.8 million\n  * Payment redirection: $152.6 million\n  * Remote access: $106 million\n  * Phishing: $84.5 million\n\nThe losses from the top 5 scam types accounted for 71% of total losses in 2024.",
+          "unit": {
+            "unit_id": "national-statistics",
+            "source_id": "scamwatch-stats",
+            "title": "Targeting scams report — 2025 infographic",
+            "url": "https://www.scamwatch.gov.au/research-and-resources/targeting-scams-report",
+            "material_type": "official_statistics",
+            "published_or_updated_at": "2026-03-30",
+            "date_status": "report_publication_date",
+            "retrieved_at": "2026-10-18T11:16:32.767626+00:00",
+            "region": "Australia",
+            "file_sha256": "5125c9e38f2c457a2875f604af39d6b9e24605c5eb8a38562c4c8cce366f8e9e",
+            "hash_scope": "saved_web_tool_section_not_original_html",
+            "acquisition_method": "web_tool_original_url_extraction_after_direct_http_403",
+            "seed_provenance": "independently_discovered_material_pack_missing",
+            "review_status": "codex_author_checked_pending_independent_review",
+            "page_or_section": "2025 Infographic: Losses and top-five tables for 2025/2024",
+            "section": "2025 Infographic: Losses and top-five tables for 2025/2024",
+            "text": "### Targeting scams: report of the National Anti-Scam Centre on scams data and activity 2025 \nThis report provides insight into the scams targeting Australians in 2025 and highlights the impact of combined efforts by government, law enforcement, community sector and industry to combat these financial crimes.\n\n30 March 2026\n\n## Infographic\n\nImage: Losses to various scams 2025 \n###\n\nInfographic text\n\nView the accessible text version of the infographic ### Losses\n\nTotal combined losses reported to Scamwatch, ReportCyber, IDCARE, Australian Financial Crimes Exchange (AFCX) and Australian Securities and Investment Commission (ASIC): $2.18 billion (an increase of 7.8%)\n\n481,523 scam reports (a decrease of 2.3%)\n\n### Combined losses over last 5 years\n\n2021: $1.8 billion\n\n2022: $3.1 billion\n\n2023: $2.7 billion\n\n2024: $2.0 billion\n\n2025: $2.2 billion\n### Top 5 scams by loss 2025 (combined data)\n\n  * Investment: $837.7 million\n  * Payment redirection: $166.8 million\n  * Romance: $139.9 million\n  * Phishing: $97.6 million\n  * Remote access: $69.9 million\n\nThe losses from the top 5 scam types accounted for 60% of total losses in 2025.\n### Top 5 scams by loss 2024 (combined data)\n\n  * Investment: $945 million\n  * Romance: $156.8 million\n  * Payment redirection: $152.6 million\n  * Remote access: $106 million\n  * Phishing: $84.5 million\n\nThe losses from the top 5 scam types accounted for 71% of total losses in 2024.",
+            "search_labels": "全国 举报 统计 损失 数据 Westpac 客户 风险 2025 2024 增长 比例 reports statistics losses",
+            "limitations": "全国多机构合并举报口径，不是Westpac客户样本；不能推算单个客户风险。页面历史总额有四舍五入，不能用它重算精确同比。",
+            "unit_sha256": "5125c9e38f2c457a2875f604af39d6b9e24605c5eb8a38562c4c8cce366f8e9e",
+            "limitations_origin": "project_author_scope_note_not_official_quote"
+          }
+        },
+        {
+          "evidence_id": "ce33e0d10e654e539bb619ce7838d5ef",
+          "statement": "Signs this may be a scam\nThey request payment to a new account number.\nEven if such requests came from someone associated with you, do not make any changes to account details until you've verbally verified the request using a phone number you sourced yourself.\nA CEO, executive or senior manager requests payment to a specific account.\nPause and verify the request verbally, regardless of who the sender is or if the request is urgent.\nA supplier or employee claim they haven’t received payment.\nDo not make any more payments until you investigate the payment history and emails, to check if there were any requests made to amend account details.\nYou’re paying them for the first time.\nWhen paying someone for the first time, such as a deposit to a real estate agent’s trust account for a property purchase, validate the request and payee details before sending money. You can do this verbally or request to pay using\nPayID®\n.\n\nTips to minimise the risk of being scammed\nAlways verbally confirm any requests for urgent or redirected payments. Always use a phone number you have on file, or a publicly sourced number. Never use contact details provided in the email.\nRequest to pay using\nPayID\nif the payee has one. PayID displays the registered payee name onscreen, so if it's not your intended recipient you will know something is possibly unusual.\nRegister your business for PayID\nby using your ABN and request this is how your account is credited.\nUse multifactor authentication and dual payment approvals where available.\nIf you have a business, train your employees regularly on how to spot payment redirection scams. Empower them to question any payment related requests and verbally verify account details are correct. Update your processes to include these steps.",
+          "unit": {
+            "unit_id": "bec-guidance",
+            "source_id": "westpac-bec",
+            "title": "Payment Redirection Scams | Westpac",
+            "url": "https://www.westpac.com.au/security/types-of-scams/business-email-scams/",
+            "published_or_updated_at": null,
+            "date_status": "not_yet_verified",
+            "retrieved_at": "2026-10-18T11:14:57.079958+00:00",
+            "region": "Australia",
+            "material_type": "bank_public_guidance",
+            "page_or_section": "Signs this may be a scam + Tips to minimise the risk",
+            "file_sha256": "e1fa27d2a476351696c6e142358448fbf694367846636e0385c9cefdb6f7a822",
+            "review_status": "codex_author_checked_pending_independent_review",
+            "seed_provenance": "independently_discovered_official_source_material_pack_not_found",
+            "hash_scope": "original_http_html",
+            "acquisition_method": "httpx",
+            "section": "Signs this may be a scam + Tips to minimise the risk",
+            "text": "Signs this may be a scam\nThey request payment to a new account number.\nEven if such requests came from someone associated with you, do not make any changes to account details until you've verbally verified the request using a phone number you sourced yourself.\nA CEO, executive or senior manager requests payment to a specific account.\nPause and verify the request verbally, regardless of who the sender is or if the request is urgent.\nA supplier or employee claim they haven’t received payment.\nDo not make any more payments until you investigate the payment history and emails, to check if there were any requests made to amend account details.\nYou’re paying them for the first time.\nWhen paying someone for the first time, such as a deposit to a real estate agent’s trust account for a property purchase, validate the request and payee details before sending money. You can do this verbally or request to pay using\nPayID®\n.\n\nTips to minimise the risk of being scammed\nAlways verbally confirm any requests for urgent or redirected payments. Always use a phone number you have on file, or a publicly sourced number. Never use contact details provided in the email.\nRequest to pay using\nPayID\nif the payee has one. PayID displays the registered payee name onscreen, so if it's not your intended recipient you will know something is possibly unusual.\nRegister your business for PayID\nby using your ABN and request this is how your account is credited.\nUse multifactor authentication and dual payment approvals where available.\nIf you have a business, train your employees regularly on how to spot payment redirection scams. Empower them to question any payment related requests and verbally verify account details are correct. Update your processes to include these steps.",
+            "search_labels": "供应商 收款账户变更 更换 银行 邮件 发票 核实 电话 紧急 客服 培训 invoice supplier account change verify",
+            "limitations": "公开一般安全建议，非Westpac内部操作规程；账户变更是核实信号，不足以证明欺诈。PayID和双人审批以可用为条件。",
+            "unit_sha256": "b059afc9484892dba8710b0e35111d0f2c349b57010fb340bf994f8a86c898d6",
+            "limitations_origin": "project_author_scope_note_not_official_quote"
+          }
+        }
+      ],
+      "limitations": [],
+      "latency_seconds": 0.011,
+      "usage": null,
+      "data_origin": "public_sources"
+    }
+  ],
+  "recommendations": [],
+  "started_at": "2026-10-20T01:23:23.286592+00:00",
+  "execution": "live",
+  "assessment": {
+    "sufficient": false,
+    "task_scenes": [],
+    "relevant_ids": [],
+    "missing": [
+      "Westpac内部冻结账户的审批层级与处理时限不属于公开安全指引范围，所提供的资料中无相关内容。"
+    ],
+    "conflicts": [],
+    "calculation": "none"
+  },
+  "summary": "依据不足或相互冲突",
+  "unresolved_questions": [
+    "Westpac内部冻结账户的审批层级与处理时限不属于公开安全指引范围，所提供的资料中无相关内容。"
+  ],
+  "finished_at": "2026-10-20T01:23:29.636292+00:00",
+  "duration_seconds": 6.35,
+  "evidence": [
+    {
+      "evidence_id": "e79bc69fee14466bbc68a4afeea46e3d",
+      "case_id": "3b511d8549674e6eb8212357f45be51f",
+      "case_version": 1,
+      "kind": "public_guidance",
+      "origin_id": "westpac-receipt",
+      "span": {
+        "section": "April 2023 - PayID Scam",
+        "url": "https://www.westpac.com.au/security/latest-scams/past-scams-and-alerts/",
+        "unit_id": "receipt-guidance",
+        "published_at": null
+      },
+      "source_hash": "7f1fbefcc331d7493401d93fcdcf9025bd980299fe97742a6b803c151981da4d",
+      "observed_at": "2026-10-20T01:23:24.670435+00:00",
+      "jurisdiction": "Australia",
+      "statement": "April 2023 - PayID Scam\nBe alert to PayID Scams when selling items online\nUsing PayID is a safe and easy way to send and receive funds.\nAfter a conversation with a potential buyer through an Online Marketplace, such as Facebook or Gumtree, you're advised that you need to upgrade your PayID to a business account for you to receive the payment.\nThese scam emails state your account has been upgraded to a business account and you need to refund a deposit that has been credited to your account.\nDo not act on these emails and report the buyer/seller profile to the marketplace as a potential scam.\nReminder\n- PayID's are managed within your banking app. A PayID does not need to be upgraded or activated by making payments. For more information on how PayID's work and how you can set up a Westpac registered PayID, visit\nwestpac.com.au/payid\n.\nAlso, when selling items online, never provide the buyer with the item until you can see the funds in your account, within your own online or mobile banking. Never rely on a receipt or screenshot of a payment sent to you. Receipts can be falsified by scammers to appear as if they have made payment, when they have not.\nIf you have received an email, SMS or other request that you have identified as potentially fraudulent or which you think involves a scam account, it's always a good idea to report these through to us, before deleting it from your inbox or deleted items on your device.\nForward a copy to hoax@westpac.com.au or 0497 132 032.",
+      "limitations": [
+        "2023年4月公开提示，场景为网上出售物品；不能据此判定某笔交易已经到账或已构成诈骗。",
+        "未知发布日期不能证明在案件时点已生效"
+      ]
+    },
+    {
+      "evidence_id": "2736b63584394194af4d50bbcbd2cb24",
+      "case_id": "3b511d8549674e6eb8212357f45be51f",
+      "case_version": 1,
+      "kind": "public_guidance",
+      "origin_id": "scamwatch-stats",
+      "span": {
+        "section": "2025 Infographic: Losses and top-five tables for 2025/2024",
+        "url": "https://www.scamwatch.gov.au/research-and-resources/targeting-scams-report",
+        "unit_id": "national-statistics",
+        "published_at": "2026-03-30"
+      },
+      "source_hash": "5125c9e38f2c457a2875f604af39d6b9e24605c5eb8a38562c4c8cce366f8e9e",
+      "observed_at": "2026-10-20T01:23:24.670457+00:00",
+      "jurisdiction": "Australia",
+      "statement": "### Targeting scams: report of the National Anti-Scam Centre on scams data and activity 2025 \nThis report provides insight into the scams targeting Australians in 2025 and highlights the impact of combined efforts by government, law enforcement, community sector and industry to combat these financial crimes.\n\n30 March 2026\n\n## Infographic\n\nImage: Losses to various scams 2025 \n###\n\nInfographic text\n\nView the accessible text version of the infographic ### Losses\n\nTotal combined losses reported to Scamwatch, ReportCyber, IDCARE, Australian Financial Crimes Exchange (AFCX) and Australian Securities and Investment Commission (ASIC): $2.18 billion (an increase of 7.8%)\n\n481,523 scam reports (a decrease of 2.3%)\n\n### Combined losses over last 5 years\n\n2021: $1.8 billion\n\n2022: $3.1 billion\n\n2023: $2.7 billion\n\n2024: $2.0 billion\n\n2025: $2.2 billion\n### Top 5 scams by loss 2025 (combined data)\n\n  * Investment: $837.7 million\n  * Payment redirection: $166.8 million\n  * Romance: $139.9 million\n  * Phishing: $97.6 million\n  * Remote access: $69.9 million\n\nThe losses from the top 5 scam types accounted for 60% of total losses in 2025.\n### Top 5 scams by loss 2024 (combined data)\n\n  * Investment: $945 million\n  * Romance: $156.8 million\n  * Payment redirection: $152.6 million\n  * Remote access: $106 million\n  * Phishing: $84.5 million\n\nThe losses from the top 5 scam types accounted for 71% of total losses in 2024.",
+      "limitations": [
+        "全国多机构合并举报口径，不是Westpac客户样本；不能推算单个客户风险。页面历史总额有四舍五入，不能用它重算精确同比。",
+        "未知发布日期不能证明在案件时点已生效"
+      ]
+    },
+    {
+      "evidence_id": "ce33e0d10e654e539bb619ce7838d5ef",
+      "case_id": "3b511d8549674e6eb8212357f45be51f",
+      "case_version": 1,
+      "kind": "public_guidance",
+      "origin_id": "westpac-bec",
+      "span": {
+        "section": "Signs this may be a scam + Tips to minimise the risk",
+        "url": "https://www.westpac.com.au/security/types-of-scams/business-email-scams/",
+        "unit_id": "bec-guidance",
+        "published_at": null
+      },
+      "source_hash": "b059afc9484892dba8710b0e35111d0f2c349b57010fb340bf994f8a86c898d6",
+      "observed_at": "2026-10-20T01:23:24.670473+00:00",
+      "jurisdiction": "Australia",
+      "statement": "Signs this may be a scam\nThey request payment to a new account number.\nEven if such requests came from someone associated with you, do not make any changes to account details until you've verbally verified the request using a phone number you sourced yourself.\nA CEO, executive or senior manager requests payment to a specific account.\nPause and verify the request verbally, regardless of who the sender is or if the request is urgent.\nA supplier or employee claim they haven’t received payment.\nDo not make any more payments until you investigate the payment history and emails, to check if there were any requests made to amend account details.\nYou’re paying them for the first time.\nWhen paying someone for the first time, such as a deposit to a real estate agent’s trust account for a property purchase, validate the request and payee details before sending money. You can do this verbally or request to pay using\nPayID®\n.\n\nTips to minimise the risk of being scammed\nAlways verbally confirm any requests for urgent or redirected payments. Always use a phone number you have on file, or a publicly sourced number. Never use contact details provided in the email.\nRequest to pay using\nPayID\nif the payee has one. PayID displays the registered payee name onscreen, so if it's not your intended recipient you will know something is possibly unusual.\nRegister your business for PayID\nby using your ABN and request this is how your account is credited.\nUse multifactor authentication and dual payment approvals where available.\nIf you have a business, train your employees regularly on how to spot payment redirection scams. Empower them to question any payment related requests and verbally verify account details are correct. Update your processes to include these steps.",
+      "limitations": [
+        "公开一般安全建议，非Westpac内部操作规程；账户变更是核实信号，不足以证明欺诈。PayID和双人审批以可用为条件。",
+        "未知发布日期不能证明在案件时点已生效"
+      ]
+    }
+  ]
+}

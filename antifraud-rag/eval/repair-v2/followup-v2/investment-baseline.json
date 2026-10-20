@@ -1,0 +1,31 @@
+{
+  "output": {
+    "answer": "不能。机构登记截图与专业网页可被伪造或冒用，不能单独证明邀约真实。在澳大利亚，投资机构必须持有ASIC颁发的澳大利亚金融服务（AFS）牌照或获持牌方授权，但注册公司或展示牌照号不等于已获许可，也不代表投资安全。应通过ASIC官方专业登记册（Professional Registers）核验牌照持有人名称、号码及业务范围是否完全匹配，并确认其未被列入投资者警示名单或禁业名单。切勿依赖邀约中提供的网址、电话或链接进行核实。",
+    "sources": [
+      "investment-check"
+    ],
+    "unknowns": []
+  },
+  "status": "completed",
+  "query": "有人邀请我投资，发来机构登记截图与专业网页，这能证明本次邀约真实吗？",
+  "records": [
+    {
+      "kind": "model_call",
+      "phase": "baseline_answer",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 5129,
+        "completion_tokens": 134,
+        "prompt_tokens": 4995,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 3.866,
+      "finish_reason": "stop",
+      "request_hash": "c8e05eebabb63295ef926d35c9f098e0a7ae4f8a455cb8736ef6416363771fbd"
+    }
+  ],
+  "seconds": 3.8671957079786807
+}
