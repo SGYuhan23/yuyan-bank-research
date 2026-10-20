@@ -1,6 +1,6 @@
 {
   "scope": "Full source portfolio; inventory excludes itself to avoid self-reference.",
-  "file_count_excluding_inventory": 4769,
+  "file_count_excluding_inventory": 4822,
   "files": {
     ".github/workflows/pages.yml": {
       "sha256": "46e5f8466c94ecd2d96c2b5c97a71d1a87bdb3034095078ccb434b2dd15124fd",
@@ -16727,8 +16727,8 @@
       "bytes": 66
     },
     "antifraud-rag/README.md": {
-      "sha256": "6ec3b1c98357a549912f2b7e1b5f67be701cb591d0f133f4ae67603fdfab32e6",
-      "bytes": 10243
+      "sha256": "d302ccae8105db2a771adb1d464c25e4752b54a024fd932f58ddf3b0b8daa2ac",
+      "bytes": 10743
     },
     "antifraud-rag/acquire.py": {
       "sha256": "bbbb93dce26414ea5f19b7ca9e573d2bb93d4aabbb3174653403eb2ae81e5e05",
@@ -16859,16 +16859,16 @@
       "bytes": 17274
     },
     "antifraud-rag/docs/ACTUAL_OUTPUTS.md": {
-      "sha256": "ab4467a94cd42f358e87204dcdb005ecc7529fd8a326190102cc77669930e9e4",
-      "bytes": 8073
+      "sha256": "bb165e79a621be6c154a66e3976d988fe4493e65423a6237346d4657a8176e8d",
+      "bytes": 8676
     },
     "antifraud-rag/docs/EVALUATION.md": {
       "sha256": "0db0ff3044505c8e74b8d193f77b4b9a48fbdff87f784e38f6746b53c491f235",
       "bytes": 4580
     },
     "antifraud-rag/docs/IMPLEMENTATION_STATUS.md": {
-      "sha256": "e493014ef47bb797011900ba66bec91fb733acf3f56607401e1d1ba30cbd8580",
-      "bytes": 6014
+      "sha256": "8cd6cd0c261e89315aa8d5e15fe28866911b48b4e45e174e989b0d001d5d9794",
+      "bytes": 6505
     },
     "antifraud-rag/docs/PACKAGE_RECONCILIATION.md": {
       "sha256": "4d63786d98562a722bbd8663b676d2b3d13796a66f88000c515c6b6c13db7663",
@@ -16999,8 +16999,8 @@
       "bytes": 3244
     },
     "antifraud-rag/pipeline.py": {
-      "sha256": "3cf7c2ac0b131593834d2de746ef91928fef90355478cb6e1f3078469250d33a",
-      "bytes": 27806
+      "sha256": "c0e861388cb980bf56e282e927c1df81894c06a48b7755f9b86b94e4248e95c3",
+      "bytes": 28667
     },
     "antifraud-rag/prepare.py": {
       "sha256": "5fafb4ecfe5e2897e9d4d66dbd906e6b9aab7825963af44fc30d48c6c0ca4384",
@@ -17915,8 +17915,8 @@
       "bytes": 5917
     },
     "antifraud-rag/docs/UPGRADE_VALIDATION.md": {
-      "sha256": "43df22a39c0c9bdb5d64d9cf8987defac6fd0f1edc36f7acf481df6df52cf1d7",
-      "bytes": 8614
+      "sha256": "f7dc5fbe0908787447d33fd026ae52230c4d4dbe77532b0c506bdc56ec4edb8a",
+      "bytes": 8925
     },
     "antifraud-rag/eval/upgrade/PROTOCOL.md": {
       "sha256": "241cfe0d01f980ffd51f7c7e1e4744dae23d29cd3ff154b03f777feeeb6711d9",
@@ -18575,16 +18575,16 @@
       "bytes": 732
     },
     "antifraud-rag/upgrade/store.py": {
-      "sha256": "8151f9957773c023a037a7958212667363a38d66331debc4a5833bab77f2433f",
-      "bytes": 6345
+      "sha256": "1e7fe81c5e6947f8b681fae193e5fcd197458ea60023237186a500ba9b648b72",
+      "bytes": 6641
     },
     "antifraud-rag/upgrade/tools.py": {
       "sha256": "301ae08a085a540f8edf4b48298dee0605b296a50075ca873927c5cce490c0f8",
       "bytes": 8677
     },
     "antifraud-rag/upgrade/training.py": {
-      "sha256": "27a5b8ee2bfd4dbd671ee374471e8a4d2413830dd14971cf61aa4f947128a864",
-      "bytes": 9057
+      "sha256": "2b840b3a777f75a09b67385fe3c15e3953d2c7d3dbfb25a06ede344c627e9792",
+      "bytes": 11766
     },
     "antifraud-rag/upgrade_cli.py": {
       "sha256": "5b53bc7b1e91c226a694df14d0923395a5d4e8af3ee924389b0b4e0e8b7039c6",
@@ -18595,12 +18595,12 @@
       "bytes": 2045
     },
     "antifraud-rag/web/upgrade.html": {
-      "sha256": "2f9b657abdf0d88ecdebd67f95b731f0108892eebdd344243a95adcfe992c0a2",
-      "bytes": 4453
+      "sha256": "d770cd62017bfcfc4bdb97c417508bc30a5954986291f3f5e859e937e183d7b8",
+      "bytes": 4782
     },
     "antifraud-rag/web/upgrade.js": {
-      "sha256": "ad39c75d31917535fc45184d73d35d0ec08080e49964c11021dcbe8268f73531",
-      "bytes": 12268
+      "sha256": "f20ca37a5b6c3ff4598b6066e44d48af095158748c57fe6c3411c9857afef554",
+      "bytes": 14451
     },
     "antifraud-rag/eval/upgrade/graph/shared-case-actual.json": {
       "sha256": "81b1f53a50127b6bdf8d59d653b276716c4640cfeadfe568fb270be31686220d",
@@ -18611,8 +18611,8 @@
       "bytes": 64356
     },
     "antifraud-rag/docs/RESUME_EVIDENCE.md": {
-      "sha256": "7b1671f2848107e01e3b2baef6a6d14ecb1a9cdd0573c3280e8322b906dddd2a",
-      "bytes": 5600
+      "sha256": "4d822ee42ca077bf69bcbf89938e7e5b4652a08b56fd0bcfcebc48e214dd5ab9",
+      "bytes": 4915
     },
     "antifraud-rag/eval/repair-v2/PROTOCOL.md": {
       "sha256": "6aac65f52e6933785dd10f693d4a68987101582c9fc65d13239b6a26b833267d",
@@ -18847,8 +18847,8 @@
       "bytes": 5550
     },
     "antifraud-rag/upgrade/grounding.py": {
-      "sha256": "6eb561a591dcc66b758dcd53200e961662b5cea67d04db29d23ec0cbf235834a",
-      "bytes": 8589
+      "sha256": "c04dc544a2222f6387550c9c244ace375b65a3946e5fa801395b6fc36ff9de59",
+      "bytes": 8786
     },
     "antifraud-rag/eval/graphsage-v1/PROTOCOL.md": {
       "sha256": "8c2f61100705e9ceabf308eb5299d1fd4a5e3939dc6a291a673be1d47a9a87c1",
@@ -19077,6 +19077,218 @@
     "antifraud-rag/upgrade/graph_sage.py": {
       "sha256": "e69ec820b4f6e9bb55614bde4651ac450595db2365b87a67539e5e9b86079ebb",
       "bytes": 8744
+    },
+    "antifraud-rag/docs/INTERVIEW_DEMO.md": {
+      "sha256": "44a24d3d0d8ab134124524e69cbe775ccb70224015a9e35fa4511b50b1c435ef",
+      "bytes": 6584
+    },
+    "antifraud-rag/eval/final-closeout-v1/PROTOCOL.md": {
+      "sha256": "d1eba2f2e46a0938ae8dcac9e369feb945a924ff9b0d0456c20beedc26e7d54c",
+      "bytes": 1137
+    },
+    "antifraud-rag/eval/final-closeout-v1/REPORT.md": {
+      "sha256": "69fbc91277292243ea480b55fb244fd23dddb58dc056553b9056237b7f7d61f1",
+      "bytes": 6698
+    },
+    "antifraud-rag/eval/final-closeout-v1/actual/freeze.json": {
+      "sha256": "6c3b4e825eca8abf0597b0a552a1a86e4834bd282bc953db5d48963e6756b789",
+      "bytes": 2335
+    },
+    "antifraud-rag/eval/final-closeout-v1/actual/investment-237156bd297c4e5abac62a34593275c8.json": {
+      "sha256": "4a2f450a24db63830aefc50906d58011a589162694a896617b3c24a0b282a546",
+      "bytes": 764
+    },
+    "antifraud-rag/eval/final-closeout-v1/actual/normal-64a5b527448f4f749dd492fe062a2e31.json": {
+      "sha256": "1cc4c806cbf55bbea2d74cde96d3aaf8d2a63a75e5a55f4e25c300c884fcc754",
+      "bytes": 833
+    },
+    "antifraud-rag/eval/final-closeout-v1/actual/real-retrieval.json": {
+      "sha256": "88fed74272f574a02e5482cd7cd30a02f4da105bb5496efd73734a9d245eb8df",
+      "bytes": 376
+    },
+    "antifraud-rag/eval/final-closeout-v1/actual/seller_normal-e3dec9fd94bb414eae0e8283d67e7068.json": {
+      "sha256": "8d8fa9d7e8b8a585d98fabfeff761bb4f9e71a2106ab26a49fdd7b6b9734924a",
+      "bytes": 794
+    },
+    "antifraud-rag/eval/final-closeout-v1/actual/summary.json": {
+      "sha256": "59bedf597411f26b2abc8f8238309f37de3c6b93383560f85d523d67c7ace145",
+      "bytes": 533
+    },
+    "antifraud-rag/eval/final-closeout-v1/actual/training-negated-71783fd44a98432fb57774a90dbc1cfa.json": {
+      "sha256": "8b89c42bed9cd807764cef24afcf43b031a52e113fd9182dce9c562f131b9f5c",
+      "bytes": 5384
+    },
+    "antifraud-rag/eval/final-closeout-v1/actual/training-normal-772ecaa8c681403fbd406ea606ea9971.json": {
+      "sha256": "f88570e8393fe8a2611eceb4723087fd03f4faf8f181536faf3e27a3a3b6e99a",
+      "bytes": 5424
+    },
+    "antifraud-rag/eval/final-closeout-v1/actual/unpaid-cca3e236eb0743708faf9317d22fb9cd.json": {
+      "sha256": "eee112e10ccec9fe97cc0ffda0b65d6a2d9556f6bed0d3ba94ec3d41bdf75f33",
+      "bytes": 761
+    },
+    "antifraud-rag/eval/final-closeout-v1/actual/unsupported-7849f72618964e6fb39a73eb425b72fc.json": {
+      "sha256": "7d60009abf73f0318b66f241b1d2bead6f28871b7e69890c2ab75a1e99d3bbf5",
+      "bytes": 729
+    },
+    "antifraud-rag/eval/final-closeout-v1/browser/assertions.json": {
+      "sha256": "9c35644142fdf64c8e69dd2c764594100a12ef044f5136f2ef1d5b31ad733d58",
+      "bytes": 482
+    },
+    "antifraud-rag/eval/final-closeout-v1/browser/final-answer-replay.png": {
+      "sha256": "0dc5a7e59839de0aeaa72924c8f51442d446286dfabb17d2f475afa25313ef6e",
+      "bytes": 562124
+    },
+    "antifraud-rag/eval/final-closeout-v1/browser/final-ui-log.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "antifraud-rag/eval/final-closeout-v1/browser/final-ui.json": {
+      "sha256": "21813b5684c38eb2759adc57a7afbbdd8029b77642b316c873b4a91fc7a9d575",
+      "bytes": 567
+    },
+    "antifraud-rag/eval/final-closeout-v1/browser/first-ui-wait-failure.txt": {
+      "sha256": "3c8a6e4db052e59237bd887d0baf293ac0b3af0405c8d6ae7fec9c2024317cd7",
+      "bytes": 387
+    },
+    "antifraud-rag/eval/final-closeout-v1/browser/graph-run.json": {
+      "sha256": "c5fb3bc6a44368258f29384a84973643e845c35822d074fef53563f65a785056",
+      "bytes": 41870
+    },
+    "antifraud-rag/eval/final-closeout-v1/browser/graph.png": {
+      "sha256": "78b826df4e7c9b0d6deb768f8d8190518cbb5f8d15e26ee436d1ad3aab57e47c",
+      "bytes": 751132
+    },
+    "antifraud-rag/eval/final-closeout-v1/browser/historical-risk-visible.png": {
+      "sha256": "b1d63f36c35e837c3048fc52d72b68f8b4b14bb7bdff61034fa75577b54cae70",
+      "bytes": 389143
+    },
+    "antifraud-rag/eval/final-closeout-v1/browser/log.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "antifraud-rag/eval/final-closeout-v1/browser/main-export.json": {
+      "sha256": "f66dd82084c2b881d4a8524c7b195d87f8fc8d018ae76f2e00a2b77ac23dfc11",
+      "bytes": 57185
+    },
+    "antifraud-rag/eval/final-closeout-v1/browser/main-reviewed.png": {
+      "sha256": "afa76982eaa69dd47780ef02af4a8f443901863dc735f1897481d34019218dd0",
+      "bytes": 486462
+    },
+    "antifraud-rag/eval/final-closeout-v1/browser/main-run.json": {
+      "sha256": "7c81cb4c0fe8876bea4a1a618cb5505c6b9558fb480474dfadb9b725ba03d26b",
+      "bytes": 41824
+    },
+    "antifraud-rag/eval/final-closeout-v1/browser/stale-export.json": {
+      "sha256": "17ebaeebc123e142d7d12935beda7968806a7f926bf8a9b3faac166e4cfd9018",
+      "bytes": 50030
+    },
+    "antifraud-rag/eval/final-closeout-v1/browser/training-negated-replay.png": {
+      "sha256": "502743a5d4a90098d6ae6a2c23f88a04f9514f366620ae38a18b05d9fd24a73c",
+      "bytes": 238454
+    },
+    "antifraud-rag/eval/final-closeout-v1/browser/training-normal-replay.png": {
+      "sha256": "24591b03f2c26636bfd9bab0eabab71ac791f5849233bb4aa105b24abde87d26",
+      "bytes": 248640
+    },
+    "antifraud-rag/eval/final-closeout-v1/browser/verify-final-ui.cjs": {
+      "sha256": "03cb5f49aab2c65d11e2100b9dd6240b2448aae890710f006029495f1afda413",
+      "bytes": 3135
+    },
+    "antifraud-rag/eval/final-closeout-v1/browser/verify.cjs": {
+      "sha256": "93b8a2e721812026fafd1e194636cd4cca59ba601da5d7bee3e357f4ed0591a3",
+      "bytes": 5351
+    },
+    "antifraud-rag/eval/final-closeout-v1/checks.json": {
+      "sha256": "a82452ce83a7f4187176872668ce947fc7a027c6b713bdbceebdd1079cc7b91c",
+      "bytes": 452
+    },
+    "antifraud-rag/eval/final-closeout-v1/online/freeze.json": {
+      "sha256": "0195c09862316854ac02eb3a7cb5ed7486b34b7fbd8fb28ec463ec5610d42dce",
+      "bytes": 2335
+    },
+    "antifraud-rag/eval/final-closeout-v1/online/investment-48d5c76bbc534b3695dc14301ddbadb0.json": {
+      "sha256": "92775311c50c1561c97351174cb20213073dd954ba9c3d631062829b459ab58b",
+      "bytes": 79022
+    },
+    "antifraud-rag/eval/final-closeout-v1/online/normal-9d7d9643f055401cae397fdbbb05be26.json": {
+      "sha256": "20bddb8d3ab153521180095a2873c97c923d5bebe1404a413f06f66eb1c08bd4",
+      "bytes": 56092
+    },
+    "antifraud-rag/eval/final-closeout-v1/online/real-retrieval.json": {
+      "sha256": "88fed74272f574a02e5482cd7cd30a02f4da105bb5496efd73734a9d245eb8df",
+      "bytes": 376
+    },
+    "antifraud-rag/eval/final-closeout-v1/online/seller_normal-1cb629dd35da42f7b908669bb213425b.json": {
+      "sha256": "85dec422971cfa99b2f99aac7daa75936a51d1eeb2b5732d942a8dcc080c28f7",
+      "bytes": 37019
+    },
+    "antifraud-rag/eval/final-closeout-v1/online/summary.json": {
+      "sha256": "026a26f8cff759a1b9a9645dd52b03507c680193d0f4e6954d1d6a30bfbccc4f",
+      "bytes": 562
+    },
+    "antifraud-rag/eval/final-closeout-v1/online/training-negated-dda3ff49f15f4fba8028c0fc1647956a.json": {
+      "sha256": "756f5aedf4dd6e033daccee83684b14f07d4a51214ad15d09f3d6d9ef7d744a1",
+      "bytes": 13917
+    },
+    "antifraud-rag/eval/final-closeout-v1/online/training-normal-c4acd09f344b4a5bb40c5cb55b84d8d8.json": {
+      "sha256": "d006bafb92257793a04064a71589c07b707fe36b91fecf5d20b4d49e6d7c0146",
+      "bytes": 15106
+    },
+    "antifraud-rag/eval/final-closeout-v1/online/unpaid-699c1f327bb447b5962b3043525abe0e.json": {
+      "sha256": "6b8d40b7cbf82ffb45777ddd41a4ac7a8286d019460c1a20be6c328e792334f9",
+      "bytes": 45982
+    },
+    "antifraud-rag/eval/final-closeout-v1/online/unsupported-dcf97750421a48b7a946186c72de7f22.json": {
+      "sha256": "4635973d0be24bc02ae1bc2fb2e5d743b7fdbdacd0215c18b78eb459015a406e",
+      "bytes": 27995
+    },
+    "antifraud-rag/eval/final-closeout-v1/retrieval-final.json": {
+      "sha256": "74654ad5ee20ea1a3b5b0a2e6f100eefb126b6e5e8e2166bd324a6038a5e2627",
+      "bytes": 2140
+    },
+    "antifraud-rag/eval/final-closeout-v1/retrieval_checks.py": {
+      "sha256": "47926be277c8cf691a69d1afa754089fa990631201e97aa85e4e361e4e6dda41",
+      "bytes": 816
+    },
+    "antifraud-rag/eval/final-closeout-v1/run_checks.py": {
+      "sha256": "82aeda710b0fabd3ebe50503815644f6a46588efccd681a01246391655730300",
+      "bytes": 2986
+    },
+    "antifraud-rag/eval/final-closeout-v1/tests-final.txt": {
+      "sha256": "9e58543b934e811ed17a8e66749287cf3d039f23e7fb7a8230cb49a20aae9693",
+      "bytes": 9631
+    },
+    "antifraud-rag/eval/final-closeout-v1/tests-first-failure.txt": {
+      "sha256": "bb623411b43286d8f9a56dfa400166b8066a5a6516502c6e3bb72f3088f1f109",
+      "bytes": 11185
+    },
+    "antifraud-rag/eval/final-closeout-v1/tests.txt": {
+      "sha256": "506bba37258896baba673dd11bd17c73fc987b032ba15d7ac924a79b1ead9b7c",
+      "bytes": 9631
+    },
+    "antifraud-rag/eval/final-closeout-v1/training-final/all18.json": {
+      "sha256": "007a810245060a0aa56d3348c4174ffb5d766806593208ff901a0280cdcd3bfd",
+      "bytes": 40850
+    },
+    "antifraud-rag/eval/final-closeout-v1/training-final/negated-34c854a742e74889a88219bd7f9b716a.json": {
+      "sha256": "98c792c388b7679b00b46dda6cbfb13e1f34578492071f510eb1a4de82ab59f9",
+      "bytes": 6345
+    },
+    "antifraud-rag/eval/final-closeout-v1/training-final/normal-33b6a86d82634484b42f7a5bc772a102.json": {
+      "sha256": "3d4df2a07d3967470cfc74736aae6a0c3c55ccd0293cdd675e03082ed71ab519",
+      "bytes": 6236
+    },
+    "antifraud-rag/eval/final-closeout-v1/training_checks.py": {
+      "sha256": "559b371a704aeffddd3c99ecd33f65d7f8c804fdf4d5853c890ae25d72e90aa6",
+      "bytes": 1676
+    },
+    "antifraud-rag/test_final_closeout.py": {
+      "sha256": "f63b400769681251a08479f8654f4ffb48fac8676087a32c7d85ba270123bf4d",
+      "bytes": 4845
+    },
+    "antifraud-rag/eval/final-closeout-v1/final-code-hashes.json": {
+      "sha256": "ce78c794aa7f7eb8b0dbd71b06ca0d8b207c6134247a14f726f4ac12d3581c48",
+      "bytes": 1460
     }
   }
 }

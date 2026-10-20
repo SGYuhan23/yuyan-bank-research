@@ -1,0 +1,278 @@
+{
+  "public": {
+    "session_id": "c4acd09f344b4a5bb40c5cb55b84d8d8",
+    "case_id": "78c23c40a7f84120ae1f992b911b3048",
+    "case_version": 1,
+    "basis_run_id": "1337ce8268df4d57b8c285f366779efa",
+    "scenario": {
+      "scenario_id": "2a3afe39bde38857",
+      "family_id": "account_change",
+      "visible_facts": [
+        "我是采购付款人员，熟悉供应商来邮件说换收款账户。",
+        "已用原先留档电话独立口头确认本次变更请求及账户信息。"
+      ],
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "jurisdiction": "Australia",
+      "label": "本项目编写的培训情境，非真实客户案例；待人工审核"
+    },
+    "turns": []
+  },
+  "debrief": {
+    "criteria": [
+      {
+        "criterion": "independent",
+        "initially_known": true,
+        "matched_turns": [
+          0
+        ],
+        "known_fact": "已用原先留档电话独立口头确认本次变更请求及账户信息。",
+        "information_status": "initially_visible",
+        "omission": null,
+        "semantic_status": "pending_review"
+      },
+      {
+        "criterion": "change",
+        "initially_known": false,
+        "matched_turns": [
+          0
+        ],
+        "known_fact": "邮件要求本次付款改到新账户，未声称以前款项未收到。",
+        "information_status": "released",
+        "omission": null,
+        "semantic_status": "pending_review"
+      },
+      {
+        "criterion": "scope",
+        "initially_known": false,
+        "matched_turns": [
+          0
+        ],
+        "known_fact": "只涉及本次变更请求，其他付款未涉及。",
+        "information_status": "released",
+        "omission": null,
+        "semantic_status": "pending_review"
+      }
+    ],
+    "matched": 3,
+    "total": 3,
+    "scope_flags": [],
+    "source_basis_ids": [
+      "bec-guidance"
+    ],
+    "unknowns_review": "检查是否在未设定事实时承认未知；关键词匹配不能保证问法正确",
+    "score_revisions": [],
+    "review_status": "pending_human_review",
+    "notice": "自动匹配仅定位需复核的问句，不是员工绩效或语义正确率"
+  },
+  "semantic": {
+    "status": "completed",
+    "result": {
+      "checks": [
+        {
+          "dimension": "independent",
+          "turn": 0,
+          "quote": "本次变更已经用留档电话确认，我会将已知事实与尚待确认的事项分开。",
+          "finding": "学员明确陈述‘用留档电话确认’，与visible_initial_facts中‘已用原先留档电话独立口头确认本次变更请求及账户信息。’完全一致；criterion_information中该条initially_known=true且information_status=initially_visible，无需额外核实。语义匹配，操作依据充分。",
+          "status": "met"
+        },
+        {
+          "dimension": "change",
+          "turn": 0,
+          "quote": "本次变更已经用留档电话确认，我会将已知事实与尚待确认的事项分开。",
+          "finding": "学员未在引文中直接复述或确认‘邮件要求本次付款改到新账户，未声称以前款项未收到’这一released事实；虽其陈述隐含‘存在变更’，但未显性识别/引用该关键条件（即：是账户变更请求，且不伴随历史付款异常主张）。根据规则，released_keys需被显性处理或至少被结构化区分，此处仅泛称‘本次变更’，未锚定‘change’维度所定义的特定语义边界（区别于欺诈信号中的‘claim they haven’t received payment’）。",
+          "status": "missing"
+        },
+        {
+          "dimension": "scope",
+          "turn": 0,
+          "quote": "本次变更已经用留档电话确认，我会将已知事实与尚待确认的事项分开。",
+          "finding": "学员提及‘将已知事实与尚待确认的事项分开’，体现分类意识，但未在引文中显性确认或呼应‘只涉及本次变更请求，其他付款未涉及’这一scope限定。该信息属released_keys，非initially_visible，须被主动识别并用于约束核实范围（例如：不因本次变更而回溯核查历史付款）。当前表述未体现对该边界的语义把握。",
+          "status": "missing"
+        }
+      ],
+      "limitations": [
+        "材料未提供学员是否已核实新账户名称与供应商注册名称一致性（PayID提示项），但该点属‘Tips to minimise risk’中的可选增强措施，非强制必要步骤，故不纳入核心维度检查。",
+        "‘independent’维度已满足，但Westpac指引强调‘use a phone number you have on file, or a publicly sourced number. Never use contact details provided in the email’，学员未说明电话号码来源是否独立于邮件——不过visible_initial_facts已明确‘原先留档电话’，且criterion_information标注为initially_visible，故不构成缺失。",
+        "学员未提及是否检查邮件发件人地址真实性、域名拼写等钓鱼信号，但criterion_information未将此类技术验证列为必检项，故不列入checks。"
+      ]
+    },
+    "records": [
+      {
+        "kind": "model_call",
+        "phase": "training_debrief",
+        "model_requested": "qwen-plus",
+        "model_returned": "qwen-plus",
+        "usage": {
+          "total_tokens": 2005,
+          "completion_tokens": 643,
+          "prompt_tokens": 1362,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "duration_seconds": 14.721,
+        "finish_reason": "stop",
+        "request_hash": "304380d94d5ddbf5e392f4f3fe96c09211b7059e9252bb85026f051263700c0f"
+      }
+    ],
+    "reviewer": "same Qwen; pending human review"
+  },
+  "session": {
+    "session_id": "c4acd09f344b4a5bb40c5cb55b84d8d8",
+    "scenario_id": "2a3afe39bde38857",
+    "case_id": "78c23c40a7f84120ae1f992b911b3048",
+    "case_version": 1,
+    "basis_run_id": "1337ce8268df4d57b8c285f366779efa",
+    "turns": [
+      {
+        "learner": "本次变更已经用留档电话确认，我会将已知事实与尚待确认的事项分开。",
+        "client": "已用原先留档电话独立口头确认本次变更请求及账户信息。 邮件要求本次付款改到新账户，未声称以前款项未收到。 只涉及本次变更请求，其他付款未涉及。",
+        "released_keys": [
+          "independent",
+          "change",
+          "scope"
+        ]
+      }
+    ],
+    "released": [
+      "change",
+      "independent",
+      "scope"
+    ],
+    "score_revisions": [],
+    "created_at": "2026-10-20T02:27:12.050532+00:00",
+    "scenario_snapshot": {
+      "scenario_id": "2a3afe39bde38857",
+      "family_id": "account_change",
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "jurisdiction": "Australia",
+      "visible_facts": [
+        "我是采购付款人员，熟悉供应商来邮件说换收款账户。",
+        "已用原先留档电话独立口头确认本次变更请求及账户信息。"
+      ],
+      "latent_truth": {
+        "independent": "已用原先留档电话独立口头确认本次变更请求及账户信息。",
+        "change": "邮件要求本次付款改到新账户，未声称以前款项未收到。",
+        "scope": "只涉及本次变更请求，其他付款未涉及。"
+      },
+      "allowed_responses": {
+        "independent": "已用原先留档电话独立口头确认本次变更请求及账户信息。",
+        "change": "邮件要求本次付款改到新账户，未声称以前款项未收到。",
+        "scope": "只涉及本次变更请求，其他付款未涉及。"
+      },
+      "critical_questions": {
+        "independent": [
+          "电话",
+          "独立",
+          "原来"
+        ],
+        "change": [
+          "变更",
+          "账号",
+          "账户"
+        ],
+        "scope": [
+          "本次",
+          "这笔",
+          "无关"
+        ]
+      },
+      "rubric": {
+        "independent": "询问并核对：已用原先留档电话独立口头确认本次变更请求及账户信息。",
+        "change": "询问并核对：邮件要求本次付款改到新账户，未声称以前款项未收到。",
+        "scope": "询问并核对：只涉及本次变更请求，其他付款未涉及。"
+      },
+      "counterfactual_of": "f716faeb49fc2611",
+      "seed": 41,
+      "clue_level": 1,
+      "legitimate": true
+    },
+    "semantic_review_draft": {
+      "checks": [
+        {
+          "dimension": "independent",
+          "turn": 0,
+          "quote": "本次变更已经用留档电话确认，我会将已知事实与尚待确认的事项分开。",
+          "finding": "学员明确陈述‘用留档电话确认’，与visible_initial_facts中‘已用原先留档电话独立口头确认本次变更请求及账户信息。’完全一致；criterion_information中该条initially_known=true且information_status=initially_visible，无需额外核实。语义匹配，操作依据充分。",
+          "status": "met"
+        },
+        {
+          "dimension": "change",
+          "turn": 0,
+          "quote": "本次变更已经用留档电话确认，我会将已知事实与尚待确认的事项分开。",
+          "finding": "学员未在引文中直接复述或确认‘邮件要求本次付款改到新账户，未声称以前款项未收到’这一released事实；虽其陈述隐含‘存在变更’，但未显性识别/引用该关键条件（即：是账户变更请求，且不伴随历史付款异常主张）。根据规则，released_keys需被显性处理或至少被结构化区分，此处仅泛称‘本次变更’，未锚定‘change’维度所定义的特定语义边界（区别于欺诈信号中的‘claim they haven’t received payment’）。",
+          "status": "missing"
+        },
+        {
+          "dimension": "scope",
+          "turn": 0,
+          "quote": "本次变更已经用留档电话确认，我会将已知事实与尚待确认的事项分开。",
+          "finding": "学员提及‘将已知事实与尚待确认的事项分开’，体现分类意识，但未在引文中显性确认或呼应‘只涉及本次变更请求，其他付款未涉及’这一scope限定。该信息属released_keys，非initially_visible，须被主动识别并用于约束核实范围（例如：不因本次变更而回溯核查历史付款）。当前表述未体现对该边界的语义把握。",
+          "status": "missing"
+        }
+      ],
+      "limitations": [
+        "材料未提供学员是否已核实新账户名称与供应商注册名称一致性（PayID提示项），但该点属‘Tips to minimise risk’中的可选增强措施，非强制必要步骤，故不纳入核心维度检查。",
+        "‘independent’维度已满足，但Westpac指引强调‘use a phone number you have on file, or a publicly sourced number. Never use contact details provided in the email’，学员未说明电话号码来源是否独立于邮件——不过visible_initial_facts已明确‘原先留档电话’，且criterion_information标注为initially_visible，故不构成缺失。",
+        "学员未提及是否检查邮件发件人地址真实性、域名拼写等钓鱼信号，但criterion_information未将此类技术验证列为必检项，故不列入checks。"
+      ]
+    },
+    "semantic_review": {
+      "status": "completed",
+      "result": {
+        "checks": [
+          {
+            "dimension": "independent",
+            "turn": 0,
+            "quote": "本次变更已经用留档电话确认，我会将已知事实与尚待确认的事项分开。",
+            "finding": "学员明确陈述‘用留档电话确认’，与visible_initial_facts中‘已用原先留档电话独立口头确认本次变更请求及账户信息。’完全一致；criterion_information中该条initially_known=true且information_status=initially_visible，无需额外核实。语义匹配，操作依据充分。",
+            "status": "met"
+          },
+          {
+            "dimension": "change",
+            "turn": 0,
+            "quote": "本次变更已经用留档电话确认，我会将已知事实与尚待确认的事项分开。",
+            "finding": "学员未在引文中直接复述或确认‘邮件要求本次付款改到新账户，未声称以前款项未收到’这一released事实；虽其陈述隐含‘存在变更’，但未显性识别/引用该关键条件（即：是账户变更请求，且不伴随历史付款异常主张）。根据规则，released_keys需被显性处理或至少被结构化区分，此处仅泛称‘本次变更’，未锚定‘change’维度所定义的特定语义边界（区别于欺诈信号中的‘claim they haven’t received payment’）。",
+            "status": "missing"
+          },
+          {
+            "dimension": "scope",
+            "turn": 0,
+            "quote": "本次变更已经用留档电话确认，我会将已知事实与尚待确认的事项分开。",
+            "finding": "学员提及‘将已知事实与尚待确认的事项分开’，体现分类意识，但未在引文中显性确认或呼应‘只涉及本次变更请求，其他付款未涉及’这一scope限定。该信息属released_keys，非initially_visible，须被主动识别并用于约束核实范围（例如：不因本次变更而回溯核查历史付款）。当前表述未体现对该边界的语义把握。",
+            "status": "missing"
+          }
+        ],
+        "limitations": [
+          "材料未提供学员是否已核实新账户名称与供应商注册名称一致性（PayID提示项），但该点属‘Tips to minimise risk’中的可选增强措施，非强制必要步骤，故不纳入核心维度检查。",
+          "‘independent’维度已满足，但Westpac指引强调‘use a phone number you have on file, or a publicly sourced number. Never use contact details provided in the email’，学员未说明电话号码来源是否独立于邮件——不过visible_initial_facts已明确‘原先留档电话’，且criterion_information标注为initially_visible，故不构成缺失。",
+          "学员未提及是否检查邮件发件人地址真实性、域名拼写等钓鱼信号，但criterion_information未将此类技术验证列为必检项，故不列入checks。"
+        ]
+      },
+      "records": [
+        {
+          "kind": "model_call",
+          "phase": "training_debrief",
+          "model_requested": "qwen-plus",
+          "model_returned": "qwen-plus",
+          "usage": {
+            "total_tokens": 2005,
+            "completion_tokens": 643,
+            "prompt_tokens": 1362,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "duration_seconds": 14.721,
+          "finish_reason": "stop",
+          "request_hash": "304380d94d5ddbf5e392f4f3fe96c09211b7059e9252bb85026f051263700c0f"
+        }
+      ],
+      "reviewer": "same Qwen; pending human review"
+    }
+  }
+}

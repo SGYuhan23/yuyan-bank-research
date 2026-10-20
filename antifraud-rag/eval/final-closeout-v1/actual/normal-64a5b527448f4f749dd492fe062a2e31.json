@@ -1,0 +1,22 @@
+{
+  "run_id": "64a5b527448f4f749dd492fe062a2e31",
+  "case_id": "901994a8373841da83482c5556a9561a",
+  "case_version": 1,
+  "query": "我是企业付款方，包装供应商变更收款账户，我们已经通过原先留档电话口头确认本次变更。请说明建议的适用范围与证据限制。",
+  "status": "failed",
+  "records": [
+    {
+      "kind": "failed",
+      "at": "2026-10-20T02:22:45.968982+00:00",
+      "error": "ResearchError: MODEL_UNAVAILABLE：未配置 QWEN_API_KEY / QWEN_ENDPOINT"
+    }
+  ],
+  "tool_results": [],
+  "recommendations": [],
+  "started_at": "2026-10-20T02:22:45.960252+00:00",
+  "execution": "live",
+  "error": "ResearchError: MODEL_UNAVAILABLE：未配置 QWEN_API_KEY / QWEN_ENDPOINT",
+  "finished_at": "2026-10-20T02:22:45.968992+00:00",
+  "duration_seconds": 0.009,
+  "evidence": []
+}

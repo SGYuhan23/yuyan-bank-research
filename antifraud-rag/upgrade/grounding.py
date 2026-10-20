@@ -4,7 +4,7 @@ No answer templates or knowledge inferred from evaluation references.
 import json,re
 from typing import Literal
 from pydantic import Field,ValidationError
-from pipeline import Answer,scoped_evidence,norm,SCOPE_PROMPT
+from pipeline import Answer,scoped_evidence,norm,SCOPE_PROMPT,ADVICE_CONSTRAINTS,SCOPE_RULES
 from .contracts import Strict
 class Check(Strict):
     field:Literal['steps','risks','boundaries','questions','scenario']
@@ -28,6 +28,8 @@ PROMPT='''你是逐条来源核对器，不是答案作者。仅输出指定JSON
 4. 优先从source_spans选择source_span_id，unit_id必须匹配，source_quote留空由程序填入原文，禁止拼接、省略或翻译引文。source_quote如自行填写必须是本条unit_id的text中的连续逐字引文。若该建议无具体原文支持，supported=false，quote留空，不能编造相似引文。限制性边界若只说本系统不能核实某事实，可以unit_id=null，但必须解释它不增加操作。questions不得用null绕过来源要求。
 5. 否定/转述诈骗断言不是肯定定罪；“不能仅凭变更认定一定是诈骗”属于合理边界。所有金额保留包含、合计、估计关系。
 6. JSON顶层只有checks数组、coverage_ok布尔值、missing_essential数组。coverage_ok与missing_essential只出现在顶层，绝不能放入checks的条目。每个check仅含field,index,supported,applicable,already_answered,unit_id,source_quote,source_span_id,reason。对提供的items每项恰好返回一次，含字段和index。coverage_ok检查当前问题的必要核实步骤是否已在steps中完整表达，不要求questions重复steps。coverage_ok检查当前问题的必要核实步骤是否完整，但已完成的核实不要求重复执行；不能强迫附加未询问的业务场景。'''
+
+PROMPT+='\n'+ADVICE_CONSTRAINTS
 
 def items(answer):
     rows=[]
@@ -68,7 +70,7 @@ def audit_answer(legacy,owner,answer):
     schema['$defs']['Check']['properties']['source_span_id']={'enum':[None,*spans]}
     schema['$defs']['Check']['properties']['source_quote']={'type':'string','const':''}
     # Deliberately does not reuse the long answer-generation SYSTEM or prior reviewer verdict.
-    payload={'question':legacy.data['query'],'task_scenes':[x.model_dump() for x in legacy.assessment.task_scenes],'items':items(answer),'sources':list(units.values()),'source_spans':spans}
+    payload={'question':legacy.data['query'],'task_scenes':[x.model_dump() for x in legacy.assessment.task_scenes],'required_checks':{x.scene:SCOPE_RULES[x.scene]['required_checks'] for x in legacy.assessment.task_scenes if x.scene in SCOPE_RULES},'items':items(answer),'sources':list(units.values()),'source_spans':spans}
     for attempt in range(2):
         raw=owner.model([{'role':'system','content':PROMPT+'\n只用source_span_id引用，不填写source_quote。系统自身限制或资料类型边界可unit_id=null且span=null，不得伪造limitations引文。\nJSON schema:'+json.dumps(schema,ensure_ascii=False)},
                          {'role':'user','content':json.dumps(payload,ensure_ascii=False)}],'focused_grounding' if attempt==0 else 'focused_grounding_contract_repair')

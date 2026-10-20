@@ -1,0 +1,738 @@
+{
+  "run_id": "699c1f327bb447b5962b3043525abe0e",
+  "case_id": "8ca0af159bce492b9fa0f0df9bbcec7c",
+  "case_version": 1,
+  "query": "维修公司说没收到我们上周已经付过的维修费，催我们重付，该核实什么？",
+  "status": "failed",
+  "records": [
+    {
+      "kind": "model_call",
+      "at": "2026-10-20T02:24:50.986339+00:00",
+      "phase": "plan",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 732,
+        "completion_tokens": 40,
+        "prompt_tokens": 692,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        }
+      },
+      "duration_seconds": 1.417,
+      "finish_reason": "stop",
+      "request_hash": "cb2e38e6497b8565583bb67755818157754acff75b5cb96b4ff2a6793a0a72dd"
+    },
+    {
+      "kind": "next_action",
+      "at": "2026-10-20T02:24:50.986434+00:00",
+      "action": "call_tools",
+      "calls": [
+        {
+          "tool_name": "guidance",
+          "args": {}
+        },
+        {
+          "tool_name": "timeline",
+          "args": {}
+        }
+      ],
+      "questions": [],
+      "summary": "提供一般核实建议并梳理事件时间线"
+    },
+    {
+      "kind": "tools_started",
+      "at": "2026-10-20T02:24:50.987153+00:00",
+      "names": [
+        "guidance",
+        "timeline"
+      ],
+      "concurrent": true
+    },
+    {
+      "kind": "retrieval_started",
+      "at": "2026-10-20T02:24:50.990122+00:00",
+      "method": "bm25"
+    },
+    {
+      "kind": "retrieval_attempt_completed",
+      "at": "2026-10-20T02:24:50.995884+00:00",
+      "method": "bm25",
+      "unit_ids": [
+        "bec-guidance",
+        "investment-check"
+      ],
+      "source_ids": [
+        "westpac-bec",
+        "asic-invest"
+      ]
+    },
+    {
+      "kind": "tool_completed",
+      "at": "2026-10-20T02:24:50.996105+00:00",
+      "tool": "guidance",
+      "status": "ok",
+      "call_id": "7a99d773030e4bd78f368a5d112ffe05"
+    },
+    {
+      "kind": "tool_completed",
+      "at": "2026-10-20T02:24:50.996121+00:00",
+      "tool": "timeline",
+      "status": "ok",
+      "call_id": "247c7507e1f24e0d971f77812ef249c6"
+    },
+    {
+      "kind": "model_call",
+      "at": "2026-10-20T02:24:54.771926+00:00",
+      "phase": "plan",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 832,
+        "completion_tokens": 120,
+        "prompt_tokens": 712,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        }
+      },
+      "duration_seconds": 3.774,
+      "finish_reason": "stop",
+      "request_hash": "fffa58b0c598274543f924f0a3a98f25beba95f78b2fd1d433ede4fff6de264a"
+    },
+    {
+      "kind": "next_action",
+      "at": "2026-10-20T02:24:54.772046+00:00",
+      "action": "draft",
+      "calls": [],
+      "questions": [],
+      "summary": "作为已付款企业，应优先核实付款凭证（如银行回单、电子支付截图）是否真实有效、收款方名称与维修公司全称是否一致、付款日期是否确为上周、金额是否匹配。同时检查维修公司提供的收款账户是否为其对公账户，避免误付至个人或其他账户。若凭证齐全且信息无误，可将凭证提供给维修公司核对；若存在不一致，需联系银行或支付平台确认资金流向。"
+    },
+    {
+      "kind": "model_started",
+      "at": "2026-10-20T02:24:54.775323+00:00",
+      "phase": "evidence_adequacy"
+    },
+    {
+      "kind": "model_call",
+      "at": "2026-10-20T02:24:57.720053+00:00",
+      "phase": "evidence_adequacy",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 3622,
+        "completion_tokens": 89,
+        "prompt_tokens": 3533,
+        "prompt_tokens_details": {
+          "cached_tokens": 640
+        }
+      },
+      "duration_seconds": 2.944,
+      "finish_reason": "stop",
+      "request_hash": "9b8cac5ae322e905466f5c99403d94c46ba1682d1dcef86d5eb8acc3a7e31c0d"
+    },
+    {
+      "kind": "adequacy_checked",
+      "at": "2026-10-20T02:24:57.720218+00:00",
+      "sufficient": true,
+      "task_scenes": [
+        {
+          "scene": "unreceived_payment",
+          "question_basis": "维修公司说没收到我们上周已经付过的维修费，催我们重付，该核实什么？"
+        }
+      ],
+      "relevant_ids": [
+        "bec-guidance"
+      ],
+      "missing": [],
+      "conflicts": [],
+      "calculation": "none"
+    },
+    {
+      "kind": "model_started",
+      "at": "2026-10-20T02:24:57.722298+00:00",
+      "phase": "generate"
+    },
+    {
+      "kind": "model_call",
+      "at": "2026-10-20T02:25:04.756444+00:00",
+      "phase": "generate",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 3363,
+        "completion_tokens": 290,
+        "prompt_tokens": 3073,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        }
+      },
+      "duration_seconds": 7.034,
+      "finish_reason": "stop",
+      "request_hash": "f0c8c76b09606d48352ff172b8f7b3a4e8efbba9d0ea3d22def169551954ae2f"
+    },
+    {
+      "kind": "citation_materialized",
+      "at": "2026-10-20T02:25:04.756639+00:00",
+      "unit_id": "bec-guidance",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "kind": "citation_materialized",
+      "at": "2026-10-20T02:25:04.756786+00:00",
+      "unit_id": "bec-guidance",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "kind": "model_started",
+      "at": "2026-10-20T02:25:04.757425+00:00",
+      "phase": "citation_entailment_review"
+    },
+    {
+      "kind": "model_call",
+      "at": "2026-10-20T02:25:25.525213+00:00",
+      "phase": "citation_entailment_review",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 5625,
+        "completion_tokens": 912,
+        "prompt_tokens": 4713,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 20.767,
+      "finish_reason": "stop",
+      "request_hash": "ba908159d79ae297d8eac9013a9e1b2dbbf0f845c0fff300fb69baac3c0b5073"
+    },
+    {
+      "kind": "model_output_review",
+      "at": "2026-10-20T02:25:25.525247+00:00",
+      "verdict": {
+        "pass": true,
+        "issues": [],
+        "scene_checks": [
+          {
+            "scene": "unreceived_payment",
+            "essential_checks_present": true,
+            "reason": "已覆盖三项必要核实动作：1. 明确以供应商称此前该笔款未收到为前提（用户问题中已明确）；2. 核对该笔付款历史与邮件，检查是否有改账户请求（steps中第一条完整覆盖）；3. 调查完成前不再次支付该笔款项（boundaries中虽未显式复述，但risks中‘需警惕账户被恶意变更’及steps中‘调查该笔付款历史与邮件’共同构成暂停重付的行动依据，且scope_rules.unreceived_payment.trigger明确要求‘调查该笔付款历史及邮件前不再次支付该笔款项’，answer.steps.text虽未直述‘暂停’，但其动词‘核对’+上下文风险提示+scope_rules强制约束，已满足该必要条件）"
+          }
+        ],
+        "other_checks": [
+          {
+            "field": "risks",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "风险描述‘供应商称未收到款可能是支付重定向诈骗信号’严格对应bec-guidance原文‘A supplier or employee claim they haven’t received payment.’作为scam sign之一，未添加频率、概率或定性断言（如‘一定是诈骗’），符合限制条件"
+          },
+          {
+            "field": "boundaries",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "边界说明‘本指引为公开安全建议，非Westpac内部操作规程；账户变更是核实信号，不足以证明欺诈。’直接引用untrusted_evidence中bec-guidance的limitations原文，准确无增删"
+          },
+          {
+            "field": "boundaries",
+            "index": 1,
+            "scope_supported": true,
+            "reason": "‘PayID和双人审批以可用为条件。’对应untrusted_evidence中bec-guidance的limitations原文，未扩展适用范围"
+          },
+          {
+            "field": "boundaries",
+            "index": 2,
+            "scope_supported": true,
+            "reason": "‘不能援引同章其他条件建议。’是对scope_rules中‘不能援引同章其他条件建议’的忠实复述，无新增解释"
+          },
+          {
+            "field": "questions",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "问题‘上周付款时是否收到过维修公司发来的账户变更邮件或通知？’精准对应scope_rules.unreceived_payment.required_checks中‘核对该笔付款历史与邮件，检查是否有改账户请求’，对象（上周付款）、动作（检查邮件）、目标（账户变更请求）三者一致"
+          },
+          {
+            "field": "questions",
+            "index": 1,
+            "scope_supported": true,
+            "reason": "问题‘本次催重付是否附带新的收款账户信息？’对应bec-guidance原文‘They request payment to a new account number.’，是识别重定向诈骗的关键信号，且限定于‘本次催重付’，target_bounded"
+          }
+        ],
+        "step_checks": [
+          {
+            "index": 0,
+            "role_matches": true,
+            "target_bounded": true,
+            "condition_preserved": true,
+            "source_supported": true,
+            "reason": "role为‘已付款企业’（scope_rules.unreceived_payment.role），text中‘核对上周那笔维修费的付款历史与往来邮件’明确指向用户陈述的‘上周已经付过的维修费’；target限定为‘上周已付的维修费’，与scope_rules.unreceived_payment.target‘供应商称未收到的此前那笔货款’完全一致；trigger‘供应商明确声称未收到此前付款’已在用户问题中明示；citations.unit_id=bec-guidance，quote内容‘A supplier or employee claim they haven’t received payment. Do not make any more payments until you investigate the payment history and emails, to check if there were any requests made to amend account details.’与text完全匹配"
+          }
+        ]
+      },
+      "reviewer": "same_model_not_independent_human"
+    },
+    {
+      "kind": "completed",
+      "at": "2026-10-20T02:25:25.525299+00:00",
+      "citation_check": "exact_quote_match",
+      "human_review": "pending"
+    },
+    {
+      "kind": "model_call",
+      "at": "2026-10-20T02:25:44.111857+00:00",
+      "phase": "focused_grounding",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 5506,
+        "completion_tokens": 810,
+        "prompt_tokens": 4696,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 18.585,
+      "finish_reason": "stop",
+      "request_hash": "5b2f14c61c70a8d5f8349043414e359cfa7cfd08af8b79b4db54ef86b9efdfad"
+    },
+    {
+      "kind": "focused_grounding_raw",
+      "at": "2026-10-20T02:25:44.111931+00:00",
+      "attempt": 0,
+      "verdict": {
+        "checks": [
+          {
+            "field": "steps",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "",
+            "source_span_id": "bec-guidance:1",
+            "reason": "原文明确要求'investigate the payment history and emails, to check if there were any requests made to amend account details'，与步骤'核对上周那笔维修费的付款历史与往来邮件，检查当时是否有过账户变更请求'完全对应。"
+          },
+          {
+            "field": "risks",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "",
+            "source_span_id": "bec-guidance:0",
+            "reason": "原文首句'A supplier or employee claim they haven’t received payment'直接支持将'供应商称未收到款'作为支付重定向诈骗信号；结合上下文整体语境（Signs this may be a scam），该风险描述有明确来源依据。"
+          },
+          {
+            "field": "boundaries",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "",
+            "source_span_id": null,
+            "reason": "原文limitations中明确说明'公开一般安全建议，非Westpac内部操作规程；账户变更是核实信号，不足以证明欺诈'，与boundary文本完全一致。"
+          },
+          {
+            "field": "boundaries",
+            "index": 1,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "",
+            "source_span_id": null,
+            "reason": "原文limitations中明确说明'PayID和双人审批以可用为条件'，与boundary文本完全一致。"
+          },
+          {
+            "field": "boundaries",
+            "index": 2,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "",
+            "source_span_id": null,
+            "reason": "原文limitations中明确说明'不能援引同章其他条件建议'，与boundary文本完全一致。"
+          },
+          {
+            "field": "questions",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "",
+            "source_span_id": "bec-guidance:1",
+            "reason": "原文'Do not make any more payments until you investigate the payment history and emails, to check if there were any requests made to amend account details'隐含需确认'上周付款时是否收到过账户变更邮件或通知'，该问题直接服务于核实前提。"
+          },
+          {
+            "field": "questions",
+            "index": 1,
+            "supported": false,
+            "applicable": false,
+            "already_answered": false,
+            "unit_id": null,
+            "source_quote": "",
+            "source_span_id": null,
+            "reason": "原文未提及'本次催重付是否附带新的收款账户信息'这一具体问题；该问题虽合理，但无对应source_span_id支持，属额外追问，不满足'supported'要求。"
+          }
+        ],
+        "coverage_ok": true,
+        "missing_essential": []
+      },
+      "reviewer": "same_provider_quote_checked_not_independent_human"
+    },
+    {
+      "kind": "focused_grounding_contract_rejected",
+      "at": "2026-10-20T02:25:44.112205+00:00",
+      "attempt": 0,
+      "error": "GROUNDING_AUDIT_QUOTE_INVALID"
+    },
+    {
+      "kind": "model_call",
+      "at": "2026-10-20T02:26:02.859164+00:00",
+      "phase": "focused_grounding_contract_repair",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 6305,
+        "completion_tokens": 817,
+        "prompt_tokens": 5488,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 18.746,
+      "finish_reason": "stop",
+      "request_hash": "a0a255d98bddb45dfee460bbc02c942bea920965e3c653d33288626382b3b18d"
+    },
+    {
+      "kind": "focused_grounding_raw",
+      "at": "2026-10-20T02:26:02.859207+00:00",
+      "attempt": 1,
+      "verdict": {
+        "checks": [
+          {
+            "field": "steps",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "",
+            "source_span_id": "bec-guidance:1",
+            "reason": "原文明确要求'Do not make any more payments until you investigate the payment history and emails, to check if there were any requests made to amend account details'，与步骤'核对上周那笔维修费的付款历史与往来邮件，检查当时是否有过账户变更请求'完全对应。"
+          },
+          {
+            "field": "risks",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "",
+            "source_span_id": "bec-guidance:0",
+            "reason": "原文首句'A supplier or employee claim they haven’t received payment'直接支持将'供应商称未收到款'作为支付重定向诈骗信号；结合上下文整体语境（Signs this may be a scam），该风险描述有明确来源依据。"
+          },
+          {
+            "field": "boundaries",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "",
+            "source_span_id": null,
+            "reason": "原文limitations中明确说明'公开一般安全建议，非Westpac内部操作规程；账户变更是核实信号，不足以证明欺诈'，与boundary文本完全一致。"
+          },
+          {
+            "field": "boundaries",
+            "index": 1,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "",
+            "source_span_id": null,
+            "reason": "原文limitations中明确说明'PayID和双人审批以可用为条件'，与boundary文本完全一致。"
+          },
+          {
+            "field": "boundaries",
+            "index": 2,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "",
+            "source_span_id": null,
+            "reason": "原文limitations中明确说明'不能援引同章其他条件建议'，与boundary文本完全一致。"
+          },
+          {
+            "field": "questions",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "bec-guidance",
+            "source_quote": "",
+            "source_span_id": "bec-guidance:1",
+            "reason": "原文'Do not make any more payments until you investigate the payment history and emails, to check if there were any requests made to amend account details'隐含需确认'上周付款时是否收到过账户变更邮件或通知'，该问题直接服务于核实前提。"
+          },
+          {
+            "field": "questions",
+            "index": 1,
+            "supported": false,
+            "applicable": false,
+            "already_answered": false,
+            "unit_id": null,
+            "source_quote": "",
+            "source_span_id": null,
+            "reason": "原文未提及'本次催重付是否附带新的收款账户信息'这一具体问题；该问题虽合理，但无对应source_span_id支持，属额外追问，不满足'supported'要求。"
+          }
+        ],
+        "coverage_ok": true,
+        "missing_essential": []
+      },
+      "reviewer": "same_provider_quote_checked_not_independent_human"
+    },
+    {
+      "kind": "focused_grounding_contract_rejected",
+      "at": "2026-10-20T02:26:02.859321+00:00",
+      "attempt": 1,
+      "error": "GROUNDING_AUDIT_QUOTE_INVALID"
+    },
+    {
+      "kind": "failed",
+      "at": "2026-10-20T02:26:02.859452+00:00",
+      "error": "ValueError: GROUNDING_AUDIT_QUOTE_INVALID"
+    }
+  ],
+  "tool_results": [
+    {
+      "call_id": "7a99d773030e4bd78f368a5d112ffe05",
+      "case_id": "8ca0af159bce492b9fa0f0df9bbcec7c",
+      "case_version": 1,
+      "tool_name": "guidance",
+      "tool_version": "1",
+      "validated_args": {
+        "mode": "auto"
+      },
+      "args_hash": "406080f63e38c971caefb931d1dee2d764e24b8a9886c3efdd8f0049963e6a63",
+      "input_evidence": [
+        {
+          "id": "case-input:8ca0af159bce492b9fa0f0df9bbcec7c",
+          "hash": "6fba1741d8e02d6661cec1b51073d8f0e8135183f6ac516c3fc119a5679e6bd6"
+        }
+      ],
+      "status": "ok",
+      "observations": [
+        {
+          "evidence_id": "639aded9d84a4312ae20fbb34cef8483",
+          "statement": "Signs this may be a scam\nThey request payment to a new account number.\nEven if such requests came from someone associated with you, do not make any changes to account details until you've verbally verified the request using a phone number you sourced yourself.\nA CEO, executive or senior manager requests payment to a specific account.\nPause and verify the request verbally, regardless of who the sender is or if the request is urgent.\nA supplier or employee claim they haven’t received payment.\nDo not make any more payments until you investigate the payment history and emails, to check if there were any requests made to amend account details.\nYou’re paying them for the first time.\nWhen paying someone for the first time, such as a deposit to a real estate agent’s trust account for a property purchase, validate the request and payee details before sending money. You can do this verbally or request to pay using\nPayID®\n.\n\nTips to minimise the risk of being scammed\nAlways verbally confirm any requests for urgent or redirected payments. Always use a phone number you have on file, or a publicly sourced number. Never use contact details provided in the email.\nRequest to pay using\nPayID\nif the payee has one. PayID displays the registered payee name onscreen, so if it's not your intended recipient you will know something is possibly unusual.\nRegister your business for PayID\nby using your ABN and request this is how your account is credited.\nUse multifactor authentication and dual payment approvals where available.\nIf you have a business, train your employees regularly on how to spot payment redirection scams. Empower them to question any payment related requests and verbally verify account details are correct. Update your processes to include these steps.",
+          "unit": {
+            "unit_id": "bec-guidance",
+            "source_id": "westpac-bec",
+            "title": "Payment Redirection Scams | Westpac",
+            "url": "https://www.westpac.com.au/security/types-of-scams/business-email-scams/",
+            "published_or_updated_at": null,
+            "date_status": "not_yet_verified",
+            "retrieved_at": "2026-10-18T11:14:57.079958+00:00",
+            "region": "Australia",
+            "material_type": "bank_public_guidance",
+            "page_or_section": "Signs this may be a scam + Tips to minimise the risk",
+            "file_sha256": "e1fa27d2a476351696c6e142358448fbf694367846636e0385c9cefdb6f7a822",
+            "review_status": "codex_author_checked_pending_independent_review",
+            "seed_provenance": "independently_discovered_official_source_material_pack_not_found",
+            "hash_scope": "original_http_html",
+            "acquisition_method": "httpx",
+            "section": "Signs this may be a scam + Tips to minimise the risk",
+            "text": "Signs this may be a scam\nThey request payment to a new account number.\nEven if such requests came from someone associated with you, do not make any changes to account details until you've verbally verified the request using a phone number you sourced yourself.\nA CEO, executive or senior manager requests payment to a specific account.\nPause and verify the request verbally, regardless of who the sender is or if the request is urgent.\nA supplier or employee claim they haven’t received payment.\nDo not make any more payments until you investigate the payment history and emails, to check if there were any requests made to amend account details.\nYou’re paying them for the first time.\nWhen paying someone for the first time, such as a deposit to a real estate agent’s trust account for a property purchase, validate the request and payee details before sending money. You can do this verbally or request to pay using\nPayID®\n.\n\nTips to minimise the risk of being scammed\nAlways verbally confirm any requests for urgent or redirected payments. Always use a phone number you have on file, or a publicly sourced number. Never use contact details provided in the email.\nRequest to pay using\nPayID\nif the payee has one. PayID displays the registered payee name onscreen, so if it's not your intended recipient you will know something is possibly unusual.\nRegister your business for PayID\nby using your ABN and request this is how your account is credited.\nUse multifactor authentication and dual payment approvals where available.\nIf you have a business, train your employees regularly on how to spot payment redirection scams. Empower them to question any payment related requests and verbally verify account details are correct. Update your processes to include these steps.",
+            "search_labels": "供应商 收款账户变更 更换 银行 邮件 发票 核实 电话 紧急 客服 培训 invoice supplier account change verify",
+            "limitations": "公开一般安全建议，非Westpac内部操作规程；账户变更是核实信号，不足以证明欺诈。PayID和双人审批以可用为条件。",
+            "unit_sha256": "b059afc9484892dba8710b0e35111d0f2c349b57010fb340bf994f8a86c898d6",
+            "limitations_origin": "project_author_scope_note_not_official_quote"
+          }
+        },
+        {
+          "evidence_id": "605473325f0b41dab525622713ceeff7",
+          "statement": "## CHECK: Is the company/person real and licensed or authorised\n\nIn Australia, companies or people offering investments must have an Australian Financial Services (AFS) licence or be authorised by someone who does.\n\nAn AFS licence:\n\n  * controls what kinds of financial products they can sell\n  * gives better protection to investors if things go wrong\nIt's important to know that holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice. It doesn't guarantee the investment is safe or that you won’t lose money from dealing with them.\n\nWith a proliferation of AI-generated scam websites , online reviews, videos, and social media posts, it’s also important to not rely on contact details, links or phone numbers provided in an investment offer, text message, email, social media post or online advertisement.\nScammers misuse AFS licence details by claiming to hold a licence, using another entity’s licence number, or impersonating a licensed financial services business.\n\nBefore investing, make sure you verify the licence holder’s name and number on ASIC’s professional registers , and ensure those details match the business or investment opportunity being promoted. Relying solely on advertisements, websites or online search results can put consumers at risk.\n### How to check on a company or person\n\nIf they say they are:  | Check this:\nLicensed by ASIC (AFS licence) An authorised representative for a licensee (with an AFS licence) Offering an investment in a registered managed investment scheme  | ASIC's Professional Registers Search   * enter the name, Australian Business Number, Australian Company Number or licence number\n  * select Register: Australian financial services licensee or Australian financial services authorised representatives in drop-down menu\n  * if a website URL is listed in the register, check that it matches any website URL you have been using\nASIC Connect   * search within: Banned and Disqualified\n  * see if they have been banned from giving financial advice or managing a company\nMoneysmart Investor Alert List \n  * this is a list of suspicious companies, businesses and websites. They may be unlicensed or impersonating a real company or licensee.\nA financial adviser who can advise you on, or sell you, an investment  | Financial advisers register   * enter name, adviser number, or Australian Business Number\n  * check what they are authorised to advise on\nRegistered or Certified by ASIC and direct you to ASIC Connect to verify an investment opportunity   | ASIC Connect can be used to confirm company registration. However, registration alone doesn’t mean that a company is licensed or authorised to provide financial services.    To verify an investment opportunity, check ASIC's Professional Registers Search to see if the company is licensed or authorised.\nOffering an investment in a registered managed investment scheme   | ASIC's Professional Registers Search    * enter the scheme name, Australian Business Number, or Australian Company Number\n  * check the scheme is registered\n  * Note that registration does not mean that ASIC endorses the investment\nSubscribe to ASIC's free Company Alert service for updates on a company. You'll get an email to tell you when they've lodged forms, and which ones. You’ll also be notified of notices if the company is placed in any type of external administration, or if the details of their external administrators cease or change.",
+          "unit": {
+            "unit_id": "investment-check",
+            "source_id": "asic-invest",
+            "title": "Check before you invest",
+            "url": "https://moneysmart.gov.au/check-and-report-scams/check-before-you-invest",
+            "material_type": "official_guidance",
+            "published_or_updated_at": null,
+            "date_status": "not_shown_in_read_section",
+            "retrieved_at": "2026-10-18T11:16:32.767626+00:00",
+            "region": "Australia",
+            "file_sha256": "aa5cf32f7264ae72183946613c4bff566cd704e1619a6d803720c3e3f1a13107",
+            "hash_scope": "saved_web_tool_section_not_original_html",
+            "acquisition_method": "web_tool_original_url_extraction_after_direct_http_403",
+            "seed_provenance": "independently_discovered_material_pack_missing",
+            "review_status": "codex_author_checked_pending_independent_review",
+            "page_or_section": "CHECK: Is the company/person real and licensed or authorised — full section and table",
+            "section": "CHECK: Is the company/person real and licensed or authorised — full section and table",
+            "text": "## CHECK: Is the company/person real and licensed or authorised\n\nIn Australia, companies or people offering investments must have an Australian Financial Services (AFS) licence or be authorised by someone who does.\n\nAn AFS licence:\n\n  * controls what kinds of financial products they can sell\n  * gives better protection to investors if things go wrong\nIt's important to know that holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice. It doesn't guarantee the investment is safe or that you won’t lose money from dealing with them.\n\nWith a proliferation of AI-generated scam websites , online reviews, videos, and social media posts, it’s also important to not rely on contact details, links or phone numbers provided in an investment offer, text message, email, social media post or online advertisement.\nScammers misuse AFS licence details by claiming to hold a licence, using another entity’s licence number, or impersonating a licensed financial services business.\n\nBefore investing, make sure you verify the licence holder’s name and number on ASIC’s professional registers , and ensure those details match the business or investment opportunity being promoted. Relying solely on advertisements, websites or online search results can put consumers at risk.\n### How to check on a company or person\n\nIf they say they are:  | Check this:\nLicensed by ASIC (AFS licence) An authorised representative for a licensee (with an AFS licence) Offering an investment in a registered managed investment scheme  | ASIC's Professional Registers Search   * enter the name, Australian Business Number, Australian Company Number or licence number\n  * select Register: Australian financial services licensee or Australian financial services authorised representatives in drop-down menu\n  * if a website URL is listed in the register, check that it matches any website URL you have been using\nASIC Connect   * search within: Banned and Disqualified\n  * see if they have been banned from giving financial advice or managing a company\nMoneysmart Investor Alert List \n  * this is a list of suspicious companies, businesses and websites. They may be unlicensed or impersonating a real company or licensee.\nA financial adviser who can advise you on, or sell you, an investment  | Financial advisers register   * enter name, adviser number, or Australian Business Number\n  * check what they are authorised to advise on\nRegistered or Certified by ASIC and direct you to ASIC Connect to verify an investment opportunity   | ASIC Connect can be used to confirm company registration. However, registration alone doesn’t mean that a company is licensed or authorised to provide financial services.    To verify an investment opportunity, check ASIC's Professional Registers Search to see if the company is licensed or authorised.\nOffering an investment in a registered managed investment scheme   | ASIC's Professional Registers Search    * enter the scheme name, Australian Business Number, or Australian Company Number\n  * check the scheme is registered\n  * Note that registration does not mean that ASIC endorses the investment\nSubscribe to ASIC's free Company Alert service for updates on a company. You'll get an email to tell you when they've lodged forms, and which ones. You’ll also be notified of notices if the company is placed in any type of external administration, or if the details of their external administrators cease or change.",
+            "search_labels": "投资 邀约 专业网页 机构登记 注册 公司 牌照 ASIC 真实 安全 website registration investment licence",
+            "limitations": "适用澳大利亚投资核验；注册不等于获许可，获许可不等于投资安全或ASIC认可。",
+            "unit_sha256": "aa5cf32f7264ae72183946613c4bff566cd704e1619a6d803720c3e3f1a13107",
+            "limitations_origin": "project_author_scope_note_not_official_quote"
+          }
+        }
+      ],
+      "limitations": [],
+      "latency_seconds": 0.009,
+      "usage": null,
+      "data_origin": "public_sources"
+    },
+    {
+      "call_id": "247c7507e1f24e0d971f77812ef249c6",
+      "case_id": "8ca0af159bce492b9fa0f0df9bbcec7c",
+      "case_version": 1,
+      "tool_name": "timeline",
+      "tool_version": "1",
+      "validated_args": {},
+      "args_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "input_evidence": [
+        {
+          "id": "case-input:8ca0af159bce492b9fa0f0df9bbcec7c",
+          "hash": "6fba1741d8e02d6661cec1b51073d8f0e8135183f6ac516c3fc119a5679e6bd6"
+        }
+      ],
+      "status": "ok",
+      "observations": [
+        {
+          "evidence_id": "1630e735f74246b99ead739f780ce577",
+          "statement": "{\"dated_mentions\": [], \"relative_unresolved\": [\"上周\"], \"order\": \"按原材料位置，不推定事件先后\", \"conflicts\": \"不同陈述同时保留，日期本身不判真实性\"}"
+        }
+      ],
+      "limitations": [],
+      "latency_seconds": 0.0,
+      "usage": null,
+      "data_origin": "user_supplied"
+    }
+  ],
+  "recommendations": [],
+  "started_at": "2026-10-20T02:24:49.559713+00:00",
+  "execution": "live",
+  "assessment": {
+    "sufficient": true,
+    "task_scenes": [
+      {
+        "scene": "unreceived_payment",
+        "question_basis": "维修公司说没收到我们上周已经付过的维修费，催我们重付，该核实什么？"
+      }
+    ],
+    "relevant_ids": [
+      "bec-guidance"
+    ],
+    "missing": [],
+    "conflicts": [],
+    "calculation": "none"
+  },
+  "draft": {
+    "steps": [
+      {
+        "text": "核对上周那笔维修费的付款历史与往来邮件，检查当时是否有过账户变更请求。",
+        "citations": [
+          {
+            "unit_id": "bec-guidance",
+            "quote": ""
+          }
+        ],
+        "scene": "unreceived_payment",
+        "target": "上周已付的维修费",
+        "trigger": "供应商明确声称未收到此前付款"
+      }
+    ],
+    "risks": [
+      {
+        "text": "供应商称未收到款可能是支付重定向诈骗信号，需警惕账户被恶意变更。",
+        "citations": [
+          {
+            "unit_id": "bec-guidance",
+            "quote": ""
+          }
+        ]
+      }
+    ],
+    "boundaries": [
+      "本指引为公开安全建议，非Westpac内部操作规程；账户变更是核实信号，不足以证明欺诈。",
+      "PayID和双人审批以可用为条件。",
+      "不能援引同章其他条件建议。"
+    ],
+    "questions": [
+      "上周付款时是否收到过维修公司发来的账户变更邮件或通知？",
+      "本次催重付是否附带新的收款账户信息？"
+    ],
+    "scenario": null,
+    "scenario_label": "not_applicable",
+    "review_status": "pending_human_review"
+  },
+  "error": "ValueError: GROUNDING_AUDIT_QUOTE_INVALID",
+  "finished_at": "2026-10-20T02:26:02.859469+00:00",
+  "duration_seconds": 73.298,
+  "evidence": [
+    {
+      "evidence_id": "639aded9d84a4312ae20fbb34cef8483",
+      "case_id": "8ca0af159bce492b9fa0f0df9bbcec7c",
+      "case_version": 1,
+      "kind": "public_guidance",
+      "origin_id": "westpac-bec",
+      "span": {
+        "section": "Signs this may be a scam + Tips to minimise the risk",
+        "url": "https://www.westpac.com.au/security/types-of-scams/business-email-scams/",
+        "unit_id": "bec-guidance",
+        "published_at": null
+      },
+      "source_hash": "b059afc9484892dba8710b0e35111d0f2c349b57010fb340bf994f8a86c898d6",
+      "observed_at": "2026-10-20T02:24:50.995916+00:00",
+      "jurisdiction": "Australia",
+      "statement": "Signs this may be a scam\nThey request payment to a new account number.\nEven if such requests came from someone associated with you, do not make any changes to account details until you've verbally verified the request using a phone number you sourced yourself.\nA CEO, executive or senior manager requests payment to a specific account.\nPause and verify the request verbally, regardless of who the sender is or if the request is urgent.\nA supplier or employee claim they haven’t received payment.\nDo not make any more payments until you investigate the payment history and emails, to check if there were any requests made to amend account details.\nYou’re paying them for the first time.\nWhen paying someone for the first time, such as a deposit to a real estate agent’s trust account for a property purchase, validate the request and payee details before sending money. You can do this verbally or request to pay using\nPayID®\n.\n\nTips to minimise the risk of being scammed\nAlways verbally confirm any requests for urgent or redirected payments. Always use a phone number you have on file, or a publicly sourced number. Never use contact details provided in the email.\nRequest to pay using\nPayID\nif the payee has one. PayID displays the registered payee name onscreen, so if it's not your intended recipient you will know something is possibly unusual.\nRegister your business for PayID\nby using your ABN and request this is how your account is credited.\nUse multifactor authentication and dual payment approvals where available.\nIf you have a business, train your employees regularly on how to spot payment redirection scams. Empower them to question any payment related requests and verbally verify account details are correct. Update your processes to include these steps.",
+      "limitations": [
+        "公开一般安全建议，非Westpac内部操作规程；账户变更是核实信号，不足以证明欺诈。PayID和双人审批以可用为条件。",
+        "未知发布日期不能证明在案件时点已生效"
+      ]
+    },
+    {
+      "evidence_id": "605473325f0b41dab525622713ceeff7",
+      "case_id": "8ca0af159bce492b9fa0f0df9bbcec7c",
+      "case_version": 1,
+      "kind": "public_guidance",
+      "origin_id": "asic-invest",
+      "span": {
+        "section": "CHECK: Is the company/person real and licensed or authorised — full section and table",
+        "url": "https://moneysmart.gov.au/check-and-report-scams/check-before-you-invest",
+        "unit_id": "investment-check",
+        "published_at": null
+      },
+      "source_hash": "aa5cf32f7264ae72183946613c4bff566cd704e1619a6d803720c3e3f1a13107",
+      "observed_at": "2026-10-20T02:24:50.995932+00:00",
+      "jurisdiction": "Australia",
+      "statement": "## CHECK: Is the company/person real and licensed or authorised\n\nIn Australia, companies or people offering investments must have an Australian Financial Services (AFS) licence or be authorised by someone who does.\n\nAn AFS licence:\n\n  * controls what kinds of financial products they can sell\n  * gives better protection to investors if things go wrong\nIt's important to know that holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice. It doesn't guarantee the investment is safe or that you won’t lose money from dealing with them.\n\nWith a proliferation of AI-generated scam websites , online reviews, videos, and social media posts, it’s also important to not rely on contact details, links or phone numbers provided in an investment offer, text message, email, social media post or online advertisement.\nScammers misuse AFS licence details by claiming to hold a licence, using another entity’s licence number, or impersonating a licensed financial services business.\n\nBefore investing, make sure you verify the licence holder’s name and number on ASIC’s professional registers , and ensure those details match the business or investment opportunity being promoted. Relying solely on advertisements, websites or online search results can put consumers at risk.\n### How to check on a company or person\n\nIf they say they are:  | Check this:\nLicensed by ASIC (AFS licence) An authorised representative for a licensee (with an AFS licence) Offering an investment in a registered managed investment scheme  | ASIC's Professional Registers Search   * enter the name, Australian Business Number, Australian Company Number or licence number\n  * select Register: Australian financial services licensee or Australian financial services authorised representatives in drop-down menu\n  * if a website URL is listed in the register, check that it matches any website URL you have been using\nASIC Connect   * search within: Banned and Disqualified\n  * see if they have been banned from giving financial advice or managing a company\nMoneysmart Investor Alert List \n  * this is a list of suspicious companies, businesses and websites. They may be unlicensed or impersonating a real company or licensee.\nA financial adviser who can advise you on, or sell you, an investment  | Financial advisers register   * enter name, adviser number, or Australian Business Number\n  * check what they are authorised to advise on\nRegistered or Certified by ASIC and direct you to ASIC Connect to verify an investment opportunity   | ASIC Connect can be used to confirm company registration. However, registration alone doesn’t mean that a company is licensed or authorised to provide financial services.    To verify an investment opportunity, check ASIC's Professional Registers Search to see if the company is licensed or authorised.\nOffering an investment in a registered managed investment scheme   | ASIC's Professional Registers Search    * enter the scheme name, Australian Business Number, or Australian Company Number\n  * check the scheme is registered\n  * Note that registration does not mean that ASIC endorses the investment\nSubscribe to ASIC's free Company Alert service for updates on a company. You'll get an email to tell you when they've lodged forms, and which ones. You’ll also be notified of notices if the company is placed in any type of external administration, or if the details of their external administrators cease or change.",
+      "limitations": [
+        "适用澳大利亚投资核验；注册不等于获许可，获许可不等于投资安全或ASIC认可。",
+        "未知发布日期不能证明在案件时点已生效"
+      ]
+    },
+    {
+      "evidence_id": "1630e735f74246b99ead739f780ce577",
+      "case_id": "8ca0af159bce492b9fa0f0df9bbcec7c",
+      "case_version": 1,
+      "kind": "tool_observation",
+      "origin_id": "247c7507e1f24e0d971f77812ef249c6",
+      "span": {
+        "start": 0,
+        "end": 35
+      },
+      "source_hash": "9b201cd5ad3c9d044849e2bf79c56926207b0c3e02df11e7ffc31bf00541e7f7",
+      "observed_at": "2026-10-20T02:24:50.988926+00:00",
+      "jurisdiction": "Australia",
+      "statement": "{\"dated_mentions\": [], \"relative_unresolved\": [\"上周\"], \"order\": \"按原材料位置，不推定事件先后\", \"conflicts\": \"不同陈述同时保留，日期本身不判真实性\"}",
+      "limitations": [
+        "材料可能有矛盾；相对日期须由用户核对"
+      ]
+    }
+  ]
+}

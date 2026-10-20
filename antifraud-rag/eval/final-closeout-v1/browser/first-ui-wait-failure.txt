@@ -1,0 +1,11 @@
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert(text.includes('可能跳过必要核实'))
+
+    at /Users/bytedance/Documents/ChatGPT/农商行2/yuyan-bank-research-review/antifraud-rag/eval/final-closeout-v1/browser/verify-final-ui.cjs:6:583 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}

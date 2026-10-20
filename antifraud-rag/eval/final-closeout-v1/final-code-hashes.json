@@ -1,0 +1,18 @@
+{
+  "pipeline.py": "c0e861388cb980bf56e282e927c1df81894c06a48b7755f9b86b94e4248e95c3",
+  "retrieval.py": "c7cdcf434fad7d8d1b6b1a940f6c832f3a15bf1dc23769e38944b94ca118db9e",
+  "upgrade/__init__.py": "3d37c76bab5c1276b6f9b56d3707804bbfdf6f04fd95ab83ff4949a97aba1701",
+  "upgrade/agent.py": "b9db172def8595a08d2913ec9d1a89fe8e8df56bae7f3a44795f3222bce84492",
+  "upgrade/api.py": "737f654cf7d148819b070b97d149d23b56616eb94fa0c94342c9cd7dd5ce46a1",
+  "upgrade/contracts.py": "0577a326e4e520d22cd545857c34d48e678cb4bd3eec492013b75893c0dbb6d8",
+  "upgrade/graph_exercise.py": "16a0ce9290fd96340ec086d95e9920a34d553e5564594e2f36149bcdd654d0ca",
+  "upgrade/graph_lab.py": "155991ee6899464aef6be7e396f02694004034540e62bc00742d8bc6c2f8406f",
+  "upgrade/graph_sage.py": "e69ec820b4f6e9bb55614bde4651ac450595db2365b87a67539e5e9b86079ebb",
+  "upgrade/grounding.py": "c04dc544a2222f6387550c9c244ace375b65a3946e5fa801395b6fc36ff9de59",
+  "upgrade/ocr.py": "c21aadd8f123180a77b9864a134786c439d267c6c696d4b81fd971d6c37e7b93",
+  "upgrade/store.py": "1e7fe81c5e6947f8b681fae193e5fcd197458ea60023237186a500ba9b648b72",
+  "upgrade/tools.py": "301ae08a085a540f8edf4b48298dee0605b296a50075ca873927c5cce490c0f8",
+  "upgrade/training.py": "2b840b3a777f75a09b67385fe3c15e3953d2c7d3dbfb25a06ede344c627e9792",
+  "web/upgrade.js": "f20ca37a5b6c3ff4598b6066e44d48af095158748c57fe6c3411c9857afef554",
+  "web/upgrade.html": "d770cd62017bfcfc4bdb97c417508bc30a5954986291f3f5e859e937e183d7b8"
+}

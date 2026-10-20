@@ -1,0 +1,18 @@
+{
+  "errors": [],
+  "source_link_opens": true,
+  "revision_still_separate_after_accept": true,
+  "training": [
+    {
+      "name": "normal",
+      "session_id": "33b6a86d82634484b42f7a5bc772a102",
+      "mode": "replay of recorded real semantic output; mocked HTTP for UI verification only"
+    },
+    {
+      "name": "negated",
+      "session_id": "34c854a742e74889a88219bd7f9b716a",
+      "mode": "replay of recorded real semantic output; mocked HTTP for UI verification only"
+    }
+  ],
+  "actual_deterministic_tree_graph_run": "65b7968cce40457094cdc986a4ea24e3"
+}

@@ -1,0 +1,22 @@
+{
+  "run_id": "cca3e236eb0743708faf9317d22fb9cd",
+  "case_id": "74086178bfa64750bfdd1a19e179df63",
+  "case_version": 1,
+  "query": "维修公司说没收到我们上周已经付过的维修费，催我们重付，该核实什么？",
+  "status": "failed",
+  "records": [
+    {
+      "kind": "failed",
+      "at": "2026-10-20T02:22:45.980269+00:00",
+      "error": "ResearchError: MODEL_UNAVAILABLE：未配置 QWEN_API_KEY / QWEN_ENDPOINT"
+    }
+  ],
+  "tool_results": [],
+  "recommendations": [],
+  "started_at": "2026-10-20T02:22:45.974478+00:00",
+  "execution": "live",
+  "error": "ResearchError: MODEL_UNAVAILABLE：未配置 QWEN_API_KEY / QWEN_ENDPOINT",
+  "finished_at": "2026-10-20T02:22:45.980292+00:00",
+  "duration_seconds": 0.006,
+  "evidence": []
+}

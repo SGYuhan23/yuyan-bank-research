@@ -1,0 +1,22 @@
+{
+  "run_id": "237156bd297c4e5abac62a34593275c8",
+  "case_id": "b906181d38314891a1162d0d4c5b31fe",
+  "case_version": 1,
+  "query": "有人邀请我投资，发来机构登记截图与专业网页，这能证明本次邀约真实吗？",
+  "status": "failed",
+  "records": [
+    {
+      "kind": "failed",
+      "at": "2026-10-20T02:22:45.988260+00:00",
+      "error": "ResearchError: MODEL_UNAVAILABLE：未配置 QWEN_API_KEY / QWEN_ENDPOINT"
+    }
+  ],
+  "tool_results": [],
+  "recommendations": [],
+  "started_at": "2026-10-20T02:22:45.980511+00:00",
+  "execution": "live",
+  "error": "ResearchError: MODEL_UNAVAILABLE：未配置 QWEN_API_KEY / QWEN_ENDPOINT",
+  "finished_at": "2026-10-20T02:22:45.988281+00:00",
+  "duration_seconds": 0.008,
+  "evidence": []
+}

@@ -1,0 +1,162 @@
+{
+  "public": {
+    "session_id": "71783fd44a98432fb57774a90dbc1cfa",
+    "case_id": "bf85332f1266479db31bd0e206705de9",
+    "case_version": 1,
+    "basis_run_id": "bfd0f3f01a0940f4975da5109bfeacee",
+    "scenario": {
+      "scenario_id": "f716faeb49fc2611",
+      "family_id": "account_change",
+      "visible_facts": [
+        "我是采购付款人员，熟悉供应商来邮件说换收款账户。",
+        "还没有用留档电话独立口头核实。"
+      ],
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "jurisdiction": "Australia",
+      "label": "本项目编写的培训情境，非真实客户案例；待人工审核"
+    },
+    "turns": []
+  },
+  "debrief": {
+    "criteria": [
+      {
+        "criterion": "independent",
+        "initially_known": true,
+        "matched_turns": [
+          0
+        ],
+        "known_fact": "还没有用留档电话独立口头核实。",
+        "information_status": "initially_visible",
+        "omission": null,
+        "semantic_status": "pending_review"
+      },
+      {
+        "criterion": "change",
+        "initially_known": false,
+        "matched_turns": [
+          0
+        ],
+        "known_fact": "邮件要求本次付款改到新账户，未声称以前款项未收到。",
+        "information_status": "released",
+        "omission": null,
+        "semantic_status": "pending_review"
+      },
+      {
+        "criterion": "scope",
+        "initially_known": false,
+        "matched_turns": [
+          0
+        ],
+        "known_fact": "只涉及本次变更请求，其他付款未涉及。",
+        "information_status": "released",
+        "omission": null,
+        "semantic_status": "pending_review"
+      }
+    ],
+    "matched": 3,
+    "total": 3,
+    "scope_flags": [
+      {
+        "turn": 0,
+        "text": "不用电话，不必核对账户，本次直接付款。",
+        "reason": "可能跳过必要核实、扩大范围或作安全保证，待人工判定；主题命中不表示正确"
+      }
+    ],
+    "source_basis_ids": [
+      "bec-guidance"
+    ],
+    "unknowns_review": "检查是否在未设定事实时承认未知；关键词匹配不能保证问法正确",
+    "score_revisions": [],
+    "review_status": "pending_human_review",
+    "notice": "自动匹配仅定位需复核的问句，不是员工绩效或语义正确率"
+  },
+  "semantic": {
+    "status": "unavailable",
+    "error": "ResearchError: MODEL_UNAVAILABLE：未配置 QWEN_API_KEY / QWEN_ENDPOINT",
+    "draft": null,
+    "records": [],
+    "notice": "语义复盘失败；关键词主题匹配不替代人工审核"
+  },
+  "session": {
+    "session_id": "71783fd44a98432fb57774a90dbc1cfa",
+    "scenario_id": "f716faeb49fc2611",
+    "case_id": "bf85332f1266479db31bd0e206705de9",
+    "case_version": 1,
+    "basis_run_id": "bfd0f3f01a0940f4975da5109bfeacee",
+    "turns": [
+      {
+        "learner": "不用电话，不必核对账户，本次直接付款。",
+        "client": "还没有用留档电话独立口头核实。 邮件要求本次付款改到新账户，未声称以前款项未收到。 只涉及本次变更请求，其他付款未涉及。",
+        "released_keys": [
+          "independent",
+          "change",
+          "scope"
+        ]
+      }
+    ],
+    "released": [
+      "change",
+      "independent",
+      "scope"
+    ],
+    "score_revisions": [],
+    "created_at": "2026-10-20T02:22:46.038600+00:00",
+    "scenario_snapshot": {
+      "scenario_id": "f716faeb49fc2611",
+      "family_id": "account_change",
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "jurisdiction": "Australia",
+      "visible_facts": [
+        "我是采购付款人员，熟悉供应商来邮件说换收款账户。",
+        "还没有用留档电话独立口头核实。"
+      ],
+      "latent_truth": {
+        "independent": "还没有用留档电话独立口头核实。",
+        "change": "邮件要求本次付款改到新账户，未声称以前款项未收到。",
+        "scope": "只涉及本次变更请求，其他付款未涉及。"
+      },
+      "allowed_responses": {
+        "independent": "还没有用留档电话独立口头核实。",
+        "change": "邮件要求本次付款改到新账户，未声称以前款项未收到。",
+        "scope": "只涉及本次变更请求，其他付款未涉及。"
+      },
+      "critical_questions": {
+        "independent": [
+          "电话",
+          "独立",
+          "原来"
+        ],
+        "change": [
+          "变更",
+          "账号",
+          "账户"
+        ],
+        "scope": [
+          "本次",
+          "这笔",
+          "无关"
+        ]
+      },
+      "rubric": {
+        "independent": "询问并核对：还没有用留档电话独立口头核实。",
+        "change": "询问并核对：邮件要求本次付款改到新账户，未声称以前款项未收到。",
+        "scope": "询问并核对：只涉及本次变更请求，其他付款未涉及。"
+      },
+      "counterfactual_of": null,
+      "seed": 41,
+      "clue_level": 1,
+      "legitimate": false
+    },
+    "semantic_review": {
+      "status": "unavailable",
+      "error": "ResearchError: MODEL_UNAVAILABLE：未配置 QWEN_API_KEY / QWEN_ENDPOINT",
+      "draft": null,
+      "records": [],
+      "notice": "语义复盘失败；关键词主题匹配不替代人工审核"
+    }
+  }
+}

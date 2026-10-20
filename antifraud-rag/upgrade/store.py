@@ -67,7 +67,7 @@ class Store:
             if r.decision=='accept' and json.loads(result['body'])['status']!='pending_review':raise ValueError('RESULT_NOT_REVIEWABLE')
             if r.decision=='revise' and not r.revisions:raise ValueError('REVISIONS_REQUIRED')
             self.validate_evidence(c,[i for x in r.revisions for i in x.supporting_evidence_ids+x.counter_evidence_ids])
-            record={'request':r.model_dump(),'at':now(),'evidence_version_hash':digest([e.model_dump() for e in c.evidence]),'identity_notice':'local operator name, not authenticated enterprise identity','revision_notice':'human-authored revision, not model validation'}
+            record={'request':r.model_dump(),'at':now(),'evidence_version_hash':digest([e.model_dump() for e in c.evidence]),'result_hash':digest(json.loads(result['body'])),'review_scope':'entire_original_result_including_answer_risks_steps_questions_boundaries_and_evidence' if r.decision!='revise' else 'human_recommendations_only_original_result_unchanged','identity_notice':'local operator name, not authenticated enterprise identity','revision_notice':'human-authored recommendation revision stored separately; original answer unchanged, not model validation'}
             db.execute('INSERT INTO reviews VALUES(?,?)',(r.request_id,json.dumps(record,ensure_ascii=False)))
         return record
     def export(self,cid):

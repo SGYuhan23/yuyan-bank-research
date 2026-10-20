@@ -1,0 +1,17 @@
+{
+  "errors": [],
+  "historical_fixture": "cd1a053d551c43adac28760162a51cb9",
+  "historical_full_risks_visible": true,
+  "main_run_id": "4879327f7f344a79b7ccc1921b703345",
+  "actual_tools": [
+    "guidance",
+    "extract",
+    "timeline"
+  ],
+  "separate_revision": true,
+  "exported": true,
+  "stale_rejected": true,
+  "graph_run_id": "ca2478b1a0094fae9b769b467a94fe58",
+  "graph_no_llm": true,
+  "scope": "browser automation acceptance is a UI test, not human business approval"
+}

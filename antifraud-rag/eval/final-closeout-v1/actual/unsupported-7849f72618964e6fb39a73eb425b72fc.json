@@ -1,0 +1,22 @@
+{
+  "run_id": "7849f72618964e6fb39a73eb425b72fc",
+  "case_id": "f518352fa37b41ee96cd51e1de846506",
+  "case_version": 1,
+  "query": "请给出Westpac内部冻结账户的审批层级与处理时限。",
+  "status": "failed",
+  "records": [
+    {
+      "kind": "failed",
+      "at": "2026-10-20T02:22:46.003015+00:00",
+      "error": "ResearchError: MODEL_UNAVAILABLE：未配置 QWEN_API_KEY / QWEN_ENDPOINT"
+    }
+  ],
+  "tool_results": [],
+  "recommendations": [],
+  "started_at": "2026-10-20T02:22:45.997612+00:00",
+  "execution": "live",
+  "error": "ResearchError: MODEL_UNAVAILABLE：未配置 QWEN_API_KEY / QWEN_ENDPOINT",
+  "finished_at": "2026-10-20T02:22:46.003040+00:00",
+  "duration_seconds": 0.005,
+  "evidence": []
+}

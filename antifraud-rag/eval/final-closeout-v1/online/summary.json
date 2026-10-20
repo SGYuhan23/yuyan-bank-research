@@ -1,0 +1,27 @@
+[
+  {
+    "key": "seller_normal",
+    "run_id": "1cb629dd35da42f7b908669bb213425b",
+    "status": "pending_review"
+  },
+  {
+    "key": "normal",
+    "run_id": "9d7d9643f055401cae397fdbbb05be26",
+    "status": "pending_review"
+  },
+  {
+    "key": "unpaid",
+    "run_id": "699c1f327bb447b5962b3043525abe0e",
+    "status": "failed"
+  },
+  {
+    "key": "investment",
+    "run_id": "48d5c76bbc534b3695dc14301ddbadb0",
+    "status": "pending_review"
+  },
+  {
+    "key": "unsupported",
+    "run_id": "dcf97750421a48b7a946186c72de7f22",
+    "status": "needs_input"
+  }
+]

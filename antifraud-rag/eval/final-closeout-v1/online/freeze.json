@@ -1,0 +1,47 @@
+{
+  "base": "aed3c4887e921ea3562e1cafa7e3b5ad6a2a623b",
+  "at": "2026-10-20T02:23:59.690285+00:00",
+  "cases": [
+    [
+      "seller_normal",
+      "我是卖家，买家发了付款截图。我已在本人手机银行看到本次货款到账。交货判断应注意什么边界？",
+      "卖方收款"
+    ],
+    [
+      "normal",
+      "我是企业付款方，包装供应商变更收款账户，我们已经通过原先留档电话口头确认本次变更。请说明建议的适用范围与证据限制。",
+      "企业付款"
+    ],
+    [
+      "unpaid",
+      "维修公司说没收到我们上周已经付过的维修费，催我们重付，该核实什么？",
+      "已付款企业"
+    ],
+    [
+      "investment",
+      "有人邀请我投资，发来机构登记截图与专业网页，这能证明本次邀约真实吗？",
+      "投资邀约接收人"
+    ],
+    [
+      "unsupported",
+      "请给出Westpac内部冻结账户的审批层级与处理时限。",
+      "培训学员"
+    ]
+  ],
+  "scope": "known development cases, one sample each, not independent benchmark",
+  "hashes": {
+    "pipeline.py": "c0e861388cb980bf56e282e927c1df81894c06a48b7755f9b86b94e4248e95c3",
+    "upgrade/__init__.py": "3d37c76bab5c1276b6f9b56d3707804bbfdf6f04fd95ab83ff4949a97aba1701",
+    "upgrade/agent.py": "b9db172def8595a08d2913ec9d1a89fe8e8df56bae7f3a44795f3222bce84492",
+    "upgrade/api.py": "737f654cf7d148819b070b97d149d23b56616eb94fa0c94342c9cd7dd5ce46a1",
+    "upgrade/contracts.py": "0577a326e4e520d22cd545857c34d48e678cb4bd3eec492013b75893c0dbb6d8",
+    "upgrade/graph_exercise.py": "16a0ce9290fd96340ec086d95e9920a34d553e5564594e2f36149bcdd654d0ca",
+    "upgrade/graph_lab.py": "155991ee6899464aef6be7e396f02694004034540e62bc00742d8bc6c2f8406f",
+    "upgrade/graph_sage.py": "e69ec820b4f6e9bb55614bde4651ac450595db2365b87a67539e5e9b86079ebb",
+    "upgrade/grounding.py": "c04dc544a2222f6387550c9c244ace375b65a3946e5fa801395b6fc36ff9de59",
+    "upgrade/ocr.py": "c21aadd8f123180a77b9864a134786c439d267c6c696d4b81fd971d6c37e7b93",
+    "upgrade/store.py": "1e7fe81c5e6947f8b681fae193e5fcd197458ea60023237186a500ba9b648b72",
+    "upgrade/tools.py": "301ae08a085a540f8edf4b48298dee0605b296a50075ca873927c5cce490c0f8",
+    "upgrade/training.py": "49a6e57984b2978306d715f8207ec56928bc003e08d029f1ddf5e3fbb922b1af"
+  }
+}

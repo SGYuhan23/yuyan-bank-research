@@ -1,5 +1,9 @@
 # Upgrade verification ledger
 
+## 当前收尾状态
+
+最新收尾验证见[final-closeout-v1/REPORT.md](../eval/final-closeout-v1/REPORT.md)：80项本地回归、真实Qwen与embedding、浏览器审核闭环；mock、历史回放与实时工具分开记录。图实验数据和模型未更改。以下历史实验保留原版本背景。
+
 Evaluation is an exploratory small-sample comparison, not a bank pilot. Code/source and reference requirements were fixed before held-out runs (`eval/upgrade/PROTOCOL.md`, `cases.json`, batch `freeze.json`). Development paraphrases remain development, training hidden answers never enter the five-document official index. Six held-out stories are six independent designed families, not 36 independent customers. One run per system/family; all failures retained.
 
 ## References and scope

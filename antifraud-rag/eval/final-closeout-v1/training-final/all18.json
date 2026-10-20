@@ -1,0 +1,1100 @@
+[
+  {
+    "public": {
+      "scenario_id": "a28e33f334ec9e04",
+      "family_id": "seller_receipt",
+      "visible_facts": [
+        "我是卖家，买家发来付款截图，催我交货。"
+      ],
+      "source_basis_ids": [
+        "receipt-guidance"
+      ],
+      "jurisdiction": "Australia",
+      "label": "本项目编写的培训情境，非真实客户案例；待人工审核"
+    },
+    "authored_truth_for_review_only": {
+      "arrival": "尚未在自己的网银核对实际到账。",
+      "receipt": "只有买家提供的付款截图，截图不能证实实际到账。",
+      "handover": "货物尚未交付。"
+    },
+    "debrief_before_turn": {
+      "criteria": [
+        {
+          "criterion": "arrival",
+          "initially_known": false,
+          "matched_turns": [],
+          "known_fact": null,
+          "information_status": "not_yet_available",
+          "omission": "尚未获得本主题的信息；先核实，不推定隐藏事实。",
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "receipt",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "买家提供了付款截图；截图本身不能证实到账。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "handover",
+          "initially_known": false,
+          "matched_turns": [],
+          "known_fact": null,
+          "information_status": "not_yet_available",
+          "omission": "尚未获得本主题的信息；先核实，不推定隐藏事实。",
+          "semantic_status": "pending_review"
+        }
+      ],
+      "matched": 0,
+      "total": 3,
+      "scope_flags": [],
+      "source_basis_ids": [
+        "receipt-guidance"
+      ],
+      "unknowns_review": "检查是否在未设定事实时承认未知；关键词匹配不能保证问法正确",
+      "score_revisions": [],
+      "review_status": "pending_human_review",
+      "notice": "自动匹配仅定位需复核的问句，不是员工绩效或语义正确率"
+    }
+  },
+  {
+    "public": {
+      "scenario_id": "bf3032efc577f187",
+      "family_id": "seller_receipt",
+      "visible_facts": [
+        "我是卖家，买家发来付款截图，催我交货。",
+        "尚未在自己的网银核对实际到账。"
+      ],
+      "source_basis_ids": [
+        "receipt-guidance"
+      ],
+      "jurisdiction": "Australia",
+      "label": "本项目编写的培训情境，非真实客户案例；待人工审核"
+    },
+    "authored_truth_for_review_only": {
+      "arrival": "尚未在自己的网银核对实际到账。",
+      "receipt": "只有买家提供的付款截图，截图不能证实实际到账。",
+      "handover": "货物尚未交付。"
+    },
+    "debrief_before_turn": {
+      "criteria": [
+        {
+          "criterion": "arrival",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "尚未在自己的网银核对实际到账。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "receipt",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "买家提供了付款截图；截图本身不能证实到账。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "handover",
+          "initially_known": false,
+          "matched_turns": [],
+          "known_fact": null,
+          "information_status": "not_yet_available",
+          "omission": "尚未获得本主题的信息；先核实，不推定隐藏事实。",
+          "semantic_status": "pending_review"
+        }
+      ],
+      "matched": 0,
+      "total": 3,
+      "scope_flags": [],
+      "source_basis_ids": [
+        "receipt-guidance"
+      ],
+      "unknowns_review": "检查是否在未设定事实时承认未知；关键词匹配不能保证问法正确",
+      "score_revisions": [],
+      "review_status": "pending_human_review",
+      "notice": "自动匹配仅定位需复核的问句，不是员工绩效或语义正确率"
+    }
+  },
+  {
+    "public": {
+      "scenario_id": "d24f1cb3625782e7",
+      "family_id": "seller_receipt",
+      "visible_facts": [
+        "我是卖家，买家发来付款截图，催我交货。",
+        "尚未在自己的网银核对实际到账。",
+        "货物尚未交付。"
+      ],
+      "source_basis_ids": [
+        "receipt-guidance"
+      ],
+      "jurisdiction": "Australia",
+      "label": "本项目编写的培训情境，非真实客户案例；待人工审核"
+    },
+    "authored_truth_for_review_only": {
+      "arrival": "尚未在自己的网银核对实际到账。",
+      "receipt": "只有买家提供的付款截图，截图不能证实实际到账。",
+      "handover": "货物尚未交付。"
+    },
+    "debrief_before_turn": {
+      "criteria": [
+        {
+          "criterion": "arrival",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "尚未在自己的网银核对实际到账。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "receipt",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "买家提供了付款截图；截图本身不能证实到账。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "handover",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "货物尚未交付。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        }
+      ],
+      "matched": 0,
+      "total": 3,
+      "scope_flags": [],
+      "source_basis_ids": [
+        "receipt-guidance"
+      ],
+      "unknowns_review": "检查是否在未设定事实时承认未知；关键词匹配不能保证问法正确",
+      "score_revisions": [],
+      "review_status": "pending_human_review",
+      "notice": "自动匹配仅定位需复核的问句，不是员工绩效或语义正确率"
+    }
+  },
+  {
+    "public": {
+      "scenario_id": "9e88da0b37ec6411",
+      "family_id": "seller_receipt",
+      "visible_facts": [
+        "我是卖家，买家发来付款截图，催我交货。"
+      ],
+      "source_basis_ids": [
+        "receipt-guidance"
+      ],
+      "jurisdiction": "Australia",
+      "label": "本项目编写的培训情境，非真实客户案例；待人工审核"
+    },
+    "authored_truth_for_review_only": {
+      "arrival": "已在自己的网银看到本次款项实际到账。",
+      "receipt": "买家提供了付款截图；截图本身不能证实到账，本人银行核对结果另列。",
+      "handover": "货物尚未交付。"
+    },
+    "debrief_before_turn": {
+      "criteria": [
+        {
+          "criterion": "arrival",
+          "initially_known": false,
+          "matched_turns": [],
+          "known_fact": null,
+          "information_status": "not_yet_available",
+          "omission": "尚未获得本主题的信息；先核实，不推定隐藏事实。",
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "receipt",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "买家提供了付款截图；截图本身不能证实到账。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "handover",
+          "initially_known": false,
+          "matched_turns": [],
+          "known_fact": null,
+          "information_status": "not_yet_available",
+          "omission": "尚未获得本主题的信息；先核实，不推定隐藏事实。",
+          "semantic_status": "pending_review"
+        }
+      ],
+      "matched": 0,
+      "total": 3,
+      "scope_flags": [],
+      "source_basis_ids": [
+        "receipt-guidance"
+      ],
+      "unknowns_review": "检查是否在未设定事实时承认未知；关键词匹配不能保证问法正确",
+      "score_revisions": [],
+      "review_status": "pending_human_review",
+      "notice": "自动匹配仅定位需复核的问句，不是员工绩效或语义正确率"
+    }
+  },
+  {
+    "public": {
+      "scenario_id": "53a84ef8f11296f7",
+      "family_id": "seller_receipt",
+      "visible_facts": [
+        "我是卖家，买家发来付款截图，催我交货。",
+        "已在自己的网银看到本次款项实际到账。"
+      ],
+      "source_basis_ids": [
+        "receipt-guidance"
+      ],
+      "jurisdiction": "Australia",
+      "label": "本项目编写的培训情境，非真实客户案例；待人工审核"
+    },
+    "authored_truth_for_review_only": {
+      "arrival": "已在自己的网银看到本次款项实际到账。",
+      "receipt": "买家提供了付款截图；截图本身不能证实到账，本人银行核对结果另列。",
+      "handover": "货物尚未交付。"
+    },
+    "debrief_before_turn": {
+      "criteria": [
+        {
+          "criterion": "arrival",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "已在自己的网银看到本次款项实际到账。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "receipt",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "买家提供了付款截图；截图本身不能证实到账。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "handover",
+          "initially_known": false,
+          "matched_turns": [],
+          "known_fact": null,
+          "information_status": "not_yet_available",
+          "omission": "尚未获得本主题的信息；先核实，不推定隐藏事实。",
+          "semantic_status": "pending_review"
+        }
+      ],
+      "matched": 0,
+      "total": 3,
+      "scope_flags": [],
+      "source_basis_ids": [
+        "receipt-guidance"
+      ],
+      "unknowns_review": "检查是否在未设定事实时承认未知；关键词匹配不能保证问法正确",
+      "score_revisions": [],
+      "review_status": "pending_human_review",
+      "notice": "自动匹配仅定位需复核的问句，不是员工绩效或语义正确率"
+    }
+  },
+  {
+    "public": {
+      "scenario_id": "7234a4a01818d815",
+      "family_id": "seller_receipt",
+      "visible_facts": [
+        "我是卖家，买家发来付款截图，催我交货。",
+        "已在自己的网银看到本次款项实际到账。",
+        "货物尚未交付。"
+      ],
+      "source_basis_ids": [
+        "receipt-guidance"
+      ],
+      "jurisdiction": "Australia",
+      "label": "本项目编写的培训情境，非真实客户案例；待人工审核"
+    },
+    "authored_truth_for_review_only": {
+      "arrival": "已在自己的网银看到本次款项实际到账。",
+      "receipt": "买家提供了付款截图；截图本身不能证实到账，本人银行核对结果另列。",
+      "handover": "货物尚未交付。"
+    },
+    "debrief_before_turn": {
+      "criteria": [
+        {
+          "criterion": "arrival",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "已在自己的网银看到本次款项实际到账。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "receipt",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "买家提供了付款截图；截图本身不能证实到账。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "handover",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "货物尚未交付。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        }
+      ],
+      "matched": 0,
+      "total": 3,
+      "scope_flags": [],
+      "source_basis_ids": [
+        "receipt-guidance"
+      ],
+      "unknowns_review": "检查是否在未设定事实时承认未知；关键词匹配不能保证问法正确",
+      "score_revisions": [],
+      "review_status": "pending_human_review",
+      "notice": "自动匹配仅定位需复核的问句，不是员工绩效或语义正确率"
+    }
+  },
+  {
+    "public": {
+      "scenario_id": "b66f6cf70860e067",
+      "family_id": "account_change",
+      "visible_facts": [
+        "我是采购付款人员，熟悉供应商来邮件说换收款账户。"
+      ],
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "jurisdiction": "Australia",
+      "label": "本项目编写的培训情境，非真实客户案例；待人工审核"
+    },
+    "authored_truth_for_review_only": {
+      "independent": "还没有用留档电话独立口头核实。",
+      "change": "邮件要求本次付款改到新账户，未声称以前款项未收到。",
+      "scope": "只涉及本次变更请求，其他付款未涉及。"
+    },
+    "debrief_before_turn": {
+      "criteria": [
+        {
+          "criterion": "independent",
+          "initially_known": false,
+          "matched_turns": [],
+          "known_fact": null,
+          "information_status": "not_yet_available",
+          "omission": "尚未获得本主题的信息；先核实，不推定隐藏事实。",
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "change",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "熟悉供应商通过邮件提出本次收款账户变更请求。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "scope",
+          "initially_known": false,
+          "matched_turns": [],
+          "known_fact": null,
+          "information_status": "not_yet_available",
+          "omission": "尚未获得本主题的信息；先核实，不推定隐藏事实。",
+          "semantic_status": "pending_review"
+        }
+      ],
+      "matched": 0,
+      "total": 3,
+      "scope_flags": [],
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "unknowns_review": "检查是否在未设定事实时承认未知；关键词匹配不能保证问法正确",
+      "score_revisions": [],
+      "review_status": "pending_human_review",
+      "notice": "自动匹配仅定位需复核的问句，不是员工绩效或语义正确率"
+    }
+  },
+  {
+    "public": {
+      "scenario_id": "f716faeb49fc2611",
+      "family_id": "account_change",
+      "visible_facts": [
+        "我是采购付款人员，熟悉供应商来邮件说换收款账户。",
+        "还没有用留档电话独立口头核实。"
+      ],
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "jurisdiction": "Australia",
+      "label": "本项目编写的培训情境，非真实客户案例；待人工审核"
+    },
+    "authored_truth_for_review_only": {
+      "independent": "还没有用留档电话独立口头核实。",
+      "change": "邮件要求本次付款改到新账户，未声称以前款项未收到。",
+      "scope": "只涉及本次变更请求，其他付款未涉及。"
+    },
+    "debrief_before_turn": {
+      "criteria": [
+        {
+          "criterion": "independent",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "还没有用留档电话独立口头核实。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "change",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "熟悉供应商通过邮件提出本次收款账户变更请求。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "scope",
+          "initially_known": false,
+          "matched_turns": [],
+          "known_fact": null,
+          "information_status": "not_yet_available",
+          "omission": "尚未获得本主题的信息；先核实，不推定隐藏事实。",
+          "semantic_status": "pending_review"
+        }
+      ],
+      "matched": 0,
+      "total": 3,
+      "scope_flags": [],
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "unknowns_review": "检查是否在未设定事实时承认未知；关键词匹配不能保证问法正确",
+      "score_revisions": [],
+      "review_status": "pending_human_review",
+      "notice": "自动匹配仅定位需复核的问句，不是员工绩效或语义正确率"
+    }
+  },
+  {
+    "public": {
+      "scenario_id": "54f08b8859e99389",
+      "family_id": "account_change",
+      "visible_facts": [
+        "我是采购付款人员，熟悉供应商来邮件说换收款账户。",
+        "还没有用留档电话独立口头核实。",
+        "只涉及本次变更请求，其他付款未涉及。"
+      ],
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "jurisdiction": "Australia",
+      "label": "本项目编写的培训情境，非真实客户案例；待人工审核"
+    },
+    "authored_truth_for_review_only": {
+      "independent": "还没有用留档电话独立口头核实。",
+      "change": "邮件要求本次付款改到新账户，未声称以前款项未收到。",
+      "scope": "只涉及本次变更请求，其他付款未涉及。"
+    },
+    "debrief_before_turn": {
+      "criteria": [
+        {
+          "criterion": "independent",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "还没有用留档电话独立口头核实。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "change",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "熟悉供应商通过邮件提出本次收款账户变更请求。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "scope",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "只涉及本次变更请求，其他付款未涉及。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        }
+      ],
+      "matched": 0,
+      "total": 3,
+      "scope_flags": [],
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "unknowns_review": "检查是否在未设定事实时承认未知；关键词匹配不能保证问法正确",
+      "score_revisions": [],
+      "review_status": "pending_human_review",
+      "notice": "自动匹配仅定位需复核的问句，不是员工绩效或语义正确率"
+    }
+  },
+  {
+    "public": {
+      "scenario_id": "25294d30fe2e5518",
+      "family_id": "account_change",
+      "visible_facts": [
+        "我是采购付款人员，熟悉供应商来邮件说换收款账户。"
+      ],
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "jurisdiction": "Australia",
+      "label": "本项目编写的培训情境，非真实客户案例；待人工审核"
+    },
+    "authored_truth_for_review_only": {
+      "independent": "已用原先留档电话独立口头确认本次变更请求及账户信息。",
+      "change": "邮件要求本次付款改到新账户，未声称以前款项未收到。",
+      "scope": "只涉及本次变更请求，其他付款未涉及。"
+    },
+    "debrief_before_turn": {
+      "criteria": [
+        {
+          "criterion": "independent",
+          "initially_known": false,
+          "matched_turns": [],
+          "known_fact": null,
+          "information_status": "not_yet_available",
+          "omission": "尚未获得本主题的信息；先核实，不推定隐藏事实。",
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "change",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "熟悉供应商通过邮件提出本次收款账户变更请求。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "scope",
+          "initially_known": false,
+          "matched_turns": [],
+          "known_fact": null,
+          "information_status": "not_yet_available",
+          "omission": "尚未获得本主题的信息；先核实，不推定隐藏事实。",
+          "semantic_status": "pending_review"
+        }
+      ],
+      "matched": 0,
+      "total": 3,
+      "scope_flags": [],
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "unknowns_review": "检查是否在未设定事实时承认未知；关键词匹配不能保证问法正确",
+      "score_revisions": [],
+      "review_status": "pending_human_review",
+      "notice": "自动匹配仅定位需复核的问句，不是员工绩效或语义正确率"
+    }
+  },
+  {
+    "public": {
+      "scenario_id": "2a3afe39bde38857",
+      "family_id": "account_change",
+      "visible_facts": [
+        "我是采购付款人员，熟悉供应商来邮件说换收款账户。",
+        "已用原先留档电话独立口头确认本次变更请求及账户信息。"
+      ],
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "jurisdiction": "Australia",
+      "label": "本项目编写的培训情境，非真实客户案例；待人工审核"
+    },
+    "authored_truth_for_review_only": {
+      "independent": "已用原先留档电话独立口头确认本次变更请求及账户信息。",
+      "change": "邮件要求本次付款改到新账户，未声称以前款项未收到。",
+      "scope": "只涉及本次变更请求，其他付款未涉及。"
+    },
+    "debrief_before_turn": {
+      "criteria": [
+        {
+          "criterion": "independent",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "已用原先留档电话独立口头确认本次变更请求及账户信息。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "change",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "熟悉供应商通过邮件提出本次收款账户变更请求。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "scope",
+          "initially_known": false,
+          "matched_turns": [],
+          "known_fact": null,
+          "information_status": "not_yet_available",
+          "omission": "尚未获得本主题的信息；先核实，不推定隐藏事实。",
+          "semantic_status": "pending_review"
+        }
+      ],
+      "matched": 0,
+      "total": 3,
+      "scope_flags": [],
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "unknowns_review": "检查是否在未设定事实时承认未知；关键词匹配不能保证问法正确",
+      "score_revisions": [],
+      "review_status": "pending_human_review",
+      "notice": "自动匹配仅定位需复核的问句，不是员工绩效或语义正确率"
+    }
+  },
+  {
+    "public": {
+      "scenario_id": "51d81582cc2fcc1a",
+      "family_id": "account_change",
+      "visible_facts": [
+        "我是采购付款人员，熟悉供应商来邮件说换收款账户。",
+        "已用原先留档电话独立口头确认本次变更请求及账户信息。",
+        "只涉及本次变更请求，其他付款未涉及。"
+      ],
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "jurisdiction": "Australia",
+      "label": "本项目编写的培训情境，非真实客户案例；待人工审核"
+    },
+    "authored_truth_for_review_only": {
+      "independent": "已用原先留档电话独立口头确认本次变更请求及账户信息。",
+      "change": "邮件要求本次付款改到新账户，未声称以前款项未收到。",
+      "scope": "只涉及本次变更请求，其他付款未涉及。"
+    },
+    "debrief_before_turn": {
+      "criteria": [
+        {
+          "criterion": "independent",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "已用原先留档电话独立口头确认本次变更请求及账户信息。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "change",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "熟悉供应商通过邮件提出本次收款账户变更请求。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "scope",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "只涉及本次变更请求，其他付款未涉及。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        }
+      ],
+      "matched": 0,
+      "total": 3,
+      "scope_flags": [],
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "unknowns_review": "检查是否在未设定事实时承认未知；关键词匹配不能保证问法正确",
+      "score_revisions": [],
+      "review_status": "pending_human_review",
+      "notice": "自动匹配仅定位需复核的问句，不是员工绩效或语义正确率"
+    }
+  },
+  {
+    "public": {
+      "scenario_id": "a4f1e9dd7d61c1e3",
+      "family_id": "unreceived_payment",
+      "visible_facts": [
+        "我是已付款企业，供应商说上周那笔货款没收到，催再付一次。"
+      ],
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "jurisdiction": "Australia",
+      "label": "本项目编写的培训情境，非真实客户案例；待人工审核"
+    },
+    "authored_truth_for_review_only": {
+      "history": "还未核对该笔付款记录及邮件中的改账户请求。",
+      "prior": "供应商明确说上周那笔未收到；这是一项陈述。",
+      "repeat": "尚未重复支付，调查还未完成。"
+    },
+    "debrief_before_turn": {
+      "criteria": [
+        {
+          "criterion": "history",
+          "initially_known": false,
+          "matched_turns": [],
+          "known_fact": null,
+          "information_status": "not_yet_available",
+          "omission": "尚未获得本主题的信息；先核实，不推定隐藏事实。",
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "prior",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "供应商声称上周那笔款未收到，催再付一次。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "repeat",
+          "initially_known": false,
+          "matched_turns": [],
+          "known_fact": null,
+          "information_status": "not_yet_available",
+          "omission": "尚未获得本主题的信息；先核实，不推定隐藏事实。",
+          "semantic_status": "pending_review"
+        }
+      ],
+      "matched": 0,
+      "total": 3,
+      "scope_flags": [],
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "unknowns_review": "检查是否在未设定事实时承认未知；关键词匹配不能保证问法正确",
+      "score_revisions": [],
+      "review_status": "pending_human_review",
+      "notice": "自动匹配仅定位需复核的问句，不是员工绩效或语义正确率"
+    }
+  },
+  {
+    "public": {
+      "scenario_id": "94e55d7974427464",
+      "family_id": "unreceived_payment",
+      "visible_facts": [
+        "我是已付款企业，供应商说上周那笔货款没收到，催再付一次。",
+        "还未核对该笔付款记录及邮件中的改账户请求。"
+      ],
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "jurisdiction": "Australia",
+      "label": "本项目编写的培训情境，非真实客户案例；待人工审核"
+    },
+    "authored_truth_for_review_only": {
+      "history": "还未核对该笔付款记录及邮件中的改账户请求。",
+      "prior": "供应商明确说上周那笔未收到；这是一项陈述。",
+      "repeat": "尚未重复支付，调查还未完成。"
+    },
+    "debrief_before_turn": {
+      "criteria": [
+        {
+          "criterion": "history",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "还未核对该笔付款记录及邮件中的改账户请求。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "prior",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "供应商声称上周那笔款未收到，催再付一次。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "repeat",
+          "initially_known": false,
+          "matched_turns": [],
+          "known_fact": null,
+          "information_status": "not_yet_available",
+          "omission": "尚未获得本主题的信息；先核实，不推定隐藏事实。",
+          "semantic_status": "pending_review"
+        }
+      ],
+      "matched": 0,
+      "total": 3,
+      "scope_flags": [],
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "unknowns_review": "检查是否在未设定事实时承认未知；关键词匹配不能保证问法正确",
+      "score_revisions": [],
+      "review_status": "pending_human_review",
+      "notice": "自动匹配仅定位需复核的问句，不是员工绩效或语义正确率"
+    }
+  },
+  {
+    "public": {
+      "scenario_id": "053f493e8dcc6d46",
+      "family_id": "unreceived_payment",
+      "visible_facts": [
+        "我是已付款企业，供应商说上周那笔货款没收到，催再付一次。",
+        "还未核对该笔付款记录及邮件中的改账户请求。",
+        "尚未重复支付，调查还未完成。"
+      ],
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "jurisdiction": "Australia",
+      "label": "本项目编写的培训情境，非真实客户案例；待人工审核"
+    },
+    "authored_truth_for_review_only": {
+      "history": "还未核对该笔付款记录及邮件中的改账户请求。",
+      "prior": "供应商明确说上周那笔未收到；这是一项陈述。",
+      "repeat": "尚未重复支付，调查还未完成。"
+    },
+    "debrief_before_turn": {
+      "criteria": [
+        {
+          "criterion": "history",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "还未核对该笔付款记录及邮件中的改账户请求。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "prior",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "供应商声称上周那笔款未收到，催再付一次。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "repeat",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "尚未重复支付，调查还未完成。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        }
+      ],
+      "matched": 0,
+      "total": 3,
+      "scope_flags": [],
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "unknowns_review": "检查是否在未设定事实时承认未知；关键词匹配不能保证问法正确",
+      "score_revisions": [],
+      "review_status": "pending_human_review",
+      "notice": "自动匹配仅定位需复核的问句，不是员工绩效或语义正确率"
+    }
+  },
+  {
+    "public": {
+      "scenario_id": "1fdb9920ad582906",
+      "family_id": "unreceived_payment",
+      "visible_facts": [
+        "我是已付款企业，供应商说上周那笔货款没收到，催再付一次。"
+      ],
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "jurisdiction": "Australia",
+      "label": "本项目编写的培训情境，非真实客户案例；待人工审核"
+    },
+    "authored_truth_for_review_only": {
+      "history": "已核对记录和邮件并由供应商确认此前那笔款到账，无需重复支付。",
+      "prior": "供应商最初声称上周那笔款未收到，随后核对后确认已到账。",
+      "repeat": "尚未重复支付；该笔到账调查已完成，无需重复支付。"
+    },
+    "debrief_before_turn": {
+      "criteria": [
+        {
+          "criterion": "history",
+          "initially_known": false,
+          "matched_turns": [],
+          "known_fact": null,
+          "information_status": "not_yet_available",
+          "omission": "尚未获得本主题的信息；先核实，不推定隐藏事实。",
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "prior",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "供应商声称上周那笔款未收到，催再付一次。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "repeat",
+          "initially_known": false,
+          "matched_turns": [],
+          "known_fact": null,
+          "information_status": "not_yet_available",
+          "omission": "尚未获得本主题的信息；先核实，不推定隐藏事实。",
+          "semantic_status": "pending_review"
+        }
+      ],
+      "matched": 0,
+      "total": 3,
+      "scope_flags": [],
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "unknowns_review": "检查是否在未设定事实时承认未知；关键词匹配不能保证问法正确",
+      "score_revisions": [],
+      "review_status": "pending_human_review",
+      "notice": "自动匹配仅定位需复核的问句，不是员工绩效或语义正确率"
+    }
+  },
+  {
+    "public": {
+      "scenario_id": "89a53f9728926d00",
+      "family_id": "unreceived_payment",
+      "visible_facts": [
+        "我是已付款企业，供应商说上周那笔货款没收到，催再付一次。",
+        "已核对记录和邮件并由供应商确认此前那笔款到账，无需重复支付。"
+      ],
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "jurisdiction": "Australia",
+      "label": "本项目编写的培训情境，非真实客户案例；待人工审核"
+    },
+    "authored_truth_for_review_only": {
+      "history": "已核对记录和邮件并由供应商确认此前那笔款到账，无需重复支付。",
+      "prior": "供应商最初声称上周那笔款未收到，随后核对后确认已到账。",
+      "repeat": "尚未重复支付；该笔到账调查已完成，无需重复支付。"
+    },
+    "debrief_before_turn": {
+      "criteria": [
+        {
+          "criterion": "history",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "已核对记录和邮件并由供应商确认此前那笔款到账，无需重复支付。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "prior",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "供应商最初声称上周那笔款未收到，随后核对后确认已到账。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "repeat",
+          "initially_known": false,
+          "matched_turns": [],
+          "known_fact": null,
+          "information_status": "not_yet_available",
+          "omission": "尚未获得本主题的信息；先核实，不推定隐藏事实。",
+          "semantic_status": "pending_review"
+        }
+      ],
+      "matched": 0,
+      "total": 3,
+      "scope_flags": [],
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "unknowns_review": "检查是否在未设定事实时承认未知；关键词匹配不能保证问法正确",
+      "score_revisions": [],
+      "review_status": "pending_human_review",
+      "notice": "自动匹配仅定位需复核的问句，不是员工绩效或语义正确率"
+    }
+  },
+  {
+    "public": {
+      "scenario_id": "f7cffdec1f4a0a5f",
+      "family_id": "unreceived_payment",
+      "visible_facts": [
+        "我是已付款企业，供应商说上周那笔货款没收到，催再付一次。",
+        "已核对记录和邮件并由供应商确认此前那笔款到账，无需重复支付。",
+        "尚未重复支付；该笔到账调查已完成，无需重复支付。"
+      ],
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "jurisdiction": "Australia",
+      "label": "本项目编写的培训情境，非真实客户案例；待人工审核"
+    },
+    "authored_truth_for_review_only": {
+      "history": "已核对记录和邮件并由供应商确认此前那笔款到账，无需重复支付。",
+      "prior": "供应商最初声称上周那笔款未收到，随后核对后确认已到账。",
+      "repeat": "尚未重复支付；该笔到账调查已完成，无需重复支付。"
+    },
+    "debrief_before_turn": {
+      "criteria": [
+        {
+          "criterion": "history",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "已核对记录和邮件并由供应商确认此前那笔款到账，无需重复支付。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "prior",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "供应商最初声称上周那笔款未收到，随后核对后确认已到账。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        },
+        {
+          "criterion": "repeat",
+          "initially_known": true,
+          "matched_turns": [],
+          "known_fact": "尚未重复支付；该笔到账调查已完成，无需重复支付。",
+          "information_status": "initially_visible",
+          "omission": null,
+          "semantic_status": "pending_review"
+        }
+      ],
+      "matched": 0,
+      "total": 3,
+      "scope_flags": [],
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "unknowns_review": "检查是否在未设定事实时承认未知；关键词匹配不能保证问法正确",
+      "score_revisions": [],
+      "review_status": "pending_human_review",
+      "notice": "自动匹配仅定位需复核的问句，不是员工绩效或语义正确率"
+    }
+  }
+]

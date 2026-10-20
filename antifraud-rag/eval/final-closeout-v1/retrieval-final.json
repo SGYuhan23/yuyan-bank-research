@@ -1,0 +1,92 @@
+[
+  {
+    "query": "老合作方说换了卡号，让我们今天打钱，先做什么？",
+    "hit_unit_ids": [
+      "bec-guidance",
+      "bec-case",
+      "receipt-guidance"
+    ],
+    "records": [
+      {
+        "kind": "retrieval_started",
+        "method": "bm25"
+      },
+      {
+        "kind": "retrieval_attempt_completed",
+        "method": "bm25",
+        "unit_ids": [],
+        "source_ids": []
+      },
+      {
+        "kind": "retrieval_fallback",
+        "from_method": "bm25",
+        "to_method": "semantic",
+        "reason": "bm25_no_positive_score"
+      },
+      {
+        "kind": "retrieval_started",
+        "method": "semantic"
+      },
+      {
+        "kind": "retrieval_attempt_completed",
+        "method": "semantic",
+        "unit_ids": [
+          "bec-guidance",
+          "bec-case",
+          "receipt-guidance"
+        ],
+        "source_ids": [
+          "westpac-bec",
+          "scamwatch-case",
+          "westpac-receipt"
+        ]
+      }
+    ],
+    "execution": "real query embedding API, existing document vector cache allowed"
+  },
+  {
+    "query": "对方发来转账凭证，货可以给他了吗？",
+    "hit_unit_ids": [
+      "receipt-guidance",
+      "bec-case",
+      "bec-guidance"
+    ],
+    "records": [
+      {
+        "kind": "retrieval_started",
+        "method": "bm25"
+      },
+      {
+        "kind": "retrieval_attempt_completed",
+        "method": "bm25",
+        "unit_ids": [],
+        "source_ids": []
+      },
+      {
+        "kind": "retrieval_fallback",
+        "from_method": "bm25",
+        "to_method": "semantic",
+        "reason": "bm25_no_positive_score"
+      },
+      {
+        "kind": "retrieval_started",
+        "method": "semantic"
+      },
+      {
+        "kind": "retrieval_attempt_completed",
+        "method": "semantic",
+        "unit_ids": [
+          "receipt-guidance",
+          "bec-case",
+          "bec-guidance"
+        ],
+        "source_ids": [
+          "westpac-receipt",
+          "scamwatch-case",
+          "westpac-bec"
+        ]
+      }
+    ],
+    "execution": "real query embedding API, existing document vector cache allowed"
+  }
+]

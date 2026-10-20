@@ -1,0 +1,22 @@
+{
+  "run_id": "e3dec9fd94bb414eae0e8283d67e7068",
+  "case_id": "f2d86952d80044709d47693f9eda45e8",
+  "case_version": 1,
+  "query": "我是卖家，买家发了付款截图。我已在本人手机银行看到本次货款到账。交货判断应注意什么边界？",
+  "status": "failed",
+  "records": [
+    {
+      "kind": "failed",
+      "at": "2026-10-20T02:22:45.968522+00:00",
+      "error": "ResearchError: MODEL_UNAVAILABLE：未配置 QWEN_API_KEY / QWEN_ENDPOINT"
+    }
+  ],
+  "tool_results": [],
+  "recommendations": [],
+  "started_at": "2026-10-20T02:22:45.956068+00:00",
+  "execution": "live",
+  "error": "ResearchError: MODEL_UNAVAILABLE：未配置 QWEN_API_KEY / QWEN_ENDPOINT",
+  "finished_at": "2026-10-20T02:22:45.968576+00:00",
+  "duration_seconds": 0.013,
+  "evidence": []
+}

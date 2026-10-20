@@ -1,0 +1,1060 @@
+{
+  "run_id": "48d5c76bbc534b3695dc14301ddbadb0",
+  "case_id": "ed788433cdf0470aa26e4a4065f9fccb",
+  "case_version": 1,
+  "query": "有人邀请我投资，发来机构登记截图与专业网页，这能证明本次邀约真实吗？",
+  "status": "pending_review",
+  "records": [
+    {
+      "kind": "model_call",
+      "at": "2026-10-20T02:25:07.254862+00:00",
+      "phase": "plan",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 724,
+        "completion_tokens": 35,
+        "prompt_tokens": 689,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        }
+      },
+      "duration_seconds": 1.435,
+      "finish_reason": "stop",
+      "request_hash": "348c0a609035911abbad93ce38860a08b3366ec4500ad5d0fd7d23099dd3b9d6"
+    },
+    {
+      "kind": "next_action",
+      "at": "2026-10-20T02:25:07.254998+00:00",
+      "action": "call_tools",
+      "calls": [
+        {
+          "tool_name": "guidance",
+          "args": {}
+        }
+      ],
+      "questions": [],
+      "summary": "提供关于如何核实投资邀约真实性的通用安全指引。"
+    },
+    {
+      "kind": "tools_started",
+      "at": "2026-10-20T02:25:07.256138+00:00",
+      "names": [
+        "guidance"
+      ],
+      "concurrent": false
+    },
+    {
+      "kind": "retrieval_started",
+      "at": "2026-10-20T02:25:07.260682+00:00",
+      "method": "bm25"
+    },
+    {
+      "kind": "retrieval_attempt_completed",
+      "at": "2026-10-20T02:25:07.267846+00:00",
+      "method": "bm25",
+      "unit_ids": [
+        "investment-check",
+        "receipt-guidance"
+      ],
+      "source_ids": [
+        "asic-invest",
+        "westpac-receipt"
+      ]
+    },
+    {
+      "kind": "tool_completed",
+      "at": "2026-10-20T02:25:07.268158+00:00",
+      "tool": "guidance",
+      "status": "ok",
+      "call_id": "42922b0763694d4c9f4c426c5bca7d06"
+    },
+    {
+      "kind": "model_call",
+      "at": "2026-10-20T02:25:10.350903+00:00",
+      "phase": "plan",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 799,
+        "completion_tokens": 101,
+        "prompt_tokens": 698,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 3.081,
+      "finish_reason": "stop",
+      "request_hash": "08cc4b3ff3bb1800c32e7171fddff90b54725417b6191918d013e0ca7628c0b7"
+    },
+    {
+      "kind": "next_action",
+      "at": "2026-10-20T02:25:10.350982+00:00",
+      "action": "draft",
+      "calls": [],
+      "questions": [],
+      "summary": "仅凭机构登记截图与专业网页，无法证明本次投资邀约真实。正规登记信息可被伪造或冒用，网页亦可仿制；需进一步核实该机构是否持牌、业务范围是否包含所荐产品、是否存在监管警示，并独立通过官方渠道（如证监会、国家企业信用信息公示系统）验证其资质与当前状态。切勿仅凭表面材料付款或提供个人信息。"
+    },
+    {
+      "kind": "model_started",
+      "at": "2026-10-20T02:25:10.353039+00:00",
+      "phase": "evidence_adequacy"
+    },
+    {
+      "kind": "model_call",
+      "at": "2026-10-20T02:25:13.824482+00:00",
+      "phase": "evidence_adequacy",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 3600,
+        "completion_tokens": 87,
+        "prompt_tokens": 3513,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 3.471,
+      "finish_reason": "stop",
+      "request_hash": "835e29e985a23ad603b35a585c17c7e8c515db0e8d9c2c9e76cf1cac215ae5c0"
+    },
+    {
+      "kind": "adequacy_checked",
+      "at": "2026-10-20T02:25:13.824663+00:00",
+      "sufficient": true,
+      "task_scenes": [
+        {
+          "scene": "other",
+          "question_basis": "有人邀请我投资，发来机构登记截图与专业网页，这能证明本次邀约真实吗？"
+        }
+      ],
+      "relevant_ids": [
+        "investment-check"
+      ],
+      "missing": [],
+      "conflicts": [],
+      "calculation": "none"
+    },
+    {
+      "kind": "model_started",
+      "at": "2026-10-20T02:25:13.827201+00:00",
+      "phase": "generate"
+    },
+    {
+      "kind": "model_call",
+      "at": "2026-10-20T02:25:28.207535+00:00",
+      "phase": "generate",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 3948,
+        "completion_tokens": 630,
+        "prompt_tokens": 3318,
+        "prompt_tokens_details": {
+          "cached_tokens": 1920
+        }
+      },
+      "duration_seconds": 14.38,
+      "finish_reason": "stop",
+      "request_hash": "ef5096895111a905280c64d5586031ad2565dbdc557820afc2cbb47d93ab09fa"
+    },
+    {
+      "kind": "citation_materialized",
+      "at": "2026-10-20T02:25:28.207586+00:00",
+      "unit_id": "investment-check",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "kind": "citation_materialized",
+      "at": "2026-10-20T02:25:28.207645+00:00",
+      "unit_id": "investment-check",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "kind": "citation_materialized",
+      "at": "2026-10-20T02:25:28.207681+00:00",
+      "unit_id": "investment-check",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "kind": "citation_materialized",
+      "at": "2026-10-20T02:25:28.207715+00:00",
+      "unit_id": "investment-check",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "kind": "citation_materialized",
+      "at": "2026-10-20T02:25:28.207748+00:00",
+      "unit_id": "investment-check",
+      "method": "full_retrieved_section_verbatim_not_model_quote"
+    },
+    {
+      "kind": "model_started",
+      "at": "2026-10-20T02:25:28.208074+00:00",
+      "phase": "citation_entailment_review"
+    },
+    {
+      "kind": "model_call",
+      "at": "2026-10-20T02:25:53.744462+00:00",
+      "phase": "citation_entailment_review",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 8791,
+        "completion_tokens": 1119,
+        "prompt_tokens": 7672,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 25.536,
+      "finish_reason": "stop",
+      "request_hash": "ea3b886cda0ed3d83a9441a1d53e68599436d2e2b20083e15f9ea9ac278bcf99"
+    },
+    {
+      "kind": "model_output_review",
+      "at": "2026-10-20T02:25:53.744508+00:00",
+      "verdict": {
+        "pass": true,
+        "issues": [],
+        "scene_checks": [
+          {
+            "scene": "other",
+            "essential_checks_present": true,
+            "reason": "所有步骤均围绕'other'场景（投资邀约真实性核验）展开，覆盖ASIC专业登记册查证、网址匹配、禁令与警示名单核查三项核心动作，符合scope_rules中对'other'场景的隐含要求；无seller_receipt/account_change/unreceived_payment等无关场景混入。"
+          }
+        ],
+        "other_checks": [
+          {
+            "field": "risks",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "风险描述'AI生成的虚假网站……无法验证邀约真实性'直接引用原文'With a proliferation of AI-generated scam websites...'，对象为本次邀约所涉网页/截图，条件明确，来源支持。"
+          },
+          {
+            "field": "risks",
+            "index": 1,
+            "scope_supported": true,
+            "reason": "风险描述'诈骗者可能盗用真实牌照号……不可直接采信对方提供的链接'对应原文'Scammers misuse AFS licence details...'及'not rely on contact details, links or phone numbers provided...'，对象为本次邀约所涉机构及联系方式，条件与来源一致。"
+          },
+          {
+            "field": "boundaries",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "'仅适用于澳大利亚境内投资邀约核验'与原文'In Australia, companies or people offering investments must have...'及所有检查工具（ASIC、Moneysmart）地域限定完全一致。"
+          },
+          {
+            "field": "boundaries",
+            "index": 1,
+            "scope_supported": true,
+            "reason": "'ASIC注册或牌照不表示ASIC认可该投资、保证其安全或确保不亏损'是原文'It's important to know that holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice. It doesn't guarantee the investment is safe...'的准确转述。"
+          },
+          {
+            "field": "boundaries",
+            "index": 2,
+            "scope_supported": true,
+            "reason": "'登记册未列网址时，不得以网页专业性作为真实性依据'对应原文'if a website URL is listed in the register, check that it matches any website URL you have been using'及'not rely on advertisements, websites or online search results'，条件与限制完整保留。"
+          },
+          {
+            "field": "questions",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "问题'您是否已通过ASIC专业登记册独立查证了对方名称、牌照号及所列网址？'精准对应原文'enter the name, Australian Business Number, Australian Company Number or licence number'及'if a website URL is listed in the register, check that it matches...'，对象与动作明确。"
+          },
+          {
+            "field": "questions",
+            "index": 1,
+            "scope_supported": true,
+            "reason": "问题'对方是否要求您立即付款、提供个人信息或点击其发送的链接？'呼应原文'not rely on contact details, links or phone numbers provided in an investment offer...'及整体反诈语境，属合理延伸追问，未超出资料范围。"
+          }
+        ],
+        "step_checks": [
+          {
+            "index": 0,
+            "role_matches": true,
+            "target_bounded": true,
+            "condition_preserved": true,
+            "source_supported": true,
+            "reason": "text中'核实对方是否持有AFS牌照...'明确针对'本次投资邀约所涉机构'，trigger为'对方提供机构登记截图与专业网页'，与原文'Before investing, make sure you verify the licence holder’s name and number on ASIC’s professional registers...'及表格首行完全一致；target限定清晰，未泛化。"
+          },
+          {
+            "index": 1,
+            "role_matches": true,
+            "target_bounded": true,
+            "condition_preserved": true,
+            "source_supported": true,
+            "reason": "text中'核对登记册中列出的网址是否与对方提供的投资网页URL完全一致...'明确限定'如果登记册列出了网址'这一前提，target为'本次投资邀约所涉网页'，与原文'if a website URL is listed in the register, check that it matches any website URL you have been using'严格对应，条件未缺失。"
+          },
+          {
+            "index": 2,
+            "role_matches": true,
+            "target_bounded": true,
+            "condition_preserved": true,
+            "source_supported": true,
+            "reason": "text中'检查ASIC Connect中该公司是否被禁止...'及'Moneysmart投资者警示名单'均指向'本次投资邀约所涉机构'，trigger为'对方提供机构登记截图与专业网页'，与原文'ASIC Connect: search within: Banned and Disqualified'及'Moneysmart Investor Alert List'条目完全匹配，对象与动作边界清晰。"
+          }
+        ]
+      },
+      "reviewer": "same_model_not_independent_human"
+    },
+    {
+      "kind": "completed",
+      "at": "2026-10-20T02:25:53.744588+00:00",
+      "citation_check": "exact_quote_match",
+      "human_review": "pending"
+    },
+    {
+      "kind": "model_call",
+      "at": "2026-10-20T02:26:21.936367+00:00",
+      "phase": "focused_grounding",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 7108,
+        "completion_tokens": 1236,
+        "prompt_tokens": 5872,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 28.188,
+      "finish_reason": "stop",
+      "request_hash": "4319210f2424c9494809bc80a331476c08a111d96b65251cbb7f4dc703a78678"
+    },
+    {
+      "kind": "focused_grounding_raw",
+      "at": "2026-10-20T02:26:21.936473+00:00",
+      "attempt": 0,
+      "verdict": {
+        "checks": [
+          {
+            "field": "steps",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "investment-check",
+            "source_quote": "",
+            "source_span_id": "investment-check:13",
+            "reason": "原文明确要求通过ASIC专业登记册搜索公司名称、ABN、ACN或牌照号，确认其真实存在且状态有效，与该步骤完全一致。"
+          },
+          {
+            "field": "steps",
+            "index": 1,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "investment-check",
+            "source_quote": "",
+            "source_span_id": "investment-check:15",
+            "reason": "原文明确指出‘if a website URL is listed in the register, check that it matches any website URL you have been using’，直接支持核对登记册所列网址与对方提供网址是否完全一致。"
+          },
+          {
+            "field": "steps",
+            "index": 2,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "investment-check",
+            "source_quote": "",
+            "source_span_id": "investment-check:16",
+            "reason": "原文‘ASIC Connect * search within: Banned and Disqualified’及‘* see if they have been banned from giving financial advice or managing a company’支持核查禁止状态；‘Moneysmart Investor Alert List * this is a list of suspicious companies, businesses and websites’支持查阅警示名单。"
+          },
+          {
+            "field": "risks",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "investment-check",
+            "source_quote": "",
+            "source_span_id": "investment-check:7",
+            "reason": "原文‘With a proliferation of AI-generated scam websites , online reviews, videos, and social media posts’及‘it’s also important to not rely on contact details, links or phone numbers provided in an investment offer’直接支持AI生成虚假网站、仅凭专业外观/截图/网址无法验证真实性。"
+          },
+          {
+            "field": "risks",
+            "index": 1,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "investment-check",
+            "source_quote": "",
+            "source_span_id": "investment-check:8",
+            "reason": "原文‘Scammers misuse AFS licence details by claiming to hold a licence, using another entity’s licence number, or impersonating a licensed financial services business’直接支持盗用牌照号、冒用名称、谎称授权代表等风险。"
+          },
+          {
+            "field": "boundaries",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "investment-check",
+            "source_quote": "",
+            "source_span_id": "investment-check:1",
+            "reason": "原文首句‘In Australia, companies or people offering investments must have an Australian Financial Services (AFS) licence...’明确定义适用范围为澳大利亚境内投资邀约核验。"
+          },
+          {
+            "field": "boundaries",
+            "index": 1,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "investment-check",
+            "source_quote": "",
+            "source_span_id": "investment-check:5",
+            "reason": "原文‘holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice’及‘It doesn't guarantee the investment is safe...’直接支持该边界。"
+          },
+          {
+            "field": "boundaries",
+            "index": 2,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "investment-check",
+            "source_quote": "",
+            "source_span_id": "investment-check:15",
+            "reason": "原文‘if a website URL is listed in the register, check that it matches...’隐含前提：仅当登记册列有网址时才可比对；未列则不可依赖网页，与该边界完全对应。"
+          },
+          {
+            "field": "questions",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "investment-check",
+            "source_quote": "",
+            "source_span_id": "investment-check:9",
+            "reason": "原文‘Before investing, make sure you verify the licence holder’s name and number on ASIC’s professional registers , and ensure those details match the business or investment opportunity being promoted’构成对该问题的直接依据——必须独立查证名称、牌照号及（若登记册列出）所列网址。"
+          },
+          {
+            "field": "questions",
+            "index": 1,
+            "supported": false,
+            "applicable": false,
+            "already_answered": false,
+            "unit_id": null,
+            "source_quote": "",
+            "source_span_id": null,
+            "reason": "原文未提及‘立即付款’‘提供个人信息’‘点击链接’等行为作为风险信号；该问题无任何source_span支持，属额外添加，不满足‘quoted source must support this specific action/question’要求。"
+          }
+        ],
+        "coverage_ok": true,
+        "missing_essential": []
+      },
+      "reviewer": "same_provider_quote_checked_not_independent_human"
+    },
+    {
+      "kind": "focused_grounding_checked",
+      "at": "2026-10-20T02:26:21.937656+00:00",
+      "attempt": 0,
+      "issues": [
+        {
+          "field": "questions",
+          "index": 1,
+          "supported": false,
+          "applicable": false,
+          "already_answered": false,
+          "unit_id": null,
+          "source_quote": "",
+          "source_span_id": null,
+          "reason": "原文未提及‘立即付款’‘提供个人信息’‘点击链接’等行为作为风险信号；该问题无任何source_span支持，属额外添加，不满足‘quoted source must support this specific action/question’要求。"
+        }
+      ]
+    },
+    {
+      "kind": "unsupported_optional_content_removed",
+      "at": "2026-10-20T02:26:21.937700+00:00",
+      "removed": [
+        {
+          "field": "questions",
+          "index": 1,
+          "content": "对方是否要求您立即付款、提供个人信息或点击其发送的链接？"
+        }
+      ]
+    },
+    {
+      "kind": "model_started",
+      "at": "2026-10-20T02:26:21.939611+00:00",
+      "phase": "citation_entailment_review"
+    },
+    {
+      "kind": "model_call",
+      "at": "2026-10-20T02:26:46.411002+00:00",
+      "phase": "citation_entailment_review",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 8725,
+        "completion_tokens": 1071,
+        "prompt_tokens": 7654,
+        "prompt_tokens_details": {
+          "cached_tokens": 640
+        }
+      },
+      "duration_seconds": 24.47,
+      "finish_reason": "stop",
+      "request_hash": "844a07026f8e197d1ca089ee4bcaf5136378d8b2ce4f4832f9dcc0717b011362"
+    },
+    {
+      "kind": "model_output_review",
+      "at": "2026-10-20T02:26:46.411062+00:00",
+      "verdict": {
+        "pass": true,
+        "issues": [],
+        "scene_checks": [
+          {
+            "scene": "other",
+            "essential_checks_present": true,
+            "reason": "所有步骤均围绕'投资邀约真实性核验'这一other场景展开，目标明确指向本次邀约所涉机构与网页，符合question_basis。无混入seller_receipt/account_change/unreceived_payment等无关场景操作。"
+          }
+        ],
+        "other_checks": [
+          {
+            "field": "risks",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "风险描述'AI生成的虚假网站……无法验证邀约真实性'直接引用原文'With a proliferation of AI-generated scam websites...relying solely on advertisements, websites or online search results can put consumers at risk'，对象为本次邀约，条件明确。"
+          },
+          {
+            "field": "risks",
+            "index": 1,
+            "scope_supported": true,
+            "reason": "风险描述'诈骗者可能盗用真实牌照号……不可直接采信对方提供的链接'对应原文'Scammers misuse AFS licence details by claiming to hold a licence, using another entity’s licence number, or impersonating a licensed financial services business'及'not rely on contact details, links or phone numbers provided in an investment offer'，对象与条件一致。"
+          },
+          {
+            "field": "boundaries",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "'仅适用于澳大利亚境内投资邀约核验'与原文'In Australia, companies or people offering investments must have an Australian Financial Services (AFS) licence...'及region='Australia'完全匹配。"
+          },
+          {
+            "field": "boundaries",
+            "index": 1,
+            "scope_supported": true,
+            "reason": "'ASIC注册或牌照不表示ASIC认可该投资、保证其安全或确保不亏损'是原文'It's important to know that holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice. It doesn't guarantee the investment is safe or that you won’t lose money from dealing with them.'的准确转述。"
+          },
+          {
+            "field": "boundaries",
+            "index": 2,
+            "scope_supported": true,
+            "reason": "'登记册未列网址时，不得以网页专业性作为真实性依据'对应原文'if a website URL is listed in the register, check that it matches any website URL you have been using'及'not rely on...websites or online search results'，条件与限制完整。"
+          },
+          {
+            "field": "questions",
+            "index": 0,
+            "scope_supported": true,
+            "reason": "追问'您是否已通过ASIC专业登记册独立查证了对方名称、牌照号及所列网址？'精准对应步骤1、2中要求的独立核查动作，且限定于'本次邀约'，未越界。"
+          }
+        ],
+        "step_checks": [
+          {
+            "index": 0,
+            "role_matches": true,
+            "target_bounded": true,
+            "condition_preserved": true,
+            "source_supported": true,
+            "reason": "text中'核实对方是否持有AFS牌照...'明确限定'本次投资邀约所涉机构'，trigger'对方提供机构登记截图与专业网页'与原文'Before investing, make sure you verify the licence holder’s name and number on ASIC’s professional registers...'及'If they say they are: Licensed by ASIC (AFS licence)...Check this: ASIC's Professional Registers Search'完全一致；未添加额外前提或扩大范围。"
+          },
+          {
+            "index": 1,
+            "role_matches": true,
+            "target_bounded": true,
+            "condition_preserved": true,
+            "source_supported": true,
+            "reason": "text中'核对登记册中列出的网址是否与对方提供的投资网页URL完全一致...'目标为'本次投资邀约所涉网页'，trigger'如果登记册列出了网址'与原文'if a website URL is listed in the register, check that it matches any website URL you have been using'字面及逻辑完全一致；条件限定清晰，无泛化。"
+          },
+          {
+            "index": 2,
+            "role_matches": true,
+            "target_bounded": true,
+            "condition_preserved": true,
+            "source_supported": true,
+            "reason": "text中'检查ASIC Connect中该公司是否被禁止...'目标为'本次投资邀约所涉机构'，trigger'对方提供机构登记截图与专业网页'与原文'ASIC Connect * search within: Banned and Disqualified * see if they have been banned...'及'Moneysmart Investor Alert List * this is a list of suspicious companies...'完全对应；未引入未提及的核查项（如Company Alert服务），严格限于原文所列。"
+          }
+        ]
+      },
+      "reviewer": "same_model_not_independent_human"
+    },
+    {
+      "kind": "completed",
+      "at": "2026-10-20T02:26:46.411163+00:00",
+      "citation_check": "exact_quote_match",
+      "human_review": "pending"
+    },
+    {
+      "kind": "model_call",
+      "at": "2026-10-20T02:27:12.019756+00:00",
+      "phase": "focused_grounding",
+      "model_requested": "qwen-plus",
+      "model_returned": "qwen-plus",
+      "usage": {
+        "total_tokens": 6959,
+        "completion_tokens": 1120,
+        "prompt_tokens": 5839,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "duration_seconds": 25.606,
+      "finish_reason": "stop",
+      "request_hash": "fb525e83482a6a01260fa9e43e3caaff390f4c51fb81e1eca7404b374e7d9977"
+    },
+    {
+      "kind": "focused_grounding_raw",
+      "at": "2026-10-20T02:27:12.019838+00:00",
+      "attempt": 0,
+      "verdict": {
+        "checks": [
+          {
+            "field": "steps",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "investment-check",
+            "source_quote": "",
+            "source_span_id": "investment-check:13",
+            "reason": "原文明确要求通过ASIC专业登记册搜索公司名称、ABN、ACN或牌照号以确认其真实存在且牌照状态有效。"
+          },
+          {
+            "field": "steps",
+            "index": 1,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "investment-check",
+            "source_quote": "",
+            "source_span_id": "investment-check:15",
+            "reason": "原文明确指出‘if a website URL is listed in the register, check that it matches any website URL you have been using’，即仅当登记册列出了网址时才需核对匹配；若未列出，则不适用该核对动作。"
+          },
+          {
+            "field": "steps",
+            "index": 2,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "investment-check",
+            "source_quote": "",
+            "source_span_id": "investment-check:16",
+            "reason": "原文明确要求在ASIC Connect中搜索‘Banned and Disqualified’以核查是否被禁止提供金融建议或管理公司；同时Moneysmart投资者警示名单在原文investment-check:18–20中被列为独立核查项。"
+          },
+          {
+            "field": "risks",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "investment-check",
+            "source_quote": "",
+            "source_span_id": "investment-check:7",
+            "reason": "原文明确指出‘With a proliferation of AI-generated scam websites, online reviews, videos, and social media posts... not rely on contact details, links or phone numbers provided in an investment offer’，直接支持AI生成虚假网站导致专业外观不可信的风险。"
+          },
+          {
+            "field": "risks",
+            "index": 1,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "investment-check",
+            "source_quote": "",
+            "source_span_id": "investment-check:8",
+            "reason": "原文明确指出‘Scammers misuse AFS licence details by claiming to hold a licence, using another entity’s licence number, or impersonating a licensed financial services business’，直接支持盗用牌照号、冒用名称、谎称授权等风险。"
+          },
+          {
+            "field": "boundaries",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "investment-check",
+            "source_quote": "",
+            "source_span_id": "investment-check:1",
+            "reason": "原文首句‘In Australia, companies or people offering investments must have an Australian Financial Services (AFS) licence...’限定适用范围为澳大利亚境内投资邀约核验。"
+          },
+          {
+            "field": "boundaries",
+            "index": 1,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "investment-check",
+            "source_quote": "",
+            "source_span_id": "investment-check:5",
+            "reason": "原文明确指出‘holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice’，直接支持该边界。"
+          },
+          {
+            "field": "boundaries",
+            "index": 2,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "investment-check",
+            "source_quote": "",
+            "source_span_id": "investment-check:15",
+            "reason": "原文‘if a website URL is listed in the register, check that it matches...’隐含前提：仅当登记册列有网址时才可比对；若未列，则不得以网页专业性作为依据——该逻辑由原文条件句结构及investment-check:10‘Relying solely on advertisements, websites or online search results can put consumers at risk’共同支撑。"
+          },
+          {
+            "field": "questions",
+            "index": 0,
+            "supported": true,
+            "applicable": true,
+            "already_answered": false,
+            "unit_id": "investment-check",
+            "source_quote": "",
+            "source_span_id": "investment-check:9",
+            "reason": "原文明确要求‘verify the licence holder’s name and number on ASIC’s professional registers, and ensure those details match the business or investment opportunity being promoted’，该动作必须由用户主动执行并确认，问题直接对应此必要核实动作。"
+          }
+        ],
+        "coverage_ok": true,
+        "missing_essential": []
+      },
+      "reviewer": "same_provider_quote_checked_not_independent_human"
+    },
+    {
+      "kind": "focused_grounding_checked",
+      "at": "2026-10-20T02:27:12.020839+00:00",
+      "attempt": 1,
+      "issues": []
+    }
+  ],
+  "tool_results": [
+    {
+      "call_id": "42922b0763694d4c9f4c426c5bca7d06",
+      "case_id": "ed788433cdf0470aa26e4a4065f9fccb",
+      "case_version": 1,
+      "tool_name": "guidance",
+      "tool_version": "1",
+      "validated_args": {
+        "mode": "auto"
+      },
+      "args_hash": "406080f63e38c971caefb931d1dee2d764e24b8a9886c3efdd8f0049963e6a63",
+      "input_evidence": [
+        {
+          "id": "case-input:ed788433cdf0470aa26e4a4065f9fccb",
+          "hash": "827627d623731d6d1a43173d4761270dae2d185ca2f43eab0ba3ee369f9812d9"
+        }
+      ],
+      "status": "ok",
+      "observations": [
+        {
+          "evidence_id": "b0f80b3d0fc947159ce404e654ff2254",
+          "statement": "## CHECK: Is the company/person real and licensed or authorised\n\nIn Australia, companies or people offering investments must have an Australian Financial Services (AFS) licence or be authorised by someone who does.\n\nAn AFS licence:\n\n  * controls what kinds of financial products they can sell\n  * gives better protection to investors if things go wrong\nIt's important to know that holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice. It doesn't guarantee the investment is safe or that you won’t lose money from dealing with them.\n\nWith a proliferation of AI-generated scam websites , online reviews, videos, and social media posts, it’s also important to not rely on contact details, links or phone numbers provided in an investment offer, text message, email, social media post or online advertisement.\nScammers misuse AFS licence details by claiming to hold a licence, using another entity’s licence number, or impersonating a licensed financial services business.\n\nBefore investing, make sure you verify the licence holder’s name and number on ASIC’s professional registers , and ensure those details match the business or investment opportunity being promoted. Relying solely on advertisements, websites or online search results can put consumers at risk.\n### How to check on a company or person\n\nIf they say they are:  | Check this:\nLicensed by ASIC (AFS licence) An authorised representative for a licensee (with an AFS licence) Offering an investment in a registered managed investment scheme  | ASIC's Professional Registers Search   * enter the name, Australian Business Number, Australian Company Number or licence number\n  * select Register: Australian financial services licensee or Australian financial services authorised representatives in drop-down menu\n  * if a website URL is listed in the register, check that it matches any website URL you have been using\nASIC Connect   * search within: Banned and Disqualified\n  * see if they have been banned from giving financial advice or managing a company\nMoneysmart Investor Alert List \n  * this is a list of suspicious companies, businesses and websites. They may be unlicensed or impersonating a real company or licensee.\nA financial adviser who can advise you on, or sell you, an investment  | Financial advisers register   * enter name, adviser number, or Australian Business Number\n  * check what they are authorised to advise on\nRegistered or Certified by ASIC and direct you to ASIC Connect to verify an investment opportunity   | ASIC Connect can be used to confirm company registration. However, registration alone doesn’t mean that a company is licensed or authorised to provide financial services.    To verify an investment opportunity, check ASIC's Professional Registers Search to see if the company is licensed or authorised.\nOffering an investment in a registered managed investment scheme   | ASIC's Professional Registers Search    * enter the scheme name, Australian Business Number, or Australian Company Number\n  * check the scheme is registered\n  * Note that registration does not mean that ASIC endorses the investment\nSubscribe to ASIC's free Company Alert service for updates on a company. You'll get an email to tell you when they've lodged forms, and which ones. You’ll also be notified of notices if the company is placed in any type of external administration, or if the details of their external administrators cease or change.",
+          "unit": {
+            "unit_id": "investment-check",
+            "source_id": "asic-invest",
+            "title": "Check before you invest",
+            "url": "https://moneysmart.gov.au/check-and-report-scams/check-before-you-invest",
+            "material_type": "official_guidance",
+            "published_or_updated_at": null,
+            "date_status": "not_shown_in_read_section",
+            "retrieved_at": "2026-10-18T11:16:32.767626+00:00",
+            "region": "Australia",
+            "file_sha256": "aa5cf32f7264ae72183946613c4bff566cd704e1619a6d803720c3e3f1a13107",
+            "hash_scope": "saved_web_tool_section_not_original_html",
+            "acquisition_method": "web_tool_original_url_extraction_after_direct_http_403",
+            "seed_provenance": "independently_discovered_material_pack_missing",
+            "review_status": "codex_author_checked_pending_independent_review",
+            "page_or_section": "CHECK: Is the company/person real and licensed or authorised — full section and table",
+            "section": "CHECK: Is the company/person real and licensed or authorised — full section and table",
+            "text": "## CHECK: Is the company/person real and licensed or authorised\n\nIn Australia, companies or people offering investments must have an Australian Financial Services (AFS) licence or be authorised by someone who does.\n\nAn AFS licence:\n\n  * controls what kinds of financial products they can sell\n  * gives better protection to investors if things go wrong\nIt's important to know that holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice. It doesn't guarantee the investment is safe or that you won’t lose money from dealing with them.\n\nWith a proliferation of AI-generated scam websites , online reviews, videos, and social media posts, it’s also important to not rely on contact details, links or phone numbers provided in an investment offer, text message, email, social media post or online advertisement.\nScammers misuse AFS licence details by claiming to hold a licence, using another entity’s licence number, or impersonating a licensed financial services business.\n\nBefore investing, make sure you verify the licence holder’s name and number on ASIC’s professional registers , and ensure those details match the business or investment opportunity being promoted. Relying solely on advertisements, websites or online search results can put consumers at risk.\n### How to check on a company or person\n\nIf they say they are:  | Check this:\nLicensed by ASIC (AFS licence) An authorised representative for a licensee (with an AFS licence) Offering an investment in a registered managed investment scheme  | ASIC's Professional Registers Search   * enter the name, Australian Business Number, Australian Company Number or licence number\n  * select Register: Australian financial services licensee or Australian financial services authorised representatives in drop-down menu\n  * if a website URL is listed in the register, check that it matches any website URL you have been using\nASIC Connect   * search within: Banned and Disqualified\n  * see if they have been banned from giving financial advice or managing a company\nMoneysmart Investor Alert List \n  * this is a list of suspicious companies, businesses and websites. They may be unlicensed or impersonating a real company or licensee.\nA financial adviser who can advise you on, or sell you, an investment  | Financial advisers register   * enter name, adviser number, or Australian Business Number\n  * check what they are authorised to advise on\nRegistered or Certified by ASIC and direct you to ASIC Connect to verify an investment opportunity   | ASIC Connect can be used to confirm company registration. However, registration alone doesn’t mean that a company is licensed or authorised to provide financial services.    To verify an investment opportunity, check ASIC's Professional Registers Search to see if the company is licensed or authorised.\nOffering an investment in a registered managed investment scheme   | ASIC's Professional Registers Search    * enter the scheme name, Australian Business Number, or Australian Company Number\n  * check the scheme is registered\n  * Note that registration does not mean that ASIC endorses the investment\nSubscribe to ASIC's free Company Alert service for updates on a company. You'll get an email to tell you when they've lodged forms, and which ones. You’ll also be notified of notices if the company is placed in any type of external administration, or if the details of their external administrators cease or change.",
+            "search_labels": "投资 邀约 专业网页 机构登记 注册 公司 牌照 ASIC 真实 安全 website registration investment licence",
+            "limitations": "适用澳大利亚投资核验；注册不等于获许可，获许可不等于投资安全或ASIC认可。",
+            "unit_sha256": "aa5cf32f7264ae72183946613c4bff566cd704e1619a6d803720c3e3f1a13107",
+            "limitations_origin": "project_author_scope_note_not_official_quote"
+          }
+        },
+        {
+          "evidence_id": "97766d17e21944e1b99f8adb4b650275",
+          "statement": "April 2023 - PayID Scam\nBe alert to PayID Scams when selling items online\nUsing PayID is a safe and easy way to send and receive funds.\nAfter a conversation with a potential buyer through an Online Marketplace, such as Facebook or Gumtree, you're advised that you need to upgrade your PayID to a business account for you to receive the payment.\nThese scam emails state your account has been upgraded to a business account and you need to refund a deposit that has been credited to your account.\nDo not act on these emails and report the buyer/seller profile to the marketplace as a potential scam.\nReminder\n- PayID's are managed within your banking app. A PayID does not need to be upgraded or activated by making payments. For more information on how PayID's work and how you can set up a Westpac registered PayID, visit\nwestpac.com.au/payid\n.\nAlso, when selling items online, never provide the buyer with the item until you can see the funds in your account, within your own online or mobile banking. Never rely on a receipt or screenshot of a payment sent to you. Receipts can be falsified by scammers to appear as if they have made payment, when they have not.\nIf you have received an email, SMS or other request that you have identified as potentially fraudulent or which you think involves a scam account, it's always a good idea to report these through to us, before deleting it from your inbox or deleted items on your device.\nForward a copy to hoax@westpac.com.au or 0497 132 032.",
+          "unit": {
+            "unit_id": "receipt-guidance",
+            "source_id": "westpac-receipt",
+            "title": "Past Scams and Alerts | Westpac",
+            "url": "https://www.westpac.com.au/security/latest-scams/past-scams-and-alerts/",
+            "published_or_updated_at": null,
+            "date_status": "page_update_not_shown_section_dated_2023_04",
+            "retrieved_at": "2026-10-18T11:15:01.536289+00:00",
+            "region": "Australia",
+            "material_type": "bank_public_guidance",
+            "page_or_section": "April 2023 - PayID Scam",
+            "file_sha256": "cba10f00f84e9061c54b885148c1d8672d9b5940cc46cfe39c620b1b7df75bbd",
+            "review_status": "codex_author_checked_pending_independent_review",
+            "seed_provenance": "independently_discovered_official_source_material_pack_not_found",
+            "hash_scope": "original_http_html",
+            "acquisition_method": "httpx",
+            "section": "April 2023 - PayID Scam",
+            "text": "April 2023 - PayID Scam\nBe alert to PayID Scams when selling items online\nUsing PayID is a safe and easy way to send and receive funds.\nAfter a conversation with a potential buyer through an Online Marketplace, such as Facebook or Gumtree, you're advised that you need to upgrade your PayID to a business account for you to receive the payment.\nThese scam emails state your account has been upgraded to a business account and you need to refund a deposit that has been credited to your account.\nDo not act on these emails and report the buyer/seller profile to the marketplace as a potential scam.\nReminder\n- PayID's are managed within your banking app. A PayID does not need to be upgraded or activated by making payments. For more information on how PayID's work and how you can set up a Westpac registered PayID, visit\nwestpac.com.au/payid\n.\nAlso, when selling items online, never provide the buyer with the item until you can see the funds in your account, within your own online or mobile banking. Never rely on a receipt or screenshot of a payment sent to you. Receipts can be falsified by scammers to appear as if they have made payment, when they have not.\nIf you have received an email, SMS or other request that you have identified as potentially fraudulent or which you think involves a scam account, it's always a good idea to report these through to us, before deleting it from your inbox or deleted items on your device.\nForward a copy to hoax@westpac.com.au or 0497 132 032.",
+            "search_labels": "付款截图 收据 到账 网银 卖货 交货 receipt screenshot payment funds",
+            "limitations": "2023年4月公开提示，场景为网上出售物品；不能据此判定某笔交易已经到账或已构成诈骗。",
+            "unit_sha256": "7f1fbefcc331d7493401d93fcdcf9025bd980299fe97742a6b803c151981da4d",
+            "limitations_origin": "project_author_scope_note_not_official_quote",
+            "section_date": "2023-04"
+          }
+        }
+      ],
+      "limitations": [],
+      "latency_seconds": 0.012,
+      "usage": null,
+      "data_origin": "public_sources"
+    }
+  ],
+  "recommendations": [
+    {
+      "scene": "other",
+      "target": "本次投资邀约所涉机构",
+      "trigger": "对方提供机构登记截图与专业网页",
+      "action": "核实对方是否持有澳大利亚金融服务（AFS）牌照或获持牌方授权：访问ASIC专业登记册（Professional Registers Search），输入其声称的公司名称、ABN、ACN或牌照号，确认其在登记册中真实存在且牌照状态有效。",
+      "supporting_evidence_ids": [
+        "b0f80b3d0fc947159ce404e654ff2254"
+      ],
+      "unmet_conditions": [
+        "您是否已通过ASIC专业登记册独立查证了对方名称、牌照号及所列网址？"
+      ],
+      "counter_evidence_ids": [],
+      "review_status": "pending"
+    },
+    {
+      "scene": "other",
+      "target": "本次投资邀约所涉网页",
+      "trigger": "如果登记册列出了网址",
+      "action": "核对登记册中列出的网址是否与对方提供的投资网页URL完全一致；若登记册未列网址，或网址不匹配，则不能凭该网页判断邀约真实性。",
+      "supporting_evidence_ids": [
+        "b0f80b3d0fc947159ce404e654ff2254"
+      ],
+      "unmet_conditions": [
+        "您是否已通过ASIC专业登记册独立查证了对方名称、牌照号及所列网址？"
+      ],
+      "counter_evidence_ids": [],
+      "review_status": "pending"
+    },
+    {
+      "scene": "other",
+      "target": "本次投资邀约所涉机构",
+      "trigger": "对方提供机构登记截图与专业网页",
+      "action": "检查ASIC Connect中该公司是否被禁止提供金融建议或管理公司；同时查阅Moneysmart投资者警示名单，确认其是否被列入可疑主体。",
+      "supporting_evidence_ids": [
+        "b0f80b3d0fc947159ce404e654ff2254"
+      ],
+      "unmet_conditions": [
+        "您是否已通过ASIC专业登记册独立查证了对方名称、牌照号及所列网址？"
+      ],
+      "counter_evidence_ids": [],
+      "review_status": "pending"
+    }
+  ],
+  "started_at": "2026-10-20T02:25:05.810159+00:00",
+  "execution": "live",
+  "assessment": {
+    "sufficient": true,
+    "task_scenes": [
+      {
+        "scene": "other",
+        "question_basis": "有人邀请我投资，发来机构登记截图与专业网页，这能证明本次邀约真实吗？"
+      }
+    ],
+    "relevant_ids": [
+      "investment-check"
+    ],
+    "missing": [],
+    "conflicts": [],
+    "calculation": "none"
+  },
+  "draft": {
+    "steps": [
+      {
+        "text": "核实对方是否持有澳大利亚金融服务（AFS）牌照或获持牌方授权：访问ASIC专业登记册（Professional Registers Search），输入其声称的公司名称、ABN、ACN或牌照号，确认其在登记册中真实存在且牌照状态有效。",
+        "citations": [
+          {
+            "unit_id": "investment-check",
+            "quote": ""
+          }
+        ],
+        "scene": "other",
+        "target": "本次投资邀约所涉机构",
+        "trigger": "对方提供机构登记截图与专业网页"
+      },
+      {
+        "text": "核对登记册中列出的网址是否与对方提供的投资网页URL完全一致；若登记册未列网址，或网址不匹配，则不能凭该网页判断邀约真实性。",
+        "citations": [
+          {
+            "unit_id": "investment-check",
+            "quote": ""
+          }
+        ],
+        "scene": "other",
+        "target": "本次投资邀约所涉网页",
+        "trigger": "如果登记册列出了网址"
+      },
+      {
+        "text": "检查ASIC Connect中该公司是否被禁止提供金融建议或管理公司；同时查阅Moneysmart投资者警示名单，确认其是否被列入可疑主体。",
+        "citations": [
+          {
+            "unit_id": "investment-check",
+            "quote": ""
+          }
+        ],
+        "scene": "other",
+        "target": "本次投资邀约所涉机构",
+        "trigger": "对方提供机构登记截图与专业网页"
+      }
+    ],
+    "risks": [
+      {
+        "text": "AI生成的虚假网站、在线评论和社交媒体内容可能高度逼真，仅凭专业外观、截图或网址无法验证邀约真实性。",
+        "citations": [
+          {
+            "unit_id": "investment-check",
+            "quote": ""
+          }
+        ]
+      },
+      {
+        "text": "诈骗者可能盗用真实牌照号、冒用持牌机构名称，或谎称自己是授权代表，登记册信息需逐项人工核对，不可直接采信对方提供的链接或联系方式。",
+        "citations": [
+          {
+            "unit_id": "investment-check",
+            "quote": ""
+          }
+        ]
+      }
+    ],
+    "boundaries": [
+      "仅适用于澳大利亚境内投资邀约核验",
+      "ASIC注册或牌照不表示ASIC认可该投资、保证其安全或确保不亏损",
+      "登记册未列网址时，不得以网页专业性作为真实性依据"
+    ],
+    "questions": [
+      "您是否已通过ASIC专业登记册独立查证了对方名称、牌照号及所列网址？",
+      "对方是否要求您立即付款、提供个人信息或点击其发送的链接？"
+    ],
+    "scenario": null,
+    "scenario_label": "not_applicable",
+    "review_status": "pending_human_review"
+  },
+  "summary": "已形成限定对象与前提的核实建议，待人工审核。",
+  "unresolved_questions": [
+    "您是否已通过ASIC专业登记册独立查证了对方名称、牌照号及所列网址？"
+  ],
+  "limitations": [
+    "仅适用于澳大利亚境内投资邀约核验",
+    "ASIC注册或牌照不表示ASIC认可该投资、保证其安全或确保不亏损",
+    "登记册未列网址时，不得以网页专业性作为真实性依据"
+  ],
+  "answer": {
+    "steps": [
+      {
+        "text": "核实对方是否持有澳大利亚金融服务（AFS）牌照或获持牌方授权：访问ASIC专业登记册（Professional Registers Search），输入其声称的公司名称、ABN、ACN或牌照号，确认其在登记册中真实存在且牌照状态有效。",
+        "citations": [
+          {
+            "unit_id": "investment-check",
+            "quote": "## CHECK: Is the company/person real and licensed or authorised\n\nIn Australia, companies or people offering investments must have an Australian Financial Services (AFS) licence or be authorised by someone who does.\n\nAn AFS licence:\n\n  * controls what kinds of financial products they can sell\n  * gives better protection to investors if things go wrong\nIt's important to know that holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice. It doesn't guarantee the investment is safe or that you won’t lose money from dealing with them.\n\nWith a proliferation of AI-generated scam websites , online reviews, videos, and social media posts, it’s also important to not rely on contact details, links or phone numbers provided in an investment offer, text message, email, social media post or online advertisement.\nScammers misuse AFS licence details by claiming to hold a licence, using another entity’s licence number, or impersonating a licensed financial services business.\n\nBefore investing, make sure you verify the licence holder’s name and number on ASIC’s professional registers , and ensure those details match the business or investment opportunity being promoted. Relying solely on advertisements, websites or online search results can put consumers at risk.\n### How to check on a company or person\n\nIf they say they are:  | Check this:\nLicensed by ASIC (AFS licence) An authorised representative for a licensee (with an AFS licence) Offering an investment in a registered managed investment scheme  | ASIC's Professional Registers Search   * enter the name, Australian Business Number, Australian Company Number or licence number\n  * select Register: Australian financial services licensee or Australian financial services authorised representatives in drop-down menu\n  * if a website URL is listed in the register, check that it matches any website URL you have been using\nASIC Connect   * search within: Banned and Disqualified\n  * see if they have been banned from giving financial advice or managing a company\nMoneysmart Investor Alert List \n  * this is a list of suspicious companies, businesses and websites. They may be unlicensed or impersonating a real company or licensee.\nA financial adviser who can advise you on, or sell you, an investment  | Financial advisers register   * enter name, adviser number, or Australian Business Number\n  * check what they are authorised to advise on\nRegistered or Certified by ASIC and direct you to ASIC Connect to verify an investment opportunity   | ASIC Connect can be used to confirm company registration. However, registration alone doesn’t mean that a company is licensed or authorised to provide financial services.    To verify an investment opportunity, check ASIC's Professional Registers Search to see if the company is licensed or authorised.\nOffering an investment in a registered managed investment scheme   | ASIC's Professional Registers Search    * enter the scheme name, Australian Business Number, or Australian Company Number\n  * check the scheme is registered\n  * Note that registration does not mean that ASIC endorses the investment\nSubscribe to ASIC's free Company Alert service for updates on a company. You'll get an email to tell you when they've lodged forms, and which ones. You’ll also be notified of notices if the company is placed in any type of external administration, or if the details of their external administrators cease or change."
+          }
+        ],
+        "scene": "other",
+        "target": "本次投资邀约所涉机构",
+        "trigger": "对方提供机构登记截图与专业网页"
+      },
+      {
+        "text": "核对登记册中列出的网址是否与对方提供的投资网页URL完全一致；若登记册未列网址，或网址不匹配，则不能凭该网页判断邀约真实性。",
+        "citations": [
+          {
+            "unit_id": "investment-check",
+            "quote": "## CHECK: Is the company/person real and licensed or authorised\n\nIn Australia, companies or people offering investments must have an Australian Financial Services (AFS) licence or be authorised by someone who does.\n\nAn AFS licence:\n\n  * controls what kinds of financial products they can sell\n  * gives better protection to investors if things go wrong\nIt's important to know that holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice. It doesn't guarantee the investment is safe or that you won’t lose money from dealing with them.\n\nWith a proliferation of AI-generated scam websites , online reviews, videos, and social media posts, it’s also important to not rely on contact details, links or phone numbers provided in an investment offer, text message, email, social media post or online advertisement.\nScammers misuse AFS licence details by claiming to hold a licence, using another entity’s licence number, or impersonating a licensed financial services business.\n\nBefore investing, make sure you verify the licence holder’s name and number on ASIC’s professional registers , and ensure those details match the business or investment opportunity being promoted. Relying solely on advertisements, websites or online search results can put consumers at risk.\n### How to check on a company or person\n\nIf they say they are:  | Check this:\nLicensed by ASIC (AFS licence) An authorised representative for a licensee (with an AFS licence) Offering an investment in a registered managed investment scheme  | ASIC's Professional Registers Search   * enter the name, Australian Business Number, Australian Company Number or licence number\n  * select Register: Australian financial services licensee or Australian financial services authorised representatives in drop-down menu\n  * if a website URL is listed in the register, check that it matches any website URL you have been using\nASIC Connect   * search within: Banned and Disqualified\n  * see if they have been banned from giving financial advice or managing a company\nMoneysmart Investor Alert List \n  * this is a list of suspicious companies, businesses and websites. They may be unlicensed or impersonating a real company or licensee.\nA financial adviser who can advise you on, or sell you, an investment  | Financial advisers register   * enter name, adviser number, or Australian Business Number\n  * check what they are authorised to advise on\nRegistered or Certified by ASIC and direct you to ASIC Connect to verify an investment opportunity   | ASIC Connect can be used to confirm company registration. However, registration alone doesn’t mean that a company is licensed or authorised to provide financial services.    To verify an investment opportunity, check ASIC's Professional Registers Search to see if the company is licensed or authorised.\nOffering an investment in a registered managed investment scheme   | ASIC's Professional Registers Search    * enter the scheme name, Australian Business Number, or Australian Company Number\n  * check the scheme is registered\n  * Note that registration does not mean that ASIC endorses the investment\nSubscribe to ASIC's free Company Alert service for updates on a company. You'll get an email to tell you when they've lodged forms, and which ones. You’ll also be notified of notices if the company is placed in any type of external administration, or if the details of their external administrators cease or change."
+          }
+        ],
+        "scene": "other",
+        "target": "本次投资邀约所涉网页",
+        "trigger": "如果登记册列出了网址"
+      },
+      {
+        "text": "检查ASIC Connect中该公司是否被禁止提供金融建议或管理公司；同时查阅Moneysmart投资者警示名单，确认其是否被列入可疑主体。",
+        "citations": [
+          {
+            "unit_id": "investment-check",
+            "quote": "## CHECK: Is the company/person real and licensed or authorised\n\nIn Australia, companies or people offering investments must have an Australian Financial Services (AFS) licence or be authorised by someone who does.\n\nAn AFS licence:\n\n  * controls what kinds of financial products they can sell\n  * gives better protection to investors if things go wrong\nIt's important to know that holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice. It doesn't guarantee the investment is safe or that you won’t lose money from dealing with them.\n\nWith a proliferation of AI-generated scam websites , online reviews, videos, and social media posts, it’s also important to not rely on contact details, links or phone numbers provided in an investment offer, text message, email, social media post or online advertisement.\nScammers misuse AFS licence details by claiming to hold a licence, using another entity’s licence number, or impersonating a licensed financial services business.\n\nBefore investing, make sure you verify the licence holder’s name and number on ASIC’s professional registers , and ensure those details match the business or investment opportunity being promoted. Relying solely on advertisements, websites or online search results can put consumers at risk.\n### How to check on a company or person\n\nIf they say they are:  | Check this:\nLicensed by ASIC (AFS licence) An authorised representative for a licensee (with an AFS licence) Offering an investment in a registered managed investment scheme  | ASIC's Professional Registers Search   * enter the name, Australian Business Number, Australian Company Number or licence number\n  * select Register: Australian financial services licensee or Australian financial services authorised representatives in drop-down menu\n  * if a website URL is listed in the register, check that it matches any website URL you have been using\nASIC Connect   * search within: Banned and Disqualified\n  * see if they have been banned from giving financial advice or managing a company\nMoneysmart Investor Alert List \n  * this is a list of suspicious companies, businesses and websites. They may be unlicensed or impersonating a real company or licensee.\nA financial adviser who can advise you on, or sell you, an investment  | Financial advisers register   * enter name, adviser number, or Australian Business Number\n  * check what they are authorised to advise on\nRegistered or Certified by ASIC and direct you to ASIC Connect to verify an investment opportunity   | ASIC Connect can be used to confirm company registration. However, registration alone doesn’t mean that a company is licensed or authorised to provide financial services.    To verify an investment opportunity, check ASIC's Professional Registers Search to see if the company is licensed or authorised.\nOffering an investment in a registered managed investment scheme   | ASIC's Professional Registers Search    * enter the scheme name, Australian Business Number, or Australian Company Number\n  * check the scheme is registered\n  * Note that registration does not mean that ASIC endorses the investment\nSubscribe to ASIC's free Company Alert service for updates on a company. You'll get an email to tell you when they've lodged forms, and which ones. You’ll also be notified of notices if the company is placed in any type of external administration, or if the details of their external administrators cease or change."
+          }
+        ],
+        "scene": "other",
+        "target": "本次投资邀约所涉机构",
+        "trigger": "对方提供机构登记截图与专业网页"
+      }
+    ],
+    "risks": [
+      {
+        "text": "AI生成的虚假网站、在线评论和社交媒体内容可能高度逼真，仅凭专业外观、截图或网址无法验证邀约真实性。",
+        "citations": [
+          {
+            "unit_id": "investment-check",
+            "quote": "## CHECK: Is the company/person real and licensed or authorised\n\nIn Australia, companies or people offering investments must have an Australian Financial Services (AFS) licence or be authorised by someone who does.\n\nAn AFS licence:\n\n  * controls what kinds of financial products they can sell\n  * gives better protection to investors if things go wrong\nIt's important to know that holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice. It doesn't guarantee the investment is safe or that you won’t lose money from dealing with them.\n\nWith a proliferation of AI-generated scam websites , online reviews, videos, and social media posts, it’s also important to not rely on contact details, links or phone numbers provided in an investment offer, text message, email, social media post or online advertisement.\nScammers misuse AFS licence details by claiming to hold a licence, using another entity’s licence number, or impersonating a licensed financial services business.\n\nBefore investing, make sure you verify the licence holder’s name and number on ASIC’s professional registers , and ensure those details match the business or investment opportunity being promoted. Relying solely on advertisements, websites or online search results can put consumers at risk.\n### How to check on a company or person\n\nIf they say they are:  | Check this:\nLicensed by ASIC (AFS licence) An authorised representative for a licensee (with an AFS licence) Offering an investment in a registered managed investment scheme  | ASIC's Professional Registers Search   * enter the name, Australian Business Number, Australian Company Number or licence number\n  * select Register: Australian financial services licensee or Australian financial services authorised representatives in drop-down menu\n  * if a website URL is listed in the register, check that it matches any website URL you have been using\nASIC Connect   * search within: Banned and Disqualified\n  * see if they have been banned from giving financial advice or managing a company\nMoneysmart Investor Alert List \n  * this is a list of suspicious companies, businesses and websites. They may be unlicensed or impersonating a real company or licensee.\nA financial adviser who can advise you on, or sell you, an investment  | Financial advisers register   * enter name, adviser number, or Australian Business Number\n  * check what they are authorised to advise on\nRegistered or Certified by ASIC and direct you to ASIC Connect to verify an investment opportunity   | ASIC Connect can be used to confirm company registration. However, registration alone doesn’t mean that a company is licensed or authorised to provide financial services.    To verify an investment opportunity, check ASIC's Professional Registers Search to see if the company is licensed or authorised.\nOffering an investment in a registered managed investment scheme   | ASIC's Professional Registers Search    * enter the scheme name, Australian Business Number, or Australian Company Number\n  * check the scheme is registered\n  * Note that registration does not mean that ASIC endorses the investment\nSubscribe to ASIC's free Company Alert service for updates on a company. You'll get an email to tell you when they've lodged forms, and which ones. You’ll also be notified of notices if the company is placed in any type of external administration, or if the details of their external administrators cease or change."
+          }
+        ]
+      },
+      {
+        "text": "诈骗者可能盗用真实牌照号、冒用持牌机构名称，或谎称自己是授权代表，登记册信息需逐项人工核对，不可直接采信对方提供的链接或联系方式。",
+        "citations": [
+          {
+            "unit_id": "investment-check",
+            "quote": "## CHECK: Is the company/person real and licensed or authorised\n\nIn Australia, companies or people offering investments must have an Australian Financial Services (AFS) licence or be authorised by someone who does.\n\nAn AFS licence:\n\n  * controls what kinds of financial products they can sell\n  * gives better protection to investors if things go wrong\nIt's important to know that holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice. It doesn't guarantee the investment is safe or that you won’t lose money from dealing with them.\n\nWith a proliferation of AI-generated scam websites , online reviews, videos, and social media posts, it’s also important to not rely on contact details, links or phone numbers provided in an investment offer, text message, email, social media post or online advertisement.\nScammers misuse AFS licence details by claiming to hold a licence, using another entity’s licence number, or impersonating a licensed financial services business.\n\nBefore investing, make sure you verify the licence holder’s name and number on ASIC’s professional registers , and ensure those details match the business or investment opportunity being promoted. Relying solely on advertisements, websites or online search results can put consumers at risk.\n### How to check on a company or person\n\nIf they say they are:  | Check this:\nLicensed by ASIC (AFS licence) An authorised representative for a licensee (with an AFS licence) Offering an investment in a registered managed investment scheme  | ASIC's Professional Registers Search   * enter the name, Australian Business Number, Australian Company Number or licence number\n  * select Register: Australian financial services licensee or Australian financial services authorised representatives in drop-down menu\n  * if a website URL is listed in the register, check that it matches any website URL you have been using\nASIC Connect   * search within: Banned and Disqualified\n  * see if they have been banned from giving financial advice or managing a company\nMoneysmart Investor Alert List \n  * this is a list of suspicious companies, businesses and websites. They may be unlicensed or impersonating a real company or licensee.\nA financial adviser who can advise you on, or sell you, an investment  | Financial advisers register   * enter name, adviser number, or Australian Business Number\n  * check what they are authorised to advise on\nRegistered or Certified by ASIC and direct you to ASIC Connect to verify an investment opportunity   | ASIC Connect can be used to confirm company registration. However, registration alone doesn’t mean that a company is licensed or authorised to provide financial services.    To verify an investment opportunity, check ASIC's Professional Registers Search to see if the company is licensed or authorised.\nOffering an investment in a registered managed investment scheme   | ASIC's Professional Registers Search    * enter the scheme name, Australian Business Number, or Australian Company Number\n  * check the scheme is registered\n  * Note that registration does not mean that ASIC endorses the investment\nSubscribe to ASIC's free Company Alert service for updates on a company. You'll get an email to tell you when they've lodged forms, and which ones. You’ll also be notified of notices if the company is placed in any type of external administration, or if the details of their external administrators cease or change."
+          }
+        ]
+      }
+    ],
+    "boundaries": [
+      "仅适用于澳大利亚境内投资邀约核验",
+      "ASIC注册或牌照不表示ASIC认可该投资、保证其安全或确保不亏损",
+      "登记册未列网址时，不得以网页专业性作为真实性依据"
+    ],
+    "questions": [
+      "您是否已通过ASIC专业登记册独立查证了对方名称、牌照号及所列网址？"
+    ],
+    "scenario": null,
+    "scenario_label": "not_applicable",
+    "review_status": "pending_human_review"
+  },
+  "finished_at": "2026-10-20T02:27:12.021516+00:00",
+  "duration_seconds": 126.209,
+  "evidence": [
+    {
+      "evidence_id": "b0f80b3d0fc947159ce404e654ff2254",
+      "case_id": "ed788433cdf0470aa26e4a4065f9fccb",
+      "case_version": 1,
+      "kind": "public_guidance",
+      "origin_id": "asic-invest",
+      "span": {
+        "section": "CHECK: Is the company/person real and licensed or authorised — full section and table",
+        "url": "https://moneysmart.gov.au/check-and-report-scams/check-before-you-invest",
+        "unit_id": "investment-check",
+        "published_at": null
+      },
+      "source_hash": "aa5cf32f7264ae72183946613c4bff566cd704e1619a6d803720c3e3f1a13107",
+      "observed_at": "2026-10-20T02:25:07.267936+00:00",
+      "jurisdiction": "Australia",
+      "statement": "## CHECK: Is the company/person real and licensed or authorised\n\nIn Australia, companies or people offering investments must have an Australian Financial Services (AFS) licence or be authorised by someone who does.\n\nAn AFS licence:\n\n  * controls what kinds of financial products they can sell\n  * gives better protection to investors if things go wrong\nIt's important to know that holding an AFS licence doesn't mean that ASIC endorses the company, financial product, or advice. It doesn't guarantee the investment is safe or that you won’t lose money from dealing with them.\n\nWith a proliferation of AI-generated scam websites , online reviews, videos, and social media posts, it’s also important to not rely on contact details, links or phone numbers provided in an investment offer, text message, email, social media post or online advertisement.\nScammers misuse AFS licence details by claiming to hold a licence, using another entity’s licence number, or impersonating a licensed financial services business.\n\nBefore investing, make sure you verify the licence holder’s name and number on ASIC’s professional registers , and ensure those details match the business or investment opportunity being promoted. Relying solely on advertisements, websites or online search results can put consumers at risk.\n### How to check on a company or person\n\nIf they say they are:  | Check this:\nLicensed by ASIC (AFS licence) An authorised representative for a licensee (with an AFS licence) Offering an investment in a registered managed investment scheme  | ASIC's Professional Registers Search   * enter the name, Australian Business Number, Australian Company Number or licence number\n  * select Register: Australian financial services licensee or Australian financial services authorised representatives in drop-down menu\n  * if a website URL is listed in the register, check that it matches any website URL you have been using\nASIC Connect   * search within: Banned and Disqualified\n  * see if they have been banned from giving financial advice or managing a company\nMoneysmart Investor Alert List \n  * this is a list of suspicious companies, businesses and websites. They may be unlicensed or impersonating a real company or licensee.\nA financial adviser who can advise you on, or sell you, an investment  | Financial advisers register   * enter name, adviser number, or Australian Business Number\n  * check what they are authorised to advise on\nRegistered or Certified by ASIC and direct you to ASIC Connect to verify an investment opportunity   | ASIC Connect can be used to confirm company registration. However, registration alone doesn’t mean that a company is licensed or authorised to provide financial services.    To verify an investment opportunity, check ASIC's Professional Registers Search to see if the company is licensed or authorised.\nOffering an investment in a registered managed investment scheme   | ASIC's Professional Registers Search    * enter the scheme name, Australian Business Number, or Australian Company Number\n  * check the scheme is registered\n  * Note that registration does not mean that ASIC endorses the investment\nSubscribe to ASIC's free Company Alert service for updates on a company. You'll get an email to tell you when they've lodged forms, and which ones. You’ll also be notified of notices if the company is placed in any type of external administration, or if the details of their external administrators cease or change.",
+      "limitations": [
+        "适用澳大利亚投资核验；注册不等于获许可，获许可不等于投资安全或ASIC认可。",
+        "未知发布日期不能证明在案件时点已生效"
+      ]
+    },
+    {
+      "evidence_id": "97766d17e21944e1b99f8adb4b650275",
+      "case_id": "ed788433cdf0470aa26e4a4065f9fccb",
+      "case_version": 1,
+      "kind": "public_guidance",
+      "origin_id": "westpac-receipt",
+      "span": {
+        "section": "April 2023 - PayID Scam",
+        "url": "https://www.westpac.com.au/security/latest-scams/past-scams-and-alerts/",
+        "unit_id": "receipt-guidance",
+        "published_at": null
+      },
+      "source_hash": "7f1fbefcc331d7493401d93fcdcf9025bd980299fe97742a6b803c151981da4d",
+      "observed_at": "2026-10-20T02:25:07.267966+00:00",
+      "jurisdiction": "Australia",
+      "statement": "April 2023 - PayID Scam\nBe alert to PayID Scams when selling items online\nUsing PayID is a safe and easy way to send and receive funds.\nAfter a conversation with a potential buyer through an Online Marketplace, such as Facebook or Gumtree, you're advised that you need to upgrade your PayID to a business account for you to receive the payment.\nThese scam emails state your account has been upgraded to a business account and you need to refund a deposit that has been credited to your account.\nDo not act on these emails and report the buyer/seller profile to the marketplace as a potential scam.\nReminder\n- PayID's are managed within your banking app. A PayID does not need to be upgraded or activated by making payments. For more information on how PayID's work and how you can set up a Westpac registered PayID, visit\nwestpac.com.au/payid\n.\nAlso, when selling items online, never provide the buyer with the item until you can see the funds in your account, within your own online or mobile banking. Never rely on a receipt or screenshot of a payment sent to you. Receipts can be falsified by scammers to appear as if they have made payment, when they have not.\nIf you have received an email, SMS or other request that you have identified as potentially fraudulent or which you think involves a scam account, it's always a good idea to report these through to us, before deleting it from your inbox or deleted items on your device.\nForward a copy to hoax@westpac.com.au or 0497 132 032.",
+      "limitations": [
+        "2023年4月公开提示，场景为网上出售物品；不能据此判定某笔交易已经到账或已构成诈骗。",
+        "未知发布日期不能证明在案件时点已生效"
+      ]
+    }
+  ]
+}

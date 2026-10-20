@@ -1,0 +1,284 @@
+{
+  "public": {
+    "session_id": "dda3ff49f15f4fba8028c0fc1647956a",
+    "case_id": "51cbe849b2034da786a9ffba74c9de53",
+    "case_version": 1,
+    "basis_run_id": "3d06819bd6d743a9bc3054ac4c7345ab",
+    "scenario": {
+      "scenario_id": "f716faeb49fc2611",
+      "family_id": "account_change",
+      "visible_facts": [
+        "我是采购付款人员，熟悉供应商来邮件说换收款账户。",
+        "还没有用留档电话独立口头核实。"
+      ],
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "jurisdiction": "Australia",
+      "label": "本项目编写的培训情境，非真实客户案例；待人工审核"
+    },
+    "turns": []
+  },
+  "debrief": {
+    "criteria": [
+      {
+        "criterion": "independent",
+        "initially_known": true,
+        "matched_turns": [
+          0
+        ],
+        "known_fact": "还没有用留档电话独立口头核实。",
+        "information_status": "initially_visible",
+        "omission": null,
+        "semantic_status": "pending_review"
+      },
+      {
+        "criterion": "change",
+        "initially_known": false,
+        "matched_turns": [
+          0
+        ],
+        "known_fact": "邮件要求本次付款改到新账户，未声称以前款项未收到。",
+        "information_status": "released",
+        "omission": null,
+        "semantic_status": "pending_review"
+      },
+      {
+        "criterion": "scope",
+        "initially_known": false,
+        "matched_turns": [
+          0
+        ],
+        "known_fact": "只涉及本次变更请求，其他付款未涉及。",
+        "information_status": "released",
+        "omission": null,
+        "semantic_status": "pending_review"
+      }
+    ],
+    "matched": 3,
+    "total": 3,
+    "scope_flags": [
+      {
+        "turn": 0,
+        "text": "不用电话，不必核对账户，本次直接付款。",
+        "reason": "可能跳过必要核实、扩大范围或作安全保证，待人工判定；主题命中不表示正确"
+      }
+    ],
+    "source_basis_ids": [
+      "bec-guidance"
+    ],
+    "unknowns_review": "检查是否在未设定事实时承认未知；关键词匹配不能保证问法正确",
+    "score_revisions": [],
+    "review_status": "pending_human_review",
+    "notice": "自动匹配仅定位需复核的问句，不是员工绩效或语义正确率"
+  },
+  "semantic": {
+    "status": "completed",
+    "result": {
+      "checks": [
+        {
+          "dimension": "independent",
+          "turn": 0,
+          "quote": "不用电话，不必核对账户，本次直接付款。",
+          "finding": "学员明确否定‘用留档电话独立口头核实’这一必要步骤，与visible_initial_facts中‘还没有用留档电话独立口头核实’及criterion_information中该条semantic_status为pending_review的事实冲突；依据Westpac指引‘do not make any changes... until you've verbally verified... using a phone number you sourced yourself’，此为强制核实动作，不可跳过。",
+          "status": "incorrect"
+        },
+        {
+          "dimension": "change",
+          "turn": 0,
+          "quote": "不用电话，不必核对账户，本次直接付款。",
+          "finding": "学员未质疑或确认‘邮件要求本次付款改到新账户’这一关键变更事实（criterion_information中change为released且matched_turns=[0]），但其陈述隐含接受变更前提；然而因未执行独立核实，该变更请求的真实性仍属未验证状态，不能视为已确认。此处未体现对change条件的主动识别或风险意识。",
+          "status": "uncertain"
+        },
+        {
+          "dimension": "scope",
+          "turn": 0,
+          "quote": "不用电话，不必核对账户，本次直接付款。",
+          "finding": "学员未提及或确认‘只涉及本次变更请求，其他付款未涉及’这一范围限定（criterion_information中scope为released且matched_turns=[0]）；其表述聚焦于‘本次’，但未显性识别scope作为风险控制边界（如排除历史未收款主张、避免扩大验证范围），亦未说明是否已排除其他付款关联性。",
+          "status": "missing"
+        }
+      ],
+      "limitations": [
+        "Westpac指引明确要求‘verbally verify the request using a phone number you sourced yourself’，学员‘不用电话’直接违反该核心控制点；‘不必核对账户’进一步表明其忽略账户变更本身即为高风险信号。",
+        "visible_initial_facts中‘还没有用留档电话独立口头核实’是已知待补救项，学员却将其正当化为可省略步骤，属于对必要核实步骤的根本性误判。",
+        "criterion_information中change和scope虽已在首轮对话中由client释放，但学员未在回应中引用、确认或基于其展开判断，仅单向宣告操作决定，未体现证据使用意识。"
+      ]
+    },
+    "records": [
+      {
+        "kind": "model_call",
+        "phase": "training_debrief",
+        "model_requested": "qwen-plus",
+        "model_returned": "qwen-plus",
+        "usage": {
+          "total_tokens": 1877,
+          "completion_tokens": 546,
+          "prompt_tokens": 1331,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "duration_seconds": 13.204,
+        "finish_reason": "stop",
+        "request_hash": "08efa0287efb4a85ac4d58496cdb4aab5dd8750f84e5ebc7f37ee393ebe8256e"
+      }
+    ],
+    "reviewer": "same Qwen; pending human review"
+  },
+  "session": {
+    "session_id": "dda3ff49f15f4fba8028c0fc1647956a",
+    "scenario_id": "f716faeb49fc2611",
+    "case_id": "51cbe849b2034da786a9ffba74c9de53",
+    "case_version": 1,
+    "basis_run_id": "3d06819bd6d743a9bc3054ac4c7345ab",
+    "turns": [
+      {
+        "learner": "不用电话，不必核对账户，本次直接付款。",
+        "client": "还没有用留档电话独立口头核实。 邮件要求本次付款改到新账户，未声称以前款项未收到。 只涉及本次变更请求，其他付款未涉及。",
+        "released_keys": [
+          "independent",
+          "change",
+          "scope"
+        ]
+      }
+    ],
+    "released": [
+      "change",
+      "independent",
+      "scope"
+    ],
+    "score_revisions": [],
+    "created_at": "2026-10-20T02:27:26.817844+00:00",
+    "scenario_snapshot": {
+      "scenario_id": "f716faeb49fc2611",
+      "family_id": "account_change",
+      "source_basis_ids": [
+        "bec-guidance"
+      ],
+      "jurisdiction": "Australia",
+      "visible_facts": [
+        "我是采购付款人员，熟悉供应商来邮件说换收款账户。",
+        "还没有用留档电话独立口头核实。"
+      ],
+      "latent_truth": {
+        "independent": "还没有用留档电话独立口头核实。",
+        "change": "邮件要求本次付款改到新账户，未声称以前款项未收到。",
+        "scope": "只涉及本次变更请求，其他付款未涉及。"
+      },
+      "allowed_responses": {
+        "independent": "还没有用留档电话独立口头核实。",
+        "change": "邮件要求本次付款改到新账户，未声称以前款项未收到。",
+        "scope": "只涉及本次变更请求，其他付款未涉及。"
+      },
+      "critical_questions": {
+        "independent": [
+          "电话",
+          "独立",
+          "原来"
+        ],
+        "change": [
+          "变更",
+          "账号",
+          "账户"
+        ],
+        "scope": [
+          "本次",
+          "这笔",
+          "无关"
+        ]
+      },
+      "rubric": {
+        "independent": "询问并核对：还没有用留档电话独立口头核实。",
+        "change": "询问并核对：邮件要求本次付款改到新账户，未声称以前款项未收到。",
+        "scope": "询问并核对：只涉及本次变更请求，其他付款未涉及。"
+      },
+      "counterfactual_of": null,
+      "seed": 41,
+      "clue_level": 1,
+      "legitimate": false
+    },
+    "semantic_review_draft": {
+      "checks": [
+        {
+          "dimension": "independent",
+          "turn": 0,
+          "quote": "不用电话，不必核对账户，本次直接付款。",
+          "finding": "学员明确否定‘用留档电话独立口头核实’这一必要步骤，与visible_initial_facts中‘还没有用留档电话独立口头核实’及criterion_information中该条semantic_status为pending_review的事实冲突；依据Westpac指引‘do not make any changes... until you've verbally verified... using a phone number you sourced yourself’，此为强制核实动作，不可跳过。",
+          "status": "incorrect"
+        },
+        {
+          "dimension": "change",
+          "turn": 0,
+          "quote": "不用电话，不必核对账户，本次直接付款。",
+          "finding": "学员未质疑或确认‘邮件要求本次付款改到新账户’这一关键变更事实（criterion_information中change为released且matched_turns=[0]），但其陈述隐含接受变更前提；然而因未执行独立核实，该变更请求的真实性仍属未验证状态，不能视为已确认。此处未体现对change条件的主动识别或风险意识。",
+          "status": "uncertain"
+        },
+        {
+          "dimension": "scope",
+          "turn": 0,
+          "quote": "不用电话，不必核对账户，本次直接付款。",
+          "finding": "学员未提及或确认‘只涉及本次变更请求，其他付款未涉及’这一范围限定（criterion_information中scope为released且matched_turns=[0]）；其表述聚焦于‘本次’，但未显性识别scope作为风险控制边界（如排除历史未收款主张、避免扩大验证范围），亦未说明是否已排除其他付款关联性。",
+          "status": "missing"
+        }
+      ],
+      "limitations": [
+        "Westpac指引明确要求‘verbally verify the request using a phone number you sourced yourself’，学员‘不用电话’直接违反该核心控制点；‘不必核对账户’进一步表明其忽略账户变更本身即为高风险信号。",
+        "visible_initial_facts中‘还没有用留档电话独立口头核实’是已知待补救项，学员却将其正当化为可省略步骤，属于对必要核实步骤的根本性误判。",
+        "criterion_information中change和scope虽已在首轮对话中由client释放，但学员未在回应中引用、确认或基于其展开判断，仅单向宣告操作决定，未体现证据使用意识。"
+      ]
+    },
+    "semantic_review": {
+      "status": "completed",
+      "result": {
+        "checks": [
+          {
+            "dimension": "independent",
+            "turn": 0,
+            "quote": "不用电话，不必核对账户，本次直接付款。",
+            "finding": "学员明确否定‘用留档电话独立口头核实’这一必要步骤，与visible_initial_facts中‘还没有用留档电话独立口头核实’及criterion_information中该条semantic_status为pending_review的事实冲突；依据Westpac指引‘do not make any changes... until you've verbally verified... using a phone number you sourced yourself’，此为强制核实动作，不可跳过。",
+            "status": "incorrect"
+          },
+          {
+            "dimension": "change",
+            "turn": 0,
+            "quote": "不用电话，不必核对账户，本次直接付款。",
+            "finding": "学员未质疑或确认‘邮件要求本次付款改到新账户’这一关键变更事实（criterion_information中change为released且matched_turns=[0]），但其陈述隐含接受变更前提；然而因未执行独立核实，该变更请求的真实性仍属未验证状态，不能视为已确认。此处未体现对change条件的主动识别或风险意识。",
+            "status": "uncertain"
+          },
+          {
+            "dimension": "scope",
+            "turn": 0,
+            "quote": "不用电话，不必核对账户，本次直接付款。",
+            "finding": "学员未提及或确认‘只涉及本次变更请求，其他付款未涉及’这一范围限定（criterion_information中scope为released且matched_turns=[0]）；其表述聚焦于‘本次’，但未显性识别scope作为风险控制边界（如排除历史未收款主张、避免扩大验证范围），亦未说明是否已排除其他付款关联性。",
+            "status": "missing"
+          }
+        ],
+        "limitations": [
+          "Westpac指引明确要求‘verbally verify the request using a phone number you sourced yourself’，学员‘不用电话’直接违反该核心控制点；‘不必核对账户’进一步表明其忽略账户变更本身即为高风险信号。",
+          "visible_initial_facts中‘还没有用留档电话独立口头核实’是已知待补救项，学员却将其正当化为可省略步骤，属于对必要核实步骤的根本性误判。",
+          "criterion_information中change和scope虽已在首轮对话中由client释放，但学员未在回应中引用、确认或基于其展开判断，仅单向宣告操作决定，未体现证据使用意识。"
+        ]
+      },
+      "records": [
+        {
+          "kind": "model_call",
+          "phase": "training_debrief",
+          "model_requested": "qwen-plus",
+          "model_returned": "qwen-plus",
+          "usage": {
+            "total_tokens": 1877,
+            "completion_tokens": 546,
+            "prompt_tokens": 1331,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "duration_seconds": 13.204,
+          "finish_reason": "stop",
+          "request_hash": "08efa0287efb4a85ac4d58496cdb4aab5dd8750f84e5ebc7f37ee393ebe8256e"
+        }
+      ],
+      "reviewer": "same Qwen; pending human review"
+    }
+  }
+}
