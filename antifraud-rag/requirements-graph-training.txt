@@ -1,0 +1,3 @@
+-r requirements-upgrade.txt
+# Optional: training only. Exported JSON checkpoint inference uses existing numpy.
+torch==2.14.1

@@ -101,3 +101,7 @@ See [repair-v2 results](../eval/repair-v2/REPORT.md); old records and errors rem
 This excerpt is from the actual output in `followup-v2`, not a manual rewrite. Its scope is online selling and it cites receipt-guidance. Separated comparison run `9a2ef2ec26774a3faa6525bac1df3667` keeps seller receipt and company supplier-change steps distinct. Unsupported internal-policy run `c202abf2c86a483ab21cc7595d47b384` stops for insufficient evidence.
 
 Normal, unpaid and investment follow-up outputs were rejected by project-source review for residual unsupported wording/omitted conditions; their pending-review runtime status must not be presented as semantic approval. No new training-generation success is claimed for this batch. The previous John amount correction and historical training trace remain the evidence for that separately tested behaviour.
+
+## Trained GraphSAGE exercise
+
+Actual local case run `17e0fbba194c4027b036779ccc582317` executed graph and score tools, selected4 of34 synthetic accounts under10% review budget, linked incident transaction IDs and project-authored questions, and persisted review/export. This is an internal analyst exercise, no real bank data, no LLM call. Full case and screenshots: `../eval/graphsage-v1/browser/final/`. The reviewer note does not approve a fraud finding; it preserves the need for contracts and business-purpose evidence. Training comparison and structure-generalisation failure are recorded separately in graphsage-v1 report; the shortlist is not an accuracy evaluation.

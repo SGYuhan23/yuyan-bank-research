@@ -59,17 +59,12 @@ def post(path,d):
             model=RagRun.model
             def log(self,*a,**kw):pass
         return Caller().model([{'role':'system','content':'仅依据可见培训对话建议下一条核实追问，不猜隐藏事实。返回JSON {"question":str}。'},{'role':'user','content':json.dumps(context,ensure_ascii=False)}],'training_assistant')
+    if path=='/api/graph/exercise':
+        from .graph_exercise import create
+        return create(STORE,d.get('model','tabular')).model_dump()
     if path=='/api/graph/sample':
-        from .graph_lab import generate
-        from .contracts import ToolCall
-        from .tools import invoke
-        graph,_=generate('dev',seed=55,groups=6)
-        case=STORE.create(CaseRecord(query='合成交易结构与排序实验',mode='graph_lab',requester_role='实验研究者',as_of=graph['as_of'],fields={'synthetic_graph':graph}))
-        results=[]
-        for name in ('graph','score'):
-            tool,evidence=invoke(case,ToolCall(tool_name=name));case.evidence.extend(evidence);results.append(tool.model_dump())
-        rid=uid();case.status='pending_review'
-        STORE.finish(case,{'run_id':rid,'case_id':case.case_id,'case_version':case.version,'status':'pending_review','recommendations':[],'evidence':[e.model_dump() for e in case.evidence],'tool_results':results,'execution':'live_synthetic'})
-        observations={e.origin_id:json.loads(e.statement) for e in case.evidence}
-        return {'case_id':case.case_id,'case_version':case.version,'run_id':rid,'graph':graph,'analysis':observations.get(results[0]['call_id'],{'notice':'图工具失败'}),'score':observations.get(results[1]['call_id'],{'status':results[1]['status']}),'evidence':[e.model_dump() for e in case.evidence],'tool_results':results}
+        # Backwards-compatible sample endpoint now runs the same case/tool/draft pipeline.
+        from .graph_exercise import create
+        case=create(STORE,d.get('model','tabular'));r=Agent(STORE,case.case_id,case.version).run();ex=r.get('graph_exercise',{})
+        return {**r,'graph':case.fields['synthetic_graph'],'analysis':ex.get('analysis',{'notice':'图工具未全部完成'}),'score':ex.get('score',{'status':'unavailable'})}
     raise ValueError('NOT_FOUND')

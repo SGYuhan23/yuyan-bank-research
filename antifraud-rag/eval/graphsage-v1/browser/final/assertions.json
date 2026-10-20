@@ -1,0 +1,13 @@
+{
+  "run_id": "17e0fbba194c4027b036779ccc582317",
+  "errors": [],
+  "overflow": false,
+  "real_local_tools": true,
+  "graphsage_checkpoint_inference": true,
+  "llm_calls": 0,
+  "budget": 4,
+  "accounts": 34,
+  "review_export": true,
+  "stale": true,
+  "rejected": true
+}

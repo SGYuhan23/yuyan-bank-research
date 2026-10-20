@@ -30,3 +30,7 @@ This is a selection of relevant designs, not a survey of every open-source proje
 | This project's integration | Shared versioned case/evidence/tool/review store, source-scoped advice, bounded repair | New checks bind selected source-span IDs to original text, reject invalid references, and remove specifically unsupported optional content. Same-model auditing remains imperfect. |
 
 The useful combination is a traceable workflow and falsifiable experiments. More components do not automatically improve advice quality. See `RESUME_EVIDENCE.md` for defensible achievements and `../eval/repair-v2/REPORT.md` for the latest failures as well as results.
+
+## Learned graph follow-up
+
+The earlier fixed-neighbor-only description remains the historical implementation. The current follow-up adds independently implemented, trained two-layer mean GraphSAGE using the [SAGEConv operator equation](https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.nn.conv.SAGEConv.html), with learned self/neighbor weights and Torch autograd. No PyG or NVIDIA implementation code was copied. This still does not reproduce NVIDIA's heterogeneous transaction-node architecture, XGBoost combination or deployment services. See graph_sage.py and eval/graphsage-v1 for initialization seeds, weights, train/dev/test groups, ablation and structural-challenge failure. The current internal analyst exercise connects graph tools to the same case and review workflow without pretending to be a customer-service investigation of real bank records.

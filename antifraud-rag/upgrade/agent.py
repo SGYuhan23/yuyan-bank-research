@@ -30,6 +30,12 @@ class Agent:
         if self.store.get(self.case.case_id).version!=self.case.version:raise ValueError('STALE_VERSION')
         if self.rounds>=4 or self.calls>=8 or time.monotonic()-self.started>300:
             self.action=NextAction(action='stop',summary='调用或时间预算用尽',questions=['未完成核实，请缩小任务后重试']);return {'next':'finish'}
+        if self.case.mode=='graph_lab':
+            # Fixed task needs these two deterministic tools, not a fabricated LLM plan.
+            names=[n for n in ('graph','score') if n not in self.used]
+            self.action=NextAction(action='call_tools' if names else 'draft',calls=[ToolCall(tool_name=n) for n in names],summary='按合成分析演练任务调用图统计与选定模型；不调用外部银行系统')
+            self.log('next_action',planning='deterministic_exercise_route',**self.action.model_dump())
+            return {'next':'tools' if names else 'draft'}
         self.rounds+=1
         available=[x for x in allowed(self.case) if x not in self.used]
         schema=NextAction.model_json_schema()
@@ -78,7 +84,8 @@ class Agent:
         return {'next':'plan'}
     def draft(self,state):
         if self.case.mode=='graph_lab':
-            self.data.update(status='pending_review',summary='合成交易实验工具结果，不作真实交易判断',unresolved_questions=['实验标签无法证明真实世界违法；排序分数未校准'])
+            from .graph_exercise import draft
+            self.data.update(draft(self.case,self.data['tool_results']))
             return {'next':'end'}
         public=[e for e in self.case.evidence if e.kind=='public_guidance']
         if not public and self.case.mode=='case':

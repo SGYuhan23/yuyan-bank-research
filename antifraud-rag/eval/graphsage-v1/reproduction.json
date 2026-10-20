@@ -1,0 +1,29 @@
+{
+  "method": "second real training and inference run, identical config/seeds; exact checkpoint and prediction hashes",
+  "files": {
+    "graphsage-11-checkpoint.json": true,
+    "graphsage-22-checkpoint.json": true,
+    "graphsage-33-checkpoint.json": true,
+    "sage_no_messages-11-checkpoint.json": true,
+    "sage_no_messages-22-checkpoint.json": true,
+    "sage_no_messages-33-checkpoint.json": true,
+    "tabular-structural_challenge-predictions.json": true,
+    "sage_no_messages-11-structural_challenge-predictions.json": true,
+    "graphsage-33-test-predictions.json": true,
+    "sage_no_messages-22-structural_challenge-predictions.json": true,
+    "sage_no_messages-22-test-predictions.json": true,
+    "tabular-test-predictions.json": true,
+    "graphsage-11-test-predictions.json": true,
+    "graphsage-33-structural_challenge-predictions.json": true,
+    "graphsage-11-structural_challenge-predictions.json": true,
+    "graphsage-22-structural_challenge-predictions.json": true,
+    "sage_no_messages-33-test-predictions.json": true,
+    "sage_no_messages-33-structural_challenge-predictions.json": true,
+    "sage_no_messages-11-test-predictions.json": true,
+    "fixed_mean-test-predictions.json": true,
+    "graphsage-22-test-predictions.json": true,
+    "fixed_mean-structural_challenge-predictions.json": true
+  },
+  "matched": 22,
+  "total": 22
+}

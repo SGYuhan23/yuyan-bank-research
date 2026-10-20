@@ -86,7 +86,12 @@ def invoke(c,call,log=lambda *a,**k:None):
             add('tool_observation',json.dumps({'dated_mentions':dates,'relative_unresolved':relative,'order':'按原材料位置，不推定事件先后','conflicts':'不同陈述同时保留，日期本身不判真实性'},ensure_ascii=False),t.call_id,{'start':0,'end':len(text)},['材料可能有矛盾；相对日期须由用户核对'])
         elif name in ('graph','score'):
             from .graph_lab import analyze,score
-            graph=c.fields['synthetic_graph'];result=analyze(graph,c.as_of) if name=='graph' else score(graph,c.as_of)
+            graph=c.fields['synthetic_graph']
+            model=c.fields.get('graph_model','tabular')
+            if model not in ('tabular','graphsage'):raise ValueError('INVALID_GRAPH_MODEL')
+            if name=='score' and model=='graphsage':
+                from .graph_sage import score
+            result=analyze(graph,c.as_of) if name=='graph' else score(graph,c.as_of)
             if result.get('status')=='unavailable':t.status='unavailable'
             add('synthetic_observation',json.dumps(result,ensure_ascii=False),t.call_id,{'edges':result.get('edge_ids',[])},['仅合成实验；分数非诈骗概率；结构/归因不证明违法']);t.data_origin='project_synthetic'
     except Exception as exc:

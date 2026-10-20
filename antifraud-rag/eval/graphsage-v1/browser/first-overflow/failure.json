@@ -1,0 +1,1 @@
+{"result":"failed","check":"mobile horizontal overflow","page_errors":[],"workflow":"real GraphSAGE run, persisted review, export and stale rejection completed before layout check","repair":"wrap long case/account/run IDs; preserve first screenshot and export"}
